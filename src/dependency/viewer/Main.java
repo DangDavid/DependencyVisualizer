@@ -17,8 +17,11 @@ public class Main {
         XmlParser parser = new XmlParser();
         ModuleData m1 = parser.parseDocument("F:\\Downloads\\pidgin-2.10.7.tar\\pidgin-2.10.7\\pidgin-2.10.7\\finch\\xml\\finch_8c.xml");
 
-        System.out.println("\n\nFinished one parse\n\n");
+
         ModuleData m2 = parser.parseDocument("F:\\Downloads\\pidgin-2.10.7.tar\\pidgin-2.10.7\\pidgin-2.10.7\\finch\\xml\\finch_8h.xml");
+
+        ModuleData m3 = parser.parseDocument("F:\\Downloads\\pidgin-2.10.7.tar\\pidgin-2.10.7\\pidgin-2.10.7\\finch\\xml\\getopt1_8c.xml");
+        ModuleData m4 = parser.parseDocument("F:\\Downloads\\pidgin-2.10.7.tar\\pidgin-2.10.7\\pidgin-2.10.7\\finch\\xml\\gntwm_8c.xml");
 
         System.out.println("End of main");
     }

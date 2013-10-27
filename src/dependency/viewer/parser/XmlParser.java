@@ -65,6 +65,8 @@ public class XmlParser extends DefaultHandler {
             currentModule.insertIncludedBy(includedby.substring(0, includedby.length() - 2));
         } else if ("memberdef".equals(elementName)) {
             type = attributes.getValue("kind");
+        } else if ("enumvalue".equals(elementName)) {
+            type = "enum";
         } else if ("ref".equals(elementName)
                 && (attributes.getValue("refid").contains("8c") || attributes.getValue("refid").contains("8h"))
                 && !"compound".equals(attributes.getValue("kindref"))) {
