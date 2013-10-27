@@ -22,15 +22,14 @@ import org.xml.sax.helpers.DefaultHandler;
  */
 public class XmlParser extends DefaultHandler {
 
-    private final SAXParserFactory factory;
     private SAXParser parser;
-    String tmpValue;
-    String type;
-    String reference;
-    ModuleData currentModule;
+    private String xmlContent;
+    private String type;
+    private String reference;
+    private ModuleData currentModule;
 
     public XmlParser() {
-        factory = SAXParserFactory.newInstance();
+        SAXParserFactory factory = SAXParserFactory.newInstance();
         try {
             parser = factory.newSAXParser();
 
@@ -58,8 +57,7 @@ public class XmlParser extends DefaultHandler {
 
     @Override
     public void startElement(String uri, String localName, String elementName, Attributes attributes) throws SAXException {
-        // if current element is book , create new book
-        // clear tmpValue on start of element
+
         if ("includedby".equals(elementName)) {
             String includedby = attributes.getValue("refid");
             currentModule.insertIncludedBy(includedby.substring(0, includedby.length() - 2));
@@ -82,25 +80,25 @@ public class XmlParser extends DefaultHandler {
     public void endElement(String uri, String localName, String elementName) throws SAXException {
 
         if ("name".equals(elementName) && type != null) {
-            currentModule.dataObjects.put(tmpValue, type);
+            currentModule.putDataObject(xmlContent, type);
             type = null;
         } else if ("compoundname".equals(elementName)) {
 
-            currentModule.setModuleName(tmpValue.substring(0, tmpValue.length() - 2));
+            currentModule.setModuleName(xmlContent.substring(0, xmlContent.length() - 2));
         } else if ("includes".equals(elementName)) {
-            currentModule.insertInclude(tmpValue);
+            currentModule.insertInclude(xmlContent);
         }
 
 
         if (reference != null) {
-            currentModule.addReference(reference, tmpValue);
+            currentModule.addReference(reference, xmlContent);
             reference = null;
         }
     }
 
     @Override
     public void characters(char[] ac, int i, int j) throws SAXException {
-        tmpValue = new String(ac, i, j);
+        xmlContent = new String(ac, i, j);
     }
 
 

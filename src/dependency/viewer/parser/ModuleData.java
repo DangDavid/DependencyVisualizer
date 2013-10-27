@@ -1,9 +1,6 @@
 package dependency.viewer.parser;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,14 +10,14 @@ import java.util.Map;
  */
 public class ModuleData {
 
-    String moduleName;
-    List<String> includeList;
-    List<String> includedByList;
+    private String moduleName;
+    private final List<String> includeList;
+    private final List<String> includedByList;
     // key = file it depnds on, and the list what items are we using from that file ie functions, structs
-    Map<String, List<String>> references;
+    private final Map<String, List<String>> references;
     // TODO: Maybe we should change this to a emun of data types ie. define or function....
     // holds what the file provides
-    Map<String, String> dataObjects;
+    private final Map<String, String> dataObjects;
 
     public ModuleData() {
         includedByList = new ArrayList<String>();
@@ -78,5 +75,53 @@ public class ModuleData {
                 references.put(reference, newList);
             }
         }
+    }
+
+    public void print() {
+        System.out.println("\nThe Module Name is : " + moduleName);
+
+        if (!includeList.isEmpty())
+            System.out.println("\nThe Includes are : ");
+        for (String item : includeList) {
+            System.out.println("    " + item);
+        }
+
+        if (!includedByList.isEmpty())
+            System.out.println("\nThe Includes By are : ");
+        for (String item : includedByList) {
+            System.out.println("    " + item);
+        }
+
+        if (!dataObjects.isEmpty())
+            System.out.println("\nThe Data Objects provided are : ");
+
+        for (String key : dataObjects.keySet()) {
+            System.out.println("    " + dataObjects.get(key) + "  :  " + key);
+        }
+
+        if (!references.isEmpty())
+            System.out.println("\nThe Data Objects provided are : ");
+
+        for (String key : references.keySet()) {
+            System.out.println("    Reference to module :  " + key);
+            for (String item : references.get(key)) {
+                System.out.println("        :  " + item);
+            }
+        }
+
+        System.out.println();
+    }
+
+    public void summerize() {
+        System.out.println("\nThe Module Name is : " + moduleName);
+
+        System.out.println("The number of other file references are : " + references.keySet().size());
+
+
+        System.out.println();
+    }
+
+    public void putDataObject(String xmlContent, String type) {
+        dataObjects.put(xmlContent, type);
     }
 }
