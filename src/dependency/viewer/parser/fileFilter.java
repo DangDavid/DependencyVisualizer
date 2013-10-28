@@ -6,13 +6,13 @@ import java.util.List;
 
 public class FileFilter {
 
-    private static final String FILE_DIR = "F:\\Downloads\\pidgin-2.10.7.tar\\pidgin-2.10.7\\pidgin-2.10.7\\finch\\xml";
+    //private static final String FILE_DIR = "F:\\Downloads\\pidgin-2.10.7.tar\\pidgin-2.10.7\\pidgin-2.10.7\\finch\\xml";
+    private static final String FILE_DIR = "/Users/taehyunkang/Downloads/pidgin-2.10.7/finch/xml";
     private static final String FILE_EXT1 = "_8h.xml";
     private static final String FILE_EXT2 = "_8c.xml";
 
     public FileFilter() {
     }
-
 
     /**
      * @param args
@@ -55,6 +55,8 @@ public class FileFilter {
 
         // preparation
         GenericExtFilter filter = new GenericExtFilter(FILE_EXT1);
+
+        System.out.println(fileDir);
         File file = new File(fileDir);
 
         if (!file.isDirectory()) {
@@ -69,6 +71,7 @@ public class FileFilter {
             System.out.println("no files end with A or B : " + "A. " + FILE_EXT1 + " B. " + FILE_EXT2);
             return null;
         }
+
 
         List<String> result = new ArrayList<String>();
         for (String filename : list) {

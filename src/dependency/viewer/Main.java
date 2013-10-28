@@ -28,7 +28,7 @@ public class Main {
     private static List<ModuleData> parseStep() {
         FileFilter files = new FileFilter();
         //List<String> filePaths = files.getFiles("F:\\Downloads\\pidgin-2.10.7.tar\\pidgin-2.10.7\\pidgin-2.10.7\\finch\\xml");
-        List<String> filePaths = files.getFiles("/Users/taehyunkang/Downloads/pidgin-2.10.7/finch/finch");
+        List<String> filePaths = files.getFiles("/Users/taehyunkang/Downloads/pidgin-2.10.7/finch/xml");
 
         XmlParser parser = new XmlParser();
         List<ModuleData> rawData = new ArrayList<ModuleData>();
