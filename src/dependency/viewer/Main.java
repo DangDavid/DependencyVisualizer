@@ -38,6 +38,7 @@ public class Main {
             ModuleData parsedData = parser.parseDocument(path);
             System.out.println("Finished parsing ");
             parsedData.summerize();
+            parsedData.print();
             rawData.add(parsedData);
         }
 
