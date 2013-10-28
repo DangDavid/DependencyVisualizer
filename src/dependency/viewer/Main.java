@@ -6,6 +6,7 @@ import dependency.viewer.parser.XmlParser;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Collections;
 
 /**
  * Created with IntelliJ IDEA.
@@ -26,11 +27,13 @@ public class Main {
 
     private static List<ModuleData> parseStep() {
         FileFilter files = new FileFilter();
-        List<String> filePaths = files.getFiles("F:\\Downloads\\pidgin-2.10.7.tar\\pidgin-2.10.7\\pidgin-2.10.7\\finch\\xml");
+        //List<String> filePaths = files.getFiles("F:\\Downloads\\pidgin-2.10.7.tar\\pidgin-2.10.7\\pidgin-2.10.7\\finch\\xml");
+        List<String> filePaths = files.getFiles("/Users/taehyunkang/Downloads/pidgin-2.10.7/finch/finch");
 
         XmlParser parser = new XmlParser();
         List<ModuleData> rawData = new ArrayList<ModuleData>();
-        for (String path : filePaths) {
+
+        for (String path : emptyIfNull(filePaths)) {
             ModuleData parsedData = parser.parseDocument(path);
             System.out.println("Finished parsing ");
             parsedData.summerize();
@@ -40,5 +43,9 @@ public class Main {
         System.out.println("Number of files parsed : " + rawData.size());
 
         return rawData;
+    }
+
+    public static <T> Iterable<T> emptyIfNull(Iterable<T> iterable) {
+        return iterable == null ? Collections.<T>emptyList() : iterable;
     }
 }
