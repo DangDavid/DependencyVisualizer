@@ -1,0 +1,4055 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntcolors_8c" kind="file">
+        <compoundname>gntcolors.c</compoundname>
+        <includes local="yes">config.h</includes>
+        <includes local="no">ncurses.h</includes>
+        <includes refid="gntinternal_8h" local="yes">gntinternal.h</includes>
+        <includes refid="gntcolors_8h" local="yes">gntcolors.h</includes>
+        <includes refid="gntstyle_8h" local="yes">gntstyle.h</includes>
+        <includes local="no">glib.h</includes>
+        <includes local="no">errno.h</includes>
+        <includes local="no">stdlib.h</includes>
+        <includes local="no">string.h</includes>
+        <incdepgraph>
+            <node id="1627">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="1628" relation="include">
+                </childnode>
+                <childnode refid="1629" relation="include">
+                </childnode>
+            </node>
+            <node id="1634">
+                <label>gntmenuitem.h</label>
+                <link refid="gntmenuitem_8h"/>
+                <childnode refid="1618" relation="include">
+                </childnode>
+                <childnode refid="1625" relation="include">
+                </childnode>
+                <childnode refid="1631" relation="include">
+                </childnode>
+            </node>
+            <node id="1633">
+                <label>gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="1622" relation="include">
+                </childnode>
+                <childnode refid="1621" relation="include">
+                </childnode>
+                <childnode refid="1619" relation="include">
+                </childnode>
+                <childnode refid="1627" relation="include">
+                </childnode>
+            </node>
+            <node id="1631">
+                <label>gntmenu.h</label>
+                <link refid="gntmenu_8h"/>
+                <childnode refid="1632" relation="include">
+                </childnode>
+                <childnode refid="1619" relation="include">
+                </childnode>
+                <childnode refid="1627" relation="include">
+                </childnode>
+                <childnode refid="1634" relation="include">
+                </childnode>
+            </node>
+            <node id="1639">
+                <label>stdlib.h</label>
+            </node>
+            <node id="1638">
+                <label>errno.h</label>
+            </node>
+            <node id="1629">
+                <label>term.h</label>
+            </node>
+            <node id="1628">
+                <label>curses.h</label>
+            </node>
+            <node id="1614">
+                <label>libgnt/gntcolors.c</label>
+                <link refid="gntcolors.c"/>
+                <childnode refid="1615" relation="include">
+                </childnode>
+                <childnode refid="1616" relation="include">
+                </childnode>
+                <childnode refid="1617" relation="include">
+                </childnode>
+                <childnode refid="1619" relation="include">
+                </childnode>
+                <childnode refid="1620" relation="include">
+                </childnode>
+                <childnode refid="1618" relation="include">
+                </childnode>
+                <childnode refid="1638" relation="include">
+                </childnode>
+                <childnode refid="1639" relation="include">
+                </childnode>
+                <childnode refid="1640" relation="include">
+                </childnode>
+            </node>
+            <node id="1619">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="1618" relation="include">
+                </childnode>
+            </node>
+            <node id="1617">
+                <label>gntinternal.h</label>
+                <link refid="gntinternal_8h"/>
+                <childnode refid="1618" relation="include">
+                </childnode>
+            </node>
+            <node id="1620">
+                <label>gntstyle.h</label>
+                <link refid="gntstyle_8h"/>
+                <childnode refid="1621" relation="include">
+                </childnode>
+                <childnode refid="1630" relation="include">
+                </childnode>
+            </node>
+            <node id="1636">
+                <label>panel.h</label>
+            </node>
+            <node id="1635">
+                <label>gntws.h</label>
+                <link refid="gntws_8h"/>
+                <childnode refid="1622" relation="include">
+                </childnode>
+                <childnode refid="1636" relation="include">
+                </childnode>
+            </node>
+            <node id="1640">
+                <label>string.h</label>
+            </node>
+            <node id="1622">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="1623" relation="include">
+                </childnode>
+                <childnode refid="1618" relation="include">
+                </childnode>
+                <childnode refid="1616" relation="include">
+                </childnode>
+                <childnode refid="1624" relation="include">
+                </childnode>
+            </node>
+            <node id="1626">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="1623" relation="include">
+                </childnode>
+                <childnode refid="1618" relation="include">
+                </childnode>
+                <childnode refid="1625" relation="include">
+                </childnode>
+            </node>
+            <node id="1618">
+                <label>glib.h</label>
+            </node>
+            <node id="1637">
+                <label>time.h</label>
+            </node>
+            <node id="1632">
+                <label>gnttree.h</label>
+                <link refid="gnttree_8h"/>
+                <childnode refid="1622" relation="include">
+                </childnode>
+                <childnode refid="1621" relation="include">
+                </childnode>
+                <childnode refid="1619" relation="include">
+                </childnode>
+                <childnode refid="1627" relation="include">
+                </childnode>
+                <childnode refid="1633" relation="include">
+                </childnode>
+            </node>
+            <node id="1624">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="1623" relation="include">
+                </childnode>
+                <childnode refid="1618" relation="include">
+                </childnode>
+                <childnode refid="1625" relation="include">
+                </childnode>
+                <childnode refid="1616" relation="include">
+                </childnode>
+            </node>
+            <node id="1616">
+                <label>ncurses.h</label>
+            </node>
+            <node id="1621">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="1618" relation="include">
+                </childnode>
+                <childnode refid="1622" relation="include">
+                </childnode>
+                <childnode refid="1626" relation="include">
+                </childnode>
+                <childnode refid="1619" relation="include">
+                </childnode>
+                <childnode refid="1627" relation="include">
+                </childnode>
+            </node>
+            <node id="1615">
+                <label>config.h</label>
+            </node>
+            <node id="1630">
+                <label>gntwm.h</label>
+                <link refid="gntwm_8h"/>
+                <childnode refid="1622" relation="include">
+                </childnode>
+                <childnode refid="1631" relation="include">
+                </childnode>
+                <childnode refid="1635" relation="include">
+                </childnode>
+                <childnode refid="1636" relation="include">
+                </childnode>
+                <childnode refid="1637" relation="include">
+                </childnode>
+            </node>
+            <node id="1623">
+                <label>stdio.h</label>
+            </node>
+            <node id="1625">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="gntcolors_8c_1a6c2f42345ab7fc33b906d2ffff4da3b2" prot="public" static="no">
+                <name>GNT_LOG_DOMAIN</name>
+                <initializer>&quot;Colors&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>GNT - The GLib Ncurses Toolkit</para>
+                    <para>GNT is the legal property of its developers, whose names are too numerous to list here. Please
+                        refer to the COPYRIGHT file distributed with this source distribution.
+                    </para>
+                    <para>This library is free software; you can redistribute it and/or modify it under the terms of the
+                        GNU General Public License as published by the Free Software Foundation; either version 2 of the
+                        License, or (at your option) any later version.
+                    </para>
+                    <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+                        without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+                        the GNU General Public License for more details.
+                    </para>
+                    <para>You should have received a copy of the GNU General Public License along with this program; if
+                        not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+                        02111-1301 USA
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          line="29" column="11"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          bodystart="29" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="var">
+            <memberdef kind="variable" id="gntcolors_8c_1a2126daf96b031b9ec278d34f3d8d2fe5" prot="public" static="yes"
+                       mutable="no">
+                <type>gboolean</type>
+                <definition>gboolean hascolors</definition>
+                <argsstring></argsstring>
+                <name>hascolors</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          line="40" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          bodystart="40" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntcolors_8c_1a161cd9c72ea843be2bd4d6da794a18fc" prot="public" static="yes"
+                       mutable="no">
+                <type>int</type>
+                <definition>int custom_type</definition>
+                <argsstring></argsstring>
+                <name>custom_type</name>
+                <initializer>=
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ae94a3a46dc507b572bd76867fdc62292"
+                         kindref="member">GNT_COLORS
+                    </ref>
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          line="41" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          bodystart="41" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntcolors_8c_1aabe7912b6160ad63616663e8d7c63839" prot="public" static="no"
+                       mutable="no">
+                <type>short</type>
+                <definition>short r</definition>
+                <argsstring></argsstring>
+                <name>r</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          line="44" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          bodystart="44" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntcolors_8c_1ac22ef9012585a39864a27c5d518b0198" prot="public" static="no"
+                       mutable="no">
+                <type>short</type>
+                <definition>short g</definition>
+                <argsstring></argsstring>
+                <name>g</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          line="44" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          bodystart="44" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntcolors_8c_1a14c92240a8c7badaaa4e18952e560053" prot="public" static="no"
+                       mutable="no">
+                <type>short</type>
+                <definition>short b</definition>
+                <argsstring></argsstring>
+                <name>b</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          line="44" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          bodystart="44" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntcolors_8c_1a35b43839eec8944136a75374a31c6717" prot="public" static="yes"
+                       mutable="no">
+                <type>struct @17</type>
+                <definition>struct @17 colors[GNT_TOTAL_COLORS]</definition>
+                <argsstring>[GNT_TOTAL_COLORS]</argsstring>
+                <name>colors</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          line="45" column="1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntcolors_8c_1a050f9e5355f9bd82e0c07ac938f0f7b1" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void backup_colors</definition>
+                <argsstring>(void)</argsstring>
+                <name>backup_colors</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          line="48" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          bodystart="48" bodyend="56"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcolors_8c_1ab98ee7e86bd3dd702aacd283c3194897" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>static gboolean can_use_custom_color</definition>
+                <argsstring>(void)</argsstring>
+                <name>can_use_custom_color</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          line="59" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          bodystart="59" bodyend="62"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcolors_8c_1ac592fba3cd3b6eaa4763bbb48e403a11" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void restore_colors</definition>
+                <argsstring>(void)</argsstring>
+                <name>restore_colors</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          line="65" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          bodystart="65" bodyend="73"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcolors_8c_1afe15bd9c959d523acf01e753189ae272" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_init_colors</definition>
+                <argsstring>()</argsstring>
+                <name>gnt_init_colors</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Initialize the colors.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          line="75" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          bodystart="75" bodyend="136"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcolors_8c_1aad9c02cf994de9b9eed6aff9d91b4441" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_uninit_colors</definition>
+                <argsstring>()</argsstring>
+                <name>gnt_uninit_colors</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Uninitialize the colors.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          line="139" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          bodystart="139" bodyend="143"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcolors_8c_1a35f4238441549b5c0858db2c98a0b704" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>int</type>
+                <definition>int gnt_color_pair</definition>
+                <argsstring>(int pair)</argsstring>
+                <name>gnt_color_pair</name>
+                <param>
+                    <type>int</type>
+                    <declname>color</declname>
+                    <defname>pair</defname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Return the appropriate character attribute for a specified color. If the terminal doesn&apos;t
+                        have color support, this returns A_STANDOUT when deemed appropriate.
+                    </para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>color</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The color code.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>A character attribute.</para>
+                        </simplesect>
+                        <simplesect kind="since">
+                            <para>2.3.0</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          line="298" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          bodystart="298" bodyend="303"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcolors_8c_1aa07b321a5649af3186ad40df0cfa8bd4" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>int</type>
+                <definition>int gnt_color_add_pair</definition>
+                <argsstring>(int fg, int bg)</argsstring>
+                <name>gnt_color_add_pair</name>
+                <param>
+                    <type>int</type>
+                    <declname>fg</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>bg</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Adds a color definition</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>fg</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>Foreground</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>bg</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>Background</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>A color pair</para>
+                        </simplesect>
+                        <simplesect kind="since">
+                            <para>2.4.0</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          line="305" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"
+                          bodystart="305" bodyend="309"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="23">
+                <highlight class="preprocessor">#include<sp/>&quot;config.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;ncurses.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntinternal_8h" kindref="compound">
+                    gntinternal.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#undef<sp/>GNT_LOG_DOMAIN
+                </highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_LOG_DOMAIN<sp/>&quot;Colors&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntcolors_8h" kindref="compound">
+                    gntcolors.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntstyle_8h" kindref="compound">
+                    gntstyle.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;glib.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;errno.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;string.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>gboolean<sp/>hascolors;
+                </highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>custom_type<sp/>=
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ae94a3a46dc507b572bd76867fdc62292"
+                         kindref="member">GNT_COLORS</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">short</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntcolors_8c_1aabe7912b6160ad63616663e8d7c63839" kindref="member">r</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8c_1ac22ef9012585a39864a27c5d518b0198" kindref="member">g</ref>,
+                    <sp/>
+                    <ref refid="jquery_8js_1aa4026ad5544b958e54ce5e106fa1c805" kindref="member">b</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal">}<sp/>colors[<ref
+                        refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa781e4b8249d50a6e4579e5ee8ed5e439"
+                        kindref="member">GNT_TOTAL_COLORS</ref>];
+                </highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal">backup_colors(</highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">short</highlight>
+                <highlight class="normal"><sp/>i;
+                </highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa781e4b8249d50a6e4579e5ee8ed5e439"
+                         kindref="member">GNT_TOTAL_COLORS</ref>;<sp/>i++)
+                </highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>color_content(i,<sp/>&amp;colors[i].<ref
+                        refid="gntcolors_8c_1aabe7912b6160ad63616663e8d7c63839" kindref="member">r</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&amp;colors[i].<ref refid="gntcolors_8c_1ac22ef9012585a39864a27c5d518b0198" kindref="member">
+                    g</ref>,<sp/>&amp;colors[i].<ref refid="jquery_8js_1aa4026ad5544b958e54ce5e106fa1c805"
+                                                     kindref="member">b</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>gboolean
+                </highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal">can_use_custom_color(</highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>(<ref refid="gntstyle_8c_1a5d7b48abf5275e45aaf29345c04bdcfb"
+                                                     kindref="member">gnt_style_get_bool</ref>(<ref
+                        refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1a7e58bae4373e1328a2be2f0791099313"
+                        kindref="member">GNT_STYLE_COLOR</ref>,<sp/>FALSE)<sp/>&amp;&amp;<sp/>can_change_color());
+                </highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal">restore_colors(</highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">short</highlight>
+                <highlight class="normal"><sp/>i;
+                </highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa781e4b8249d50a6e4579e5ee8ed5e439"
+                         kindref="member">GNT_TOTAL_COLORS</ref>;<sp/>i++)
+                </highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_color(i,<sp/>colors[i].<ref refid="gntcolors_8c_1aabe7912b6160ad63616663e8d7c63839"
+                                                          kindref="member">r</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>colors[i].<ref refid="gntcolors_8c_1ac22ef9012585a39864a27c5d518b0198" kindref="member">g</ref>
+                    ,<sp/>colors[i].<ref refid="jquery_8js_1aa4026ad5544b958e54ce5e106fa1c805" kindref="member">b</ref>
+                    );
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntcolors_8c_1afe15bd9c959d523acf01e753189ae272" kindref="member">gnt_init_colors</ref>
+                    ()
+                </highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>gboolean<sp/>init<sp/>=<sp/>FALSE;
+                </highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>defaults;
+                </highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="80">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(init)
+                </highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init<sp/>=<sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>start_color();
+                </highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!(hascolors<sp/>=<sp/>has_colors()))
+                </highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>defaults<sp/>=<sp/>use_default_colors();
+                </highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(can_use_custom_color())
+                </highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>backup_colors();
+                </highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="93">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Do<sp/>some<sp/>init_color()s<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_color(<ref
+                        refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa2bb05a848869e9ec48bf7d420807a803"
+                        kindref="member">GNT_COLOR_BLACK</ref>,<sp/>0,<sp/>0,<sp/>0);
+                </highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_color(<ref
+                        refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa277b26f9dfb981037abe10eaea9bf64f"
+                        kindref="member">GNT_COLOR_RED</ref>,<sp/>1000,<sp/>0,<sp/>0);
+                </highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_color(<ref
+                        refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa6a0c94a222a26adaa851d15eac7e156a"
+                        kindref="member">GNT_COLOR_GREEN</ref>,<sp/>0,<sp/>1000,<sp/>0);
+                </highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_color(<ref
+                        refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa82e600f8e9448d99e6acf29fdc3f4f60"
+                        kindref="member">GNT_COLOR_BLUE</ref>,<sp/>250,<sp/>250,<sp/>700);
+                </highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_color(<ref
+                        refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaad498d6855e5adbc86a98857df5f4aa17"
+                        kindref="member">GNT_COLOR_WHITE</ref>,<sp/>1000,<sp/>1000,<sp/>1000);
+                </highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_color(<ref
+                        refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa8dcfd413e96ad6ff457922abdad192b7"
+                        kindref="member">GNT_COLOR_GRAY</ref>,<sp/>699,<sp/>699,<sp/>699);
+                </highlight>
+            </codeline>
+            <codeline lineno="100">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_color(<ref
+                        refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa597f3f12f9c1a36bba1f5187682c477a"
+                        kindref="member">GNT_COLOR_DARK_GRAY</ref>,<sp/>256,<sp/>256,<sp/>256);
+                </highlight>
+            </codeline>
+            <codeline lineno="101">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="102">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Now<sp/>some<sp/>init_pair()s<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="103">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aade44b623e10d9f44be58a2784aa567d"
+                        kindref="member">GNT_COLOR_NORMAL</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa2bb05a848869e9ec48bf7d420807a803"
+                         kindref="member">GNT_COLOR_BLACK</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaad498d6855e5adbc86a98857df5f4aa17"
+                         kindref="member">GNT_COLOR_WHITE</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="104">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a3de54c6a119d98c257ec10689814a1f7"
+                        kindref="member">GNT_COLOR_HIGHLIGHT</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaad498d6855e5adbc86a98857df5f4aa17"
+                         kindref="member">GNT_COLOR_WHITE</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa82e600f8e9448d99e6acf29fdc3f4f60"
+                         kindref="member">GNT_COLOR_BLUE</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="105">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aaa231d289817f065bdfeffee201207d4"
+                        kindref="member">GNT_COLOR_SHADOW</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa2bb05a848869e9ec48bf7d420807a803"
+                         kindref="member">GNT_COLOR_BLACK</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa597f3f12f9c1a36bba1f5187682c477a"
+                         kindref="member">GNT_COLOR_DARK_GRAY</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="107">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0af8f690b9f6d3ea48b5a643b264c7dcf5"
+                        kindref="member">GNT_COLOR_TITLE</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaad498d6855e5adbc86a98857df5f4aa17"
+                         kindref="member">GNT_COLOR_WHITE</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa82e600f8e9448d99e6acf29fdc3f4f60"
+                         kindref="member">GNT_COLOR_BLUE</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="108">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a3d0818e09840fc110cc4378cb72a8699"
+                        kindref="member">GNT_COLOR_TITLE_D</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaad498d6855e5adbc86a98857df5f4aa17"
+                         kindref="member">GNT_COLOR_WHITE</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa8dcfd413e96ad6ff457922abdad192b7"
+                         kindref="member">GNT_COLOR_GRAY</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="109">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="110">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a07aa330dbe7795c97ab5accaa4913424"
+                        kindref="member">GNT_COLOR_TEXT_NORMAL</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaad498d6855e5adbc86a98857df5f4aa17"
+                         kindref="member">GNT_COLOR_WHITE</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa82e600f8e9448d99e6acf29fdc3f4f60"
+                         kindref="member">GNT_COLOR_BLUE</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="111">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ac9b4aed155e810d635d8e3eb87d6dae6"
+                        kindref="member">GNT_COLOR_HIGHLIGHT_D</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa2bb05a848869e9ec48bf7d420807a803"
+                         kindref="member">GNT_COLOR_BLACK</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa8dcfd413e96ad6ff457922abdad192b7"
+                         kindref="member">GNT_COLOR_GRAY</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="112">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a025f48f226829415911f9b42eeb664ad"
+                        kindref="member">GNT_COLOR_DISABLED</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa8dcfd413e96ad6ff457922abdad192b7"
+                         kindref="member">GNT_COLOR_GRAY</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaad498d6855e5adbc86a98857df5f4aa17"
+                         kindref="member">GNT_COLOR_WHITE</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="113">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ad54e83409eb0264d17ab26e926cf60ff"
+                        kindref="member">GNT_COLOR_URGENT</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaad498d6855e5adbc86a98857df5f4aa17"
+                         kindref="member">GNT_COLOR_WHITE</ref>,
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa277b26f9dfb981037abe10eaea9bf64f"
+                         kindref="member">GNT_COLOR_RED</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="114">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="115">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="116">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="117">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>bg;
+                </highlight>
+            </codeline>
+            <codeline lineno="118">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="119">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(defaults<sp/>==<sp/>OK)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="120">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aade44b623e10d9f44be58a2784aa567d"
+                        kindref="member">GNT_COLOR_NORMAL</ref>,<sp/>-1,<sp/>-1);
+                </highlight>
+            </codeline>
+            <codeline lineno="121">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>bg<sp/>=<sp/>-1;
+                </highlight>
+            </codeline>
+            <codeline lineno="122">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"><sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="123">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aade44b623e10d9f44be58a2784aa567d"
+                        kindref="member">GNT_COLOR_NORMAL</ref>,<sp/>COLOR_BLACK,<sp/>COLOR_WHITE);
+                </highlight>
+            </codeline>
+            <codeline lineno="124">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>bg<sp/>=<sp/>COLOR_WHITE;
+                </highlight>
+            </codeline>
+            <codeline lineno="125">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="126">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a025f48f226829415911f9b42eeb664ad"
+                        kindref="member">GNT_COLOR_DISABLED</ref>,<sp/>COLOR_YELLOW,<sp/>bg);
+                </highlight>
+            </codeline>
+            <codeline lineno="127">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ad54e83409eb0264d17ab26e926cf60ff"
+                        kindref="member">GNT_COLOR_URGENT</ref>,<sp/>COLOR_GREEN,<sp/>bg);
+                </highlight>
+            </codeline>
+            <codeline lineno="128">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="129">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a3de54c6a119d98c257ec10689814a1f7"
+                        kindref="member">GNT_COLOR_HIGHLIGHT</ref>,<sp/>COLOR_WHITE,<sp/>COLOR_BLUE);
+                </highlight>
+            </codeline>
+            <codeline lineno="130">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aaa231d289817f065bdfeffee201207d4"
+                        kindref="member">GNT_COLOR_SHADOW</ref>,<sp/>COLOR_BLACK,<sp/>COLOR_BLACK);
+                </highlight>
+            </codeline>
+            <codeline lineno="131">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0af8f690b9f6d3ea48b5a643b264c7dcf5"
+                        kindref="member">GNT_COLOR_TITLE</ref>,<sp/>COLOR_WHITE,<sp/>COLOR_BLUE);
+                </highlight>
+            </codeline>
+            <codeline lineno="132">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a3d0818e09840fc110cc4378cb72a8699"
+                        kindref="member">GNT_COLOR_TITLE_D</ref>,<sp/>COLOR_WHITE,<sp/>COLOR_BLACK);
+                </highlight>
+            </codeline>
+            <codeline lineno="133">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a07aa330dbe7795c97ab5accaa4913424"
+                        kindref="member">GNT_COLOR_TEXT_NORMAL</ref>,<sp/>COLOR_WHITE,<sp/>COLOR_BLUE);
+                </highlight>
+            </codeline>
+            <codeline lineno="134">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(<ref
+                        refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ac9b4aed155e810d635d8e3eb87d6dae6"
+                        kindref="member">GNT_COLOR_HIGHLIGHT_D</ref>,<sp/>COLOR_CYAN,<sp/>COLOR_BLACK);
+                </highlight>
+            </codeline>
+            <codeline lineno="135">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="136">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="137">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="138">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="139">
+                <highlight class="normal"><ref refid="gntcolors_8c_1aad9c02cf994de9b9eed6aff9d91b4441" kindref="member">
+                    gnt_uninit_colors</ref>()
+                </highlight>
+            </codeline>
+            <codeline lineno="140">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="141">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(can_use_custom_color())
+                </highlight>
+            </codeline>
+            <codeline lineno="142">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>restore_colors();
+                </highlight>
+            </codeline>
+            <codeline lineno="143">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="144">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="145">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#if<sp/>GLIB_CHECK_VERSION(2,6,0)
+                </highlight>
+            </codeline>
+            <codeline lineno="146">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="147">
+                <highlight class="normal">gnt_colors_get_color(</highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*key)
+                </highlight>
+            </codeline>
+            <codeline lineno="148">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="149">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>color;
+                </highlight>
+            </codeline>
+            <codeline lineno="150">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean<sp/>custom<sp/>=<sp/>can_use_custom_color();
+                </highlight>
+            </codeline>
+            <codeline lineno="151">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="152">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>key<sp/>=<sp/>g_strstrip(key);
+                </highlight>
+            </codeline>
+            <codeline lineno="153">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="154">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;black&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="155">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>color<sp/>=<sp/>custom<sp/>?
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa2bb05a848869e9ec48bf7d420807a803"
+                         kindref="member">GNT_COLOR_BLACK
+                    </ref>
+                    <sp/>:<sp/>COLOR_BLACK;
+                </highlight>
+            </codeline>
+            <codeline lineno="156">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;red&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="157">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>color<sp/>=<sp/>custom<sp/>?
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa277b26f9dfb981037abe10eaea9bf64f"
+                         kindref="member">GNT_COLOR_RED
+                    </ref>
+                    <sp/>:<sp/>COLOR_RED;
+                </highlight>
+            </codeline>
+            <codeline lineno="158">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;green&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="159">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>color<sp/>=<sp/>custom<sp/>?
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa6a0c94a222a26adaa851d15eac7e156a"
+                         kindref="member">GNT_COLOR_GREEN
+                    </ref>
+                    <sp/>:<sp/>COLOR_GREEN;
+                </highlight>
+            </codeline>
+            <codeline lineno="160">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;blue&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="161">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>color<sp/>=<sp/>custom<sp/>?
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa82e600f8e9448d99e6acf29fdc3f4f60"
+                         kindref="member">GNT_COLOR_BLUE
+                    </ref>
+                    <sp/>:<sp/>COLOR_BLUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="162">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;white&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="163">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>color<sp/>=<sp/>custom<sp/>?
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaad498d6855e5adbc86a98857df5f4aa17"
+                         kindref="member">GNT_COLOR_WHITE
+                    </ref>
+                    <sp/>:<sp/>COLOR_WHITE;
+                </highlight>
+            </codeline>
+            <codeline lineno="164">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;gray&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0<sp/>||<sp/>strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;grey&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="165">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>color<sp/>=<sp/>custom<sp/>?
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa8dcfd413e96ad6ff457922abdad192b7"
+                         kindref="member">GNT_COLOR_GRAY
+                    </ref>
+                    <sp/>:<sp/>COLOR_YELLOW;
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>eh?<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="166">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;darkgray&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0<sp/>||<sp/>strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;darkgrey&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="167">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>color<sp/>=<sp/>custom<sp/>?
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a6b7b47dd702d9e331586d485013fd1eaa597f3f12f9c1a36bba1f5187682c477a"
+                         kindref="member">GNT_COLOR_DARK_GRAY
+                    </ref>
+                    <sp/>:<sp/>COLOR_BLACK;
+                </highlight>
+            </codeline>
+            <codeline lineno="168">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;magenta&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="169">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>color<sp/>=<sp/>COLOR_MAGENTA;
+                </highlight>
+            </codeline>
+            <codeline lineno="170">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;cyan&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="171">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>color<sp/>=<sp/>COLOR_CYAN;
+                </highlight>
+            </codeline>
+            <codeline lineno="172">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;default&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="173">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>color<sp/>=<sp/>-1;
+                </highlight>
+            </codeline>
+            <codeline lineno="174">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"><sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="175">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_warning(
+                </highlight>
+                <highlight class="stringliteral">&quot;Invalid<sp/>color<sp/>name:<sp/>%s\n&quot;
+                </highlight>
+                <highlight class="normal">,<sp/>key);
+                </highlight>
+            </codeline>
+            <codeline lineno="176">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>color<sp/>=<sp/>-EINVAL;
+                </highlight>
+            </codeline>
+            <codeline lineno="177">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="178">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>color;
+                </highlight>
+            </codeline>
+            <codeline lineno="179">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="180">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="181">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>gnt_colors_parse(GKeyFile<sp/>*kfile)
+                </highlight>
+            </codeline>
+            <codeline lineno="182">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="183">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GError<sp/>*error<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="184">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gsize<sp/>nkeys;
+                </highlight>
+            </codeline>
+            <codeline lineno="185">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>**
+                    <ref refid="gntbindable_8c_1af54e88426bb0991a292e59903f2fad55" kindref="member">keys</ref>
+                    <sp/>=<sp/>g_key_file_get_keys(kfile,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;colors&quot;</highlight>
+                <highlight class="normal">,<sp/>&amp;nkeys,<sp/>&amp;error);
+                </highlight>
+            </codeline>
+            <codeline lineno="186">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="187">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(error)
+                </highlight>
+            </codeline>
+            <codeline lineno="188">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="189">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntinternal_8h_1a406386a7d3d3344dd660597cfbd6188c" kindref="member">gnt_warning</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;%s&quot;</highlight>
+                <highlight class="normal">,<sp/>error-&gt;message);
+                </highlight>
+            </codeline>
+            <codeline lineno="190">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_error_free(error);
+                </highlight>
+            </codeline>
+            <codeline lineno="191">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>error<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="192">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="193">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(nkeys)
+                </highlight>
+            </codeline>
+            <codeline lineno="194">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="195">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8c_1afe15bd9c959d523acf01e753189ae272" kindref="member">gnt_init_colors</ref>
+                    ();
+                </highlight>
+            </codeline>
+            <codeline lineno="196">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">while</highlight>
+                <highlight class="normal"><sp/>(nkeys--)
+                </highlight>
+            </codeline>
+            <codeline lineno="197">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="198">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gsize<sp/>len;
+                </highlight>
+            </codeline>
+            <codeline lineno="199">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gchar<sp/>*key<sp/>=<sp/>keys[nkeys];
+                </highlight>
+            </codeline>
+            <codeline lineno="200">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>**list<sp/>=<sp/>g_key_file_get_string_list(kfile,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;colors&quot;</highlight>
+                <highlight class="normal">,<sp/>key,<sp/>&amp;len,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="201">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(len<sp/>==<sp/>3)
+                </highlight>
+            </codeline>
+            <codeline lineno="202">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="203">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntcolors_8c_1aabe7912b6160ad63616663e8d7c63839" kindref="member">r</ref>
+                    <sp/>=<sp/>atoi(list[0]);
+                </highlight>
+            </codeline>
+            <codeline lineno="204">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntcolors_8c_1ac22ef9012585a39864a27c5d518b0198" kindref="member">g</ref>
+                    <sp/>=<sp/>atoi(list[1]);
+                </highlight>
+            </codeline>
+            <codeline lineno="205">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="jquery_8js_1aa4026ad5544b958e54ce5e106fa1c805" kindref="member">b</ref>
+                    <sp/>=<sp/>atoi(list[2]);
+                </highlight>
+            </codeline>
+            <codeline lineno="206">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>color<sp/>=<sp/>-1;
+                </highlight>
+            </codeline>
+            <codeline lineno="207">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="208">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>key<sp/>=<sp/>g_ascii_strdown(key,<sp/>-1);
+                </highlight>
+            </codeline>
+            <codeline lineno="209">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>color<sp/>=<sp/>gnt_colors_get_color(key);
+                </highlight>
+            </codeline>
+            <codeline lineno="210">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(key);
+                </highlight>
+            </codeline>
+            <codeline lineno="211">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(color<sp/>==<sp/>-EINVAL)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="212">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_strfreev(list);
+                </highlight>
+            </codeline>
+            <codeline lineno="213">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">continue</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="214">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="215">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="216">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_color(color,<sp/>r,<sp/>g,<sp/>b);
+                </highlight>
+            </codeline>
+            <codeline lineno="217">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="218">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_strfreev(list);
+                </highlight>
+            </codeline>
+            <codeline lineno="219">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="220">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="221">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_strfreev(keys);
+                </highlight>
+            </codeline>
+            <codeline lineno="222">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="223">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="224">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gnt_color_pairs_parse(kfile);
+                </highlight>
+            </codeline>
+            <codeline lineno="225">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="226">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="227">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>gnt_color_pairs_parse(GKeyFile<sp/>*kfile)
+                </highlight>
+            </codeline>
+            <codeline lineno="228">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="229">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GError<sp/>*error<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="230">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gsize<sp/>nkeys;
+                </highlight>
+            </codeline>
+            <codeline lineno="231">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>**keys<sp/>=<sp/>g_key_file_get_keys(kfile,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;colorpairs&quot;</highlight>
+                <highlight class="normal">,<sp/>&amp;nkeys,<sp/>&amp;error);
+                </highlight>
+            </codeline>
+            <codeline lineno="232">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="233">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(error)
+                </highlight>
+            </codeline>
+            <codeline lineno="234">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="235">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntinternal_8h_1a406386a7d3d3344dd660597cfbd6188c" kindref="member">gnt_warning</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;%s&quot;</highlight>
+                <highlight class="normal">,<sp/>error-&gt;message);
+                </highlight>
+            </codeline>
+            <codeline lineno="236">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_error_free(error);
+                </highlight>
+            </codeline>
+            <codeline lineno="237">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="238">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="239">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(nkeys)
+                </highlight>
+            </codeline>
+            <codeline lineno="240">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8c_1afe15bd9c959d523acf01e753189ae272" kindref="member">gnt_init_colors</ref>
+                    ();
+                </highlight>
+            </codeline>
+            <codeline lineno="241">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="242">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">while</highlight>
+                <highlight class="normal"><sp/>(nkeys--)
+                </highlight>
+            </codeline>
+            <codeline lineno="243">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="244">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gsize<sp/>len;
+                </highlight>
+            </codeline>
+            <codeline lineno="245">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gchar<sp/>*key<sp/>=<sp/>keys[nkeys];
+                </highlight>
+            </codeline>
+            <codeline lineno="246">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>**list<sp/>=<sp/>g_key_file_get_string_list(kfile,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;colorpairs&quot;</highlight>
+                <highlight class="normal">,<sp/>key,<sp/>&amp;len,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="247">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(len<sp/>==<sp/>2)
+                </highlight>
+            </codeline>
+            <codeline lineno="248">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="249">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0" kindref="member">GntColorType</ref>
+                    <sp/>type<sp/>=<sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="250">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gchar<sp/>*fgc<sp/>=<sp/>g_ascii_strdown(list[0],<sp/>-1);
+                </highlight>
+            </codeline>
+            <codeline lineno="251">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gchar<sp/>*bgc<sp/>=<sp/>g_ascii_strdown(list[1],<sp/>-1);
+                </highlight>
+            </codeline>
+            <codeline lineno="252">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>fg<sp/>=<sp/>gnt_colors_get_color(fgc);
+                </highlight>
+            </codeline>
+            <codeline lineno="253">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>bg<sp/>=<sp/>gnt_colors_get_color(bgc);
+                </highlight>
+            </codeline>
+            <codeline lineno="254">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(fgc);
+                </highlight>
+            </codeline>
+            <codeline lineno="255">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(bgc);
+                </highlight>
+            </codeline>
+            <codeline lineno="256">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(fg<sp/>==<sp/>-EINVAL<sp/>||<sp/>bg<sp/>==<sp/>-EINVAL)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="257">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_strfreev(list);
+                </highlight>
+            </codeline>
+            <codeline lineno="258">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">continue</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="259">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="260">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="261">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>key<sp/>=<sp/>g_ascii_strdown(key,<sp/>-1);
+                </highlight>
+            </codeline>
+            <codeline lineno="262">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="263">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;normal&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="264">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>type<sp/>=
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aade44b623e10d9f44be58a2784aa567d"
+                         kindref="member">GNT_COLOR_NORMAL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="265">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;highlight&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="266">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>type<sp/>=
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a3de54c6a119d98c257ec10689814a1f7"
+                         kindref="member">GNT_COLOR_HIGHLIGHT</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="267">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;highlightd&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="268">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>type<sp/>=
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ac9b4aed155e810d635d8e3eb87d6dae6"
+                         kindref="member">GNT_COLOR_HIGHLIGHT_D</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="269">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;shadow&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="270">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>type<sp/>=
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aaa231d289817f065bdfeffee201207d4"
+                         kindref="member">GNT_COLOR_SHADOW</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="271">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;title&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="272">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>type<sp/>=
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0af8f690b9f6d3ea48b5a643b264c7dcf5"
+                         kindref="member">GNT_COLOR_TITLE</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="273">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;titled&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="274">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>type<sp/>=
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a3d0818e09840fc110cc4378cb72a8699"
+                         kindref="member">GNT_COLOR_TITLE_D</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="275">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;text&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="276">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>type<sp/>=
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a07aa330dbe7795c97ab5accaa4913424"
+                         kindref="member">GNT_COLOR_TEXT_NORMAL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="277">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;disabled&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="278">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>type<sp/>=
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a025f48f226829415911f9b42eeb664ad"
+                         kindref="member">GNT_COLOR_DISABLED</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="279">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;urgent&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="280">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>type<sp/>=
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ad54e83409eb0264d17ab26e926cf60ff"
+                         kindref="member">GNT_COLOR_URGENT</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="281">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"><sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="282">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_strfreev(list);
+                </highlight>
+            </codeline>
+            <codeline lineno="283">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(key);
+                </highlight>
+            </codeline>
+            <codeline lineno="284">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">continue</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="285">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="286">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(key);
+                </highlight>
+            </codeline>
+            <codeline lineno="287">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="288">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(type,<sp/>fg,<sp/>bg);
+                </highlight>
+            </codeline>
+            <codeline lineno="289">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="290">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_strfreev(list);
+                </highlight>
+            </codeline>
+            <codeline lineno="291">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="292">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="293">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_strfreev(keys);
+                </highlight>
+            </codeline>
+            <codeline lineno="294">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="295">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="296">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>GKeyFile<sp/>*/
+                </highlight>
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+            <codeline lineno="297">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="298">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntcolors_8c_1a35f4238441549b5c0858db2c98a0b704" kindref="member">gnt_color_pair</ref>(
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>pair)
+                </highlight>
+            </codeline>
+            <codeline lineno="299">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="300">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>(hascolors<sp/>?<sp/>COLOR_PAIR(pair)<sp/>:
+                </highlight>
+            </codeline>
+            <codeline lineno="301">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>((pair<sp/>==
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aade44b623e10d9f44be58a2784aa567d"
+                         kindref="member">GNT_COLOR_NORMAL
+                    </ref>
+                    <sp/>||<sp/>pair<sp/>==
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ac9b4aed155e810d635d8e3eb87d6dae6"
+                         kindref="member">GNT_COLOR_HIGHLIGHT_D
+                    </ref>
+                    <sp/>||
+                </highlight>
+            </codeline>
+            <codeline lineno="302">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>pair<sp/>==
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a3d0818e09840fc110cc4378cb72a8699"
+                         kindref="member">GNT_COLOR_TITLE_D
+                    </ref>
+                    <sp/>||<sp/>pair<sp/>==
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a025f48f226829415911f9b42eeb664ad"
+                         kindref="member">GNT_COLOR_DISABLED</ref>)<sp/>?<sp/>0<sp/>:<sp/>A_STANDOUT));
+                </highlight>
+            </codeline>
+            <codeline lineno="303">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="304">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="305">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntcolors_8c_1aa07b321a5649af3186ad40df0cfa8bd4" kindref="member">
+                        gnt_color_add_pair</ref>(
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>fg,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>bg)
+                </highlight>
+            </codeline>
+            <codeline lineno="306">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="307">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pair(custom_type,<sp/>fg,<sp/>bg);
+                </highlight>
+            </codeline>
+            <codeline lineno="308">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>custom_type++;
+                </highlight>
+            </codeline>
+            <codeline lineno="309">
+                <highlight class="normal">}</highlight>
+            </codeline>
+        </programlisting>
+        <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntcolors.c"/>
+    </compounddef>
+</doxygen>

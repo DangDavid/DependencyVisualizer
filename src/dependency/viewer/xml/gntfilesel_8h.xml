@@ -1,0 +1,2263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntfilesel_8h" kind="file">
+        <compoundname>gntfilesel.h</compoundname>
+        <includes refid="gntwindow_8h" local="yes">gntwindow.h</includes>
+        <includes refid="gnt_8h" local="yes">gnt.h</includes>
+        <includes refid="gntcolors_8h" local="yes">gntcolors.h</includes>
+        <includes refid="gntkeys_8h" local="yes">gntkeys.h</includes>
+        <includedby refid="gntdebug_8c" local="no">gntdebug.c</includedby>
+        <includedby refid="gntrequest_8c" local="no">gntrequest.c</includedby>
+        <includedby refid="gntsound_8c" local="yes">gntsound.c</includedby>
+        <includedby refid="gntfilesel_8c" local="yes">libgnt/gntfilesel.c</includedby>
+        <includedby refid="gntwm_8c" local="yes">libgnt/gntwm.c</includedby>
+        <incdepgraph>
+            <node id="1876">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="1877" relation="include">
+                </childnode>
+                <childnode refid="1878" relation="include">
+                </childnode>
+            </node>
+            <node id="1883">
+                <label>gntmenuitem.h</label>
+                <link refid="gntmenuitem_8h"/>
+                <childnode refid="1868" relation="include">
+                </childnode>
+                <childnode refid="1873" relation="include">
+                </childnode>
+                <childnode refid="1880" relation="include">
+                </childnode>
+            </node>
+            <node id="1882">
+                <label>gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="1869" relation="include">
+                </childnode>
+                <childnode refid="1867" relation="include">
+                </childnode>
+                <childnode refid="1875" relation="include">
+                </childnode>
+                <childnode refid="1876" relation="include">
+                </childnode>
+            </node>
+            <node id="1880">
+                <label>gntmenu.h</label>
+                <link refid="gntmenu_8h"/>
+                <childnode refid="1881" relation="include">
+                </childnode>
+                <childnode refid="1875" relation="include">
+                </childnode>
+                <childnode refid="1876" relation="include">
+                </childnode>
+                <childnode refid="1883" relation="include">
+                </childnode>
+            </node>
+            <node id="1865">
+                <label>libgnt/gntfilesel.h</label>
+                <link refid="gntfilesel.h"/>
+                <childnode refid="1866" relation="include">
+                </childnode>
+                <childnode refid="1867" relation="include">
+                </childnode>
+                <childnode refid="1875" relation="include">
+                </childnode>
+                <childnode refid="1876" relation="include">
+                </childnode>
+            </node>
+            <node id="1878">
+                <label>term.h</label>
+            </node>
+            <node id="1866">
+                <label>gntwindow.h</label>
+                <link refid="gntwindow_8h"/>
+                <childnode refid="1867" relation="include">
+                </childnode>
+                <childnode refid="1879" relation="include">
+                </childnode>
+                <childnode refid="1875" relation="include">
+                </childnode>
+                <childnode refid="1876" relation="include">
+                </childnode>
+                <childnode refid="1880" relation="include">
+                </childnode>
+            </node>
+            <node id="1877">
+                <label>curses.h</label>
+            </node>
+            <node id="1875">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="1868" relation="include">
+                </childnode>
+            </node>
+            <node id="1879">
+                <label>gntbox.h</label>
+                <link refid="gntbox_8h"/>
+                <childnode refid="1867" relation="include">
+                </childnode>
+                <childnode refid="1869" relation="include">
+                </childnode>
+            </node>
+            <node id="1869">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="1870" relation="include">
+                </childnode>
+                <childnode refid="1868" relation="include">
+                </childnode>
+                <childnode refid="1871" relation="include">
+                </childnode>
+                <childnode refid="1872" relation="include">
+                </childnode>
+            </node>
+            <node id="1874">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="1870" relation="include">
+                </childnode>
+                <childnode refid="1868" relation="include">
+                </childnode>
+                <childnode refid="1873" relation="include">
+                </childnode>
+            </node>
+            <node id="1868">
+                <label>glib.h</label>
+            </node>
+            <node id="1881">
+                <label>gnttree.h</label>
+                <link refid="gnttree_8h"/>
+                <childnode refid="1869" relation="include">
+                </childnode>
+                <childnode refid="1867" relation="include">
+                </childnode>
+                <childnode refid="1875" relation="include">
+                </childnode>
+                <childnode refid="1876" relation="include">
+                </childnode>
+                <childnode refid="1882" relation="include">
+                </childnode>
+            </node>
+            <node id="1872">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="1870" relation="include">
+                </childnode>
+                <childnode refid="1868" relation="include">
+                </childnode>
+                <childnode refid="1873" relation="include">
+                </childnode>
+                <childnode refid="1871" relation="include">
+                </childnode>
+            </node>
+            <node id="1871">
+                <label>ncurses.h</label>
+            </node>
+            <node id="1867">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="1868" relation="include">
+                </childnode>
+                <childnode refid="1869" relation="include">
+                </childnode>
+                <childnode refid="1874" relation="include">
+                </childnode>
+                <childnode refid="1875" relation="include">
+                </childnode>
+                <childnode refid="1876" relation="include">
+                </childnode>
+            </node>
+            <node id="1870">
+                <label>stdio.h</label>
+            </node>
+            <node id="1873">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="1885">
+                <label>gntdebug.c</label>
+                <link refid="gntdebug_8c"/>
+            </node>
+            <node id="1888">
+                <label>libgnt/gntfilesel.c</label>
+                <link refid="gntfilesel_8c"/>
+            </node>
+            <node id="1884">
+                <label>libgnt/gntfilesel.h</label>
+                <link refid="gntfilesel.h"/>
+                <childnode refid="1885" relation="include">
+                </childnode>
+                <childnode refid="1886" relation="include">
+                </childnode>
+                <childnode refid="1887" relation="include">
+                </childnode>
+                <childnode refid="1888" relation="include">
+                </childnode>
+                <childnode refid="1889" relation="include">
+                </childnode>
+            </node>
+            <node id="1887">
+                <label>gntsound.c</label>
+                <link refid="gntsound_8c"/>
+            </node>
+            <node id="1886">
+                <label>gntrequest.c</label>
+                <link refid="gntrequest_8c"/>
+            </node>
+            <node id="1889">
+                <label>libgnt/gntwm.c</label>
+                <link refid="gntwm_8c"/>
+            </node>
+        </invincdepgraph>
+        <innerclass refid="struct___gnt_file_sel" prot="public">_GntFileSel</innerclass>
+        <innerclass refid="struct___gnt_file_sel_class" prot="public">_GntFileSelClass</innerclass>
+        <innerclass refid="struct___gnt_file" prot="public">_GntFile</innerclass>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="gntfilesel_8h_1ac110cc34d8efd0b7c5b16b2f3ba5540b" prot="public" static="no">
+                <name>GNT_TYPE_FILE_SEL</name>
+                <initializer>(<ref refid="gntfilesel_8h_1af92fb1afca0337e85f6db7b1ac195c5d" kindref="member">
+                    gnt_file_sel_get_gtype</ref>())
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="35" column="9"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          bodystart="35" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntfilesel_8h_1ae4a1ec6920c12738a3c8bf2954e63286" prot="public" static="no">
+                <name>GNT_FILE_SEL</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_INSTANCE_CAST((obj),<ref
+                        refid="gntfilesel_8h_1ac110cc34d8efd0b7c5b16b2f3ba5540b" kindref="member">
+                    GNT_TYPE_FILE_SEL</ref>,<ref refid="gntfilesel_8h_1a1470a61097ed1a71796bcfaf07f62356"
+                                                 kindref="member">GntFileSel</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="36" column="9"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          bodystart="36" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntfilesel_8h_1aec8fa89e95cad660053a6210052fda66" prot="public" static="no">
+                <name>GNT_FILE_SEL_CLASS</name>
+                <param>
+                    <defname>klass</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_CLASS_CAST((<ref refid="gntbindable_8c_1aa084f6474fb231a7247cc6c5299bad55"
+                                                            kindref="member">klass</ref>),<ref
+                        refid="gntfilesel_8h_1ac110cc34d8efd0b7c5b16b2f3ba5540b" kindref="member">
+                    GNT_TYPE_FILE_SEL</ref>,<ref refid="gntfilesel_8h_1a4fd7ac6567e44ce3583705e5467025d1"
+                                                 kindref="member">GntFileSelClass</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="37" column="9"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          bodystart="37" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntfilesel_8h_1a41fc87ec5dfd3efaadb4680edbdd313f" prot="public" static="no">
+                <name>GNT_IS_FILE_SEL</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_INSTANCE_TYPE((obj),<ref
+                        refid="gntfilesel_8h_1ac110cc34d8efd0b7c5b16b2f3ba5540b" kindref="member">
+                    GNT_TYPE_FILE_SEL</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="38" column="9"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          bodystart="38" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntfilesel_8h_1a5075fbce608c391af82b69766e88f078" prot="public" static="no">
+                <name>GNT_IS_FILE_SEL_CLASS</name>
+                <param>
+                    <defname>klass</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_CLASS_TYPE((<ref refid="gntbindable_8c_1aa084f6474fb231a7247cc6c5299bad55"
+                                                            kindref="member">klass</ref>),<ref
+                        refid="gntfilesel_8h_1ac110cc34d8efd0b7c5b16b2f3ba5540b" kindref="member">
+                    GNT_TYPE_FILE_SEL</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="39" column="9"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          bodystart="39" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntfilesel_8h_1a39721c7aee9d4516a0d24c932537ccd0" prot="public" static="no">
+                <name>GNT_FILE_SEL_GET_CLASS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_INSTANCE_GET_CLASS((obj),<ref
+                        refid="gntfilesel_8h_1ac110cc34d8efd0b7c5b16b2f3ba5540b" kindref="member">
+                    GNT_TYPE_FILE_SEL</ref>,<ref refid="gntfilesel_8h_1a4fd7ac6567e44ce3583705e5467025d1"
+                                                 kindref="member">GntFileSelClass</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="40" column="9"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          bodystart="40" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntfilesel_8h_1a2a5eedadb8b6fb6cd4c162bba9215f0e" prot="public" static="no">
+                <name>GNT_FILE_SEL_FLAGS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(<ref refid="gntfilesel_8h_1ae4a1ec6920c12738a3c8bf2954e63286" kindref="member">
+                    GNT_FILE_SEL</ref>(obj)-&gt;priv.flags)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="42" column="9"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          bodystart="42" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntfilesel_8h_1a8f92752b165f1a6d661349181dc57ca4" prot="public" static="no">
+                <name>GNT_FILE_SEL_SET_FLAGS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <param>
+                    <defname>flags</defname>
+                </param>
+                <initializer>(<ref refid="gntfilesel_8h_1a2a5eedadb8b6fb6cd4c162bba9215f0e" kindref="member">
+                    GNT_FILE_SEL_FLAGS</ref>(obj) |= flags)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="43" column="9"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          bodystart="43" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntfilesel_8h_1a475b559136012ee732d46b6550b71030" prot="public" static="no">
+                <name>GNT_FILE_SEL_UNSET_FLAGS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <param>
+                    <defname>flags</defname>
+                </param>
+                <initializer>(<ref refid="gntfilesel_8h_1a2a5eedadb8b6fb6cd4c162bba9215f0e" kindref="member">
+                    GNT_FILE_SEL_FLAGS</ref>(obj) &amp;= ~(flags))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="44" column="9"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          bodystart="44" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="enum">
+            <memberdef kind="enum" id="gntfilesel_8h_1a5773af085a577f3ab98086cb7d97efdf" prot="public" static="no">
+                <name>_GntFileType</name>
+                <enumvalue id="gntfilesel_8h_1a5773af085a577f3ab98086cb7d97efdfa239d45a5ee701e4a259f15d6ccbb3da7"
+                           prot="public">
+                    <name>GNT_FILE_REGULAR</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntfilesel_8h_1a5773af085a577f3ab98086cb7d97efdfaf9d5283339fe4a0eaf8745aa0074cb73"
+                           prot="public">
+                    <name>GNT_FILE_DIR</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="85" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          bodystart="84" bodyend="88"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="typedef">
+            <memberdef kind="typedef" id="gntfilesel_8h_1a1470a61097ed1a71796bcfaf07f62356" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_file_sel" kindref="compound">_GntFileSel</ref>
+                </type>
+                <definition>typedef struct _GntFileSel GntFileSel</definition>
+                <argsstring></argsstring>
+                <name>GntFileSel</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="781" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          bodystart="46" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntfilesel_8h_1a9b294e2539c0e10e8531ddf1f6658a79" prot="public" static="no">
+                <type>struct _GntFileSelPriv</type>
+                <definition>typedef struct _GntFileSelPriv GntFileSelPriv</definition>
+                <argsstring></argsstring>
+                <name>GntFileSelPriv</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="781" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          bodystart="47" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntfilesel_8h_1a4fd7ac6567e44ce3583705e5467025d1" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_file_sel_class" kindref="compound">_GntFileSelClass</ref>
+                </type>
+                <definition>typedef struct _GntFileSelClass GntFileSelClass</definition>
+                <argsstring></argsstring>
+                <name>GntFileSelClass</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="781" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          bodystart="48" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntfilesel_8h_1a859c7b1f80b0943a76ec37c821854a0c" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_file" kindref="compound">_GntFile</ref>
+                </type>
+                <definition>typedef struct _GntFile GntFile</definition>
+                <argsstring></argsstring>
+                <name>GntFile</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="781" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          bodystart="49" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntfilesel_8h_1aff08a8e34e62839f1fab8b7249fcbd89" prot="public" static="no">
+                <type>enum
+                    <ref refid="gntfilesel_8h_1a5773af085a577f3ab98086cb7d97efdf" kindref="member">_GntFileType</ref>
+                </type>
+                <definition>typedef enum _GntFileType GntFileType</definition>
+                <argsstring></argsstring>
+                <name>GntFileType</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="88" column="1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntfilesel_8h_1af92fb1afca0337e85f6db7b1ac195c5d" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>G_BEGIN_DECLS GType</type>
+                <definition>G_BEGIN_DECLS GType gnt_file_sel_get_gtype</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_file_sel_get_gtype</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <simplesect kind="return">
+                            <para>GType for GntFileSel.</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="103" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.c"
+                          bodystart="655" bodyend="680"/>
+            </memberdef>
+            <memberdef kind="function" id="gntfilesel_8h_1ac30b20dab20063ec42d09b7666b05533" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* gnt_file_sel_new</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_file_sel_new</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Create a new file selector.</para>
+                    <para>
+                        <simplesect kind="return">
+                            <para>The newly created file selector.</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="110" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.c"
+                          bodystart="692" bodyend="696"/>
+            </memberdef>
+            <memberdef kind="function" id="gntfilesel_8h_1ab0cc50d758c0198cef85dc30a0bb01a5" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>gboolean gnt_file_sel_set_current_location</definition>
+                <argsstring>(GntFileSel *sel, const char *path)</argsstring>
+                <name>gnt_file_sel_set_current_location</name>
+                <param>
+                    <type>
+                        <ref refid="gntfilesel_8h_1a1470a61097ed1a71796bcfaf07f62356" kindref="member">GntFileSel</ref>
+                        *
+                    </type>
+                    <declname>sel</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>path</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Set the current location of the file selector.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>sel</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The file selector.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>path</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The current path of the selector.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>
+                                <computeroutput>TRUE</computeroutput>
+                                if the current location was successfully changed,
+                                <computeroutput>FALSE</computeroutput>
+                                otherwise.
+                            </para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="120" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.c"
+                          bodystart="698" bodyend="718"/>
+            </memberdef>
+            <memberdef kind="function" id="gntfilesel_8h_1a5843c9fc0b4629dac7fa5e92235a4afd" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_file_sel_set_dirs_only</definition>
+                <argsstring>(GntFileSel *sel, gboolean dirs)</argsstring>
+                <name>gnt_file_sel_set_dirs_only</name>
+                <param>
+                    <type>
+                        <ref refid="gntfilesel_8h_1a1470a61097ed1a71796bcfaf07f62356" kindref="member">GntFileSel</ref>
+                        *
+                    </type>
+                    <declname>sel</declname>
+                </param>
+                <param>
+                    <type>gboolean</type>
+                    <declname>dirs</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Set wheter to only allow selecting directories.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>sel</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The file selector.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>dirs</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>
+                                        <computeroutput>TRUE</computeroutput>
+                                        if only directories can be selected,
+                                        <computeroutput>FALSE</computeroutput>
+                                        if files can also be selected.
+                                    </para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="129" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.c"
+                          bodystart="720" bodyend="723"/>
+            </memberdef>
+            <memberdef kind="function" id="gntfilesel_8h_1adcfdd5ae70df04c3dca8585ec2b30c15" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>gboolean gnt_file_sel_get_dirs_only</definition>
+                <argsstring>(GntFileSel *sel)</argsstring>
+                <name>gnt_file_sel_get_dirs_only</name>
+                <param>
+                    <type>
+                        <ref refid="gntfilesel_8h_1a1470a61097ed1a71796bcfaf07f62356" kindref="member">GntFileSel</ref>
+                        *
+                    </type>
+                    <declname>sel</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Check whether the file selector allows only selecting directories.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>sel</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The file selector.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>
+                                <computeroutput>TRUE</computeroutput>
+                                if only directories can be selected.
+                            </para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="138" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.c"
+                          bodystart="725" bodyend="728"/>
+            </memberdef>
+            <memberdef kind="function" id="gntfilesel_8h_1a1ff941acf0a60825c8c8eb091a42c9fc" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_file_sel_set_must_exist</definition>
+                <argsstring>(GntFileSel *sel, gboolean must)</argsstring>
+                <name>gnt_file_sel_set_must_exist</name>
+                <param>
+                    <type>
+                        <ref refid="gntfilesel_8h_1a1470a61097ed1a71796bcfaf07f62356" kindref="member">GntFileSel</ref>
+                        *
+                    </type>
+                    <declname>sel</declname>
+                </param>
+                <param>
+                    <type>gboolean</type>
+                    <declname>must</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Set whether a selected file must exist.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>sel</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The file selector.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>must</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>
+                                        <computeroutput>TRUE</computeroutput>
+                                        if the selected file must exist.
+                                    </para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="146" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.c"
+                          bodystart="747" bodyend="751"/>
+            </memberdef>
+            <memberdef kind="function" id="gntfilesel_8h_1a8290c2d2e81423debfda283de9365065" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>gboolean gnt_file_sel_get_must_exist</definition>
+                <argsstring>(GntFileSel *sel)</argsstring>
+                <name>gnt_file_sel_get_must_exist</name>
+                <param>
+                    <type>
+                        <ref refid="gntfilesel_8h_1a1470a61097ed1a71796bcfaf07f62356" kindref="member">GntFileSel</ref>
+                        *
+                    </type>
+                    <declname>sel</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Check whether the selector allows selecting non-existent files.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>sel</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The file selector.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>
+                                <computeroutput>TRUE</computeroutput>
+                                if the selected file must exist,
+                                <computeroutput>FALSE</computeroutput>
+                                if a non-existent file can be selected.
+                            </para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="156" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.c"
+                          bodystart="753" bodyend="756"/>
+            </memberdef>
+            <memberdef kind="function" id="gntfilesel_8h_1a34caa54a3fc75e65f3f70a8618458e96" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>char *</type>
+                <definition>char* gnt_file_sel_get_selected_file</definition>
+                <argsstring>(GntFileSel *sel)</argsstring>
+                <name>gnt_file_sel_get_selected_file</name>
+                <param>
+                    <type>
+                        <ref refid="gntfilesel_8h_1a1470a61097ed1a71796bcfaf07f62356" kindref="member">GntFileSel</ref>
+                        *
+                    </type>
+                    <declname>sel</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Get the selected file in the selector.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>sel</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The file selector.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>The path of the selected file. The caller should g_free the returned string.</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="166" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.c"
+                          bodystart="736" bodyend="745"/>
+            </memberdef>
+            <memberdef kind="function" id="gntfilesel_8h_1a9cc6c3448cb135ba511afdec9ce9cb56" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>GList *</type>
+                <definition>GList* gnt_file_sel_get_selected_multi_files</definition>
+                <argsstring>(GntFileSel *sel)</argsstring>
+                <name>gnt_file_sel_get_selected_multi_files</name>
+                <param>
+                    <type>
+                        <ref refid="gntfilesel_8h_1a1470a61097ed1a71796bcfaf07f62356" kindref="member">GntFileSel</ref>
+                        *
+                    </type>
+                    <declname>sel</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Get the list of selected files in the selector.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>sel</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The file selector.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>A list of paths for the selected files. The caller must g_free the contents of the
+                                list, and g_list_free the list.
+                            </para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="176" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.c"
+                          bodystart="763" bodyend="779"/>
+            </memberdef>
+            <memberdef kind="function" id="gntfilesel_8h_1aa1d142424d3d6bbea14bb0c8547e3443" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_file_sel_set_multi_select</definition>
+                <argsstring>(GntFileSel *sel, gboolean set)</argsstring>
+                <name>gnt_file_sel_set_multi_select</name>
+                <param>
+                    <type>
+                        <ref refid="gntfilesel_8h_1a1470a61097ed1a71796bcfaf07f62356" kindref="member">GntFileSel</ref>
+                        *
+                    </type>
+                    <declname>sel</declname>
+                </param>
+                <param>
+                    <type>gboolean</type>
+                    <declname>set</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Allow selecting multiple files.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>sel</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The file selector.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>set</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>
+                                        <computeroutput>TRUE</computeroutput>
+                                        if selecting multiple files should be allowed.
+                                    </para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="184" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.c"
+                          bodystart="758" bodyend="761"/>
+            </memberdef>
+            <memberdef kind="function" id="gntfilesel_8h_1a3e5e8eb484e4ad8a0430f36744129b0c" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_file_sel_set_suggested_filename</definition>
+                <argsstring>(GntFileSel *sel, const char *suggest)</argsstring>
+                <name>gnt_file_sel_set_suggested_filename</name>
+                <param>
+                    <type>
+                        <ref refid="gntfilesel_8h_1a1470a61097ed1a71796bcfaf07f62356" kindref="member">GntFileSel</ref>
+                        *
+                    </type>
+                    <declname>sel</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>suggest</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Set the suggested file to have selected at startup.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>sel</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The file selector.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>suggest</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The suggested filename.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="192" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.c"
+                          bodystart="730" bodyend="734"/>
+            </memberdef>
+            <memberdef kind="function" id="gntfilesel_8h_1afe64e5bf75f214eb9cd85c4aa90e797a" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_file_sel_set_read_fn</definition>
+                <argsstring>(GntFileSel *sel, gboolean(*read_fn)(const char *path, GList **files, GError **error))
+                </argsstring>
+                <name>gnt_file_sel_set_read_fn</name>
+                <param>
+                    <type>
+                        <ref refid="gntfilesel_8h_1a1470a61097ed1a71796bcfaf07f62356" kindref="member">GntFileSel</ref>
+                        *
+                    </type>
+                    <declname>sel</declname>
+                </param>
+                <param>
+                    <type>gboolean(*)(const char *path, GList **files, GError **error)</type>
+                    <declname>read_fn</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Set custom functions to read the names of files.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>sel</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The file selector.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>read_fn</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The custom read function.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="200" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.c"
+                          bodystart="781" bodyend="784"/>
+            </memberdef>
+            <memberdef kind="function" id="gntfilesel_8h_1abaed312ea48334ad1dee69c8ff837dc7" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>
+                    <ref refid="gntfilesel_8h_1a859c7b1f80b0943a76ec37c821854a0c" kindref="member">GntFile</ref>
+                    *
+                </type>
+                <definition>GntFile* gnt_file_new</definition>
+                <argsstring>(const char *name, unsigned long size)</argsstring>
+                <name>gnt_file_new</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>name</declname>
+                </param>
+                <param>
+                    <type>unsigned long</type>
+                    <declname>size</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Create a new GntFile.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>name</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The name of the file.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>size</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The size of the file.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>The newly created GntFile.</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="210" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.c"
+                          bodystart="233" bodyend="240"/>
+            </memberdef>
+            <memberdef kind="function" id="gntfilesel_8h_1ab0694d0cf347c99bd2fe7435b68c2190" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>
+                    <ref refid="gntfilesel_8h_1a859c7b1f80b0943a76ec37c821854a0c" kindref="member">GntFile</ref>
+                    *
+                </type>
+                <definition>GntFile* gnt_file_new_dir</definition>
+                <argsstring>(const char *name)</argsstring>
+                <name>gnt_file_new_dir</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>name</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Create a new GntFile for a directory.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>name</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The name of the directory.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>The newly created GntFile.</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"
+                          line="219" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.c"
+                          bodystart="225" bodyend="231"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>File selector API</para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="5">
+                <highlight class="comment">/*</highlight>
+            </codeline>
+            <codeline lineno="6">
+                <highlight class="comment"><sp/>*<sp/>GNT<sp/>-<sp/>The<sp/>GLib<sp/>Ncurses<sp/>Toolkit
+                </highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="8">
+                <highlight class="comment"><sp/>*<sp/>GNT<sp/>is<sp/>the<sp/>legal<sp/>property<sp/>of<sp/>its<sp/>
+                    developers,<sp/>whose<sp/>names<sp/>are<sp/>too<sp/>numerous
+                </highlight>
+            </codeline>
+            <codeline lineno="9">
+                <highlight class="comment"><sp/>*<sp/>to<sp/>list<sp/>here.
+                    <sp/>
+                    <sp/>Please<sp/>refer<sp/>to<sp/>the<sp/>COPYRIGHT<sp/>file<sp/>distributed<sp/>with<sp/>this
+                </highlight>
+            </codeline>
+            <codeline lineno="10">
+                <highlight class="comment"><sp/>*<sp/>source<sp/>distribution.
+                </highlight>
+            </codeline>
+            <codeline lineno="11">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="12">
+                <highlight class="comment"><sp/>*<sp/>This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can
+                    <sp/>redistribute<sp/>it<sp/>and/or<sp/>modify
+                </highlight>
+            </codeline>
+            <codeline lineno="13">
+                <highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General
+                    <sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by
+                </highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version
+                    <sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or
+                </highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.
+                </highlight>
+            </codeline>
+            <codeline lineno="16">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="17">
+                <highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope
+                    <sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,
+                </highlight>
+            </codeline>
+            <codeline lineno="18">
+                <highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the
+                    <sp/>implied<sp/>warranty<sp/>of
+                </highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR
+                    <sp/>PURPOSE.
+                    <sp/>
+                    <sp/>See<sp/>the
+                </highlight>
+            </codeline>
+            <codeline lineno="20">
+                <highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>
+                    details.
+                </highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the
+                    <sp/>GNU<sp/>General<sp/>Public<sp/>License
+                </highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write
+                    <sp/>to<sp/>the<sp/>Free<sp/>Software
+                </highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth
+                    <sp/>Floor,<sp/>Boston,<sp/>MA
+                    <sp/>
+                    <sp/>02111-1301
+                    <sp/>
+                    <sp/>USA
+                </highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="comment"><sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#ifndef<sp/>GNT_FILE_SEL_H
+                </highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_FILE_SEL_H
+                </highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntwindow_8h" kindref="compound">
+                    gntwindow.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gnt_8h" kindref="compound">gnt.h</ref>
+                    &quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntcolors_8h" kindref="compound">
+                    gntcolors.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntkeys_8h" kindref="compound">
+                    gntkeys.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="35" refid="gntfilesel_8h_1ac110cc34d8efd0b7c5b16b2f3ba5540b" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_TYPE_FILE_SEL
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(gnt_file_sel_get_gtype())
+                </highlight>
+            </codeline>
+            <codeline lineno="36" refid="gntfilesel_8h_1ae4a1ec6920c12738a3c8bf2954e63286" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_FILE_SEL(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_INSTANCE_CAST((obj),<sp/>GNT_TYPE_FILE_SEL,<sp/>GntFileSel))
+                </highlight>
+            </codeline>
+            <codeline lineno="37" refid="gntfilesel_8h_1aec8fa89e95cad660053a6210052fda66" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_FILE_SEL_CLASS(klass)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_CLASS_CAST((klass),<sp/>GNT_TYPE_FILE_SEL,<sp/>GntFileSelClass))
+                </highlight>
+            </codeline>
+            <codeline lineno="38" refid="gntfilesel_8h_1a41fc87ec5dfd3efaadb4680edbdd313f" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_IS_FILE_SEL(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_INSTANCE_TYPE((obj),<sp/>GNT_TYPE_FILE_SEL))
+                </highlight>
+            </codeline>
+            <codeline lineno="39" refid="gntfilesel_8h_1a5075fbce608c391af82b69766e88f078" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_IS_FILE_SEL_CLASS(klass)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_CLASS_TYPE((klass),<sp/>GNT_TYPE_FILE_SEL))
+                </highlight>
+            </codeline>
+            <codeline lineno="40" refid="gntfilesel_8h_1a39721c7aee9d4516a0d24c932537ccd0" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_FILE_SEL_GET_CLASS(obj)<sp/>
+                    (G_TYPE_INSTANCE_GET_CLASS((obj),<sp/>GNT_TYPE_FILE_SEL,<sp/>GntFileSelClass))
+                </highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="42" refid="gntfilesel_8h_1a2a5eedadb8b6fb6cd4c162bba9215f0e" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_FILE_SEL_FLAGS(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_FILE_SEL(obj)-&gt;priv.flags)
+                </highlight>
+            </codeline>
+            <codeline lineno="43" refid="gntfilesel_8h_1a8f92752b165f1a6d661349181dc57ca4" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_FILE_SEL_SET_FLAGS(obj,<sp/>flags)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_FILE_SEL_FLAGS(obj)<sp/>|=<sp/>flags)
+                </highlight>
+            </codeline>
+            <codeline lineno="44" refid="gntfilesel_8h_1a475b559136012ee732d46b6550b71030" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_FILE_SEL_UNSET_FLAGS(obj,<sp/>flags)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_FILE_SEL_FLAGS(obj)<sp/>&amp;=<sp/>~(flags))
+                </highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="46" refid="gntfilesel_8h_1a1470a61097ed1a71796bcfaf07f62356" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_file_sel" kindref="compound">_GntFileSel</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_file_sel" kindref="compound">GntFileSel</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="47" refid="gntfilesel_8h_1a9b294e2539c0e10e8531ddf1f6658a79" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">_GntFileSelPriv
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntfilesel_8h_1a9b294e2539c0e10e8531ddf1f6658a79" kindref="member">GntFileSelPriv</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="48" refid="gntfilesel_8h_1a4fd7ac6567e44ce3583705e5467025d1" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_file_sel_class" kindref="compound">_GntFileSelClass</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_file_sel_class" kindref="compound">GntFileSelClass</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="49" refid="gntfilesel_8h_1a859c7b1f80b0943a76ec37c821854a0c" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_file" kindref="compound">_GntFile</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_file" kindref="compound">GntFile</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="51" refid="struct___gnt_file_sel" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_file_sel" kindref="compound">_GntFileSel</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="53" refid="struct___gnt_file_sel_1a0c4c5fb4c85b4024f07661f7d8801222" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_window" kindref="compound">GntWindow</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_file_sel_1a0c4c5fb4c85b4024f07661f7d8801222" kindref="member">parent</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="55" refid="struct___gnt_file_sel_1abcf774d63129c961dc11518b231a8518" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="struct___gnt_file_sel_1abcf774d63129c961dc11518b231a8518" kindref="member">
+                    dirs</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>list<sp/>of<sp/>files<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="56" refid="struct___gnt_file_sel_1ac369dfa898bda7f592b2927f153c9ab7" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="struct___gnt_file_sel_1ac369dfa898bda7f592b2927f153c9ab7" kindref="member">
+                    files</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>list<sp/>of<sp/>directories<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="57" refid="struct___gnt_file_sel_1a3fce88ebd4084ba2abd4e4f35b6de854" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="struct___gnt_file_sel_1a3fce88ebd4084ba2abd4e4f35b6de854" kindref="member">
+                    location</ref>;
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>location<sp/>entry<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="59" refid="struct___gnt_file_sel_1a3c2bc606b16ae0bc22699059b3873e32" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="struct___gnt_file_sel_1a3c2bc606b16ae0bc22699059b3873e32" kindref="member">
+                    select</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>select<sp/>button<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="60" refid="struct___gnt_file_sel_1af4a473bf995d5c01cd969997a47843dc" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="struct___gnt_file_sel_1af4a473bf995d5c01cd969997a47843dc" kindref="member">
+                    cancel</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>cancel<sp/>button<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="62" refid="struct___gnt_file_sel_1a22e917e348486f1469a6411c8a481141" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___gnt_file_sel_1a22e917e348486f1469a6411c8a481141"
+                                                     kindref="member">current</ref>;
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Full<sp/>path<sp/>of<sp/>the<sp/>current<sp/>location<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="63" refid="struct___gnt_file_sel_1ac2f6faa1de9c4fccd15d61eaa54485c9" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___gnt_file_sel_1ac2f6faa1de9c4fccd15d61eaa54485c9"
+                                                     kindref="member">suggest</ref>;
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Suggested<sp/>filename<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>XXX:<sp/>someone<sp/>should<sp/>make<sp/>these<sp/>useful<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="65" refid="struct___gnt_file_sel_1a893aec6ef536133c950ff9c7f75f82d0" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean
+                    <sp/>
+                    <ref refid="struct___gnt_file_sel_1a893aec6ef536133c950ff9c7f75f82d0" kindref="member">
+                        must_exist</ref>;
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Make<sp/>sure<sp/>the<sp/>selected<sp/>file<sp/>(the<sp/>name<sp/>
+                    entered<sp/>in<sp/>&apos;location&apos;)<sp/>exists<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="66" refid="struct___gnt_file_sel_1a6051914b60b69c4c95ed1575c55bef58" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean
+                    <sp/>
+                    <ref refid="struct___gnt_file_sel_1a6051914b60b69c4c95ed1575c55bef58" kindref="member">
+                        dirsonly</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Show<sp/>only<sp/>directories<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="67" refid="struct___gnt_file_sel_1aaf4ac78c2403041f395de17098170f10" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean
+                    <sp/>
+                    <ref refid="struct___gnt_file_sel_1aaf4ac78c2403041f395de17098170f10" kindref="member">
+                        multiselect</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="68" refid="struct___gnt_file_sel_1ade9ab0f42f12dab30724d3300df7ddc4" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*<ref refid="struct___gnt_file_sel_1ade9ab0f42f12dab30724d3300df7ddc4"
+                                         kindref="member">tags</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>List<sp/>of<sp/>tagged<sp/>files<sp/>when<sp/>multiselect<sp/>is<sp/>
+                    set<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="70" refid="struct___gnt_file_sel_1aa0b65284965f61348fe4cacaa0838781" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean<sp/>(*<ref refid="struct___gnt_file_sel_1aa0b65284965f61348fe4cacaa0838781"
+                                             kindref="member">read_fn</ref>)(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="namespacepietray_1ae6fc00af7c5b5a7c5f40ce6dc6b47d85"
+                                                     kindref="member">path</ref>,<sp/>GList<sp/>**<ref
+                        refid="struct___gnt_file_sel_1ac369dfa898bda7f592b2927f153c9ab7" kindref="member">files</ref>,
+                    <sp/>GError<sp/>**error);
+                </highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="73" refid="struct___gnt_file_sel_class" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_file_sel_class" kindref="compound">_GntFileSelClass</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="75" refid="struct___gnt_file_sel_class_1a804b47bf825d22c3a8d9979758ad9689"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_window_class" kindref="compound">GntWindowClass</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_file_sel_class_1a804b47bf825d22c3a8d9979758ad9689" kindref="member">
+                        parent</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="77" refid="struct___gnt_file_sel_class_1a1fa154d6f1fd17eb311fcca39b8e55bf"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_file_sel_class_1a1fa154d6f1fd17eb311fcca39b8e55bf"
+                                         kindref="member">file_selected</ref>)(
+                    <ref refid="struct___gnt_file_sel" kindref="compound">GntFileSel</ref>
+                    <sp/>*sel,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="namespacepietray_1ae6fc00af7c5b5a7c5f40ce6dc6b47d85"
+                                                     kindref="member">path</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*filename);
+                </highlight>
+            </codeline>
+            <codeline lineno="78" refid="struct___gnt_file_sel_class_1a89dfce3a9aa0299a7819f8a4b9df5cef"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_file_sel_class_1a89dfce3a9aa0299a7819f8a4b9df5cef"
+                                         kindref="member">gnt_reserved1</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="79" refid="struct___gnt_file_sel_class_1abc424f0d49c73831a72f061af6b0ce1d"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_file_sel_class_1abc424f0d49c73831a72f061af6b0ce1d"
+                                         kindref="member">gnt_reserved2</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="80" refid="struct___gnt_file_sel_class_1a1e0be0259f96a3bff95418925fe8163e"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_file_sel_class_1a1e0be0259f96a3bff95418925fe8163e"
+                                         kindref="member">gnt_reserved3</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="81" refid="struct___gnt_file_sel_class_1a3f7d85f4e8f04f18386922c69c245469"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_file_sel_class_1a3f7d85f4e8f04f18386922c69c245469"
+                                         kindref="member">gnt_reserved4</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="84" refid="gntfilesel_8h_1a5773af085a577f3ab98086cb7d97efdf" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">enum</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntfilesel_8h_1a5773af085a577f3ab98086cb7d97efdf" kindref="member">_GntFileType</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="86"
+                      refid="gntfilesel_8h_1a5773af085a577f3ab98086cb7d97efdfa239d45a5ee701e4a259f15d6ccbb3da7"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntfilesel_8h_1a5773af085a577f3ab98086cb7d97efdfa239d45a5ee701e4a259f15d6ccbb3da7"
+                         kindref="member">GNT_FILE_REGULAR</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="87"
+                      refid="gntfilesel_8h_1a5773af085a577f3ab98086cb7d97efdfaf9d5283339fe4a0eaf8745aa0074cb73"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntfilesel_8h_1a5773af085a577f3ab98086cb7d97efdfaf9d5283339fe4a0eaf8745aa0074cb73"
+                         kindref="member">GNT_FILE_DIR
+                    </ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal">}
+                    <sp/>
+                    <ref refid="gntfilesel_8h_1aff08a8e34e62839f1fab8b7249fcbd89" kindref="member">GntFileType</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="90" refid="struct___gnt_file" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_file" kindref="compound">_GntFile</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="92" refid="struct___gnt_file_1a6a315eab5902ef72dbd0860f22d48677" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___gnt_file_1a6a315eab5902ef72dbd0860f22d48677"
+                                                     kindref="member">fullpath</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="93" refid="struct___gnt_file_1afdac556c867ac406846efca7486eefa0" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___gnt_file_1afdac556c867ac406846efca7486eefa0"
+                                                     kindref="member">basename</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="94" refid="struct___gnt_file_1a38a0509f7a3cac4867b60e61cd49dbc1" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntfilesel_8h_1aff08a8e34e62839f1fab8b7249fcbd89" kindref="member">GntFileType</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_file_1a38a0509f7a3cac4867b60e61cd49dbc1" kindref="member">type</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="95" refid="struct___gnt_file_1a1e1268d164c38e4f8a4f4eb9058b0601" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">unsigned</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">long</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_file_1a1e1268d164c38e4f8a4f4eb9058b0601" kindref="member">size</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal">G_BEGIN_DECLS</highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="103">
+                <highlight class="normal">GType
+                    <sp/>
+                    <ref refid="gntfilesel_8c_1a0f14f9ee93e1044c12901bb388fd540f" kindref="member">
+                        gnt_file_sel_get_gtype</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="104">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="110">
+                <highlight class="normal">
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*
+                    <sp/>
+                    <ref refid="gntfilesel_8c_1ac30b20dab20063ec42d09b7666b05533" kindref="member">
+                        gnt_file_sel_new</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="111">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="120">
+                <highlight class="normal">gboolean
+                    <sp/>
+                    <ref refid="gntfilesel_8c_1ab0cc50d758c0198cef85dc30a0bb01a5" kindref="member">
+                        gnt_file_sel_set_current_location</ref>(
+                    <ref refid="struct___gnt_file_sel" kindref="compound">GntFileSel</ref>
+                    <sp/>*sel,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="namespacepietray_1ae6fc00af7c5b5a7c5f40ce6dc6b47d85"
+                                                     kindref="member">path</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="121">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="129">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntfilesel_8c_1a5843c9fc0b4629dac7fa5e92235a4afd" kindref="member">
+                        gnt_file_sel_set_dirs_only</ref>(
+                    <ref refid="struct___gnt_file_sel" kindref="compound">GntFileSel</ref>
+                    <sp/>*sel,<sp/>gboolean<sp/>dirs);
+                </highlight>
+            </codeline>
+            <codeline lineno="130">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="138">
+                <highlight class="normal">gboolean
+                    <sp/>
+                    <ref refid="gntfilesel_8c_1adcfdd5ae70df04c3dca8585ec2b30c15" kindref="member">
+                        gnt_file_sel_get_dirs_only</ref>(
+                    <ref refid="struct___gnt_file_sel" kindref="compound">GntFileSel</ref>
+                    <sp/>*sel);
+                </highlight>
+            </codeline>
+            <codeline lineno="139">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="146">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntfilesel_8c_1a1ff941acf0a60825c8c8eb091a42c9fc" kindref="member">
+                        gnt_file_sel_set_must_exist</ref>(
+                    <ref refid="struct___gnt_file_sel" kindref="compound">GntFileSel</ref>
+                    <sp/>*sel,<sp/>gboolean<sp/>must);
+                </highlight>
+            </codeline>
+            <codeline lineno="147">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="156">
+                <highlight class="normal">gboolean
+                    <sp/>
+                    <ref refid="gntfilesel_8c_1a8290c2d2e81423debfda283de9365065" kindref="member">
+                        gnt_file_sel_get_must_exist</ref>(
+                    <ref refid="struct___gnt_file_sel" kindref="compound">GntFileSel</ref>
+                    <sp/>*sel);
+                </highlight>
+            </codeline>
+            <codeline lineno="157">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="166">
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*
+                    <sp/>
+                    <ref refid="gntfilesel_8c_1a34caa54a3fc75e65f3f70a8618458e96" kindref="member">
+                        gnt_file_sel_get_selected_file</ref>(
+                    <ref refid="struct___gnt_file_sel" kindref="compound">GntFileSel</ref>
+                    <sp/>*sel);
+                </highlight>
+            </codeline>
+            <codeline lineno="167">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="176">
+                <highlight class="normal">GList<sp/>*
+                    <sp/>
+                    <ref refid="gntfilesel_8c_1a9cc6c3448cb135ba511afdec9ce9cb56" kindref="member">
+                        gnt_file_sel_get_selected_multi_files</ref>(
+                    <ref refid="struct___gnt_file_sel" kindref="compound">GntFileSel</ref>
+                    <sp/>*sel);
+                </highlight>
+            </codeline>
+            <codeline lineno="177">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="184">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntfilesel_8c_1aa1d142424d3d6bbea14bb0c8547e3443" kindref="member">
+                        gnt_file_sel_set_multi_select</ref>(
+                    <ref refid="struct___gnt_file_sel" kindref="compound">GntFileSel</ref>
+                    <sp/>*sel,<sp/>gboolean<sp/>set);
+                </highlight>
+            </codeline>
+            <codeline lineno="185">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="192">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntfilesel_8c_1a3e5e8eb484e4ad8a0430f36744129b0c" kindref="member">
+                        gnt_file_sel_set_suggested_filename</ref>(
+                    <ref refid="struct___gnt_file_sel" kindref="compound">GntFileSel</ref>
+                    <sp/>*sel,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*suggest);
+                </highlight>
+            </codeline>
+            <codeline lineno="193">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="200">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntfilesel_8c_1afe64e5bf75f214eb9cd85c4aa90e797a" kindref="member">
+                        gnt_file_sel_set_read_fn</ref>(
+                    <ref refid="struct___gnt_file_sel" kindref="compound">GntFileSel</ref>
+                    <sp/>*sel,<sp/>gboolean<sp/>(*read_fn)(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="namespacepietray_1ae6fc00af7c5b5a7c5f40ce6dc6b47d85"
+                                                     kindref="member">path</ref>,<sp/>GList<sp/>**files,<sp/>GError<sp/>
+                    **error));
+                </highlight>
+            </codeline>
+            <codeline lineno="201">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="210">
+                <highlight class="normal"><ref refid="struct___gnt_file" kindref="compound">GntFile</ref>*
+                    <sp/>
+                    <ref refid="gntfilesel_8c_1abaed312ea48334ad1dee69c8ff837dc7" kindref="member">gnt_file_new</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntbindable_8c_1a5ac083a645d964373f022d03df4849c8"
+                                                     kindref="member">name</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">unsigned</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">long</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="getopt_8c_1a439227feff9d7f55384e8780cfc2eb82" kindref="member">size</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="211">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="219">
+                <highlight class="normal"><ref refid="struct___gnt_file" kindref="compound">GntFile</ref>*
+                    <sp/>
+                    <ref refid="gntfilesel_8c_1ab0694d0cf347c99bd2fe7435b68c2190" kindref="member">
+                        gnt_file_new_dir</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntbindable_8c_1a5ac083a645d964373f022d03df4849c8"
+                                                     kindref="member">name</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="220">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="221">
+                <highlight class="normal">G_END_DECLS</highlight>
+            </codeline>
+            <codeline lineno="222">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="223">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>GNT_FILE_SEL_H<sp/>*/
+                </highlight>
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+            <codeline lineno="224">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntfilesel.h"/>
+    </compounddef>
+</doxygen>

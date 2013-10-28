@@ -1,0 +1,1680 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="lastlog_8c" kind="file">
+        <compoundname>lastlog.c</compoundname>
+        <includes local="yes">internal.h</includes>
+        <includes local="no">plugin.h</includes>
+        <includes local="no">version.h</includes>
+        <includes local="no">cmds.h</includes>
+        <includes refid="gnt_8h" local="no">gnt.h</includes>
+        <includes refid="gnttextview_8h" local="no">gnttextview.h</includes>
+        <includes refid="gntwindow_8h" local="no">gntwindow.h</includes>
+        <includes refid="gntconv_8h" local="no">gntconv.h</includes>
+        <includes refid="gntplugin_8h" local="no">gntplugin.h</includes>
+        <incdepgraph>
+            <node id="3312">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="3313" relation="include">
+                </childnode>
+                <childnode refid="3314" relation="include">
+                </childnode>
+            </node>
+            <node id="3320">
+                <label>gntmenuitem.h</label>
+                <link refid="gntmenuitem_8h"/>
+                <childnode refid="3304" relation="include">
+                </childnode>
+                <childnode refid="3309" relation="include">
+                </childnode>
+                <childnode refid="3318" relation="include">
+                </childnode>
+            </node>
+            <node id="3315">
+                <label>gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="3305" relation="include">
+                </childnode>
+                <childnode refid="3303" relation="include">
+                </childnode>
+                <childnode refid="3311" relation="include">
+                </childnode>
+                <childnode refid="3312" relation="include">
+                </childnode>
+            </node>
+            <node id="3318">
+                <label>gntmenu.h</label>
+                <link refid="gntmenu_8h"/>
+                <childnode refid="3319" relation="include">
+                </childnode>
+                <childnode refid="3311" relation="include">
+                </childnode>
+                <childnode refid="3312" relation="include">
+                </childnode>
+                <childnode refid="3320" relation="include">
+                </childnode>
+            </node>
+            <node id="3321">
+                <label>gntconv.h</label>
+                <link refid="gntconv_8h"/>
+                <childnode refid="3303" relation="include">
+                </childnode>
+                <childnode refid="3305" relation="include">
+                </childnode>
+                <childnode refid="3320" relation="include">
+                </childnode>
+                <childnode refid="3322" relation="include">
+                </childnode>
+            </node>
+            <node id="3314">
+                <label>term.h</label>
+            </node>
+            <node id="3323">
+                <label>gntplugin.h</label>
+                <link refid="gntplugin_8h"/>
+                <childnode refid="3303" relation="include">
+                </childnode>
+                <childnode refid="3300" relation="include">
+                </childnode>
+                <childnode refid="3324" relation="include">
+                </childnode>
+                <childnode refid="3325" relation="include">
+                </childnode>
+                <childnode refid="3326" relation="include">
+                </childnode>
+            </node>
+            <node id="3316">
+                <label>gntwindow.h</label>
+                <link refid="gntwindow_8h"/>
+                <childnode refid="3303" relation="include">
+                </childnode>
+                <childnode refid="3317" relation="include">
+                </childnode>
+                <childnode refid="3311" relation="include">
+                </childnode>
+                <childnode refid="3312" relation="include">
+                </childnode>
+                <childnode refid="3318" relation="include">
+                </childnode>
+            </node>
+            <node id="3313">
+                <label>curses.h</label>
+            </node>
+            <node id="3326">
+                <label>finch.h</label>
+                <link refid="finch_8h"/>
+                <childnode refid="3304" relation="include">
+                </childnode>
+            </node>
+            <node id="3299">
+                <label>internal.h</label>
+            </node>
+            <node id="3311">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="3304" relation="include">
+                </childnode>
+            </node>
+            <node id="3324">
+                <label>pluginpref.h</label>
+            </node>
+            <node id="3325">
+                <label>string.h</label>
+            </node>
+            <node id="3298">
+                <label>plugins/lastlog.c</label>
+                <link refid="lastlog.c"/>
+                <childnode refid="3299" relation="include">
+                </childnode>
+                <childnode refid="3300" relation="include">
+                </childnode>
+                <childnode refid="3301" relation="include">
+                </childnode>
+                <childnode refid="3302" relation="include">
+                </childnode>
+                <childnode refid="3303" relation="include">
+                </childnode>
+                <childnode refid="3315" relation="include">
+                </childnode>
+                <childnode refid="3316" relation="include">
+                </childnode>
+                <childnode refid="3321" relation="include">
+                </childnode>
+                <childnode refid="3323" relation="include">
+                </childnode>
+            </node>
+            <node id="3317">
+                <label>gntbox.h</label>
+                <link refid="gntbox_8h"/>
+                <childnode refid="3303" relation="include">
+                </childnode>
+                <childnode refid="3305" relation="include">
+                </childnode>
+            </node>
+            <node id="3300">
+                <label>plugin.h</label>
+            </node>
+            <node id="3305">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="3306" relation="include">
+                </childnode>
+                <childnode refid="3304" relation="include">
+                </childnode>
+                <childnode refid="3307" relation="include">
+                </childnode>
+                <childnode refid="3308" relation="include">
+                </childnode>
+            </node>
+            <node id="3310">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="3306" relation="include">
+                </childnode>
+                <childnode refid="3304" relation="include">
+                </childnode>
+                <childnode refid="3309" relation="include">
+                </childnode>
+            </node>
+            <node id="3304">
+                <label>glib.h</label>
+            </node>
+            <node id="3319">
+                <label>gnttree.h</label>
+                <link refid="gnttree_8h"/>
+                <childnode refid="3305" relation="include">
+                </childnode>
+                <childnode refid="3303" relation="include">
+                </childnode>
+                <childnode refid="3311" relation="include">
+                </childnode>
+                <childnode refid="3312" relation="include">
+                </childnode>
+                <childnode refid="3315" relation="include">
+                </childnode>
+            </node>
+            <node id="3308">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="3306" relation="include">
+                </childnode>
+                <childnode refid="3304" relation="include">
+                </childnode>
+                <childnode refid="3309" relation="include">
+                </childnode>
+                <childnode refid="3307" relation="include">
+                </childnode>
+            </node>
+            <node id="3302">
+                <label>cmds.h</label>
+            </node>
+            <node id="3307">
+                <label>ncurses.h</label>
+            </node>
+            <node id="3303">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="3304" relation="include">
+                </childnode>
+                <childnode refid="3305" relation="include">
+                </childnode>
+                <childnode refid="3310" relation="include">
+                </childnode>
+                <childnode refid="3311" relation="include">
+                </childnode>
+                <childnode refid="3312" relation="include">
+                </childnode>
+            </node>
+            <node id="3322">
+                <label>conversation.h</label>
+            </node>
+            <node id="3306">
+                <label>stdio.h</label>
+            </node>
+            <node id="3301">
+                <label>version.h</label>
+            </node>
+            <node id="3309">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="lastlog_8c_1a913f5012c22fe2adbf2c6753125536ca" prot="public" static="no">
+                <name>PLUGIN_STATIC_NAME</name>
+                <initializer>GntLastlog</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/plugins/lastlog.c"
+                          line="22" column="9"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/plugins/lastlog.c"
+                          bodystart="22" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="var">
+            <memberdef kind="variable" id="lastlog_8c_1a3b30f045ed9134597206d6318a479109" prot="public" static="yes"
+                       mutable="no">
+                <type>PurpleCmdId</type>
+                <definition>PurpleCmdId cmd</definition>
+                <argsstring></argsstring>
+                <name>cmd</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/plugins/lastlog.c"
+                          line="38" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/plugins/lastlog.c"
+                          bodystart="38" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="lastlog_8c_1a47a5a1d9605623b2fa36fc452a3b1230" prot="public" static="yes"
+                       mutable="no">
+                <type>PurplePluginInfo</type>
+                <definition>PurplePluginInfo info</definition>
+                <argsstring></argsstring>
+                <name>info</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/plugins/lastlog.c"
+                          line="111" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/plugins/lastlog.c"
+                          bodystart="111" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="lastlog_8c_1a5258b29c0db796d40a599c54065669e8" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>static gboolean window_kpress_cb</definition>
+                <argsstring>(GntWidget *wid, const char *key, GntTextView *view)</argsstring>
+                <name>window_kpress_cb</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>wid</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>key</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gnttextview_8h_1a0f0993c949fa79d7d2b1d128ca9000f3" kindref="member">GntTextView
+                        </ref>
+                        *
+                    </type>
+                    <declname>view</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/plugins/lastlog.c"
+                          line="41" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/plugins/lastlog.c"
+                          bodystart="41" bodyend="58"/>
+            </memberdef>
+            <memberdef kind="function" id="lastlog_8c_1a5642910e33ae508562c80539d7fc68ca" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>PurpleCmdRet</type>
+                <definition>static PurpleCmdRet lastlog_cb</definition>
+                <argsstring>(PurpleConversation *conv, const char *cmd, char **args, char **error, gpointer null)
+                </argsstring>
+                <name>lastlog_cb</name>
+                <param>
+                    <type>PurpleConversation *</type>
+                    <declname>conv</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>cmd</declname>
+                </param>
+                <param>
+                    <type>char **</type>
+                    <declname>args</declname>
+                </param>
+                <param>
+                    <type>char **</type>
+                    <declname>error</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>null</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/plugins/lastlog.c"
+                          line="61" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/plugins/lastlog.c"
+                          bodystart="61" bodyend="92"/>
+            </memberdef>
+            <memberdef kind="function" id="lastlog_8c_1abe9b3b48c5805d13681c5fc7132060cd" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>static gboolean plugin_load</definition>
+                <argsstring>(PurplePlugin *plugin)</argsstring>
+                <name>plugin_load</name>
+                <param>
+                    <type>PurplePlugin *</type>
+                    <declname>plugin</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/plugins/lastlog.c"
+                          line="95" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/plugins/lastlog.c"
+                          bodystart="95" bodyend="102"/>
+            </memberdef>
+            <memberdef kind="function" id="lastlog_8c_1adfac55f0b0ed6786700053a551c7d703" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>static gboolean plugin_unload</definition>
+                <argsstring>(PurplePlugin *plugin)</argsstring>
+                <name>plugin_unload</name>
+                <param>
+                    <type>PurplePlugin *</type>
+                    <declname>plugin</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/plugins/lastlog.c"
+                          line="105" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/plugins/lastlog.c"
+                          bodystart="105" bodyend="109"/>
+            </memberdef>
+            <memberdef kind="function" id="lastlog_8c_1a4e85f23d8c018ee555432db8eb9520e4" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void init_plugin</definition>
+                <argsstring>(PurplePlugin *plugin)</argsstring>
+                <name>init_plugin</name>
+                <param>
+                    <type>PurplePlugin *</type>
+                    <declname>plugin</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/plugins/lastlog.c"
+                          line="144" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/plugins/lastlog.c"
+                          bodystart="144" bodyend="146"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>Lastlog plugin for purple-text.</para>
+            <para>Copyright (C) 2006 Sadrul Habib Chowdhury
+                <ulink url="mailto:sadrul@users.sourceforge.net">sadrul@users.sourceforge.net</ulink>
+            </para>
+            <para>This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+                General Public License as published by the Free Software Foundation; either version 2 of the License, or
+                (at your option) any later version.
+            </para>
+            <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
+                the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public
+                License for more details.
+            </para>
+            <para>You should have received a copy of the GNU General Public License along with this program; if not,
+                write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02111-1301 USA
+            </para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="22">
+                <highlight class="preprocessor">#define<sp/>PLUGIN_STATIC_NAME
+                    <sp/>
+                    <sp/>GntLastlog
+                </highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;internal.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;plugin.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;version.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;cmds.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gnt_8h" kindref="compound">gnt.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gnttextview_8h" kindref="compound">
+                    gnttextview.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gntwindow_8h" kindref="compound">
+                    gntwindow.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gntconv_8h" kindref="compound">
+                    gntconv.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gntplugin_8h" kindref="compound">
+                    gntplugin.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>PurpleCmdId<sp/>cmd;
+                </highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>gboolean
+                </highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal">window_kpress_cb(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*wid,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*key,
+                    <sp/>
+                    <ref refid="struct___gnt_text_view" kindref="compound">GntTextView</ref>
+                    <sp/>*view)
+                </highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(key[0]<sp/>==<sp/>27)
+                </highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a9f1051b5041b0f49305a57079dce9f8f" kindref="member">GNT_KEY_DOWN</ref>)<sp/>
+                    ==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8c_1abe14d408a8c657fa9f5f707717e9e72f" kindref="member">
+                        gnt_text_view_scroll</ref>(view,<sp/>1);
+                </highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a7c9f2883e0da9aa877aa50dca3c9b7f3" kindref="member">GNT_KEY_UP</ref>)<sp/>==
+                    <sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8c_1abe14d408a8c657fa9f5f707717e9e72f" kindref="member">
+                        gnt_text_view_scroll</ref>(view,<sp/>-1);
+                </highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                    <ref refid="gntkeys_8h_1ac41fcbd7ddbe2b75727020bc46875d5c" kindref="member">GNT_KEY_PGDOWN</ref>)
+                    <sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8c_1abe14d408a8c657fa9f5f707717e9e72f" kindref="member">
+                        gnt_text_view_scroll</ref>(view,<sp/>wid-&gt;<ref
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height
+                    </ref>
+                    <sp/>-<sp/>2);
+                </highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(key,
+                    <sp/>
+                    <ref refid="gntkeys_8h_1ae6adb88682096b0de8f63153de464b69" kindref="member">GNT_KEY_PGUP</ref>)<sp/>
+                    ==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8c_1abe14d408a8c657fa9f5f707717e9e72f" kindref="member">
+                        gnt_text_view_scroll</ref>(view,<sp/>-(wid-&gt;<ref
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height
+                    </ref>
+                    <sp/>-<sp/>2));
+                </highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>FALSE;
+                </highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>FALSE;
+                </highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>PurpleCmdRet
+                </highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal">lastlog_cb(PurpleConversation<sp/>*conv,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*cmd,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>**args,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>**error,<sp/>gpointer<sp/>null)
+                </highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___finch_conv" kindref="compound">FinchConv</ref>
+                    <sp/>*ggconv<sp/>=<sp/>conv-&gt;ui_data;
+                </highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>**strings<sp/>=<sp/>g_strsplit(<ref
+                        refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW</ref>
+                    (ggconv-&gt;<ref refid="struct___finch_conv_1a6f9f9b30ca8fbff3a99ef9ed4ae483c3" kindref="member">
+                        tv</ref>)-&gt;string-&gt;str,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;\n&quot;</highlight>
+                <highlight class="normal">,<sp/>0);
+                </highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*win,<sp/>*<ref refid="gnttextview_8c_1a221a2db6d242cb297dde82bb9cca9858" kindref="member">
+                    tv</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>i,<sp/>j;
+                </highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>win<sp/>=
+                    <sp/>
+                    <ref refid="gntwindow_8c_1a15cd0ab3ace4f214e9baa867f4f4ea7f" kindref="member">gnt_window_new</ref>
+                    ();
+                </highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1a44429c371d6ea90f89d63a57cffabc66" kindref="member">gnt_box_set_title</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(win),<sp/>
+                    _(
+                </highlight>
+                <highlight class="stringliteral">&quot;Lastlog&quot;</highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>tv<sp/>=
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a3bdd397329f307fbdc41e776772bd316" kindref="member">
+                        gnt_text_view_new</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(win),<sp/>
+                    tv);
+                </highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1acbf324f0d58ea327e559829cf187def4" kindref="member">gnt_widget_show</ref>
+                    (win);
+                </highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>strings[i];<sp/>i++)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strstr(strings[i],<sp/>args[0])<sp/>!=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>**finds<sp/>=<sp/>g_strsplit(strings[i],<sp/>args[0],<sp/>0);
+                </highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(j<sp/>=<sp/>0;<sp/>finds[j];<sp/>j++)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="80">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(j)
+                </highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a491ccc844a5ec91e80108ecb40b105e7" kindref="member">
+                        gnt_text_view_append_text_with_flags</ref>(<ref
+                        refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW</ref>
+                    (tv),<sp/>args[0],
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44fb1f1c685640d25a63350923fd0359"
+                         kindref="member">GNT_TEXT_FLAG_BOLD</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a491ccc844a5ec91e80108ecb40b105e7" kindref="member">
+                        gnt_text_view_append_text_with_flags</ref>(<ref
+                        refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW</ref>
+                    (tv),<sp/>finds[j],
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44ca22374b4f5f6078f171aeb5f2e7b1"
+                         kindref="member">GNT_TEXT_FLAG_NORMAL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_strfreev(finds);
+                </highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a491ccc844a5ec91e80108ecb40b105e7" kindref="member">
+                        gnt_text_view_append_text_with_flags</ref>(<ref
+                        refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW</ref>
+                    (tv),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;\n&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44ca22374b4f5f6078f171aeb5f2e7b1"
+                         kindref="member">GNT_TEXT_FLAG_NORMAL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect(G_OBJECT(win),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;key_pressed&quot;</highlight>
+                <highlight class="normal">,<sp/>G_CALLBACK(window_kpress_cb),<sp/>tv);
+                </highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_strfreev(strings);
+                </highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>PURPLE_CMD_STATUS_OK;
+                </highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="93">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>gboolean
+                </highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal">plugin_load(PurplePlugin<sp/>*plugin)
+                </highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>cmd<sp/>=<sp/>purple_cmd_register(
+                </highlight>
+                <highlight class="stringliteral">&quot;lastlog&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;s&quot;</highlight>
+                <highlight class="normal">,<sp/>PURPLE_CMD_P_DEFAULT,
+                </highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PURPLE_CMD_FLAG_CHAT<sp/>|<sp/>PURPLE_CMD_FLAG_IM,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Translator<sp/>Note:<sp/>The<sp/>&quot;backlog&quot;<sp/>is<sp/>the
+                    <sp/>conversation<sp/>buffer/history.<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="100">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>lastlog_cb,<sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;lastlog:<sp/>Searches<sp/>for<sp/>a<sp/>substring<sp/>in<sp/>the
+                    <sp/>backlog.&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="101">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="102">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="103">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="104">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>gboolean
+                </highlight>
+            </codeline>
+            <codeline lineno="105">
+                <highlight class="normal">plugin_unload(PurplePlugin<sp/>*plugin)
+                </highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="107">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_cmd_unregister(cmd);
+                </highlight>
+            </codeline>
+            <codeline lineno="108">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="109">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="110">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="111">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>PurplePluginInfo<sp/>info<sp/>=
+                </highlight>
+            </codeline>
+            <codeline lineno="112">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="113">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PURPLE_PLUGIN_MAGIC,
+                </highlight>
+            </codeline>
+            <codeline lineno="114">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PURPLE_MAJOR_VERSION,
+                </highlight>
+            </codeline>
+            <codeline lineno="115">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PURPLE_MINOR_VERSION,
+                </highlight>
+            </codeline>
+            <codeline lineno="116">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PURPLE_PLUGIN_STANDARD,
+                </highlight>
+            </codeline>
+            <codeline lineno="117">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntplugin_8h_1a31fcf635fac18d79453f8b3a516be522" kindref="member">
+                        FINCH_PLUGIN_TYPE</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="118">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>0,
+                </highlight>
+            </codeline>
+            <codeline lineno="119">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="120">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PURPLE_PRIORITY_DEFAULT,
+                </highlight>
+            </codeline>
+            <codeline lineno="121">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;gntlastlog&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="122">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>N_(
+                </highlight>
+                <highlight class="stringliteral">&quot;GntLastlog&quot;</highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="123">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>DISPLAY_VERSION,
+                </highlight>
+            </codeline>
+            <codeline lineno="124">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>N_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Lastlog<sp/>plugin.&quot;
+                </highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="125">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>N_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Lastlog<sp/>plugin.&quot;
+                </highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="126">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Sadrul<sp/>H<sp/>Chowdhury<sp/>&lt;sadrul@users.sourceforge.net&gt;&quot;
+                </highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="127">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PURPLE_WEBSITE,
+                </highlight>
+            </codeline>
+            <codeline lineno="128">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>plugin_load,
+                </highlight>
+            </codeline>
+            <codeline lineno="129">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>plugin_unload,
+                </highlight>
+            </codeline>
+            <codeline lineno="130">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="131">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="132">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="133">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="134">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="135">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="136">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>padding<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="137">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="138">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="139">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="140">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>NULL
+                </highlight>
+            </codeline>
+            <codeline lineno="141">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="142">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="143">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="144">
+                <highlight class="normal">init_plugin(PurplePlugin<sp/>*plugin)
+                </highlight>
+            </codeline>
+            <codeline lineno="145">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="146">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="147">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="148">
+                <highlight class="normal">PURPLE_INIT_PLUGIN(<ref refid="lastlog_8c_1a913f5012c22fe2adbf2c6753125536ca"
+                                                                  kindref="member">PLUGIN_STATIC_NAME</ref>,<sp/>
+                    init_plugin,<sp/>info)
+                </highlight>
+            </codeline>
+            <codeline lineno="149">
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/plugins/lastlog.c"/>
+    </compounddef>
+</doxygen>

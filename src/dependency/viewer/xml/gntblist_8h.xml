@@ -1,0 +1,1331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntblist_8h" kind="file">
+        <compoundname>gntblist.h</compoundname>
+        <includes local="yes">blist.h</includes>
+        <includes refid="gnttree_8h" local="yes">gnttree.h</includes>
+        <includedby refid="gntaccount_8c" local="yes">gntaccount.c</includedby>
+        <includedby refid="gntblist_8c" local="yes">gntblist.c</includedby>
+        <includedby refid="gntconv_8c" local="yes">gntconv.c</includedby>
+        <includedby refid="gntui_8c" local="yes">gntui.c</includedby>
+        <includedby refid="grouping_8c" local="yes">plugins/grouping.c</includedby>
+        <incdepgraph>
+            <node id="197">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="198" relation="include">
+                </childnode>
+                <childnode refid="199" relation="include">
+                </childnode>
+            </node>
+            <node id="200">
+                <label>gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="188" relation="include">
+                </childnode>
+                <childnode refid="194" relation="include">
+                </childnode>
+                <childnode refid="196" relation="include">
+                </childnode>
+                <childnode refid="197" relation="include">
+                </childnode>
+            </node>
+            <node id="186">
+                <label>blist.h</label>
+            </node>
+            <node id="199">
+                <label>term.h</label>
+            </node>
+            <node id="198">
+                <label>curses.h</label>
+            </node>
+            <node id="196">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="190" relation="include">
+                </childnode>
+            </node>
+            <node id="188">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="189" relation="include">
+                </childnode>
+                <childnode refid="190" relation="include">
+                </childnode>
+                <childnode refid="191" relation="include">
+                </childnode>
+                <childnode refid="192" relation="include">
+                </childnode>
+            </node>
+            <node id="195">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="189" relation="include">
+                </childnode>
+                <childnode refid="190" relation="include">
+                </childnode>
+                <childnode refid="193" relation="include">
+                </childnode>
+            </node>
+            <node id="190">
+                <label>glib.h</label>
+            </node>
+            <node id="187">
+                <label>gnttree.h</label>
+                <link refid="gnttree_8h"/>
+                <childnode refid="188" relation="include">
+                </childnode>
+                <childnode refid="194" relation="include">
+                </childnode>
+                <childnode refid="196" relation="include">
+                </childnode>
+                <childnode refid="197" relation="include">
+                </childnode>
+                <childnode refid="200" relation="include">
+                </childnode>
+            </node>
+            <node id="192">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="189" relation="include">
+                </childnode>
+                <childnode refid="190" relation="include">
+                </childnode>
+                <childnode refid="193" relation="include">
+                </childnode>
+                <childnode refid="191" relation="include">
+                </childnode>
+            </node>
+            <node id="191">
+                <label>ncurses.h</label>
+            </node>
+            <node id="194">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="190" relation="include">
+                </childnode>
+                <childnode refid="188" relation="include">
+                </childnode>
+                <childnode refid="195" relation="include">
+                </childnode>
+                <childnode refid="196" relation="include">
+                </childnode>
+                <childnode refid="197" relation="include">
+                </childnode>
+            </node>
+            <node id="185">
+                <label>gntblist.h</label>
+                <link refid="gntblist.h"/>
+                <childnode refid="186" relation="include">
+                </childnode>
+                <childnode refid="187" relation="include">
+                </childnode>
+            </node>
+            <node id="189">
+                <label>stdio.h</label>
+            </node>
+            <node id="193">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="205">
+                <label>gntui.c</label>
+                <link refid="gntui_8c"/>
+            </node>
+            <node id="204">
+                <label>gntconv.c</label>
+                <link refid="gntconv_8c"/>
+            </node>
+            <node id="202">
+                <label>gntaccount.c</label>
+                <link refid="gntaccount_8c"/>
+            </node>
+            <node id="203">
+                <label>gntblist.c</label>
+                <link refid="gntblist_8c"/>
+            </node>
+            <node id="201">
+                <label>gntblist.h</label>
+                <link refid="gntblist.h"/>
+                <childnode refid="202" relation="include">
+                </childnode>
+                <childnode refid="203" relation="include">
+                </childnode>
+                <childnode refid="204" relation="include">
+                </childnode>
+                <childnode refid="205" relation="include">
+                </childnode>
+                <childnode refid="206" relation="include">
+                </childnode>
+            </node>
+            <node id="206">
+                <label>plugins/grouping.c</label>
+                <link refid="grouping_8c"/>
+            </node>
+        </invincdepgraph>
+        <innerclass refid="struct_finch_blist_manager" prot="public">FinchBlistManager</innerclass>
+        <sectiondef kind="user-defined">
+            <memberdef kind="function" id="gntblist_8h_1a37629e4a5b976524e89e8648ab87fd8e" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>PurpleBlistUiOps *</type>
+                <definition>PurpleBlistUiOps* finch_blist_get_ui_ops</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_blist_get_ui_ops</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Get the ui-functions.</para>
+                    <para>
+                        <simplesect kind="return">
+                            <para>The PurpleBlistUiOps structure populated with the appropriate functions.</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.h" line="58"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.c"
+                          bodystart="1034" bodyend="1037"/>
+            </memberdef>
+            <memberdef kind="function" id="gntblist_8h_1a0021571361fd29a1e1ac67c4a01c4d81" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_blist_init</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_blist_init</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Perform necessary initializations.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.h" line="63"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.c"
+                          bodystart="2185" bodyend="2230"/>
+            </memberdef>
+            <memberdef kind="function" id="gntblist_8h_1a4411b5f42e4ca89344412ae0b6fcc0c4" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_blist_uninit</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_blist_uninit</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Perform necessary uninitializations.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.h" line="68"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.c"
+                          bodystart="3208" bodyend="3210"/>
+            </memberdef>
+            <memberdef kind="function" id="gntblist_8h_1aed055aa66d0615023b7b7c94f3628178" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_blist_show</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_blist_show</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Show the buddy list.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.h" line="73"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.c"
+                          bodystart="3101" bodyend="3104"/>
+            </memberdef>
+            <memberdef kind="function" id="gntblist_8h_1ae96ed04ea35b4fbf83e8eb01a685ee6d" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>gboolean finch_blist_get_position</definition>
+                <argsstring>(int *x, int *y)</argsstring>
+                <name>finch_blist_get_position</name>
+                <param>
+                    <type>int *</type>
+                    <declname>x</declname>
+                </param>
+                <param>
+                    <type>int *</type>
+                    <declname>y</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Get the position of the buddy list.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>x</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The x-coordinate is set here if not @ NULL.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>y</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The y-coordinate is set here if not<computeroutput>NULL</computeroutput>.
+                                    </para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>Returns
+                                <computeroutput>TRUE</computeroutput>
+                                if the values were set,
+                                <computeroutput>FALSE</computeroutput>
+                                otherwise.
+                            </para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.h" line="83"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.c"
+                          bodystart="3212" bodyend="3218"/>
+            </memberdef>
+            <memberdef kind="function" id="gntblist_8h_1a17e46176c14eed80e5d1ac7bc937f68b" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_blist_set_position</definition>
+                <argsstring>(int x, int y)</argsstring>
+                <name>finch_blist_set_position</name>
+                <param>
+                    <type>int</type>
+                    <declname>x</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>y</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Set the position of the buddy list.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>x</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The x-coordinate of the buddy list.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>y</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The y-coordinate of the buddy list.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.h" line="91"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.c"
+                          bodystart="3220" bodyend="3223"/>
+            </memberdef>
+            <memberdef kind="function" id="gntblist_8h_1a671aa43ad47a289bca5d4099282420f6" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>gboolean finch_blist_get_size</definition>
+                <argsstring>(int *width, int *height)</argsstring>
+                <name>finch_blist_get_size</name>
+                <param>
+                    <type>int *</type>
+                    <declname>width</declname>
+                </param>
+                <param>
+                    <type>int *</type>
+                    <declname>height</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Get the size of the buddy list.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>width</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The width is set here if not @ NULL.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>height</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The height is set here if not<computeroutput>NULL</computeroutput>.
+                                    </para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>Returns
+                                <computeroutput>TRUE</computeroutput>
+                                if the values were set,
+                                <computeroutput>FALSE</computeroutput>
+                                otherwise.
+                            </para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.h" line="101"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.c"
+                          bodystart="3225" bodyend="3231"/>
+            </memberdef>
+            <memberdef kind="function" id="gntblist_8h_1a5577efb6c224b2a55e21d50779c789cc" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_blist_set_size</definition>
+                <argsstring>(int width, int height)</argsstring>
+                <name>finch_blist_set_size</name>
+                <param>
+                    <type>int</type>
+                    <declname>width</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>height</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Set the size of the buddy list.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>width</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The width of the buddy list.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>height</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The height of the buddy list.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.h" line="109"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.c"
+                          bodystart="3233" bodyend="3236"/>
+            </memberdef>
+            <memberdef kind="function" id="gntblist_8h_1a3665fd98b87959b2f4a240ac7d9a429d" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gpointer</type>
+                <definition>gpointer finch_retrieve_user_info</definition>
+                <argsstring>(PurpleConnection *conn, const char *name)</argsstring>
+                <name>finch_retrieve_user_info</name>
+                <param>
+                    <type>PurpleConnection *</type>
+                    <declname>conn</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>name</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Get information about a user. Show immediate feedback.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>conn</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The connection to get information fro</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>name</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The user to get information about.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>Returns the ui-handle for the userinfo notification.</para>
+                        </simplesect>
+                        <simplesect kind="since">
+                            <para>2.1.0</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.h" line="121"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.c"
+                          bodystart="1267" bodyend="1277"/>
+            </memberdef>
+            <memberdef kind="function" id="gntblist_8h_1a9b9ed4d3bfcc57d905f92037f6d26858" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>
+                    <ref refid="gnttree_8h_1a0f4d875c2da6fc22408cdecbcc3f053b" kindref="member">GntTree</ref>
+                    *
+                </type>
+                <definition>GntTree* finch_blist_get_tree</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_blist_get_tree</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Get the tree list of the buddy list.
+                        <simplesect kind="return">
+                            <para>The GntTree widget.</para>
+                        </simplesect>
+                        <simplesect kind="since">
+                            <para>2.4.0</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.h" line="128"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.c"
+                          bodystart="3272" bodyend="3275"/>
+            </memberdef>
+            <memberdef kind="function" id="gntblist_8h_1aa8504532a7dc13e5c413bfc8bc477de7" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_blist_install_manager</definition>
+                <argsstring>(const FinchBlistManager *manager)</argsstring>
+                <name>finch_blist_install_manager</name>
+                <param>
+                    <type>const
+                        <ref refid="struct_finch_blist_manager" kindref="compound">FinchBlistManager</ref>
+                        *
+                    </type>
+                    <declname>manager</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Add an alternate buddy list manager.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>manager</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The alternate buddylist manager.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="since">
+                            <para>2.4.0</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.h" line="136"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.c"
+                          bodystart="3238" bodyend="3246"/>
+            </memberdef>
+            <memberdef kind="function" id="gntblist_8h_1a60646f88e8e5dff99d43e03d05237a91" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_blist_uninstall_manager</definition>
+                <argsstring>(const FinchBlistManager *manager)</argsstring>
+                <name>finch_blist_uninstall_manager</name>
+                <param>
+                    <type>const
+                        <ref refid="struct_finch_blist_manager" kindref="compound">FinchBlistManager</ref>
+                        *
+                    </type>
+                    <declname>manager</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Remove an alternate buddy list manager.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>manager</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The buddy list manager to remove.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="since">
+                            <para>2.4.0</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.h" line="144"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.c"
+                          bodystart="3248" bodyend="3256"/>
+            </memberdef>
+            <memberdef kind="function" id="gntblist_8h_1ad5da41a97df3e772a2c6f4113a717e85" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>
+                    <ref refid="struct_finch_blist_manager" kindref="compound">FinchBlistManager</ref>
+                    *
+                </type>
+                <definition>FinchBlistManager* finch_blist_manager_find</definition>
+                <argsstring>(const char *id)</argsstring>
+                <name>finch_blist_manager_find</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>id</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Find a buddy list manager.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>id</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The identifier for the desired buddy list manager.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>The manager with the requested identifier, if available.
+                                <computeroutput>NULL</computeroutput>
+                                otherwise.
+                            </para>
+                        </simplesect>
+                        <simplesect kind="since">
+                            <para>2.4.0</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.h" line="154"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.c"
+                          bodystart="3258" bodyend="3270"/>
+            </memberdef>
+            <memberdef kind="function" id="gntblist_8h_1aedb24691a23ee59983ea3f047ed2bf9d" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_blist_manager_add_node</definition>
+                <argsstring>(PurpleBlistNode *node)</argsstring>
+                <name>finch_blist_manager_add_node</name>
+                <param>
+                    <type>PurpleBlistNode *</type>
+                    <declname>node</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Request the active buddy list manager to add a node.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>node</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The node to add</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="since">
+                            <para>2.4.0</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.h" line="162"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.c"
+                          bodystart="486" bodyend="489"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>GNT BuddyList API</para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="6">
+                <highlight class="comment">/*<sp/>finch
+                </highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="8">
+                <highlight class="comment"><sp/>*<sp/>Finch<sp/>is<sp/>the<sp/>legal<sp/>property<sp/>of<sp/>its<sp/>
+                    developers,<sp/>whose<sp/>names<sp/>are<sp/>too<sp/>numerous
+                </highlight>
+            </codeline>
+            <codeline lineno="9">
+                <highlight class="comment"><sp/>*<sp/>to<sp/>list<sp/>here.
+                    <sp/>
+                    <sp/>Please<sp/>refer<sp/>to<sp/>the<sp/>COPYRIGHT<sp/>file<sp/>distributed<sp/>with<sp/>this
+                </highlight>
+            </codeline>
+            <codeline lineno="10">
+                <highlight class="comment"><sp/>*<sp/>source<sp/>distribution.
+                </highlight>
+            </codeline>
+            <codeline lineno="11">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="12">
+                <highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can
+                    <sp/>redistribute<sp/>it<sp/>and/or<sp/>modify
+                </highlight>
+            </codeline>
+            <codeline lineno="13">
+                <highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General
+                    <sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by
+                </highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version
+                    <sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or
+                </highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.
+                </highlight>
+            </codeline>
+            <codeline lineno="16">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="17">
+                <highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope
+                    <sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,
+                </highlight>
+            </codeline>
+            <codeline lineno="18">
+                <highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the
+                    <sp/>implied<sp/>warranty<sp/>of
+                </highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR
+                    <sp/>PURPOSE.
+                    <sp/>
+                    <sp/>See<sp/>the
+                </highlight>
+            </codeline>
+            <codeline lineno="20">
+                <highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>
+                    details.
+                </highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the
+                    <sp/>GNU<sp/>General<sp/>Public<sp/>License
+                </highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write
+                    <sp/>to<sp/>the<sp/>Free<sp/>Software
+                </highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth
+                    <sp/>Floor,<sp/>Boston,<sp/>MA
+                    <sp/>
+                    <sp/>02111-1301
+                    <sp/>
+                    <sp/>USA
+                </highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="comment"><sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#ifndef<sp/>_GNT_BLIST_H
+                </highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>_GNT_BLIST_H
+                </highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;blist.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gnttree_8h" kindref="compound">
+                    gnttree.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/**********************************************************************
+                </highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="comment"><sp/>*<sp/>@name<sp/>GNT<sp/>BuddyList<sp/>API
+                </highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="comment"><sp/>**********************************************************************/
+                </highlight>
+            </codeline>
+            <codeline lineno="41" refid="struct_finch_blist_manager" refkind="compound">
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="43" refid="struct_finch_blist_manager_1aeffa2f0815ce90fecbda9aac199143db"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref
+                        refid="struct_finch_blist_manager_1aeffa2f0815ce90fecbda9aac199143db" kindref="member">id</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="44" refid="struct_finch_blist_manager_1a8f8f80d37794cde9472343e4487ba3eb"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref
+                        refid="struct_finch_blist_manager_1a8f8f80d37794cde9472343e4487ba3eb" kindref="member">
+                    name</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="45" refid="struct_finch_blist_manager_1a2d01c3e224b6df9e5e4ffb0134021fb8"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean<sp/>(*init)(void);
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="46" refid="struct_finch_blist_manager_1a1fd34c041a4519ab53e8c736ab75d4c3"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean<sp/>(*uninit)(void);
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="47" refid="struct_finch_blist_manager_1af2ea0c548552011bcf5f84b7e76da8d6"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean<sp/>(*can_add_node)(PurpleBlistNode<sp/>*node);
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="48" refid="struct_finch_blist_manager_1ae50328e95232b5547247a7fa22e214b6"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gpointer<sp/>(*find_parent)(PurpleBlistNode<sp/>*node);
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="49" refid="struct_finch_blist_manager_1abfc6697aa75b8344f1073be14b01be0b"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean<sp/>(*create_tooltip)(gpointer<sp/>selected_row,<sp/>GString<sp/>**body,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>**title);
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="50" refid="struct_finch_blist_manager_1a5312aa7e8a3a0dd5e3d012edcff1c260"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gpointer<sp/>reserved[4];
+                </highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal">}
+                    <sp/>
+                    <ref refid="struct_finch_blist_manager" kindref="compound">FinchBlistManager</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal">PurpleBlistUiOps<sp/>*
+                    <sp/>
+                    <ref refid="gntblist_8c_1a0b38556a578f05f667c96a645de1dc9c" kindref="member">
+                        finch_blist_get_ui_ops</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntblist_8c_1a8e2750b3c707aa5b9ac092595473508b" kindref="member">finch_blist_init</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntblist_8c_1afcaa5b37165b1eb217e90627503a1487" kindref="member">
+                        finch_blist_uninit</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntblist_8c_1a1776f6c92b01756e2c15cce8c00f976d" kindref="member">finch_blist_show</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal">gboolean
+                    <sp/>
+                    <ref refid="gntblist_8c_1ae96ed04ea35b4fbf83e8eb01a685ee6d" kindref="member">
+                        finch_blist_get_position</ref>(
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>*<ref refid="jquery_8js_1a4c3eadaa5164016d2c340d495fc6e55e"
+                                                     kindref="member">x</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>*y);
+                </highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntblist_8c_1a17e46176c14eed80e5d1ac7bc937f68b" kindref="member">
+                        finch_blist_set_position</ref>(
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="jquery_8js_1a4c3eadaa5164016d2c340d495fc6e55e" kindref="member">x</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>y);
+                </highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="101">
+                <highlight class="normal">gboolean
+                    <sp/>
+                    <ref refid="gntblist_8c_1a671aa43ad47a289bca5d4099282420f6" kindref="member">
+                        finch_blist_get_size</ref>(
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>*width,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>*height);
+                </highlight>
+            </codeline>
+            <codeline lineno="102">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="109">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntblist_8c_1a5577efb6c224b2a55e21d50779c789cc" kindref="member">
+                        finch_blist_set_size</ref>(
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>width,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>height);
+                </highlight>
+            </codeline>
+            <codeline lineno="110">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="121">
+                <highlight class="normal">gpointer
+                    <sp/>
+                    <ref refid="gntblist_8c_1a3665fd98b87959b2f4a240ac7d9a429d" kindref="member">
+                        finch_retrieve_user_info</ref>(PurpleConnection<sp/>*conn,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntbindable_8c_1a5ac083a645d964373f022d03df4849c8"
+                                                     kindref="member">name</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="122">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="128">
+                <highlight class="normal">
+                    <ref refid="struct___gnt_tree" kindref="compound">GntTree</ref>
+                    <sp/>*
+                    <sp/>
+                    <ref refid="gntblist_8c_1a9b9ed4d3bfcc57d905f92037f6d26858" kindref="member">
+                        finch_blist_get_tree</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="129">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="136">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntblist_8c_1aa8504532a7dc13e5c413bfc8bc477de7" kindref="member">
+                        finch_blist_install_manager</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct_finch_blist_manager" kindref="compound">FinchBlistManager</ref>
+                    <sp/>*manager);
+                </highlight>
+            </codeline>
+            <codeline lineno="137">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="144">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntblist_8c_1a60646f88e8e5dff99d43e03d05237a91" kindref="member">
+                        finch_blist_uninstall_manager</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct_finch_blist_manager" kindref="compound">FinchBlistManager</ref>
+                    <sp/>*manager);
+                </highlight>
+            </codeline>
+            <codeline lineno="145">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="154">
+                <highlight class="normal">
+                    <ref refid="struct_finch_blist_manager" kindref="compound">FinchBlistManager</ref>
+                    <sp/>*
+                    <sp/>
+                    <ref refid="gntblist_8c_1ad5da41a97df3e772a2c6f4113a717e85" kindref="member">
+                        finch_blist_manager_find</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*
+                </highlight>
+                <highlight class="keywordtype">id</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="155">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="162">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntblist_8c_1aedb24691a23ee59983ea3f047ed2bf9d" kindref="member">
+                        finch_blist_manager_add_node</ref>(PurpleBlistNode<sp/>*node);
+                </highlight>
+            </codeline>
+            <codeline lineno="163">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="166">
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+        </programlisting>
+        <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntblist.h"/>
+    </compounddef>
+</doxygen>

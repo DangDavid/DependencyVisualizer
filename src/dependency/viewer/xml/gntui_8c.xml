@@ -1,0 +1,1436 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntui_8c" kind="file">
+        <compoundname>gntui.c</compoundname>
+        <includes refid="finch_8h" local="yes">finch.h</includes>
+        <includes local="no">internal.h</includes>
+        <includes refid="gntui_8h" local="yes">gntui.h</includes>
+        <includes refid="gntaccount_8h" local="yes">gntaccount.h</includes>
+        <includes refid="gntblist_8h" local="yes">gntblist.h</includes>
+        <includes refid="gntcertmgr_8h" local="yes">gntcertmgr.h</includes>
+        <includes refid="gntconn_8h" local="yes">gntconn.h</includes>
+        <includes refid="gntconv_8h" local="yes">gntconv.h</includes>
+        <includes refid="gntdebug_8h" local="yes">gntdebug.h</includes>
+        <includes refid="gntft_8h" local="yes">gntft.h</includes>
+        <includes refid="gntlog_8h" local="yes">gntlog.h</includes>
+        <includes refid="gntmedia_8h" local="yes">gntmedia.h</includes>
+        <includes refid="gntnotify_8h" local="yes">gntnotify.h</includes>
+        <includes refid="gntplugin_8h" local="yes">gntplugin.h</includes>
+        <includes refid="gntpounce_8h" local="yes">gntpounce.h</includes>
+        <includes refid="gntprefs_8h" local="yes">gntprefs.h</includes>
+        <includes refid="gntrequest_8h" local="yes">gntrequest.h</includes>
+        <includes refid="gntroomlist_8h" local="yes">gntroomlist.h</includes>
+        <includes refid="gntstatus_8h" local="yes">gntstatus.h</includes>
+        <includes refid="gntsound_8h" local="yes">gntsound.h</includes>
+        <includes local="no">prefs.h</includes>
+        <incdepgraph>
+            <node id="903">
+                <label>notify.h</label>
+            </node>
+            <node id="895">
+                <label>gntdebug.h</label>
+                <link refid="gntdebug_8h"/>
+                <childnode refid="896" relation="include">
+                </childnode>
+            </node>
+            <node id="866">
+                <label>gntui.c</label>
+                <link refid="gntui.c"/>
+                <childnode refid="867" relation="include">
+                </childnode>
+                <childnode refid="869" relation="include">
+                </childnode>
+                <childnode refid="870" relation="include">
+                </childnode>
+                <childnode refid="882" relation="include">
+                </childnode>
+                <childnode refid="884" relation="include">
+                </childnode>
+                <childnode refid="888" relation="include">
+                </childnode>
+                <childnode refid="889" relation="include">
+                </childnode>
+                <childnode refid="891" relation="include">
+                </childnode>
+                <childnode refid="895" relation="include">
+                </childnode>
+                <childnode refid="897" relation="include">
+                </childnode>
+                <childnode refid="899" relation="include">
+                </childnode>
+                <childnode refid="901" relation="include">
+                </childnode>
+                <childnode refid="902" relation="include">
+                </childnode>
+                <childnode refid="904" relation="include">
+                </childnode>
+                <childnode refid="908" relation="include">
+                </childnode>
+                <childnode refid="910" relation="include">
+                </childnode>
+                <childnode refid="911" relation="include">
+                </childnode>
+                <childnode refid="913" relation="include">
+                </childnode>
+                <childnode refid="915" relation="include">
+                </childnode>
+                <childnode refid="918" relation="include">
+                </childnode>
+                <childnode refid="920" relation="include">
+                </childnode>
+            </node>
+            <node id="870">
+                <label>gntui.h</label>
+                <link refid="gntui_8h"/>
+                <childnode refid="871" relation="include">
+                </childnode>
+            </node>
+            <node id="879">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="880" relation="include">
+                </childnode>
+                <childnode refid="881" relation="include">
+                </childnode>
+            </node>
+            <node id="892">
+                <label>gntmenuitem.h</label>
+                <link refid="gntmenuitem_8h"/>
+                <childnode refid="868" relation="include">
+                </childnode>
+                <childnode refid="876" relation="include">
+                </childnode>
+                <childnode refid="893" relation="include">
+                </childnode>
+            </node>
+            <node id="908">
+                <label>gntpounce.h</label>
+                <link refid="gntpounce_8h"/>
+                <childnode refid="909" relation="include">
+                </childnode>
+            </node>
+            <node id="914">
+                <label>roomlist.h</label>
+            </node>
+            <node id="912">
+                <label>request.h</label>
+            </node>
+            <node id="887">
+                <label>gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="872" relation="include">
+                </childnode>
+                <childnode refid="871" relation="include">
+                </childnode>
+                <childnode refid="878" relation="include">
+                </childnode>
+                <childnode refid="879" relation="include">
+                </childnode>
+            </node>
+            <node id="893">
+                <label>gntmenu.h</label>
+                <link refid="gntmenu_8h"/>
+                <childnode refid="886" relation="include">
+                </childnode>
+                <childnode refid="878" relation="include">
+                </childnode>
+                <childnode refid="879" relation="include">
+                </childnode>
+                <childnode refid="892" relation="include">
+                </childnode>
+            </node>
+            <node id="885">
+                <label>blist.h</label>
+            </node>
+            <node id="891">
+                <label>gntconv.h</label>
+                <link refid="gntconv_8h"/>
+                <childnode refid="871" relation="include">
+                </childnode>
+                <childnode refid="872" relation="include">
+                </childnode>
+                <childnode refid="892" relation="include">
+                </childnode>
+                <childnode refid="894" relation="include">
+                </childnode>
+            </node>
+            <node id="881">
+                <label>term.h</label>
+            </node>
+            <node id="904">
+                <label>gntplugin.h</label>
+                <link refid="gntplugin_8h"/>
+                <childnode refid="871" relation="include">
+                </childnode>
+                <childnode refid="905" relation="include">
+                </childnode>
+                <childnode refid="906" relation="include">
+                </childnode>
+                <childnode refid="907" relation="include">
+                </childnode>
+                <childnode refid="867" relation="include">
+                </childnode>
+            </node>
+            <node id="889">
+                <label>gntconn.h</label>
+                <link refid="gntconn_8h"/>
+                <childnode refid="890" relation="include">
+                </childnode>
+            </node>
+            <node id="900">
+                <label>log.h</label>
+            </node>
+            <node id="898">
+                <label>ft.h</label>
+            </node>
+            <node id="883">
+                <label>account.h</label>
+            </node>
+            <node id="897">
+                <label>gntft.h</label>
+                <link refid="gntft_8h"/>
+                <childnode refid="898" relation="include">
+                </childnode>
+            </node>
+            <node id="880">
+                <label>curses.h</label>
+            </node>
+            <node id="917">
+                <label>savedstatuses.h</label>
+            </node>
+            <node id="867">
+                <label>finch.h</label>
+                <link refid="finch_8h"/>
+                <childnode refid="868" relation="include">
+                </childnode>
+            </node>
+            <node id="869">
+                <label>internal.h</label>
+            </node>
+            <node id="913">
+                <label>gntroomlist.h</label>
+                <link refid="gntroomlist_8h"/>
+                <childnode refid="914" relation="include">
+                </childnode>
+            </node>
+            <node id="902">
+                <label>gntnotify.h</label>
+                <link refid="gntnotify_8h"/>
+                <childnode refid="903" relation="include">
+                </childnode>
+            </node>
+            <node id="878">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="868" relation="include">
+                </childnode>
+            </node>
+            <node id="906">
+                <label>pluginpref.h</label>
+            </node>
+            <node id="915">
+                <label>gntstatus.h</label>
+                <link refid="gntstatus_8h"/>
+                <childnode refid="916" relation="include">
+                </childnode>
+                <childnode refid="917" relation="include">
+                </childnode>
+            </node>
+            <node id="918">
+                <label>gntsound.h</label>
+                <link refid="gntsound_8h"/>
+                <childnode refid="919" relation="include">
+                </childnode>
+            </node>
+            <node id="888">
+                <label>gntcertmgr.h</label>
+                <link refid="gntcertmgr_8h"/>
+            </node>
+            <node id="919">
+                <label>sound.h</label>
+            </node>
+            <node id="907">
+                <label>string.h</label>
+            </node>
+            <node id="910">
+                <label>gntprefs.h</label>
+                <link refid="gntprefs_8h"/>
+            </node>
+            <node id="905">
+                <label>plugin.h</label>
+            </node>
+            <node id="872">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="873" relation="include">
+                </childnode>
+                <childnode refid="868" relation="include">
+                </childnode>
+                <childnode refid="874" relation="include">
+                </childnode>
+                <childnode refid="875" relation="include">
+                </childnode>
+            </node>
+            <node id="920">
+                <label>prefs.h</label>
+            </node>
+            <node id="882">
+                <label>gntaccount.h</label>
+                <link refid="gntaccount_8h"/>
+                <childnode refid="883" relation="include">
+                </childnode>
+            </node>
+            <node id="877">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="873" relation="include">
+                </childnode>
+                <childnode refid="868" relation="include">
+                </childnode>
+                <childnode refid="876" relation="include">
+                </childnode>
+            </node>
+            <node id="899">
+                <label>gntlog.h</label>
+                <link refid="gntlog_8h"/>
+                <childnode refid="900" relation="include">
+                </childnode>
+                <childnode refid="883" relation="include">
+                </childnode>
+                <childnode refid="872" relation="include">
+                </childnode>
+            </node>
+            <node id="916">
+                <label>status.h</label>
+            </node>
+            <node id="868">
+                <label>glib.h</label>
+            </node>
+            <node id="886">
+                <label>gnttree.h</label>
+                <link refid="gnttree_8h"/>
+                <childnode refid="872" relation="include">
+                </childnode>
+                <childnode refid="871" relation="include">
+                </childnode>
+                <childnode refid="878" relation="include">
+                </childnode>
+                <childnode refid="879" relation="include">
+                </childnode>
+                <childnode refid="887" relation="include">
+                </childnode>
+            </node>
+            <node id="909">
+                <label>pounce.h</label>
+            </node>
+            <node id="875">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="873" relation="include">
+                </childnode>
+                <childnode refid="868" relation="include">
+                </childnode>
+                <childnode refid="876" relation="include">
+                </childnode>
+                <childnode refid="874" relation="include">
+                </childnode>
+            </node>
+            <node id="874">
+                <label>ncurses.h</label>
+            </node>
+            <node id="871">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="868" relation="include">
+                </childnode>
+                <childnode refid="872" relation="include">
+                </childnode>
+                <childnode refid="877" relation="include">
+                </childnode>
+                <childnode refid="878" relation="include">
+                </childnode>
+                <childnode refid="879" relation="include">
+                </childnode>
+            </node>
+            <node id="911">
+                <label>gntrequest.h</label>
+                <link refid="gntrequest_8h"/>
+                <childnode refid="912" relation="include">
+                </childnode>
+                <childnode refid="871" relation="include">
+                </childnode>
+            </node>
+            <node id="901">
+                <label>gntmedia.h</label>
+                <link refid="gntmedia_8h"/>
+            </node>
+            <node id="894">
+                <label>conversation.h</label>
+            </node>
+            <node id="884">
+                <label>gntblist.h</label>
+                <link refid="gntblist_8h"/>
+                <childnode refid="885" relation="include">
+                </childnode>
+                <childnode refid="886" relation="include">
+                </childnode>
+            </node>
+            <node id="890">
+                <label>connection.h</label>
+            </node>
+            <node id="896">
+                <label>debug.h</label>
+            </node>
+            <node id="873">
+                <label>stdio.h</label>
+            </node>
+            <node id="876">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntui_8c_1ada9ae9db28c9d7cd0b0e064fddb2a739" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_ui_init</definition>
+                <argsstring>()</argsstring>
+                <name>gnt_ui_init</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>finch</para>
+                    <para>Finch is the legal property of its developers, whose names are too numerous to list here.
+                        Please refer to the COPYRIGHT file distributed with this source distribution.
+                    </para>
+                    <para>This program is free software; you can redistribute it and/or modify it under the terms of the
+                        GNU General Public License as published by the Free Software Foundation; either version 2 of the
+                        License, or (at your option) any later version.
+                    </para>
+                    <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+                        without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+                        the GNU General Public License for more details.
+                    </para>
+                    <para>You should have received a copy of the GNU General Public License along with this program; if
+                        not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+                        02111-1301 USA
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntui.c" line="47"
+                          column="1" bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntui.c"
+                          bodystart="47" bodyend="150"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="22">
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="finch_8h" kindref="compound">
+                    finch.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;internal.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntui_8h" kindref="compound">
+                    gntui.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntaccount_8h" kindref="compound">
+                    gntaccount.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntblist_8h" kindref="compound">
+                    gntblist.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntcertmgr_8h" kindref="compound">
+                    gntcertmgr.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntconn_8h" kindref="compound">
+                    gntconn.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntconv_8h" kindref="compound">
+                    gntconv.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntdebug_8h" kindref="compound">
+                    gntdebug.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntft_8h" kindref="compound">
+                    gntft.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntlog_8h" kindref="compound">
+                    gntlog.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntmedia_8h" kindref="compound">
+                    gntmedia.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntnotify_8h" kindref="compound">
+                    gntnotify.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntplugin_8h" kindref="compound">
+                    gntplugin.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntpounce_8h" kindref="compound">
+                    gntpounce.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntprefs_8h" kindref="compound">
+                    gntprefs.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntrequest_8h" kindref="compound">
+                    gntrequest.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntroomlist_8h" kindref="compound">
+                    gntroomlist.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntstatus_8h" kindref="compound">
+                    gntstatus.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntsound_8h" kindref="compound">
+                    gntsound.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;prefs.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntui_8c_1ada9ae9db28c9d7cd0b0e064fddb2a739" kindref="member">gnt_ui_init</ref>()
+                </highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#ifdef<sp/>STANDALONE
+                </highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1a2b8c2fa35acacd8927d85b840eb91f56" kindref="member">gnt_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_add_none(
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/gnt&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Accounts<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntaccount_8c_1a4d8ca94389195b03f74245222ada708a" kindref="member">
+                        finch_accounts_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_accounts_set_ui_ops(<ref refid="gntaccount_8c_1aeddb1dc9b18a6500c84ed3116e9e1b5a"
+                                                         kindref="member">finch_accounts_get_ui_ops</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Connections<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntconn_8c_1ac541f833fad017cf7f59811f0a2405c5" kindref="member">
+                        finch_connections_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_connections_set_ui_ops(<ref refid="gntconn_8c_1a1ed480518e2c70e1b5c1ea0afcda89c5"
+                                                            kindref="member">finch_connections_get_ui_ops</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>buddy<sp/>list<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntblist_8c_1a8e2750b3c707aa5b9ac092595473508b" kindref="member">finch_blist_init</ref>
+                    ();
+                </highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_blist_set_ui_ops(<ref refid="gntblist_8c_1a0b38556a578f05f667c96a645de1dc9c"
+                                                      kindref="member">finch_blist_get_ui_ops</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Initialize<sp/>sound<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_sound_set_ui_ops(<ref refid="gntsound_8c_1ae6155433666d7474f816cd45ce78b53d"
+                                                      kindref="member">finch_sound_get_ui_ops</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Now<sp/>the<sp/>conversations<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntconv_8c_1a107aeb50f2c8bc6aa02b186ffb48e908" kindref="member">
+                        finch_conversation_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_conversations_set_ui_ops(<ref refid="gntconv_8c_1ad64fc49518805a8f9063c74016ab2394"
+                                                              kindref="member">finch_conv_get_ui_ops</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Notify<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntnotify_8c_1ac2b63de425556b9ab3b08cf5d1c34d3e" kindref="member">
+                        finch_notify_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_notify_set_ui_ops(<ref refid="gntnotify_8c_1a28454ea605fe73528ca2572a25338707"
+                                                       kindref="member">finch_notify_get_ui_ops</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Request<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntrequest_8c_1aaaf663592842b3b58a91080127b6e6ec" kindref="member">
+                        finch_request_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="80">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_set_ui_ops(<ref refid="gntrequest_8c_1a9399bff75a28127246eafea0035e70bf"
+                                                        kindref="member">finch_request_get_ui_ops</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Pounce<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntpounce_8c_1a0878a1ffbadf6bbb89d01f8c69da6fd6" kindref="member">
+                        finch_pounces_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Log<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntlog_8c_1a4b4c7202ee3f5c52d6d717077c34b0ad" kindref="member">finch_log_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>File<sp/>transfer<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntft_8c_1a5a135bdd641b97db97f535ce2b7aae49" kindref="member">finch_xfers_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_xfers_set_ui_ops(<ref refid="gntft_8c_1a7612756bc1296f733beb47db2b29aaf2"
+                                                      kindref="member">finch_xfers_get_ui_ops</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Roomlist<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="93">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntroomlist_8c_1a829164f7b39bd578b9b7dbf532ebed58" kindref="member">
+                        finch_roomlist_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_roomlist_set_ui_ops(<ref refid="gntroomlist_8c_1a8f2b8e3680659483aec3fe9a87e44aa1"
+                                                         kindref="member">finch_roomlist_get_ui_ops</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Media<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntmedia_8c_1a10edfb8d089d2347033c925a20519135" kindref="member">
+                        finch_media_manager_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1ac0b56c909a89119ddfd1bc643496f84b" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Accounts&quot;</highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntaccount_8c_1aa859fdea09acabc3e48d58ca8f40b152" kindref="member">
+                        finch_accounts_show_all</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="100">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1ac0b56c909a89119ddfd1bc643496f84b" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Buddy<sp/>List&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntblist_8c_1a1776f6c92b01756e2c15cce8c00f976d" kindref="member">finch_blist_show</ref>
+                    );
+                </highlight>
+            </codeline>
+            <codeline lineno="101">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1ac0b56c909a89119ddfd1bc643496f84b" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Buddy<sp/>Pounces&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntpounce_8c_1ab495cdd571c6da33a9218a7e87af44f1" kindref="member">
+                        finch_pounces_manager_show</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="102">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1ac0b56c909a89119ddfd1bc643496f84b" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Certificates&quot;</highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntcertmgr_8c_1a175335b29959b3fd83ac0519f892f045" kindref="member">
+                        finch_certmgr_show</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="103">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1ac0b56c909a89119ddfd1bc643496f84b" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Debug<sp/>Window&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntdebug_8c_1ad98c4589a05641a0c95d5fb90a518a5a" kindref="member">
+                        finch_debug_window_show</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="104">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1ac0b56c909a89119ddfd1bc643496f84b" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;File<sp/>Transfers&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntft_8c_1afea29860d859f53a49ad1e5eb6bd22c6" kindref="member">
+                        finch_xfer_dialog_show</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="105">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1ac0b56c909a89119ddfd1bc643496f84b" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Plugins&quot;</highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntplugin_8c_1ae1c81cceb9612a868c011fc30b9a57ac" kindref="member">
+                        finch_plugins_show_all</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1ac0b56c909a89119ddfd1bc643496f84b" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Room<sp/>List&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntroomlist_8c_1af25e13e597a85d6672b02fa4ec4a6e67" kindref="member">
+                        finch_roomlist_show_all</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="107">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1ac0b56c909a89119ddfd1bc643496f84b" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Sounds&quot;</highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntsound_8c_1adf82aef51efafadc34e0b23cee76b2be" kindref="member">
+                        finch_sounds_show_all</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="108">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1ac0b56c909a89119ddfd1bc643496f84b" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Preferences&quot;</highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntprefs_8c_1ab651b7e3ae4cd958d96f9ad93c614047" kindref="member">
+                        finch_prefs_show_all</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="109">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1ac0b56c909a89119ddfd1bc643496f84b" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Statuses&quot;</highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntstatus_8c_1a35c5ee8020d9f1aa071286a990642dc5" kindref="member">
+                        finch_savedstatus_show_all</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="110">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="111">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#ifdef<sp/>STANDALONE
+                </highlight>
+            </codeline>
+            <codeline lineno="112">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="113">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="114">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntui_8h_1a9ab8344af0ae416a25bdc7c0145b1d10" kindref="member">gnt_ui_uninit</ref>()
+                </highlight>
+            </codeline>
+            <codeline lineno="115">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="116">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_accounts_set_ui_ops(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                         kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="117">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntaccount_8c_1a6e205c4e5040ac5e4c551bd23e27d755" kindref="member">
+                        finch_accounts_uninit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="118">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="119">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_connections_set_ui_ops(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                            kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="120">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntconn_8c_1a41dd87db886453d8b8e50921790bae17" kindref="member">
+                        finch_connections_uninit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="121">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="122">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_blist_set_ui_ops(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                      kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="123">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntblist_8c_1afcaa5b37165b1eb217e90627503a1487" kindref="member">
+                        finch_blist_uninit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="124">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="125">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_conversations_set_ui_ops(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                              kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="126">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntconv_8c_1ae11f6920562c7827e9113059f4aff69a" kindref="member">
+                        finch_conversation_uninit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="127">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="128">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_notify_set_ui_ops(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                       kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="129">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntnotify_8c_1ac422f6618256065a708d4bfada3cd9ea" kindref="member">
+                        finch_notify_uninit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="130">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="131">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_set_ui_ops(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                        kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="132">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntrequest_8c_1a3749c2646086e87b84c1204d050e344d" kindref="member">
+                        finch_request_uninit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="133">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="134">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntpounce_8c_1a2665b268845699a6d26be58b7907a3f9" kindref="member">
+                        finch_pounces_uninit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="135">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="136">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntlog_8c_1aeee57dfb3ce2827e4319283646025801" kindref="member">finch_log_uninit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="137">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="138">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntft_8c_1a9c884b5ce2ec3bd9fd5ab6e7b8a3633b" kindref="member">finch_xfers_uninit</ref>
+                    ();
+                </highlight>
+            </codeline>
+            <codeline lineno="139">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_xfers_set_ui_ops(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                      kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="140">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="141">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntroomlist_8c_1a6bd9c8ef41d33378972c90db37faa67d" kindref="member">
+                        finch_roomlist_uninit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="142">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_roomlist_set_ui_ops(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                         kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="143">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="144">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#ifdef<sp/>USE_VV
+                </highlight>
+            </codeline>
+            <codeline lineno="145">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntmedia_8c_1a0925a02921484d34d16471109d9fbfaa" kindref="member">
+                        finch_media_manager_uninit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="146">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="147">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="148">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1ac27447a385580704f3909dc0b01023fc" kindref="member">gnt_quit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="149">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="150">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="151">
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntui.c"/>
+    </compounddef>
+</doxygen>

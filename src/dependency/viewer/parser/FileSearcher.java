@@ -41,6 +41,7 @@ public class FileSearcher {
             return;
         }
 
+
         for (String filename : list) {
             // append separator, formate results
             String temp = new StringBuffer(dir).append(File.separator)
@@ -51,7 +52,15 @@ public class FileSearcher {
 
     }
 
-    public List<String> getFiles(String fileDir) {
+    public List<String> getFiles() {
+
+
+        String absPath = new File("").getAbsolutePath();
+        String fileDir = absPath + File.separator + "src"
+                + File.separator + "dependency"
+                + File.separator + "viewer"
+                + File.separator + "xml";
+
 
         // preparation
         GenericExtFilter filter = new GenericExtFilter(FILE_EXT1);
