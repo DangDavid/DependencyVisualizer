@@ -124,4 +124,19 @@ public class ModuleData {
     public void putDataObject(String xmlContent, String type) {
         dataObjects.put(xmlContent, type);
     }
+
+
+    /**
+     * This function will return the list of types of data objects that are in this module
+     * This is only a testing function, probably wont be needed in the future
+     *
+     * @return All data types
+     */
+    public Set<String> getDataObjectTypes() {
+        Set<String> results = new HashSet<String>();
+        for (String key : dataObjects.keySet()) {
+            results.add(dataObjects.get(key));
+        }
+        return results;
+    }
 }
