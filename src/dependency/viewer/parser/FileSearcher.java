@@ -56,12 +56,13 @@ public class FileSearcher {
         // preparation
         GenericExtFilter filter = new GenericExtFilter(FILE_EXT1);
 
+        List<String> result = new ArrayList<String>();
         System.out.println(fileDir);
         File file = new File(fileDir);
 
         if (!file.isDirectory()) {
             System.out.println("Dir not found");
-            return null;
+            return result;
         }
 
         // make list of all valid file names
@@ -69,11 +70,10 @@ public class FileSearcher {
 
         if (list.length == 0) {
             System.out.println("no files end with A or B : " + "A. " + FILE_EXT1 + " B. " + FILE_EXT2);
-            return null;
+            return result;
         }
 
 
-        List<String> result = new ArrayList<String>();
         for (String filename : list) {
             result.add(fileDir + File.separator + filename);
         }

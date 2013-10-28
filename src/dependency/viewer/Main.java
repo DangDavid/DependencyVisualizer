@@ -33,7 +33,7 @@ public class Main {
         XmlParser parser = new XmlParser();
         List<ModuleData> rawData = new ArrayList<ModuleData>();
 
-        for (String path : emptyIfNull(filePaths)) {
+        for (String path : filePaths) {
             ModuleData parsedData = parser.parseDocument(path);
             System.out.println("Finished parsing ");
             parsedData.summerize();
@@ -45,7 +45,5 @@ public class Main {
         return rawData;
     }
 
-    public static <T> Iterable<T> emptyIfNull(Iterable<T> iterable) {
-        return iterable == null ? Collections.<T>emptyList() : iterable;
-    }
+
 }
