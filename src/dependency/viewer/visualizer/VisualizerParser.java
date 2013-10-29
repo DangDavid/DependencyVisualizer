@@ -11,10 +11,28 @@ import dependency.viewer.mapper.DependencyGraph;
  */
 public class VisualizerParser {
     private DependencyGraph dependencyGraph;
+    private String diGraph;
 
     public VisualizerParser(DependencyGraph dependencyGraph) {
         this.dependencyGraph = dependencyGraph;
+        this.diGraph = matrixToDigraph(dependencyGraph.getMatrix());
     }
 
+    public String matrixToDigraph(Integer[][] matrix) {
+        String diGraph = "digraph G {\n";
+        for (Integer j = 0; j < matrix.length; j++) {
+            for (Integer i = 0; i < matrix[j].length; i++) {
+                if (isDependency(matrix[i][j])) {
+                    String dependency = j.toString().concat(" -> ").concat(i.toString()).concat(";");
+                    diGraph.concat(dependency);
+                }
+            }
+        }
+        diGraph.concat("\n}");
+        return diGraph;
+    }
 
+    public Boolean isDependency(Integer dependency) {
+        return true;
+    }
 }
