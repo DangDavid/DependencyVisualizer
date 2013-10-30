@@ -139,4 +139,13 @@ public class ModuleData {
         }
         return results;
     }
+
+    public void merge(ModuleData node) {
+        includeList.addAll(node.getIncludeList());
+        includedByList.addAll(node.getIncludedByList());
+        references.putAll(node.getReferences());
+        dataObjects.putAll(node.getDataObjects());
+
+
+    }
 }
