@@ -3,6 +3,7 @@ package dependency.viewer;
 import dependency.viewer.parser.FileSearcher;
 import dependency.viewer.parser.ModuleData;
 import dependency.viewer.parser.XmlParser;
+import dependency.viewer.visualizer.*;
 
 import java.io.File;
 import java.util.*;
@@ -21,7 +22,14 @@ public class Main {
 
         List<ModuleData> rawData = parseStep();
 
+        drawGraph();
+
         System.out.println("End of main");
+    }
+
+    private static void drawGraph() {
+        VisualizerParser vis = new VisualizerParser();
+        vis.drawGraph();
     }
 
     private static List<ModuleData> parseStep() {
