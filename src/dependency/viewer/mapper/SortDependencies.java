@@ -2,12 +2,10 @@ package dependency.viewer.mapper;
 
 import java.util.*;
 
-import dependency.viewer.Main;
 import dependency.viewer.parser.ModuleData;
 
 public class SortDependencies {
 
-    static List<DependencyType> typeOfDataObject = new ArrayList<DependencyType>();
     static List<DependencyData> listDependencyData = new ArrayList<DependencyData>();
     private DependencyData dataDependency;
     private DependencyData behavioralDependency;
@@ -26,15 +24,26 @@ public class SortDependencies {
     /*
      *  do:
      */
-    public void sortDataDependency(List<ModuleData> rawData) {
+    public List<DependencyData> sortDataDependency(List<ModuleData> rawData) {
 
         List<ModuleData> mergeData = mergeModules(rawData);
 
 
+        generateDependencyData(rawData, mergeData);
+
+
+        return listDependencyData;
+
+    }
+
+    private void generateDependencyData(List<ModuleData> rawData, List<ModuleData> mergeData) {
         for (ModuleData moduleData : mergeData) {
 
             Map<String, List<String>> mapReferences = moduleData.getReferences();
             String moduleName = moduleData.getModuleName();
+
+            behavioralDependency.initDependency(moduleName);
+            dataDependency.initDependency(moduleName);
 
             for (String key : mapReferences.keySet()) {
                 //key is other module where the Module is referencing to.
@@ -48,13 +57,6 @@ public class SortDependencies {
 
             }
         }
-
-
-        System.out.println("End of sort");
-        /*
-		 *  do:
-		 */
-
     }
 
     private List<ModuleData> mergeModules(List<ModuleData> rawData) {
@@ -108,7 +110,6 @@ public class SortDependencies {
             if (childDataObjects.containsKey(item)) {
                 String type = childDataObjects.get(item);
 
-                // TODO change this to enum
 
                 if (type.equals("function")) {
                     behavioralDependency.addDependency(parent, child);
@@ -120,6 +121,17 @@ public class SortDependencies {
         }
 
     }
+
+
+    public List<DependencyGraph> matrixify() {
+        List<DependencyGraph> graph = new ArrayList<DependencyGraph>();
+
+        graph.add(new DependencyGraph(dataDependency));
+        graph.add(new DependencyGraph(behavioralDependency));
+        return graph;
+
+    }
+
 
     public static void print() {
 
@@ -149,6 +161,11 @@ public class SortDependencies {
     }
 
 
+    public List<DependencyGraph> mapDependency(List<ModuleData> rawData) {
+
+        sortDataDependency(rawData);
+        return matrixify();
+    }
 }
 
 

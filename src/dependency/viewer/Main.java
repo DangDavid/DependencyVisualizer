@@ -1,5 +1,7 @@
 package dependency.viewer;
 
+import dependency.viewer.mapper.DependencyData;
+import dependency.viewer.mapper.DependencyGraph;
 import dependency.viewer.mapper.SortDependencies;
 import dependency.viewer.parser.FileSearcher;
 import dependency.viewer.parser.ModuleData;
@@ -22,16 +24,12 @@ public class Main {
 
         List<ModuleData> rawData = parseStep();
         SortDependencies sorter = new SortDependencies();
-        sorter.sortDataDependency(rawData);
+        List<DependencyGraph> matrices = sorter.mapDependency(rawData);
 
 
-        // SortDependencies.print();
+        Integer[][] m0 = matrices.get(0).getMatrix();
+        Integer[][] m1 = matrices.get(1).getMatrix();
 
-        //drawGraph();
-
-        //drawGraph();
-
-        System.out.println("End of main");
 
     }
 

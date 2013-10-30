@@ -17,54 +17,64 @@ public class DependencyData {
     private Map<String, List<DependencyEdge>> nodeMap;
     DependencyType type;
 
-    public DependencyData(Map<String,List<DependencyEdge>> object, DependencyType data) {
-		this.nodeMap = object;
-		this.type = data;
-	}
+    public DependencyData(Map<String, List<DependencyEdge>> object, DependencyType data) {
+        this.nodeMap = object;
+        this.type = data;
+    }
 
-	public DependencyType getType() {
+    public DependencyType getType() {
         return type;
     }
 
     public int getSize() {
         return nodeMap.size();
     }
-    public void setType(DependencyType type){
-    	this.type = type;
-    }
-    
-    public void addDependency(String key,String child){
-    	if (key.equals(child)) {
-    		return;
-    	}
-    	
-    	List<DependencyEdge> edges;
-    	
-    	if (nodeMap.containsKey(key)) {
-    		edges = nodeMap.get(key);
-    	} else  {
-    		edges = new ArrayList<DependencyEdge>();
-    		nodeMap.put(key, edges);
-    	}
-    	
-    	for (DependencyEdge e : edges) {
-    		if (e.getChildNode().equals(child)) {
-    			e.increNumberOfDependencies();
-    			return;
-    		}
-    	}
-    	
-    	edges.add(new DependencyEdge(key, child, 1));
-    
-    
-    	
-    }
-    public Map<String,List<DependencyEdge>> getNodeMap(){
-		return nodeMap;
-    	
-    }
-    
 
-    
-    
+    public void setType(DependencyType type) {
+        this.type = type;
+    }
+
+    public void addDependency(String key, String child) {
+        if (key.equals(child)) {
+            return;
+        }
+
+        List<DependencyEdge> edges;
+
+        if (nodeMap.containsKey(key)) {
+            edges = nodeMap.get(key);
+        } else {
+            edges = new ArrayList<DependencyEdge>();
+            nodeMap.put(key, edges);
+        }
+
+        for (DependencyEdge e : edges) {
+            if (e.getChildNode().equals(child)) {
+                e.increNumberOfDependencies();
+                return;
+            }
+        }
+
+        edges.add(new DependencyEdge(key, child, 1));
+
+
+    }
+
+    public Map<String, List<DependencyEdge>> getNodeMap() {
+        return nodeMap;
+
+    }
+
+
+    public void initDependency(String key) {
+
+
+        if (nodeMap.containsKey(key)) {
+            return;
+        } else {
+            nodeMap.put(key, new ArrayList<DependencyEdge>());
+        }
+
+
+    }
 }

@@ -1,5 +1,9 @@
 package dependency.viewer.mapper;
 
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 /**
  * Created with IntelliJ IDEA.
  * User: David
@@ -22,7 +26,55 @@ public class DependencyGraph {
     private void initGraph(DependencyData model) {
         int size = model.getSize();
         matrix = new Integer[size][size];
+
+        for (int i = 0; i < size; i++) {
+
+            for (int j = 0; j < size; j++) {
+                matrix[i][j] = 0;
+            }
+
+        }
+
         fileNameDirectory = new String[size];
+
+        Map<String, List<DependencyEdge>> map = model.getNodeMap();
+        Set<String> keys = map.keySet();
+        int index = 0;
+        for (String moduleName : keys) {
+            fileNameDirectory[index] = moduleName;
+            index++;
+
+        }
+
+        for (String moduleName : keys) {
+            List<DependencyEdge> edges = map.get(moduleName);
+            int parentIndex = getModuleIndex(moduleName);
+            for (DependencyEdge edge : edges) {
+                int childIndex = getModuleIndex(edge.getChildNode());
+                if (childIndex == -1 || parentIndex == -1) {
+                    System.out.println();
+                }
+                matrix[childIndex][parentIndex] += edge.getNumberOfDependencies();
+                matrix[parentIndex][childIndex] += edge.getNumberOfDependencies();
+            }
+
+        }
+
+
+    }
+
+    private int getModuleIndex(String name) {
+
+
+        for (int index = 0; index < fileNameDirectory.length; index++) {
+            if (name.equals(fileNameDirectory[index])) {
+
+                return index;
+            }
+
+        }
+        return -1;
+
     }
 
 
