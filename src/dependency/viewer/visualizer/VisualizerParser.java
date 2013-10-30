@@ -30,13 +30,14 @@ public class VisualizerParser {
 
 
     private String matrixToDigraph(Integer[][] matrix) {
-        String diGraph = "digraph G {\n";
+        String diGraph = "graph G {\n";
         for (Integer j = 0; j < matrix.length; j++) {
             for (Integer i = 0; i < matrix[j].length; i++) {
                 if (isDependency(matrix[i][j])) {
                     String dependency = j.toString();
-                    dependency += " -> ";
+                    dependency += " -- ";
                     dependency += i.toString();
+                    dependency += "[penwidth=3]";
                     dependency += ";\n";
                     diGraph += dependency;
                 }
