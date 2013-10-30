@@ -100,7 +100,7 @@ public class ModuleData {
         }
 
         if (!references.isEmpty())
-            System.out.println("\nThe Data Objects provided are : ");
+            System.out.println("\nThe referencces provided are : ");
 
         for (String key : references.keySet()) {
             System.out.println("    Reference to module :  " + key);

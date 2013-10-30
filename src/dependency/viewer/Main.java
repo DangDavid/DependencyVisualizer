@@ -1,5 +1,6 @@
 package dependency.viewer;
 
+import dependency.viewer.mapper.SortDependencies;
 import dependency.viewer.parser.FileSearcher;
 import dependency.viewer.parser.ModuleData;
 import dependency.viewer.parser.XmlParser;
@@ -20,11 +21,18 @@ public class Main {
         System.out.println("Start of Main");
 
         List<ModuleData> rawData = parseStep();
-
+        System.out.println(rawData.get(0).getReferences().get("getopt1"));
+        SortDependencies sorter = new SortDependencies();
+        sorter.testDataDependency(rawData);
+       
+       
+       // SortDependencies.print();
+        
         System.out.println("End of main");
+        
     }
 
-    private static List<ModuleData> parseStep() {
+    public static List<ModuleData> parseStep() {
         FileSearcher files = new FileSearcher();
 
         List<String> filePaths = files.getFiles();
@@ -39,7 +47,7 @@ public class Main {
             System.out.println("Finished parsing ");
             fullTypeSet.addAll(parsedData.getDataObjectTypes());
             parsedData.summerize();
-            parsedData.print();
+           parsedData.print();
             rawData.add(parsedData);
         }
 

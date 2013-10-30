@@ -98,7 +98,7 @@ public class XmlParser extends DefaultHandler {
 
     @Override
     public void characters(char[] ac, int i, int j) throws SAXException {
-        xmlContent = new String(ac, i, j);
+        xmlContent = new String(ac, i, j).trim();
     }
 
 

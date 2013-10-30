@@ -10,7 +10,7 @@ package dependency.viewer.mapper;
  */
 public class DependencyEdge {
     String parentNode;
-    String childNode;
+    String childNode;//(
     int numberOfDependencies;
 
     public DependencyEdge(String parent, String child, int initialDependency) {
