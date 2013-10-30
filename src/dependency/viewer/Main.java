@@ -4,6 +4,7 @@ import dependency.viewer.mapper.SortDependencies;
 import dependency.viewer.parser.FileSearcher;
 import dependency.viewer.parser.ModuleData;
 import dependency.viewer.parser.XmlParser;
+import dependency.viewer.visualizer.*;
 
 import java.io.File;
 import java.util.*;
@@ -28,8 +29,15 @@ public class Main {
        
        // SortDependencies.print();
         
+        //drawGraph();
+
         System.out.println("End of main");
         
+    }
+
+    private static void drawGraph() {
+        VisualizerParser vis = new VisualizerParser();
+        vis.drawGraph();
     }
 
     public static List<ModuleData> parseStep() {
