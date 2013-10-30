@@ -22,7 +22,7 @@ public class Main {
 
         List<ModuleData> rawData = parseStep();
 
-        drawGraph();
+        //drawGraph();
 
         System.out.println("End of main");
     }
