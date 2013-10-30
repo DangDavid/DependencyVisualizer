@@ -31,6 +31,30 @@ public class Main {
         Integer[][] m1 = matrices.get(1).getMatrix();
 
 
+        for (Integer[] row : m0) {
+            for (Integer i : row) {
+                System.out.print(" " + i);
+            }
+            System.out.println(" ");
+        }
+
+
+        System.out.println(" ");
+        System.out.println(" ");
+
+        for (Integer[] row : m1) {
+            for (Integer i : row) {
+                System.out.print(" " + i);
+            }
+            System.out.println(" ");
+        }
+        String[] files = matrices.get(0).getFileNameDirectory();
+        String[] files1 = matrices.get(1).getFileNameDirectory();
+        for (int i = 0; i < files.length; i++) {
+            System.out.println(files[i] + "  " + files1[i]);
+        }
+
+
     }
 
     private static void drawGraph() {
@@ -51,17 +75,17 @@ public class Main {
 
         for (String path : filePaths) {
             ModuleData parsedData = parser.parseDocument(path);
-            System.out.println("Finished parsing ");
+            // System.out.println("Finished parsing ");
             fullTypeSet.addAll(parsedData.getDataObjectTypes());
-            parsedData.summerize();
-            parsedData.print();
+            // parsedData.summerize();
+            // parsedData.print();
             rawData.add(parsedData);
         }
 
-        System.out.println("Number of files parsed : " + rawData.size());
+        // System.out.println("Number of files parsed : " + rawData.size());
 
         // [define, enum, variable, typedef, function]
-        System.out.println("\n\nThe full list of type \n\n" + fullTypeSet);
+        // System.out.println("\n\nThe full list of type \n\n" + fullTypeSet);
         return rawData;
     }
 
