@@ -31,6 +31,8 @@ public class Main {
         
         //drawGraph();
 
+        //drawGraph();
+
         System.out.println("End of main");
         
     }
@@ -39,6 +41,8 @@ public class Main {
         VisualizerParser vis = new VisualizerParser();
         vis.drawGraph();
     }
+
+
 
     public static List<ModuleData> parseStep() {
         FileSearcher files = new FileSearcher();
