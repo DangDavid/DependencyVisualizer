@@ -54,11 +54,11 @@ public class Main {
             System.out.println(files[i] + "  " + files1[i]);
         }
 
-
+        //drawGraph(m0);
     }
 
-    private static void drawGraph() {
-        VisualizerParser vis = new VisualizerParser();
+    private static void drawGraph(Integer[][] matrix) {
+        VisualizerParser vis = new VisualizerParser(matrix);
         vis.drawGraph();
     }
 

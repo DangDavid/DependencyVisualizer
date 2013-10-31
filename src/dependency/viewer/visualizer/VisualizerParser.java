@@ -11,40 +11,35 @@ import java.io.File;
  * To change this template use File | Settings | File Templates.
  */
 public class VisualizerParser {
-    private DependencyGraph dependencyGraph;
-    private String diGraph;
     private Integer[][] matrix;
 
-    /*public VisualizerParser(DependencyGraph dependencyGraph) {
-        this.dependencyGraph = dependencyGraph;
-        this.diGraph = matrixToDigraph(dependencyGraph.getMatrix());
-    }*/
-
-    public VisualizerParser() {
-        this.matrix = new Integer[2][2];
-        this.matrix[0][0] = 1;
-        this.matrix[0][1] = 1;
-        this.matrix[1][0] = 1;
-        this.matrix[1][1] = 1;
+    public VisualizerParser(Integer[][] matrix) {
+        this.matrix = matrix;
     }
 
 
+
     private String matrixToDigraph(Integer[][] matrix) {
-        String diGraph = "graph G {\n";
+        String diGraph = "digraph G {\n";
         for (Integer j = 0; j < matrix.length; j++) {
             for (Integer i = 0; i < matrix[j].length; i++) {
                 if (isDependency(matrix[i][j])) {
                     String dependency = j.toString();
                     dependency += " -- ";
                     dependency += i.toString();
-                    dependency += "[penwidth=3]";
-                    dependency += ";\n";
+                    dependency += "[label=\" \",penwidth=";
+                    dependency += scaleDependencySize(matrix[i][j].doubleValue()).toString();
+                    dependency += "];\n";
                     diGraph += dependency;
                 }
             }
         }
         diGraph += "\n}";
         return diGraph;
+    }
+
+    private Double scaleDependencySize(Double i) {
+        return 0.75 + (i / 100);
     }
 
     public void drawGraph()
@@ -60,6 +55,6 @@ public class VisualizerParser {
     }
     // TODO: Implement
     public Boolean isDependency(Integer dependency) {
-        return true;
+        return (dependency == 0)? false : true;
     }
 }
