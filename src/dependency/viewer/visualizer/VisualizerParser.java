@@ -20,14 +20,14 @@ public class VisualizerParser {
 
 
     private String matrixToDigraph(Integer[][] matrix) {
-        String diGraph = "digraph G {\n";
+        String diGraph = "graph G {\n";
         for (Integer j = 0; j < matrix.length; j++) {
-            for (Integer i = 0; i < matrix[j].length; i++) {
+            for (Integer i = 0; i < j; i++) {
                 if (isDependency(matrix[i][j])) {
                     String dependency = j.toString();
                     dependency += " -- ";
                     dependency += i.toString();
-                    dependency += "[label=\" \",penwidth=";
+                    dependency += "[penwidth=";
                     dependency += scaleDependencySize(matrix[i][j].doubleValue()).toString();
                     dependency += "];\n";
                     diGraph += dependency;
@@ -53,7 +53,7 @@ public class VisualizerParser {
         File out = new File("/tmp/out." + type);
         gv.writeGraphToFile( gv.getGraph( gv.getDotSource(), type ), out );
     }
-    // TODO: Implement
+
     public Boolean isDependency(Integer dependency) {
         return (dependency == 0)? false : true;
     }
