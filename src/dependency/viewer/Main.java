@@ -43,37 +43,9 @@ public class Main {
         DependencyData data = list.get(1);    //get behavioural
 
 
-        Map<String, List<DependencyEdge>> dataNodes = data.getNodeMap();
-
-        for (String key : dataNodes.keySet()) {
-
-            List<DependencyEdge> edges = dataNodes.get(key);
-
-            DependencyEdge maxEdge = null;
-
-            for (DependencyEdge edge : edges) {
-
-                if (maxEdge == null || edge.getNumberOfDependencies() > maxEdge.getNumberOfDependencies()) {
-
-                    maxEdge = edge;
-
-                }
-
-            }
-
-            if (maxEdge != null) {
-                System.out.println(key + " " + maxEdge.getChildNode());
-
-            } else {
-                System.out.println(key + " " + key);
-            }
-
-        }
-
-
         // Graph Each Set Of Data
         DependencyGraph mat = matrices.get(0);
-        matrixToDigraph(mat);
+        //matrixToDigraph(mat);
         //drawGraph(m1);
 
 

@@ -1,8 +1,6 @@
 package dependency.viewer.mapper;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,9 +15,11 @@ public class DependencyGraph {
     DependencyType type;                       // determines what type of graph this object is
     Integer[][] matrix;                        // holds the value of the dependencies between module
     String[] fileNameDirectory;                // holds the file name, used to get the index for the matrix
+    Map<String, List<String>> clusters;    // Key is the cluster which the modules belongs to, and value is the list of modules that belong there
 
     public DependencyGraph(DependencyData model) {
         this.type = model.getType();
+        clusters = new HashMap<String, List<String>>();
         initGraph(model);
     }
 
@@ -56,6 +56,41 @@ public class DependencyGraph {
                 }
                 matrix[childIndex][parentIndex] += edge.getNumberOfDependencies();
                 matrix[parentIndex][childIndex] += edge.getNumberOfDependencies();
+            }
+
+        }
+
+
+        Map<String, List<DependencyEdge>> dataNodes = model.getNodeMap();
+        for (String key : dataNodes.keySet()) {
+            String clusterName = null;
+            List<DependencyEdge> edges = dataNodes.get(key);
+
+            DependencyEdge maxEdge = null;
+
+            for (DependencyEdge edge : edges) {
+
+                if (maxEdge == null || edge.getNumberOfDependencies() > maxEdge.getNumberOfDependencies()) {
+
+                    maxEdge = edge;
+
+                }
+
+            }
+
+            if (maxEdge != null) {
+                clusterName = maxEdge.getChildNode();
+
+            } else {
+                clusterName = key;
+            }
+
+            if (clusters.containsKey(clusterName)) {
+                clusters.get(clusterName).add(key);
+            } else {
+                List<String> value = new ArrayList<String>();
+                value.add(key);
+                clusters.put(clusterName, value);
             }
 
         }
