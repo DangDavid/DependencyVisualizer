@@ -1,0 +1,1129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntconv_8h" kind="file">
+        <compoundname>gntconv.h</compoundname>
+        <includes refid="gnt_8h" local="no">gnt.h</includes>
+        <includes refid="gntwidget_8h" local="no">gntwidget.h</includes>
+        <includes refid="gntmenuitem_8h" local="no">gntmenuitem.h</includes>
+        <includes local="yes">conversation.h</includes>
+        <includedby refid="gntblist_8c" local="yes">gntblist.c</includedby>
+        <includedby refid="gntconv_8c" local="yes">gntconv.c</includedby>
+        <includedby refid="gntmedia_8c" local="yes">gntmedia.c</includedby>
+        <includedby refid="gntsound_8c" local="yes">gntsound.c</includedby>
+        <includedby refid="gntui_8c" local="yes">gntui.c</includedby>
+        <includedby refid="gntgf_8c" local="yes">plugins/gntgf.c</includedby>
+        <includedby refid="gnthistory_8c" local="yes">plugins/gnthistory.c</includedby>
+        <includedby refid="gnttinyurl_8c" local="no">plugins/gnttinyurl.c</includedby>
+        <includedby refid="lastlog_8c" local="no">plugins/lastlog.c</includedby>
+        <incdepgraph>
+            <node id="329">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="330" relation="include">
+                </childnode>
+                <childnode refid="331" relation="include">
+                </childnode>
+            </node>
+            <node id="332">
+                <label>gntmenuitem.h</label>
+                <link refid="gntmenuitem_8h"/>
+                <childnode refid="321" relation="include">
+                </childnode>
+                <childnode refid="326" relation="include">
+                </childnode>
+                <childnode refid="333" relation="include">
+                </childnode>
+            </node>
+            <node id="335">
+                <label>gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="322" relation="include">
+                </childnode>
+                <childnode refid="320" relation="include">
+                </childnode>
+                <childnode refid="328" relation="include">
+                </childnode>
+                <childnode refid="329" relation="include">
+                </childnode>
+            </node>
+            <node id="333">
+                <label>gntmenu.h</label>
+                <link refid="gntmenu_8h"/>
+                <childnode refid="334" relation="include">
+                </childnode>
+                <childnode refid="328" relation="include">
+                </childnode>
+                <childnode refid="329" relation="include">
+                </childnode>
+                <childnode refid="332" relation="include">
+                </childnode>
+            </node>
+            <node id="319">
+                <label>gntconv.h</label>
+                <link refid="gntconv.h"/>
+                <childnode refid="320" relation="include">
+                </childnode>
+                <childnode refid="322" relation="include">
+                </childnode>
+                <childnode refid="332" relation="include">
+                </childnode>
+                <childnode refid="336" relation="include">
+                </childnode>
+            </node>
+            <node id="331">
+                <label>term.h</label>
+            </node>
+            <node id="330">
+                <label>curses.h</label>
+            </node>
+            <node id="328">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="321" relation="include">
+                </childnode>
+            </node>
+            <node id="322">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="323" relation="include">
+                </childnode>
+                <childnode refid="321" relation="include">
+                </childnode>
+                <childnode refid="324" relation="include">
+                </childnode>
+                <childnode refid="325" relation="include">
+                </childnode>
+            </node>
+            <node id="327">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="323" relation="include">
+                </childnode>
+                <childnode refid="321" relation="include">
+                </childnode>
+                <childnode refid="326" relation="include">
+                </childnode>
+            </node>
+            <node id="321">
+                <label>glib.h</label>
+            </node>
+            <node id="334">
+                <label>gnttree.h</label>
+                <link refid="gnttree_8h"/>
+                <childnode refid="322" relation="include">
+                </childnode>
+                <childnode refid="320" relation="include">
+                </childnode>
+                <childnode refid="328" relation="include">
+                </childnode>
+                <childnode refid="329" relation="include">
+                </childnode>
+                <childnode refid="335" relation="include">
+                </childnode>
+            </node>
+            <node id="325">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="323" relation="include">
+                </childnode>
+                <childnode refid="321" relation="include">
+                </childnode>
+                <childnode refid="326" relation="include">
+                </childnode>
+                <childnode refid="324" relation="include">
+                </childnode>
+            </node>
+            <node id="324">
+                <label>ncurses.h</label>
+            </node>
+            <node id="320">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="321" relation="include">
+                </childnode>
+                <childnode refid="322" relation="include">
+                </childnode>
+                <childnode refid="327" relation="include">
+                </childnode>
+                <childnode refid="328" relation="include">
+                </childnode>
+                <childnode refid="329" relation="include">
+                </childnode>
+            </node>
+            <node id="336">
+                <label>conversation.h</label>
+            </node>
+            <node id="323">
+                <label>stdio.h</label>
+            </node>
+            <node id="326">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="342">
+                <label>gntui.c</label>
+                <link refid="gntui_8c"/>
+            </node>
+            <node id="345">
+                <label>plugins/gnttinyurl.c</label>
+                <link refid="gnttinyurl_8c"/>
+            </node>
+            <node id="339">
+                <label>gntconv.c</label>
+                <link refid="gntconv_8c"/>
+            </node>
+            <node id="337">
+                <label>gntconv.h</label>
+                <link refid="gntconv.h"/>
+                <childnode refid="338" relation="include">
+                </childnode>
+                <childnode refid="339" relation="include">
+                </childnode>
+                <childnode refid="340" relation="include">
+                </childnode>
+                <childnode refid="341" relation="include">
+                </childnode>
+                <childnode refid="342" relation="include">
+                </childnode>
+                <childnode refid="343" relation="include">
+                </childnode>
+                <childnode refid="344" relation="include">
+                </childnode>
+                <childnode refid="345" relation="include">
+                </childnode>
+                <childnode refid="346" relation="include">
+                </childnode>
+            </node>
+            <node id="341">
+                <label>gntsound.c</label>
+                <link refid="gntsound_8c"/>
+            </node>
+            <node id="346">
+                <label>plugins/lastlog.c</label>
+                <link refid="lastlog_8c"/>
+            </node>
+            <node id="344">
+                <label>plugins/gnthistory.c</label>
+                <link refid="gnthistory_8c"/>
+            </node>
+            <node id="340">
+                <label>gntmedia.c</label>
+                <link refid="gntmedia_8c"/>
+            </node>
+            <node id="338">
+                <label>gntblist.c</label>
+                <link refid="gntblist_8c"/>
+            </node>
+            <node id="343">
+                <label>plugins/gntgf.c</label>
+                <link refid="gntgf_8c"/>
+            </node>
+        </invincdepgraph>
+        <innerclass refid="struct___finch_conv" prot="public">_FinchConv</innerclass>
+        <innerclass refid="struct___finch_conv_chat" prot="public">_FinchConvChat</innerclass>
+        <innerclass refid="struct___finch_conv_im" prot="public">_FinchConvIm</innerclass>
+        <sectiondef kind="user-defined">
+            <memberdef kind="enum" id="gntconv_8h_1a5fc9f5270c0a8486f7389d12828fb1cf" prot="public" static="no">
+                <name>FinchConversationFlag</name>
+                <enumvalue id="gntconv_8h_1a5fc9f5270c0a8486f7389d12828fb1cfa08105f49ac1a4cd16932163e94ce2c52"
+                           prot="public">
+                    <name>FINCH_CONV_NO_SOUND</name>
+                    <initializer>= 1 &lt;&lt; 0</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.h" line="48"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.h"
+                          bodystart="47" bodyend="50"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntconv_8h_1a85c6dea7758331dde2ef2a585a9f488b" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___finch_conv" kindref="compound">_FinchConv</ref>
+                </type>
+                <definition>typedef struct _FinchConv FinchConv</definition>
+                <argsstring></argsstring>
+                <name>FinchConv</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.h" line="1514"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.h"
+                          bodystart="43" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntconv_8h_1af3b9d29394e8719f1c15227646da19f6" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___finch_conv_chat" kindref="compound">_FinchConvChat</ref>
+                </type>
+                <definition>typedef struct _FinchConvChat FinchConvChat</definition>
+                <argsstring></argsstring>
+                <name>FinchConvChat</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.h" line="1514"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.h"
+                          bodystart="44" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntconv_8h_1a1b67a68fbd3441d38730b3245ed0d2d1" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___finch_conv_im" kindref="compound">_FinchConvIm</ref>
+                </type>
+                <definition>typedef struct _FinchConvIm FinchConvIm</definition>
+                <argsstring></argsstring>
+                <name>FinchConvIm</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.h" line="1514"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.h"
+                          bodystart="45" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="function" id="gntconv_8h_1ae394ae2bd5cdbf18eb8bfe0fd465c606" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>PurpleConversationUiOps *</type>
+                <definition>PurpleConversationUiOps* finch_conv_get_ui_ops</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_conv_get_ui_ops</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Get the ui-functions.</para>
+                    <para>
+                        <simplesect kind="return">
+                            <para>The PurpleConversationUiOps populated with the appropriate functions.</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.h" line="89"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.c"
+                          bodystart="1189" bodyend="1192"/>
+            </memberdef>
+            <memberdef kind="function" id="gntconv_8h_1ae8ac33e2ee2b3d4c080f15170b638a96" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_conversation_init</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_conversation_init</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Perform the necessary initializations.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.h" line="94"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.c"
+                          bodystart="1385" bodyend="1488"/>
+            </memberdef>
+            <memberdef kind="function" id="gntconv_8h_1a8bb8efdf009e5cc182405270d8987ed0" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_conversation_uninit</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_conversation_uninit</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Perform the necessary uninitializations.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.h" line="99"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.c"
+                          bodystart="1490" bodyend="1493"/>
+            </memberdef>
+            <memberdef kind="function" id="gntconv_8h_1afb0c2d75b6bd61698fb1d5793d1d261e" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_conversation_set_active</definition>
+                <argsstring>(PurpleConversation *conv)</argsstring>
+                <name>finch_conversation_set_active</name>
+                <param>
+                    <type>PurpleConversation *</type>
+                    <declname>conv</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Set a conversation as active in a contactized conversation</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>conv</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The conversation to make active.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.h" line="106"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.c"
+                          bodystart="1495" bodyend="1512"/>
+            </memberdef>
+            <memberdef kind="function" id="gntconv_8h_1a1075f42377f8e48515196738242de892" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_conversation_set_info_widget</definition>
+                <argsstring>(PurpleConversation *conv, GntWidget *widget)</argsstring>
+                <name>finch_conversation_set_info_widget</name>
+                <param>
+                    <type>PurpleConversation *</type>
+                    <declname>conv</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Sets the information widget for the conversation window.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>conv</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The conversation.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>widget</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The widget containing the information. If
+                                        <computeroutput>NULL</computeroutput>
+                                        , the current information widget is removed.
+                                    </para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.h" line="115"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.c"
+                          bodystart="1514" bodyend="1530"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="gntconv_8h_1a128fbdff556507d74cfcb6a33bf78f35" prot="public" static="no">
+                <name>FINCH_CONV</name>
+                <param>
+                    <defname>conv</defname>
+                </param>
+                <initializer>((
+                    <ref refid="gntconv_8h_1a85c6dea7758331dde2ef2a585a9f488b" kindref="member">FinchConv</ref>
+                    *)(conv)-&gt;ui_data)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.h" line="36"
+                          column="9"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.h"
+                          bodystart="36" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>GNT Conversation API</para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="6">
+                <highlight class="comment">/*<sp/>finch
+                </highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="8">
+                <highlight class="comment"><sp/>*<sp/>Finch<sp/>is<sp/>the<sp/>legal<sp/>property<sp/>of<sp/>its
+                    <sp/>
+                    developers,<sp/>whose<sp/>names<sp/>are<sp/>too<sp/>numerous
+                </highlight>
+            </codeline>
+            <codeline lineno="9">
+                <highlight class="comment"><sp/>*<sp/>to<sp/>list<sp/>here.
+                    <sp/>
+                    <sp/>Please<sp/>refer<sp/>to<sp/>the<sp/>COPYRIGHT<sp/>file<sp/>distributed<sp/>with<sp/>this
+                </highlight>
+            </codeline>
+            <codeline lineno="10">
+                <highlight class="comment"><sp/>*<sp/>source<sp/>distribution.
+                </highlight>
+            </codeline>
+            <codeline lineno="11">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="12">
+                <highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can
+                    <sp/>redistribute<sp/>it<sp/>and/or<sp/>modify
+                </highlight>
+            </codeline>
+            <codeline lineno="13">
+                <highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General
+                    <sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by
+                </highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version
+                    <sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or
+                </highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.
+                </highlight>
+            </codeline>
+            <codeline lineno="16">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="17">
+                <highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope
+                    <sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,
+                </highlight>
+            </codeline>
+            <codeline lineno="18">
+                <highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the
+                    <sp/>implied<sp/>warranty<sp/>of
+                </highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR
+                    <sp/>PURPOSE.
+                    <sp/>
+                    <sp/>See<sp/>the
+                </highlight>
+            </codeline>
+            <codeline lineno="20">
+                <highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more
+                    <sp/>
+                    details.
+                </highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the
+                    <sp/>GNU<sp/>General<sp/>Public<sp/>License
+                </highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write
+                    <sp/>to<sp/>the<sp/>Free<sp/>Software
+                </highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth
+                    <sp/>Floor,<sp/>Boston,<sp/>MA
+                    <sp/>
+                    <sp/>02111-1301
+                    <sp/>
+                    <sp/>USA
+                </highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="comment"><sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#ifndef<sp/>_GNT_CONV_H
+                </highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>_GNT_CONV_H
+                </highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gnt_8h" kindref="compound">gnt.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gntwidget_8h" kindref="compound">
+                    gntwidget.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gntmenuitem_8h" kindref="compound">
+                    gntmenuitem.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;conversation.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>Grabs<sp/>the<sp/>conv<sp/>out<sp/>of<sp/>a<sp/>PurpleConverstation
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="36" refid="gntconv_8h_1a128fbdff556507d74cfcb6a33bf78f35" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>FINCH_CONV(conv)<sp/>((FinchConv<sp/>*)(conv)-&gt;ui_data)
+                </highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">
+                    /***************************************************************************
+                </highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="comment"><sp/>*<sp/>@name<sp/>GNT<sp/>Conversations<sp/>API
+                </highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="comment">
+                    <sp/>
+                    ***************************************************************************/
+                </highlight>
+            </codeline>
+            <codeline lineno="43" refid="gntconv_8h_1a85c6dea7758331dde2ef2a585a9f488b" refkind="member">
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___finch_conv" kindref="compound">_FinchConv</ref>
+                    <sp/>
+                    <ref refid="struct___finch_conv" kindref="compound">FinchConv</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="44" refid="gntconv_8h_1af3b9d29394e8719f1c15227646da19f6" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___finch_conv_chat" kindref="compound">_FinchConvChat</ref>
+                    <sp/>
+                    <ref refid="struct___finch_conv_chat" kindref="compound">FinchConvChat</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="45" refid="gntconv_8h_1a1b67a68fbd3441d38730b3245ed0d2d1" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___finch_conv_im" kindref="compound">_FinchConvIm</ref>
+                    <sp/>
+                    <ref refid="struct___finch_conv_im" kindref="compound">FinchConvIm</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="47" refid="gntconv_8h_1a5fc9f5270c0a8486f7389d12828fb1cf" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">enum</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="49" refid="gntconv_8h_1a5fc9f5270c0a8486f7389d12828fb1cfa08105f49ac1a4cd16932163e94ce2c52"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntconv_8h_1a5fc9f5270c0a8486f7389d12828fb1cfa08105f49ac1a4cd16932163e94ce2c52"
+                         kindref="member">FINCH_CONV_NO_SOUND
+                    </ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>=<sp/>1<sp/>&lt;&lt;<sp/>0,
+                </highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal">}
+                    <sp/>
+                    <ref refid="gntconv_8h_1a5fc9f5270c0a8486f7389d12828fb1cf" kindref="member">
+                        FinchConversationFlag</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="52" refid="struct___finch_conv" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___finch_conv" kindref="compound">_FinchConv</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="54" refid="struct___finch_conv_1a4dd2ca5f40d57a1f17e9130154bdfe88" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*<ref refid="struct___finch_conv_1a4dd2ca5f40d57a1f17e9130154bdfe88"
+                                         kindref="member">list</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="55" refid="struct___finch_conv_1a1af4c29081304fe00cab9d4f0e687cdc" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleConversation<sp/>*<ref refid="struct___finch_conv_1a1af4c29081304fe00cab9d4f0e687cdc"
+                                                      kindref="member">active_conv</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="57" refid="struct___finch_conv_1af21fe6008e6e5d82746bc45e9cec36d3" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="struct___finch_conv_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">
+                    window</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>the<sp/>container<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="58" refid="struct___finch_conv_1a8d12cefdd6ed5e989fa43b7db327f38b" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="struct___finch_conv_1a8d12cefdd6ed5e989fa43b7db327f38b" kindref="member">
+                    entry</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>entry<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="59" refid="struct___finch_conv_1a6f9f9b30ca8fbff3a99ef9ed4ae483c3" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="struct___finch_conv_1a6f9f9b30ca8fbff3a99ef9ed4ae483c3" kindref="member">tv</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>text-view<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="60" refid="struct___finch_conv_1a368ed719ee1b35054df876bf03c3ba18" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="struct___finch_conv_1a368ed719ee1b35054df876bf03c3ba18" kindref="member">
+                    menu</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="61" refid="struct___finch_conv_1a4a85b02c4828427d8cafb377cf29ac8a" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="struct___finch_conv_1a4a85b02c4828427d8cafb377cf29ac8a" kindref="member">
+                    info</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="62" refid="struct___finch_conv_1a2253310eac2f870402219ee92d858e37" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntconv_8h_1a5fc9f5270c0a8486f7389d12828fb1cf" kindref="member">FinchConversationFlag
+                    </ref>
+                    <sp/>
+                    <ref refid="struct___finch_conv_1a2253310eac2f870402219ee92d858e37" kindref="member">flags</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">union</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="66" refid="struct___finch_conv_1ab6224c02fa45b5479cef058d59b20c8c" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___finch_conv_chat" kindref="compound">FinchConvChat</ref>
+                    <sp/>*<ref refid="struct___finch_conv_1ab6224c02fa45b5479cef058d59b20c8c" kindref="member">
+                    chat</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="67" refid="struct___finch_conv_1a9bce8eabc377dbf5f4d42d094bf510ea" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___finch_conv_im" kindref="compound">FinchConvIm</ref>
+                    <sp/>*<ref refid="struct___finch_conv_1a9bce8eabc377dbf5f4d42d094bf510ea" kindref="member">im</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                    <sp/>
+                    <ref refid="struct___finch_conv_1a727c76282f69a612834b258b25dbfe19" kindref="member">u</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="71" refid="struct___finch_conv_chat" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___finch_conv_chat" kindref="compound">_FinchConvChat</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="73" refid="struct___finch_conv_chat_1a8ebd0157d44d3b3689f55578680834c0" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="struct___finch_conv_chat_1a8ebd0157d44d3b3689f55578680834c0" kindref="member">
+                    userlist</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>the<sp/>userlist<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="74" refid="struct___finch_conv_chat_1a1ae4de4372276c778453086a8a8a1bf0" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___finch_conv_chat_1a1ae4de4372276c778453086a8a8a1bf0"
+                                                     kindref="member">pad1</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="75" refid="struct___finch_conv_chat_1ac13413e5384ff61b6d15f48c271e2413" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___finch_conv_chat_1ac13413e5384ff61b6d15f48c271e2413"
+                                                     kindref="member">pad2</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="78" refid="struct___finch_conv_im" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___finch_conv_im" kindref="compound">_FinchConvIm</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="80" refid="struct___finch_conv_im_1a267ab8422be8d3b88280ff153b47637a" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_menu_item" kindref="compound">GntMenuItem</ref>
+                    <sp/>*<ref refid="struct___finch_conv_im_1a267ab8422be8d3b88280ff153b47637a" kindref="member">
+                    sendto</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="81" refid="struct___finch_conv_im_1ab9656982862900f144fc0242abb0cf20" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___finch_conv_im_1ab9656982862900f144fc0242abb0cf20"
+                                                     kindref="member">something_for_later</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal">PurpleConversationUiOps<sp/>*<ref
+                        refid="gntconv_8c_1ad64fc49518805a8f9063c74016ab2394" kindref="member">
+                    finch_conv_get_ui_ops</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntconv_8c_1a107aeb50f2c8bc6aa02b186ffb48e908" kindref="member">
+                        finch_conversation_init</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntconv_8c_1ae11f6920562c7827e9113059f4aff69a" kindref="member">
+                        finch_conversation_uninit</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="100">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntconv_8c_1afb0c2d75b6bd61698fb1d5793d1d261e" kindref="member">
+                        finch_conversation_set_active</ref>(PurpleConversation<sp/>*conv);
+                </highlight>
+            </codeline>
+            <codeline lineno="107">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="115">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntconv_8c_1a1075f42377f8e48515196738242de892" kindref="member">
+                        finch_conversation_set_info_widget</ref>(PurpleConversation<sp/>*conv,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="116">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="119">
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+        </programlisting>
+        <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntconv.h"/>
+    </compounddef>
+</doxygen>

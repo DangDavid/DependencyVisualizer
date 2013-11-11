@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntpounce_8h" kind="file">
+        <compoundname>gntpounce.h</compoundname>
+        <includes local="yes">pounce.h</includes>
+        <includedby refid="gntblist_8c" local="yes">gntblist.c</includedby>
+        <includedby refid="gntpounce_8c" local="yes">gntpounce.c</includedby>
+        <includedby refid="gntui_8c" local="yes">gntui.c</includedby>
+        <incdepgraph>
+            <node id="455">
+                <label>gntpounce.h</label>
+                <link refid="gntpounce.h"/>
+                <childnode refid="456" relation="include">
+                </childnode>
+            </node>
+            <node id="456">
+                <label>pounce.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="458">
+                <label>gntblist.c</label>
+                <link refid="gntblist_8c"/>
+            </node>
+            <node id="459">
+                <label>gntpounce.c</label>
+                <link refid="gntpounce_8c"/>
+            </node>
+            <node id="457">
+                <label>gntpounce.h</label>
+                <link refid="gntpounce.h"/>
+                <childnode refid="458" relation="include">
+                </childnode>
+                <childnode refid="459" relation="include">
+                </childnode>
+                <childnode refid="460" relation="include">
+                </childnode>
+            </node>
+            <node id="460">
+                <label>gntui.c</label>
+                <link refid="gntui_8c"/>
+            </node>
+        </invincdepgraph>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntpounce_8h_1a0ca254725ebfc37c20c318c1f9bfa05a" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_pounce_editor_show</definition>
+                <argsstring>(PurpleAccount *account, const char *name, PurplePounce *cur_pounce)</argsstring>
+                <name>finch_pounce_editor_show</name>
+                <param>
+                    <type>PurpleAccount *</type>
+                    <declname>account</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>name</declname>
+                </param>
+                <param>
+                    <type>PurplePounce *</type>
+                    <declname>cur_pounce</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Displays a New Buddy Pounce or Edit Buddy Pounce dialog.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>account</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The optional account to use.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>name</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The optional name to pounce on.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>cur_pounce</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The current buddy pounce, if editing an existing one.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntpounce.h"
+                          line="37" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntpounce.c"
+                          bodystart="282" bodyend="595"/>
+            </memberdef>
+            <memberdef kind="function" id="gntpounce_8h_1ab495cdd571c6da33a9218a7e87af44f1" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_pounces_manager_show</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_pounces_manager_show</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Shows the pounces manager window.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntpounce.h"
+                          line="43" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntpounce.c"
+                          bodystart="666" bodyend="733"/>
+            </memberdef>
+            <memberdef kind="function" id="gntpounce_8h_1a2db0036ed35c1ca9ef4b788df67abd8a" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_pounces_manager_hide</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_pounces_manager_hide</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Hides the pounces manager window.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntpounce.h"
+                          line="48" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntpounce.c"
+                          bodystart="736" bodyend="748"/>
+            </memberdef>
+            <memberdef kind="function" id="gntpounce_8h_1a9f0489c649d2ec5ae9e4aec0a9ed55a1" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void *</type>
+                <definition>void* finch_pounces_get_handle</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_pounces_get_handle</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Returns the gtkpounces handle</para>
+                    <para>
+                        <simplesect kind="return">
+                            <para>The handle to the GTK+ pounces system</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntpounce.h"
+                          line="55" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntpounce.c"
+                          bodystart="916" bodyend="921"/>
+            </memberdef>
+            <memberdef kind="function" id="gntpounce_8h_1a0878a1ffbadf6bbb89d01f8c69da6fd6" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_pounces_init</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_pounces_init</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Initializes the GNT pounces subsystem.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntpounce.h"
+                          line="60" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntpounce.c"
+                          bodystart="924" bodyend="949"/>
+            </memberdef>
+            <memberdef kind="function" id="gntpounce_8h_1af45792252abf2a2bfa347b4a3281b183" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_pounces_uninit</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_pounces_uninit</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Uninitializes the GNT pounces subsystem.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntpounce.h"
+                          line="65" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntpounce.c"
+                          bodystart="952" bodyend="957"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>GNT Buddy Pounce API</para>
+            <para>finch</para>
+            <para>Finch is the legal property of its developers, whose names are too numerous to list here. Please refer
+                to the COPYRIGHT file distributed with this source distribution.
+            </para>
+            <para>This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+                General Public License as published by the Free Software Foundation; either version 2 of the License, or
+                (at your option) any later version.
+            </para>
+            <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
+                the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public
+                License for more details.
+            </para>
+            <para>You should have received a copy of the GNU General Public License along with this program; if not,
+                write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+            </para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="25">
+                <highlight class="preprocessor">#ifndef<sp/>_FINCHPOUNCE_H_
+                </highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>_FINCHPOUNCE_H_
+                </highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;pounce.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntpounce_8c_1a0ca254725ebfc37c20c318c1f9bfa05a" kindref="member">
+                        finch_pounce_editor_show</ref>(PurpleAccount<sp/>*account,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*name,
+                </highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurplePounce<sp/>*cur_pounce);
+                </highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntpounce_8c_1ab495cdd571c6da33a9218a7e87af44f1" kindref="member">
+                        finch_pounces_manager_show</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntpounce_8c_1a2db0036ed35c1ca9ef4b788df67abd8a" kindref="member">
+                        finch_pounces_manager_hide</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntpounce_8c_1aa9a2e19f7ab7d5f99f8b350a068f8a10"
+                                                     kindref="member">finch_pounces_get_handle</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntpounce_8c_1a0878a1ffbadf6bbb89d01f8c69da6fd6" kindref="member">
+                        finch_pounces_init</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntpounce_8c_1a2665b268845699a6d26be58b7907a3f9" kindref="member">
+                        finch_pounces_uninit</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>_PURPLE_GTKPOUNCE_H_<sp/>*/
+                </highlight>
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntpounce.h"/>
+    </compounddef>
+</doxygen>

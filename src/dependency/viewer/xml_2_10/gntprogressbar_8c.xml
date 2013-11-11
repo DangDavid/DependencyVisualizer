@@ -1,0 +1,3472 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntprogressbar_8c" kind="file">
+        <compoundname>gntprogressbar.c</compoundname>
+        <includes refid="gntinternal_8h" local="yes">gntinternal.h</includes>
+        <includes refid="gntprogressbar_8h" local="yes">gntprogressbar.h</includes>
+        <includes refid="gntutils_8h" local="yes">gntutils.h</includes>
+        <includes local="no">string.h</includes>
+        <incdepgraph>
+            <node id="2386">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="2387" relation="include">
+                </childnode>
+                <childnode refid="2388" relation="include">
+                </childnode>
+            </node>
+            <node id="2390">
+                <label>gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="2379" relation="include">
+                </childnode>
+                <childnode refid="2378" relation="include">
+                </childnode>
+                <childnode refid="2385" relation="include">
+                </childnode>
+                <childnode refid="2386" relation="include">
+                </childnode>
+            </node>
+            <node id="2388">
+                <label>term.h</label>
+            </node>
+            <node id="2374">
+                <label>libgnt/gntprogressbar.c</label>
+                <link refid="gntprogressbar.c"/>
+                <childnode refid="2375" relation="include">
+                </childnode>
+                <childnode refid="2377" relation="include">
+                </childnode>
+                <childnode refid="2389" relation="include">
+                </childnode>
+                <childnode refid="2391" relation="include">
+                </childnode>
+            </node>
+            <node id="2377">
+                <label>gntprogressbar.h</label>
+                <link refid="gntprogressbar_8h"/>
+                <childnode refid="2378" relation="include">
+                </childnode>
+                <childnode refid="2379" relation="include">
+                </childnode>
+            </node>
+            <node id="2387">
+                <label>curses.h</label>
+            </node>
+            <node id="2385">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="2376" relation="include">
+                </childnode>
+            </node>
+            <node id="2375">
+                <label>gntinternal.h</label>
+                <link refid="gntinternal_8h"/>
+                <childnode refid="2376" relation="include">
+                </childnode>
+            </node>
+            <node id="2391">
+                <label>string.h</label>
+            </node>
+            <node id="2379">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="2380" relation="include">
+                </childnode>
+                <childnode refid="2376" relation="include">
+                </childnode>
+                <childnode refid="2381" relation="include">
+                </childnode>
+                <childnode refid="2382" relation="include">
+                </childnode>
+            </node>
+            <node id="2384">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="2380" relation="include">
+                </childnode>
+                <childnode refid="2376" relation="include">
+                </childnode>
+                <childnode refid="2383" relation="include">
+                </childnode>
+            </node>
+            <node id="2376">
+                <label>glib.h</label>
+            </node>
+            <node id="2382">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="2380" relation="include">
+                </childnode>
+                <childnode refid="2376" relation="include">
+                </childnode>
+                <childnode refid="2383" relation="include">
+                </childnode>
+                <childnode refid="2381" relation="include">
+                </childnode>
+            </node>
+            <node id="2381">
+                <label>ncurses.h</label>
+            </node>
+            <node id="2378">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="2376" relation="include">
+                </childnode>
+                <childnode refid="2379" relation="include">
+                </childnode>
+                <childnode refid="2384" relation="include">
+                </childnode>
+                <childnode refid="2385" relation="include">
+                </childnode>
+                <childnode refid="2386" relation="include">
+                </childnode>
+            </node>
+            <node id="2389">
+                <label>gntutils.h</label>
+                <link refid="gntutils_8h"/>
+                <childnode refid="2376" relation="include">
+                </childnode>
+                <childnode refid="2378" relation="include">
+                </childnode>
+                <childnode refid="2390" relation="include">
+                </childnode>
+                <childnode refid="2379" relation="include">
+                </childnode>
+            </node>
+            <node id="2380">
+                <label>stdio.h</label>
+            </node>
+            <node id="2383">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <innerclass refid="struct___gnt_progress_bar_private" prot="public">_GntProgressBarPrivate</innerclass>
+        <innerclass refid="struct___gnt_progress_bar" prot="public">_GntProgressBar</innerclass>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="gntprogressbar_8c_1a49ea6cecc808186a6e60e73fb325fefa" prot="public"
+                       static="no">
+                <name>GNT_PROGRESS_BAR_GET_PRIVATE</name>
+                <param>
+                    <defname>o</defname>
+                </param>
+                <initializer>&amp;(<ref refid="gntprogressbar_8h_1adad0cebe5d48377e1ef243d52b8b43df" kindref="member">
+                    GNT_PROGRESS_BAR</ref>(o)-&gt;priv)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        line="47" column="10"
+                        bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        bodystart="47" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="typedef">
+            <memberdef kind="typedef" id="gntprogressbar_8c_1af16d432463b4da70e8153893ee69ef12" prot="public"
+                       static="no">
+                <type>struct
+                    <ref refid="struct___gnt_progress_bar_private" kindref="compound">_GntProgressBarPrivate</ref>
+                </type>
+                <definition>typedef struct _GntProgressBarPrivate GntProgressBarPrivate</definition>
+                <argsstring></argsstring>
+                <name>GntProgressBarPrivate</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>GNT - The GLib Ncurses Toolkit</para>
+                    <para>GNT is the legal property of its developers, whose names are too numerous to list here. Please
+                        refer to the COPYRIGHT file distributed with this source distribution.
+                    </para>
+                    <para>This library is free software; you can redistribute it and/or modify it under the terms of the
+                        GNU General Public License as published by the Free Software Foundation; either version 2 of the
+                        License, or (at your option) any later version.
+                    </para>
+                    <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+                        without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+                        the GNU General Public License for more details.
+                    </para>
+                    <para>You should have received a copy of the GNU General Public License along with this program; if
+                        not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+                        02111-1301 USA
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        line="34" column="1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="var">
+            <memberdef kind="variable" id="gntprogressbar_8c_1ac64f6c9db00fc11a2360466fa1e2d1ac" prot="public"
+                       static="yes" mutable="no">
+                <type>
+                    <ref refid="gntwidget_8h_1ace656c76f3a8bb8f5aa250637f06f1de" kindref="member">GntWidgetClass</ref>
+                    *
+                </type>
+                <definition>GntWidgetClass* parent_class</definition>
+                <argsstring></argsstring>
+                <name>parent_class</name>
+                <initializer>=
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        line="50" column="1"
+                        bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        bodystart="50" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntprogressbar_8c_1a68fc27892da68bbc81513900daada169" prot="public"
+                       static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void gnt_progress_bar_draw</definition>
+                <argsstring>(GntWidget *widget)</argsstring>
+                <name>gnt_progress_bar_draw</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        line="54" column="1"
+                        bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        bodystart="54" bodyend="116"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprogressbar_8c_1a885f755f257899ef03a447d6e7639ba2" prot="public"
+                       static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void gnt_progress_bar_size_request</definition>
+                <argsstring>(GntWidget *widget)</argsstring>
+                <name>gnt_progress_bar_size_request</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        line="119" column="1"
+                        bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        bodystart="119" bodyend="122"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprogressbar_8c_1a1fab2a47af69c585ad9baba46e14e74e" prot="public"
+                       static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void gnt_progress_bar_class_init</definition>
+                <argsstring>(gpointer klass, gpointer class_data)</argsstring>
+                <name>gnt_progress_bar_class_init</name>
+                <param>
+                    <type>gpointer</type>
+                    <declname>klass</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>class_data</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        line="125" column="1"
+                        bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        bodystart="125" bodyend="137"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprogressbar_8c_1a919beb66c011b38ca9c76f55a6ce761b" prot="public"
+                       static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void gnt_progress_bar_init</definition>
+                <argsstring>(GTypeInstance *instance, gpointer g_class)</argsstring>
+                <name>gnt_progress_bar_init</name>
+                <param>
+                    <type>GTypeInstance *</type>
+                    <declname>instance</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>g_class</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        line="140" column="1"
+                        bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        bodystart="140" bodyend="152"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprogressbar_8c_1a8ea69a2abb52cea54883f22859baa73b" prot="public"
+                       static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>GType</type>
+                <definition>GType gnt_progress_bar_get_type</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_progress_bar_get_type</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Get the GType for GntProgressBar
+                        <simplesect kind="return">
+                            <para>The GType for GntProrgressBar</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        line="155" column="1"
+                        bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        bodystart="155" bodyend="177"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprogressbar_8c_1a44a0bfb12cedf17a6659b1827428235c" prot="public"
+                       static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* gnt_progress_bar_new</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_progress_bar_new</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Create a new GntProgressBar
+                        <simplesect kind="return">
+                            <para>The new GntProgressBar</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        line="180" column="1"
+                        bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        bodystart="180" bodyend="184"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprogressbar_8c_1a55db6f67947250eb658d4be8517db738" prot="public"
+                       static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_progress_bar_set_fraction</definition>
+                <argsstring>(GntProgressBar *pbar, gdouble fraction)</argsstring>
+                <name>gnt_progress_bar_set_fraction</name>
+                <param>
+                    <type>
+                        <ref refid="gntprogressbar_8h_1a32b5c851cc8cc8a2405daec40b38a3f1" kindref="member">
+                            GntProgressBar
+                        </ref>
+                        *
+                    </type>
+                    <declname>pbar</declname>
+                </param>
+                <param>
+                    <type>gdouble</type>
+                    <declname>fraction</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Set the progress for a progress bar</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>pbar</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The GntProgressBar</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>fraction</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The value between 0 and 1 to display</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        line="187" column="1"
+                        bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        bodystart="187" bodyend="200"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprogressbar_8c_1af3be8000dcb5925009813428047cf997" prot="public"
+                       static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_progress_bar_set_orientation</definition>
+                <argsstring>(GntProgressBar *pbar, GntProgressBarOrientation orientation)</argsstring>
+                <name>gnt_progress_bar_set_orientation</name>
+                <param>
+                    <type>
+                        <ref refid="gntprogressbar_8h_1a32b5c851cc8cc8a2405daec40b38a3f1" kindref="member">
+                            GntProgressBar
+                        </ref>
+                        *
+                    </type>
+                    <declname>pbar</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntprogressbar_8h_1a26d90884288cbb9491842d3d67e0c64e" kindref="member">
+                            GntProgressBarOrientation
+                        </ref>
+                    </type>
+                    <declname>orientation</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Set the orientation for a progress bar</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>pbar</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The GntProgressBar</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>orientation</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The orientation to use</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        line="203" column="1"
+                        bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        bodystart="203" bodyend="225"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprogressbar_8c_1a30d47e37b81a2e5b47fc8648b9df751f" prot="public"
+                       static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_progress_bar_set_show_progress</definition>
+                <argsstring>(GntProgressBar *pbar, gboolean show)</argsstring>
+                <name>gnt_progress_bar_set_show_progress</name>
+                <param>
+                    <type>
+                        <ref refid="gntprogressbar_8h_1a32b5c851cc8cc8a2405daec40b38a3f1" kindref="member">
+                            GntProgressBar
+                        </ref>
+                        *
+                    </type>
+                    <declname>pbar</declname>
+                </param>
+                <param>
+                    <type>gboolean</type>
+                    <declname>show</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Controls whether the progress value is shown</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>pbar</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The GntProgressBar</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>show</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>A boolean indicating if the value is shown</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        line="228" column="1"
+                        bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        bodystart="228" bodyend="232"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprogressbar_8c_1a29e8131d19e614704bc0ecf0a6c43490" prot="public"
+                       static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gdouble</type>
+                <definition>gdouble gnt_progress_bar_get_fraction</definition>
+                <argsstring>(GntProgressBar *pbar)</argsstring>
+                <name>gnt_progress_bar_get_fraction</name>
+                <param>
+                    <type>
+                        <ref refid="gntprogressbar_8h_1a32b5c851cc8cc8a2405daec40b38a3f1" kindref="member">
+                            GntProgressBar
+                        </ref>
+                        *
+                    </type>
+                    <declname>pbar</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Get the progress that is displayed</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>pbar</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The GntProgressBar</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>The progress displayed as a value between 0 and 1</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        line="235" column="1"
+                        bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        bodystart="235" bodyend="239"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprogressbar_8c_1ae678917773fa5485f11aad13dcf84106" prot="public"
+                       static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>
+                    <ref refid="gntprogressbar_8h_1a26d90884288cbb9491842d3d67e0c64e" kindref="member">
+                        GntProgressBarOrientation
+                    </ref>
+                </type>
+                <definition>GntProgressBarOrientation gnt_progress_bar_get_orientation</definition>
+                <argsstring>(GntProgressBar *pbar)</argsstring>
+                <name>gnt_progress_bar_get_orientation</name>
+                <param>
+                    <type>
+                        <ref refid="gntprogressbar_8h_1a32b5c851cc8cc8a2405daec40b38a3f1" kindref="member">
+                            GntProgressBar
+                        </ref>
+                        *
+                    </type>
+                    <declname>pbar</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Get the orientation for the progress bar</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>pbar</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The GntProgressBar</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>The current orientation of the progress bar</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        line="242" column="1"
+                        bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        bodystart="242" bodyend="246"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprogressbar_8c_1a14d11302ec8eeaca1e9abeb07b575dba" prot="public"
+                       static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>gboolean gnt_progress_bar_get_show_progress</definition>
+                <argsstring>(GntProgressBar *pbar)</argsstring>
+                <name>gnt_progress_bar_get_show_progress</name>
+                <param>
+                    <type>
+                        <ref refid="gntprogressbar_8h_1a32b5c851cc8cc8a2405daec40b38a3f1" kindref="member">
+                            GntProgressBar
+                        </ref>
+                        *
+                    </type>
+                    <declname>pbar</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Get a boolean describing if the progress value is shown</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>pbar</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The GntProgressBar</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>A boolean
+                                <computeroutput>true</computeroutput>
+                                if the progress value is shown,
+                                <computeroutput>false</computeroutput>
+                                otherwise.
+                            </para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        line="249" column="1"
+                        bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"
+                        bodystart="249" bodyend="253"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="23">
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntinternal_8h" kindref="compound">
+                    gntinternal.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntprogressbar_8h" kindref="compound">
+                    gntprogressbar.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntutils_8h" kindref="compound">
+                    gntutils.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;string.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29" refid="struct___gnt_progress_bar_private" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_progress_bar_private" kindref="compound">_GntProgressBarPrivate</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gdouble
+                    <sp/>
+                    <ref refid="struct___gnt_progress_bar_private_1a55a46582be31c58f27757318a2afb036" kindref="member">
+                        fraction</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean
+                    <sp/>
+                    <ref refid="struct___gnt_progress_bar_private_1a2b3e719735cf2087617168006149b61b" kindref="member">
+                        show_value</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntprogressbar_8h_1a26d90884288cbb9491842d3d67e0c64e" kindref="member">
+                        GntProgressBarOrientation
+                    </ref>
+                    <sp/>
+                    <ref refid="struct___gnt_progress_bar_private_1a46007722a187178b6371925edcb4be80" kindref="member">
+                        orientation</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal">}
+                    <sp/>
+                    <ref refid="gntprogressbar_8c_1af16d432463b4da70e8153893ee69ef12" kindref="member">
+                        GntProgressBarPrivate</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="36" refid="struct___gnt_progress_bar" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_progress_bar" kindref="compound">_GntProgressBar</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_progress_bar_1ae3e3b55c7e6209f0e555f25a2e5fd1a9" kindref="member">
+                        parent</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#if<sp/>!GLIB_CHECK_VERSION(2,4,0)
+                </highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_progress_bar_private" kindref="compound">GntProgressBarPrivate</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_progress_bar_1a0aa7d140fd5e9f539a1424beff7a74ed" kindref="member">
+                        priv</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#if<sp/>GLIB_CHECK_VERSION(2,4,0)
+                </highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_PROGRESS_BAR_GET_PRIVATE(o)
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_INSTANCE_GET_PRIVATE<sp/>((o),<sp/>GNT_TYPE_PROGRESS_BAR,<sp/>GntProgressBarPrivate))
+                </highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#else</highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_PROGRESS_BAR_GET_PRIVATE(o)
+                    <sp/>
+                    <sp/>
+                    <sp/>&amp;(GNT_PROGRESS_BAR(o)-&gt;priv)
+                </highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_widget_class" kindref="compound">GntWidgetClass</ref>
+                    <sp/>*parent_class<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal">gnt_progress_bar_draw<sp/>(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget)
+                </highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_progress_bar_private" kindref="compound">GntProgressBarPrivate</ref>
+                    <sp/>*priv<sp/>=
+                    <sp/>
+                    <ref refid="gntprogressbar_8c_1a49ea6cecc808186a6e60e73fb325fefa" kindref="member">
+                        GNT_PROGRESS_BAR_GET_PRIVATE
+                    </ref>
+                    <sp/>(
+                    <ref refid="gntprogressbar_8h_1adad0cebe5d48377e1ef243d52b8b43df" kindref="member">
+                        GNT_PROGRESS_BAR
+                    </ref>
+                    <sp/>(widget));
+                </highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gchar<sp/>progress[8];
+                </highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gint<sp/>start,<sp/>end,<sp/>i,<sp/>pos;
+                </highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>color;
+                </highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_snprintf<sp/>(progress,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">sizeof</highlight>
+                <highlight class="normal"><sp/>(progress),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;%.1f%%&quot;</highlight>
+                <highlight class="normal">,<sp/>priv-&gt;
+                    <ref refid="struct___gnt_progress_bar_private_1a55a46582be31c58f27757318a2afb036" kindref="member">
+                        fraction
+                    </ref>
+                    <sp/>*<sp/>100);
+                </highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>color<sp/>=
+                    <sp/>
+                    <ref refid="gntcolors_8c_1a35f4238441549b5c0858db2c98a0b704" kindref="member">gnt_color_pair</ref>(
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aade44b623e10d9f44be58a2784aa567d"
+                         kindref="member">GNT_COLOR_NORMAL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">switch</highlight>
+                <highlight class="normal"><sp/>(priv-&gt;<ref
+                        refid="struct___gnt_progress_bar_private_1a46007722a187178b6371925edcb4be80" kindref="member">
+                    orientation</ref>)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntprogressbar_8h_1a15436b2ff1d1c8fb65e3c1d5a16d8a66a207464be5665c03121470b5467af414c"
+                         kindref="member">GNT_PROGRESS_LEFT_TO_RIGHT</ref>:
+                </highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntprogressbar_8h_1a15436b2ff1d1c8fb65e3c1d5a16d8a66a9cfabd2114eb271e3c732ea1c332a616"
+                         kindref="member">GNT_PROGRESS_RIGHT_TO_LEFT</ref>:
+                </highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>start<sp/>=<sp/>(priv-&gt;
+                    <ref refid="struct___gnt_progress_bar_private_1a46007722a187178b6371925edcb4be80" kindref="member">
+                        orientation
+                    </ref>
+                    <sp/>==
+                    <sp/>
+                    <ref refid="gntprogressbar_8h_1a15436b2ff1d1c8fb65e3c1d5a16d8a66a207464be5665c03121470b5467af414c"
+                         kindref="member">GNT_PROGRESS_LEFT_TO_RIGHT
+                    </ref>
+                    <sp/>?<sp/>0<sp/>:<sp/>(1.0<sp/>-<sp/>priv-&gt;<ref
+                        refid="struct___gnt_progress_bar_private_1a55a46582be31c58f27757318a2afb036" kindref="member">
+                    fraction</ref>)<sp/>*<sp/>widget-&gt;<ref
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
+                    );
+                </highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>end<sp/>=<sp/>(priv-&gt;
+                    <ref refid="struct___gnt_progress_bar_private_1a46007722a187178b6371925edcb4be80" kindref="member">
+                        orientation
+                    </ref>
+                    <sp/>==
+                    <sp/>
+                    <ref refid="gntprogressbar_8h_1a15436b2ff1d1c8fb65e3c1d5a16d8a66a207464be5665c03121470b5467af414c"
+                         kindref="member">GNT_PROGRESS_LEFT_TO_RIGHT
+                    </ref>
+                    <sp/>?<sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                               kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
+                    <sp/>*<sp/>priv-&gt;
+                    <ref refid="struct___gnt_progress_bar_private_1a55a46582be31c58f27757318a2afb036" kindref="member">
+                        fraction
+                    </ref>
+                    <sp/>:<sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                               kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
+                    );
+                </highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>background<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>widget-&gt;<ref
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.<ref
+                        refid="struct___gnt_widget_priv_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">
+                    height</ref>;<sp/>i++)
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>mvwhline<sp/>(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
+                                                       kindref="member">window</ref>,<sp/>i,<sp/>0,
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;<sp/>&apos;
+                </highlight>
+                <highlight class="normal"><sp/>|<sp/>color,<sp/>widget-&gt;<ref
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
+                    );
+                </highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>foreground<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>widget-&gt;<ref
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.<ref
+                        refid="struct___gnt_widget_priv_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">
+                    height</ref>;<sp/>i++)
+                </highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>mvwhline<sp/>(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
+                                                       kindref="member">window</ref>,<sp/>i,<sp/>start,<sp/>ACS_CKBOARD
+                    <sp/>|<sp/>color<sp/>|<sp/>A_REVERSE,<sp/>end);
+                </highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>text<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(priv-&gt;<ref
+                        refid="struct___gnt_progress_bar_private_1a2b3e719735cf2087617168006149b61b" kindref="member">
+                    show_value</ref>)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="80">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>pos<sp/>=<sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                                       kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
+                    <sp/>/<sp/>2<sp/>-<sp/>strlen<sp/>(progress)<sp/>/<sp/>2;
+                </highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>progress[i];<sp/>i++,<sp/>pos++)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>wattrset<sp/>(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
+                                                       kindref="member">window</ref>,<sp/>color<sp/>|<sp/>((pos<sp/>&lt;
+                    <sp/>start<sp/>||<sp/>pos<sp/>&gt;<sp/>end)<sp/>?<sp/>A_NORMAL<sp/>:<sp/>A_REVERSE));
+                </highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>mvwprintw<sp/>(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
+                                                        kindref="member">window</ref>,<sp/>widget-&gt;<ref
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height
+                    </ref>
+                    <sp/>/<sp/>2,<sp/>pos,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;%c&quot;</highlight>
+                <highlight class="normal">,<sp/>progress[i]);
+                </highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>wattrset<sp/>(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
+                                                       kindref="member">window</ref>,<sp/>color);
+                </highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntprogressbar_8h_1a15436b2ff1d1c8fb65e3c1d5a16d8a66a1d51db3d6b0d223da678cab0e7c66833"
+                         kindref="member">GNT_PROGRESS_TOP_TO_BOTTOM</ref>:
+                </highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntprogressbar_8h_1a15436b2ff1d1c8fb65e3c1d5a16d8a66aec11c4b55d69ef3148d4bc12f5e9b013"
+                         kindref="member">GNT_PROGRESS_BOTTOM_TO_TOP</ref>:
+                </highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>start<sp/>=<sp/>(priv-&gt;
+                    <ref refid="struct___gnt_progress_bar_private_1a46007722a187178b6371925edcb4be80" kindref="member">
+                        orientation
+                    </ref>
+                    <sp/>==
+                    <sp/>
+                    <ref refid="gntprogressbar_8h_1a15436b2ff1d1c8fb65e3c1d5a16d8a66a1d51db3d6b0d223da678cab0e7c66833"
+                         kindref="member">GNT_PROGRESS_TOP_TO_BOTTOM
+                    </ref>
+                    <sp/>?<sp/>0<sp/>:<sp/>(1.0<sp/>-<sp/>priv-&gt;<ref
+                        refid="struct___gnt_progress_bar_private_1a55a46582be31c58f27757318a2afb036" kindref="member">
+                    fraction</ref>)<sp/>*<sp/>widget-&gt;<ref
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.<ref
+                        refid="struct___gnt_widget_priv_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">
+                    height</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>end<sp/>=<sp/>(priv-&gt;
+                    <ref refid="struct___gnt_progress_bar_private_1a46007722a187178b6371925edcb4be80" kindref="member">
+                        orientation
+                    </ref>
+                    <sp/>==
+                    <sp/>
+                    <ref refid="gntprogressbar_8h_1a15436b2ff1d1c8fb65e3c1d5a16d8a66a1d51db3d6b0d223da678cab0e7c66833"
+                         kindref="member">GNT_PROGRESS_TOP_TO_BOTTOM
+                    </ref>
+                    <sp/>?<sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                               kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height
+                    </ref>
+                    <sp/>*<sp/>priv-&gt;
+                    <ref refid="struct___gnt_progress_bar_private_1a55a46582be31c58f27757318a2afb036" kindref="member">
+                        fraction
+                    </ref>
+                    <sp/>:<sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                               kindref="member">priv</ref>.<ref
+                        refid="struct___gnt_widget_priv_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">
+                    height</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="93">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>background<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>widget-&gt;<ref
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
+                    ;<sp/>i++)
+                </highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>mvwvline<sp/>(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
+                                                       kindref="member">window</ref>,<sp/>0,<sp/>i,
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;<sp/>&apos;
+                </highlight>
+                <highlight class="normal"><sp/>|<sp/>color,<sp/>widget-&gt;<ref
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.<ref
+                        refid="struct___gnt_widget_priv_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">
+                    height</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>foreground<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>widget-&gt;<ref
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
+                    ;<sp/>i++)
+                </highlight>
+            </codeline>
+            <codeline lineno="100">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>mvwvline<sp/>(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
+                                                       kindref="member">window</ref>,<sp/>start,<sp/>i,<sp/>ACS_CKBOARD
+                    <sp/>|<sp/>color<sp/>|<sp/>A_REVERSE,<sp/>end);
+                </highlight>
+            </codeline>
+            <codeline lineno="101">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="102">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>text<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="103">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(priv-&gt;<ref
+                        refid="struct___gnt_progress_bar_private_1a2b3e719735cf2087617168006149b61b" kindref="member">
+                    show_value</ref>)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="104">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>pos<sp/>=<sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                                       kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height
+                    </ref>
+                    <sp/>/<sp/>2<sp/>-<sp/>strlen<sp/>(progress)<sp/>/<sp/>2;
+                </highlight>
+            </codeline>
+            <codeline lineno="105">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>progress[i];<sp/>i++,<sp/>pos++)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>wattrset<sp/>(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
+                                                       kindref="member">window</ref>,<sp/>color<sp/>|<sp/>((pos<sp/>&lt;
+                    <sp/>start<sp/>||<sp/>pos<sp/>&gt;<sp/>end)<sp/>?<sp/>A_NORMAL<sp/>:<sp/>A_REVERSE));
+                </highlight>
+            </codeline>
+            <codeline lineno="107">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>mvwprintw<sp/>(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
+                                                        kindref="member">window</ref>,<sp/>pos,<sp/>widget-&gt;<ref
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
+                    <sp/>/<sp/>2,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;%c\n&quot;</highlight>
+                <highlight class="normal">,<sp/>progress[i]);
+                </highlight>
+            </codeline>
+            <codeline lineno="108">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="109">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>wattrset<sp/>(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
+                                                       kindref="member">window</ref>,<sp/>color);
+                </highlight>
+            </codeline>
+            <codeline lineno="110">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="111">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="112">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="113">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">default</highlight>
+                <highlight class="normal">:</highlight>
+            </codeline>
+            <codeline lineno="114">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_assert_not_reached<sp/>();
+                </highlight>
+            </codeline>
+            <codeline lineno="115">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="116">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="117">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="118">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="119">
+                <highlight class="normal">gnt_progress_bar_size_request<sp/>(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget)
+                </highlight>
+            </codeline>
+            <codeline lineno="120">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="121">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1a188549229f86aeddafd3a5f937c4e986" kindref="member">gnt_widget_set_size
+                    </ref>
+                    <sp/>(widget,<sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                                      kindref="member">priv</ref>.<ref
+                        refid="struct___gnt_widget_priv_1af0a99cf275a2f9731f39c442320a9f3a" kindref="member">minw</ref>,
+                    <sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                         kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1aa2d5e3ec0f6ff0386df32bfa5b3b5885" kindref="member">minh
+                    </ref>
+                    );
+                </highlight>
+            </codeline>
+            <codeline lineno="122">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="123">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="124">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="125">
+                <highlight class="normal">gnt_progress_bar_class_init<sp/>(gpointer
+                    <sp/>
+                    <ref refid="gntbindable_8c_1aa084f6474fb231a7247cc6c5299bad55" kindref="member">klass</ref>,
+                    <sp/>
+                    gpointer<sp/>class_data)
+                </highlight>
+            </codeline>
+            <codeline lineno="126">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="127">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GObjectClass<sp/>*g_class<sp/>=<sp/>G_OBJECT_CLASS<sp/>(klass);
+                </highlight>
+            </codeline>
+            <codeline lineno="128">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="129">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>parent_class<sp/>=
+                    <sp/>
+                    <ref refid="gntwidget_8h_1ab6e8e805c7b988cc35ee86ed1305345e" kindref="member">GNT_WIDGET_CLASS</ref>
+                    <sp/>(klass);
+                </highlight>
+            </codeline>
+            <codeline lineno="130">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="131">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#if<sp/>GLIB_CHECK_VERSION(2,4,0)
+                </highlight>
+            </codeline>
+            <codeline lineno="132">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_type_class_add_private<sp/>(g_class,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">sizeof</highlight>
+                <highlight class="normal"><sp/>(<ref refid="struct___gnt_progress_bar_private" kindref="compound">
+                    GntProgressBarPrivate</ref>));
+                </highlight>
+            </codeline>
+            <codeline lineno="133">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="134">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="135">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>parent_class-&gt;
+                    <ref refid="struct___gnt_widget_class_1a887d5b4ee4066dd6f6032a9601d6c0ac" kindref="member">draw
+                    </ref>
+                    <sp/>=<sp/>gnt_progress_bar_draw;
+                </highlight>
+            </codeline>
+            <codeline lineno="136">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>parent_class-&gt;
+                    <ref refid="struct___gnt_widget_class_1a38c53854c011ca68ea821e8c84df9da6" kindref="member">
+                        size_request
+                    </ref>
+                    <sp/>=<sp/>gnt_progress_bar_size_request;
+                </highlight>
+            </codeline>
+            <codeline lineno="137">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="138">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="139">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="140">
+                <highlight class="normal">gnt_progress_bar_init<sp/>(GTypeInstance<sp/>*instance,<sp/>gpointer
+                    <sp/>
+                    g_class)
+                </highlight>
+            </codeline>
+            <codeline lineno="141">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="142">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget<sp/>=
+                    <sp/>
+                    <ref refid="gntwidget_8h_1a0ddc46716b8cb35d504595ab4bca8a82" kindref="member">GNT_WIDGET</ref>
+                    <sp/>(instance);
+                </highlight>
+            </codeline>
+            <codeline lineno="143">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_progress_bar_private" kindref="compound">GntProgressBarPrivate</ref>
+                    <sp/>*priv<sp/>=
+                    <sp/>
+                    <ref refid="gntprogressbar_8c_1a49ea6cecc808186a6e60e73fb325fefa" kindref="member">
+                        GNT_PROGRESS_BAR_GET_PRIVATE
+                    </ref>
+                    <sp/>(
+                    <ref refid="gntprogressbar_8h_1adad0cebe5d48377e1ef243d52b8b43df" kindref="member">
+                        GNT_PROGRESS_BAR
+                    </ref>
+                    <sp/>(widget));
+                </highlight>
+            </codeline>
+            <codeline lineno="144">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="145">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1a4dc1d06b9860b34f1f3625c6319a5d90" kindref="member">
+                        gnt_widget_set_take_focus
+                    </ref>
+                    <sp/>(widget,<sp/>FALSE);
+                </highlight>
+            </codeline>
+            <codeline lineno="146">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8h_1a5f05379dd2b5934fcd802ba477b6d9a5" kindref="member">GNT_WIDGET_SET_FLAGS
+                    </ref>
+                    <sp/>(widget,
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18a8e7de21c4c04abced0009fc58414f00f"
+                         kindref="member">GNT_WIDGET_NO_BORDER
+                    </ref>
+                    <sp/>|
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18aed65281af82570d4b7bd7b53b2f29635"
+                         kindref="member">GNT_WIDGET_NO_SHADOW
+                    </ref>
+                    <sp/>|
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18ad213e9af0f0490e0b501e6996980f259"
+                         kindref="member">GNT_WIDGET_GROW_X</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="147">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="148">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                         kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1af0a99cf275a2f9731f39c442320a9f3a" kindref="member">minw</ref>
+                    <sp/>=<sp/>8;
+                </highlight>
+            </codeline>
+            <codeline lineno="149">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                         kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1aa2d5e3ec0f6ff0386df32bfa5b3b5885" kindref="member">minh</ref>
+                    <sp/>=<sp/>1;
+                </highlight>
+            </codeline>
+            <codeline lineno="150">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="151">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>priv-&gt;
+                    <ref refid="struct___gnt_progress_bar_private_1a2b3e719735cf2087617168006149b61b" kindref="member">
+                        show_value
+                    </ref>
+                    <sp/>=<sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="152">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="153">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="154">
+                <highlight class="normal">GType</highlight>
+            </codeline>
+            <codeline lineno="155">
+                <highlight class="normal">
+                    <ref refid="gntprogressbar_8c_1a8ea69a2abb52cea54883f22859baa73b" kindref="member">
+                        gnt_progress_bar_get_type
+                    </ref>
+                    <sp/>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="156">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="157">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>GType<sp/>type<sp/>=<sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="158">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="159">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(type<sp/>==<sp/>0)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="160">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal"><sp/>GTypeInfo<sp/>info<sp/>=<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="161">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">sizeof</highlight>
+                <highlight class="normal"><sp/>(<ref refid="gntprogressbar_8h_1a2876ab8cbef775b602f9ca34a39d6b8a"
+                                                     kindref="member">GntProgressBarClass</ref>),
+                </highlight>
+            </codeline>
+            <codeline lineno="162">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>base_init<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="163">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>base_finalize<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="164">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gnt_progress_bar_class_init,
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>class_init<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="165">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>class_finalize<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="166">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>class_data<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="167">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">sizeof</highlight>
+                <highlight class="normal"><sp/>(<ref refid="struct___gnt_progress_bar" kindref="compound">
+                    GntProgressBar</ref>),
+                </highlight>
+            </codeline>
+            <codeline lineno="168">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>0,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>n_preallocs<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="169">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gnt_progress_bar_init,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>instance_init<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="170">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>value_table<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="171">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>};
+                </highlight>
+            </codeline>
+            <codeline lineno="172">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="173">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>type<sp/>=<sp/>g_type_register_static<sp/>(<ref
+                        refid="gntwidget_8h_1a1f3fe24503b438d7c230c405e25a2805" kindref="member">GNT_TYPE_WIDGET</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;GntProgressBar&quot;</highlight>
+                <highlight class="normal">,<sp/>&amp;info,<sp/>0);
+                </highlight>
+            </codeline>
+            <codeline lineno="174">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="175">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="176">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>type;
+                </highlight>
+            </codeline>
+            <codeline lineno="177">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="178">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="179">
+                <highlight class="normal">
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="180">
+                <highlight class="normal">
+                    <ref refid="gntprogressbar_8c_1a44a0bfb12cedf17a6659b1827428235c" kindref="member">
+                        gnt_progress_bar_new
+                    </ref>
+                    <sp/>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="181">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="182">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget<sp/>=<sp/>g_object_new<sp/>(<ref
+                        refid="gntprogressbar_8h_1a7ba15ff42589c7bd1b6a118ca0bb5417" kindref="member">
+                    GNT_TYPE_PROGRESS_BAR</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="183">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>widget;
+                </highlight>
+            </codeline>
+            <codeline lineno="184">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="185">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="186">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="187">
+                <highlight class="normal">
+                    <ref refid="gntprogressbar_8c_1a55db6f67947250eb658d4be8517db738" kindref="member">
+                        gnt_progress_bar_set_fraction
+                    </ref>
+                    <sp/>(
+                    <ref refid="struct___gnt_progress_bar" kindref="compound">GntProgressBar</ref>
+                    <sp/>*pbar,<sp/>gdouble<sp/>fraction)
+                </highlight>
+            </codeline>
+            <codeline lineno="188">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="189">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_progress_bar_private" kindref="compound">GntProgressBarPrivate</ref>
+                    <sp/>*priv<sp/>=
+                    <sp/>
+                    <ref refid="gntprogressbar_8c_1a49ea6cecc808186a6e60e73fb325fefa" kindref="member">
+                        GNT_PROGRESS_BAR_GET_PRIVATE
+                    </ref>
+                    <sp/>(pbar);
+                </highlight>
+            </codeline>
+            <codeline lineno="190">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="191">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(fraction<sp/>&gt;<sp/>1.0)
+                </highlight>
+            </codeline>
+            <codeline lineno="192">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>priv-&gt;
+                    <ref refid="struct___gnt_progress_bar_private_1a55a46582be31c58f27757318a2afb036" kindref="member">
+                        fraction
+                    </ref>
+                    <sp/>=<sp/>1.0;
+                </highlight>
+            </codeline>
+            <codeline lineno="193">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(fraction<sp/>&lt;<sp/>0.0)
+                </highlight>
+            </codeline>
+            <codeline lineno="194">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>priv-&gt;
+                    <ref refid="struct___gnt_progress_bar_private_1a55a46582be31c58f27757318a2afb036" kindref="member">
+                        fraction
+                    </ref>
+                    <sp/>=<sp/>0.0;
+                </highlight>
+            </codeline>
+            <codeline lineno="195">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="196">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>priv-&gt;
+                    <ref refid="struct___gnt_progress_bar_private_1a55a46582be31c58f27757318a2afb036" kindref="member">
+                        fraction
+                    </ref>
+                    <sp/>=<sp/>fraction;
+                </highlight>
+            </codeline>
+            <codeline lineno="197">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="198">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>((<ref refid="gntwidget_8h_1a915cc0761d8564ea36582e4b0156f972"
+                                                      kindref="member">GNT_WIDGET_FLAGS</ref>(pbar)<sp/>&amp;
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18a62198d00e62c146b0a805d5622402aba"
+                         kindref="member">GNT_WIDGET_MAPPED</ref>))
+                </highlight>
+            </codeline>
+            <codeline lineno="199">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1a5649d1eef659c94f4b9f137759982b72" kindref="member">gnt_widget_draw</ref>(
+                    <ref refid="gntwidget_8h_1a0ddc46716b8cb35d504595ab4bca8a82" kindref="member">GNT_WIDGET</ref>
+                    (pbar));
+                </highlight>
+            </codeline>
+            <codeline lineno="200">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="201">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="202">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="203">
+                <highlight class="normal">
+                    <ref refid="gntprogressbar_8c_1af3be8000dcb5925009813428047cf997" kindref="member">
+                        gnt_progress_bar_set_orientation
+                    </ref>
+                    <sp/>(
+                    <ref refid="struct___gnt_progress_bar" kindref="compound">GntProgressBar</ref>
+                    <sp/>*pbar,
+                </highlight>
+            </codeline>
+            <codeline lineno="204">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntprogressbar_8h_1a26d90884288cbb9491842d3d67e0c64e" kindref="member">
+                        GntProgressBarOrientation
+                    </ref>
+                    <sp/>orientation)
+                </highlight>
+            </codeline>
+            <codeline lineno="205">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="206">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_progress_bar_private" kindref="compound">GntProgressBarPrivate</ref>
+                    <sp/>*priv<sp/>=
+                    <sp/>
+                    <ref refid="gntprogressbar_8c_1a49ea6cecc808186a6e60e73fb325fefa" kindref="member">
+                        GNT_PROGRESS_BAR_GET_PRIVATE
+                    </ref>
+                    <sp/>(pbar);
+                </highlight>
+            </codeline>
+            <codeline lineno="207">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget<sp/>=
+                    <sp/>
+                    <ref refid="gntwidget_8h_1a0ddc46716b8cb35d504595ab4bca8a82" kindref="member">GNT_WIDGET</ref>
+                    (pbar);
+                </highlight>
+            </codeline>
+            <codeline lineno="208">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="209">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>priv-&gt;
+                    <ref refid="struct___gnt_progress_bar_private_1a46007722a187178b6371925edcb4be80" kindref="member">
+                        orientation
+                    </ref>
+                    <sp/>=<sp/>orientation;
+                </highlight>
+            </codeline>
+            <codeline lineno="210">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(orientation<sp/>==
+                    <sp/>
+                    <ref refid="gntprogressbar_8h_1a15436b2ff1d1c8fb65e3c1d5a16d8a66a207464be5665c03121470b5467af414c"
+                         kindref="member">GNT_PROGRESS_LEFT_TO_RIGHT
+                    </ref>
+                    <sp/>||
+                </highlight>
+            </codeline>
+            <codeline lineno="211">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>orientation<sp/>==
+                    <sp/>
+                    <ref refid="gntprogressbar_8h_1a15436b2ff1d1c8fb65e3c1d5a16d8a66a9cfabd2114eb271e3c732ea1c332a616"
+                         kindref="member">GNT_PROGRESS_RIGHT_TO_LEFT</ref>)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="212">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8h_1a5f05379dd2b5934fcd802ba477b6d9a5" kindref="member">
+                        GNT_WIDGET_SET_FLAGS</ref>(pbar,
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18ad213e9af0f0490e0b501e6996980f259"
+                         kindref="member">GNT_WIDGET_GROW_X</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="213">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8h_1ad937f43c2d5d70292e743dfcde05e8a9" kindref="member">
+                        GNT_WIDGET_UNSET_FLAGS</ref>(pbar,
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18a4898f9d8ccad6e6ad740f96873566b5b"
+                         kindref="member">GNT_WIDGET_GROW_Y</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="214">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                         kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1af0a99cf275a2f9731f39c442320a9f3a" kindref="member">minw</ref>
+                    <sp/>=<sp/>8;
+                </highlight>
+            </codeline>
+            <codeline lineno="215">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                         kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1aa2d5e3ec0f6ff0386df32bfa5b3b5885" kindref="member">minh</ref>
+                    <sp/>=<sp/>1;
+                </highlight>
+            </codeline>
+            <codeline lineno="216">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"><sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="217">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8h_1ad937f43c2d5d70292e743dfcde05e8a9" kindref="member">
+                        GNT_WIDGET_UNSET_FLAGS</ref>(pbar,
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18ad213e9af0f0490e0b501e6996980f259"
+                         kindref="member">GNT_WIDGET_GROW_X</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="218">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8h_1a5f05379dd2b5934fcd802ba477b6d9a5" kindref="member">
+                        GNT_WIDGET_SET_FLAGS</ref>(pbar,
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18a4898f9d8ccad6e6ad740f96873566b5b"
+                         kindref="member">GNT_WIDGET_GROW_Y</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="219">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                         kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1af0a99cf275a2f9731f39c442320a9f3a" kindref="member">minw</ref>
+                    <sp/>=<sp/>1;
+                </highlight>
+            </codeline>
+            <codeline lineno="220">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                         kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1aa2d5e3ec0f6ff0386df32bfa5b3b5885" kindref="member">minh</ref>
+                    <sp/>=<sp/>8;
+                </highlight>
+            </codeline>
+            <codeline lineno="221">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="222">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="223">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>((<ref refid="gntwidget_8h_1a915cc0761d8564ea36582e4b0156f972"
+                                                      kindref="member">GNT_WIDGET_FLAGS</ref>(pbar)<sp/>&amp;
+                    <sp/>
+                    GNT_WIDGET_MAPPED))
+                </highlight>
+            </codeline>
+            <codeline lineno="224">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1a5649d1eef659c94f4b9f137759982b72" kindref="member">gnt_widget_draw</ref>(
+                    <ref refid="gntwidget_8h_1a0ddc46716b8cb35d504595ab4bca8a82" kindref="member">GNT_WIDGET</ref>
+                    (pbar));
+                </highlight>
+            </codeline>
+            <codeline lineno="225">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="226">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="227">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="228">
+                <highlight class="normal">
+                    <ref refid="gntprogressbar_8c_1a30d47e37b81a2e5b47fc8648b9df751f" kindref="member">
+                        gnt_progress_bar_set_show_progress
+                    </ref>
+                    <sp/>(
+                    <ref refid="struct___gnt_progress_bar" kindref="compound">GntProgressBar</ref>
+                    <sp/>*pbar,<sp/>gboolean<sp/>show)
+                </highlight>
+            </codeline>
+            <codeline lineno="229">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="230">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_progress_bar_private" kindref="compound">GntProgressBarPrivate</ref>
+                    <sp/>*priv<sp/>=
+                    <sp/>
+                    <ref refid="gntprogressbar_8c_1a49ea6cecc808186a6e60e73fb325fefa" kindref="member">
+                        GNT_PROGRESS_BAR_GET_PRIVATE
+                    </ref>
+                    <sp/>(pbar);
+                </highlight>
+            </codeline>
+            <codeline lineno="231">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>priv-&gt;
+                    <ref refid="struct___gnt_progress_bar_private_1a2b3e719735cf2087617168006149b61b" kindref="member">
+                        show_value
+                    </ref>
+                    <sp/>=<sp/>show;
+                </highlight>
+            </codeline>
+            <codeline lineno="232">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="233">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="234">
+                <highlight class="normal">gdouble</highlight>
+            </codeline>
+            <codeline lineno="235">
+                <highlight class="normal">
+                    <ref refid="gntprogressbar_8c_1a29e8131d19e614704bc0ecf0a6c43490" kindref="member">
+                        gnt_progress_bar_get_fraction
+                    </ref>
+                    <sp/>(
+                    <ref refid="struct___gnt_progress_bar" kindref="compound">GntProgressBar</ref>
+                    <sp/>*pbar)
+                </highlight>
+            </codeline>
+            <codeline lineno="236">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="237">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_progress_bar_private" kindref="compound">GntProgressBarPrivate</ref>
+                    <sp/>*priv<sp/>=
+                    <sp/>
+                    <ref refid="gntprogressbar_8c_1a49ea6cecc808186a6e60e73fb325fefa" kindref="member">
+                        GNT_PROGRESS_BAR_GET_PRIVATE
+                    </ref>
+                    <sp/>(pbar);
+                </highlight>
+            </codeline>
+            <codeline lineno="238">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>priv-&gt;<ref
+                        refid="struct___gnt_progress_bar_private_1a55a46582be31c58f27757318a2afb036" kindref="member">
+                    fraction</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="239">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="240">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="241">
+                <highlight class="normal">
+                    <ref refid="gntprogressbar_8h_1a26d90884288cbb9491842d3d67e0c64e" kindref="member">
+                        GntProgressBarOrientation
+                    </ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="242">
+                <highlight class="normal">
+                    <ref refid="gntprogressbar_8c_1ae678917773fa5485f11aad13dcf84106" kindref="member">
+                        gnt_progress_bar_get_orientation
+                    </ref>
+                    <sp/>(
+                    <ref refid="struct___gnt_progress_bar" kindref="compound">GntProgressBar</ref>
+                    <sp/>*pbar)
+                </highlight>
+            </codeline>
+            <codeline lineno="243">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="244">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_progress_bar_private" kindref="compound">GntProgressBarPrivate</ref>
+                    <sp/>*priv<sp/>=
+                    <sp/>
+                    <ref refid="gntprogressbar_8c_1a49ea6cecc808186a6e60e73fb325fefa" kindref="member">
+                        GNT_PROGRESS_BAR_GET_PRIVATE
+                    </ref>
+                    <sp/>(pbar);
+                </highlight>
+            </codeline>
+            <codeline lineno="245">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>priv-&gt;<ref
+                        refid="struct___gnt_progress_bar_private_1a46007722a187178b6371925edcb4be80" kindref="member">
+                    orientation</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="246">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="247">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="248">
+                <highlight class="normal">gboolean</highlight>
+            </codeline>
+            <codeline lineno="249">
+                <highlight class="normal">
+                    <ref refid="gntprogressbar_8c_1a14d11302ec8eeaca1e9abeb07b575dba" kindref="member">
+                        gnt_progress_bar_get_show_progress
+                    </ref>
+                    <sp/>(
+                    <ref refid="struct___gnt_progress_bar" kindref="compound">GntProgressBar</ref>
+                    <sp/>*pbar)
+                </highlight>
+            </codeline>
+            <codeline lineno="250">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="251">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_progress_bar_private" kindref="compound">GntProgressBarPrivate</ref>
+                    <sp/>*priv<sp/>=
+                    <sp/>
+                    <ref refid="gntprogressbar_8c_1a49ea6cecc808186a6e60e73fb325fefa" kindref="member">
+                        GNT_PROGRESS_BAR_GET_PRIVATE
+                    </ref>
+                    <sp/>(pbar);
+                </highlight>
+            </codeline>
+            <codeline lineno="252">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>priv-&gt;<ref
+                        refid="struct___gnt_progress_bar_private_1a2b3e719735cf2087617168006149b61b" kindref="member">
+                    show_value</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="253">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="254">
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntprogressbar.c"/>
+    </compounddef>
+</doxygen>

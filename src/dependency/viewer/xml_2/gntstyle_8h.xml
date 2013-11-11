@@ -1,0 +1,646 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntstyle_8h" kind="file">
+        <compoundname>gntstyle.h</compoundname>
+        <includes refid="gnt_8h" local="yes">gnt.h</includes>
+        <includedby refid="gntbindable_8c" local="yes">libgnt/gntbindable.c</includedby>
+        <includedby refid="gntcolors_8c" local="yes">libgnt/gntcolors.c</includedby>
+        <includedby refid="gntentry_8c" local="yes">libgnt/gntentry.c</includedby>
+        <includedby refid="gntfilesel_8c" local="yes">libgnt/gntfilesel.c</includedby>
+        <includedby refid="gntmain_8c" local="yes">libgnt/gntmain.c</includedby>
+        <includedby refid="gntstyle_8c" local="yes">libgnt/gntstyle.c</includedby>
+        <includedby refid="gnttree_8c" local="yes">libgnt/gnttree.c</includedby>
+        <includedby refid="gntwidget_8c" local="yes">libgnt/gntwidget.c</includedby>
+        <includedby refid="gntwindow_8c" local="yes">libgnt/gntwindow.c</includedby>
+        <includedby refid="gntwm_8c" local="yes">libgnt/gntwm.c</includedby>
+        <includedby refid="s_8c" local="yes">libgnt/wms/s.c</includedby>
+        <incdepgraph>
+            <node id="1614">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="1607" relation="include">
+                </childnode>
+            </node>
+            <node id="1617">
+                <label>term.h</label>
+            </node>
+            <node id="1611">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="1609" relation="include">
+                </childnode>
+                <childnode refid="1607" relation="include">
+                </childnode>
+                <childnode refid="1612" relation="include">
+                </childnode>
+                <childnode refid="1610" relation="include">
+                </childnode>
+            </node>
+            <node id="1613">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="1609" relation="include">
+                </childnode>
+                <childnode refid="1607" relation="include">
+                </childnode>
+                <childnode refid="1612" relation="include">
+                </childnode>
+            </node>
+            <node id="1606">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="1607" relation="include">
+                </childnode>
+                <childnode refid="1608" relation="include">
+                </childnode>
+                <childnode refid="1613" relation="include">
+                </childnode>
+                <childnode refid="1614" relation="include">
+                </childnode>
+                <childnode refid="1615" relation="include">
+                </childnode>
+            </node>
+            <node id="1616">
+                <label>curses.h</label>
+            </node>
+            <node id="1605">
+                <label>libgnt/gntstyle.h</label>
+                <link refid="gntstyle.h"/>
+                <childnode refid="1606" relation="include">
+                </childnode>
+            </node>
+            <node id="1607">
+                <label>glib.h</label>
+            </node>
+            <node id="1608">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="1609" relation="include">
+                </childnode>
+                <childnode refid="1607" relation="include">
+                </childnode>
+                <childnode refid="1610" relation="include">
+                </childnode>
+                <childnode refid="1611" relation="include">
+                </childnode>
+            </node>
+            <node id="1615">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="1616" relation="include">
+                </childnode>
+                <childnode refid="1617" relation="include">
+                </childnode>
+            </node>
+            <node id="1610">
+                <label>ncurses.h</label>
+            </node>
+            <node id="1609">
+                <label>stdio.h</label>
+            </node>
+            <node id="1612">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="1620">
+                <label>libgnt/gntcolors.c</label>
+                <link refid="gntcolors_8c"/>
+            </node>
+            <node id="1623">
+                <label>libgnt/gntmain.c</label>
+                <link refid="gntmain_8c"/>
+            </node>
+            <node id="1629">
+                <label>libgnt/wms/s.c</label>
+                <link refid="s_8c"/>
+            </node>
+            <node id="1619">
+                <label>libgnt/gntbindable.c</label>
+                <link refid="gntbindable_8c"/>
+            </node>
+            <node id="1628">
+                <label>libgnt/gntwm.c</label>
+                <link refid="gntwm_8c"/>
+            </node>
+            <node id="1627">
+                <label>libgnt/gntwindow.c</label>
+                <link refid="gntwindow_8c"/>
+            </node>
+            <node id="1624">
+                <label>libgnt/gntstyle.c</label>
+                <link refid="gntstyle_8c"/>
+            </node>
+            <node id="1618">
+                <label>libgnt/gntstyle.h</label>
+                <link refid="gntstyle.h"/>
+                <childnode refid="1619" relation="include">
+                </childnode>
+                <childnode refid="1620" relation="include">
+                </childnode>
+                <childnode refid="1621" relation="include">
+                </childnode>
+                <childnode refid="1622" relation="include">
+                </childnode>
+                <childnode refid="1623" relation="include">
+                </childnode>
+                <childnode refid="1624" relation="include">
+                </childnode>
+                <childnode refid="1625" relation="include">
+                </childnode>
+                <childnode refid="1626" relation="include">
+                </childnode>
+                <childnode refid="1627" relation="include">
+                </childnode>
+                <childnode refid="1628" relation="include">
+                </childnode>
+                <childnode refid="1629" relation="include">
+                </childnode>
+            </node>
+            <node id="1621">
+                <label>libgnt/gntentry.c</label>
+                <link refid="gntentry_8c"/>
+            </node>
+            <node id="1626">
+                <label>libgnt/gntwidget.c</label>
+                <link refid="gntwidget_8c"/>
+            </node>
+            <node id="1625">
+                <label>libgnt/gnttree.c</label>
+                <link refid="gnttree_8c"/>
+            </node>
+            <node id="1622">
+                <label>libgnt/gntfilesel.c</label>
+                <link refid="gntfilesel_8c"/>
+            </node>
+        </invincdepgraph>
+        <sectiondef kind="enum">
+            <memberdef kind="enum" id="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1" prot="public" static="no">
+                <name>GntStyle</name>
+                <enumvalue id="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1af9ccd26908427d72bc12c54ce512f624"
+                           prot="public">
+                    <name>GNT_STYLE_SHADOW</name>
+                    <initializer>= 0</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1a7e58bae4373e1328a2be2f0791099313"
+                           prot="public">
+                    <name>GNT_STYLE_COLOR</name>
+                    <initializer>= 1</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1a957f32c1c271ce3b85f859ce65140807"
+                           prot="public">
+                    <name>GNT_STYLE_MOUSE</name>
+                    <initializer>= 2</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1a162a6f3882c1487e88910876f60c9e19"
+                           prot="public">
+                    <name>GNT_STYLE_WM</name>
+                    <initializer>= 3</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1afa298bb9cefc1afe41c310b4958ea0e3"
+                           prot="public">
+                    <name>GNT_STYLE_REMPOS</name>
+                    <initializer>= 4</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1ac034111d7e616fdef93a143012533d78"
+                           prot="public">
+                    <name>GNT_STYLES</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.h"
+                        line="4" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.h"
+                        bodystart="3" bodyend="11"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntstyle_8h_1a5c7f4d934b790b83566ba8e1d80d239b" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_style_read_configure_file</definition>
+                <argsstring>(const char *filename)</argsstring>
+                <name>gnt_style_read_configure_file</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>filename</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.h"
+                        line="13" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="229" bodyend="244"/>
+            </memberdef>
+            <memberdef kind="function" id="gntstyle_8h_1a1f83787856ad12098bf10fc7db8dc986" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>const char *</type>
+                <definition>const char* gnt_style_get</definition>
+                <argsstring>(GntStyle style)</argsstring>
+                <name>gnt_style_get</name>
+                <param>
+                    <type>
+                        <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1" kindref="member">GntStyle</ref>
+                    </type>
+                    <declname>style</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.h"
+                        line="15" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="15" bodyend="18"/>
+            </memberdef>
+            <memberdef kind="function" id="gntstyle_8h_1a5d7b48abf5275e45aaf29345c04bdcfb" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>gboolean gnt_style_get_bool</definition>
+                <argsstring>(GntStyle style, gboolean def)</argsstring>
+                <name>gnt_style_get_bool</name>
+                <param>
+                    <type>
+                        <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1" kindref="member">GntStyle</ref>
+                    </type>
+                    <declname>style</declname>
+                </param>
+                <param>
+                    <type>gboolean</type>
+                    <declname>def</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.h"
+                        line="17" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="20" bodyend="47"/>
+            </memberdef>
+            <memberdef kind="function" id="gntstyle_8h_1a7619b8f9a95e3670d2626ac77d8fa971" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_styles_get_keyremaps</definition>
+                <argsstring>(GType type, GHashTable *hash)</argsstring>
+                <name>gnt_styles_get_keyremaps</name>
+                <param>
+                    <type>GType</type>
+                    <declname>type</declname>
+                </param>
+                <param>
+                    <type>GHashTable *</type>
+                    <declname>hash</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.h"
+                        line="20" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="143" bodyend="191"/>
+            </memberdef>
+            <memberdef kind="function" id="gntstyle_8h_1ad4640e55d46a8def37bbf7313b46693a" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_style_read_actions</definition>
+                <argsstring>(GType type, GntBindableClass *klass)</argsstring>
+                <name>gnt_style_read_actions</name>
+                <param>
+                    <type>GType</type>
+                    <declname>type</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntbindable_8h_1a14a5445d57578b470cd315d54ad62e60" kindref="member">
+                            GntBindableClass
+                        </ref>
+                        *
+                    </type>
+                    <declname>klass</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.h"
+                        line="22" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="90" bodyend="141"/>
+            </memberdef>
+            <memberdef kind="function" id="gntstyle_8h_1a1ac678de5ef39dfd6b984a6e584f06b3" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_init_styles</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_init_styles</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.h"
+                        line="24" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="246" bodyend="255"/>
+            </memberdef>
+            <memberdef kind="function" id="gntstyle_8h_1a94ba50778e2db035b5a0c76cdd86026a" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_uninit_styles</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_uninit_styles</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.h"
+                        line="26" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="257" bodyend="266"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1">
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gnt_8h" kindref="compound">gnt.h</ref>
+                    &quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="2">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="3" refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">enum</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="4">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="5" refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1af9ccd26908427d72bc12c54ce512f624"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1af9ccd26908427d72bc12c54ce512f624"
+                         kindref="member">GNT_STYLE_SHADOW
+                    </ref>
+                    <sp/>=<sp/>0,
+                </highlight>
+            </codeline>
+            <codeline lineno="6" refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1a7e58bae4373e1328a2be2f0791099313"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1a7e58bae4373e1328a2be2f0791099313"
+                         kindref="member">GNT_STYLE_COLOR
+                    </ref>
+                    <sp/>=<sp/>1,
+                </highlight>
+            </codeline>
+            <codeline lineno="7" refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1a957f32c1c271ce3b85f859ce65140807"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1a957f32c1c271ce3b85f859ce65140807"
+                         kindref="member">GNT_STYLE_MOUSE
+                    </ref>
+                    <sp/>=<sp/>2,
+                </highlight>
+            </codeline>
+            <codeline lineno="8" refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1a162a6f3882c1487e88910876f60c9e19"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1a162a6f3882c1487e88910876f60c9e19"
+                         kindref="member">GNT_STYLE_WM
+                    </ref>
+                    <sp/>=<sp/>3,
+                </highlight>
+            </codeline>
+            <codeline lineno="9" refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1afa298bb9cefc1afe41c310b4958ea0e3"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1afa298bb9cefc1afe41c310b4958ea0e3"
+                         kindref="member">GNT_STYLE_REMPOS
+                    </ref>
+                    <sp/>=<sp/>4,
+                </highlight>
+            </codeline>
+            <codeline lineno="10"
+                      refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1ac034111d7e616fdef93a143012533d78"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1ac034111d7e616fdef93a143012533d78"
+                         kindref="member">GNT_STYLES
+                    </ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="11">
+                <highlight class="normal">}
+                    <sp/>
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1" kindref="member">GntStyle</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="12">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="13">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntstyle_8c_1a5c7f4d934b790b83566ba8e1d80d239b" kindref="member">
+                        gnt_style_read_configure_file</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*filename);
+                </highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntstyle_8c_1a1f83787856ad12098bf10fc7db8dc986"
+                                                     kindref="member">gnt_style_get</ref>(
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1" kindref="member">GntStyle</ref>
+                    <sp/>style);
+                </highlight>
+            </codeline>
+            <codeline lineno="16">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="17">
+                <highlight class="normal">gboolean
+                    <sp/>
+                    <ref refid="gntstyle_8c_1a5d7b48abf5275e45aaf29345c04bdcfb" kindref="member">
+                        gnt_style_get_bool</ref>(
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1" kindref="member">GntStyle</ref>
+                    <sp/>style,<sp/>gboolean<sp/>def);
+                </highlight>
+            </codeline>
+            <codeline lineno="18">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>This<sp/>should<sp/>be<sp/>called<sp/>only<sp/>once<sp/>for<sp/>the
+                    <sp/>each<sp/>type<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="20">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntstyle_8c_1a7619b8f9a95e3670d2626ac77d8fa971" kindref="member">
+                        gnt_styles_get_keyremaps</ref>(GType<sp/>type,<sp/>GHashTable<sp/>*hash);
+                </highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntstyle_8c_1ad4640e55d46a8def37bbf7313b46693a" kindref="member">
+                        gnt_style_read_actions</ref>(GType<sp/>type,
+                    <sp/>
+                    <ref refid="struct___gnt_bindable_class" kindref="compound">GntBindableClass</ref>
+                    <sp/>*klass);
+                </highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntstyle_8c_1a9731daadd7680fb42e2b12b3eaac3ea9" kindref="member">gnt_init_styles</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntstyle_8c_1a61dd7e1d9544ba43741fda483a62d8c4" kindref="member">gnt_uninit_styles</ref>
+                    (
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.h"/>
+    </compounddef>
+</doxygen>

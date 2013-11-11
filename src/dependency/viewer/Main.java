@@ -1,6 +1,7 @@
 package dependency.viewer;
 
 import dependency.viewer.mapper.DependencyData;
+import dependency.viewer.mapper.DependencyEdge;
 import dependency.viewer.mapper.DependencyGraph;
 import dependency.viewer.mapper.SortDependencies;
 import dependency.viewer.parser.FileSearcher;
@@ -17,45 +18,67 @@ import java.util.*;
  * Time: 11:46 AM
  */
 public class Main {
-
+    private static final String INITIAL_DIR = "xml_2"; // the folder which had the initial source code in xml for comparison
+    private static final String FINAL_DIR = "xml_2_10";    // the folder which has the xml for the source code to be compared too
 
     public static void main(String[] args) {
         System.out.println("Start of Main");
 
-        List<ModuleData> rawData = parseStep();
+        // Parse The Two Sets Of Data
+        XmlParser parser = new XmlParser();
+        List<ModuleData> rawInitialData = parser.parseAll(INITIAL_DIR);
+        List<ModuleData> rawFinalData = parser.parseAll(FINAL_DIR);
+
+
+        // Map Each Set Of Data
         SortDependencies sorter = new SortDependencies();
-        List<DependencyGraph> matrices = sorter.mapDependency(rawData);
+        List<DependencyGraph> matrices = sorter.mapDependency(rawFinalData);
 
 
         Integer[][] m0 = matrices.get(0).getMatrix();
         Integer[][] m1 = matrices.get(1).getMatrix();
 
+        List<DependencyData> list = sorter.sortDataDependency(rawFinalData);
 
-        for (Integer[] row : m0) {
-            for (Integer i : row) {
-                System.out.print(" " + i);
+        DependencyData data = list.get(1);    //get behavioural
+
+
+        Map<String, List<DependencyEdge>> dataNodes = data.getNodeMap();
+
+        for (String key : dataNodes.keySet()) {
+
+            List<DependencyEdge> edges = dataNodes.get(key);
+
+            DependencyEdge maxEdge = null;
+
+            for (DependencyEdge edge : edges) {
+
+                if (maxEdge == null || edge.getNumberOfDependencies() > maxEdge.getNumberOfDependencies()) {
+
+                    maxEdge = edge;
+
+                }
+
             }
-            System.out.println(" ");
-        }
 
+            if (maxEdge != null) {
+                System.out.println(key + " " + maxEdge.getChildNode());
 
-        System.out.println(" ");
-        System.out.println(" ");
-
-        for (Integer[] row : m1) {
-            for (Integer i : row) {
-                System.out.print(" " + i);
+            } else {
+                System.out.println(key + " " + key);
             }
-            System.out.println(" ");
-        }
-        String[] files = matrices.get(0).getFileNameDirectory();
-        String[] files1 = matrices.get(1).getFileNameDirectory();
-        for (int i = 0; i < files.length; i++) {
-            System.out.println(files[i] + "  " + files1[i]);
+
         }
 
-        //drawGraph(m0);
+
+        // Graph Each Set Of Data
+        DependencyGraph mat = matrices.get(0);
+        matrixToDigraph(mat);
+        //drawGraph(m1);
+
+
     }
+
 
     private static void drawGraph(Integer[][] matrix) {
         VisualizerParser vis = new VisualizerParser(matrix);
@@ -63,31 +86,27 @@ public class Main {
     }
 
 
-    public static List<ModuleData> parseStep() {
-        FileSearcher files = new FileSearcher();
+    private static void matrixToDigraph(DependencyGraph graph) {
 
-        List<String> filePaths = files.getFiles();
 
-        XmlParser parser = new XmlParser();
-        List<ModuleData> rawData = new ArrayList<ModuleData>();
+        Integer[][] matrix = graph.getMatrix();
+        String[] names = graph.getFileNameDirectory();
 
-        Set<String> fullTypeSet = new HashSet<String>();
+        String diGraph = "graph G {\n";
+        for (Integer j = 0; j < matrix.length; j++) {
+            for (Integer i = 0; i < j; i++) {
+                if (matrix[i][j] > 0) {
+                    String dependency = names[i];
+                    dependency += " -- ";
+                    dependency += names[j];
 
-        for (String path : filePaths) {
-            ModuleData parsedData = parser.parseDocument(path);
-            // System.out.println("Finished parsing ");
-            fullTypeSet.addAll(parsedData.getDataObjectTypes());
-            // parsedData.summerize();
-            // parsedData.print();
-            rawData.add(parsedData);
+                    dependency += ";\n";
+                    diGraph += dependency;
+                }
+            }
         }
-
-        // System.out.println("Number of files parsed : " + rawData.size());
-
-        // [define, enum, variable, typedef, function]
-        // System.out.println("\n\nThe full list of type \n\n" + fullTypeSet);
-        return rawData;
+        diGraph += "\n}";
+        System.out.println(diGraph);
     }
-
 
 }

@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntidle_8h" kind="file">
+        <compoundname>gntidle.h</compoundname>
+        <includes local="yes">idle.h</includes>
+        <includedby refid="finch_8c" local="yes">finch.c</includedby>
+        <includedby refid="gntidle_8c" local="yes">gntidle.c</includedby>
+        <incdepgraph>
+            <node id="330">
+                <label>gntidle.h</label>
+                <link refid="gntidle.h"/>
+                <childnode refid="331" relation="include">
+                </childnode>
+            </node>
+            <node id="331">
+                <label>idle.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="334">
+                <label>gntidle.c</label>
+                <link refid="gntidle_8c"/>
+            </node>
+            <node id="332">
+                <label>gntidle.h</label>
+                <link refid="gntidle.h"/>
+                <childnode refid="333" relation="include">
+                </childnode>
+                <childnode refid="334" relation="include">
+                </childnode>
+            </node>
+            <node id="333">
+                <label>finch.c</label>
+                <link refid="finch_8c"/>
+            </node>
+        </invincdepgraph>
+        <sectiondef kind="user-defined">
+            <header>GNT Idle API</header>
+            <memberdef kind="function" id="gntidle_8h_1a2bc0420023a228052cdc753fc8e85ebe" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>PurpleIdleUiOps *</type>
+                <definition>PurpleIdleUiOps* finch_idle_get_ui_ops</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_idle_get_ui_ops</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Returns the GNT idle UI ops.</para>
+                    <para>
+                        <simplesect kind="return">
+                            <para>The UI operations structure.</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntidle.h"
+                          line="40" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntidle.c"
+                          bodystart="48" bodyend="51"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>GNT Idle API</para>
+            <para>finch</para>
+            <para>Pidgin is the legal property of its developers, whose names are too numerous to list here. Please
+                refer to the COPYRIGHT file distributed with this source distribution.
+            </para>
+            <para>This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+                General Public License as published by the Free Software Foundation; either version 2 of the License, or
+                (at your option) any later version.
+            </para>
+            <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
+                the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public
+                License for more details.
+            </para>
+            <para>You should have received a copy of the GNU General Public License along with this program; if not,
+                write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+            </para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="25">
+                <highlight class="preprocessor">#ifndef<sp/>_GNT_IDLE_H_
+                </highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>_GNT_IDLE_H_
+                </highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;idle.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">
+                    /**************************************************************************/
+                </highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="comment">
+                    /**************************************************************************/
+                </highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal">PurpleIdleUiOps<sp/>*<ref
+                        refid="gntidle_8c_1a23f75a84b2ce0d93fd96abbe920846ff" kindref="member">
+                    finch_idle_get_ui_ops</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="preprocessor">#endif
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>_Finch_IDLE_H_<sp/>*/
+                </highlight>
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntidle.h"/>
+    </compounddef>
+</doxygen>

@@ -1,0 +1,4476 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="finch_8c" kind="file">
+        <compoundname>finch.c</compoundname>
+        <includes local="yes">account.h</includes>
+        <includes local="yes">conversation.h</includes>
+        <includes local="yes">core.h</includes>
+        <includes local="yes">debug.h</includes>
+        <includes local="yes">eventloop.h</includes>
+        <includes local="yes">ft.h</includes>
+        <includes local="yes">log.h</includes>
+        <includes local="yes">notify.h</includes>
+        <includes local="yes">prefs.h</includes>
+        <includes local="yes">prpl.h</includes>
+        <includes local="yes">pounce.h</includes>
+        <includes local="yes">savedstatuses.h</includes>
+        <includes local="yes">sound.h</includes>
+        <includes local="yes">status.h</includes>
+        <includes local="yes">util.h</includes>
+        <includes local="yes">whiteboard.h</includes>
+        <includes refid="gntdebug_8h" local="yes">gntdebug.h</includes>
+        <includes refid="finch_8h" local="yes">finch.h</includes>
+        <includes refid="gntprefs_8h" local="yes">gntprefs.h</includes>
+        <includes refid="gntui_8h" local="yes">gntui.h</includes>
+        <includes refid="gntidle_8h" local="yes">gntidle.h</includes>
+        <includes refid="getopt_8h" local="no">getopt.h</includes>
+        <includes local="yes">config.h</includes>
+        <incdepgraph>
+            <node id="8">
+                <label>notify.h</label>
+            </node>
+            <node id="21">
+                <label>gntprefs.h</label>
+                <link refid="gntprefs_8h"/>
+            </node>
+            <node id="30">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="19" relation="include">
+                </childnode>
+            </node>
+            <node id="33">
+                <label>term.h</label>
+            </node>
+            <node id="27">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="25" relation="include">
+                </childnode>
+                <childnode refid="19" relation="include">
+                </childnode>
+                <childnode refid="28" relation="include">
+                </childnode>
+                <childnode refid="26" relation="include">
+                </childnode>
+            </node>
+            <node id="5">
+                <label>eventloop.h</label>
+            </node>
+            <node id="7">
+                <label>log.h</label>
+            </node>
+            <node id="6">
+                <label>ft.h</label>
+            </node>
+            <node id="10">
+                <label>prpl.h</label>
+            </node>
+            <node id="29">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="25" relation="include">
+                </childnode>
+                <childnode refid="19" relation="include">
+                </childnode>
+                <childnode refid="28" relation="include">
+                </childnode>
+            </node>
+            <node id="1">
+                <label>account.h</label>
+            </node>
+            <node id="23">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="19" relation="include">
+                </childnode>
+                <childnode refid="24" relation="include">
+                </childnode>
+                <childnode refid="29" relation="include">
+                </childnode>
+                <childnode refid="30" relation="include">
+                </childnode>
+                <childnode refid="31" relation="include">
+                </childnode>
+            </node>
+            <node id="32">
+                <label>curses.h</label>
+            </node>
+            <node id="12">
+                <label>savedstatuses.h</label>
+            </node>
+            <node id="34">
+                <label>gntidle.h</label>
+                <link refid="gntidle_8h"/>
+                <childnode refid="35" relation="include">
+                </childnode>
+            </node>
+            <node id="16">
+                <label>whiteboard.h</label>
+            </node>
+            <node id="35">
+                <label>idle.h</label>
+            </node>
+            <node id="13">
+                <label>sound.h</label>
+            </node>
+            <node id="36">
+                <label>getopt.h</label>
+                <link refid="getopt_8h"/>
+            </node>
+            <node id="9">
+                <label>prefs.h</label>
+            </node>
+            <node id="14">
+                <label>status.h</label>
+            </node>
+            <node id="19">
+                <label>glib.h</label>
+            </node>
+            <node id="24">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="25" relation="include">
+                </childnode>
+                <childnode refid="19" relation="include">
+                </childnode>
+                <childnode refid="26" relation="include">
+                </childnode>
+                <childnode refid="27" relation="include">
+                </childnode>
+            </node>
+            <node id="0">
+                <label>finch.c</label>
+                <link refid="finch.c"/>
+                <childnode refid="1" relation="include">
+                </childnode>
+                <childnode refid="2" relation="include">
+                </childnode>
+                <childnode refid="3" relation="include">
+                </childnode>
+                <childnode refid="4" relation="include">
+                </childnode>
+                <childnode refid="5" relation="include">
+                </childnode>
+                <childnode refid="6" relation="include">
+                </childnode>
+                <childnode refid="7" relation="include">
+                </childnode>
+                <childnode refid="8" relation="include">
+                </childnode>
+                <childnode refid="9" relation="include">
+                </childnode>
+                <childnode refid="10" relation="include">
+                </childnode>
+                <childnode refid="11" relation="include">
+                </childnode>
+                <childnode refid="12" relation="include">
+                </childnode>
+                <childnode refid="13" relation="include">
+                </childnode>
+                <childnode refid="14" relation="include">
+                </childnode>
+                <childnode refid="15" relation="include">
+                </childnode>
+                <childnode refid="16" relation="include">
+                </childnode>
+                <childnode refid="17" relation="include">
+                </childnode>
+                <childnode refid="18" relation="include">
+                </childnode>
+                <childnode refid="21" relation="include">
+                </childnode>
+                <childnode refid="22" relation="include">
+                </childnode>
+                <childnode refid="34" relation="include">
+                </childnode>
+                <childnode refid="36" relation="include">
+                </childnode>
+                <childnode refid="37" relation="include">
+                </childnode>
+            </node>
+            <node id="18">
+                <label>finch.h</label>
+                <link refid="finch_8h"/>
+                <childnode refid="19" relation="include">
+                </childnode>
+                <childnode refid="20" relation="include">
+                </childnode>
+            </node>
+            <node id="22">
+                <label>gntui.h</label>
+                <link refid="gntui_8h"/>
+                <childnode refid="23" relation="include">
+                </childnode>
+            </node>
+            <node id="11">
+                <label>pounce.h</label>
+            </node>
+            <node id="31">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="32" relation="include">
+                </childnode>
+                <childnode refid="33" relation="include">
+                </childnode>
+            </node>
+            <node id="26">
+                <label>ncurses.h</label>
+            </node>
+            <node id="2">
+                <label>conversation.h</label>
+            </node>
+            <node id="37">
+                <label>config.h</label>
+            </node>
+            <node id="3">
+                <label>core.h</label>
+            </node>
+            <node id="17">
+                <label>gntdebug.h</label>
+                <link refid="gntdebug_8h"/>
+                <childnode refid="4" relation="include">
+                </childnode>
+            </node>
+            <node id="4">
+                <label>debug.h</label>
+            </node>
+            <node id="15">
+                <label>util.h</label>
+            </node>
+            <node id="25">
+                <label>stdio.h</label>
+            </node>
+            <node id="20">
+                <label>libpurple/internal.h</label>
+            </node>
+            <node id="28">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <innerclass refid="struct___purple_gnt_i_o_closure" prot="public">_PurpleGntIOClosure</innerclass>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="finch_8c_1a369266c24eacffb87046522897a570d5" prot="public" static="no">
+                <name>_GNU_SOURCE</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>finch</para>
+                    <para>Finch is the legal property of its developers, whose names are too numerous to list here.
+                        Please refer to the COPYRIGHT file distributed with this source distribution.
+                    </para>
+                    <para>This program is free software; you can redistribute it and/or modify it under the terms of the
+                        GNU General Public License as published by the Free Software Foundation; either version 2 of the
+                        License, or (at your option) any later version.
+                    </para>
+                    <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+                        without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+                        the GNU General Public License for more details.
+                    </para>
+                    <para>You should have received a copy of the GNU General Public License along with this program; if
+                        not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA
+                        02111-1307 USA
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          line="45" column="9"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          bodystart="45" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="finch_8c_1a65b95457ebc4a4ffae9384f3863c9b54" prot="public" static="no">
+                <name>FINCH_READ_COND</name>
+                <initializer>(G_IO_IN | G_IO_HUP | G_IO_ERR)</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          line="79" column="9"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          bodystart="79" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="finch_8c_1aa0e80f15acec6322a4f85ef66910f255" prot="public" static="no">
+                <name>FINCH_WRITE_COND</name>
+                <initializer>(G_IO_OUT | G_IO_HUP | G_IO_ERR | G_IO_NVAL)</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          line="80" column="9"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          bodystart="80" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="typedef">
+            <memberdef kind="typedef" id="finch_8c_1a526bb2e886aedd7d42c98fb60cc6d4dc" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___purple_gnt_i_o_closure" kindref="compound">_PurpleGntIOClosure</ref>
+                </type>
+                <definition>typedef struct _PurpleGntIOClosure PurpleGntIOClosure</definition>
+                <argsstring></argsstring>
+                <name>PurpleGntIOClosure</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          line="87" column="1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="var">
+            <memberdef kind="variable" id="finch_8c_1a73b720e49215a27df3b8fff3dee29270" prot="public" static="yes"
+                       mutable="no">
+                <type>PurpleCoreUiOps</type>
+                <definition>PurpleCoreUiOps core_ops</definition>
+                <argsstring></argsstring>
+                <name>core_ops</name>
+                <initializer>=
+                    {
+                    <ref refid="gntprefs_8h_1a0c4287ffe09cf25fcc70906988364fd9" kindref="member">finch_prefs_init</ref>,
+                    debug_init,
+                    <ref refid="gntui_8h_1a96b0f26792a56ff72a231a3471cd27a5" kindref="member">gnt_ui_init</ref>,
+                    <ref refid="gntui_8h_1a9ab8344af0ae416a25bdc7c0145b1d10" kindref="member">gnt_ui_uninit</ref>,
+
+
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>
+                    }
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          line="57" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          bodystart="57" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="finch_8c_1ae215a1797a08eed28a874d532d4e0c0e" prot="public" static="yes"
+                       mutable="no">
+                <type>PurpleEventLoopUiOps</type>
+                <definition>PurpleEventLoopUiOps eventloop_ops</definition>
+                <argsstring></argsstring>
+                <name>eventloop_ops</name>
+                <initializer>=
+                    {
+                    g_timeout_add,
+                    g_source_remove,
+                    gnt_input_add,
+                    g_source_remove,
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+
+
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>
+                    }
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          line="152" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          bodystart="152" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="finch_8c_1a920a9801b95b668a4f063d12de1b237b" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void debug_init</definition>
+                <argsstring>()</argsstring>
+                <name>debug_init</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          line="51" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          bodystart="51" bodyend="55"/>
+            </memberdef>
+            <memberdef kind="function" id="finch_8c_1a79917864ecf92475cfadd2dd86ccdf89" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>PurpleCoreUiOps *</type>
+                <definition>static PurpleCoreUiOps* gnt_core_get_ui_ops</definition>
+                <argsstring>()</argsstring>
+                <name>gnt_core_get_ui_ops</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          line="72" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          bodystart="72" bodyend="75"/>
+            </memberdef>
+            <memberdef kind="function" id="finch_8c_1ae3570b4bfb326e069c0ff9da696e17ca" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void purple_gnt_io_destroy</definition>
+                <argsstring>(gpointer data)</argsstring>
+                <name>purple_gnt_io_destroy</name>
+                <param>
+                    <type>gpointer</type>
+                    <declname>data</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          line="89" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          bodystart="89" bodyend="92"/>
+            </memberdef>
+            <memberdef kind="function" id="finch_8c_1a76544cd13679d2e5986dd186efb015e1" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>static gboolean purple_gnt_io_invoke</definition>
+                <argsstring>(GIOChannel *source, GIOCondition condition, gpointer data)</argsstring>
+                <name>purple_gnt_io_invoke</name>
+                <param>
+                    <type>GIOChannel *</type>
+                    <declname>source</declname>
+                </param>
+                <param>
+                    <type>GIOCondition</type>
+                    <declname>condition</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>data</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          line="94" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          bodystart="94" bodyend="127"/>
+            </memberdef>
+            <memberdef kind="function" id="finch_8c_1a9c6be7aa890df36cb482d46bfe28556e" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>guint</type>
+                <definition>static guint gnt_input_add</definition>
+                <argsstring>(gint fd, PurpleInputCondition condition, PurpleInputFunction function, gpointer data)
+                </argsstring>
+                <name>gnt_input_add</name>
+                <param>
+                    <type>gint</type>
+                    <declname>fd</declname>
+                </param>
+                <param>
+                    <type>PurpleInputCondition</type>
+                    <declname>condition</declname>
+                </param>
+                <param>
+                    <type>PurpleInputFunction</type>
+                    <declname>function</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>data</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          line="129" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          bodystart="129" bodyend="150"/>
+            </memberdef>
+            <memberdef kind="function" id="finch_8c_1aa270ad5a361d25e1be4a9d834fafaf7f" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>PurpleEventLoopUiOps *</type>
+                <definition>static PurpleEventLoopUiOps* gnt_eventloop_get_ui_ops</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_eventloop_get_ui_ops</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          line="168" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          bodystart="168" bodyend="171"/>
+            </memberdef>
+            <memberdef kind="function" id="finch_8c_1ab44d5758b13bee62fa7b381827603d5f" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void show_usage</definition>
+                <argsstring>(const char *name, gboolean terse)</argsstring>
+                <name>show_usage</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>name</declname>
+                </param>
+                <param>
+                    <type>gboolean</type>
+                    <declname>terse</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          line="175" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          bodystart="175" bodyend="193"/>
+            </memberdef>
+            <memberdef kind="function" id="finch_8c_1aeb57aac40b3e94ad5cef4e2aa59bb5d8" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>int</type>
+                <definition>static int init_libpurple</definition>
+                <argsstring>(int argc, char **argv)</argsstring>
+                <name>init_libpurple</name>
+                <param>
+                    <type>int</type>
+                    <declname>argc</declname>
+                </param>
+                <param>
+                    <type>char **</type>
+                    <declname>argv</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          line="196" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          bodystart="196" bodyend="376"/>
+            </memberdef>
+            <memberdef kind="function" id="finch_8c_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>int</type>
+                <definition>int main</definition>
+                <argsstring>(int argc, char **argv)</argsstring>
+                <name>main</name>
+                <param>
+                    <type>int</type>
+                    <declname>argc</declname>
+                </param>
+                <param>
+                    <type>char **</type>
+                    <declname>argv</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          line="378" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"
+                          bodystart="378" bodyend="394"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="22">
+                <highlight class="preprocessor">#include<sp/>&quot;account.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;conversation.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;core.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;debug.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;eventloop.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;ft.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;log.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;notify.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;prefs.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;prpl.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;pounce.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;savedstatuses.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;sound.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;status.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;util.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;whiteboard.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntdebug_8h" kindref="compound">
+                    gntdebug.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="finch_8h" kindref="compound">
+                    finch.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntprefs_8h" kindref="compound">
+                    gntprefs.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntui_8h" kindref="compound">
+                    gntui.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntidle_8h" kindref="compound">
+                    gntidle.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>_GNU_SOURCE
+                </highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="getopt_8h" kindref="compound">
+                    getopt.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;config.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal">debug_init()</highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntdebug_8c_1a56f21fb787b461ccb66a54abadec1dff" kindref="member">finch_debug_init</ref>
+                    ();
+                </highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_debug_set_ui_ops(<ref refid="gntdebug_8c_1a94205c7040766e2b4250f0941c1e7eb6"
+                                                      kindref="member">finch_debug_get_ui_ops</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>PurpleCoreUiOps<sp/>core_ops<sp/>=
+                </highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntprefs_8c_1ab9c843e752ac4956fd8cd340f4a0eada" kindref="member">finch_prefs_init</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>debug_init,
+                </highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntui_8c_1ada9ae9db28c9d7cd0b0e064fddb2a739" kindref="member">gnt_ui_init</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntui_8h_1a9ab8344af0ae416a25bdc7c0145b1d10" kindref="member">gnt_ui_uninit</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>padding<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>NULL
+                </highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>PurpleCoreUiOps<sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal">gnt_core_get_ui_ops()</highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>&amp;core_ops;
+                </highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>Anything<sp/>IO-related<sp/>is<sp/>directly<sp/>copied<sp/>from<sp/>
+                    gtkpurple&apos;s<sp/>source<sp/>tree<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>FINCH_READ_COND
+                    <sp/>
+                    <sp/>(G_IO_IN<sp/>|<sp/>G_IO_HUP<sp/>|<sp/>G_IO_ERR)
+                </highlight>
+            </codeline>
+            <codeline lineno="80">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>FINCH_WRITE_COND<sp/>(G_IO_OUT<sp/>|<sp/>G_IO_HUP<sp/>|<sp/>
+                    G_IO_ERR<sp/>|<sp/>G_IO_NVAL)
+                </highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="82" refid="struct___purple_gnt_i_o_closure" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___purple_gnt_i_o_closure" kindref="compound">_PurpleGntIOClosure</ref>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleInputFunction
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">function</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>guint
+                    <sp/>
+                    <ref refid="struct___purple_gnt_i_o_closure_1a754efe96c3b992637e7b743dd6afce63" kindref="member">
+                        result</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gpointer
+                    <sp/>
+                    <ref refid="struct___purple_gnt_i_o_closure_1a10fb496e4431487bd53ab5a192614a0e" kindref="member">
+                        data</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal">}
+                    <sp/>
+                    <ref refid="finch_8c_1a526bb2e886aedd7d42c98fb60cc6d4dc" kindref="member">PurpleGntIOClosure</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>purple_gnt_io_destroy(gpointer<sp/>data)
+                </highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(data);
+                </highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="93">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>gboolean<sp/>purple_gnt_io_invoke(GIOChannel<sp/>*source,<sp/>
+                    GIOCondition<sp/>condition,<sp/>gpointer<sp/>data)
+                </highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___purple_gnt_i_o_closure" kindref="compound">PurpleGntIOClosure</ref>
+                    <sp/>*closure<sp/>=<sp/>data;
+                </highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleInputCondition<sp/>purple_cond<sp/>=<sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(condition<sp/>&amp;
+                    <sp/>
+                    <ref refid="finch_8c_1a65b95457ebc4a4ffae9384f3863c9b54" kindref="member">FINCH_READ_COND</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="100">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_cond<sp/>|=<sp/>PURPLE_INPUT_READ;
+                </highlight>
+            </codeline>
+            <codeline lineno="101">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(condition<sp/>&amp;
+                    <sp/>
+                    <ref refid="finch_8c_1aa0e80f15acec6322a4f85ef66910f255" kindref="member">FINCH_WRITE_COND</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="102">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_cond<sp/>|=<sp/>PURPLE_INPUT_WRITE;
+                </highlight>
+            </codeline>
+            <codeline lineno="103">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="104">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#if<sp/>0
+                </highlight>
+            </codeline>
+            <codeline lineno="105">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_debug(PURPLE_DEBUG_MISC,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;gtk_eventloop&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;CLOSURE:<sp/>callback<sp/>for<sp/>%d,<sp/>fd<sp/>is<sp/>%d\n&quot;
+                </highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="107">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>closure-&gt;<ref refid="struct___purple_gnt_i_o_closure_1a754efe96c3b992637e7b743dd6afce63"
+                                          kindref="member">result</ref>,<sp/>g_io_channel_unix_get_fd(source));
+                </highlight>
+            </codeline>
+            <codeline lineno="108">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="109">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="110">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#ifdef<sp/>_WIN32
+                </highlight>
+            </codeline>
+            <codeline lineno="111">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal">(!<sp/>purple_cond)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="112">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#if<sp/>DEBUG
+                </highlight>
+            </codeline>
+            <codeline lineno="113">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_debug_misc(
+                </highlight>
+                <highlight class="stringliteral">&quot;gnt_eventloop&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="114">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;CLOSURE<sp/>received<sp/>GIOCondition<sp/>of<sp/>0x%x,<sp/>which
+                    <sp/>does<sp/>not&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="115">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;<sp/>match<sp/>0x%x<sp/>(READ)<sp/>or<sp/>0x%x<sp/>(WRITE)\n&quot;
+                </highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="116">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>condition,<sp/>FINCH_READ_COND,<sp/>FINCH_WRITE_COND);
+                </highlight>
+            </codeline>
+            <codeline lineno="117">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>DEBUG<sp/>*/
+                </highlight>
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+            <codeline lineno="118">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="119">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="120">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="121">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>_WIN32<sp/>*/
+                </highlight>
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+            <codeline lineno="122">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="123">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>closure-&gt;<ref refid="struct___purple_gnt_i_o_closure_1a5db879ede62dd9a6b87ebee4d5b4b958"
+                                          kindref="member">function</ref>(closure-&gt;<ref
+                        refid="struct___purple_gnt_i_o_closure_1a10fb496e4431487bd53ab5a192614a0e" kindref="member">
+                    data</ref>,<sp/>g_io_channel_unix_get_fd(source),
+                </highlight>
+            </codeline>
+            <codeline lineno="124">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_cond);
+                </highlight>
+            </codeline>
+            <codeline lineno="125">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="126">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="127">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="128">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="129">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>guint<sp/>gnt_input_add(gint<sp/>fd,<sp/>PurpleInputCondition<sp/>
+                    condition,<sp/>PurpleInputFunction
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">function</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="130">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gpointer<sp/>data)
+                </highlight>
+            </codeline>
+            <codeline lineno="131">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="132">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___purple_gnt_i_o_closure" kindref="compound">PurpleGntIOClosure</ref>
+                    <sp/>*closure<sp/>=<sp/>g_new0(<ref refid="struct___purple_gnt_i_o_closure" kindref="compound">
+                    PurpleGntIOClosure</ref>,<sp/>1);
+                </highlight>
+            </codeline>
+            <codeline lineno="133">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GIOChannel<sp/>*channel;
+                </highlight>
+            </codeline>
+            <codeline lineno="134">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GIOCondition<sp/>cond<sp/>=<sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="135">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="136">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>closure-&gt;
+                    <ref refid="struct___purple_gnt_i_o_closure_1a5db879ede62dd9a6b87ebee4d5b4b958" kindref="member">
+                        function
+                    </ref>
+                    <sp/>=
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">function</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="137">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>closure-&gt;
+                    <ref refid="struct___purple_gnt_i_o_closure_1a10fb496e4431487bd53ab5a192614a0e" kindref="member">
+                        data
+                    </ref>
+                    <sp/>=<sp/>data;
+                </highlight>
+            </codeline>
+            <codeline lineno="138">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="139">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(condition<sp/>&amp;<sp/>PURPLE_INPUT_READ)
+                </highlight>
+            </codeline>
+            <codeline lineno="140">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>cond<sp/>|=
+                    <sp/>
+                    <ref refid="finch_8c_1a65b95457ebc4a4ffae9384f3863c9b54" kindref="member">FINCH_READ_COND</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="141">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(condition<sp/>&amp;<sp/>PURPLE_INPUT_WRITE)
+                </highlight>
+            </codeline>
+            <codeline lineno="142">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>cond<sp/>|=
+                    <sp/>
+                    <ref refid="finch_8c_1aa0e80f15acec6322a4f85ef66910f255" kindref="member">FINCH_WRITE_COND</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="143">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="144">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>channel<sp/>=<sp/>g_io_channel_unix_new(fd);
+                </highlight>
+            </codeline>
+            <codeline lineno="145">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>closure-&gt;
+                    <ref refid="struct___purple_gnt_i_o_closure_1a754efe96c3b992637e7b743dd6afce63" kindref="member">
+                        result
+                    </ref>
+                    <sp/>=<sp/>g_io_add_watch_full(channel,<sp/>G_PRIORITY_DEFAULT,<sp/>cond,
+                </highlight>
+            </codeline>
+            <codeline lineno="146">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_gnt_io_invoke,<sp/>closure,<sp/>purple_gnt_io_destroy);
+                </highlight>
+            </codeline>
+            <codeline lineno="147">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="148">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_io_channel_unref(channel);
+                </highlight>
+            </codeline>
+            <codeline lineno="149">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>closure-&gt;<ref
+                        refid="struct___purple_gnt_i_o_closure_1a754efe96c3b992637e7b743dd6afce63" kindref="member">
+                    result</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="150">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="151">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="152">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>PurpleEventLoopUiOps<sp/>eventloop_ops<sp/>=
+                </highlight>
+            </codeline>
+            <codeline lineno="153">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="154">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_timeout_add,
+                </highlight>
+            </codeline>
+            <codeline lineno="155">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_source_remove,
+                </highlight>
+            </codeline>
+            <codeline lineno="156">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gnt_input_add,
+                </highlight>
+            </codeline>
+            <codeline lineno="157">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_source_remove,
+                </highlight>
+            </codeline>
+            <codeline lineno="158">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>input_get_error<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="159">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="160">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>padding<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="161">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="162">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="163">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="164">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>NULL
+                </highlight>
+            </codeline>
+            <codeline lineno="165">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="166">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="167">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>PurpleEventLoopUiOps<sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="168">
+                <highlight class="normal">gnt_eventloop_get_ui_ops(</highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="169">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="170">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>&amp;eventloop_ops;
+                </highlight>
+            </codeline>
+            <codeline lineno="171">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="172">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="173">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>This<sp/>is<sp/>mostly<sp/>copied<sp/>from<sp/>gtkpurple&apos;s<sp/>
+                    source<sp/>tree<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="174">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="175">
+                <highlight class="normal">show_usage(</highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*name,<sp/>gboolean<sp/>terse)
+                </highlight>
+            </codeline>
+            <codeline lineno="176">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="177">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text;
+                </highlight>
+            </codeline>
+            <codeline lineno="178">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="179">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(terse)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="180">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>text<sp/>=<sp/>g_strdup_printf(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;%s.<sp/>Try<sp/>`%s<sp/>-h&apos;<sp/>for<sp/>more<sp/>
+                    information.\n&quot;
+                </highlight>
+                <highlight class="normal">),<sp/>VERSION,<sp/>name);
+                </highlight>
+            </codeline>
+            <codeline lineno="181">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"><sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="182">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>text<sp/>=<sp/>g_strdup_printf(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;%s\n&quot;</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="183">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Usage:<sp/>%s<sp/>[OPTION]...\n\n&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="184">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;
+                    <sp/>
+                    <sp/>-c,<sp/>--config=DIR
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>use<sp/>DIR<sp/>for<sp/>config<sp/>files\n&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="185">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;
+                    <sp/>
+                    <sp/>-d,<sp/>--debug
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>print<sp/>debugging<sp/>messages<sp/>to<sp/>stdout\n&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="186">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;
+                    <sp/>
+                    <sp/>-h,<sp/>--help
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>display<sp/>this<sp/>help<sp/>and<sp/>exit\n&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="187">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;
+                    <sp/>
+                    <sp/>-n,<sp/>--nologin
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>don&apos;t<sp/>automatically<sp/>login\n&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="188">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;
+                    <sp/>
+                    <sp/>-v,<sp/>--version
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>display<sp/>the<sp/>current<sp/>version<sp/>and<sp/>exit\n&quot;
+                </highlight>
+                <highlight class="normal">),<sp/>VERSION,<sp/>name);
+                </highlight>
+            </codeline>
+            <codeline lineno="189">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="190">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="191">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_print_utf8_to_console(stdout,<sp/>text);
+                </highlight>
+            </codeline>
+            <codeline lineno="192">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(text);
+                </highlight>
+            </codeline>
+            <codeline lineno="193">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="194">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="195">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="196">
+                <highlight class="normal">init_libpurple(</highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="getopt_8c_1a899ede614ac21dd98628cc8cc682e95a" kindref="member">argc</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>**<ref refid="getopt1_8c_1a53f75c6ccd3a8828f9aa07f4bb698ad4"
+                                                      kindref="member">argv</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="197">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="198">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*path;
+                </highlight>
+            </codeline>
+            <codeline lineno="199">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>opt;
+                </highlight>
+            </codeline>
+            <codeline lineno="200">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean<sp/>opt_help<sp/>=<sp/>FALSE;
+                </highlight>
+            </codeline>
+            <codeline lineno="201">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean<sp/>opt_nologin<sp/>=<sp/>FALSE;
+                </highlight>
+            </codeline>
+            <codeline lineno="202">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean<sp/>opt_version<sp/>=<sp/>FALSE;
+                </highlight>
+            </codeline>
+            <codeline lineno="203">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*opt_config_dir_arg<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="204">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*opt_session_arg<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="205">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean<sp/>debug_enabled<sp/>=<sp/>FALSE;
+                </highlight>
+            </codeline>
+            <codeline lineno="206">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="207">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="structoption" kindref="compound">option</ref>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a3e0fdc6107db5f12d23c8af627913b5d" kindref="member">long_options</ref>[]
+                    <sp/>=<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="208">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+                <highlight class="stringliteral">&quot;config&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt_8h_1a6ece8d8dfa8378778f7290fdaba5b8bc" kindref="member">required_argument</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;c&apos;</highlight>
+                <highlight class="normal">},</highlight>
+            </codeline>
+            <codeline lineno="209">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+                <highlight class="stringliteral">&quot;debug&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt_8h_1a3bc1d5f667b5b4ca4b4abb685dc874ce" kindref="member">no_argument</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;d&apos;</highlight>
+                <highlight class="normal">},</highlight>
+            </codeline>
+            <codeline lineno="210">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+                <highlight class="stringliteral">&quot;help&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt_8h_1a3bc1d5f667b5b4ca4b4abb685dc874ce" kindref="member">no_argument</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;h&apos;</highlight>
+                <highlight class="normal">},</highlight>
+            </codeline>
+            <codeline lineno="211">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+                <highlight class="stringliteral">&quot;nologin&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt_8h_1a3bc1d5f667b5b4ca4b4abb685dc874ce" kindref="member">no_argument</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;n&apos;</highlight>
+                <highlight class="normal">},</highlight>
+            </codeline>
+            <codeline lineno="212">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+                <highlight class="stringliteral">&quot;session&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt_8h_1a6ece8d8dfa8378778f7290fdaba5b8bc" kindref="member">required_argument</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;s&apos;</highlight>
+                <highlight class="normal">},</highlight>
+            </codeline>
+            <codeline lineno="213">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+                <highlight class="stringliteral">&quot;version&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt_8h_1a3bc1d5f667b5b4ca4b4abb685dc874ce" kindref="member">no_argument</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;v&apos;</highlight>
+                <highlight class="normal">},</highlight>
+            </codeline>
+            <codeline lineno="214">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{0,<sp/>0,<sp/>0,<sp/>0}
+                </highlight>
+            </codeline>
+            <codeline lineno="215">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>};
+                </highlight>
+            </codeline>
+            <codeline lineno="216">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="217">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#ifdef<sp/>PURPLE_FATAL_ASSERTS
+                </highlight>
+            </codeline>
+            <codeline lineno="218">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Make<sp/>g_return_...<sp/>functions<sp/>fatal.<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="219">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_log_set_always_fatal(G_LOG_LEVEL_CRITICAL);
+                </highlight>
+            </codeline>
+            <codeline lineno="220">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="221">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="222">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#ifdef<sp/>ENABLE_NLS
+                </highlight>
+            </codeline>
+            <codeline lineno="223">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>bindtextdomain(PACKAGE,<sp/>LOCALEDIR);
+                </highlight>
+            </codeline>
+            <codeline lineno="224">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>bind_textdomain_codeset(PACKAGE,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;UTF-8&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="225">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>textdomain(PACKAGE);
+                </highlight>
+            </codeline>
+            <codeline lineno="226">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="227">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="228">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#ifdef<sp/>HAVE_SETLOCALE
+                </highlight>
+            </codeline>
+            <codeline lineno="229">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>setlocale(LC_ALL,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="230">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="231">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="232">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>scan<sp/>command-line<sp/>options<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="233">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt_8c_1ae30f05ee1e2e5652f174a35c7875d25e" kindref="member">opterr</ref>
+                    <sp/>=<sp/>1;
+                </highlight>
+            </codeline>
+            <codeline lineno="234">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">while</highlight>
+                <highlight class="normal"><sp/>((opt<sp/>=
+                    <sp/>
+                    <ref refid="getopt_8h_1a8616b8a74ae6c01a7ad95ad2876226ec" kindref="member">getopt_long</ref>(argc,
+                    <sp/>argv,
+                </highlight>
+            </codeline>
+            <codeline lineno="235">
+                <highlight class="normal">#ifndef<sp/>_WIN32
+                </highlight>
+            </codeline>
+            <codeline lineno="236">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;c:dhn::s:v&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="237">
+                <highlight class="normal">#</highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="238">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;c:dhn::v&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="239">
+                <highlight class="normal">#endif</highlight>
+            </codeline>
+            <codeline lineno="240">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>long_options,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>))<sp/>!=<sp/>
+                    -1)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="241">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">switch</highlight>
+                <highlight class="normal"><sp/>(opt)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="242">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;c&apos;</highlight>
+                <highlight class="normal">:
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>config<sp/>dir<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="243">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(opt_config_dir_arg);
+                </highlight>
+            </codeline>
+            <codeline lineno="244">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>opt_config_dir_arg<sp/>=<sp/>g_strdup(<ref refid="getopt_8c_1ab60cc9ce211468617579bb9d1ca6bcd9"
+                                                                    kindref="member">optarg</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="245">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="246">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;d&apos;</highlight>
+                <highlight class="normal">:
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>debug<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="247">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>debug_enabled<sp/>=<sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="248">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="249">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;h&apos;</highlight>
+                <highlight class="normal">:
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>help<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="250">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>opt_help<sp/>=<sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="251">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="252">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;n&apos;</highlight>
+                <highlight class="normal">:
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>no<sp/>autologin<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="253">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>opt_nologin<sp/>=<sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="254">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="255">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;s&apos;</highlight>
+                <highlight class="normal">:
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>use<sp/>existing<sp/>session<sp/>ID<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="256">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(opt_session_arg);
+                </highlight>
+            </codeline>
+            <codeline lineno="257">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>opt_session_arg<sp/>=<sp/>g_strdup(<ref refid="getopt_8c_1ab60cc9ce211468617579bb9d1ca6bcd9"
+                                                                 kindref="member">optarg</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="258">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="259">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;v&apos;</highlight>
+                <highlight class="normal">:
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>version<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="260">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>opt_version<sp/>=<sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="261">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="262">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;?&apos;</highlight>
+                <highlight class="normal">:
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>show<sp/>terse<sp/>help<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="263">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">default</highlight>
+                <highlight class="normal">:</highlight>
+            </codeline>
+            <codeline lineno="264">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>show_usage(argv[0],<sp/>TRUE);
+                </highlight>
+            </codeline>
+            <codeline lineno="265">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="266">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="267">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="268">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="269">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="270">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>show<sp/>help<sp/>message<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="271">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(opt_help)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="272">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>show_usage(argv[0],<sp/>FALSE);
+                </highlight>
+            </codeline>
+            <codeline lineno="273">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="274">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="275">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>show<sp/>version<sp/>message<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="276">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(opt_version)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="277">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>printf(
+                </highlight>
+                <highlight class="stringliteral">&quot;Finch<sp/>%s\n&quot;
+                </highlight>
+                <highlight class="normal">,<sp/>VERSION);
+                </highlight>
+            </codeline>
+            <codeline lineno="278">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="279">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="280">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="281">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>set<sp/>a<sp/>user-specified<sp/>config<sp/>directory<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="282">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(opt_config_dir_arg<sp/>!=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="283">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_util_set_user_dir(opt_config_dir_arg);
+                </highlight>
+            </codeline>
+            <codeline lineno="284">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(opt_config_dir_arg);
+                </highlight>
+            </codeline>
+            <codeline lineno="285">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="286">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="287">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*</highlight>
+            </codeline>
+            <codeline lineno="288">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<sp/>We&apos;re<sp/>done<sp/>piddling<sp/>around<sp/>with<sp/>command<sp/>line<sp/>arguments.
+                </highlight>
+            </codeline>
+            <codeline lineno="289">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<sp/>Fire<sp/>up<sp/>this<sp/>baby.
+                </highlight>
+            </codeline>
+            <codeline lineno="290">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="291">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="292">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>We<sp/>don&apos;t<sp/>want<sp/>debug-messages<sp/>to<sp/>show<sp/>up
+                    <sp/>and<sp/>corrupt<sp/>the<sp/>display<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="293">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_debug_set_enabled(debug_enabled);
+                </highlight>
+            </codeline>
+            <codeline lineno="294">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="295">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>If<sp/>we&apos;re<sp/>using<sp/>a<sp/>custom<sp/>configuration<sp/>
+                    directory,<sp/>we
+                </highlight>
+            </codeline>
+            <codeline lineno="296">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<sp/>do<sp/>NOT<sp/>want<sp/>to<sp/>migrate,<sp/>or<sp/>weird<sp/>things<sp/>will<sp/>happen.
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="297">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(opt_config_dir_arg<sp/>==
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="298">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="299">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!purple_core_migrate())
+                </highlight>
+            </codeline>
+            <codeline lineno="300">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="301">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*old<sp/>=<sp/>g_strconcat(purple_home_dir(),
+                </highlight>
+            </codeline>
+            <codeline lineno="302">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>G_DIR_SEPARATOR_S
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;.gaim&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="303">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text<sp/>=<sp/>g_strdup_printf(_(
+                </highlight>
+            </codeline>
+            <codeline lineno="304">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;%s<sp/>encountered<sp/>errors<sp/>migrating<sp/>your<sp/>settings
+                    <sp/>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="305">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;from<sp/>%s<sp/>to<sp/>%s.<sp/>Please<sp/>investigate<sp/>and
+                    <sp/>complete<sp/>the<sp/>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="306">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;migration<sp/>by<sp/>hand.<sp/>Please<sp/>report<sp/>this<sp/>
+                    error<sp/>at<sp/>http://developer.pidgin.im&quot;
+                </highlight>
+                <highlight class="normal">),<sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Finch&quot;</highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="307">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>old,<sp/>purple_user_dir());
+                </highlight>
+            </codeline>
+            <codeline lineno="308">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="309">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(old);
+                </highlight>
+            </codeline>
+            <codeline lineno="310">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="311">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_print_utf8_to_console(stderr,<sp/>text);
+                </highlight>
+            </codeline>
+            <codeline lineno="312">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(text);
+                </highlight>
+            </codeline>
+            <codeline lineno="313">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="314">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="315">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="316">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="317">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="318">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_core_set_ui_ops(gnt_core_get_ui_ops());
+                </highlight>
+            </codeline>
+            <codeline lineno="319">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_eventloop_set_ui_ops(gnt_eventloop_get_ui_ops());
+                </highlight>
+            </codeline>
+            <codeline lineno="320">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_idle_set_ui_ops(<ref refid="gntidle_8c_1a23f75a84b2ce0d93fd96abbe920846ff"
+                                                     kindref="member">finch_idle_get_ui_ops</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="321">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="322">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>path<sp/>=<sp/>g_build_filename(purple_user_dir(),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;plugins&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="323">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_plugins_add_search_path(path);
+                </highlight>
+            </codeline>
+            <codeline lineno="324">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(path);
+                </highlight>
+            </codeline>
+            <codeline lineno="325">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="326">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_plugins_add_search_path(LIBDIR);
+                </highlight>
+            </codeline>
+            <codeline lineno="327">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="328">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!purple_core_init(<ref
+                        refid="finch_8h_1ad0d0069435cfbff1b86014654d36fe3c" kindref="member">FINCH_UI</ref>))
+                </highlight>
+            </codeline>
+            <codeline lineno="329">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="330">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>fprintf(stderr,
+                </highlight>
+            </codeline>
+            <codeline lineno="331">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Initialization<sp/>of<sp/>the<sp/>Purple<sp/>core<sp/>failed.
+                    <sp/>Dumping<sp/>core.\n&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="332">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Please<sp/>report<sp/>this!\n&quot;
+                </highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="333">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>abort();
+                </highlight>
+            </codeline>
+            <codeline lineno="334">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="335">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="336">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>TODO:<sp/>Move<sp/>blist<sp/>loading<sp/>into<sp/>purple_blist_init()
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="337">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_set_blist(purple_blist_new());
+                </highlight>
+            </codeline>
+            <codeline lineno="338">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_blist_load();
+                </highlight>
+            </codeline>
+            <codeline lineno="339">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="340">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>TODO:<sp/>Move<sp/>prefs<sp/>loading<sp/>into<sp/>purple_prefs_init()
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="341">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_load();
+                </highlight>
+            </codeline>
+            <codeline lineno="342">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_update_old();
+                </highlight>
+            </codeline>
+            <codeline lineno="343">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntprefs_8c_1ab19fa75bca9001029e9519a9eb4a7e4c" kindref="member">
+                        finch_prefs_update_old</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="344">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="345">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>load<sp/>plugins<sp/>we<sp/>had<sp/>when<sp/>we<sp/>quit<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="346">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_plugins_load_saved(
+                </highlight>
+                <highlight class="stringliteral">&quot;/finch/plugins/loaded&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="347">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="348">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>TODO:<sp/>Move<sp/>pounces<sp/>loading<sp/>into<sp/>
+                    purple_pounces_init()<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="349">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_pounces_load();
+                </highlight>
+            </codeline>
+            <codeline lineno="350">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="351">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(opt_nologin)
+                </highlight>
+            </codeline>
+            <codeline lineno="352">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="353">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Set<sp/>all<sp/>accounts<sp/>to<sp/>&quot;offline&quot;<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="354">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleSavedStatus<sp/>*saved_status;
+                </highlight>
+            </codeline>
+            <codeline lineno="355">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="356">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>If<sp/>we&apos;ve<sp/>used<sp/>this<sp/>type+message<sp/>before,<sp/>
+                    lookup<sp/>the<sp/>transient<sp/>status<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="357">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>saved_status<sp/>=<sp/>purple_savedstatus_find_transient_by_type_and_message(
+                </highlight>
+            </codeline>
+            <codeline lineno="358">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PURPLE_STATUS_OFFLINE,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="359">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="360">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>If<sp/>this<sp/>type+message<sp/>is<sp/>unique<sp/>then<sp/>create
+                    <sp/>a<sp/>new<sp/>transient<sp/>saved<sp/>status<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="361">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(saved_status<sp/>==
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="362">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>saved_status<sp/>=<sp/>purple_savedstatus_new(<ref
+                        refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,<sp/>
+                    PURPLE_STATUS_OFFLINE);
+                </highlight>
+            </codeline>
+            <codeline lineno="363">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="364">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Set<sp/>the<sp/>status<sp/>for<sp/>each<sp/>account<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="365">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_savedstatus_activate(saved_status);
+                </highlight>
+            </codeline>
+            <codeline lineno="366">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="367">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="368">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="369">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Everything<sp/>is<sp/>good<sp/>to<sp/>go--sign<sp/>on<sp/>already<sp/>
+                    */
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="370">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!purple_prefs_get_bool(
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/savedstatus/startup_current_status&quot;</highlight>
+                <highlight class="normal">))</highlight>
+            </codeline>
+            <codeline lineno="371">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_savedstatus_activate(purple_savedstatus_get_startup());
+                </highlight>
+            </codeline>
+            <codeline lineno="372">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_accounts_restore_current_statuses();
+                </highlight>
+            </codeline>
+            <codeline lineno="373">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="374">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="375">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>1;
+                </highlight>
+            </codeline>
+            <codeline lineno="376">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="377">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="378">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="finch_8c_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>argc,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>**argv)
+                </highlight>
+            </codeline>
+            <codeline lineno="379">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="380">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>signal(SIGPIPE,<sp/>SIG_IGN);
+                </highlight>
+            </codeline>
+            <codeline lineno="381">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="382">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>libpurple<sp/>stuff<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="383">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!init_libpurple(argc,<sp/>argv))
+                </highlight>
+            </codeline>
+            <codeline lineno="384">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="385">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="386">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_blist_show();
+                </highlight>
+            </codeline>
+            <codeline lineno="387">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1ae0296189f67f03e933080f024419f417" kindref="member">gnt_main</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="388">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="389">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#ifdef<sp/>STANDALONE
+                </highlight>
+            </codeline>
+            <codeline lineno="390">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_core_quit();
+                </highlight>
+            </codeline>
+            <codeline lineno="391">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="392">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="393">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="394">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="395">
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.c"/>
+    </compounddef>
+</doxygen>

@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntnotify_8h" kind="file">
+        <compoundname>gntnotify.h</compoundname>
+        <includes local="yes">notify.h</includes>
+        <includedby refid="gntnotify_8c" local="yes">gntnotify.c</includedby>
+        <includedby refid="gntui_8c" local="yes">gntui.c</includedby>
+        <incdepgraph>
+            <node id="562">
+                <label>notify.h</label>
+            </node>
+            <node id="561">
+                <label>gntnotify.h</label>
+                <link refid="gntnotify.h"/>
+                <childnode refid="562" relation="include">
+                </childnode>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="565">
+                <label>gntui.c</label>
+                <link refid="gntui_8c"/>
+            </node>
+            <node id="564">
+                <label>gntnotify.c</label>
+                <link refid="gntnotify_8c"/>
+            </node>
+            <node id="563">
+                <label>gntnotify.h</label>
+                <link refid="gntnotify.h"/>
+                <childnode refid="564" relation="include">
+                </childnode>
+                <childnode refid="565" relation="include">
+                </childnode>
+            </node>
+        </invincdepgraph>
+        <sectiondef kind="user-defined">
+            <memberdef kind="function" id="gntnotify_8h_1ab752935fe24cc9da2da5445048862fcb" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>PurpleNotifyUiOps *</type>
+                <definition>PurpleNotifyUiOps* finch_notify_get_ui_ops</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_notify_get_ui_ops</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Get the ui-functions.</para>
+                    <para>
+                        <simplesect kind="return">
+                            <para>The PurpleNotifyUiOps structure populated with the appropriate functions.</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntnotify.h" line="41"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntnotify.c"
+                          bodystart="515" bodyend="518"/>
+            </memberdef>
+            <memberdef kind="function" id="gntnotify_8h_1ae4c8a14eb37713263949e0d1e0f9ba58" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_notify_init</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_notify_init</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Perform necessary initializations.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntnotify.h" line="46"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntnotify.c"
+                          bodystart="520" bodyend="523"/>
+            </memberdef>
+            <memberdef kind="function" id="gntnotify_8h_1a13176bd94d38aa5805d2234eb5c43240" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_notify_uninit</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_notify_uninit</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Perform necessary uninitializations.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntnotify.h" line="51"
+                          column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntnotify.c"
+                          bodystart="525" bodyend="528"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>GNT Notify API</para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="6">
+                <highlight class="comment">/*<sp/>finch
+                </highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="8">
+                <highlight class="comment"><sp/>*<sp/>Finch<sp/>is<sp/>the<sp/>legal<sp/>property<sp/>of<sp/>its
+                    <sp/>
+                    developers,<sp/>whose<sp/>names<sp/>are<sp/>too<sp/>numerous
+                </highlight>
+            </codeline>
+            <codeline lineno="9">
+                <highlight class="comment"><sp/>*<sp/>to<sp/>list<sp/>here.
+                    <sp/>
+                    <sp/>Please<sp/>refer<sp/>to<sp/>the<sp/>COPYRIGHT<sp/>file<sp/>distributed<sp/>with<sp/>this
+                </highlight>
+            </codeline>
+            <codeline lineno="10">
+                <highlight class="comment"><sp/>*<sp/>source<sp/>distribution.
+                </highlight>
+            </codeline>
+            <codeline lineno="11">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="12">
+                <highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can
+                    <sp/>redistribute<sp/>it<sp/>and/or<sp/>modify
+                </highlight>
+            </codeline>
+            <codeline lineno="13">
+                <highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General
+                    <sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by
+                </highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version
+                    <sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or
+                </highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.
+                </highlight>
+            </codeline>
+            <codeline lineno="16">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="17">
+                <highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope
+                    <sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,
+                </highlight>
+            </codeline>
+            <codeline lineno="18">
+                <highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the
+                    <sp/>implied<sp/>warranty<sp/>of
+                </highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR
+                    <sp/>PURPOSE.
+                    <sp/>
+                    <sp/>See<sp/>the
+                </highlight>
+            </codeline>
+            <codeline lineno="20">
+                <highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more
+                    <sp/>
+                    details.
+                </highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the
+                    <sp/>GNU<sp/>General<sp/>Public<sp/>License
+                </highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write
+                    <sp/>to<sp/>the<sp/>Free<sp/>Software
+                </highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth
+                    <sp/>Floor,<sp/>Boston,<sp/>MA
+                    <sp/>
+                    <sp/>02111-1301
+                    <sp/>
+                    <sp/>USA
+                </highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="comment"><sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#ifndef<sp/>_GNT_NOTIFY_H
+                </highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>_GNT_NOTIFY_H
+                </highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;notify.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/**********************************************************************
+                </highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="comment"><sp/>*<sp/>@name<sp/>GNT<sp/>Notify<sp/>API
+                </highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="comment"><sp/>**********************************************************************/
+                </highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal">PurpleNotifyUiOps<sp/>*<ref
+                        refid="gntnotify_8c_1a28454ea605fe73528ca2572a25338707" kindref="member">
+                    finch_notify_get_ui_ops</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntnotify_8c_1ac2b63de425556b9ab3b08cf5d1c34d3e" kindref="member">
+                        finch_notify_init</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntnotify_8c_1ac422f6618256065a708d4bfada3cd9ea" kindref="member">
+                        finch_notify_uninit</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/gntnotify.h"/>
+    </compounddef>
+</doxygen>

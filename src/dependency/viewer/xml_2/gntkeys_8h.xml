@@ -1,0 +1,2606 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntkeys_8h" kind="file">
+        <compoundname>gntkeys.h</compoundname>
+        <includes local="no">curses.h</includes>
+        <includes local="no">term.h</includes>
+        <includedby refid="gnt_8h" local="yes">libgnt/gnt.h</includedby>
+        <includedby refid="gntcheckbox_8h" local="yes">libgnt/gntcheckbox.h</includedby>
+        <includedby refid="gntcombobox_8h" local="yes">libgnt/gntcombobox.h</includedby>
+        <includedby refid="gnttree_8h" local="yes">libgnt/gnttree.h</includedby>
+        <includedby refid="gnttextview_8h" local="yes">libgnt/gnttextview.h</includedby>
+        <includedby refid="gntentry_8h" local="yes">libgnt/gntentry.h</includedby>
+        <includedby refid="gntwindow_8h" local="yes">libgnt/gntwindow.h</includedby>
+        <includedby refid="gntmenu_8h" local="yes">libgnt/gntmenu.h</includedby>
+        <includedby refid="gntfilesel_8h" local="yes">libgnt/gntfilesel.h</includedby>
+        <includedby refid="gntkeys_8c" local="yes">libgnt/gntkeys.c</includedby>
+        <includedby refid="gntline_8h" local="yes">libgnt/gntline.h</includedby>
+        <includedby refid="gntmain_8c" local="yes">libgnt/gntmain.c</includedby>
+        <includedby refid="gntmenuitemcheck_8h" local="yes">libgnt/gntmenuitemcheck.h</includedby>
+        <incdepgraph>
+            <node id="1242">
+                <label>term.h</label>
+            </node>
+            <node id="1241">
+                <label>curses.h</label>
+            </node>
+            <node id="1240">
+                <label>libgnt/gntkeys.h</label>
+                <link refid="gntkeys.h"/>
+                <childnode refid="1241" relation="include">
+                </childnode>
+                <childnode refid="1242" relation="include">
+                </childnode>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="1278">
+                <label>libgnt/gntbutton.c</label>
+                <link refid="gntbutton_8c"/>
+            </node>
+            <node id="1260">
+                <label>gntnotify.c</label>
+                <link refid="gntnotify_8c"/>
+            </node>
+            <node id="1286">
+                <label>libgnt/gntbutton.h</label>
+                <link refid="gntbutton_8h"/>
+                <childnode refid="1248" relation="include">
+                </childnode>
+                <childnode refid="1258" relation="include">
+                </childnode>
+                <childnode refid="1259" relation="include">
+                </childnode>
+                <childnode refid="1260" relation="include">
+                </childnode>
+                <childnode refid="1254" relation="include">
+                </childnode>
+                <childnode refid="1261" relation="include">
+                </childnode>
+                <childnode refid="1262" relation="include">
+                </childnode>
+                <childnode refid="1263" relation="include">
+                </childnode>
+                <childnode refid="1278" relation="include">
+                </childnode>
+                <childnode refid="1287" relation="include">
+                </childnode>
+                <childnode refid="1268" relation="include">
+                </childnode>
+                <childnode refid="1282" relation="include">
+                </childnode>
+                <childnode refid="1256" relation="include">
+                </childnode>
+            </node>
+            <node id="1256">
+                <label>plugins/gntgf.c</label>
+                <link refid="gntgf_8c"/>
+            </node>
+            <node id="1296">
+                <label>libgnt/gntmenuitem.c</label>
+                <link refid="gntmenuitem_8c"/>
+            </node>
+            <node id="1292">
+                <label>libgnt/gntmenuitem.h</label>
+                <link refid="gntmenuitem_8h"/>
+                <childnode refid="1250" relation="include">
+                </childnode>
+                <childnode refid="1291" relation="include">
+                </childnode>
+                <childnode refid="1293" relation="include">
+                </childnode>
+                <childnode refid="1296" relation="include">
+                </childnode>
+            </node>
+            <node id="1252">
+                <label>plugins/lastlog.c</label>
+                <link refid="lastlog_8c"/>
+            </node>
+            <node id="1266">
+                <label>libgnt/gntcolors.c</label>
+                <link refid="gntcolors_8c"/>
+            </node>
+            <node id="1269">
+                <label>libgnt/gntmain.c</label>
+                <link refid="gntmain_8c"/>
+            </node>
+            <node id="1295">
+                <label>libgnt/gntmenuitemcheck.c</label>
+                <link refid="gntmenuitemcheck_8c"/>
+            </node>
+            <node id="1293">
+                <label>libgnt/gntmenuitemcheck.h</label>
+                <link refid="gntmenuitemcheck_8h"/>
+                <childnode refid="1250" relation="include">
+                </childnode>
+                <childnode refid="1294" relation="include">
+                </childnode>
+                <childnode refid="1295" relation="include">
+                </childnode>
+            </node>
+            <node id="1281">
+                <label>libgnt/gnttextview.c</label>
+                <link refid="gnttextview_8c"/>
+            </node>
+            <node id="1299">
+                <label>libgnt/gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="1251" relation="include">
+                </childnode>
+                <childnode refid="1258" relation="include">
+                </childnode>
+                <childnode refid="1290" relation="include">
+                </childnode>
+                <childnode refid="1300" relation="include">
+                </childnode>
+                <childnode refid="1281" relation="include">
+                </childnode>
+                <childnode refid="1282" relation="include">
+                </childnode>
+                <childnode refid="1274" relation="include">
+                </childnode>
+                <childnode refid="1252" relation="include">
+                </childnode>
+            </node>
+            <node id="1275">
+                <label>libgnt/wms/s.c</label>
+                <link refid="s_8c"/>
+            </node>
+            <node id="1248">
+                <label>gntaccount.c</label>
+                <link refid="gntaccount_8c"/>
+            </node>
+            <node id="1265">
+                <label>libgnt/gntbindable.c</label>
+                <link refid="gntbindable_8c"/>
+            </node>
+            <node id="1279">
+                <label>libgnt/gntcombobox.c</label>
+                <link refid="gntcombobox_8c"/>
+            </node>
+            <node id="1289">
+                <label>libgnt/gntcombobox.h</label>
+                <link refid="gntcombobox_8h"/>
+                <childnode refid="1248" relation="include">
+                </childnode>
+                <childnode refid="1250" relation="include">
+                </childnode>
+                <childnode refid="1261" relation="include">
+                </childnode>
+                <childnode refid="1262" relation="include">
+                </childnode>
+                <childnode refid="1263" relation="include">
+                </childnode>
+                <childnode refid="1279" relation="include">
+                </childnode>
+                <childnode refid="1282" relation="include">
+                </childnode>
+            </node>
+            <node id="1274">
+                <label>libgnt/gntwm.c</label>
+                <link refid="gntwm_8c"/>
+            </node>
+            <node id="1297">
+                <label>libgnt/gntwm.h</label>
+                <link refid="gntwm_8h"/>
+                <childnode refid="1298" relation="include">
+                </childnode>
+                <childnode refid="1269" relation="include">
+                </childnode>
+                <childnode refid="1274" relation="include">
+                </childnode>
+                <childnode refid="1275" relation="include">
+                </childnode>
+                <childnode refid="1255" relation="include">
+                </childnode>
+            </node>
+            <node id="1257">
+                <label>plugins/gnthistory.c</label>
+                <link refid="gnthistory_8c"/>
+            </node>
+            <node id="1244">
+                <label>libgnt/gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="1245" relation="include">
+                </childnode>
+                <childnode refid="1248" relation="include">
+                </childnode>
+                <childnode refid="1249" relation="include">
+                </childnode>
+                <childnode refid="1253" relation="include">
+                </childnode>
+                <childnode refid="1251" relation="include">
+                </childnode>
+                <childnode refid="1258" relation="include">
+                </childnode>
+                <childnode refid="1259" relation="include">
+                </childnode>
+                <childnode refid="1260" relation="include">
+                </childnode>
+                <childnode refid="1254" relation="include">
+                </childnode>
+                <childnode refid="1261" relation="include">
+                </childnode>
+                <childnode refid="1262" relation="include">
+                </childnode>
+                <childnode refid="1263" relation="include">
+                </childnode>
+                <childnode refid="1264" relation="include">
+                </childnode>
+                <childnode refid="1265" relation="include">
+                </childnode>
+                <childnode refid="1276" relation="include">
+                </childnode>
+                <childnode refid="1283" relation="include">
+                </childnode>
+                <childnode refid="1286" relation="include">
+                </childnode>
+                <childnode refid="1287" relation="include">
+                </childnode>
+                <childnode refid="1289" relation="include">
+                </childnode>
+                <childnode refid="1290" relation="include">
+                </childnode>
+                <childnode refid="1299" relation="include">
+                </childnode>
+                <childnode refid="1301" relation="include">
+                </childnode>
+                <childnode refid="1284" relation="include">
+                </childnode>
+                <childnode refid="1285" relation="include">
+                </childnode>
+                <childnode refid="1300" relation="include">
+                </childnode>
+                <childnode refid="1302" relation="include">
+                </childnode>
+                <childnode refid="1269" relation="include">
+                </childnode>
+                <childnode refid="1293" relation="include">
+                </childnode>
+                <childnode refid="1272" relation="include">
+                </childnode>
+                <childnode refid="1274" relation="include">
+                </childnode>
+                <childnode refid="1275" relation="include">
+                </childnode>
+                <childnode refid="1256" relation="include">
+                </childnode>
+                <childnode refid="1252" relation="include">
+                </childnode>
+            </node>
+            <node id="1298">
+                <label>gntidle.c</label>
+                <link refid="gntidle_8c"/>
+            </node>
+            <node id="1254">
+                <label>gntplugin.c</label>
+                <link refid="gntplugin_8c"/>
+            </node>
+            <node id="1250">
+                <label>gntblist.c</label>
+                <link refid="gntblist_8c"/>
+            </node>
+            <node id="1253">
+                <label>gntplugin.h</label>
+                <link refid="gntplugin_8h"/>
+                <childnode refid="1251" relation="include">
+                </childnode>
+                <childnode refid="1254" relation="include">
+                </childnode>
+                <childnode refid="1247" relation="include">
+                </childnode>
+                <childnode refid="1255" relation="include">
+                </childnode>
+                <childnode refid="1256" relation="include">
+                </childnode>
+                <childnode refid="1257" relation="include">
+                </childnode>
+                <childnode refid="1252" relation="include">
+                </childnode>
+            </node>
+            <node id="1273">
+                <label>libgnt/gntwindow.c</label>
+                <link refid="gntwindow_8c"/>
+            </node>
+            <node id="1284">
+                <label>libgnt/gntwindow.h</label>
+                <link refid="gntwindow_8h"/>
+                <childnode refid="1250" relation="include">
+                </childnode>
+                <childnode refid="1285" relation="include">
+                </childnode>
+                <childnode refid="1282" relation="include">
+                </childnode>
+                <childnode refid="1273" relation="include">
+                </childnode>
+                <childnode refid="1274" relation="include">
+                </childnode>
+                <childnode refid="1275" relation="include">
+                </childnode>
+                <childnode refid="1252" relation="include">
+                </childnode>
+            </node>
+            <node id="1270">
+                <label>libgnt/gntstyle.c</label>
+                <link refid="gntstyle_8c"/>
+            </node>
+            <node id="1264">
+                <label>libgnt/gntstyle.h</label>
+                <link refid="gntstyle_8h"/>
+                <childnode refid="1265" relation="include">
+                </childnode>
+                <childnode refid="1266" relation="include">
+                </childnode>
+                <childnode refid="1267" relation="include">
+                </childnode>
+                <childnode refid="1268" relation="include">
+                </childnode>
+                <childnode refid="1269" relation="include">
+                </childnode>
+                <childnode refid="1270" relation="include">
+                </childnode>
+                <childnode refid="1271" relation="include">
+                </childnode>
+                <childnode refid="1272" relation="include">
+                </childnode>
+                <childnode refid="1273" relation="include">
+                </childnode>
+                <childnode refid="1274" relation="include">
+                </childnode>
+                <childnode refid="1275" relation="include">
+                </childnode>
+            </node>
+            <node id="1262">
+                <label>gntrequest.c</label>
+                <link refid="gntrequest_8c"/>
+            </node>
+            <node id="1255">
+                <label>plugins/gntclipboard.c</label>
+                <link refid="plugins_2gntclipboard_8c"/>
+            </node>
+            <node id="1282">
+                <label>libgnt/gntutils.c</label>
+                <link refid="gntutils_8c"/>
+            </node>
+            <node id="1276">
+                <label>libgnt/gntutils.h</label>
+                <link refid="gntutils_8h"/>
+                <childnode refid="1250" relation="include">
+                </childnode>
+                <childnode refid="1265" relation="include">
+                </childnode>
+                <childnode refid="1277" relation="include">
+                </childnode>
+                <childnode refid="1278" relation="include">
+                </childnode>
+                <childnode refid="1279" relation="include">
+                </childnode>
+                <childnode refid="1267" relation="include">
+                </childnode>
+                <childnode refid="1280" relation="include">
+                </childnode>
+                <childnode refid="1269" relation="include">
+                </childnode>
+                <childnode refid="1281" relation="include">
+                </childnode>
+                <childnode refid="1271" relation="include">
+                </childnode>
+                <childnode refid="1282" relation="include">
+                </childnode>
+                <childnode refid="1272" relation="include">
+                </childnode>
+                <childnode refid="1274" relation="include">
+                </childnode>
+            </node>
+            <node id="1277">
+                <label>libgnt/gntbox.c</label>
+                <link refid="gntbox_8c"/>
+            </node>
+            <node id="1283">
+                <label>libgnt/gntbox.h</label>
+                <link refid="gntbox_8h"/>
+                <childnode refid="1248" relation="include">
+                </childnode>
+                <childnode refid="1250" relation="include">
+                </childnode>
+                <childnode refid="1251" relation="include">
+                </childnode>
+                <childnode refid="1258" relation="include">
+                </childnode>
+                <childnode refid="1259" relation="include">
+                </childnode>
+                <childnode refid="1260" relation="include">
+                </childnode>
+                <childnode refid="1254" relation="include">
+                </childnode>
+                <childnode refid="1261" relation="include">
+                </childnode>
+                <childnode refid="1262" relation="include">
+                </childnode>
+                <childnode refid="1263" relation="include">
+                </childnode>
+                <childnode refid="1277" relation="include">
+                </childnode>
+                <childnode refid="1279" relation="include">
+                </childnode>
+                <childnode refid="1267" relation="include">
+                </childnode>
+                <childnode refid="1284" relation="include">
+                </childnode>
+                <childnode refid="1269" relation="include">
+                </childnode>
+                <childnode refid="1274" relation="include">
+                </childnode>
+                <childnode refid="1275" relation="include">
+                </childnode>
+                <childnode refid="1256" relation="include">
+                </childnode>
+            </node>
+            <node id="1280">
+                <label>libgnt/gntlabel.c</label>
+                <link refid="gntlabel_8c"/>
+            </node>
+            <node id="1300">
+                <label>libgnt/gntlabel.h</label>
+                <link refid="gntlabel_8h"/>
+                <childnode refid="1248" relation="include">
+                </childnode>
+                <childnode refid="1250" relation="include">
+                </childnode>
+                <childnode refid="1259" relation="include">
+                </childnode>
+                <childnode refid="1260" relation="include">
+                </childnode>
+                <childnode refid="1254" relation="include">
+                </childnode>
+                <childnode refid="1261" relation="include">
+                </childnode>
+                <childnode refid="1262" relation="include">
+                </childnode>
+                <childnode refid="1263" relation="include">
+                </childnode>
+                <childnode refid="1268" relation="include">
+                </childnode>
+                <childnode refid="1280" relation="include">
+                </childnode>
+                <childnode refid="1282" relation="include">
+                </childnode>
+                <childnode refid="1274" relation="include">
+                </childnode>
+                <childnode refid="1275" relation="include">
+                </childnode>
+                <childnode refid="1256" relation="include">
+                </childnode>
+            </node>
+            <node id="1267">
+                <label>libgnt/gntentry.c</label>
+                <link refid="gntentry_8c"/>
+            </node>
+            <node id="1301">
+                <label>libgnt/gntentry.h</label>
+                <link refid="gntentry_8h"/>
+                <childnode refid="1248" relation="include">
+                </childnode>
+                <childnode refid="1250" relation="include">
+                </childnode>
+                <childnode refid="1251" relation="include">
+                </childnode>
+                <childnode refid="1261" relation="include">
+                </childnode>
+                <childnode refid="1262" relation="include">
+                </childnode>
+                <childnode refid="1263" relation="include">
+                </childnode>
+                <childnode refid="1267" relation="include">
+                </childnode>
+                <childnode refid="1268" relation="include">
+                </childnode>
+                <childnode refid="1282" relation="include">
+                </childnode>
+            </node>
+            <node id="1259">
+                <label>gntft.c</label>
+                <link refid="gntft_8c"/>
+            </node>
+            <node id="1261">
+                <label>gntpounce.c</label>
+                <link refid="gntpounce_8c"/>
+            </node>
+            <node id="1272">
+                <label>libgnt/gntwidget.c</label>
+                <link refid="gntwidget_8c"/>
+            </node>
+            <node id="1246">
+                <label>finch.c</label>
+                <link refid="finch_8c"/>
+            </node>
+            <node id="1247">
+                <label>gntui.c</label>
+                <link refid="gntui_8c"/>
+            </node>
+            <node id="1245">
+                <label>gntui.h</label>
+                <link refid="gntui_8h"/>
+                <childnode refid="1246" relation="include">
+                </childnode>
+                <childnode refid="1247" relation="include">
+                </childnode>
+            </node>
+            <node id="1304">
+                <label>libgnt/gntkeys.c</label>
+                <link refid="gntkeys_8c"/>
+            </node>
+            <node id="1243">
+                <label>libgnt/gntkeys.h</label>
+                <link refid="gntkeys.h"/>
+                <childnode refid="1244" relation="include">
+                </childnode>
+                <childnode refid="1287" relation="include">
+                </childnode>
+                <childnode refid="1289" relation="include">
+                </childnode>
+                <childnode refid="1290" relation="include">
+                </childnode>
+                <childnode refid="1299" relation="include">
+                </childnode>
+                <childnode refid="1301" relation="include">
+                </childnode>
+                <childnode refid="1284" relation="include">
+                </childnode>
+                <childnode refid="1291" relation="include">
+                </childnode>
+                <childnode refid="1285" relation="include">
+                </childnode>
+                <childnode refid="1304" relation="include">
+                </childnode>
+                <childnode refid="1302" relation="include">
+                </childnode>
+                <childnode refid="1269" relation="include">
+                </childnode>
+                <childnode refid="1293" relation="include">
+                </childnode>
+            </node>
+            <node id="1294">
+                <label>libgnt/gntmenu.c</label>
+                <link refid="gntmenu_8c"/>
+            </node>
+            <node id="1291">
+                <label>libgnt/gntmenu.h</label>
+                <link refid="gntmenu_8h"/>
+                <childnode refid="1250" relation="include">
+                </childnode>
+                <childnode refid="1284" relation="include">
+                </childnode>
+                <childnode refid="1292" relation="include">
+                </childnode>
+                <childnode refid="1269" relation="include">
+                </childnode>
+                <childnode refid="1297" relation="include">
+                </childnode>
+                <childnode refid="1294" relation="include">
+                </childnode>
+                <childnode refid="1296" relation="include">
+                </childnode>
+                <childnode refid="1274" relation="include">
+                </childnode>
+                <childnode refid="1275" relation="include">
+                </childnode>
+            </node>
+            <node id="1251">
+                <label>gntconv.c</label>
+                <link refid="gntconv_8c"/>
+            </node>
+            <node id="1249">
+                <label>gntconv.h</label>
+                <link refid="gntconv_8h"/>
+                <childnode refid="1250" relation="include">
+                </childnode>
+                <childnode refid="1251" relation="include">
+                </childnode>
+                <childnode refid="1247" relation="include">
+                </childnode>
+                <childnode refid="1252" relation="include">
+                </childnode>
+            </node>
+            <node id="1303">
+                <label>libgnt/gntline.c</label>
+                <link refid="gntline_8c"/>
+            </node>
+            <node id="1302">
+                <label>libgnt/gntline.h</label>
+                <link refid="gntline_8h"/>
+                <childnode refid="1248" relation="include">
+                </childnode>
+                <childnode refid="1250" relation="include">
+                </childnode>
+                <childnode refid="1258" relation="include">
+                </childnode>
+                <childnode refid="1254" relation="include">
+                </childnode>
+                <childnode refid="1261" relation="include">
+                </childnode>
+                <childnode refid="1262" relation="include">
+                </childnode>
+                <childnode refid="1263" relation="include">
+                </childnode>
+                <childnode refid="1303" relation="include">
+                </childnode>
+                <childnode refid="1282" relation="include">
+                </childnode>
+            </node>
+            <node id="1271">
+                <label>libgnt/gnttree.c</label>
+                <link refid="gnttree_8c"/>
+            </node>
+            <node id="1290">
+                <label>libgnt/gnttree.h</label>
+                <link refid="gnttree_8h"/>
+                <childnode refid="1248" relation="include">
+                </childnode>
+                <childnode refid="1250" relation="include">
+                </childnode>
+                <childnode refid="1259" relation="include">
+                </childnode>
+                <childnode refid="1260" relation="include">
+                </childnode>
+                <childnode refid="1254" relation="include">
+                </childnode>
+                <childnode refid="1261" relation="include">
+                </childnode>
+                <childnode refid="1262" relation="include">
+                </childnode>
+                <childnode refid="1263" relation="include">
+                </childnode>
+                <childnode refid="1279" relation="include">
+                </childnode>
+                <childnode refid="1267" relation="include">
+                </childnode>
+                <childnode refid="1291" relation="include">
+                </childnode>
+                <childnode refid="1268" relation="include">
+                </childnode>
+                <childnode refid="1269" relation="include">
+                </childnode>
+                <childnode refid="1271" relation="include">
+                </childnode>
+                <childnode refid="1282" relation="include">
+                </childnode>
+                <childnode refid="1274" relation="include">
+                </childnode>
+                <childnode refid="1256" relation="include">
+                </childnode>
+            </node>
+            <node id="1258">
+                <label>gntdebug.c</label>
+                <link refid="gntdebug_8c"/>
+            </node>
+            <node id="1263">
+                <label>gntstatus.c</label>
+                <link refid="gntstatus_8c"/>
+            </node>
+            <node id="1268">
+                <label>libgnt/gntfilesel.c</label>
+                <link refid="gntfilesel_8c"/>
+            </node>
+            <node id="1285">
+                <label>libgnt/gntfilesel.h</label>
+                <link refid="gntfilesel_8h"/>
+                <childnode refid="1262" relation="include">
+                </childnode>
+                <childnode refid="1268" relation="include">
+                </childnode>
+            </node>
+            <node id="1288">
+                <label>libgnt/gntcheckbox.c</label>
+                <link refid="gntcheckbox_8c"/>
+            </node>
+            <node id="1287">
+                <label>libgnt/gntcheckbox.h</label>
+                <link refid="gntcheckbox_8h"/>
+                <childnode refid="1248" relation="include">
+                </childnode>
+                <childnode refid="1258" relation="include">
+                </childnode>
+                <childnode refid="1259" relation="include">
+                </childnode>
+                <childnode refid="1261" relation="include">
+                </childnode>
+                <childnode refid="1262" relation="include">
+                </childnode>
+                <childnode refid="1288" relation="include">
+                </childnode>
+                <childnode refid="1282" relation="include">
+                </childnode>
+                <childnode refid="1256" relation="include">
+                </childnode>
+            </node>
+        </invincdepgraph>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" prot="public" static="no">
+                <name>SAFE</name>
+                <param>
+                    <defname>x</defname>
+                </param>
+                <initializer>((x) ? (x) : &quot;&quot;)</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="17" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="17" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1ae31dba8acd77d359aa2d1a89848e23e7" prot="public" static="no">
+                <name>GNT_KEY_POPUP</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_f16) /* Apparently */
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="19" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="19" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a3610efeedee6919c5b317929b9a8008e" prot="public" static="no">
+                <name>GNT_KEY_LEFT</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_left)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="22" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="22" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1ab61e5a96c75ffdfcd777c0219820ccce" prot="public" static="no">
+                <name>GNT_KEY_RIGHT</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_right)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="23" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="23" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a7c9f2883e0da9aa877aa50dca3c9b7f3" prot="public" static="no">
+                <name>GNT_KEY_UP</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_up)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="24" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="24" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a9f1051b5041b0f49305a57079dce9f8f" prot="public" static="no">
+                <name>GNT_KEY_DOWN</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_down)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="25" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="25" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a06218194b6b543571ce084eb9116795e" prot="public" static="no">
+                <name>GNT_KEY_CTRL_UP</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>(<ref
+                        refid="gntkeys_8h_1af476842d27ec53797f7550d6e48e4f05" kindref="member">gnt_key_cup</ref>)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="27" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="27" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1aec7d392f0ce94a51f8825f44978345ea" prot="public" static="no">
+                <name>GNT_KEY_CTRL_DOWN</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>(<ref
+                        refid="gntkeys_8h_1af48deab401d73253a6aed153efb4c498" kindref="member">gnt_key_cdown</ref>)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="28" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="28" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a7235cecc840299b4801d4838e0bdde8a" prot="public" static="no">
+                <name>GNT_KEY_CTRL_RIGHT</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>(<ref
+                        refid="gntkeys_8h_1aa79f54f7e2bd770d85288fd50436707d" kindref="member">gnt_key_cright</ref>)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="29" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="29" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a595e832437d5de681522a6d523f3fe68" prot="public" static="no">
+                <name>GNT_KEY_CTRL_LEFT</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>(<ref
+                        refid="gntkeys_8h_1a15002149ce0034c8365675caca397bb2" kindref="member">gnt_key_cleft</ref>)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="30" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="30" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1ae6adb88682096b0de8f63153de464b69" prot="public" static="no">
+                <name>GNT_KEY_PGUP</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_ppage)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="32" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="32" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1ac41fcbd7ddbe2b75727020bc46875d5c" prot="public" static="no">
+                <name>GNT_KEY_PGDOWN</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_npage)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="33" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="33" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a405146b1f444af420a78238cf565c6fd" prot="public" static="no">
+                <name>GNT_KEY_HOME</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_home)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="34" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="34" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a47f2afea7e78b0a76342094c28c6828e" prot="public" static="no">
+                <name>GNT_KEY_END</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_end)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="35" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="35" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a39c47391dd043ebc7e6acd61d41bf09d" prot="public" static="no">
+                <name>GNT_KEY_ENTER</name>
+                <initializer>carriage_return</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="37" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="37" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a0bd1897d48b5e329409801ae7a864a75" prot="public" static="no">
+                <name>GNT_KEY_BACKSPACE</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_backspace)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="39" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="39" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a0a134448abd45fb72c52e8a8b645a0a0" prot="public" static="no">
+                <name>GNT_KEY_DEL</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_dc)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="40" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="40" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a78ed62dffcfdc912e6336f3be2f6bf20" prot="public" static="no">
+                <name>GNT_KEY_INS</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_ic)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="41" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="41" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1aa3aa9458cd4ed4e760811d9ad0f47797" prot="public" static="no">
+                <name>GNT_KEY_CTRL_A</name>
+                <initializer>&quot;\001&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="43" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="43" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a353012304e2ba0ec156a332fa7dfd6ef" prot="public" static="no">
+                <name>GNT_KEY_CTRL_B</name>
+                <initializer>&quot;\002&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="44" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="44" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a0cda78e9cf831754b36488ae5552a30e" prot="public" static="no">
+                <name>GNT_KEY_CTRL_D</name>
+                <initializer>&quot;\004&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="45" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="45" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a520fec89a6e3fb59794feb3a4a0707e4" prot="public" static="no">
+                <name>GNT_KEY_CTRL_E</name>
+                <initializer>&quot;\005&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="46" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="46" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a8c2b350e70d6764573712371e1ca4b9c" prot="public" static="no">
+                <name>GNT_KEY_CTRL_F</name>
+                <initializer>&quot;\006&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="47" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="47" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1ae5223244420f311fdb508bbc787a2390" prot="public" static="no">
+                <name>GNT_KEY_CTRL_G</name>
+                <initializer>&quot;\007&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="48" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="48" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1ac134a96c9f54b9cf1d6b8e24bb6a085b" prot="public" static="no">
+                <name>GNT_KEY_CTRL_H</name>
+                <initializer>&quot;\010&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="49" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="49" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1af226d631aa4e42cbdded9a4ce9a2151d" prot="public" static="no">
+                <name>GNT_KEY_CTRL_I</name>
+                <initializer>&quot;\011&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="50" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="50" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1aa8f2ddd13468e982e3b90885956a380c" prot="public" static="no">
+                <name>GNT_KEY_CTRL_J</name>
+                <initializer>&quot;\012&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="51" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="51" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a036fea5c74185aae6f8b092f37d7b27c" prot="public" static="no">
+                <name>GNT_KEY_CTRL_K</name>
+                <initializer>&quot;\013&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="52" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="52" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a27dc0ead31dcc1667cb6ed19961357f0" prot="public" static="no">
+                <name>GNT_KEY_CTRL_L</name>
+                <initializer>&quot;\014&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="53" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="53" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a0b907402a4e3c23a0b08ab399b4c8a4c" prot="public" static="no">
+                <name>GNT_KEY_CTRL_M</name>
+                <initializer>&quot;\012&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="54" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="54" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a57ca4b04038cbf56c2316445be821d3d" prot="public" static="no">
+                <name>GNT_KEY_CTRL_N</name>
+                <initializer>&quot;\016&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="55" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="55" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1ab928089a44e0b20463446df131119bc8" prot="public" static="no">
+                <name>GNT_KEY_CTRL_O</name>
+                <initializer>&quot;\017&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="56" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="56" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a844863adc04374889d747f7fea9c1f54" prot="public" static="no">
+                <name>GNT_KEY_CTRL_P</name>
+                <initializer>&quot;\020&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="57" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="57" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1ae33ee9032a5cd7fd2a1daab8f90d5bee" prot="public" static="no">
+                <name>GNT_KEY_CTRL_R</name>
+                <initializer>&quot;\022&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="58" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="58" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1acd1ecf33141dc97dede8075df8ec97cf" prot="public" static="no">
+                <name>GNT_KEY_CTRL_T</name>
+                <initializer>&quot;\024&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="59" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="59" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a3b10af0de6322618f5001b797faca053" prot="public" static="no">
+                <name>GNT_KEY_CTRL_U</name>
+                <initializer>&quot;\025&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="60" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="60" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a02a30a0cdbd7f767d05b51bfaa6b58d5" prot="public" static="no">
+                <name>GNT_KEY_CTRL_V</name>
+                <initializer>&quot;\026&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="61" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="61" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a91607afe696142967bb3682fa49a0413" prot="public" static="no">
+                <name>GNT_KEY_CTRL_W</name>
+                <initializer>&quot;\027&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="62" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="62" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1ad1737ec2d2e0d575287e6af8b4aaa76c" prot="public" static="no">
+                <name>GNT_KEY_CTRL_X</name>
+                <initializer>&quot;\030&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="63" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="63" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a83bdd9304278adb080061437f26baf32" prot="public" static="no">
+                <name>GNT_KEY_CTRL_Y</name>
+                <initializer>&quot;\031&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="64" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="64" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1abc58736f8d050636875291815a7ffcf8" prot="public" static="no">
+                <name>GNT_KEY_F1</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_f1)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="66" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="66" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a2d78e8f2ee463f7a61ca61cb7ee5ef7b" prot="public" static="no">
+                <name>GNT_KEY_F2</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_f2)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="67" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="67" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a8122c12e12fed3c0823ddda5d493e191" prot="public" static="no">
+                <name>GNT_KEY_F3</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_f3)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="68" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="68" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a965d546444989fafcf6d561a29925e00" prot="public" static="no">
+                <name>GNT_KEY_F4</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_f4)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="69" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="69" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a6f7aa42f7e14e78fba37a2477fb0cefc" prot="public" static="no">
+                <name>GNT_KEY_F5</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_f5)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="70" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="70" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a6f19d1b7765bc89007183d1536006446" prot="public" static="no">
+                <name>GNT_KEY_F6</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_f6)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="71" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="71" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1ad3d0a9dea8bad88a41bd43c10ff40c61" prot="public" static="no">
+                <name>GNT_KEY_F7</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_f7)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="72" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="72" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1acf3bb3e92e4bab273426e4b273646869" prot="public" static="no">
+                <name>GNT_KEY_F8</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_f8)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="73" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="73" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a61a1aba61c4396e7e2bddec389604788" prot="public" static="no">
+                <name>GNT_KEY_F9</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_f9)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="74" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="74" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a3a5c2cf645d528a268d42df3f542d2c6" prot="public" static="no">
+                <name>GNT_KEY_F10</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_f10)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="75" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="75" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1a5ed2fbf6ff0a36619e1c2401a8676206" prot="public" static="no">
+                <name>GNT_KEY_F11</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_f11)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="76" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="76" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8h_1ab0be21bdfaecf4b4ed224ce3dfeaec6c" prot="public" static="no">
+                <name>GNT_KEY_F12</name>
+                <initializer><ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>
+                    (key_f12)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="77" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        bodystart="77" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="var">
+            <memberdef kind="variable" id="gntkeys_8h_1af476842d27ec53797f7550d6e48e4f05" prot="public" static="no"
+                       mutable="no">
+                <type>char *</type>
+                <definition>char* gnt_key_cup</definition>
+                <argsstring></argsstring>
+                <name>gnt_key_cup</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>terminfo/termcap doesn&apos;t provide all the information that I want to use, eg. ctrl-up,
+                        ctrl-down etc. So I am going to hard-code some of the information for some popular $TERMs
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="12" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.c"
+                        bodystart="7" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntkeys_8h_1af48deab401d73253a6aed153efb4c498" prot="public" static="no"
+                       mutable="no">
+                <type>char *</type>
+                <definition>char* gnt_key_cdown</definition>
+                <argsstring></argsstring>
+                <name>gnt_key_cdown</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="13" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.c"
+                        bodystart="8" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntkeys_8h_1a15002149ce0034c8365675caca397bb2" prot="public" static="no"
+                       mutable="no">
+                <type>char *</type>
+                <definition>char* gnt_key_cleft</definition>
+                <argsstring></argsstring>
+                <name>gnt_key_cleft</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="14" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.c"
+                        bodystart="9" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntkeys_8h_1aa79f54f7e2bd770d85288fd50436707d" prot="public" static="no"
+                       mutable="no">
+                <type>char *</type>
+                <definition>char* gnt_key_cright</definition>
+                <argsstring></argsstring>
+                <name>gnt_key_cright</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="15" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.c"
+                        bodystart="10" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntkeys_8h_1ac0d12b8d5cc89c7cda444f930bd015c6" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_init_keys</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_init_keys</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>This will do stuff with the terminal settings and stuff.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="82" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.c"
+                        bodystart="15" bodyend="114"/>
+            </memberdef>
+            <memberdef kind="function" id="gntkeys_8h_1a0b113f5ad7401654fdd58ba73c7bbb6a" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_keys_refine</definition>
+                <argsstring>(char *text)</argsstring>
+                <name>gnt_keys_refine</name>
+                <param>
+                    <type>char *</type>
+                    <declname>text</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="83" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.c"
+                        bodystart="116" bodyend="130"/>
+            </memberdef>
+            <memberdef kind="function" id="gntkeys_8h_1ae2413e0cc4895523483172bb2e06937d" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>const char *</type>
+                <definition>const char* gnt_key_translate</definition>
+                <argsstring>(const char *name)</argsstring>
+                <name>gnt_key_translate</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>name</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="84" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.c"
+                        bodystart="132" bodyend="135"/>
+            </memberdef>
+            <memberdef kind="function" id="gntkeys_8h_1aa70e031cf2eb6cbf10ac3c9bcffc381b" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>const char *</type>
+                <definition>const char* gnt_key_lookup</definition>
+                <argsstring>(const char *key)</argsstring>
+                <name>gnt_key_lookup</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>key</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="85" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.c"
+                        bodystart="152" bodyend="157"/>
+            </memberdef>
+            <memberdef kind="function" id="gntkeys_8h_1aa3258e3131aadd25a925eaf38b3b6d7d" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_keys_add_combination</definition>
+                <argsstring>(const char *path)</argsstring>
+                <name>gnt_keys_add_combination</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>path</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="87" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.c"
+                        bodystart="199" bodyend="202"/>
+            </memberdef>
+            <memberdef kind="function" id="gntkeys_8h_1a9ba105ee573e7b6eb543bdb7cda586bd" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_keys_del_combination</definition>
+                <argsstring>(const char *path)</argsstring>
+                <name>gnt_keys_del_combination</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>path</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="88" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.c"
+                        bodystart="221" bodyend="224"/>
+            </memberdef>
+            <memberdef kind="function" id="gntkeys_8h_1ac43508bd4f5b68d8face929a07581140" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>int</type>
+                <definition>int gnt_keys_find_combination</definition>
+                <argsstring>(const char *path)</argsstring>
+                <name>gnt_keys_find_combination</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>path</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"
+                        line="89" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.c"
+                        bodystart="226" bodyend="244"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1">
+                <highlight class="preprocessor">#ifndef<sp/>GNT_KEYS_H
+                </highlight>
+            </codeline>
+            <codeline lineno="2">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEYS_H
+                </highlight>
+            </codeline>
+            <codeline lineno="3">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="4">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;curses.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="5">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;term.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="6">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="12">
+                <highlight class="keyword">extern</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntkeys_8c_1af476842d27ec53797f7550d6e48e4f05"
+                                                     kindref="member">gnt_key_cup</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="13">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">extern</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntkeys_8c_1af48deab401d73253a6aed153efb4c498"
+                                                     kindref="member">gnt_key_cdown</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">extern</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntkeys_8c_1a15002149ce0034c8365675caca397bb2"
+                                                     kindref="member">gnt_key_cleft</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">extern</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntkeys_8c_1aa79f54f7e2bd770d85288fd50436707d"
+                                                     kindref="member">gnt_key_cright</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="16">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="17" refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>SAFE(x)
+                    <sp/>
+                    <sp/>
+                    <sp/>((x)<sp/>?<sp/>(x)<sp/>:<sp/>&quot;&quot;)
+                </highlight>
+            </codeline>
+            <codeline lineno="18">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="19" refid="gntkeys_8h_1ae31dba8acd77d359aa2d1a89848e23e7" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_POPUP
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_f16)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Apparently<sp/>*/
+                </highlight>
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+            <codeline lineno="20">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>Arrow<sp/>keys<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="22" refid="gntkeys_8h_1a3610efeedee6919c5b317929b9a8008e" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_LEFT
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_left)
+                </highlight>
+            </codeline>
+            <codeline lineno="23" refid="gntkeys_8h_1ab61e5a96c75ffdfcd777c0219820ccce" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_RIGHT
+                    <sp/>
+                    <sp/>SAFE(key_right)
+                </highlight>
+            </codeline>
+            <codeline lineno="24" refid="gntkeys_8h_1a7c9f2883e0da9aa877aa50dca3c9b7f3" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_UP
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_up)
+                </highlight>
+            </codeline>
+            <codeline lineno="25" refid="gntkeys_8h_1a9f1051b5041b0f49305a57079dce9f8f" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_DOWN
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_down)
+                </highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27" refid="gntkeys_8h_1a06218194b6b543571ce084eb9116795e" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_UP
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(gnt_key_cup)
+                </highlight>
+            </codeline>
+            <codeline lineno="28" refid="gntkeys_8h_1aec7d392f0ce94a51f8825f44978345ea" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_DOWN
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(gnt_key_cdown)
+                </highlight>
+            </codeline>
+            <codeline lineno="29" refid="gntkeys_8h_1a7235cecc840299b4801d4838e0bdde8a" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_RIGHT
+                    <sp/>
+                    <sp/>SAFE(gnt_key_cright)
+                </highlight>
+            </codeline>
+            <codeline lineno="30" refid="gntkeys_8h_1a595e832437d5de681522a6d523f3fe68" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_LEFT
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(gnt_key_cleft)
+                </highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32" refid="gntkeys_8h_1ae6adb88682096b0de8f63153de464b69" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_PGUP
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_ppage)
+                </highlight>
+            </codeline>
+            <codeline lineno="33" refid="gntkeys_8h_1ac41fcbd7ddbe2b75727020bc46875d5c" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_PGDOWN<sp/>SAFE(key_npage)
+                </highlight>
+            </codeline>
+            <codeline lineno="34" refid="gntkeys_8h_1a405146b1f444af420a78238cf565c6fd" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_HOME
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_home)
+                </highlight>
+            </codeline>
+            <codeline lineno="35" refid="gntkeys_8h_1a47f2afea7e78b0a76342094c28c6828e" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_END
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_end)
+                </highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="37" refid="gntkeys_8h_1a39c47391dd043ebc7e6acd61d41bf09d" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_ENTER
+                    <sp/>
+                    <sp/>carriage_return
+                </highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="39" refid="gntkeys_8h_1a0bd1897d48b5e329409801ae7a864a75" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_BACKSPACE<sp/>SAFE(key_backspace)
+                </highlight>
+            </codeline>
+            <codeline lineno="40" refid="gntkeys_8h_1a0a134448abd45fb72c52e8a8b645a0a0" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_DEL
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_dc)
+                </highlight>
+            </codeline>
+            <codeline lineno="41" refid="gntkeys_8h_1a78ed62dffcfdc912e6336f3be2f6bf20" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_INS
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_ic)
+                </highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="43" refid="gntkeys_8h_1aa3aa9458cd4ed4e760811d9ad0f47797" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_A
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\001&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="44" refid="gntkeys_8h_1a353012304e2ba0ec156a332fa7dfd6ef" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_B
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\002&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="45" refid="gntkeys_8h_1a0cda78e9cf831754b36488ae5552a30e" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_D
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\004&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="46" refid="gntkeys_8h_1a520fec89a6e3fb59794feb3a4a0707e4" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_E
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\005&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="47" refid="gntkeys_8h_1a8c2b350e70d6764573712371e1ca4b9c" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_F
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\006&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="48" refid="gntkeys_8h_1ae5223244420f311fdb508bbc787a2390" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_G
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\007&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="49" refid="gntkeys_8h_1ac134a96c9f54b9cf1d6b8e24bb6a085b" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_H
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\010&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="50" refid="gntkeys_8h_1af226d631aa4e42cbdded9a4ce9a2151d" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_I
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\011&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="51" refid="gntkeys_8h_1aa8f2ddd13468e982e3b90885956a380c" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_J
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\012&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="52" refid="gntkeys_8h_1a036fea5c74185aae6f8b092f37d7b27c" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_K
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\013&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="53" refid="gntkeys_8h_1a27dc0ead31dcc1667cb6ed19961357f0" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_L
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\014&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="54" refid="gntkeys_8h_1a0b907402a4e3c23a0b08ab399b4c8a4c" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_M
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\012&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="55" refid="gntkeys_8h_1a57ca4b04038cbf56c2316445be821d3d" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_N
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\016&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="56" refid="gntkeys_8h_1ab928089a44e0b20463446df131119bc8" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_O
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\017&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="57" refid="gntkeys_8h_1a844863adc04374889d747f7fea9c1f54" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_P
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\020&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="58" refid="gntkeys_8h_1ae33ee9032a5cd7fd2a1daab8f90d5bee" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_R
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\022&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="59" refid="gntkeys_8h_1acd1ecf33141dc97dede8075df8ec97cf" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_T
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\024&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="60" refid="gntkeys_8h_1a3b10af0de6322618f5001b797faca053" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_U
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\025&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="61" refid="gntkeys_8h_1a02a30a0cdbd7f767d05b51bfaa6b58d5" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_V
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\026&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="62" refid="gntkeys_8h_1a91607afe696142967bb3682fa49a0413" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_W
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\027&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="63" refid="gntkeys_8h_1ad1737ec2d2e0d575287e6af8b4aaa76c" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_X
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\030&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="64" refid="gntkeys_8h_1a83bdd9304278adb080061437f26baf32" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_CTRL_Y
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&quot;\031&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="66" refid="gntkeys_8h_1abc58736f8d050636875291815a7ffcf8" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_F1
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_f1)
+                </highlight>
+            </codeline>
+            <codeline lineno="67" refid="gntkeys_8h_1a2d78e8f2ee463f7a61ca61cb7ee5ef7b" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_F2
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_f2)
+                </highlight>
+            </codeline>
+            <codeline lineno="68" refid="gntkeys_8h_1a8122c12e12fed3c0823ddda5d493e191" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_F3
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_f3)
+                </highlight>
+            </codeline>
+            <codeline lineno="69" refid="gntkeys_8h_1a965d546444989fafcf6d561a29925e00" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_F4
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_f4)
+                </highlight>
+            </codeline>
+            <codeline lineno="70" refid="gntkeys_8h_1a6f7aa42f7e14e78fba37a2477fb0cefc" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_F5
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_f5)
+                </highlight>
+            </codeline>
+            <codeline lineno="71" refid="gntkeys_8h_1a6f19d1b7765bc89007183d1536006446" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_F6
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_f6)
+                </highlight>
+            </codeline>
+            <codeline lineno="72" refid="gntkeys_8h_1ad3d0a9dea8bad88a41bd43c10ff40c61" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_F7
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_f7)
+                </highlight>
+            </codeline>
+            <codeline lineno="73" refid="gntkeys_8h_1acf3bb3e92e4bab273426e4b273646869" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_F8
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_f8)
+                </highlight>
+            </codeline>
+            <codeline lineno="74" refid="gntkeys_8h_1a61a1aba61c4396e7e2bddec389604788" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_F9
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_f9)
+                </highlight>
+            </codeline>
+            <codeline lineno="75" refid="gntkeys_8h_1a3a5c2cf645d528a268d42df3f542d2c6" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_F10
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_f10)
+                </highlight>
+            </codeline>
+            <codeline lineno="76" refid="gntkeys_8h_1a5ed2fbf6ff0a36619e1c2401a8676206" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_F11
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_f11)
+                </highlight>
+            </codeline>
+            <codeline lineno="77" refid="gntkeys_8h_1ab0be21bdfaecf4b4ed224ce3dfeaec6c" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_KEY_F12
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SAFE(key_f12)
+                </highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ac2ec3169173531dd978a0e925fd6eba1" kindref="member">gnt_init_keys</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntkeys_8c_1a0b113f5ad7401654fdd58ba73c7bbb6a" kindref="member">gnt_keys_refine</ref>(
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text);
+                </highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntkeys_8c_1ae2413e0cc4895523483172bb2e06937d"
+                                                     kindref="member">gnt_key_translate</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*name);
+                </highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntkeys_8c_1aa70e031cf2eb6cbf10ac3c9bcffc381b"
+                                                     kindref="member">gnt_key_lookup</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*key);
+                </highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntkeys_8c_1aa3258e3131aadd25a925eaf38b3b6d7d" kindref="member">
+                        gnt_keys_add_combination</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*path);
+                </highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntkeys_8c_1a9ba105ee573e7b6eb543bdb7cda586bd" kindref="member">
+                        gnt_keys_del_combination</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*path);
+                </highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ac43508bd4f5b68d8face929a07581140" kindref="member">
+                        gnt_keys_find_combination</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*path);
+                </highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>A<sp/>lot<sp/>of<sp/>commonly<sp/>used<sp/>variable<sp/>names<sp/>are
+                    <sp/>defined<sp/>in<sp/>&lt;term.h&gt;.
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="93">
+                <highlight class="comment"><sp/>*<sp/>#undef<sp/>them<sp/>to<sp/>make<sp/>life<sp/>easier<sp/>for<sp/>
+                    everyone.<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#undef<sp/>columns
+                </highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#undef<sp/>lines
+                </highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#undef<sp/>buttons
+                </highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#undef<sp/>newline
+                </highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="100">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntkeys.h"/>
+    </compounddef>
+</doxygen>

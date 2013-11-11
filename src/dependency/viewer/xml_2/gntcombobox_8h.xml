@@ -1,0 +1,1124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntcombobox_8h" kind="file">
+        <compoundname>gntcombobox.h</compoundname>
+        <includes refid="gnt_8h" local="yes">gnt.h</includes>
+        <includes refid="gntcolors_8h" local="yes">gntcolors.h</includes>
+        <includes refid="gntkeys_8h" local="yes">gntkeys.h</includes>
+        <includes refid="gntwidget_8h" local="yes">gntwidget.h</includes>
+        <includedby refid="gntaccount_8c" local="no">gntaccount.c</includedby>
+        <includedby refid="gntblist_8c" local="yes">gntblist.c</includedby>
+        <includedby refid="gntpounce_8c" local="no">gntpounce.c</includedby>
+        <includedby refid="gntrequest_8c" local="no">gntrequest.c</includedby>
+        <includedby refid="gntstatus_8c" local="no">gntstatus.c</includedby>
+        <includedby refid="gntcombobox_8c" local="yes">libgnt/gntcombobox.c</includedby>
+        <includedby refid="gntutils_8c" local="yes">libgnt/gntutils.c</includedby>
+        <incdepgraph>
+            <node id="1123">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="1116" relation="include">
+                </childnode>
+            </node>
+            <node id="1126">
+                <label>term.h</label>
+            </node>
+            <node id="1120">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="1118" relation="include">
+                </childnode>
+                <childnode refid="1116" relation="include">
+                </childnode>
+                <childnode refid="1121" relation="include">
+                </childnode>
+                <childnode refid="1119" relation="include">
+                </childnode>
+            </node>
+            <node id="1114">
+                <label>libgnt/gntcombobox.h</label>
+                <link refid="gntcombobox.h"/>
+                <childnode refid="1115" relation="include">
+                </childnode>
+                <childnode refid="1123" relation="include">
+                </childnode>
+                <childnode refid="1124" relation="include">
+                </childnode>
+                <childnode refid="1117" relation="include">
+                </childnode>
+            </node>
+            <node id="1122">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="1118" relation="include">
+                </childnode>
+                <childnode refid="1116" relation="include">
+                </childnode>
+                <childnode refid="1121" relation="include">
+                </childnode>
+            </node>
+            <node id="1115">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="1116" relation="include">
+                </childnode>
+                <childnode refid="1117" relation="include">
+                </childnode>
+                <childnode refid="1122" relation="include">
+                </childnode>
+                <childnode refid="1123" relation="include">
+                </childnode>
+                <childnode refid="1124" relation="include">
+                </childnode>
+            </node>
+            <node id="1125">
+                <label>curses.h</label>
+            </node>
+            <node id="1116">
+                <label>glib.h</label>
+            </node>
+            <node id="1117">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="1118" relation="include">
+                </childnode>
+                <childnode refid="1116" relation="include">
+                </childnode>
+                <childnode refid="1119" relation="include">
+                </childnode>
+                <childnode refid="1120" relation="include">
+                </childnode>
+            </node>
+            <node id="1124">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="1125" relation="include">
+                </childnode>
+                <childnode refid="1126" relation="include">
+                </childnode>
+            </node>
+            <node id="1119">
+                <label>ncurses.h</label>
+            </node>
+            <node id="1118">
+                <label>stdio.h</label>
+            </node>
+            <node id="1121">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="1128">
+                <label>gntaccount.c</label>
+                <link refid="gntaccount_8c"/>
+            </node>
+            <node id="1133">
+                <label>libgnt/gntcombobox.c</label>
+                <link refid="gntcombobox_8c"/>
+            </node>
+            <node id="1127">
+                <label>libgnt/gntcombobox.h</label>
+                <link refid="gntcombobox.h"/>
+                <childnode refid="1128" relation="include">
+                </childnode>
+                <childnode refid="1129" relation="include">
+                </childnode>
+                <childnode refid="1130" relation="include">
+                </childnode>
+                <childnode refid="1131" relation="include">
+                </childnode>
+                <childnode refid="1132" relation="include">
+                </childnode>
+                <childnode refid="1133" relation="include">
+                </childnode>
+                <childnode refid="1134" relation="include">
+                </childnode>
+            </node>
+            <node id="1129">
+                <label>gntblist.c</label>
+                <link refid="gntblist_8c"/>
+            </node>
+            <node id="1131">
+                <label>gntrequest.c</label>
+                <link refid="gntrequest_8c"/>
+            </node>
+            <node id="1134">
+                <label>libgnt/gntutils.c</label>
+                <link refid="gntutils_8c"/>
+            </node>
+            <node id="1130">
+                <label>gntpounce.c</label>
+                <link refid="gntpounce_8c"/>
+            </node>
+            <node id="1132">
+                <label>gntstatus.c</label>
+                <link refid="gntstatus_8c"/>
+            </node>
+        </invincdepgraph>
+        <innerclass refid="struct___gnt_combo_box" prot="public">_GntComboBox</innerclass>
+        <innerclass refid="struct___gnt_combo_box_class" prot="public">_GntComboBoxClass</innerclass>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="gntcombobox_8h_1a7966e6b0499843a8ff9b98e83eb1fdf3" prot="public" static="no">
+                <name>GNT_TYPE_COMBO_BOX</name>
+                <initializer>(<ref refid="gntcombobox_8h_1a3a8bf6ea4c8f95d60f96c5b70bd6820b" kindref="member">
+                    gnt_combo_box_get_gtype</ref>())
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="9" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        bodystart="9" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntcombobox_8h_1a6e56c4b7c7d4d842858b5bab100957d6" prot="public" static="no">
+                <name>GNT_COMBO_BOX</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_INSTANCE_CAST((obj),<ref
+                        refid="gntcombobox_8h_1a7966e6b0499843a8ff9b98e83eb1fdf3" kindref="member">
+                    GNT_TYPE_COMBO_BOX</ref>,<ref refid="gntcombobox_8h_1ae804817bcac95c495154e56fe4053ced"
+                                                  kindref="member">GntComboBox</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="10" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        bodystart="10" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntcombobox_8h_1a37f8527b8810afa588bfe8b0292879eb" prot="public" static="no">
+                <name>GNT_COMBO_BOX_CLASS</name>
+                <param>
+                    <defname>klass</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_CLASS_CAST((klass),<ref
+                        refid="gntcombobox_8h_1a7966e6b0499843a8ff9b98e83eb1fdf3" kindref="member">
+                    GNT_TYPE_COMBO_BOX</ref>,<ref refid="gntcombobox_8h_1adc71cdea54530aa611cdccdb0ed770b5"
+                                                  kindref="member">GntComboBoxClass</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="11" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        bodystart="11" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntcombobox_8h_1aeaf20761b7094521a4c7a4a74920337f" prot="public" static="no">
+                <name>GNT_IS_COMBO_BOX</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_INSTANCE_TYPE((obj),<ref
+                        refid="gntcombobox_8h_1a7966e6b0499843a8ff9b98e83eb1fdf3" kindref="member">
+                    GNT_TYPE_COMBO_BOX</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="12" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        bodystart="12" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntcombobox_8h_1a30152a6dd0c9947f5720bc117ac6cfae" prot="public" static="no">
+                <name>GNT_IS_COMBO_BOX_CLASS</name>
+                <param>
+                    <defname>klass</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_CLASS_TYPE((klass),<ref
+                        refid="gntcombobox_8h_1a7966e6b0499843a8ff9b98e83eb1fdf3" kindref="member">
+                    GNT_TYPE_COMBO_BOX</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="13" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        bodystart="13" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntcombobox_8h_1af49e412aa79c033d84015d03f5376dcd" prot="public" static="no">
+                <name>GNT_COMBO_BOX_GET_CLASS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_INSTANCE_GET_CLASS((obj),<ref
+                        refid="gntcombobox_8h_1a7966e6b0499843a8ff9b98e83eb1fdf3" kindref="member">
+                    GNT_TYPE_COMBO_BOX</ref>,<ref refid="gntcombobox_8h_1adc71cdea54530aa611cdccdb0ed770b5"
+                                                  kindref="member">GntComboBoxClass</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="14" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        bodystart="14" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntcombobox_8h_1ac32dcd56f19a7fbfd3d6f57bc8e8f311" prot="public" static="no">
+                <name>GNT_COMBO_BOX_FLAGS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(<ref refid="gntcombobox_8h_1a6e56c4b7c7d4d842858b5bab100957d6" kindref="member">
+                    GNT_COMBO_BOX</ref>(obj)-&gt;priv.flags)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="16" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        bodystart="16" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntcombobox_8h_1ac30a3879986c2fb703aa3e960e1327c2" prot="public" static="no">
+                <name>GNT_COMBO_BOX_SET_FLAGS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <param>
+                    <defname>flags</defname>
+                </param>
+                <initializer>(<ref refid="gntcombobox_8h_1ac32dcd56f19a7fbfd3d6f57bc8e8f311" kindref="member">
+                    GNT_COMBO_BOX_FLAGS</ref>(obj) |= flags)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="17" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        bodystart="17" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntcombobox_8h_1ae4057bbf7bcd25bd68dd418d433f57e4" prot="public" static="no">
+                <name>GNT_COMBO_BOX_UNSET_FLAGS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <param>
+                    <defname>flags</defname>
+                </param>
+                <initializer>(<ref refid="gntcombobox_8h_1ac32dcd56f19a7fbfd3d6f57bc8e8f311" kindref="member">
+                    GNT_COMBO_BOX_FLAGS</ref>(obj) &amp;= ~(flags))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="18" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        bodystart="18" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="typedef">
+            <memberdef kind="typedef" id="gntcombobox_8h_1ae804817bcac95c495154e56fe4053ced" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_combo_box" kindref="compound">_GntComboBox</ref>
+                </type>
+                <definition>typedef struct _GntComboBox GntComboBox</definition>
+                <argsstring></argsstring>
+                <name>GntComboBox</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="319" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        bodystart="20" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntcombobox_8h_1a9d860c902028b717725d2d18a55abd96" prot="public" static="no">
+                <type>struct _GntComboBoxPriv</type>
+                <definition>typedef struct _GntComboBoxPriv GntComboBoxPriv</definition>
+                <argsstring></argsstring>
+                <name>GntComboBoxPriv</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="319" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        bodystart="21" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntcombobox_8h_1adc71cdea54530aa611cdccdb0ed770b5" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_combo_box_class" kindref="compound">_GntComboBoxClass</ref>
+                </type>
+                <definition>typedef struct _GntComboBoxClass GntComboBoxClass</definition>
+                <argsstring></argsstring>
+                <name>GntComboBoxClass</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="319" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        bodystart="22" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntcombobox_8h_1a3a8bf6ea4c8f95d60f96c5b70bd6820b" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>G_BEGIN_DECLS GType</type>
+                <definition>G_BEGIN_DECLS GType gnt_combo_box_get_gtype</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_combo_box_get_gtype</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="45" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.c"
+                        bodystart="260" bodyend="285"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcombobox_8h_1a44a2b273ea39fa1bd30df0215d426ab3" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* gnt_combo_box_new</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_combo_box_new</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="47" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.c"
+                        bodystart="287" bodyend="292"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcombobox_8h_1ae140f0f45344d9d535ac4edfbbbad2d2" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_combo_box_add_data</definition>
+                <argsstring>(GntComboBox *box, gpointer key, const char *text)</argsstring>
+                <name>gnt_combo_box_add_data</name>
+                <param>
+                    <type>
+                        <ref refid="gntcombobox_8h_1ae804817bcac95c495154e56fe4053ced" kindref="member">GntComboBox
+                        </ref>
+                        *
+                    </type>
+                    <declname>box</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>key</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>text</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="49" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.c"
+                        bodystart="294" bodyend="300"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcombobox_8h_1a5b8d34618a5e84379b1f612fdd25af13" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_combo_box_remove</definition>
+                <argsstring>(GntComboBox *box, gpointer key)</argsstring>
+                <name>gnt_combo_box_remove</name>
+                <param>
+                    <type>
+                        <ref refid="gntcombobox_8h_1ae804817bcac95c495154e56fe4053ced" kindref="member">GntComboBox
+                        </ref>
+                        *
+                    </type>
+                    <declname>box</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>key</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="51" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.c"
+                        bodystart="312" bodyend="317"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcombobox_8h_1a908df787c7a63d69af7c3a01c17a0f25" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_combo_box_remove_all</definition>
+                <argsstring>(GntComboBox *box)</argsstring>
+                <name>gnt_combo_box_remove_all</name>
+                <param>
+                    <type>
+                        <ref refid="gntcombobox_8h_1ae804817bcac95c495154e56fe4053ced" kindref="member">GntComboBox
+                        </ref>
+                        *
+                    </type>
+                    <declname>box</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="53" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.c"
+                        bodystart="319" bodyend="323"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcombobox_8h_1ada494aebec792da283bd75b9d89a217f" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gpointer</type>
+                <definition>gpointer gnt_combo_box_get_selected_data</definition>
+                <argsstring>(GntComboBox *box)</argsstring>
+                <name>gnt_combo_box_get_selected_data</name>
+                <param>
+                    <type>
+                        <ref refid="gntcombobox_8h_1ae804817bcac95c495154e56fe4053ced" kindref="member">GntComboBox
+                        </ref>
+                        *
+                    </type>
+                    <declname>box</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="55" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.c"
+                        bodystart="302" bodyend="305"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcombobox_8h_1a47f2b2ddd25e689f897087c47fe1b5e0" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_combo_box_set_selected</definition>
+                <argsstring>(GntComboBox *box, gpointer key)</argsstring>
+                <name>gnt_combo_box_set_selected</name>
+                <param>
+                    <type>
+                        <ref refid="gntcombobox_8h_1ae804817bcac95c495154e56fe4053ced" kindref="member">GntComboBox
+                        </ref>
+                        *
+                    </type>
+                    <declname>box</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>key</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"
+                        line="57" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.c"
+                        bodystart="307" bodyend="310"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1">
+                <highlight class="preprocessor">#ifndef<sp/>GNT_COMBO_BOX_H
+                </highlight>
+            </codeline>
+            <codeline lineno="2">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_COMBO_BOX_H
+                </highlight>
+            </codeline>
+            <codeline lineno="3">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="4">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gnt_8h" kindref="compound">gnt.h</ref>
+                    &quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="5">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntcolors_8h" kindref="compound">
+                    gntcolors.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="6">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntkeys_8h" kindref="compound">
+                    gntkeys.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntwidget_8h" kindref="compound">
+                    gntwidget.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="8">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="9" refid="gntcombobox_8h_1a7966e6b0499843a8ff9b98e83eb1fdf3" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_TYPE_COMBO_BOX
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(gnt_combo_box_get_gtype())
+                </highlight>
+            </codeline>
+            <codeline lineno="10" refid="gntcombobox_8h_1a6e56c4b7c7d4d842858b5bab100957d6" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_COMBO_BOX(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_INSTANCE_CAST((obj),<sp/>GNT_TYPE_COMBO_BOX,<sp/>GntComboBox))
+                </highlight>
+            </codeline>
+            <codeline lineno="11" refid="gntcombobox_8h_1a37f8527b8810afa588bfe8b0292879eb" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_COMBO_BOX_CLASS(klass)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_CLASS_CAST((klass),<sp/>GNT_TYPE_COMBO_BOX,<sp/>GntComboBoxClass))
+                </highlight>
+            </codeline>
+            <codeline lineno="12" refid="gntcombobox_8h_1aeaf20761b7094521a4c7a4a74920337f" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_IS_COMBO_BOX(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_INSTANCE_TYPE((obj),<sp/>GNT_TYPE_COMBO_BOX))
+                </highlight>
+            </codeline>
+            <codeline lineno="13" refid="gntcombobox_8h_1a30152a6dd0c9947f5720bc117ac6cfae" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_IS_COMBO_BOX_CLASS(klass)
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_CLASS_TYPE((klass),<sp/>GNT_TYPE_COMBO_BOX))
+                </highlight>
+            </codeline>
+            <codeline lineno="14" refid="gntcombobox_8h_1af49e412aa79c033d84015d03f5376dcd" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_COMBO_BOX_GET_CLASS(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_INSTANCE_GET_CLASS((obj),<sp/>GNT_TYPE_COMBO_BOX,<sp/>GntComboBoxClass))
+                </highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="16" refid="gntcombobox_8h_1ac32dcd56f19a7fbfd3d6f57bc8e8f311" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_COMBO_BOX_FLAGS(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_COMBO_BOX(obj)-&gt;priv.flags)
+                </highlight>
+            </codeline>
+            <codeline lineno="17" refid="gntcombobox_8h_1ac30a3879986c2fb703aa3e960e1327c2" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_COMBO_BOX_SET_FLAGS(obj,<sp/>flags)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_COMBO_BOX_FLAGS(obj)<sp/>|=<sp/>flags)
+                </highlight>
+            </codeline>
+            <codeline lineno="18" refid="gntcombobox_8h_1ae4057bbf7bcd25bd68dd418d433f57e4" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_COMBO_BOX_UNSET_FLAGS(obj,<sp/>flags)
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_COMBO_BOX_FLAGS(obj)<sp/>&amp;=<sp/>~(flags))
+                </highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="20" refid="gntcombobox_8h_1ae804817bcac95c495154e56fe4053ced" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_combo_box" kindref="compound">_GntComboBox</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_combo_box" kindref="compound">GntComboBox</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="21" refid="gntcombobox_8h_1a9d860c902028b717725d2d18a55abd96" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">_GntComboBoxPriv
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcombobox_8h_1a9d860c902028b717725d2d18a55abd96" kindref="member">
+                        GntComboBoxPriv</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="22" refid="gntcombobox_8h_1adc71cdea54530aa611cdccdb0ed770b5" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_combo_box_class" kindref="compound">_GntComboBoxClass</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_combo_box_class" kindref="compound">GntComboBoxClass</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="24" refid="struct___gnt_combo_box" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_combo_box" kindref="compound">_GntComboBox</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="26" refid="struct___gnt_combo_box_1ae3e3b55c7e6209f0e555f25a2e5fd1a9" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_combo_box_1ae3e3b55c7e6209f0e555f25a2e5fd1a9" kindref="member">parent</ref>
+                    ;
+                </highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28" refid="struct___gnt_combo_box_1a4d7347e124694ee1f33c66360baea296" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="struct___gnt_combo_box_1a4d7347e124694ee1f33c66360baea296" kindref="member">
+                    dropdown</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>This<sp/>is<sp/>a<sp/>GntTree<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30" refid="struct___gnt_combo_box_1a67f8221eff1848dc9b0f67015666f47f" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___gnt_combo_box_1a67f8221eff1848dc9b0f67015666f47f"
+                                                     kindref="member">selected</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Currently<sp/>selected<sp/>key<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33" refid="struct___gnt_combo_box_class" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_combo_box_class" kindref="compound">_GntComboBoxClass</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="35" refid="struct___gnt_combo_box_class_1a67dea6bdb089093d277840b7ad43a1f2"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget_class" kindref="compound">GntWidgetClass</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_combo_box_class_1a67dea6bdb089093d277840b7ad43a1f2" kindref="member">
+                        parent</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="37" refid="struct___gnt_combo_box_class_1a89dfce3a9aa0299a7819f8a4b9df5cef"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_combo_box_class_1a89dfce3a9aa0299a7819f8a4b9df5cef"
+                                         kindref="member">gnt_reserved1</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="38" refid="struct___gnt_combo_box_class_1abc424f0d49c73831a72f061af6b0ce1d"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_combo_box_class_1abc424f0d49c73831a72f061af6b0ce1d"
+                                         kindref="member">gnt_reserved2</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="39" refid="struct___gnt_combo_box_class_1a1e0be0259f96a3bff95418925fe8163e"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_combo_box_class_1a1e0be0259f96a3bff95418925fe8163e"
+                                         kindref="member">gnt_reserved3</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="40" refid="struct___gnt_combo_box_class_1a3f7d85f4e8f04f18386922c69c245469"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_combo_box_class_1a3f7d85f4e8f04f18386922c69c245469"
+                                         kindref="member">gnt_reserved4</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal">G_BEGIN_DECLS</highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal">GType
+                    <sp/>
+                    <ref refid="gntcombobox_8c_1abe7092e5408e663c95bffaf034af8d72" kindref="member">
+                        gnt_combo_box_get_gtype</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal">
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntcombobox_8c_1a91db353f9a6cfcd0d312bbe88991e6f1" kindref="member">
+                    gnt_combo_box_new</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntcombobox_8c_1ae140f0f45344d9d535ac4edfbbbad2d2" kindref="member">
+                        gnt_combo_box_add_data</ref>(
+                    <ref refid="struct___gnt_combo_box" kindref="compound">GntComboBox</ref>
+                    <sp/>*box,<sp/>gpointer<sp/>key,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text);
+                </highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntcombobox_8c_1a5b8d34618a5e84379b1f612fdd25af13" kindref="member">
+                        gnt_combo_box_remove</ref>(
+                    <ref refid="struct___gnt_combo_box" kindref="compound">GntComboBox</ref>
+                    <sp/>*box,<sp/>gpointer<sp/>key);
+                </highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntcombobox_8c_1a908df787c7a63d69af7c3a01c17a0f25" kindref="member">
+                        gnt_combo_box_remove_all</ref>(
+                    <ref refid="struct___gnt_combo_box" kindref="compound">GntComboBox</ref>
+                    <sp/>*box);
+                </highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal">gpointer
+                    <sp/>
+                    <ref refid="gntcombobox_8c_1ada494aebec792da283bd75b9d89a217f" kindref="member">
+                        gnt_combo_box_get_selected_data</ref>(
+                    <ref refid="struct___gnt_combo_box" kindref="compound">GntComboBox</ref>
+                    <sp/>*box);
+                </highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntcombobox_8c_1a47f2b2ddd25e689f897087c47fe1b5e0" kindref="member">
+                        gnt_combo_box_set_selected</ref>(
+                    <ref refid="struct___gnt_combo_box" kindref="compound">GntComboBox</ref>
+                    <sp/>*box,<sp/>gpointer<sp/>key);
+                </highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal">G_END_DECLS</highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>GNT_COMBO_BOX_H<sp/>*/
+                </highlight>
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+        </programlisting>
+        <location
+                file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcombobox.h"/>
+    </compounddef>
+</doxygen>

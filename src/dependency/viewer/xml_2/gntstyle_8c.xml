@@ -1,0 +1,3564 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntstyle_8c" kind="file">
+        <compoundname>gntstyle.c</compoundname>
+        <includes refid="gntstyle_8h" local="yes">gntstyle.h</includes>
+        <includes refid="gntcolors_8h" local="yes">gntcolors.h</includes>
+        <includes local="no">ctype.h</includes>
+        <includes local="no">string.h</includes>
+        <incdepgraph>
+            <node id="1598">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="1591" relation="include">
+                </childnode>
+            </node>
+            <node id="1601">
+                <label>term.h</label>
+            </node>
+            <node id="1595">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="1593" relation="include">
+                </childnode>
+                <childnode refid="1591" relation="include">
+                </childnode>
+                <childnode refid="1596" relation="include">
+                </childnode>
+                <childnode refid="1594" relation="include">
+                </childnode>
+            </node>
+            <node id="1597">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="1593" relation="include">
+                </childnode>
+                <childnode refid="1591" relation="include">
+                </childnode>
+                <childnode refid="1596" relation="include">
+                </childnode>
+            </node>
+            <node id="1590">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="1591" relation="include">
+                </childnode>
+                <childnode refid="1592" relation="include">
+                </childnode>
+                <childnode refid="1597" relation="include">
+                </childnode>
+                <childnode refid="1598" relation="include">
+                </childnode>
+                <childnode refid="1599" relation="include">
+                </childnode>
+            </node>
+            <node id="1600">
+                <label>curses.h</label>
+            </node>
+            <node id="1588">
+                <label>libgnt/gntstyle.c</label>
+                <link refid="gntstyle.c"/>
+                <childnode refid="1589" relation="include">
+                </childnode>
+                <childnode refid="1598" relation="include">
+                </childnode>
+                <childnode refid="1602" relation="include">
+                </childnode>
+                <childnode refid="1603" relation="include">
+                </childnode>
+            </node>
+            <node id="1589">
+                <label>gntstyle.h</label>
+                <link refid="gntstyle_8h"/>
+                <childnode refid="1590" relation="include">
+                </childnode>
+            </node>
+            <node id="1603">
+                <label>string.h</label>
+            </node>
+            <node id="1591">
+                <label>glib.h</label>
+            </node>
+            <node id="1592">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="1593" relation="include">
+                </childnode>
+                <childnode refid="1591" relation="include">
+                </childnode>
+                <childnode refid="1594" relation="include">
+                </childnode>
+                <childnode refid="1595" relation="include">
+                </childnode>
+            </node>
+            <node id="1599">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="1600" relation="include">
+                </childnode>
+                <childnode refid="1601" relation="include">
+                </childnode>
+            </node>
+            <node id="1594">
+                <label>ncurses.h</label>
+            </node>
+            <node id="1602">
+                <label>ctype.h</label>
+            </node>
+            <node id="1593">
+                <label>stdio.h</label>
+            </node>
+            <node id="1596">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <sectiondef kind="var">
+            <memberdef kind="variable" id="gntstyle_8c_1aae92fb51c0024fe9fa2cd70d35e4d7a6" prot="public" static="yes"
+                       mutable="no">
+                <type>char *</type>
+                <definition>char* str_styles[GNT_STYLES]</definition>
+                <argsstring>[GNT_STYLES]</argsstring>
+                <name>str_styles</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        line="11" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="11" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntstyle_8c_1a81c35af4b3cf87436122a894234f79c1" prot="public" static="yes"
+                       mutable="no">
+                <type>int</type>
+                <definition>int int_styles[GNT_STYLES]</definition>
+                <argsstring>[GNT_STYLES]</argsstring>
+                <name>int_styles</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        line="12" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="12" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntstyle_8c_1af9f0d0969aa1ce264ec24731173378db" prot="public" static="yes"
+                       mutable="no">
+                <type>int</type>
+                <definition>int bool_styles[GNT_STYLES]</definition>
+                <argsstring>[GNT_STYLES]</argsstring>
+                <name>bool_styles</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        line="13" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="13" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntstyle_8c_1a1f83787856ad12098bf10fc7db8dc986" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>const char *</type>
+                <definition>const char* gnt_style_get</definition>
+                <argsstring>(GntStyle style)</argsstring>
+                <name>gnt_style_get</name>
+                <param>
+                    <type>
+                        <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1" kindref="member">GntStyle</ref>
+                    </type>
+                    <declname>style</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        line="15" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="15" bodyend="18"/>
+            </memberdef>
+            <memberdef kind="function" id="gntstyle_8c_1a5d7b48abf5275e45aaf29345c04bdcfb" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>gboolean gnt_style_get_bool</definition>
+                <argsstring>(GntStyle style, gboolean def)</argsstring>
+                <name>gnt_style_get_bool</name>
+                <param>
+                    <type>
+                        <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1" kindref="member">GntStyle</ref>
+                    </type>
+                    <declname>style</declname>
+                </param>
+                <param>
+                    <type>gboolean</type>
+                    <declname>def</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        line="20" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="20" bodyend="47"/>
+            </memberdef>
+            <memberdef kind="function" id="gntstyle_8c_1a71609cf196218b3b91b4207abab791d6" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void refine</definition>
+                <argsstring>(char *text)</argsstring>
+                <name>refine</name>
+                <param>
+                    <type>char *</type>
+                    <declname>text</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        line="50" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="50" bodyend="82"/>
+            </memberdef>
+            <memberdef kind="function" id="gntstyle_8c_1a74e1baf75b8a5de782bf416ca71c4828" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>char *</type>
+                <definition>static char* parse_key</definition>
+                <argsstring>(const char *key)</argsstring>
+                <name>parse_key</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>key</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        line="85" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="85" bodyend="88"/>
+            </memberdef>
+            <memberdef kind="function" id="gntstyle_8c_1ad4640e55d46a8def37bbf7313b46693a" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_style_read_actions</definition>
+                <argsstring>(GType type, GntBindableClass *klass)</argsstring>
+                <name>gnt_style_read_actions</name>
+                <param>
+                    <type>GType</type>
+                    <declname>type</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntbindable_8h_1a14a5445d57578b470cd315d54ad62e60" kindref="member">
+                            GntBindableClass
+                        </ref>
+                        *
+                    </type>
+                    <declname>klass</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        line="90" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="90" bodyend="141"/>
+            </memberdef>
+            <memberdef kind="function" id="gntstyle_8c_1a7619b8f9a95e3670d2626ac77d8fa971" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_styles_get_keyremaps</definition>
+                <argsstring>(GType type, GHashTable *hash)</argsstring>
+                <name>gnt_styles_get_keyremaps</name>
+                <param>
+                    <type>GType</type>
+                    <declname>type</declname>
+                </param>
+                <param>
+                    <type>GHashTable *</type>
+                    <declname>hash</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        line="143" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="143" bodyend="191"/>
+            </memberdef>
+            <memberdef kind="function" id="gntstyle_8c_1a5c7f4d934b790b83566ba8e1d80d239b" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_style_read_configure_file</definition>
+                <argsstring>(const char *filename)</argsstring>
+                <name>gnt_style_read_configure_file</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>filename</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        line="229" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="229" bodyend="244"/>
+            </memberdef>
+            <memberdef kind="function" id="gntstyle_8c_1a9731daadd7680fb42e2b12b3eaac3ea9" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_init_styles</definition>
+                <argsstring>()</argsstring>
+                <name>gnt_init_styles</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        line="246" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="246" bodyend="255"/>
+            </memberdef>
+            <memberdef kind="function" id="gntstyle_8c_1a61dd7e1d9544ba43741fda483a62d8c4" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_uninit_styles</definition>
+                <argsstring>()</argsstring>
+                <name>gnt_uninit_styles</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        line="257" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"
+                        bodystart="257" bodyend="266"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1">
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntstyle_8h" kindref="compound">
+                    gntstyle.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="2">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntcolors_8h" kindref="compound">
+                    gntcolors.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="3">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="4">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;ctype.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="5">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;string.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="6">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#if<sp/>GLIB_CHECK_VERSION(2,6,0)
+                </highlight>
+            </codeline>
+            <codeline lineno="8">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>GKeyFile<sp/>*gkfile;
+                </highlight>
+            </codeline>
+            <codeline lineno="9">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="10">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="11">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<sp/>str_styles[<ref
+                        refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1ac034111d7e616fdef93a143012533d78"
+                        kindref="member">GNT_STYLES</ref>];
+                </highlight>
+            </codeline>
+            <codeline lineno="12">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>int_styles[<ref
+                        refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1ac034111d7e616fdef93a143012533d78"
+                        kindref="member">GNT_STYLES</ref>];
+                </highlight>
+            </codeline>
+            <codeline lineno="13">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>bool_styles[<ref
+                        refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1ac034111d7e616fdef93a143012533d78"
+                        kindref="member">GNT_STYLES</ref>];
+                </highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntstyle_8c_1a1f83787856ad12098bf10fc7db8dc986"
+                                                     kindref="member">gnt_style_get</ref>(
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1" kindref="member">GntStyle</ref>
+                    <sp/>style)
+                </highlight>
+            </codeline>
+            <codeline lineno="16">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="17">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>str_styles[style];
+                </highlight>
+            </codeline>
+            <codeline lineno="18">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="20">
+                <highlight class="normal">gboolean
+                    <sp/>
+                    <ref refid="gntstyle_8c_1a5d7b48abf5275e45aaf29345c04bdcfb" kindref="member">
+                        gnt_style_get_bool</ref>(
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1" kindref="member">GntStyle</ref>
+                    <sp/>style,<sp/>gboolean<sp/>def)
+                </highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>i;
+                </highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<sp/>str;
+                </highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(bool_styles[style]<sp/>!=<sp/>-1)
+                </highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>bool_styles[style];
+                </highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>str<sp/>=
+                    <sp/>
+                    <ref refid="gntstyle_8c_1a1f83787856ad12098bf10fc7db8dc986" kindref="member">gnt_style_get</ref>
+                    (style);
+                </highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(str)
+                </highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(str,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;false&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>def<sp/>=<sp/>FALSE;
+                </highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(str,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;true&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>def<sp/>=<sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(sscanf(str,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;%d&quot;</highlight>
+                <highlight class="normal">,<sp/>&amp;i)<sp/>==<sp/>1)
+                </highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(i)
+                </highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>def<sp/>=<sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>def<sp/>=<sp/>FALSE;
+                </highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>bool_styles[style]<sp/>=<sp/>def;
+                </highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>bool_styles[style];
+                </highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal">refine(</highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text)
+                </highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*s<sp/>=<sp/>text,<sp/>*t<sp/>=<sp/>text;
+                </highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">while</highlight>
+                <highlight class="normal"><sp/>(*s)
+                </highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(*s<sp/>==
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;^&apos;</highlight>
+                <highlight class="normal"><sp/>&amp;&amp;<sp/>*(s<sp/>+<sp/>1)<sp/>==
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;[&apos;</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*t<sp/>=
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;\033&apos;</highlight>
+                <highlight class="normal">;
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>escape<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>s++;
+                </highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(*s<sp/>==
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;\\&apos;</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(*(s<sp/>+<sp/>1)<sp/>==
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;\0&apos;</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*t<sp/>=
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;<sp/>&apos;
+                </highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>s++;
+                </highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(*s<sp/>==
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;r&apos;</highlight>
+                <highlight class="normal"><sp/>||<sp/>*s<sp/>==
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;n&apos;</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*t<sp/>=
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;\r&apos;</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(*s<sp/>==
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;t&apos;</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*t<sp/>=
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;\t&apos;</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*t<sp/>=<sp/>*s;
+                </highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*t<sp/>=<sp/>*s;
+                </highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>t++;
+                </highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>s++;
+                </highlight>
+            </codeline>
+            <codeline lineno="80">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*t<sp/>=
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;\0&apos;</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal">parse_key(</highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*key)
+                </highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>(
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*)<ref refid="gntkeys_8c_1ae2413e0cc4895523483172bb2e06937d"
+                                                      kindref="member">gnt_key_translate</ref>(key);
+                </highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntstyle_8c_1ad4640e55d46a8def37bbf7313b46693a" kindref="member">
+                        gnt_style_read_actions</ref>(GType<sp/>type,
+                    <sp/>
+                    <ref refid="struct___gnt_bindable_class" kindref="compound">GntBindableClass</ref>
+                    <sp/>*klass)
+                </highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#if<sp/>GLIB_CHECK_VERSION(2,6,0)
+                </highlight>
+            </codeline>
+            <codeline lineno="93">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*name;
+                </highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GError<sp/>*error<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>name<sp/>=<sp/>g_strdup_printf(
+                </highlight>
+                <highlight class="stringliteral">&quot;%s::binding&quot;</highlight>
+                <highlight class="normal">,<sp/>g_type_name(type));
+                </highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(g_key_file_has_group(gkfile,<sp/>name))
+                </highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="100">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gsize<sp/>len<sp/>=<sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="101">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>**keys;
+                </highlight>
+            </codeline>
+            <codeline lineno="102">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="103">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>keys<sp/>=<sp/>g_key_file_get_keys(gkfile,<sp/>name,<sp/>&amp;len,<sp/>&amp;error);
+                </highlight>
+            </codeline>
+            <codeline lineno="104">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(error)
+                </highlight>
+            </codeline>
+            <codeline lineno="105">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_printerr(
+                </highlight>
+                <highlight class="stringliteral">&quot;GntStyle:<sp/>%s\n&quot;
+                </highlight>
+                <highlight class="normal">,<sp/>error-&gt;message);
+                </highlight>
+            </codeline>
+            <codeline lineno="107">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_error_free(error);
+                </highlight>
+            </codeline>
+            <codeline lineno="108">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(name);
+                </highlight>
+            </codeline>
+            <codeline lineno="109">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="110">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="111">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="112">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">while</highlight>
+                <highlight class="normal"><sp/>(len--)
+                </highlight>
+            </codeline>
+            <codeline lineno="113">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="114">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*key,<sp/>*action;
+                </highlight>
+            </codeline>
+            <codeline lineno="115">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="116">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>key<sp/>=<sp/>g_strdup(keys[len]);
+                </highlight>
+            </codeline>
+            <codeline lineno="117">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>action<sp/>=<sp/>g_key_file_get_string(gkfile,<sp/>name,<sp/>keys[len],<sp/>&amp;error);
+                </highlight>
+            </codeline>
+            <codeline lineno="118">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="119">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(error)
+                </highlight>
+            </codeline>
+            <codeline lineno="120">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="121">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_printerr(
+                </highlight>
+                <highlight class="stringliteral">&quot;GntStyle:<sp/>%s\n&quot;
+                </highlight>
+                <highlight class="normal">,<sp/>error-&gt;message);
+                </highlight>
+            </codeline>
+            <codeline lineno="122">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_error_free(error);
+                </highlight>
+            </codeline>
+            <codeline lineno="123">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>error<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="124">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="125">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="126">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="127">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*keycode<sp/>=<sp/>parse_key(key);
+                </highlight>
+            </codeline>
+            <codeline lineno="128">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(keycode<sp/>==
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="129">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_printerr(
+                </highlight>
+                <highlight class="stringliteral">&quot;GntStyle:<sp/>Invalid<sp/>key-binding<sp/>%s\n&quot;
+                </highlight>
+                <highlight class="normal">,<sp/>key);
+                </highlight>
+            </codeline>
+            <codeline lineno="130">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"><sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="131">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbindable_8c_1afe952bbf24ae8a358ba45c4d55148716" kindref="member">
+                        gnt_bindable_register_binding</ref>(klass,<sp/>action,<sp/>keycode,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="132">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="133">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="134">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(key);
+                </highlight>
+            </codeline>
+            <codeline lineno="135">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(action);
+                </highlight>
+            </codeline>
+            <codeline lineno="136">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="137">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_strfreev(keys);
+                </highlight>
+            </codeline>
+            <codeline lineno="138">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="139">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(name);
+                </highlight>
+            </codeline>
+            <codeline lineno="140">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="141">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="142">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="143">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntstyle_8c_1a7619b8f9a95e3670d2626ac77d8fa971" kindref="member">
+                        gnt_styles_get_keyremaps</ref>(GType<sp/>type,<sp/>GHashTable<sp/>*hash)
+                </highlight>
+            </codeline>
+            <codeline lineno="144">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="145">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#if<sp/>GLIB_CHECK_VERSION(2,6,0)
+                </highlight>
+            </codeline>
+            <codeline lineno="146">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*name;
+                </highlight>
+            </codeline>
+            <codeline lineno="147">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GError<sp/>*error<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="148">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="149">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>name<sp/>=<sp/>g_strdup_printf(
+                </highlight>
+                <highlight class="stringliteral">&quot;%s::remap&quot;</highlight>
+                <highlight class="normal">,<sp/>g_type_name(type));
+                </highlight>
+            </codeline>
+            <codeline lineno="150">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="151">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(g_key_file_has_group(gkfile,<sp/>name))
+                </highlight>
+            </codeline>
+            <codeline lineno="152">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="153">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gsize<sp/>len<sp/>=<sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="154">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>**keys;
+                </highlight>
+            </codeline>
+            <codeline lineno="155">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="156">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>keys<sp/>=<sp/>g_key_file_get_keys(gkfile,<sp/>name,<sp/>&amp;len,<sp/>&amp;error);
+                </highlight>
+            </codeline>
+            <codeline lineno="157">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(error)
+                </highlight>
+            </codeline>
+            <codeline lineno="158">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="159">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_printerr(
+                </highlight>
+                <highlight class="stringliteral">&quot;GntStyle:<sp/>%s\n&quot;
+                </highlight>
+                <highlight class="normal">,<sp/>error-&gt;message);
+                </highlight>
+            </codeline>
+            <codeline lineno="160">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_error_free(error);
+                </highlight>
+            </codeline>
+            <codeline lineno="161">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(name);
+                </highlight>
+            </codeline>
+            <codeline lineno="162">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="163">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="164">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="165">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">while</highlight>
+                <highlight class="normal"><sp/>(len--)
+                </highlight>
+            </codeline>
+            <codeline lineno="166">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="167">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*key,<sp/>*replace;
+                </highlight>
+            </codeline>
+            <codeline lineno="168">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="169">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>key<sp/>=<sp/>g_strdup(keys[len]);
+                </highlight>
+            </codeline>
+            <codeline lineno="170">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>replace<sp/>=<sp/>g_key_file_get_string(gkfile,<sp/>name,<sp/>keys[len],<sp/>&amp;error);
+                </highlight>
+            </codeline>
+            <codeline lineno="171">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="172">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(error)
+                </highlight>
+            </codeline>
+            <codeline lineno="173">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="174">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_printerr(
+                </highlight>
+                <highlight class="stringliteral">&quot;GntStyle:<sp/>%s\n&quot;
+                </highlight>
+                <highlight class="normal">,<sp/>error-&gt;message);
+                </highlight>
+            </codeline>
+            <codeline lineno="175">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_error_free(error);
+                </highlight>
+            </codeline>
+            <codeline lineno="176">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>error<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="177">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(key);
+                </highlight>
+            </codeline>
+            <codeline lineno="178">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="179">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="180">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="181">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>refine(key);
+                </highlight>
+            </codeline>
+            <codeline lineno="182">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>refine(replace);
+                </highlight>
+            </codeline>
+            <codeline lineno="183">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_hash_table_insert(hash,<sp/>key,<sp/>replace);
+                </highlight>
+            </codeline>
+            <codeline lineno="184">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="185">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="186">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_strfreev(keys);
+                </highlight>
+            </codeline>
+            <codeline lineno="187">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="188">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="189">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(name);
+                </highlight>
+            </codeline>
+            <codeline lineno="190">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="191">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="192">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="193">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#if<sp/>GLIB_CHECK_VERSION(2,6,0)
+                </highlight>
+            </codeline>
+            <codeline lineno="194">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="195">
+                <highlight class="normal">read_general_style(GKeyFile<sp/>*kfile)
+                </highlight>
+            </codeline>
+            <codeline lineno="196">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="197">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GError<sp/>*error<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="198">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gsize<sp/>nkeys;
+                </highlight>
+            </codeline>
+            <codeline lineno="199">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>**keys<sp/>=<sp/>g_key_file_get_keys(kfile,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;general&quot;</highlight>
+                <highlight class="normal">,<sp/>&amp;nkeys,<sp/>&amp;error);
+                </highlight>
+            </codeline>
+            <codeline lineno="200">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>i;
+                </highlight>
+            </codeline>
+            <codeline lineno="201">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="202">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="203">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*style;
+                </highlight>
+            </codeline>
+            <codeline lineno="204">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1" kindref="member">GntStyle</ref>
+                    <sp/>en;
+                </highlight>
+            </codeline>
+            <codeline lineno="205">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}<sp/>styles[]<sp/>=<sp/>{{
+                </highlight>
+                <highlight class="stringliteral">&quot;shadow&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1af9ccd26908427d72bc12c54ce512f624"
+                         kindref="member">GNT_STYLE_SHADOW</ref>},
+                </highlight>
+            </codeline>
+            <codeline lineno="206">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+                <highlight class="stringliteral">&quot;customcolor&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1a7e58bae4373e1328a2be2f0791099313"
+                         kindref="member">GNT_STYLE_COLOR</ref>},
+                </highlight>
+            </codeline>
+            <codeline lineno="207">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+                <highlight class="stringliteral">&quot;mouse&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1a957f32c1c271ce3b85f859ce65140807"
+                         kindref="member">GNT_STYLE_MOUSE</ref>},
+                </highlight>
+            </codeline>
+            <codeline lineno="208">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+                <highlight class="stringliteral">&quot;wm&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1a162a6f3882c1487e88910876f60c9e19"
+                         kindref="member">GNT_STYLE_WM</ref>},
+                </highlight>
+            </codeline>
+            <codeline lineno="209">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+                <highlight class="stringliteral">&quot;remember_position&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1afa298bb9cefc1afe41c310b4958ea0e3"
+                         kindref="member">GNT_STYLE_REMPOS</ref>},
+                </highlight>
+            </codeline>
+            <codeline lineno="210">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,<sp/>
+                    0}};
+                </highlight>
+            </codeline>
+            <codeline lineno="211">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="212">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(error)
+                </highlight>
+            </codeline>
+            <codeline lineno="213">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="214">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_printerr(
+                </highlight>
+                <highlight class="stringliteral">&quot;GntStyle:<sp/>%s\n&quot;
+                </highlight>
+                <highlight class="normal">,<sp/>error-&gt;message);
+                </highlight>
+            </codeline>
+            <codeline lineno="215">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_error_free(error);
+                </highlight>
+            </codeline>
+            <codeline lineno="216">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="217">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="218">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="219">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>styles[i].style;<sp/>i++)
+                </highlight>
+            </codeline>
+            <codeline lineno="220">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="221">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>str_styles[styles[i].en]<sp/>=
+                </highlight>
+            </codeline>
+            <codeline lineno="222">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_key_file_get_string(kfile,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;general&quot;</highlight>
+                <highlight class="normal">,<sp/>styles[i].style,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="223">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="224">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="225">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_strfreev(keys);
+                </highlight>
+            </codeline>
+            <codeline lineno="226">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="227">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="228">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="229">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntstyle_8c_1a5c7f4d934b790b83566ba8e1d80d239b" kindref="member">
+                        gnt_style_read_configure_file</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*filename)
+                </highlight>
+            </codeline>
+            <codeline lineno="230">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="231">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#if<sp/>GLIB_CHECK_VERSION(2,6,0)
+                </highlight>
+            </codeline>
+            <codeline lineno="232">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GError<sp/>*error<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="233">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gkfile<sp/>=<sp/>g_key_file_new();
+                </highlight>
+            </codeline>
+            <codeline lineno="234">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="235">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!g_key_file_load_from_file(gkfile,<sp/>filename,<sp/>G_KEY_FILE_NONE,
+                    <sp/>&amp;error))
+                </highlight>
+            </codeline>
+            <codeline lineno="236">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="237">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_printerr(
+                </highlight>
+                <highlight class="stringliteral">&quot;GntStyle:<sp/>%s\n&quot;
+                </highlight>
+                <highlight class="normal">,<sp/>error-&gt;message);
+                </highlight>
+            </codeline>
+            <codeline lineno="238">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_error_free(error);
+                </highlight>
+            </codeline>
+            <codeline lineno="239">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="240">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="241">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gnt_colors_parse(gkfile);
+                </highlight>
+            </codeline>
+            <codeline lineno="242">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>read_general_style(gkfile);
+                </highlight>
+            </codeline>
+            <codeline lineno="243">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="244">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="245">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="246">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntstyle_8c_1a9731daadd7680fb42e2b12b3eaac3ea9" kindref="member">gnt_init_styles</ref>()
+                </highlight>
+            </codeline>
+            <codeline lineno="247">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="248">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>i;
+                </highlight>
+            </codeline>
+            <codeline lineno="249">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;
+                    <sp/>
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1ac034111d7e616fdef93a143012533d78"
+                         kindref="member">GNT_STYLES</ref>;<sp/>i++)
+                </highlight>
+            </codeline>
+            <codeline lineno="250">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="251">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>str_styles[i]<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="252">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>int_styles[i]<sp/>=<sp/>-1;
+                </highlight>
+            </codeline>
+            <codeline lineno="253">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>bool_styles[i]<sp/>=<sp/>-1;
+                </highlight>
+            </codeline>
+            <codeline lineno="254">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="255">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="256">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="257">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntstyle_8c_1a61dd7e1d9544ba43741fda483a62d8c4" kindref="member">gnt_uninit_styles</ref>
+                    ()
+                </highlight>
+            </codeline>
+            <codeline lineno="258">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="259">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>i;
+                </highlight>
+            </codeline>
+            <codeline lineno="260">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;
+                    <sp/>
+                    <ref refid="gntstyle_8h_1a47cdf5a97e3a27acad41aedc4cfb38f1ac034111d7e616fdef93a143012533d78"
+                         kindref="member">GNT_STYLES</ref>;<sp/>i++)
+                </highlight>
+            </codeline>
+            <codeline lineno="261">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(str_styles[i]);
+                </highlight>
+            </codeline>
+            <codeline lineno="262">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="263">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#if<sp/>GLIB_CHECK_VERSION(2,6,0)
+                </highlight>
+            </codeline>
+            <codeline lineno="264">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_key_file_free(gkfile);
+                </highlight>
+            </codeline>
+            <codeline lineno="265">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="266">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="267">
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntstyle.c"/>
+    </compounddef>
+</doxygen>

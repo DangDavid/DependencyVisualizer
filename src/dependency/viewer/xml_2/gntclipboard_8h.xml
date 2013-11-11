@@ -1,0 +1,1288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntclipboard_8h" kind="file">
+        <compoundname>gntclipboard.h</compoundname>
+        <includes local="no">stdio.h</includes>
+        <includes local="no">glib.h</includes>
+        <includes local="no">glib-object.h</includes>
+        <includedby refid="gnt_8h" local="yes">libgnt/gnt.h</includedby>
+        <includedby refid="libgnt_2gntclipboard_8c" local="yes">libgnt/gntclipboard.c</includedby>
+        <includedby refid="gntmain_8c" local="yes">libgnt/gntmain.c</includedby>
+        <incdepgraph>
+            <node id="946">
+                <label>libgnt/gntclipboard.h</label>
+                <link refid="gntclipboard.h"/>
+                <childnode refid="947" relation="include">
+                </childnode>
+                <childnode refid="948" relation="include">
+                </childnode>
+                <childnode refid="949" relation="include">
+                </childnode>
+            </node>
+            <node id="948">
+                <label>glib.h</label>
+            </node>
+            <node id="947">
+                <label>stdio.h</label>
+            </node>
+            <node id="949">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="985">
+                <label>libgnt/gntbutton.c</label>
+                <link refid="gntbutton_8c"/>
+            </node>
+            <node id="967">
+                <label>gntnotify.c</label>
+                <link refid="gntnotify_8c"/>
+            </node>
+            <node id="993">
+                <label>libgnt/gntbutton.h</label>
+                <link refid="gntbutton_8h"/>
+                <childnode refid="955" relation="include">
+                </childnode>
+                <childnode refid="965" relation="include">
+                </childnode>
+                <childnode refid="966" relation="include">
+                </childnode>
+                <childnode refid="967" relation="include">
+                </childnode>
+                <childnode refid="961" relation="include">
+                </childnode>
+                <childnode refid="968" relation="include">
+                </childnode>
+                <childnode refid="969" relation="include">
+                </childnode>
+                <childnode refid="970" relation="include">
+                </childnode>
+                <childnode refid="985" relation="include">
+                </childnode>
+                <childnode refid="994" relation="include">
+                </childnode>
+                <childnode refid="975" relation="include">
+                </childnode>
+                <childnode refid="989" relation="include">
+                </childnode>
+                <childnode refid="963" relation="include">
+                </childnode>
+            </node>
+            <node id="963">
+                <label>plugins/gntgf.c</label>
+                <link refid="gntgf_8c"/>
+            </node>
+            <node id="1003">
+                <label>libgnt/gntmenuitem.c</label>
+                <link refid="gntmenuitem_8c"/>
+            </node>
+            <node id="999">
+                <label>libgnt/gntmenuitem.h</label>
+                <link refid="gntmenuitem_8h"/>
+                <childnode refid="957" relation="include">
+                </childnode>
+                <childnode refid="998" relation="include">
+                </childnode>
+                <childnode refid="1000" relation="include">
+                </childnode>
+                <childnode refid="1003" relation="include">
+                </childnode>
+            </node>
+            <node id="959">
+                <label>plugins/lastlog.c</label>
+                <link refid="lastlog_8c"/>
+            </node>
+            <node id="973">
+                <label>libgnt/gntcolors.c</label>
+                <link refid="gntcolors_8c"/>
+            </node>
+            <node id="976">
+                <label>libgnt/gntmain.c</label>
+                <link refid="gntmain_8c"/>
+            </node>
+            <node id="1002">
+                <label>libgnt/gntmenuitemcheck.c</label>
+                <link refid="gntmenuitemcheck_8c"/>
+            </node>
+            <node id="1000">
+                <label>libgnt/gntmenuitemcheck.h</label>
+                <link refid="gntmenuitemcheck_8h"/>
+                <childnode refid="957" relation="include">
+                </childnode>
+                <childnode refid="1001" relation="include">
+                </childnode>
+                <childnode refid="1002" relation="include">
+                </childnode>
+            </node>
+            <node id="988">
+                <label>libgnt/gnttextview.c</label>
+                <link refid="gnttextview_8c"/>
+            </node>
+            <node id="1006">
+                <label>libgnt/gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="958" relation="include">
+                </childnode>
+                <childnode refid="965" relation="include">
+                </childnode>
+                <childnode refid="997" relation="include">
+                </childnode>
+                <childnode refid="1007" relation="include">
+                </childnode>
+                <childnode refid="988" relation="include">
+                </childnode>
+                <childnode refid="989" relation="include">
+                </childnode>
+                <childnode refid="981" relation="include">
+                </childnode>
+                <childnode refid="959" relation="include">
+                </childnode>
+            </node>
+            <node id="982">
+                <label>libgnt/wms/s.c</label>
+                <link refid="s_8c"/>
+            </node>
+            <node id="955">
+                <label>gntaccount.c</label>
+                <link refid="gntaccount_8c"/>
+            </node>
+            <node id="972">
+                <label>libgnt/gntbindable.c</label>
+                <link refid="gntbindable_8c"/>
+            </node>
+            <node id="986">
+                <label>libgnt/gntcombobox.c</label>
+                <link refid="gntcombobox_8c"/>
+            </node>
+            <node id="996">
+                <label>libgnt/gntcombobox.h</label>
+                <link refid="gntcombobox_8h"/>
+                <childnode refid="955" relation="include">
+                </childnode>
+                <childnode refid="957" relation="include">
+                </childnode>
+                <childnode refid="968" relation="include">
+                </childnode>
+                <childnode refid="969" relation="include">
+                </childnode>
+                <childnode refid="970" relation="include">
+                </childnode>
+                <childnode refid="986" relation="include">
+                </childnode>
+                <childnode refid="989" relation="include">
+                </childnode>
+            </node>
+            <node id="981">
+                <label>libgnt/gntwm.c</label>
+                <link refid="gntwm_8c"/>
+            </node>
+            <node id="1004">
+                <label>libgnt/gntwm.h</label>
+                <link refid="gntwm_8h"/>
+                <childnode refid="1005" relation="include">
+                </childnode>
+                <childnode refid="976" relation="include">
+                </childnode>
+                <childnode refid="981" relation="include">
+                </childnode>
+                <childnode refid="982" relation="include">
+                </childnode>
+                <childnode refid="962" relation="include">
+                </childnode>
+            </node>
+            <node id="1011">
+                <label>libgnt/gntclipboard.c</label>
+                <link refid="libgnt_2gntclipboard_8c"/>
+            </node>
+            <node id="950">
+                <label>libgnt/gntclipboard.h</label>
+                <link refid="gntclipboard.h"/>
+                <childnode refid="951" relation="include">
+                </childnode>
+                <childnode refid="1011" relation="include">
+                </childnode>
+                <childnode refid="976" relation="include">
+                </childnode>
+            </node>
+            <node id="964">
+                <label>plugins/gnthistory.c</label>
+                <link refid="gnthistory_8c"/>
+            </node>
+            <node id="951">
+                <label>libgnt/gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="952" relation="include">
+                </childnode>
+                <childnode refid="955" relation="include">
+                </childnode>
+                <childnode refid="956" relation="include">
+                </childnode>
+                <childnode refid="960" relation="include">
+                </childnode>
+                <childnode refid="958" relation="include">
+                </childnode>
+                <childnode refid="965" relation="include">
+                </childnode>
+                <childnode refid="966" relation="include">
+                </childnode>
+                <childnode refid="967" relation="include">
+                </childnode>
+                <childnode refid="961" relation="include">
+                </childnode>
+                <childnode refid="968" relation="include">
+                </childnode>
+                <childnode refid="969" relation="include">
+                </childnode>
+                <childnode refid="970" relation="include">
+                </childnode>
+                <childnode refid="971" relation="include">
+                </childnode>
+                <childnode refid="972" relation="include">
+                </childnode>
+                <childnode refid="983" relation="include">
+                </childnode>
+                <childnode refid="990" relation="include">
+                </childnode>
+                <childnode refid="993" relation="include">
+                </childnode>
+                <childnode refid="994" relation="include">
+                </childnode>
+                <childnode refid="996" relation="include">
+                </childnode>
+                <childnode refid="997" relation="include">
+                </childnode>
+                <childnode refid="1006" relation="include">
+                </childnode>
+                <childnode refid="1008" relation="include">
+                </childnode>
+                <childnode refid="991" relation="include">
+                </childnode>
+                <childnode refid="992" relation="include">
+                </childnode>
+                <childnode refid="1007" relation="include">
+                </childnode>
+                <childnode refid="1009" relation="include">
+                </childnode>
+                <childnode refid="976" relation="include">
+                </childnode>
+                <childnode refid="1000" relation="include">
+                </childnode>
+                <childnode refid="979" relation="include">
+                </childnode>
+                <childnode refid="981" relation="include">
+                </childnode>
+                <childnode refid="982" relation="include">
+                </childnode>
+                <childnode refid="963" relation="include">
+                </childnode>
+                <childnode refid="959" relation="include">
+                </childnode>
+            </node>
+            <node id="1005">
+                <label>gntidle.c</label>
+                <link refid="gntidle_8c"/>
+            </node>
+            <node id="961">
+                <label>gntplugin.c</label>
+                <link refid="gntplugin_8c"/>
+            </node>
+            <node id="957">
+                <label>gntblist.c</label>
+                <link refid="gntblist_8c"/>
+            </node>
+            <node id="960">
+                <label>gntplugin.h</label>
+                <link refid="gntplugin_8h"/>
+                <childnode refid="958" relation="include">
+                </childnode>
+                <childnode refid="961" relation="include">
+                </childnode>
+                <childnode refid="954" relation="include">
+                </childnode>
+                <childnode refid="962" relation="include">
+                </childnode>
+                <childnode refid="963" relation="include">
+                </childnode>
+                <childnode refid="964" relation="include">
+                </childnode>
+                <childnode refid="959" relation="include">
+                </childnode>
+            </node>
+            <node id="980">
+                <label>libgnt/gntwindow.c</label>
+                <link refid="gntwindow_8c"/>
+            </node>
+            <node id="991">
+                <label>libgnt/gntwindow.h</label>
+                <link refid="gntwindow_8h"/>
+                <childnode refid="957" relation="include">
+                </childnode>
+                <childnode refid="992" relation="include">
+                </childnode>
+                <childnode refid="989" relation="include">
+                </childnode>
+                <childnode refid="980" relation="include">
+                </childnode>
+                <childnode refid="981" relation="include">
+                </childnode>
+                <childnode refid="982" relation="include">
+                </childnode>
+                <childnode refid="959" relation="include">
+                </childnode>
+            </node>
+            <node id="977">
+                <label>libgnt/gntstyle.c</label>
+                <link refid="gntstyle_8c"/>
+            </node>
+            <node id="971">
+                <label>libgnt/gntstyle.h</label>
+                <link refid="gntstyle_8h"/>
+                <childnode refid="972" relation="include">
+                </childnode>
+                <childnode refid="973" relation="include">
+                </childnode>
+                <childnode refid="974" relation="include">
+                </childnode>
+                <childnode refid="975" relation="include">
+                </childnode>
+                <childnode refid="976" relation="include">
+                </childnode>
+                <childnode refid="977" relation="include">
+                </childnode>
+                <childnode refid="978" relation="include">
+                </childnode>
+                <childnode refid="979" relation="include">
+                </childnode>
+                <childnode refid="980" relation="include">
+                </childnode>
+                <childnode refid="981" relation="include">
+                </childnode>
+                <childnode refid="982" relation="include">
+                </childnode>
+            </node>
+            <node id="969">
+                <label>gntrequest.c</label>
+                <link refid="gntrequest_8c"/>
+            </node>
+            <node id="962">
+                <label>plugins/gntclipboard.c</label>
+                <link refid="plugins_2gntclipboard_8c"/>
+            </node>
+            <node id="989">
+                <label>libgnt/gntutils.c</label>
+                <link refid="gntutils_8c"/>
+            </node>
+            <node id="983">
+                <label>libgnt/gntutils.h</label>
+                <link refid="gntutils_8h"/>
+                <childnode refid="957" relation="include">
+                </childnode>
+                <childnode refid="972" relation="include">
+                </childnode>
+                <childnode refid="984" relation="include">
+                </childnode>
+                <childnode refid="985" relation="include">
+                </childnode>
+                <childnode refid="986" relation="include">
+                </childnode>
+                <childnode refid="974" relation="include">
+                </childnode>
+                <childnode refid="987" relation="include">
+                </childnode>
+                <childnode refid="976" relation="include">
+                </childnode>
+                <childnode refid="988" relation="include">
+                </childnode>
+                <childnode refid="978" relation="include">
+                </childnode>
+                <childnode refid="989" relation="include">
+                </childnode>
+                <childnode refid="979" relation="include">
+                </childnode>
+                <childnode refid="981" relation="include">
+                </childnode>
+            </node>
+            <node id="984">
+                <label>libgnt/gntbox.c</label>
+                <link refid="gntbox_8c"/>
+            </node>
+            <node id="990">
+                <label>libgnt/gntbox.h</label>
+                <link refid="gntbox_8h"/>
+                <childnode refid="955" relation="include">
+                </childnode>
+                <childnode refid="957" relation="include">
+                </childnode>
+                <childnode refid="958" relation="include">
+                </childnode>
+                <childnode refid="965" relation="include">
+                </childnode>
+                <childnode refid="966" relation="include">
+                </childnode>
+                <childnode refid="967" relation="include">
+                </childnode>
+                <childnode refid="961" relation="include">
+                </childnode>
+                <childnode refid="968" relation="include">
+                </childnode>
+                <childnode refid="969" relation="include">
+                </childnode>
+                <childnode refid="970" relation="include">
+                </childnode>
+                <childnode refid="984" relation="include">
+                </childnode>
+                <childnode refid="986" relation="include">
+                </childnode>
+                <childnode refid="974" relation="include">
+                </childnode>
+                <childnode refid="991" relation="include">
+                </childnode>
+                <childnode refid="976" relation="include">
+                </childnode>
+                <childnode refid="981" relation="include">
+                </childnode>
+                <childnode refid="982" relation="include">
+                </childnode>
+                <childnode refid="963" relation="include">
+                </childnode>
+            </node>
+            <node id="987">
+                <label>libgnt/gntlabel.c</label>
+                <link refid="gntlabel_8c"/>
+            </node>
+            <node id="1007">
+                <label>libgnt/gntlabel.h</label>
+                <link refid="gntlabel_8h"/>
+                <childnode refid="955" relation="include">
+                </childnode>
+                <childnode refid="957" relation="include">
+                </childnode>
+                <childnode refid="966" relation="include">
+                </childnode>
+                <childnode refid="967" relation="include">
+                </childnode>
+                <childnode refid="961" relation="include">
+                </childnode>
+                <childnode refid="968" relation="include">
+                </childnode>
+                <childnode refid="969" relation="include">
+                </childnode>
+                <childnode refid="970" relation="include">
+                </childnode>
+                <childnode refid="975" relation="include">
+                </childnode>
+                <childnode refid="987" relation="include">
+                </childnode>
+                <childnode refid="989" relation="include">
+                </childnode>
+                <childnode refid="981" relation="include">
+                </childnode>
+                <childnode refid="982" relation="include">
+                </childnode>
+                <childnode refid="963" relation="include">
+                </childnode>
+            </node>
+            <node id="974">
+                <label>libgnt/gntentry.c</label>
+                <link refid="gntentry_8c"/>
+            </node>
+            <node id="1008">
+                <label>libgnt/gntentry.h</label>
+                <link refid="gntentry_8h"/>
+                <childnode refid="955" relation="include">
+                </childnode>
+                <childnode refid="957" relation="include">
+                </childnode>
+                <childnode refid="958" relation="include">
+                </childnode>
+                <childnode refid="968" relation="include">
+                </childnode>
+                <childnode refid="969" relation="include">
+                </childnode>
+                <childnode refid="970" relation="include">
+                </childnode>
+                <childnode refid="974" relation="include">
+                </childnode>
+                <childnode refid="975" relation="include">
+                </childnode>
+                <childnode refid="989" relation="include">
+                </childnode>
+            </node>
+            <node id="966">
+                <label>gntft.c</label>
+                <link refid="gntft_8c"/>
+            </node>
+            <node id="968">
+                <label>gntpounce.c</label>
+                <link refid="gntpounce_8c"/>
+            </node>
+            <node id="979">
+                <label>libgnt/gntwidget.c</label>
+                <link refid="gntwidget_8c"/>
+            </node>
+            <node id="953">
+                <label>finch.c</label>
+                <link refid="finch_8c"/>
+            </node>
+            <node id="954">
+                <label>gntui.c</label>
+                <link refid="gntui_8c"/>
+            </node>
+            <node id="952">
+                <label>gntui.h</label>
+                <link refid="gntui_8h"/>
+                <childnode refid="953" relation="include">
+                </childnode>
+                <childnode refid="954" relation="include">
+                </childnode>
+            </node>
+            <node id="1001">
+                <label>libgnt/gntmenu.c</label>
+                <link refid="gntmenu_8c"/>
+            </node>
+            <node id="998">
+                <label>libgnt/gntmenu.h</label>
+                <link refid="gntmenu_8h"/>
+                <childnode refid="957" relation="include">
+                </childnode>
+                <childnode refid="991" relation="include">
+                </childnode>
+                <childnode refid="999" relation="include">
+                </childnode>
+                <childnode refid="976" relation="include">
+                </childnode>
+                <childnode refid="1004" relation="include">
+                </childnode>
+                <childnode refid="1001" relation="include">
+                </childnode>
+                <childnode refid="1003" relation="include">
+                </childnode>
+                <childnode refid="981" relation="include">
+                </childnode>
+                <childnode refid="982" relation="include">
+                </childnode>
+            </node>
+            <node id="958">
+                <label>gntconv.c</label>
+                <link refid="gntconv_8c"/>
+            </node>
+            <node id="956">
+                <label>gntconv.h</label>
+                <link refid="gntconv_8h"/>
+                <childnode refid="957" relation="include">
+                </childnode>
+                <childnode refid="958" relation="include">
+                </childnode>
+                <childnode refid="954" relation="include">
+                </childnode>
+                <childnode refid="959" relation="include">
+                </childnode>
+            </node>
+            <node id="1010">
+                <label>libgnt/gntline.c</label>
+                <link refid="gntline_8c"/>
+            </node>
+            <node id="1009">
+                <label>libgnt/gntline.h</label>
+                <link refid="gntline_8h"/>
+                <childnode refid="955" relation="include">
+                </childnode>
+                <childnode refid="957" relation="include">
+                </childnode>
+                <childnode refid="965" relation="include">
+                </childnode>
+                <childnode refid="961" relation="include">
+                </childnode>
+                <childnode refid="968" relation="include">
+                </childnode>
+                <childnode refid="969" relation="include">
+                </childnode>
+                <childnode refid="970" relation="include">
+                </childnode>
+                <childnode refid="1010" relation="include">
+                </childnode>
+                <childnode refid="989" relation="include">
+                </childnode>
+            </node>
+            <node id="978">
+                <label>libgnt/gnttree.c</label>
+                <link refid="gnttree_8c"/>
+            </node>
+            <node id="997">
+                <label>libgnt/gnttree.h</label>
+                <link refid="gnttree_8h"/>
+                <childnode refid="955" relation="include">
+                </childnode>
+                <childnode refid="957" relation="include">
+                </childnode>
+                <childnode refid="966" relation="include">
+                </childnode>
+                <childnode refid="967" relation="include">
+                </childnode>
+                <childnode refid="961" relation="include">
+                </childnode>
+                <childnode refid="968" relation="include">
+                </childnode>
+                <childnode refid="969" relation="include">
+                </childnode>
+                <childnode refid="970" relation="include">
+                </childnode>
+                <childnode refid="986" relation="include">
+                </childnode>
+                <childnode refid="974" relation="include">
+                </childnode>
+                <childnode refid="998" relation="include">
+                </childnode>
+                <childnode refid="975" relation="include">
+                </childnode>
+                <childnode refid="976" relation="include">
+                </childnode>
+                <childnode refid="978" relation="include">
+                </childnode>
+                <childnode refid="989" relation="include">
+                </childnode>
+                <childnode refid="981" relation="include">
+                </childnode>
+                <childnode refid="963" relation="include">
+                </childnode>
+            </node>
+            <node id="965">
+                <label>gntdebug.c</label>
+                <link refid="gntdebug_8c"/>
+            </node>
+            <node id="970">
+                <label>gntstatus.c</label>
+                <link refid="gntstatus_8c"/>
+            </node>
+            <node id="975">
+                <label>libgnt/gntfilesel.c</label>
+                <link refid="gntfilesel_8c"/>
+            </node>
+            <node id="992">
+                <label>libgnt/gntfilesel.h</label>
+                <link refid="gntfilesel_8h"/>
+                <childnode refid="969" relation="include">
+                </childnode>
+                <childnode refid="975" relation="include">
+                </childnode>
+            </node>
+            <node id="995">
+                <label>libgnt/gntcheckbox.c</label>
+                <link refid="gntcheckbox_8c"/>
+            </node>
+            <node id="994">
+                <label>libgnt/gntcheckbox.h</label>
+                <link refid="gntcheckbox_8h"/>
+                <childnode refid="955" relation="include">
+                </childnode>
+                <childnode refid="965" relation="include">
+                </childnode>
+                <childnode refid="966" relation="include">
+                </childnode>
+                <childnode refid="968" relation="include">
+                </childnode>
+                <childnode refid="969" relation="include">
+                </childnode>
+                <childnode refid="995" relation="include">
+                </childnode>
+                <childnode refid="989" relation="include">
+                </childnode>
+                <childnode refid="963" relation="include">
+                </childnode>
+            </node>
+        </invincdepgraph>
+        <innerclass refid="struct___gnt_clipboard" prot="public">_GntClipboard</innerclass>
+        <innerclass refid="struct___gnt_clipboard_class" prot="public">_GntClipboardClass</innerclass>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="gntclipboard_8h_1ab636924b2eed0ad87a75e80a7645a81e" prot="public" static="no">
+                <name>GNT_TYPE_CLIPBOARD</name>
+                <initializer>(<ref refid="gntclipboard_8h_1a7ae4bf112771b6b56aef64c2262cf43b" kindref="member">
+                    gnt_clipboard_get_gtype</ref>())
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        line="8" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        bodystart="8" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntclipboard_8h_1a27733a353856b6dabf522409d40a5c17" prot="public" static="no">
+                <name>GNT_CLIPBOARD</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_INSTANCE_CAST((obj),<ref
+                        refid="gntclipboard_8h_1ab636924b2eed0ad87a75e80a7645a81e" kindref="member">
+                    GNT_TYPE_CLIPBOARD</ref>,<ref refid="gntclipboard_8h_1aceea25aa93db9f431bdb862dfa195e6a"
+                                                  kindref="member">GntClipboard</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        line="9" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        bodystart="9" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntclipboard_8h_1ac62e23c358a44add5cb4b01c97de7e0e" prot="public" static="no">
+                <name>GNT_CLIPBOARD_CLASS</name>
+                <param>
+                    <defname>klass</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_CLASS_CAST((klass),<ref
+                        refid="gntclipboard_8h_1ab636924b2eed0ad87a75e80a7645a81e" kindref="member">
+                    GNT_TYPE_CLIPBOARD</ref>,<ref refid="gntclipboard_8h_1aa528c15dcad5801aee9a853369a37515"
+                                                  kindref="member">GntClipboardClass</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        line="10" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        bodystart="10" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntclipboard_8h_1af5e71e02fc62ba316ea17c322e925e3b" prot="public" static="no">
+                <name>GNT_IS_CLIPBOARD</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_INSTANCE_TYPE((obj),<ref
+                        refid="gntclipboard_8h_1ab636924b2eed0ad87a75e80a7645a81e" kindref="member">
+                    GNT_TYPE_CLIPBOARD</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        line="11" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        bodystart="11" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntclipboard_8h_1a513df60db56ec74c805fea30877005b9" prot="public" static="no">
+                <name>GNT_IS_CLIPBOARD_CLASS</name>
+                <param>
+                    <defname>klass</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_CLASS_TYPE((klass),<ref
+                        refid="gntclipboard_8h_1ab636924b2eed0ad87a75e80a7645a81e" kindref="member">
+                    GNT_TYPE_CLIPBOARD</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        line="12" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        bodystart="12" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntclipboard_8h_1a1df7a5702a31e764f2c2d812707895c3" prot="public" static="no">
+                <name>GNT_CLIPBOARD_GET_CLASS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_INSTANCE_GET_CLASS((obj),<ref
+                        refid="gntclipboard_8h_1ab636924b2eed0ad87a75e80a7645a81e" kindref="member">
+                    GNT_TYPE_CLIPBOARD</ref>,<ref refid="gntclipboard_8h_1aa528c15dcad5801aee9a853369a37515"
+                                                  kindref="member">GntClipboardClass</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        line="13" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        bodystart="13" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="typedef">
+            <memberdef kind="typedef" id="gntclipboard_8h_1aceea25aa93db9f431bdb862dfa195e6a" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_clipboard" kindref="compound">_GntClipboard</ref>
+                </type>
+                <definition>typedef struct _GntClipboard GntClipboard</definition>
+                <argsstring></argsstring>
+                <name>GntClipboard</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        line="50" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        bodystart="15" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntclipboard_8h_1aa528c15dcad5801aee9a853369a37515" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_clipboard_class" kindref="compound">_GntClipboardClass</ref>
+                </type>
+                <definition>typedef struct _GntClipboardClass GntClipboardClass</definition>
+                <argsstring></argsstring>
+                <name>GntClipboardClass</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        line="50" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        bodystart="16" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntclipboard_8h_1a7ae4bf112771b6b56aef64c2262cf43b" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>G_BEGIN_DECLS GType</type>
+                <definition>G_BEGIN_DECLS GType gnt_clipboard_get_gtype</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_clipboard_get_gtype</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        line="36" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.c"
+                        bodystart="50" bodyend="74"/>
+            </memberdef>
+            <memberdef kind="function" id="gntclipboard_8h_1a468607ff66f1309e3ab648957cc27492" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gchar *</type>
+                <definition>gchar* gnt_clipboard_get_string</definition>
+                <argsstring>(GntClipboard *clip)</argsstring>
+                <name>gnt_clipboard_get_string</name>
+                <param>
+                    <type>
+                        <ref refid="gntclipboard_8h_1aceea25aa93db9f431bdb862dfa195e6a" kindref="member">GntClipboard
+                        </ref>
+                        *
+                    </type>
+                    <declname>clip</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        line="38" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.c"
+                        bodystart="39" bodyend="42"/>
+            </memberdef>
+            <memberdef kind="function" id="gntclipboard_8h_1a50c33770a5cffcc0f052249988c6900e" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_clipboard_set_string</definition>
+                <argsstring>(GntClipboard *clip, gchar *string)</argsstring>
+                <name>gnt_clipboard_set_string</name>
+                <param>
+                    <type>
+                        <ref refid="gntclipboard_8h_1aceea25aa93db9f431bdb862dfa195e6a" kindref="member">GntClipboard
+                        </ref>
+                        *
+                    </type>
+                    <declname>clip</declname>
+                </param>
+                <param>
+                    <type>gchar *</type>
+                    <declname>string</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"
+                        line="40" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.c"
+                        bodystart="31" bodyend="36"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1">
+                <highlight class="preprocessor">#ifndef<sp/>GNT_CLIPBOARD_H
+                </highlight>
+            </codeline>
+            <codeline lineno="2">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_CLIPBOARD_H
+                </highlight>
+            </codeline>
+            <codeline lineno="3">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="4">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="5">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;glib.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="6">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;glib-object.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="8" refid="gntclipboard_8h_1ab636924b2eed0ad87a75e80a7645a81e" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_TYPE_CLIPBOARD
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(gnt_clipboard_get_gtype())
+                </highlight>
+            </codeline>
+            <codeline lineno="9" refid="gntclipboard_8h_1a27733a353856b6dabf522409d40a5c17" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_CLIPBOARD(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_INSTANCE_CAST((obj),<sp/>GNT_TYPE_CLIPBOARD,<sp/>GntClipboard))
+                </highlight>
+            </codeline>
+            <codeline lineno="10" refid="gntclipboard_8h_1ac62e23c358a44add5cb4b01c97de7e0e" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_CLIPBOARD_CLASS(klass)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_CLASS_CAST((klass),<sp/>GNT_TYPE_CLIPBOARD,<sp/>GntClipboardClass))
+                </highlight>
+            </codeline>
+            <codeline lineno="11" refid="gntclipboard_8h_1af5e71e02fc62ba316ea17c322e925e3b" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_IS_CLIPBOARD(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_INSTANCE_TYPE((obj),<sp/>GNT_TYPE_CLIPBOARD))
+                </highlight>
+            </codeline>
+            <codeline lineno="12" refid="gntclipboard_8h_1a513df60db56ec74c805fea30877005b9" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_IS_CLIPBOARD_CLASS(klass)
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_CLASS_TYPE((klass),<sp/>GNT_TYPE_CLIPBOARD))
+                </highlight>
+            </codeline>
+            <codeline lineno="13" refid="gntclipboard_8h_1a1df7a5702a31e764f2c2d812707895c3" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_CLIPBOARD_GET_CLASS(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_INSTANCE_GET_CLASS((obj),<sp/>GNT_TYPE_CLIPBOARD,<sp/>GntClipboardClass))
+                </highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="15" refid="gntclipboard_8h_1aceea25aa93db9f431bdb862dfa195e6a" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_clipboard" kindref="compound">_GntClipboard</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_clipboard" kindref="compound">GntClipboard</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="16" refid="gntclipboard_8h_1aa528c15dcad5801aee9a853369a37515" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_clipboard_class" kindref="compound">_GntClipboardClass</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_clipboard_class" kindref="compound">GntClipboardClass</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="17">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="18" refid="struct___gnt_clipboard" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_clipboard" kindref="compound">_GntClipboard</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="20" refid="struct___gnt_clipboard_1a0a0388b2e0be9d5df22d6ab92573f729" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GObject
+                    <sp/>
+                    <ref refid="struct___gnt_clipboard_1a0a0388b2e0be9d5df22d6ab92573f729" kindref="member">
+                        inherit</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="21" refid="struct___gnt_clipboard_1ab3d21fdbc8b6f00959a92ae08f904c5d" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gchar<sp/>*<ref refid="struct___gnt_clipboard_1ab3d21fdbc8b6f00959a92ae08f904c5d"
+                                         kindref="member">string</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="24" refid="struct___gnt_clipboard_class" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_clipboard_class" kindref="compound">_GntClipboardClass</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="26" refid="struct___gnt_clipboard_class_1ade82ad984770be7543923661acc7a8d5"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GObjectClass
+                    <sp/>
+                    <ref refid="struct___gnt_clipboard_class_1ade82ad984770be7543923661acc7a8d5" kindref="member">
+                        parent</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28" refid="struct___gnt_clipboard_class_1a89dfce3a9aa0299a7819f8a4b9df5cef"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_clipboard_class_1a89dfce3a9aa0299a7819f8a4b9df5cef"
+                                         kindref="member">gnt_reserved1</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="29" refid="struct___gnt_clipboard_class_1abc424f0d49c73831a72f061af6b0ce1d"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_clipboard_class_1abc424f0d49c73831a72f061af6b0ce1d"
+                                         kindref="member">gnt_reserved2</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="30" refid="struct___gnt_clipboard_class_1a1e0be0259f96a3bff95418925fe8163e"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_clipboard_class_1a1e0be0259f96a3bff95418925fe8163e"
+                                         kindref="member">gnt_reserved3</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="31" refid="struct___gnt_clipboard_class_1a3f7d85f4e8f04f18386922c69c245469"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_clipboard_class_1a3f7d85f4e8f04f18386922c69c245469"
+                                         kindref="member">gnt_reserved4</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal">G_BEGIN_DECLS</highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal">GType
+                    <sp/>
+                    <ref refid="libgnt_2gntclipboard_8c_1a70432203a0ee192ac0a479d8d7cbf6bf" kindref="member">
+                        gnt_clipboard_get_gtype</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal">gchar<sp/>*<ref
+                        refid="libgnt_2gntclipboard_8c_1aa22d3f129be176e776198dc886ef345b" kindref="member">
+                    gnt_clipboard_get_string</ref>(
+                    <ref refid="struct___gnt_clipboard" kindref="compound">GntClipboard</ref>
+                    <sp/>*clip);
+                </highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="libgnt_2gntclipboard_8c_1a87fde80e1acbe60c5cc6a39c7e416709" kindref="member">
+                        gnt_clipboard_set_string</ref>(
+                    <ref refid="struct___gnt_clipboard" kindref="compound">GntClipboard</ref>
+                    <sp/>*clip,<sp/>gchar<sp/>*
+                </highlight>
+                <highlight class="keywordtype">string</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal">G_END_DECLS</highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+        </programlisting>
+        <location
+                file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntclipboard.h"/>
+    </compounddef>
+</doxygen>

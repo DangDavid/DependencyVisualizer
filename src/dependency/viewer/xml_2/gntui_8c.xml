@@ -1,0 +1,1064 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntui_8c" kind="file">
+        <compoundname>gntui.c</compoundname>
+        <includes refid="gntui_8h" local="yes">gntui.h</includes>
+        <includes refid="gntaccount_8h" local="yes">gntaccount.h</includes>
+        <includes refid="gntblist_8h" local="yes">gntblist.h</includes>
+        <includes refid="gntconn_8h" local="yes">gntconn.h</includes>
+        <includes refid="gntconv_8h" local="yes">gntconv.h</includes>
+        <includes refid="gntdebug_8h" local="yes">gntdebug.h</includes>
+        <includes refid="gntft_8h" local="yes">gntft.h</includes>
+        <includes refid="gntnotify_8h" local="yes">gntnotify.h</includes>
+        <includes refid="gntplugin_8h" local="yes">gntplugin.h</includes>
+        <includes refid="gntpounce_8h" local="yes">gntpounce.h</includes>
+        <includes refid="gntprefs_8h" local="yes">gntprefs.h</includes>
+        <includes refid="gntrequest_8h" local="yes">gntrequest.h</includes>
+        <includes refid="gntstatus_8h" local="yes">gntstatus.h</includes>
+        <includes local="yes">internal.h</includes>
+        <includes local="no">prefs.h</includes>
+        <incdepgraph>
+            <node id="581">
+                <label>notify.h</label>
+            </node>
+            <node id="580">
+                <label>gntnotify.h</label>
+                <link refid="gntnotify_8h"/>
+                <childnode refid="581" relation="include">
+                </childnode>
+            </node>
+            <node id="590">
+                <label>gntprefs.h</label>
+                <link refid="gntprefs_8h"/>
+            </node>
+            <node id="592">
+                <label>request.h</label>
+            </node>
+            <node id="564">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="557" relation="include">
+                </childnode>
+            </node>
+            <node id="571">
+                <label>blist.h</label>
+            </node>
+            <node id="567">
+                <label>term.h</label>
+            </node>
+            <node id="568">
+                <label>gntaccount.h</label>
+                <link refid="gntaccount_8h"/>
+                <childnode refid="569" relation="include">
+                </childnode>
+            </node>
+            <node id="561">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="559" relation="include">
+                </childnode>
+                <childnode refid="557" relation="include">
+                </childnode>
+                <childnode refid="562" relation="include">
+                </childnode>
+                <childnode refid="560" relation="include">
+                </childnode>
+            </node>
+            <node id="579">
+                <label>ft.h</label>
+            </node>
+            <node id="569">
+                <label>account.h</label>
+            </node>
+            <node id="563">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="559" relation="include">
+                </childnode>
+                <childnode refid="557" relation="include">
+                </childnode>
+                <childnode refid="562" relation="include">
+                </childnode>
+            </node>
+            <node id="556">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="557" relation="include">
+                </childnode>
+                <childnode refid="558" relation="include">
+                </childnode>
+                <childnode refid="563" relation="include">
+                </childnode>
+                <childnode refid="564" relation="include">
+                </childnode>
+                <childnode refid="565" relation="include">
+                </childnode>
+            </node>
+            <node id="566">
+                <label>curses.h</label>
+            </node>
+            <node id="595">
+                <label>savedstatuses.h</label>
+            </node>
+            <node id="582">
+                <label>gntplugin.h</label>
+                <link refid="gntplugin_8h"/>
+                <childnode refid="556" relation="include">
+                </childnode>
+                <childnode refid="583" relation="include">
+                </childnode>
+                <childnode refid="584" relation="include">
+                </childnode>
+                <childnode refid="585" relation="include">
+                </childnode>
+                <childnode refid="586" relation="include">
+                </childnode>
+            </node>
+            <node id="570">
+                <label>gntblist.h</label>
+                <link refid="gntblist_8h"/>
+                <childnode refid="571" relation="include">
+                </childnode>
+            </node>
+            <node id="596">
+                <label>internal.h</label>
+            </node>
+            <node id="584">
+                <label>pluginpref.h</label>
+            </node>
+            <node id="591">
+                <label>gntrequest.h</label>
+                <link refid="gntrequest_8h"/>
+                <childnode refid="592" relation="include">
+                </childnode>
+            </node>
+            <node id="585">
+                <label>string.h</label>
+            </node>
+            <node id="583">
+                <label>plugin.h</label>
+            </node>
+            <node id="597">
+                <label>prefs.h</label>
+            </node>
+            <node id="594">
+                <label>status.h</label>
+            </node>
+            <node id="578">
+                <label>gntft.h</label>
+                <link refid="gntft_8h"/>
+                <childnode refid="579" relation="include">
+                </childnode>
+            </node>
+            <node id="557">
+                <label>glib.h</label>
+            </node>
+            <node id="588">
+                <label>gntpounce.h</label>
+                <link refid="gntpounce_8h"/>
+                <childnode refid="589" relation="include">
+                </childnode>
+            </node>
+            <node id="558">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="559" relation="include">
+                </childnode>
+                <childnode refid="557" relation="include">
+                </childnode>
+                <childnode refid="560" relation="include">
+                </childnode>
+                <childnode refid="561" relation="include">
+                </childnode>
+            </node>
+            <node id="586">
+                <label>finch.h</label>
+                <link refid="finch_8h"/>
+                <childnode refid="557" relation="include">
+                </childnode>
+                <childnode refid="587" relation="include">
+                </childnode>
+            </node>
+            <node id="554">
+                <label>gntui.c</label>
+                <link refid="gntui.c"/>
+                <childnode refid="555" relation="include">
+                </childnode>
+                <childnode refid="568" relation="include">
+                </childnode>
+                <childnode refid="570" relation="include">
+                </childnode>
+                <childnode refid="572" relation="include">
+                </childnode>
+                <childnode refid="574" relation="include">
+                </childnode>
+                <childnode refid="576" relation="include">
+                </childnode>
+                <childnode refid="578" relation="include">
+                </childnode>
+                <childnode refid="580" relation="include">
+                </childnode>
+                <childnode refid="582" relation="include">
+                </childnode>
+                <childnode refid="588" relation="include">
+                </childnode>
+                <childnode refid="590" relation="include">
+                </childnode>
+                <childnode refid="591" relation="include">
+                </childnode>
+                <childnode refid="593" relation="include">
+                </childnode>
+                <childnode refid="596" relation="include">
+                </childnode>
+                <childnode refid="597" relation="include">
+                </childnode>
+            </node>
+            <node id="589">
+                <label>pounce.h</label>
+            </node>
+            <node id="555">
+                <label>gntui.h</label>
+                <link refid="gntui_8h"/>
+                <childnode refid="556" relation="include">
+                </childnode>
+            </node>
+            <node id="565">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="566" relation="include">
+                </childnode>
+                <childnode refid="567" relation="include">
+                </childnode>
+            </node>
+            <node id="560">
+                <label>ncurses.h</label>
+            </node>
+            <node id="572">
+                <label>gntconn.h</label>
+                <link refid="gntconn_8h"/>
+                <childnode refid="573" relation="include">
+                </childnode>
+            </node>
+            <node id="574">
+                <label>gntconv.h</label>
+                <link refid="gntconv_8h"/>
+                <childnode refid="556" relation="include">
+                </childnode>
+                <childnode refid="558" relation="include">
+                </childnode>
+                <childnode refid="575" relation="include">
+                </childnode>
+            </node>
+            <node id="575">
+                <label>conversation.h</label>
+            </node>
+            <node id="573">
+                <label>connection.h</label>
+            </node>
+            <node id="576">
+                <label>gntdebug.h</label>
+                <link refid="gntdebug_8h"/>
+                <childnode refid="577" relation="include">
+                </childnode>
+            </node>
+            <node id="577">
+                <label>debug.h</label>
+            </node>
+            <node id="559">
+                <label>stdio.h</label>
+            </node>
+            <node id="593">
+                <label>gntstatus.h</label>
+                <link refid="gntstatus_8h"/>
+                <childnode refid="594" relation="include">
+                </childnode>
+                <childnode refid="595" relation="include">
+                </childnode>
+            </node>
+            <node id="587">
+                <label>libpurple/internal.h</label>
+            </node>
+            <node id="562">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntui_8c_1ada9ae9db28c9d7cd0b0e064fddb2a739" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_ui_init</definition>
+                <argsstring>()</argsstring>
+                <name>gnt_ui_init</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>finch</para>
+                    <para>Finch is the legal property of its developers, whose names are too numerous to list here.
+                        Please refer to the COPYRIGHT file distributed with this source distribution.
+                    </para>
+                    <para>This program is free software; you can redistribute it and/or modify it under the terms of the
+                        GNU General Public License as published by the Free Software Foundation; either version 2 of the
+                        License, or (at your option) any later version.
+                    </para>
+                    <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+                        without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+                        the GNU General Public License for more details.
+                    </para>
+                    <para>You should have received a copy of the GNU General Public License along with this program; if
+                        not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA
+                        02111-1307 USA
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntui.c"
+                          line="40" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntui.c"
+                          bodystart="40" bodyend="117"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="22">
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntui_8h" kindref="compound">
+                    gntui.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntaccount_8h" kindref="compound">
+                    gntaccount.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntblist_8h" kindref="compound">
+                    gntblist.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntconn_8h" kindref="compound">
+                    gntconn.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntconv_8h" kindref="compound">
+                    gntconv.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntdebug_8h" kindref="compound">
+                    gntdebug.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntft_8h" kindref="compound">
+                    gntft.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntnotify_8h" kindref="compound">
+                    gntnotify.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntplugin_8h" kindref="compound">
+                    gntplugin.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntpounce_8h" kindref="compound">
+                    gntpounce.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntprefs_8h" kindref="compound">
+                    gntprefs.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntrequest_8h" kindref="compound">
+                    gntrequest.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntstatus_8h" kindref="compound">
+                    gntstatus.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;internal.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;prefs.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntui_8c_1ada9ae9db28c9d7cd0b0e064fddb2a739" kindref="member">gnt_ui_init</ref>()
+                </highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#ifdef<sp/>STANDALONE
+                </highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1a2b8c2fa35acacd8927d85b840eb91f56" kindref="member">gnt_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_add_none(
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/gnt&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Accounts<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntaccount_8c_1a4d8ca94389195b03f74245222ada708a" kindref="member">
+                        finch_accounts_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_accounts_set_ui_ops(<ref refid="gntaccount_8c_1aeddb1dc9b18a6500c84ed3116e9e1b5a"
+                                                         kindref="member">finch_accounts_get_ui_ops</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Connections<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntconn_8c_1ac541f833fad017cf7f59811f0a2405c5" kindref="member">
+                        finch_connections_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_connections_set_ui_ops(<ref refid="gntconn_8c_1a1ed480518e2c70e1b5c1ea0afcda89c5"
+                                                            kindref="member">finch_connections_get_ui_ops</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>buddy<sp/>list<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntblist_8c_1a8e2750b3c707aa5b9ac092595473508b" kindref="member">finch_blist_init</ref>
+                    ();
+                </highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_blist_set_ui_ops(<ref refid="gntblist_8c_1a0b38556a578f05f667c96a645de1dc9c"
+                                                      kindref="member">finch_blist_get_ui_ops</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Now<sp/>the<sp/>conversations<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntconv_8c_1a107aeb50f2c8bc6aa02b186ffb48e908" kindref="member">
+                        finch_conversation_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_conversations_set_ui_ops(<ref refid="gntconv_8c_1ad64fc49518805a8f9063c74016ab2394"
+                                                              kindref="member">finch_conv_get_ui_ops</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Notify<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntnotify_8c_1ac2b63de425556b9ab3b08cf5d1c34d3e" kindref="member">
+                        finch_notify_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_notify_set_ui_ops(<ref refid="gntnotify_8c_1a28454ea605fe73528ca2572a25338707"
+                                                       kindref="member">finch_notify_get_ui_ops</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntrequest_8c_1aaaf663592842b3b58a91080127b6e6ec" kindref="member">
+                        finch_request_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_set_ui_ops(<ref refid="gntrequest_8c_1a9399bff75a28127246eafea0035e70bf"
+                                                        kindref="member">finch_request_get_ui_ops</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntpounce_8c_1a0878a1ffbadf6bbb89d01f8c69da6fd6" kindref="member">
+                        finch_pounces_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntft_8c_1a5a135bdd641b97db97f535ce2b7aae49" kindref="member">finch_xfers_init</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_xfers_set_ui_ops(<ref refid="gntft_8c_1a7612756bc1296f733beb47db2b29aaf2"
+                                                      kindref="member">finch_xfers_get_ui_ops</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1a3c1fd07358bf93a66ae7e247c528e633" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Accounts&quot;</highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntaccount_8c_1aa859fdea09acabc3e48d58ca8f40b152" kindref="member">
+                        finch_accounts_show_all</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1a3c1fd07358bf93a66ae7e247c528e633" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Buddy<sp/>List&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntblist_8c_1a1776f6c92b01756e2c15cce8c00f976d" kindref="member">finch_blist_show</ref>
+                    );
+                </highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1a3c1fd07358bf93a66ae7e247c528e633" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Buddy<sp/>Pounces&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntpounce_8c_1ab495cdd571c6da33a9218a7e87af44f1" kindref="member">
+                        finch_pounces_manager_show</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1a3c1fd07358bf93a66ae7e247c528e633" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Debug<sp/>Window&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntdebug_8c_1ad98c4589a05641a0c95d5fb90a518a5a" kindref="member">
+                        finch_debug_window_show</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="80">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1a3c1fd07358bf93a66ae7e247c528e633" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;File<sp/>Transfers&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntft_8c_1afea29860d859f53a49ad1e5eb6bd22c6" kindref="member">
+                        finch_xfer_dialog_show</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1a3c1fd07358bf93a66ae7e247c528e633" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Plugins&quot;</highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntplugin_8c_1ae1c81cceb9612a868c011fc30b9a57ac" kindref="member">
+                        finch_plugins_show_all</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1a3c1fd07358bf93a66ae7e247c528e633" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Preferences&quot;</highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntprefs_8c_1ab651b7e3ae4cd958d96f9ad93c614047" kindref="member">
+                        finch_prefs_show_all</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1a3c1fd07358bf93a66ae7e247c528e633" kindref="member">gnt_register_action</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Statuses&quot;</highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="gntstatus_8c_1a35c5ee8020d9f1aa071286a990642dc5" kindref="member">
+                        finch_savedstatus_show_all</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#ifdef<sp/>STANDALONE
+                </highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntplugin_8c_1afe64ec3451ac2de336ec3ad934c263ab" kindref="member">
+                        finch_plugins_save_loaded</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntui_8h_1a9ab8344af0ae416a25bdc7c0145b1d10" kindref="member">gnt_ui_uninit</ref>()
+                </highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_accounts_set_ui_ops(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                         kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="93">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntaccount_8c_1a6e205c4e5040ac5e4c551bd23e27d755" kindref="member">
+                        finch_accounts_uninit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_connections_set_ui_ops(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                            kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntconn_8c_1a41dd87db886453d8b8e50921790bae17" kindref="member">
+                        finch_connections_uninit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_blist_set_ui_ops(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                      kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntblist_8c_1afcaa5b37165b1eb217e90627503a1487" kindref="member">
+                        finch_blist_uninit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="100">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="101">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_conversations_set_ui_ops(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                              kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="102">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntconv_8c_1ae11f6920562c7827e9113059f4aff69a" kindref="member">
+                        finch_conversation_uninit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="103">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="104">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_notify_set_ui_ops(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                       kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="105">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntnotify_8c_1ac422f6618256065a708d4bfada3cd9ea" kindref="member">
+                        finch_notify_uninit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="107">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_set_ui_ops(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                        kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="108">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntrequest_8c_1a3749c2646086e87b84c1204d050e344d" kindref="member">
+                        finch_request_uninit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="109">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="110">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntpounce_8c_1a2665b268845699a6d26be58b7907a3f9" kindref="member">
+                        finch_pounces_uninit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="111">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="112">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntft_8c_1a9c884b5ce2ec3bd9fd5ab6e7b8a3633b" kindref="member">finch_xfers_uninit</ref>
+                    ();
+                </highlight>
+            </codeline>
+            <codeline lineno="113">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_xfers_set_ui_ops(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                      kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="114">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="115">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1ac27447a385580704f3909dc0b01023fc" kindref="member">gnt_quit</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="116">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="117">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="118">
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntui.c"/>
+    </compounddef>
+</doxygen>

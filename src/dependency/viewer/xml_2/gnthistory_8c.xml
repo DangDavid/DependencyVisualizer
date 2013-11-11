@@ -1,0 +1,2511 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gnthistory_8c" kind="file">
+        <compoundname>gnthistory.c</compoundname>
+        <includes local="yes">internal.h</includes>
+        <includes local="yes">conversation.h</includes>
+        <includes local="yes">debug.h</includes>
+        <includes local="yes">log.h</includes>
+        <includes local="yes">notify.h</includes>
+        <includes local="yes">prefs.h</includes>
+        <includes local="yes">signals.h</includes>
+        <includes local="yes">util.h</includes>
+        <includes local="yes">version.h</includes>
+        <includes refid="gntplugin_8h" local="yes">gntplugin.h</includes>
+        <incdepgraph>
+            <node id="2078">
+                <label>notify.h</label>
+            </node>
+            <node id="2092">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="2085" relation="include">
+                </childnode>
+            </node>
+            <node id="2080">
+                <label>signals.h</label>
+            </node>
+            <node id="2095">
+                <label>term.h</label>
+            </node>
+            <node id="2089">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="2087" relation="include">
+                </childnode>
+                <childnode refid="2085" relation="include">
+                </childnode>
+                <childnode refid="2090" relation="include">
+                </childnode>
+                <childnode refid="2088" relation="include">
+                </childnode>
+            </node>
+            <node id="2077">
+                <label>log.h</label>
+            </node>
+            <node id="2091">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="2087" relation="include">
+                </childnode>
+                <childnode refid="2085" relation="include">
+                </childnode>
+                <childnode refid="2090" relation="include">
+                </childnode>
+            </node>
+            <node id="2073">
+                <label>plugins/gnthistory.c</label>
+                <link refid="gnthistory.c"/>
+                <childnode refid="2074" relation="include">
+                </childnode>
+                <childnode refid="2075" relation="include">
+                </childnode>
+                <childnode refid="2076" relation="include">
+                </childnode>
+                <childnode refid="2077" relation="include">
+                </childnode>
+                <childnode refid="2078" relation="include">
+                </childnode>
+                <childnode refid="2079" relation="include">
+                </childnode>
+                <childnode refid="2080" relation="include">
+                </childnode>
+                <childnode refid="2081" relation="include">
+                </childnode>
+                <childnode refid="2082" relation="include">
+                </childnode>
+                <childnode refid="2083" relation="include">
+                </childnode>
+            </node>
+            <node id="2084">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="2085" relation="include">
+                </childnode>
+                <childnode refid="2086" relation="include">
+                </childnode>
+                <childnode refid="2091" relation="include">
+                </childnode>
+                <childnode refid="2092" relation="include">
+                </childnode>
+                <childnode refid="2093" relation="include">
+                </childnode>
+            </node>
+            <node id="2094">
+                <label>curses.h</label>
+            </node>
+            <node id="2083">
+                <label>gntplugin.h</label>
+                <link refid="gntplugin_8h"/>
+                <childnode refid="2084" relation="include">
+                </childnode>
+                <childnode refid="2096" relation="include">
+                </childnode>
+                <childnode refid="2097" relation="include">
+                </childnode>
+                <childnode refid="2098" relation="include">
+                </childnode>
+                <childnode refid="2099" relation="include">
+                </childnode>
+            </node>
+            <node id="2074">
+                <label>internal.h</label>
+            </node>
+            <node id="2097">
+                <label>pluginpref.h</label>
+            </node>
+            <node id="2098">
+                <label>string.h</label>
+            </node>
+            <node id="2096">
+                <label>plugin.h</label>
+            </node>
+            <node id="2079">
+                <label>prefs.h</label>
+            </node>
+            <node id="2085">
+                <label>glib.h</label>
+            </node>
+            <node id="2086">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="2087" relation="include">
+                </childnode>
+                <childnode refid="2085" relation="include">
+                </childnode>
+                <childnode refid="2088" relation="include">
+                </childnode>
+                <childnode refid="2089" relation="include">
+                </childnode>
+            </node>
+            <node id="2099">
+                <label>finch.h</label>
+                <link refid="finch_8h"/>
+                <childnode refid="2085" relation="include">
+                </childnode>
+                <childnode refid="2100" relation="include">
+                </childnode>
+            </node>
+            <node id="2093">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="2094" relation="include">
+                </childnode>
+                <childnode refid="2095" relation="include">
+                </childnode>
+            </node>
+            <node id="2088">
+                <label>ncurses.h</label>
+            </node>
+            <node id="2075">
+                <label>conversation.h</label>
+            </node>
+            <node id="2076">
+                <label>debug.h</label>
+            </node>
+            <node id="2081">
+                <label>util.h</label>
+            </node>
+            <node id="2087">
+                <label>stdio.h</label>
+            </node>
+            <node id="2100">
+                <label>libpurple/internal.h</label>
+            </node>
+            <node id="2082">
+                <label>version.h</label>
+            </node>
+            <node id="2090">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="gnthistory_8c_1ae5bd08b35e741c626939d8017c9ac629" prot="public" static="no">
+                <name>HISTORY_PLUGIN_ID</name>
+                <initializer>&quot;gnt-history&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/plugins/gnthistory.c"
+                        line="36" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/plugins/gnthistory.c"
+                        bodystart="36" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gnthistory_8c_1a43034bdd0ae7c6267b05ff35ae97cddf" prot="public" static="no">
+                <name>HISTORY_SIZE</name>
+                <initializer>(4 * 1024)</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/plugins/gnthistory.c"
+                        line="38" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/plugins/gnthistory.c"
+                        bodystart="38" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="var">
+            <memberdef kind="variable" id="gnthistory_8c_1a47a5a1d9605623b2fa36fc452a3b1230" prot="public" static="yes"
+                       mutable="no">
+                <type>PurplePluginInfo</type>
+                <definition>PurplePluginInfo info</definition>
+                <argsstring></argsstring>
+                <name>info</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/plugins/gnthistory.c"
+                        line="168" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/plugins/gnthistory.c"
+                        bodystart="168" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gnthistory_8c_1ad14568851a5b0aa8fcbcff1d4d807252" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void historize</definition>
+                <argsstring>(PurpleConversation *c)</argsstring>
+                <name>historize</name>
+                <param>
+                    <type>PurpleConversation *</type>
+                    <declname>c</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/plugins/gnthistory.c"
+                        line="40" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/plugins/gnthistory.c"
+                        bodystart="40" bodyend="130"/>
+            </memberdef>
+            <memberdef kind="function" id="gnthistory_8c_1ab632caa4de8180df148fb9e364f2d5bc" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void history_prefs_check</definition>
+                <argsstring>(PurplePlugin *plugin)</argsstring>
+                <name>history_prefs_check</name>
+                <param>
+                    <type>PurplePlugin *</type>
+                    <declname>plugin</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/plugins/gnthistory.c"
+                        line="133" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/plugins/gnthistory.c"
+                        bodystart="133" bodyend="143"/>
+            </memberdef>
+            <memberdef kind="function" id="gnthistory_8c_1a12d62e6014a26e3d82a20984382bc17e" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void history_prefs_cb</definition>
+                <argsstring>(const char *name, PurplePrefType type, gconstpointer val, gpointer data)</argsstring>
+                <name>history_prefs_cb</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>name</declname>
+                </param>
+                <param>
+                    <type>PurplePrefType</type>
+                    <declname>type</declname>
+                </param>
+                <param>
+                    <type>gconstpointer</type>
+                    <declname>val</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>data</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/plugins/gnthistory.c"
+                        line="145" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/plugins/gnthistory.c"
+                        bodystart="145" bodyend="149"/>
+            </memberdef>
+            <memberdef kind="function" id="gnthistory_8c_1abe9b3b48c5805d13681c5fc7132060cd" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>static gboolean plugin_load</definition>
+                <argsstring>(PurplePlugin *plugin)</argsstring>
+                <name>plugin_load</name>
+                <param>
+                    <type>PurplePlugin *</type>
+                    <declname>plugin</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/plugins/gnthistory.c"
+                        line="152" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/plugins/gnthistory.c"
+                        bodystart="152" bodyend="166"/>
+            </memberdef>
+            <memberdef kind="function" id="gnthistory_8c_1a4e85f23d8c018ee555432db8eb9520e4" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void init_plugin</definition>
+                <argsstring>(PurplePlugin *plugin)</argsstring>
+                <name>init_plugin</name>
+                <param>
+                    <type>PurplePlugin *</type>
+                    <declname>plugin</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/plugins/gnthistory.c"
+                        line="203" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/plugins/gnthistory.c"
+                        bodystart="203" bodyend="205"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>Show log from previous conversation</para>
+            <para>Copyright (C) 2006 Sadrul Habib Chowdhury
+                <ulink url="mailto:sadrul@users.sourceforge.net">sadrul@users.sourceforge.net</ulink>
+            </para>
+            <para>This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+                General Public License as published by the Free Software Foundation; either version 2 of the License, or
+                (at your option) any later version.
+            </para>
+            <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
+                the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public
+                License for more details.
+            </para>
+            <para>You should have received a copy of the GNU General Public License along with this program; if not,
+                write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+            </para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="21">
+                <highlight class="comment">/*<sp/>Ripped<sp/>from<sp/>gtk/plugins/history.c<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;internal.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;conversation.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;debug.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;log.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;notify.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;prefs.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;signals.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;util.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;version.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntplugin_8h" kindref="compound">
+                    gntplugin.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>HISTORY_PLUGIN_ID<sp/>&quot;gnt-history&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>HISTORY_SIZE<sp/>(4<sp/>*<sp/>1024)
+                </highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>historize(PurpleConversation<sp/>*<ref
+                        refid="getopt_8c_1a66b97d6dee15f33d7b6731ccf48092cf" kindref="member">c</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleAccount<sp/>*account<sp/>=<sp/>purple_conversation_get_account(c);
+                </highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*name<sp/>=<sp/>purple_conversation_get_name(c);
+                </highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleConversationType<sp/>convtype;
+                </highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*logs<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*alias<sp/>=<sp/>name;
+                </highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleLogReadFlags<sp/>flags;
+                </highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*history;
+                </highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*header;
+                </highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleMessageFlags<sp/>mflag;
+                </highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>convtype<sp/>=<sp/>purple_conversation_get_type(c);
+                </highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(convtype<sp/>==<sp/>PURPLE_CONV_TYPE_IM)
+                </highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GSList<sp/>*buddies;
+                </highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GSList<sp/>*cur;
+                </highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>If<sp/>we&apos;re<sp/>not<sp/>logging,<sp/>don&apos;t<sp/>show<sp/>
+                    anything.
+                </highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<sp/>Otherwise,<sp/>we<sp/>might<sp/>show<sp/>a<sp/>very<sp/>old<sp/>log.<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!purple_prefs_get_bool(
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/logging/log_ims&quot;</highlight>
+                <highlight class="normal">))</highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Find<sp/>buddies<sp/>for<sp/>this<sp/>conversation.<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>buddies<sp/>=<sp/>purple_find_buddies(account,<sp/>name);
+                </highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>If<sp/>we<sp/>found<sp/>at<sp/>least<sp/>one<sp/>buddy,<sp/>save<sp/>
+                    the<sp/>first<sp/>buddy&apos;s<sp/>alias.<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(buddies<sp/>!=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>alias<sp/>=<sp/>purple_buddy_get_contact_alias((PurpleBuddy<sp/>*)buddies-&gt;data);
+                </highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(cur<sp/>=<sp/>buddies;<sp/>cur<sp/>!=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;<sp/>cur<sp/>
+                    =<sp/>cur-&gt;next)
+                </highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleBlistNode<sp/>*node<sp/>=<sp/>cur-&gt;data;
+                </highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>((node<sp/>!=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)<sp/>&amp;&amp;
+                    <sp/>((node-&gt;prev<sp/>!=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)<sp/>||<sp/>
+                    (node-&gt;next<sp/>!=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)))
+                </highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleBlistNode<sp/>*node2;
+                </highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>alias<sp/>=<sp/>purple_buddy_get_contact_alias((PurpleBuddy<sp/>*)node);
+                </highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>We&apos;ve<sp/>found<sp/>a<sp/>buddy<sp/>that<sp/>matches<sp/>this
+                    <sp/>conversation.
+                    <sp/>
+                    <sp/>It&apos;s<sp/>part<sp/>of<sp/>a
+                </highlight>
+            </codeline>
+            <codeline lineno="80">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<sp/>PurpleContact<sp/>with<sp/>more<sp/>than<sp/>one<sp/>PurpleBuddy.
+                    <sp/>
+                    <sp/>Loop<sp/>through<sp/>the<sp/>PurpleBuddies
+                </highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<sp/>in<sp/>the<sp/>contact<sp/>and<sp/>get<sp/>all<sp/>the<sp/>logs.<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(node2<sp/>=<sp/>node-&gt;parent-&gt;child<sp/>;<sp/>node2<sp/>!=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>
+                    <sp/>;<sp/>node2<sp/>=<sp/>node2-&gt;next)
+                </highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>logs<sp/>=<sp/>g_list_concat(
+                </highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_log_get_logs(PURPLE_LOG_IM,
+                </highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_buddy_get_name((PurpleBuddy<sp/>*)node2),
+                </highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_buddy_get_account((PurpleBuddy<sp/>*)node2)),
+                </highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>logs);
+                </highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="93">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_slist_free(buddies);
+                </highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(logs<sp/>==
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>logs<sp/>=<sp/>purple_log_get_logs(PURPLE_LOG_IM,<sp/>name,<sp/>account);
+                </highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>logs<sp/>=<sp/>g_list_sort(logs,<sp/>purple_log_compare);
+                </highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="100">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(convtype<sp/>==<sp/>PURPLE_CONV_TYPE_CHAT)
+                </highlight>
+            </codeline>
+            <codeline lineno="101">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="102">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>If<sp/>we&apos;re<sp/>not<sp/>logging,<sp/>don&apos;t<sp/>show<sp/>
+                    anything.
+                </highlight>
+            </codeline>
+            <codeline lineno="103">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<sp/>Otherwise,<sp/>we<sp/>might<sp/>show<sp/>a<sp/>very<sp/>old<sp/>log.<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="104">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!purple_prefs_get_bool(
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/logging/log_chats&quot;</highlight>
+                <highlight class="normal">))</highlight>
+            </codeline>
+            <codeline lineno="105">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="107">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>logs<sp/>=<sp/>purple_log_get_logs(PURPLE_LOG_CHAT,<sp/>name,<sp/>account);
+                </highlight>
+            </codeline>
+            <codeline lineno="108">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="109">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="110">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(logs<sp/>==
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="111">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="112">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="113">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>mflag<sp/>=<sp/>PURPLE_MESSAGE_NO_LOG<sp/>|<sp/>PURPLE_MESSAGE_SYSTEM<sp/>|<sp/>
+                    PURPLE_MESSAGE_DELAYED;
+                </highlight>
+            </codeline>
+            <codeline lineno="114">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>history<sp/>=<sp/>purple_log_read((PurpleLog*)logs-&gt;data,<sp/>&amp;flags);
+                </highlight>
+            </codeline>
+            <codeline lineno="115">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="116">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>header<sp/>=<sp/>g_strdup_printf(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;&lt;b&gt;Conversation<sp/>with<sp/>%s<sp/>on<sp/>%s:&lt;/b&gt;&lt;br&gt;&quot;
+                </highlight>
+                <highlight class="normal">),<sp/>alias,
+                </highlight>
+            </codeline>
+            <codeline lineno="117">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_date_format_full(localtime(&amp;((PurpleLog<sp/>*)logs-&gt;data)-&gt;time)));
+                </highlight>
+            </codeline>
+            <codeline lineno="118">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_conversation_write(c,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;&quot;</highlight>
+                <highlight class="normal">,<sp/>header,<sp/>mflag,<sp/>time(<ref
+                        refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>));
+                </highlight>
+            </codeline>
+            <codeline lineno="119">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(header);
+                </highlight>
+            </codeline>
+            <codeline lineno="120">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="121">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(flags<sp/>&amp;<sp/>PURPLE_LOG_READ_NO_NEWLINE)
+                </highlight>
+            </codeline>
+            <codeline lineno="122">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_str_strip_char(history,
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;\n&apos;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="123">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_conversation_write(c,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;&quot;</highlight>
+                <highlight class="normal">,<sp/>history,<sp/>mflag,<sp/>time(<ref
+                        refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>));
+                </highlight>
+            </codeline>
+            <codeline lineno="124">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(history);
+                </highlight>
+            </codeline>
+            <codeline lineno="125">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="126">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_conversation_write(c,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;&lt;hr&gt;&quot;</highlight>
+                <highlight class="normal">,<sp/>mflag,<sp/>time(<ref
+                        refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>));
+                </highlight>
+            </codeline>
+            <codeline lineno="127">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="128">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_list_foreach(logs,<sp/>(GFunc)purple_log_free,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="129">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_list_free(logs);
+                </highlight>
+            </codeline>
+            <codeline lineno="130">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="131">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="132">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="133">
+                <highlight class="normal">history_prefs_check(PurplePlugin<sp/>*plugin)
+                </highlight>
+            </codeline>
+            <codeline lineno="134">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="135">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!purple_prefs_get_bool(
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/logging/log_ims&quot;</highlight>
+                <highlight class="normal">)<sp/>&amp;&amp;
+                </highlight>
+            </codeline>
+            <codeline lineno="136">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>!purple_prefs_get_bool(
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/logging/log_chats&quot;</highlight>
+                <highlight class="normal">))</highlight>
+            </codeline>
+            <codeline lineno="137">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="138">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_notify_warning(plugin,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,<sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;History<sp/>Plugin<sp/>Requires<sp/>Logging&quot;
+                </highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="139">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Logging<sp/>can<sp/>be<sp/>enabled<sp/>from<sp/>Tools<sp/>-&gt;
+                    <sp/>Preferences<sp/>-&gt;<sp/>Logging.\n\n&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="140">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Enabling<sp/>logs<sp/>for<sp/>instant<sp/>messages<sp/>and/or
+                    <sp/>chats<sp/>will<sp/>activate<sp/>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="141">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;history<sp/>for<sp/>the<sp/>same<sp/>conversation<sp/>type(s).&quot;
+                </highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="142">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="143">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="144">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="145">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>history_prefs_cb(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*name,<sp/>PurplePrefType<sp/>type,
+                </highlight>
+            </codeline>
+            <codeline lineno="146">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gconstpointer<sp/>val,<sp/>gpointer<sp/>data)
+                </highlight>
+            </codeline>
+            <codeline lineno="147">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="148">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>history_prefs_check((PurplePlugin<sp/>*)data);
+                </highlight>
+            </codeline>
+            <codeline lineno="149">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="150">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="151">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>gboolean
+                </highlight>
+            </codeline>
+            <codeline lineno="152">
+                <highlight class="normal">plugin_load(PurplePlugin<sp/>*plugin)
+                </highlight>
+            </codeline>
+            <codeline lineno="153">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="154">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_signal_connect(purple_conversations_get_handle(),
+                </highlight>
+            </codeline>
+            <codeline lineno="155">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;conversation-created&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="156">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>plugin,<sp/>PURPLE_CALLBACK(historize),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="157">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="158">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_connect_callback(plugin,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/logging/log_ims&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="159">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>history_prefs_cb,<sp/>plugin);
+                </highlight>
+            </codeline>
+            <codeline lineno="160">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_connect_callback(plugin,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/logging/log_chats&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="161">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>history_prefs_cb,<sp/>plugin);
+                </highlight>
+            </codeline>
+            <codeline lineno="162">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="163">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>history_prefs_check(plugin);
+                </highlight>
+            </codeline>
+            <codeline lineno="164">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="165">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="166">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="167">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="168">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>PurplePluginInfo<sp/>info<sp/>=
+                </highlight>
+            </codeline>
+            <codeline lineno="169">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="170">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PURPLE_PLUGIN_MAGIC,
+                </highlight>
+            </codeline>
+            <codeline lineno="171">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PURPLE_MAJOR_VERSION,
+                </highlight>
+            </codeline>
+            <codeline lineno="172">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PURPLE_MINOR_VERSION,
+                </highlight>
+            </codeline>
+            <codeline lineno="173">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PURPLE_PLUGIN_STANDARD,
+                </highlight>
+            </codeline>
+            <codeline lineno="174">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="175">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>0,
+                </highlight>
+            </codeline>
+            <codeline lineno="176">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="177">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PURPLE_PRIORITY_DEFAULT,
+                </highlight>
+            </codeline>
+            <codeline lineno="178">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnthistory_8c_1ae5bd08b35e741c626939d8017c9ac629" kindref="member">
+                        HISTORY_PLUGIN_ID</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="179">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>N_(
+                </highlight>
+                <highlight class="stringliteral">&quot;GntHistory&quot;</highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="180">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>VERSION,
+                </highlight>
+            </codeline>
+            <codeline lineno="181">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>N_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Shows<sp/>recently<sp/>logged<sp/>conversations<sp/>in<sp/>new
+                    <sp/>conversations.&quot;
+                </highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="182">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>N_(
+                </highlight>
+                <highlight class="stringliteral">&quot;When<sp/>a<sp/>new<sp/>conversation<sp/>is<sp/>opened<sp/>this
+                    <sp/>plugin<sp/>will<sp/>insert<sp/>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="183">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;the<sp/>last<sp/>conversation<sp/>into<sp/>the<sp/>current<sp/>
+                    conversation.&quot;
+                </highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="184">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Sean<sp/>Egan<sp/>&lt;seanegan@gmail.com&gt;\n&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="185">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Sadrul<sp/>H<sp/>Chowdhury<sp/>&lt;sadrul@users.sourceforge.net&gt;&quot;
+                </highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="186">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PURPLE_WEBSITE,
+                </highlight>
+            </codeline>
+            <codeline lineno="187">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>plugin_load,
+                </highlight>
+            </codeline>
+            <codeline lineno="188">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="189">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="190">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="191">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="192">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="193">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="194">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="195">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>padding<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="196">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="197">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="198">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="199">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>NULL
+                </highlight>
+            </codeline>
+            <codeline lineno="200">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="201">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="202">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="203">
+                <highlight class="normal">init_plugin(PurplePlugin<sp/>*plugin)
+                </highlight>
+            </codeline>
+            <codeline lineno="204">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="205">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="206">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="207">
+                <highlight class="normal">PURPLE_INIT_PLUGIN(gnthistory,<sp/>init_plugin,<sp/>info)
+                </highlight>
+            </codeline>
+            <codeline lineno="208">
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location
+                file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/plugins/gnthistory.c"/>
+    </compounddef>
+</doxygen>

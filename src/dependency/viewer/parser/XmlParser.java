@@ -1,6 +1,10 @@
 package dependency.viewer.parser;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -39,6 +43,23 @@ public class XmlParser extends DefaultHandler {
             System.out.println("SAXException : xml not well formed");
         }
 
+    }
+
+    public List<ModuleData> parseAll(String folderName) {
+        FileSearcher files = new FileSearcher();
+
+        List<String> filePaths = files.getFiles(folderName);
+
+
+        List<ModuleData> rawData = new ArrayList<ModuleData>();
+
+
+        for (String path : filePaths) {
+            ModuleData parsedData = parseDocument(path);
+            rawData.add(parsedData);
+        }
+
+        return rawData;
     }
 
     public ModuleData parseDocument(String path) {

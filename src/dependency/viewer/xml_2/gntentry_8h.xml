@@ -1,0 +1,1982 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntentry_8h" kind="file">
+        <compoundname>gntentry.h</compoundname>
+        <includes refid="gntwidget_8h" local="yes">gntwidget.h</includes>
+        <includes refid="gnt_8h" local="yes">gnt.h</includes>
+        <includes refid="gntcolors_8h" local="yes">gntcolors.h</includes>
+        <includes refid="gntkeys_8h" local="yes">gntkeys.h</includes>
+        <includedby refid="gntaccount_8c" local="no">gntaccount.c</includedby>
+        <includedby refid="gntblist_8c" local="yes">gntblist.c</includedby>
+        <includedby refid="gntconv_8c" local="yes">gntconv.c</includedby>
+        <includedby refid="gntpounce_8c" local="no">gntpounce.c</includedby>
+        <includedby refid="gntrequest_8c" local="no">gntrequest.c</includedby>
+        <includedby refid="gntstatus_8c" local="no">gntstatus.c</includedby>
+        <includedby refid="gntentry_8c" local="yes">libgnt/gntentry.c</includedby>
+        <includedby refid="gntfilesel_8c" local="yes">libgnt/gntfilesel.c</includedby>
+        <includedby refid="gntutils_8c" local="yes">libgnt/gntutils.c</includedby>
+        <incdepgraph>
+            <node id="1166">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="1160" relation="include">
+                </childnode>
+            </node>
+            <node id="1169">
+                <label>term.h</label>
+            </node>
+            <node id="1162">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="1159" relation="include">
+                </childnode>
+                <childnode refid="1160" relation="include">
+                </childnode>
+                <childnode refid="1163" relation="include">
+                </childnode>
+                <childnode refid="1161" relation="include">
+                </childnode>
+            </node>
+            <node id="1165">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="1159" relation="include">
+                </childnode>
+                <childnode refid="1160" relation="include">
+                </childnode>
+                <childnode refid="1163" relation="include">
+                </childnode>
+            </node>
+            <node id="1164">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="1160" relation="include">
+                </childnode>
+                <childnode refid="1158" relation="include">
+                </childnode>
+                <childnode refid="1165" relation="include">
+                </childnode>
+                <childnode refid="1166" relation="include">
+                </childnode>
+                <childnode refid="1167" relation="include">
+                </childnode>
+            </node>
+            <node id="1168">
+                <label>curses.h</label>
+            </node>
+            <node id="1157">
+                <label>libgnt/gntentry.h</label>
+                <link refid="gntentry.h"/>
+                <childnode refid="1158" relation="include">
+                </childnode>
+                <childnode refid="1164" relation="include">
+                </childnode>
+                <childnode refid="1166" relation="include">
+                </childnode>
+                <childnode refid="1167" relation="include">
+                </childnode>
+            </node>
+            <node id="1160">
+                <label>glib.h</label>
+            </node>
+            <node id="1158">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="1159" relation="include">
+                </childnode>
+                <childnode refid="1160" relation="include">
+                </childnode>
+                <childnode refid="1161" relation="include">
+                </childnode>
+                <childnode refid="1162" relation="include">
+                </childnode>
+            </node>
+            <node id="1167">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="1168" relation="include">
+                </childnode>
+                <childnode refid="1169" relation="include">
+                </childnode>
+            </node>
+            <node id="1161">
+                <label>ncurses.h</label>
+            </node>
+            <node id="1159">
+                <label>stdio.h</label>
+            </node>
+            <node id="1163">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="1171">
+                <label>gntaccount.c</label>
+                <link refid="gntaccount_8c"/>
+            </node>
+            <node id="1172">
+                <label>gntblist.c</label>
+                <link refid="gntblist_8c"/>
+            </node>
+            <node id="1175">
+                <label>gntrequest.c</label>
+                <link refid="gntrequest_8c"/>
+            </node>
+            <node id="1179">
+                <label>libgnt/gntutils.c</label>
+                <link refid="gntutils_8c"/>
+            </node>
+            <node id="1177">
+                <label>libgnt/gntentry.c</label>
+                <link refid="gntentry_8c"/>
+            </node>
+            <node id="1170">
+                <label>libgnt/gntentry.h</label>
+                <link refid="gntentry.h"/>
+                <childnode refid="1171" relation="include">
+                </childnode>
+                <childnode refid="1172" relation="include">
+                </childnode>
+                <childnode refid="1173" relation="include">
+                </childnode>
+                <childnode refid="1174" relation="include">
+                </childnode>
+                <childnode refid="1175" relation="include">
+                </childnode>
+                <childnode refid="1176" relation="include">
+                </childnode>
+                <childnode refid="1177" relation="include">
+                </childnode>
+                <childnode refid="1178" relation="include">
+                </childnode>
+                <childnode refid="1179" relation="include">
+                </childnode>
+            </node>
+            <node id="1174">
+                <label>gntpounce.c</label>
+                <link refid="gntpounce_8c"/>
+            </node>
+            <node id="1173">
+                <label>gntconv.c</label>
+                <link refid="gntconv_8c"/>
+            </node>
+            <node id="1176">
+                <label>gntstatus.c</label>
+                <link refid="gntstatus_8c"/>
+            </node>
+            <node id="1178">
+                <label>libgnt/gntfilesel.c</label>
+                <link refid="gntfilesel_8c"/>
+            </node>
+        </invincdepgraph>
+        <innerclass refid="struct___gnt_entry" prot="public">_GntEntry</innerclass>
+        <innerclass refid="struct___gnt_entry_class" prot="public">_GntEntryClass</innerclass>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="gntentry_8h_1a0fc1ca42ea622a4349549363e1f763ab" prot="public" static="no">
+                <name>GNT_TYPE_ENTRY</name>
+                <initializer>(<ref refid="gntentry_8h_1a5585d9e8a868220b69e1f904344ea374" kindref="member">
+                    gnt_entry_get_gtype</ref>())
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="9" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        bodystart="9" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntentry_8h_1ad918238867ebaf71f678d5777b4adbcc" prot="public" static="no">
+                <name>GNT_ENTRY</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_INSTANCE_CAST((obj),<ref
+                        refid="gntentry_8h_1a0fc1ca42ea622a4349549363e1f763ab" kindref="member">GNT_TYPE_ENTRY</ref>,
+                    <ref refid="gntentry_8h_1ad23a72e8ccd9b9108cb06828ecaa1702" kindref="member">GntEntry</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="10" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        bodystart="10" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntentry_8h_1abf316fc600c65e0eda8b8c352197d646" prot="public" static="no">
+                <name>GNT_ENTRY_CLASS</name>
+                <param>
+                    <defname>klass</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_CLASS_CAST((klass),<ref
+                        refid="gntentry_8h_1a0fc1ca42ea622a4349549363e1f763ab" kindref="member">GNT_TYPE_ENTRY</ref>,
+                    <ref refid="gntentry_8h_1afa6c30ede9f6c1db6af4f6a5698a4107" kindref="member">GntEntryClass</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="11" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        bodystart="11" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntentry_8h_1a890920b47337b4d5fdca9625691c51a9" prot="public" static="no">
+                <name>GNT_IS_ENTRY</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_INSTANCE_TYPE((obj),<ref
+                        refid="gntentry_8h_1a0fc1ca42ea622a4349549363e1f763ab" kindref="member">GNT_TYPE_ENTRY</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="12" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        bodystart="12" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntentry_8h_1a5899e0e14ed47f7f8231b4c5d0621d6c" prot="public" static="no">
+                <name>GNT_IS_ENTRY_CLASS</name>
+                <param>
+                    <defname>klass</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_CLASS_TYPE((klass),<ref
+                        refid="gntentry_8h_1a0fc1ca42ea622a4349549363e1f763ab" kindref="member">GNT_TYPE_ENTRY</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="13" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        bodystart="13" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntentry_8h_1ad709ce17f6826ed7a232d8cc1864aa94" prot="public" static="no">
+                <name>GNT_ENTRY_GET_CLASS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_INSTANCE_GET_CLASS((obj),<ref
+                        refid="gntentry_8h_1a0fc1ca42ea622a4349549363e1f763ab" kindref="member">GNT_TYPE_ENTRY</ref>,
+                    <ref refid="gntentry_8h_1afa6c30ede9f6c1db6af4f6a5698a4107" kindref="member">GntEntryClass</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="14" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        bodystart="14" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntentry_8h_1a1301cf3bb26bb50e657333050e297597" prot="public" static="no">
+                <name>GNT_ENTRY_FLAGS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(<ref refid="gntentry_8h_1ad918238867ebaf71f678d5777b4adbcc" kindref="member">
+                    GNT_ENTRY</ref>(obj)-&gt;priv.flags)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="16" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        bodystart="16" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntentry_8h_1a045826c58deefe5e98dbf9579dbe72db" prot="public" static="no">
+                <name>GNT_ENTRY_SET_FLAGS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <param>
+                    <defname>flags</defname>
+                </param>
+                <initializer>(<ref refid="gntentry_8h_1a1301cf3bb26bb50e657333050e297597" kindref="member">
+                    GNT_ENTRY_FLAGS</ref>(obj) |= flags)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="17" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        bodystart="17" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntentry_8h_1a33bf6d0fe1640bc116d628225cd655eb" prot="public" static="no">
+                <name>GNT_ENTRY_UNSET_FLAGS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <param>
+                    <defname>flags</defname>
+                </param>
+                <initializer>(<ref refid="gntentry_8h_1a1301cf3bb26bb50e657333050e297597" kindref="member">
+                    GNT_ENTRY_FLAGS</ref>(obj) &amp;= ~(flags))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="18" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        bodystart="18" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntentry_8h_1aa321e5a50d87d7e74f982d96e3e0a48a" prot="public" static="no">
+                <name>ENTRY_CHAR</name>
+                <initializer>&apos;_&apos; /* The character
+                    <ref refid="getopt_8c_1a7347696a672e26aa962713eb3ab3cdb6" kindref="member">to</ref>
+                    use
+                    <ref refid="getopt_8c_1a7347696a672e26aa962713eb3ab3cdb6" kindref="member">to</ref>
+                    fill in the blank places */
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="20" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        bodystart="20" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntentry_8h_1a4cd8bb9c521cac2b1cabb0fd1465673c" prot="public" static="no">
+                <name>GNT_ENTRY_FLAG_ALL</name>
+                <initializer>(
+                    <ref refid="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547a9a11d0b299066beda125af5e11ba995f"
+                         kindref="member">GNT_ENTRY_FLAG_ALPHA
+                    </ref>
+                    |<ref refid="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547acd95e3901da1d753936e7cbd3fc850d4"
+                          kindref="member">GNT_ENTRY_FLAG_INT</ref>)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="35" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        bodystart="35" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="enum">
+            <memberdef kind="enum" id="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547" prot="public" static="no">
+                <name>GntEntryFlag</name>
+                <enumvalue id="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547a9a11d0b299066beda125af5e11ba995f"
+                           prot="public">
+                    <name>GNT_ENTRY_FLAG_ALPHA</name>
+                    <initializer>= 1 &lt;&lt; 0</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547acd95e3901da1d753936e7cbd3fc850d4"
+                           prot="public">
+                    <name>GNT_ENTRY_FLAG_INT</name>
+                    <initializer>= 1 &lt;&lt; 1</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547a6488a9eec9503d591de136a53b9430d9"
+                           prot="public">
+                    <name>GNT_ENTRY_FLAG_NO_SPACE</name>
+                    <initializer>= 1 &lt;&lt; 2</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547a854fd22f5eb73491bfb8b7cfdbbd02b0"
+                           prot="public">
+                    <name>GNT_ENTRY_FLAG_NO_PUNCT</name>
+                    <initializer>= 1 &lt;&lt; 3</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547ac581e665f853669daea6889c68c0195d"
+                           prot="public">
+                    <name>GNT_ENTRY_FLAG_MASK</name>
+                    <initializer>= 1 &lt;&lt; 4</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="27" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        bodystart="26" bodyend="33"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="typedef">
+            <memberdef kind="typedef" id="gntentry_8h_1ad23a72e8ccd9b9108cb06828ecaa1702" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_entry" kindref="compound">_GntEntry</ref>
+                </type>
+                <definition>typedef struct _GntEntry GntEntry</definition>
+                <argsstring></argsstring>
+                <name>GntEntry</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="932" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        bodystart="22" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntentry_8h_1a6651faf260ac9a08171be2aa53f440ec" prot="public" static="no">
+                <type>struct _GntEntryPriv</type>
+                <definition>typedef struct _GntEntryPriv GntEntryPriv</definition>
+                <argsstring></argsstring>
+                <name>GntEntryPriv</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="932" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        bodystart="23" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntentry_8h_1afa6c30ede9f6c1db6af4f6a5698a4107" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_entry_class" kindref="compound">_GntEntryClass</ref>
+                </type>
+                <definition>typedef struct _GntEntryClass GntEntryClass</definition>
+                <argsstring></argsstring>
+                <name>GntEntryClass</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="932" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        bodystart="24" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntentry_8h_1a5585d9e8a868220b69e1f904344ea374" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>G_BEGIN_DECLS GType</type>
+                <definition>G_BEGIN_DECLS GType gnt_entry_get_gtype</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_entry_get_gtype</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="76" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.c"
+                        bodystart="742" bodyend="767"/>
+            </memberdef>
+            <memberdef kind="function" id="gntentry_8h_1a21b7e87e8de08e042539b632b39b5fed" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* gnt_entry_new</definition>
+                <argsstring>(const char *text)</argsstring>
+                <name>gnt_entry_new</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>text</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="78" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.c"
+                        bodystart="769" bodyend="777"/>
+            </memberdef>
+            <memberdef kind="function" id="gntentry_8h_1a2046f2ef35d11053d5fb235e6581717c" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_entry_set_max</definition>
+                <argsstring>(GntEntry *entry, int max)</argsstring>
+                <name>gnt_entry_set_max</name>
+                <param>
+                    <type>
+                        <ref refid="gntentry_8h_1ad23a72e8ccd9b9108cb06828ecaa1702" kindref="member">GntEntry</ref>
+                        *
+                    </type>
+                    <declname>entry</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>max</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="80" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.c"
+                        bodystart="825" bodyend="828"/>
+            </memberdef>
+            <memberdef kind="function" id="gntentry_8h_1afabb5fb27e654edbde94650e99ebc5a0" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_entry_set_text</definition>
+                <argsstring>(GntEntry *entry, const char *text)</argsstring>
+                <name>gnt_entry_set_text</name>
+                <param>
+                    <type>
+                        <ref refid="gntentry_8h_1ad23a72e8ccd9b9108cb06828ecaa1702" kindref="member">GntEntry</ref>
+                        *
+                    </type>
+                    <declname>entry</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>text</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="82" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.c"
+                        bodystart="813" bodyend="823"/>
+            </memberdef>
+            <memberdef kind="function" id="gntentry_8h_1ab9727fe40da5f5647cf8d7e0d547d66f" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_entry_set_flag</definition>
+                <argsstring>(GntEntry *entry, GntEntryFlag flag)</argsstring>
+                <name>gnt_entry_set_flag</name>
+                <param>
+                    <type>
+                        <ref refid="gntentry_8h_1ad23a72e8ccd9b9108cb06828ecaa1702" kindref="member">GntEntry</ref>
+                        *
+                    </type>
+                    <declname>entry</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547" kindref="member">GntEntryFlag</ref>
+                    </type>
+                    <declname>flag</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="84" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.c"
+                        bodystart="830" bodyend="834"/>
+            </memberdef>
+            <memberdef kind="function" id="gntentry_8h_1a2653615def55f531c0ec85411458547b" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>const char *</type>
+                <definition>const char* gnt_entry_get_text</definition>
+                <argsstring>(GntEntry *entry)</argsstring>
+                <name>gnt_entry_get_text</name>
+                <param>
+                    <type>
+                        <ref refid="gntentry_8h_1ad23a72e8ccd9b9108cb06828ecaa1702" kindref="member">GntEntry</ref>
+                        *
+                    </type>
+                    <declname>entry</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="86" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.c"
+                        bodystart="836" bodyend="839"/>
+            </memberdef>
+            <memberdef kind="function" id="gntentry_8h_1ab15549d4cc0220ae997cad3a1fa96ee1" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_entry_clear</definition>
+                <argsstring>(GntEntry *entry)</argsstring>
+                <name>gnt_entry_clear</name>
+                <param>
+                    <type>
+                        <ref refid="gntentry_8h_1ad23a72e8ccd9b9108cb06828ecaa1702" kindref="member">GntEntry</ref>
+                        *
+                    </type>
+                    <declname>entry</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="88" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.c"
+                        bodystart="841" bodyend="848"/>
+            </memberdef>
+            <memberdef kind="function" id="gntentry_8h_1a0678df544d0209d7063bde095de613c7" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_entry_set_masked</definition>
+                <argsstring>(GntEntry *entry, gboolean set)</argsstring>
+                <name>gnt_entry_set_masked</name>
+                <param>
+                    <type>
+                        <ref refid="gntentry_8h_1ad23a72e8ccd9b9108cb06828ecaa1702" kindref="member">GntEntry</ref>
+                        *
+                    </type>
+                    <declname>entry</declname>
+                </param>
+                <param>
+                    <type>gboolean</type>
+                    <declname>set</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="90" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.c"
+                        bodystart="850" bodyend="853"/>
+            </memberdef>
+            <memberdef kind="function" id="gntentry_8h_1a3e30f9e61d01d590077bf1fcb10f851a" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_entry_add_to_history</definition>
+                <argsstring>(GntEntry *entry, const char *text)</argsstring>
+                <name>gnt_entry_add_to_history</name>
+                <param>
+                    <type>
+                        <ref refid="gntentry_8h_1ad23a72e8ccd9b9108cb06828ecaa1702" kindref="member">GntEntry</ref>
+                        *
+                    </type>
+                    <declname>entry</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>text</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="92" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.c"
+                        bodystart="855" bodyend="866"/>
+            </memberdef>
+            <memberdef kind="function" id="gntentry_8h_1ad2cf6f659193b82302871b83efb8e280" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_entry_set_history_length</definition>
+                <argsstring>(GntEntry *entry, int num)</argsstring>
+                <name>gnt_entry_set_history_length</name>
+                <param>
+                    <type>
+                        <ref refid="gntentry_8h_1ad23a72e8ccd9b9108cb06828ecaa1702" kindref="member">GntEntry</ref>
+                        *
+                    </type>
+                    <declname>entry</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>num</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="94" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.c"
+                        bodystart="868" bodyend="907"/>
+            </memberdef>
+            <memberdef kind="function" id="gntentry_8h_1aa1efdf9897cd13ee511a9928c6690f10" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_entry_set_word_suggest</definition>
+                <argsstring>(GntEntry *entry, gboolean word)</argsstring>
+                <name>gnt_entry_set_word_suggest</name>
+                <param>
+                    <type>
+                        <ref refid="gntentry_8h_1ad23a72e8ccd9b9108cb06828ecaa1702" kindref="member">GntEntry</ref>
+                        *
+                    </type>
+                    <declname>entry</declname>
+                </param>
+                <param>
+                    <type>gboolean</type>
+                    <declname>word</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="96" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.c"
+                        bodystart="909" bodyend="912"/>
+            </memberdef>
+            <memberdef kind="function" id="gntentry_8h_1ac05701c4a84e1e1072f93d74dbcea5fa" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_entry_set_always_suggest</definition>
+                <argsstring>(GntEntry *entry, gboolean always)</argsstring>
+                <name>gnt_entry_set_always_suggest</name>
+                <param>
+                    <type>
+                        <ref refid="gntentry_8h_1ad23a72e8ccd9b9108cb06828ecaa1702" kindref="member">GntEntry</ref>
+                        *
+                    </type>
+                    <declname>entry</declname>
+                </param>
+                <param>
+                    <type>gboolean</type>
+                    <declname>always</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="98" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.c"
+                        bodystart="914" bodyend="917"/>
+            </memberdef>
+            <memberdef kind="function" id="gntentry_8h_1a018cbacf15daf3d96561d872452da5cb" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_entry_add_suggest</definition>
+                <argsstring>(GntEntry *entry, const char *text)</argsstring>
+                <name>gnt_entry_add_suggest</name>
+                <param>
+                    <type>
+                        <ref refid="gntentry_8h_1ad23a72e8ccd9b9108cb06828ecaa1702" kindref="member">GntEntry</ref>
+                        *
+                    </type>
+                    <declname>entry</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>text</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="100" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.c"
+                        bodystart="919" bodyend="930"/>
+            </memberdef>
+            <memberdef kind="function" id="gntentry_8h_1a5e16c4ca6433687954b775607aebcc08" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_entry_remove_suggest</definition>
+                <argsstring>(GntEntry *entry, const char *text)</argsstring>
+                <name>gnt_entry_remove_suggest</name>
+                <param>
+                    <type>
+                        <ref refid="gntentry_8h_1ad23a72e8ccd9b9108cb06828ecaa1702" kindref="member">GntEntry</ref>
+                        *
+                    </type>
+                    <declname>entry</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>text</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"
+                        line="102" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.c"
+                        bodystart="932" bodyend="940"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1">
+                <highlight class="preprocessor">#ifndef<sp/>GNT_ENTRY_H
+                </highlight>
+            </codeline>
+            <codeline lineno="2">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_ENTRY_H
+                </highlight>
+            </codeline>
+            <codeline lineno="3">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="4">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntwidget_8h" kindref="compound">
+                    gntwidget.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="5">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gnt_8h" kindref="compound">gnt.h</ref>
+                    &quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="6">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntcolors_8h" kindref="compound">
+                    gntcolors.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntkeys_8h" kindref="compound">
+                    gntkeys.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="8">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="9" refid="gntentry_8h_1a0fc1ca42ea622a4349549363e1f763ab" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_TYPE_ENTRY
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(gnt_entry_get_gtype())
+                </highlight>
+            </codeline>
+            <codeline lineno="10" refid="gntentry_8h_1ad918238867ebaf71f678d5777b4adbcc" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_ENTRY(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_INSTANCE_CAST((obj),<sp/>GNT_TYPE_ENTRY,<sp/>GntEntry))
+                </highlight>
+            </codeline>
+            <codeline lineno="11" refid="gntentry_8h_1abf316fc600c65e0eda8b8c352197d646" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_ENTRY_CLASS(klass)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_CLASS_CAST((klass),<sp/>GNT_TYPE_ENTRY,<sp/>GntEntryClass))
+                </highlight>
+            </codeline>
+            <codeline lineno="12" refid="gntentry_8h_1a890920b47337b4d5fdca9625691c51a9" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_IS_ENTRY(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_INSTANCE_TYPE((obj),<sp/>GNT_TYPE_ENTRY))
+                </highlight>
+            </codeline>
+            <codeline lineno="13" refid="gntentry_8h_1a5899e0e14ed47f7f8231b4c5d0621d6c" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_IS_ENTRY_CLASS(klass)
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_CLASS_TYPE((klass),<sp/>GNT_TYPE_ENTRY))
+                </highlight>
+            </codeline>
+            <codeline lineno="14" refid="gntentry_8h_1ad709ce17f6826ed7a232d8cc1864aa94" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_ENTRY_GET_CLASS(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_INSTANCE_GET_CLASS((obj),<sp/>GNT_TYPE_ENTRY,<sp/>GntEntryClass))
+                </highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="16" refid="gntentry_8h_1a1301cf3bb26bb50e657333050e297597" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_ENTRY_FLAGS(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_ENTRY(obj)-&gt;priv.flags)
+                </highlight>
+            </codeline>
+            <codeline lineno="17" refid="gntentry_8h_1a045826c58deefe5e98dbf9579dbe72db" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_ENTRY_SET_FLAGS(obj,<sp/>flags)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_ENTRY_FLAGS(obj)<sp/>|=<sp/>flags)
+                </highlight>
+            </codeline>
+            <codeline lineno="18" refid="gntentry_8h_1a33bf6d0fe1640bc116d628225cd655eb" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_ENTRY_UNSET_FLAGS(obj,<sp/>flags)
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_ENTRY_FLAGS(obj)<sp/>&amp;=<sp/>~(flags))
+                </highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="20" refid="gntentry_8h_1aa321e5a50d87d7e74f982d96e3e0a48a" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>ENTRY_CHAR
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&apos;_&apos;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>The<sp/>character<sp/>to<sp/>use<sp/>to<sp/>fill<sp/>in<sp/>the<sp/>
+                    blank<sp/>places<sp/>*/
+                </highlight>
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="22" refid="gntentry_8h_1ad23a72e8ccd9b9108cb06828ecaa1702" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_entry" kindref="compound">_GntEntry</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_entry" kindref="compound">GntEntry</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="23" refid="gntentry_8h_1a6651faf260ac9a08171be2aa53f440ec" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">_GntEntryPriv
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntentry_8h_1a6651faf260ac9a08171be2aa53f440ec" kindref="member">GntEntryPriv</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="24" refid="gntentry_8h_1afa6c30ede9f6c1db6af4f6a5698a4107" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_entry_class" kindref="compound">_GntEntryClass</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_entry_class" kindref="compound">GntEntryClass</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26" refid="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">enum</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="28"
+                      refid="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547a9a11d0b299066beda125af5e11ba995f"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547a9a11d0b299066beda125af5e11ba995f"
+                         kindref="member">GNT_ENTRY_FLAG_ALPHA
+                    </ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>=<sp/>1<sp/>&lt;&lt;<sp/>0,
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Only<sp/>alpha<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29"
+                      refid="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547acd95e3901da1d753936e7cbd3fc850d4"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547acd95e3901da1d753936e7cbd3fc850d4"
+                         kindref="member">GNT_ENTRY_FLAG_INT
+                    </ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>=<sp/>1<sp/>&lt;&lt;<sp/>1,
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Only<sp/>integer<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30"
+                      refid="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547a6488a9eec9503d591de136a53b9430d9"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547a6488a9eec9503d591de136a53b9430d9"
+                         kindref="member">GNT_ENTRY_FLAG_NO_SPACE
+                    </ref>
+                    <sp/>=<sp/>1<sp/>&lt;&lt;<sp/>2,
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>No<sp/>blank<sp/>space<sp/>is<sp/>allowed<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31"
+                      refid="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547a854fd22f5eb73491bfb8b7cfdbbd02b0"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547a854fd22f5eb73491bfb8b7cfdbbd02b0"
+                         kindref="member">GNT_ENTRY_FLAG_NO_PUNCT
+                    </ref>
+                    <sp/>=<sp/>1<sp/>&lt;&lt;<sp/>3,
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>No<sp/>punctuations<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32"
+                      refid="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547ac581e665f853669daea6889c68c0195d"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547ac581e665f853669daea6889c68c0195d"
+                         kindref="member">GNT_ENTRY_FLAG_MASK
+                    </ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>=<sp/>1<sp/>&lt;&lt;<sp/>4,
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Mask<sp/>the<sp/>inputs<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal">}
+                    <sp/>
+                    <ref refid="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547" kindref="member">GntEntryFlag</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="35" refid="gntentry_8h_1a4cd8bb9c521cac2b1cabb0fd1465673c" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_ENTRY_FLAG_ALL
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_ENTRY_FLAG_ALPHA<sp/>|<sp/>GNT_ENTRY_FLAG_INT)
+                </highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="37" refid="struct___gnt_entry" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_entry" kindref="compound">_GntEntry</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="39" refid="struct___gnt_entry_1ae3e3b55c7e6209f0e555f25a2e5fd1a9" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_entry_1ae3e3b55c7e6209f0e555f25a2e5fd1a9" kindref="member">parent</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="41" refid="struct___gnt_entry_1a9d69a4c84ea8471d15a1a32d0a0fe7f4" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547" kindref="member">GntEntryFlag</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_entry_1a9d69a4c84ea8471d15a1a32d0a0fe7f4" kindref="member">flag</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="43" refid="struct___gnt_entry_1ab40328f79e021050ac262dc0a6019667" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___gnt_entry_1ab40328f79e021050ac262dc0a6019667"
+                                                     kindref="member">start</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="44" refid="struct___gnt_entry_1a8fd806ad19b8f5513a4cf18cbf77532c" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___gnt_entry_1a8fd806ad19b8f5513a4cf18cbf77532c"
+                                                     kindref="member">end</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="45" refid="struct___gnt_entry_1a862b90a323fbbc4f00e286a0b5c49cdc" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___gnt_entry_1a862b90a323fbbc4f00e286a0b5c49cdc"
+                                                     kindref="member">scroll</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Current<sp/>scrolling<sp/>position<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="46" refid="struct___gnt_entry_1a0614e0a06bdb19f1b884381b876dba02" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___gnt_entry_1a0614e0a06bdb19f1b884381b876dba02"
+                                                     kindref="member">cursor</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Cursor<sp/>location<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>0<sp/>&lt;=<sp/>cursor<sp/>-<sp/>scroll<sp/>&lt;<sp/>widget-width<sp/>
+                    */
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="49" refid="struct___gnt_entry_1a5dc454bc5326921364e15d28d9477a70" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">size_t</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_entry_1a5dc454bc5326921364e15d28d9477a70" kindref="member">buffer</ref>;
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Size<sp/>of<sp/>the<sp/>buffer<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="51" refid="struct___gnt_entry_1ae1e1dde676c120fa6d10f3bb2c14059e" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_entry_1ae1e1dde676c120fa6d10f3bb2c14059e" kindref="member">max</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>0<sp/>means<sp/>infinite<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="52" refid="struct___gnt_entry_1a5436b91129b242e6b166f05f565750b5" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean
+                    <sp/>
+                    <ref refid="struct___gnt_entry_1a5436b91129b242e6b166f05f565750b5" kindref="member">masked</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="54" refid="struct___gnt_entry_1a8aa2f5348ae2149246029da131a08a24" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*<ref refid="struct___gnt_entry_1a8aa2f5348ae2149246029da131a08a24" kindref="member">
+                    history</ref>;
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>History<sp/>of<sp/>the<sp/>strings.<sp/>User<sp/>can<sp/>use<sp/>this
+                    <sp/>by<sp/>pressing<sp/>ctrl+up/down<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="55" refid="struct___gnt_entry_1a978c4dfc2e2b6ffaa3c80cf33c71ab0d" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_entry_1a978c4dfc2e2b6ffaa3c80cf33c71ab0d" kindref="member">histlength</ref>
+                    ;
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>How<sp/>long<sp/>can<sp/>the<sp/>history<sp/>be?<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="57" refid="struct___gnt_entry_1a7820a3c62f3b92d57cf65f203782270d" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*<ref refid="struct___gnt_entry_1a7820a3c62f3b92d57cf65f203782270d" kindref="member">
+                    suggests</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>List<sp/>of<sp/>suggestions<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="58" refid="struct___gnt_entry_1a084735fccb519ccd2580cc00594594d4" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean
+                    <sp/>
+                    <ref refid="struct___gnt_entry_1a084735fccb519ccd2580cc00594594d4" kindref="member">word</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Are<sp/>the<sp/>suggestions<sp/>for<sp/>only<sp/>a<sp/>word,<sp/>or
+                    <sp/>for<sp/>the<sp/>whole<sp/>thing?<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="59" refid="struct___gnt_entry_1a8cf2fd7c92e8d307fe7f54dc031bce4e" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean
+                    <sp/>
+                    <ref refid="struct___gnt_entry_1a8cf2fd7c92e8d307fe7f54dc031bce4e" kindref="member">always</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Should<sp/>the<sp/>list<sp/>of<sp/>suggestions<sp/>show<sp/>at<sp/>all
+                    <sp/>times,<sp/>or<sp/>only<sp/>on<sp/>tab-press?<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="60" refid="struct___gnt_entry_1a6205e2455b8043712ff84146204bb33c" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="struct___gnt_entry_1a6205e2455b8043712ff84146204bb33c" kindref="member">
+                    ddown</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>The<sp/>dropdown<sp/>with<sp/>the<sp/>suggested<sp/>list<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="63" refid="struct___gnt_entry_class" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_entry_class" kindref="compound">_GntEntryClass</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="65" refid="struct___gnt_entry_class_1a67dea6bdb089093d277840b7ad43a1f2" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget_class" kindref="compound">GntWidgetClass</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_entry_class_1a67dea6bdb089093d277840b7ad43a1f2" kindref="member">
+                        parent</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="67" refid="struct___gnt_entry_class_1af0d1ebbd603169236c8c63334208383c" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_entry_class_1af0d1ebbd603169236c8c63334208383c"
+                                         kindref="member">text_changed</ref>)(
+                    <ref refid="struct___gnt_entry" kindref="compound">GntEntry</ref>
+                    <sp/>*entry);
+                </highlight>
+            </codeline>
+            <codeline lineno="68" refid="struct___gnt_entry_class_1a89dfce3a9aa0299a7819f8a4b9df5cef" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_entry_class_1a89dfce3a9aa0299a7819f8a4b9df5cef"
+                                         kindref="member">gnt_reserved1</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="69" refid="struct___gnt_entry_class_1abc424f0d49c73831a72f061af6b0ce1d" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_entry_class_1abc424f0d49c73831a72f061af6b0ce1d"
+                                         kindref="member">gnt_reserved2</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="70" refid="struct___gnt_entry_class_1a1e0be0259f96a3bff95418925fe8163e" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_entry_class_1a1e0be0259f96a3bff95418925fe8163e"
+                                         kindref="member">gnt_reserved3</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="71" refid="struct___gnt_entry_class_1a3f7d85f4e8f04f18386922c69c245469" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_entry_class_1a3f7d85f4e8f04f18386922c69c245469"
+                                         kindref="member">gnt_reserved4</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal">G_BEGIN_DECLS</highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal">GType
+                    <sp/>
+                    <ref refid="gntentry_8c_1a31808a4e51cecd0b0e7b70b8089aa71d" kindref="member">
+                        gnt_entry_get_gtype</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="normal">
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntentry_8c_1a21b7e87e8de08e042539b632b39b5fed" kindref="member">
+                    gnt_entry_new</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text);
+                </highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="80">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntentry_8c_1a2046f2ef35d11053d5fb235e6581717c" kindref="member">gnt_entry_set_max</ref>
+                    (
+                    <ref refid="struct___gnt_entry" kindref="compound">GntEntry</ref>
+                    <sp/>*entry,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>max);
+                </highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntentry_8c_1afabb5fb27e654edbde94650e99ebc5a0" kindref="member">
+                        gnt_entry_set_text</ref>(
+                    <ref refid="struct___gnt_entry" kindref="compound">GntEntry</ref>
+                    <sp/>*entry,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text);
+                </highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntentry_8c_1ab9727fe40da5f5647cf8d7e0d547d66f" kindref="member">
+                        gnt_entry_set_flag</ref>(
+                    <ref refid="struct___gnt_entry" kindref="compound">GntEntry</ref>
+                    <sp/>*entry,
+                    <sp/>
+                    <ref refid="gntentry_8h_1a5bfbe0e65eaab09beaba8811c535a547" kindref="member">GntEntryFlag</ref>
+                    <sp/>flag);
+                </highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntentry_8c_1a2653615def55f531c0ec85411458547b"
+                                                     kindref="member">gnt_entry_get_text</ref>(
+                    <ref refid="struct___gnt_entry" kindref="compound">GntEntry</ref>
+                    <sp/>*entry);
+                </highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntentry_8c_1ab15549d4cc0220ae997cad3a1fa96ee1" kindref="member">gnt_entry_clear</ref>(
+                    <ref refid="struct___gnt_entry" kindref="compound">GntEntry</ref>
+                    <sp/>*entry);
+                </highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntentry_8c_1a0678df544d0209d7063bde095de613c7" kindref="member">
+                        gnt_entry_set_masked</ref>(
+                    <ref refid="struct___gnt_entry" kindref="compound">GntEntry</ref>
+                    <sp/>*entry,<sp/>gboolean<sp/>set);
+                </highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntentry_8c_1a3e30f9e61d01d590077bf1fcb10f851a" kindref="member">
+                        gnt_entry_add_to_history</ref>(
+                    <ref refid="struct___gnt_entry" kindref="compound">GntEntry</ref>
+                    <sp/>*entry,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text);
+                </highlight>
+            </codeline>
+            <codeline lineno="93">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntentry_8c_1ad2cf6f659193b82302871b83efb8e280" kindref="member">
+                        gnt_entry_set_history_length</ref>(
+                    <ref refid="struct___gnt_entry" kindref="compound">GntEntry</ref>
+                    <sp/>*entry,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>num);
+                </highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntentry_8c_1aa1efdf9897cd13ee511a9928c6690f10" kindref="member">
+                        gnt_entry_set_word_suggest</ref>(
+                    <ref refid="struct___gnt_entry" kindref="compound">GntEntry</ref>
+                    <sp/>*entry,<sp/>gboolean<sp/>word);
+                </highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntentry_8c_1ac05701c4a84e1e1072f93d74dbcea5fa" kindref="member">
+                        gnt_entry_set_always_suggest</ref>(
+                    <ref refid="struct___gnt_entry" kindref="compound">GntEntry</ref>
+                    <sp/>*entry,<sp/>gboolean<sp/>always);
+                </highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="100">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntentry_8c_1a018cbacf15daf3d96561d872452da5cb" kindref="member">
+                        gnt_entry_add_suggest</ref>(
+                    <ref refid="struct___gnt_entry" kindref="compound">GntEntry</ref>
+                    <sp/>*entry,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text);
+                </highlight>
+            </codeline>
+            <codeline lineno="101">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="102">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntentry_8c_1a5e16c4ca6433687954b775607aebcc08" kindref="member">
+                        gnt_entry_remove_suggest</ref>(
+                    <ref refid="struct___gnt_entry" kindref="compound">GntEntry</ref>
+                    <sp/>*entry,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text);
+                </highlight>
+            </codeline>
+            <codeline lineno="103">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="104">
+                <highlight class="normal">G_END_DECLS</highlight>
+            </codeline>
+            <codeline lineno="105">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>GNT_ENTRY_H<sp/>*/
+                </highlight>
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntentry.h"/>
+    </compounddef>
+</doxygen>

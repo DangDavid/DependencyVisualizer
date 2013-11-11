@@ -15,7 +15,6 @@ public class ModuleData {
     private final List<String> includedByList;
     // key = file it depnds on, and the list what items are we using from that file ie functions, structs
     private final Map<String, List<String>> references;
-    // TODO: Maybe we should change this to a emun of data types ie. define or function....
     // holds what the file provides
     private final Map<String, String> dataObjects;
 

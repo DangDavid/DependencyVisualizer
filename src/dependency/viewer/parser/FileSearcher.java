@@ -6,7 +6,6 @@ import java.util.List;
 
 public class FileSearcher {
 
-    //private static final String FILE_DIR = "F:\\Downloads\\pidgin-2.10.7.tar\\pidgin-2.10.7\\pidgin-2.10.7\\finch\\xml";
     private static final String FILE_DIR = "/Users/taehyunkang/Downloads/pidgin-2.10.7/finch/xml";
     private static final String FILE_EXT1 = "_8h.xml";
     private static final String FILE_EXT2 = "_8c.xml";
@@ -52,14 +51,14 @@ public class FileSearcher {
 
     }
 
-    public List<String> getFiles() {
+    public List<String> getFiles(String folderName) {
 
 
         String absPath = new File("").getAbsolutePath();
         String fileDir = absPath + File.separator + "src"
                 + File.separator + "dependency"
                 + File.separator + "viewer"
-                + File.separator + "xml";
+                + File.separator + folderName;
 
 
         // preparation

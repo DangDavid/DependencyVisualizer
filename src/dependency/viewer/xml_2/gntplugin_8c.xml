@@ -1,0 +1,3992 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntplugin_8c" kind="file">
+        <compoundname>gntplugin.c</compoundname>
+        <includes refid="gnt_8h" local="no">gnt.h</includes>
+        <includes refid="gntbox_8h" local="no">gntbox.h</includes>
+        <includes refid="gntbutton_8h" local="no">gntbutton.h</includes>
+        <includes refid="gntlabel_8h" local="no">gntlabel.h</includes>
+        <includes refid="gntline_8h" local="no">gntline.h</includes>
+        <includes refid="gnttree_8h" local="no">gnttree.h</includes>
+        <includes local="yes">notify.h</includes>
+        <includes local="yes">request.h</includes>
+        <includes refid="finch_8h" local="yes">finch.h</includes>
+        <includes refid="gntplugin_8h" local="yes">gntplugin.h</includes>
+        <includes refid="gntrequest_8h" local="yes">gntrequest.h</includes>
+        <incdepgraph>
+            <node id="383">
+                <label>notify.h</label>
+            </node>
+            <node id="378">
+                <label>gntbutton.h</label>
+                <link refid="gntbutton_8h"/>
+                <childnode refid="366" relation="include">
+                </childnode>
+                <childnode refid="371" relation="include">
+                </childnode>
+                <childnode refid="365" relation="include">
+                </childnode>
+                <childnode refid="367" relation="include">
+                </childnode>
+            </node>
+            <node id="384">
+                <label>request.h</label>
+            </node>
+            <node id="373">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="366" relation="include">
+                </childnode>
+            </node>
+            <node id="380">
+                <label>gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="367" relation="include">
+                </childnode>
+                <childnode refid="365" relation="include">
+                </childnode>
+                <childnode refid="373" relation="include">
+                </childnode>
+                <childnode refid="374" relation="include">
+                </childnode>
+            </node>
+            <node id="376">
+                <label>term.h</label>
+            </node>
+            <node id="370">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="368" relation="include">
+                </childnode>
+                <childnode refid="366" relation="include">
+                </childnode>
+                <childnode refid="371" relation="include">
+                </childnode>
+                <childnode refid="369" relation="include">
+                </childnode>
+            </node>
+            <node id="372">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="368" relation="include">
+                </childnode>
+                <childnode refid="366" relation="include">
+                </childnode>
+                <childnode refid="371" relation="include">
+                </childnode>
+            </node>
+            <node id="365">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="366" relation="include">
+                </childnode>
+                <childnode refid="367" relation="include">
+                </childnode>
+                <childnode refid="372" relation="include">
+                </childnode>
+                <childnode refid="373" relation="include">
+                </childnode>
+                <childnode refid="374" relation="include">
+                </childnode>
+            </node>
+            <node id="375">
+                <label>curses.h</label>
+            </node>
+            <node id="364">
+                <label>gntplugin.c</label>
+                <link refid="gntplugin.c"/>
+                <childnode refid="365" relation="include">
+                </childnode>
+                <childnode refid="377" relation="include">
+                </childnode>
+                <childnode refid="378" relation="include">
+                </childnode>
+                <childnode refid="379" relation="include">
+                </childnode>
+                <childnode refid="381" relation="include">
+                </childnode>
+                <childnode refid="382" relation="include">
+                </childnode>
+                <childnode refid="383" relation="include">
+                </childnode>
+                <childnode refid="384" relation="include">
+                </childnode>
+                <childnode refid="385" relation="include">
+                </childnode>
+                <childnode refid="387" relation="include">
+                </childnode>
+                <childnode refid="391" relation="include">
+                </childnode>
+            </node>
+            <node id="387">
+                <label>gntplugin.h</label>
+                <link refid="gntplugin_8h"/>
+                <childnode refid="365" relation="include">
+                </childnode>
+                <childnode refid="388" relation="include">
+                </childnode>
+                <childnode refid="389" relation="include">
+                </childnode>
+                <childnode refid="390" relation="include">
+                </childnode>
+                <childnode refid="385" relation="include">
+                </childnode>
+            </node>
+            <node id="389">
+                <label>pluginpref.h</label>
+            </node>
+            <node id="391">
+                <label>gntrequest.h</label>
+                <link refid="gntrequest_8h"/>
+                <childnode refid="384" relation="include">
+                </childnode>
+            </node>
+            <node id="377">
+                <label>gntbox.h</label>
+                <link refid="gntbox_8h"/>
+                <childnode refid="365" relation="include">
+                </childnode>
+                <childnode refid="367" relation="include">
+                </childnode>
+            </node>
+            <node id="390">
+                <label>string.h</label>
+            </node>
+            <node id="388">
+                <label>plugin.h</label>
+            </node>
+            <node id="379">
+                <label>gntlabel.h</label>
+                <link refid="gntlabel_8h"/>
+                <childnode refid="365" relation="include">
+                </childnode>
+                <childnode refid="367" relation="include">
+                </childnode>
+                <childnode refid="380" relation="include">
+                </childnode>
+            </node>
+            <node id="366">
+                <label>glib.h</label>
+            </node>
+            <node id="367">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="368" relation="include">
+                </childnode>
+                <childnode refid="366" relation="include">
+                </childnode>
+                <childnode refid="369" relation="include">
+                </childnode>
+                <childnode refid="370" relation="include">
+                </childnode>
+            </node>
+            <node id="385">
+                <label>finch.h</label>
+                <link refid="finch_8h"/>
+                <childnode refid="366" relation="include">
+                </childnode>
+                <childnode refid="386" relation="include">
+                </childnode>
+            </node>
+            <node id="374">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="375" relation="include">
+                </childnode>
+                <childnode refid="376" relation="include">
+                </childnode>
+            </node>
+            <node id="369">
+                <label>ncurses.h</label>
+            </node>
+            <node id="381">
+                <label>gntline.h</label>
+                <link refid="gntline_8h"/>
+                <childnode refid="367" relation="include">
+                </childnode>
+                <childnode refid="365" relation="include">
+                </childnode>
+                <childnode refid="373" relation="include">
+                </childnode>
+                <childnode refid="374" relation="include">
+                </childnode>
+            </node>
+            <node id="382">
+                <label>gnttree.h</label>
+                <link refid="gnttree_8h"/>
+                <childnode refid="367" relation="include">
+                </childnode>
+                <childnode refid="365" relation="include">
+                </childnode>
+                <childnode refid="373" relation="include">
+                </childnode>
+                <childnode refid="374" relation="include">
+                </childnode>
+                <childnode refid="380" relation="include">
+                </childnode>
+            </node>
+            <node id="368">
+                <label>stdio.h</label>
+            </node>
+            <node id="386">
+                <label>libpurple/internal.h</label>
+            </node>
+            <node id="371">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <sectiondef kind="var">
+            <memberdef kind="variable" id="gntplugin_8c_1a02b069dc0867c55ec3886c1cf6223359" prot="public" static="no"
+                       mutable="no">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* tree</definition>
+                <argsstring></argsstring>
+                <name>tree</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          line="41" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          bodystart="41" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntplugin_8c_1af21fe6008e6e5d82746bc45e9cec36d3" prot="public" static="no"
+                       mutable="no">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* window</definition>
+                <argsstring></argsstring>
+                <name>window</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          line="42" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          bodystart="42" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntplugin_8c_1ac526ec532eaae5dc07f912126d33274f" prot="public" static="no"
+                       mutable="no">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* aboot</definition>
+                <argsstring></argsstring>
+                <name>aboot</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          line="43" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          bodystart="43" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntplugin_8c_1adac57d52113bebcf367f61c4bf8417b9" prot="public" static="no"
+                       mutable="no">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* conf</definition>
+                <argsstring></argsstring>
+                <name>conf</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          line="44" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          bodystart="44" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntplugin_8c_1a1ded61153dea6225aac130e190f9e0ed" prot="public" static="yes"
+                       mutable="no">
+                <type>struct @6</type>
+                <definition>struct @6 plugins</definition>
+                <argsstring></argsstring>
+                <name>plugins</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          line="45" column="1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntplugin_8c_1ae3c631d396cefa21497f76c7a112f65b" prot="public" static="yes"
+                       mutable="no">
+                <type>GHashTable *</type>
+                <definition>GHashTable* confwins</definition>
+                <argsstring></argsstring>
+                <name>confwins</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          line="47" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          bodystart="47" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntplugin_8c_1a6b0ee9cfb01ecf0dd6bb9530ad438476" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void process_pref_frame</definition>
+                <argsstring>(PurplePluginPrefFrame *frame)</argsstring>
+                <name>process_pref_frame</name>
+                <param>
+                    <type>PurplePluginPrefFrame *</type>
+                    <declname>frame</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          line="49" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          bodystart="284" bodyend="339"/>
+            </memberdef>
+            <memberdef kind="function" id="gntplugin_8c_1ae31547175888f1ecc20b40b823934eb9" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void decide_conf_button</definition>
+                <argsstring>(PurplePlugin *plugin)</argsstring>
+                <name>decide_conf_button</name>
+                <param>
+                    <type>PurplePlugin *</type>
+                    <declname>plugin</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          line="52" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          bodystart="52" bodyend="65"/>
+            </memberdef>
+            <memberdef kind="function" id="gntplugin_8c_1ac751ff2f78a34e0f11cf5457fded1654" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void plugin_toggled_cb</definition>
+                <argsstring>(GntWidget *tree, PurplePlugin *plugin, gpointer null)</argsstring>
+                <name>plugin_toggled_cb</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>tree</declname>
+                </param>
+                <param>
+                    <type>PurplePlugin *</type>
+                    <declname>plugin</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>null</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          line="68" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          bodystart="68" bodyend="94"/>
+            </memberdef>
+            <memberdef kind="function" id="gntplugin_8c_1afe64ec3451ac2de336ec3ad934c263ab" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_plugins_save_loaded</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_plugins_save_loaded</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Save the list of loaded plugins.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          line="98" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          bodystart="98" bodyend="101"/>
+            </memberdef>
+            <memberdef kind="function" id="gntplugin_8c_1ab176f3ee7c4c8ae68573ca6a23c818a0" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void selection_changed</definition>
+                <argsstring>(GntWidget *widget, gpointer old, gpointer current, gpointer null)</argsstring>
+                <name>selection_changed</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>old</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>current</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>null</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          line="104" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          bodystart="104" bodyend="119"/>
+            </memberdef>
+            <memberdef kind="function" id="gntplugin_8c_1ac081d1cdd845d1ed0d4e35df617b9dc7" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void reset_plugin_window</definition>
+                <argsstring>(GntWidget *window, gpointer null)</argsstring>
+                <name>reset_plugin_window</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>window</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>null</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          line="122" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          bodystart="122" bodyend="127"/>
+            </memberdef>
+            <memberdef kind="function" id="gntplugin_8c_1a604527586266d57c01c0e89190f5d0da" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>int</type>
+                <definition>static int plugin_compare</definition>
+                <argsstring>(PurplePlugin *p1, PurplePlugin *p2)</argsstring>
+                <name>plugin_compare</name>
+                <param>
+                    <type>PurplePlugin *</type>
+                    <declname>p1</declname>
+                </param>
+                <param>
+                    <type>PurplePlugin *</type>
+                    <declname>p2</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          line="130" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          bodystart="130" bodyend="138"/>
+            </memberdef>
+            <memberdef kind="function" id="gntplugin_8c_1ab7487c0ab0e3a894c7b7b90834aa9106" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void confwin_init</definition>
+                <argsstring>()</argsstring>
+                <name>confwin_init</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          line="141" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          bodystart="141" bodyend="144"/>
+            </memberdef>
+            <memberdef kind="function" id="gntplugin_8c_1af27b1ac69718d2be7d9924919292437a" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void remove_confwin</definition>
+                <argsstring>(GntWidget *window, gpointer plugin)</argsstring>
+                <name>remove_confwin</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>window</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>plugin</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          line="147" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          bodystart="147" bodyend="150"/>
+            </memberdef>
+            <memberdef kind="function" id="gntplugin_8c_1ac4206d9c3767005749f9503f682ba347" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void configure_plugin_cb</definition>
+                <argsstring>(GntWidget *button, gpointer null)</argsstring>
+                <name>configure_plugin_cb</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>button</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>null</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          line="153" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          bodystart="153" bodyend="211"/>
+            </memberdef>
+            <memberdef kind="function" id="gntplugin_8c_1ae1c81cceb9612a868c011fc30b9a57ac" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_plugins_show_all</definition>
+                <argsstring>()</argsstring>
+                <name>finch_plugins_show_all</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Show a list of plugins.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          line="213" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"
+                          bodystart="213" bodyend="281"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>GNT Plugins API</para>
+            <para>finch</para>
+            <para>Finch is the legal property of its developers, whose names are too numerous to list here. Please refer
+                to the COPYRIGHT file distributed with this source distribution.
+            </para>
+            <para>This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+                General Public License as published by the Free Software Foundation; either version 2 of the License, or
+                (at your option) any later version.
+            </para>
+            <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
+                the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public
+                License for more details.
+            </para>
+            <para>You should have received a copy of the GNU General Public License along with this program; if not,
+                write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+            </para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="25">
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gnt_8h" kindref="compound">gnt.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gntbox_8h" kindref="compound">
+                    gntbox.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gntbutton_8h" kindref="compound">
+                    gntbutton.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gntlabel_8h" kindref="compound">
+                    gntlabel.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gntline_8h" kindref="compound">
+                    gntline.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gnttree_8h" kindref="compound">
+                    gnttree.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;notify.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;request.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="finch_8h" kindref="compound">
+                    finch.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntplugin_8h" kindref="compound">
+                    gntplugin.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntrequest_8h" kindref="compound">
+                    gntrequest.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntdebug_8c_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntplugin_8c_1ac526ec532eaae5dc07f912126d33274f" kindref="member">aboot</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntplugin_8c_1adac57d52113bebcf367f61c4bf8417b9" kindref="member">conf</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal">}<sp/>plugins;
+                </highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>GHashTable<sp/>*confwins;
+                </highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>process_pref_frame(PurplePluginPrefFrame<sp/>*frame);
+                </highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal">decide_conf_button(PurplePlugin<sp/>*plugin)
+                </highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(purple_plugin_is_loaded(plugin)<sp/>&amp;&amp;
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>((<ref refid="gntplugin_8h_1a888681a90a979d6ced2ba23142e664e0" kindref="member">
+                    PURPLE_IS_GNT_PLUGIN</ref>(plugin)<sp/>&amp;&amp;
+                </highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntplugin_8h_1a78e94cfdd9159587874beb605e0c263f" kindref="member">
+                        FINCH_PLUGIN_UI_INFO</ref>(plugin)<sp/>!=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)<sp/>||
+                </highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(plugin-&gt;info-&gt;prefs_info<sp/>&amp;&amp;
+                </highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>plugin-&gt;info-&gt;prefs_info-&gt;get_plugin_pref_frame)))
+                </highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1ae7e46462ad7aa96c6aec7a6af1ccd507" kindref="member">
+                        gnt_widget_set_visible</ref>(plugins.conf,<sp/>TRUE);
+                </highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1ae7e46462ad7aa96c6aec7a6af1ccd507" kindref="member">
+                        gnt_widget_set_visible</ref>(plugins.conf,<sp/>FALSE);
+                </highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1a8a5bd5c5a9f01e79bc51a0da00a0d3a5" kindref="member">gnt_box_readjust</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>
+                    (plugins.window));
+                </highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1a5649d1eef659c94f4b9f137759982b72" kindref="member">gnt_widget_draw</ref>
+                    (plugins.window);
+                </highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal">plugin_toggled_cb(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
+                    PurplePlugin<sp/>*plugin,<sp/>gpointer<sp/>null)
+                </highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>TODO:<sp/>Mark<sp/>these<sp/>strings<sp/>for<sp/>translation<sp/>after
+                    <sp/>the<sp/>freeze<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(<ref refid="gnttree_8c_1a707a57fd9df3f326d87fc701e72e7a99"
+                                                     kindref="member">gnt_tree_get_choice</ref>(<ref
+                        refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd" kindref="member">GNT_TREE</ref>(tree),
+                    <sp/>plugin))
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!purple_plugin_load(plugin))<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_notify_error(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                  kindref="member">NULL</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;ERROR&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;loading<sp/>plugin<sp/>failed&quot;
+                </highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttree_8c_1a88fda0e1af95b48e63a9ccda00f0236a" kindref="member">
+                        gnt_tree_set_choice</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                       kindref="member">GNT_TREE</ref>(tree),<sp/>plugin,<sp/>FALSE);
+                </highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="80">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*win;
+                </highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!purple_plugin_unload(plugin))<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_notify_error(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                  kindref="member">NULL</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;ERROR&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;unloading<sp/>plugin<sp/>failed&quot;
+                </highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttree_8c_1a88fda0e1af95b48e63a9ccda00f0236a" kindref="member">
+                        gnt_tree_set_choice</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                       kindref="member">GNT_TREE</ref>(tree),<sp/>plugin,<sp/>TRUE);
+                </highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>((win<sp/>=<sp/>g_hash_table_lookup(confwins,<sp/>plugin))<sp/>!=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1a78927c2fe18c25b7feb1f8b4ebd78279" kindref="member">
+                        gnt_widget_destroy</ref>(win);
+                </highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>decide_conf_button(plugin);
+                </highlight>
+            </codeline>
+            <codeline lineno="93">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntplugin_8c_1afe64ec3451ac2de336ec3ad934c263ab" kindref="member">
+                        finch_plugins_save_loaded</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>Xerox<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal"><ref refid="gntplugin_8c_1afe64ec3451ac2de336ec3ad934c263ab" kindref="member">
+                    finch_plugins_save_loaded</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="100">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_plugins_save_loaded(
+                </highlight>
+                <highlight class="stringliteral">&quot;/finch/plugins/loaded&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="101">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="102">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="103">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="104">
+                <highlight class="normal">selection_changed(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget,<sp/>gpointer<sp/>old,<sp/>gpointer<sp/>current,<sp/>gpointer<sp/>null)
+                </highlight>
+            </codeline>
+            <codeline lineno="105">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurplePlugin<sp/>*plugin<sp/>=<sp/>current;
+                </highlight>
+            </codeline>
+            <codeline lineno="107">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text;
+                </highlight>
+            </codeline>
+            <codeline lineno="108">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="109">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>XXX:<sp/>Use<sp/>formatting<sp/>and<sp/>stuff<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="110">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a100b34187493fc9985191ac6b9a8c9f5" kindref="member">
+                        gnt_text_view_clear</ref>(<ref refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6"
+                                                       kindref="member">GNT_TEXT_VIEW</ref>(plugins.aboot));
+                </highlight>
+            </codeline>
+            <codeline lineno="111">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>text<sp/>=<sp/>g_strdup_printf(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Name:<sp/>%s\nVersion:<sp/>%s\nDescription:<sp/>%s\nAuthor:<sp/>
+                    %s\nWebsite:<sp/>%s\nFilename:<sp/>%s\n&quot;
+                </highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="112">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>(plugin-&gt;info-&gt;name),
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>(plugin-&gt;info-&gt;version),
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>(plugin-&gt;info-&gt;description),
+                </highlight>
+            </codeline>
+            <codeline lineno="113">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>(plugin-&gt;info-&gt;author),
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>(plugin-&gt;info-&gt;homepage),
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a2556cedeb1683d4b9fabc60808942dbd" kindref="member">SAFE</ref>(plugin-&gt;path));
+                </highlight>
+            </codeline>
+            <codeline lineno="114">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a491ccc844a5ec91e80108ecb40b105e7" kindref="member">
+                        gnt_text_view_append_text_with_flags</ref>(<ref
+                        refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW</ref>
+                    (plugins.aboot),
+                </highlight>
+            </codeline>
+            <codeline lineno="115">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>text,
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44ca22374b4f5f6078f171aeb5f2e7b1"
+                         kindref="member">GNT_TEXT_FLAG_NORMAL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="116">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8c_1abe14d408a8c657fa9f5f707717e9e72f" kindref="member">
+                        gnt_text_view_scroll</ref>(<ref refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6"
+                                                        kindref="member">GNT_TEXT_VIEW</ref>(plugins.aboot),<sp/>0);
+                </highlight>
+            </codeline>
+            <codeline lineno="117">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(text);
+                </highlight>
+            </codeline>
+            <codeline lineno="118">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>decide_conf_button(plugin);
+                </highlight>
+            </codeline>
+            <codeline lineno="119">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="120">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="121">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="122">
+                <highlight class="normal">reset_plugin_window(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntdebug_8c_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>,
+                    <sp/>gpointer<sp/>null)
+                </highlight>
+            </codeline>
+            <codeline lineno="123">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="124">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>plugins.window<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="125">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>plugins.tree<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="126">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>plugins.aboot<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="127">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="128">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="129">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="130">
+                <highlight class="normal">plugin_compare(PurplePlugin<sp/>*p1,<sp/>PurplePlugin<sp/>*p2)
+                </highlight>
+            </codeline>
+            <codeline lineno="131">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="132">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*s1<sp/>=<sp/>g_utf8_strup(p1-&gt;info-&gt;name,<sp/>-1);
+                </highlight>
+            </codeline>
+            <codeline lineno="133">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*s2<sp/>=<sp/>g_utf8_strup(p2-&gt;info-&gt;name,<sp/>-1);
+                </highlight>
+            </codeline>
+            <codeline lineno="134">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>ret<sp/>=<sp/>g_utf8_collate(s1,<sp/>s2);
+                </highlight>
+            </codeline>
+            <codeline lineno="135">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(s1);
+                </highlight>
+            </codeline>
+            <codeline lineno="136">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(s2);
+                </highlight>
+            </codeline>
+            <codeline lineno="137">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>ret;
+                </highlight>
+            </codeline>
+            <codeline lineno="138">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="139">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="140">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="141">
+                <highlight class="normal">confwin_init()</highlight>
+            </codeline>
+            <codeline lineno="142">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="143">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>confwins<sp/>=<sp/>g_hash_table_new(g_direct_hash,<sp/>g_direct_equal);
+                </highlight>
+            </codeline>
+            <codeline lineno="144">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="145">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="146">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="147">
+                <highlight class="normal">remove_confwin(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntdebug_8c_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>,
+                    <sp/>gpointer<sp/>plugin)
+                </highlight>
+            </codeline>
+            <codeline lineno="148">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="149">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_hash_table_remove(confwins,<sp/>plugin);
+                </highlight>
+            </codeline>
+            <codeline lineno="150">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="151">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="152">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="153">
+                <highlight class="normal">configure_plugin_cb(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*button,<sp/>gpointer<sp/>null)
+                </highlight>
+            </codeline>
+            <codeline lineno="154">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="155">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurplePlugin<sp/>*plugin;
+                </highlight>
+            </codeline>
+            <codeline lineno="156">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntplugin_8h_1ae6c0044cf09db615edcf3a0a8b08a211" kindref="member">FinchPluginFrame</ref>
+                    <sp/>callback;
+                </highlight>
+            </codeline>
+            <codeline lineno="157">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="158">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_return_if_fail(plugins.tree<sp/>!=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="159">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="160">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>plugin<sp/>=
+                    <sp/>
+                    <ref refid="gnttree_8c_1acc2a1aa7c3a6c453f85be5684767a231" kindref="member">
+                        gnt_tree_get_selection_data</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                               kindref="member">GNT_TREE</ref>(plugins.tree));
+                </highlight>
+            </codeline>
+            <codeline lineno="161">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!purple_plugin_is_loaded(plugin))
+                </highlight>
+            </codeline>
+            <codeline lineno="162">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="163">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_notify_error(plugin,<sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Error&quot;</highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="164">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Plugin<sp/>need<sp/>to<sp/>be<sp/>loaded<sp/>before<sp/>you<sp/>
+                    can<sp/>configure<sp/>it.&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="165">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="166">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="167">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="168">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(confwins<sp/>&amp;&amp;<sp/>g_hash_table_lookup(confwins,<sp/>plugin))
+                </highlight>
+            </codeline>
+            <codeline lineno="169">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="170">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="171">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(<ref refid="gntplugin_8h_1a888681a90a979d6ced2ba23142e664e0"
+                                                     kindref="member">PURPLE_IS_GNT_PLUGIN</ref>(plugin)<sp/>&amp;&amp;
+                </highlight>
+            </codeline>
+            <codeline lineno="172">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(callback<sp/>=
+                    <sp/>
+                    <ref refid="gntplugin_8h_1a78e94cfdd9159587874beb605e0c263f" kindref="member">
+                        FINCH_PLUGIN_UI_INFO</ref>(plugin))<sp/>!=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="173">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="174">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*
+                    <ref refid="gntdebug_8c_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>
+                    <sp/>=
+                    <sp/>
+                    <ref refid="gntbox_8h_1a2d45d265c7266ba5af351042fde9e718" kindref="member">gnt_vbox_new</ref>
+                    (FALSE);
+                </highlight>
+            </codeline>
+            <codeline lineno="175">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*box,<sp/>*button;
+                </highlight>
+            </codeline>
+            <codeline lineno="176">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="177">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1a7789c41d63e8b6b204727919c398ad0a" kindref="member">
+                        gnt_box_set_toplevel</ref>(<ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec"
+                                                        kindref="member">GNT_BOX</ref>(window),<sp/>TRUE);
+                </highlight>
+            </codeline>
+            <codeline lineno="178">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1a44429c371d6ea90f89d63a57cffabc66" kindref="member">gnt_box_set_title</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(window),
+                    <sp/>plugin-&gt;info-&gt;name);
+                </highlight>
+            </codeline>
+            <codeline lineno="179">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1afb6c544e642e187a84cd7c2e1b664ab0" kindref="member">
+                        gnt_box_set_alignment</ref>(<ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec"
+                                                         kindref="member">GNT_BOX</ref>(window),
+                    <sp/>
+                    <ref refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19aae4fd781c018d03a56f8e8f54454f3ab"
+                         kindref="member">GNT_ALIGN_MID</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="180">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="181">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>box<sp/>=<sp/>callback();
+                </highlight>
+            </codeline>
+            <codeline lineno="182">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(window),
+                    <sp/>box);
+                </highlight>
+            </codeline>
+            <codeline lineno="183">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="184">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>box<sp/>=
+                    <sp/>
+                    <ref refid="gntbox_8h_1adb651f9ad56bc755eb4e2ff6050264d1" kindref="member">gnt_hbox_new</ref>
+                    (FALSE);
+                </highlight>
+            </codeline>
+            <codeline lineno="185">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(window),
+                    <sp/>box);
+                </highlight>
+            </codeline>
+            <codeline lineno="186">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="187">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>button<sp/>=
+                    <sp/>
+                    <ref refid="gntbutton_8c_1aa28a2afc35e0a72e4565f7424a52713b" kindref="member">gnt_button_new</ref>
+                    (_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Close&quot;</highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="188">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    button);
+                </highlight>
+            </codeline>
+            <codeline lineno="189">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect_swapped(G_OBJECT(button),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;activate&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="190">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>G_CALLBACK(<ref refid="gntwidget_8c_1a78927c2fe18c25b7feb1f8b4ebd78279" kindref="member">
+                    gnt_widget_destroy</ref>),<sp/>window);
+                </highlight>
+            </codeline>
+            <codeline lineno="191">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect(G_OBJECT(window),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;destroy&quot;</highlight>
+                <highlight class="normal">,<sp/>G_CALLBACK(remove_confwin),<sp/>plugin);
+                </highlight>
+            </codeline>
+            <codeline lineno="192">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="193">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1acbf324f0d58ea327e559829cf187def4" kindref="member">gnt_widget_show</ref>
+                    (window);
+                </highlight>
+            </codeline>
+            <codeline lineno="194">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="195">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(confwins<sp/>==
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="196">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>confwin_init();
+                </highlight>
+            </codeline>
+            <codeline lineno="197">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_hash_table_insert(confwins,<sp/>plugin,<sp/>window);
+                </highlight>
+            </codeline>
+            <codeline lineno="198">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="199">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(plugin-&gt;info-&gt;prefs_info<sp/>&amp;&amp;
+                </highlight>
+            </codeline>
+            <codeline lineno="200">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>plugin-&gt;info-&gt;prefs_info-&gt;get_plugin_pref_frame)
+                </highlight>
+            </codeline>
+            <codeline lineno="201">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="202">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>process_pref_frame(plugin-&gt;info-&gt;prefs_info-&gt;get_plugin_pref_frame(plugin));
+                </highlight>
+            </codeline>
+            <codeline lineno="203">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="204">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="205">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="206">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="207">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_notify_info(plugin,<sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Error&quot;</highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="208">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;No<sp/>configuration<sp/>options<sp/>for<sp/>this<sp/>plugin.&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="209">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="210">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="211">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="212">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="213">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntplugin_8c_1ae1c81cceb9612a868c011fc30b9a57ac" kindref="member">
+                        finch_plugins_show_all</ref>()
+                </highlight>
+            </codeline>
+            <codeline lineno="214">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="215">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntdebug_8c_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>,
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
+                    *box,<sp/>*<ref refid="gntplugin_8c_1ac526ec532eaae5dc07f912126d33274f" kindref="member">aboot</ref>
+                    ,<sp/>*button;
+                </highlight>
+            </codeline>
+            <codeline lineno="216">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*iter;
+                </highlight>
+            </codeline>
+            <codeline lineno="217">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(plugins.window)
+                </highlight>
+            </codeline>
+            <codeline lineno="218">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="219">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="220">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_plugins_probe(G_MODULE_SUFFIX);
+                </highlight>
+            </codeline>
+            <codeline lineno="221">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="222">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>plugins.window<sp/>=<sp/>window<sp/>=
+                    <sp/>
+                    <ref refid="gntbox_8h_1a2d45d265c7266ba5af351042fde9e718" kindref="member">gnt_vbox_new</ref>
+                    (FALSE);
+                </highlight>
+            </codeline>
+            <codeline lineno="223">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1a7789c41d63e8b6b204727919c398ad0a" kindref="member">
+                        gnt_box_set_toplevel</ref>(<ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec"
+                                                        kindref="member">GNT_BOX</ref>(window),<sp/>TRUE);
+                </highlight>
+            </codeline>
+            <codeline lineno="224">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1a44429c371d6ea90f89d63a57cffabc66" kindref="member">gnt_box_set_title</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(window),
+                    <sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Plugins&quot;</highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="225">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1a3b7044e63e2ae35e7c8efaf5a1f8efdc" kindref="member">gnt_box_set_pad</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(window),
+                    <sp/>0);
+                </highlight>
+            </codeline>
+            <codeline lineno="226">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1afb6c544e642e187a84cd7c2e1b664ab0" kindref="member">
+                        gnt_box_set_alignment</ref>(<ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec"
+                                                         kindref="member">GNT_BOX</ref>(window),
+                    <sp/>
+                    <ref refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19aae4fd781c018d03a56f8e8f54454f3ab"
+                         kindref="member">GNT_ALIGN_MID</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="227">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="228">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(window),
+                </highlight>
+            </codeline>
+            <codeline lineno="229">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntlabel_8c_1a41ae500efcc7c1185c68177097bf7af4" kindref="member">gnt_label_new</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;You<sp/>can<sp/>(un)load<sp/>plugins<sp/>from<sp/>the<sp/>
+                    following<sp/>list.&quot;
+                </highlight>
+                <highlight class="normal">)));</highlight>
+            </codeline>
+            <codeline lineno="230">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(window),
+                    <sp/>
+                    <ref refid="gntline_8h_1af18d938971d6f9fe7ff87d5bcecd7a45" kindref="member">gnt_hline_new</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="231">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="232">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>box<sp/>=
+                    <sp/>
+                    <ref refid="gntbox_8h_1adb651f9ad56bc755eb4e2ff6050264d1" kindref="member">gnt_hbox_new</ref>
+                    (FALSE);
+                </highlight>
+            </codeline>
+            <codeline lineno="233">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(window),
+                    <sp/>box);
+                </highlight>
+            </codeline>
+            <codeline lineno="234">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(window),
+                    <sp/>
+                    <ref refid="gntline_8h_1af18d938971d6f9fe7ff87d5bcecd7a45" kindref="member">gnt_hline_new</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="235">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="236">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1a3b7044e63e2ae35e7c8efaf5a1f8efdc" kindref="member">gnt_box_set_pad</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    0);
+                </highlight>
+            </codeline>
+            <codeline lineno="237">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>plugins.tree<sp/>=<sp/>tree<sp/>=
+                    <sp/>
+                    <ref refid="gnttree_8c_1a9970244840eebd4cf70c0fbd17e998af" kindref="member">gnt_tree_new</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="238">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttree_8c_1ab5fa3bfe0a651c909caf80d7f691a7c8" kindref="member">
+                        gnt_tree_set_compare_func</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                             kindref="member">GNT_TREE</ref>(tree),<sp/>
+                    (GCompareFunc)plugin_compare);
+                </highlight>
+            </codeline>
+            <codeline lineno="239">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8h_1a5f05379dd2b5934fcd802ba477b6d9a5" kindref="member">
+                        GNT_WIDGET_SET_FLAGS</ref>(tree,
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18a8e7de21c4c04abced0009fc58414f00f"
+                         kindref="member">GNT_WIDGET_NO_BORDER</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="240">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    tree);
+                </highlight>
+            </codeline>
+            <codeline lineno="241">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),
+                    <sp/>
+                    <ref refid="gntline_8h_1af1f567134d0ce42f558c588fd5c362e0" kindref="member">gnt_vline_new</ref>());
+                </highlight>
+            </codeline>
+            <codeline lineno="242">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="243">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>plugins.aboot<sp/>=<sp/>aboot<sp/>=
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a3bdd397329f307fbdc41e776772bd316" kindref="member">
+                        gnt_text_view_new</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="244">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1a188549229f86aeddafd3a5f937c4e986" kindref="member">
+                        gnt_widget_set_size</ref>(aboot,<sp/>40,<sp/>20);
+                </highlight>
+            </codeline>
+            <codeline lineno="245">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    aboot);
+                </highlight>
+            </codeline>
+            <codeline lineno="246">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="247">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(iter<sp/>=<sp/>purple_plugins_get_all();<sp/>iter;<sp/>iter<sp/>=<sp/>
+                    iter-&gt;next)
+                </highlight>
+            </codeline>
+            <codeline lineno="248">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="249">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurplePlugin<sp/>*plug<sp/>=<sp/>iter-&gt;data;
+                </highlight>
+            </codeline>
+            <codeline lineno="250">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="251">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(plug-&gt;info-&gt;type<sp/>!=<sp/>PURPLE_PLUGIN_STANDARD<sp/>||
+                </highlight>
+            </codeline>
+            <codeline lineno="252">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(plug-&gt;info-&gt;flags<sp/>&amp;<sp/>PURPLE_PLUGIN_FLAG_INVISIBLE)<sp/>||
+                </highlight>
+            </codeline>
+            <codeline lineno="253">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>plug-&gt;error)
+                </highlight>
+            </codeline>
+            <codeline lineno="254">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">continue</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="255">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="256">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttree_8c_1a4e07543797b8d0d4dfc9c3cf2833bae1" kindref="member">
+                        gnt_tree_add_choice</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                       kindref="member">GNT_TREE</ref>(tree),<sp/>plug,
+                </highlight>
+            </codeline>
+            <codeline lineno="257">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttree_8c_1acef12ae8d90290b6620a15826d330b44" kindref="member">
+                        gnt_tree_create_row</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                       kindref="member">GNT_TREE</ref>(tree),<sp/>plug-&gt;info-&gt;name),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="258">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttree_8c_1a88fda0e1af95b48e63a9ccda00f0236a" kindref="member">
+                        gnt_tree_set_choice</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                       kindref="member">GNT_TREE</ref>(tree),<sp/>plug,<sp/>
+                    purple_plugin_is_loaded(plug));
+                </highlight>
+            </codeline>
+            <codeline lineno="259">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="260">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttree_8c_1ad74be8f3a1f13ec14c727567d935521f" kindref="member">
+                        gnt_tree_set_col_width</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                          kindref="member">GNT_TREE</ref>(tree),<sp/>0,<sp/>30);
+                </highlight>
+            </codeline>
+            <codeline lineno="261">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect(G_OBJECT(tree),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;toggled&quot;</highlight>
+                <highlight class="normal">,<sp/>G_CALLBACK(plugin_toggled_cb),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="262">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect(G_OBJECT(tree),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;selection_changed&quot;</highlight>
+                <highlight class="normal">,<sp/>G_CALLBACK(selection_changed),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="263">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="264">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>box<sp/>=
+                    <sp/>
+                    <ref refid="gntbox_8h_1adb651f9ad56bc755eb4e2ff6050264d1" kindref="member">gnt_hbox_new</ref>
+                    (FALSE);
+                </highlight>
+            </codeline>
+            <codeline lineno="265">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(window),
+                    <sp/>box);
+                </highlight>
+            </codeline>
+            <codeline lineno="266">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="267">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>button<sp/>=
+                    <sp/>
+                    <ref refid="gntbutton_8c_1aa28a2afc35e0a72e4565f7424a52713b" kindref="member">gnt_button_new</ref>
+                    (_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Close&quot;</highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="268">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    button);
+                </highlight>
+            </codeline>
+            <codeline lineno="269">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect_swapped(G_OBJECT(button),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;activate&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="270">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>G_CALLBACK(<ref refid="gntwidget_8c_1a78927c2fe18c25b7feb1f8b4ebd78279" kindref="member">
+                    gnt_widget_destroy</ref>),<sp/>window);
+                </highlight>
+            </codeline>
+            <codeline lineno="271">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="272">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>plugins.conf<sp/>=<sp/>button<sp/>=
+                    <sp/>
+                    <ref refid="gntbutton_8c_1aa28a2afc35e0a72e4565f7424a52713b" kindref="member">gnt_button_new</ref>
+                    (_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Configure<sp/>Plugin&quot;
+                </highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="273">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    button);
+                </highlight>
+            </codeline>
+            <codeline lineno="274">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect(G_OBJECT(button),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;activate&quot;</highlight>
+                <highlight class="normal">,<sp/>G_CALLBACK(configure_plugin_cb),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="275">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="276">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect(G_OBJECT(window),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;destroy&quot;</highlight>
+                <highlight class="normal">,<sp/>G_CALLBACK(reset_plugin_window),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="277">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="278">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1acbf324f0d58ea327e559829cf187def4" kindref="member">gnt_widget_show</ref>
+                    (window);
+                </highlight>
+            </codeline>
+            <codeline lineno="279">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="280">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>decide_conf_button(<ref refid="gnttree_8c_1acc2a1aa7c3a6c453f85be5684767a231" kindref="member">
+                    gnt_tree_get_selection_data</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                           kindref="member">GNT_TREE</ref>(tree)));
+                </highlight>
+            </codeline>
+            <codeline lineno="281">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="282">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="283">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="284">
+                <highlight class="normal">process_pref_frame(PurplePluginPrefFrame<sp/>*frame)
+                </highlight>
+            </codeline>
+            <codeline lineno="285">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="286">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleRequestField<sp/>*field;
+                </highlight>
+            </codeline>
+            <codeline lineno="287">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleRequestFields<sp/>*fields;
+                </highlight>
+            </codeline>
+            <codeline lineno="288">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleRequestFieldGroup<sp/>*group<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="289">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*prefs;
+                </highlight>
+            </codeline>
+            <codeline lineno="290">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="291">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>fields<sp/>=<sp/>purple_request_fields_new();
+                </highlight>
+            </codeline>
+            <codeline lineno="292">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="293">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(prefs<sp/>=<sp/>purple_plugin_pref_frame_get_prefs(frame);<sp/>prefs;
+                    <sp/>prefs<sp/>=<sp/>prefs-&gt;next)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="294">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurplePluginPref<sp/>*
+                    <ref refid="gntgf_8c_1a21e2f3a6dba4f898fc06fc26e4859bcf" kindref="member">pref</ref>
+                    <sp/>=<sp/>prefs-&gt;data;
+                </highlight>
+            </codeline>
+            <codeline lineno="295">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*name<sp/>=<sp/>purple_plugin_pref_get_name(pref);
+                </highlight>
+            </codeline>
+            <codeline lineno="296">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*label<sp/>=<sp/>purple_plugin_pref_get_label(pref);
+                </highlight>
+            </codeline>
+            <codeline lineno="297">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal">(name<sp/>==
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="298">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal">(label<sp/>==
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="299">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">continue</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="300">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="301">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal">(purple_plugin_pref_get_type(pref)<sp/>==<sp/>PURPLE_PLUGIN_PREF_INFO)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="302">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>field<sp/>=<sp/>purple_request_field_label_new(
+                </highlight>
+                <highlight class="stringliteral">&quot;*&quot;</highlight>
+                <highlight class="normal">,<sp/>purple_plugin_pref_get_label(pref));
+                </highlight>
+            </codeline>
+            <codeline lineno="303">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_field_group_add_field(group,<sp/>field);
+                </highlight>
+            </codeline>
+            <codeline lineno="304">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"><sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="305">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>group<sp/>=<sp/>purple_request_field_group_new(label);
+                </highlight>
+            </codeline>
+            <codeline lineno="306">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_fields_add_group(fields,<sp/>group);
+                </highlight>
+            </codeline>
+            <codeline lineno="307">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="308">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">continue</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="309">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="310">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="311">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>field<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="312">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">switch</highlight>
+                <highlight class="normal">(purple_prefs_get_type(name))<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="313">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal"><sp/>PURPLE_PREF_BOOLEAN:
+                </highlight>
+            </codeline>
+            <codeline lineno="314">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>field<sp/>=<sp/>purple_request_field_bool_new(name,<sp/>label,<sp/>
+                    purple_prefs_get_bool(name));
+                </highlight>
+            </codeline>
+            <codeline lineno="315">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="316">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal"><sp/>PURPLE_PREF_INT:
+                </highlight>
+            </codeline>
+            <codeline lineno="317">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>field<sp/>=<sp/>purple_request_field_int_new(name,<sp/>label,<sp/>purple_prefs_get_int(name));
+                </highlight>
+            </codeline>
+            <codeline lineno="318">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="319">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal"><sp/>PURPLE_PREF_STRING:
+                </highlight>
+            </codeline>
+            <codeline lineno="320">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>field<sp/>=<sp/>purple_request_field_string_new(name,<sp/>label,<sp/>
+                    purple_prefs_get_string(name),
+                </highlight>
+            </codeline>
+            <codeline lineno="321">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_plugin_pref_get_format_type(pref)<sp/>&amp;<sp/>PURPLE_STRING_FORMAT_TYPE_MULTILINE);
+                </highlight>
+            </codeline>
+            <codeline lineno="322">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="323">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">default</highlight>
+                <highlight class="normal">:</highlight>
+            </codeline>
+            <codeline lineno="324">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="325">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="326">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(field)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="327">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(group<sp/>==
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="328">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>group<sp/>=<sp/>purple_request_field_group_new(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Preferences&quot;</highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="329">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_fields_add_group(fields,<sp/>group);
+                </highlight>
+            </codeline>
+            <codeline lineno="330">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="331">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_field_group_add_field(group,<sp/>field);
+                </highlight>
+            </codeline>
+            <codeline lineno="332">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="333">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="334">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="335">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_fields(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                    kindref="member">NULL</ref>,<sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Preferences&quot;</highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,<sp/>fields,
+                </highlight>
+            </codeline>
+            <codeline lineno="336">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Save&quot;</highlight>
+                <highlight class="normal">),<sp/>G_CALLBACK(<ref
+                        refid="gntrequest_8c_1a6d4123bd0fc451e7d6bf6278f331f22c" kindref="member">
+                    finch_request_save_in_prefs</ref>),<sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Cancel&quot;</highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="337">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="338">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="339">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="340">
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntplugin.c"/>
+    </compounddef>
+</doxygen>

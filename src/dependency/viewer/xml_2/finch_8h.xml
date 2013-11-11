@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="finch_8h" kind="file">
+        <compoundname>finch.h</compoundname>
+        <includes local="no">glib.h</includes>
+        <includes local="yes">libpurple/internal.h</includes>
+        <includedby refid="finch_8c" local="yes">finch.c</includedby>
+        <includedby refid="gntaccount_8c" local="yes">gntaccount.c</includedby>
+        <includedby refid="gntblist_8c" local="yes">gntblist.c</includedby>
+        <includedby refid="gntconn_8c" local="yes">gntconn.c</includedby>
+        <includedby refid="gntconv_8c" local="yes">gntconv.c</includedby>
+        <includedby refid="gntplugin_8h" local="yes">gntplugin.h</includedby>
+        <includedby refid="gntdebug_8c" local="yes">gntdebug.c</includedby>
+        <includedby refid="gntnotify_8c" local="yes">gntnotify.c</includedby>
+        <includedby refid="gntplugin_8c" local="yes">gntplugin.c</includedby>
+        <includedby refid="gntpounce_8c" local="yes">gntpounce.c</includedby>
+        <includedby refid="gntprefs_8c" local="yes">gntprefs.c</includedby>
+        <includedby refid="gntrequest_8c" local="yes">gntrequest.c</includedby>
+        <includedby refid="gntstatus_8c" local="yes">gntstatus.c</includedby>
+        <incdepgraph>
+            <node id="40">
+                <label>glib.h</label>
+            </node>
+            <node id="39">
+                <label>finch.h</label>
+                <link refid="finch.h"/>
+                <childnode refid="40" relation="include">
+                </childnode>
+                <childnode refid="41" relation="include">
+                </childnode>
+            </node>
+            <node id="41">
+                <label>libpurple/internal.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="56">
+                <label>gntnotify.c</label>
+                <link refid="gntnotify_8c"/>
+            </node>
+            <node id="52">
+                <label>plugins/gntgf.c</label>
+                <link refid="gntgf_8c"/>
+            </node>
+            <node id="58">
+                <label>gntprefs.c</label>
+                <link refid="gntprefs_8c"/>
+            </node>
+            <node id="54">
+                <label>plugins/lastlog.c</label>
+                <link refid="lastlog_8c"/>
+            </node>
+            <node id="44">
+                <label>gntaccount.c</label>
+                <link refid="gntaccount_8c"/>
+            </node>
+            <node id="53">
+                <label>plugins/gnthistory.c</label>
+                <link refid="gnthistory_8c"/>
+            </node>
+            <node id="49">
+                <label>gntplugin.c</label>
+                <link refid="gntplugin_8c"/>
+            </node>
+            <node id="45">
+                <label>gntblist.c</label>
+                <link refid="gntblist_8c"/>
+            </node>
+            <node id="48">
+                <label>gntplugin.h</label>
+                <link refid="gntplugin_8h"/>
+                <childnode refid="47" relation="include">
+                </childnode>
+                <childnode refid="49" relation="include">
+                </childnode>
+                <childnode refid="50" relation="include">
+                </childnode>
+                <childnode refid="51" relation="include">
+                </childnode>
+                <childnode refid="52" relation="include">
+                </childnode>
+                <childnode refid="53" relation="include">
+                </childnode>
+                <childnode refid="54" relation="include">
+                </childnode>
+            </node>
+            <node id="59">
+                <label>gntrequest.c</label>
+                <link refid="gntrequest_8c"/>
+            </node>
+            <node id="51">
+                <label>plugins/gntclipboard.c</label>
+                <link refid="plugins_2gntclipboard_8c"/>
+            </node>
+            <node id="57">
+                <label>gntpounce.c</label>
+                <link refid="gntpounce_8c"/>
+            </node>
+            <node id="43">
+                <label>finch.c</label>
+                <link refid="finch_8c"/>
+            </node>
+            <node id="42">
+                <label>finch.h</label>
+                <link refid="finch.h"/>
+                <childnode refid="43" relation="include">
+                </childnode>
+                <childnode refid="44" relation="include">
+                </childnode>
+                <childnode refid="45" relation="include">
+                </childnode>
+                <childnode refid="46" relation="include">
+                </childnode>
+                <childnode refid="47" relation="include">
+                </childnode>
+                <childnode refid="48" relation="include">
+                </childnode>
+                <childnode refid="55" relation="include">
+                </childnode>
+                <childnode refid="56" relation="include">
+                </childnode>
+                <childnode refid="49" relation="include">
+                </childnode>
+                <childnode refid="57" relation="include">
+                </childnode>
+                <childnode refid="58" relation="include">
+                </childnode>
+                <childnode refid="59" relation="include">
+                </childnode>
+                <childnode refid="60" relation="include">
+                </childnode>
+            </node>
+            <node id="50">
+                <label>gntui.c</label>
+                <link refid="gntui_8c"/>
+            </node>
+            <node id="46">
+                <label>gntconn.c</label>
+                <link refid="gntconn_8c"/>
+            </node>
+            <node id="47">
+                <label>gntconv.c</label>
+                <link refid="gntconv_8c"/>
+            </node>
+            <node id="55">
+                <label>gntdebug.c</label>
+                <link refid="gntdebug_8c"/>
+            </node>
+            <node id="60">
+                <label>gntstatus.c</label>
+                <link refid="gntstatus_8c"/>
+            </node>
+        </invincdepgraph>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="finch_8h_1ad0d0069435cfbff1b86014654d36fe3c" prot="public" static="no">
+                <name>FINCH_UI</name>
+                <initializer>&quot;gnt-purple&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.h"
+                          line="28" column="9"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.h"
+                          bodystart="28" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="24">
+                <highlight class="preprocessor">#include<sp/>&lt;glib.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;libpurple/internal.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28" refid="finch_8h_1ad0d0069435cfbff1b86014654d36fe3c" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>FINCH_UI<sp/>&quot;gnt-purple&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/finch.h"/>
+    </compounddef>
+</doxygen>

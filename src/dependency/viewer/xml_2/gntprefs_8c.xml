@@ -1,0 +1,3027 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntprefs_8c" kind="file">
+        <compoundname>gntprefs.c</compoundname>
+        <includes local="no">prefs.h</includes>
+        <includes local="no">savedstatuses.h</includes>
+        <includes refid="finch_8h" local="yes">finch.h</includes>
+        <includes refid="gntprefs_8h" local="yes">gntprefs.h</includes>
+        <includes refid="gntrequest_8h" local="yes">gntrequest.h</includes>
+        <includes local="no">string.h</includes>
+        <incdepgraph>
+            <node id="461">
+                <label>gntprefs.c</label>
+                <link refid="gntprefs.c"/>
+                <childnode refid="462" relation="include">
+                </childnode>
+                <childnode refid="463" relation="include">
+                </childnode>
+                <childnode refid="464" relation="include">
+                </childnode>
+                <childnode refid="467" relation="include">
+                </childnode>
+                <childnode refid="468" relation="include">
+                </childnode>
+                <childnode refid="470" relation="include">
+                </childnode>
+            </node>
+            <node id="467">
+                <label>gntprefs.h</label>
+                <link refid="gntprefs_8h"/>
+            </node>
+            <node id="469">
+                <label>request.h</label>
+            </node>
+            <node id="463">
+                <label>savedstatuses.h</label>
+            </node>
+            <node id="468">
+                <label>gntrequest.h</label>
+                <link refid="gntrequest_8h"/>
+                <childnode refid="469" relation="include">
+                </childnode>
+            </node>
+            <node id="470">
+                <label>string.h</label>
+            </node>
+            <node id="462">
+                <label>prefs.h</label>
+            </node>
+            <node id="465">
+                <label>glib.h</label>
+            </node>
+            <node id="464">
+                <label>finch.h</label>
+                <link refid="finch_8h"/>
+                <childnode refid="465" relation="include">
+                </childnode>
+                <childnode refid="466" relation="include">
+                </childnode>
+            </node>
+            <node id="466">
+                <label>libpurple/internal.h</label>
+            </node>
+        </incdepgraph>
+        <innerclass refid="struct_prefs" prot="public">Prefs</innerclass>
+        <sectiondef kind="var">
+            <memberdef kind="variable" id="gntprefs_8c_1a54b15b1d02e7e69b49b41be910743fa4" prot="public" static="yes"
+                       mutable="no">
+                <type>GList *</type>
+                <definition>GList* freestrings</definition>
+                <argsstring></argsstring>
+                <name>freestrings</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          line="34" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          bodystart="34" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntprefs_8c_1a0962342a481a7ad496105499850b6e60" prot="public" static="yes"
+                       mutable="no">
+                <type>
+                    <ref refid="struct_prefs" kindref="compound">Prefs</ref>
+                </type>
+                <definition>Prefs blist[]</definition>
+                <argsstring>[]</argsstring>
+                <name>blist</name>
+                <initializer>=
+                    {
+                    {PURPLE_PREF_BOOLEAN, &quot;/finch/blist/idletime&quot;, N_(&quot;Show Idle Time&quot;), NULL},
+                    {PURPLE_PREF_BOOLEAN, &quot;/finch/blist/showoffline&quot;, N_(&quot;Show Offline Buddies&quot;),
+                    NULL},
+                    {PURPLE_PREF_NONE,<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">
+                        NULL</ref>,<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">
+                        NULL</ref>,<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">
+                        NULL</ref>}
+                    }
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          line="168" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          bodystart="168" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntprefs_8c_1a5f7d27fda2c3fe9d1c5fbb0cfdfbeb80" prot="public" static="yes"
+                       mutable="no">
+                <type>
+                    <ref refid="struct_prefs" kindref="compound">Prefs</ref>
+                </type>
+                <definition>Prefs convs[]</definition>
+                <argsstring>[]</argsstring>
+                <name>convs</name>
+                <initializer>=
+                    {
+                    {PURPLE_PREF_BOOLEAN, &quot;/finch/conversations/<ref
+                            refid="gntdebug_8c_1a2bcc511dd6ef95bbdffe9886515321f7" kindref="member">timestamps</ref>
+                    &quot;, N_(&quot;Show Timestamps&quot;), NULL},
+                    {PURPLE_PREF_BOOLEAN, &quot;/finch/conversations/notify_typing&quot;, N_(&quot;Notify buddies when
+                    you are typing&quot;), NULL},
+                    {PURPLE_PREF_NONE,<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">
+                        NULL</ref>,<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">
+                        NULL</ref>,<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">
+                        NULL</ref>}
+                    }
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          line="175" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          bodystart="175" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntprefs_8c_1a292c46a66314af9246e38bbbd620adb4" prot="public" static="yes"
+                       mutable="no">
+                <type>
+                    <ref refid="struct_prefs" kindref="compound">Prefs</ref>
+                </type>
+                <definition>Prefs logging[]</definition>
+                <argsstring>[]</argsstring>
+                <name>logging</name>
+                <initializer>=
+                    {
+                    {PURPLE_PREF_STRING, &quot;/purple/logging/format&quot;, N_(&quot;Log format&quot;),
+                    get_log_options},
+                    {PURPLE_PREF_BOOLEAN, &quot;/purple/logging/log_ims&quot;, N_(&quot;Log IMs&quot;), NULL},
+                    {PURPLE_PREF_BOOLEAN, &quot;/purple/logging/log_chats&quot;, N_(&quot;Log chats&quot;), NULL},
+                    {PURPLE_PREF_BOOLEAN, &quot;/purple/logging/log_system&quot;, N_(&quot;Log status change events&quot;),
+                    NULL},
+                    {PURPLE_PREF_NONE,<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">
+                        NULL</ref>,<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">
+                        NULL</ref>,<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">
+                        NULL</ref>},
+                    }
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          line="182" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          bodystart="182" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntprefs_8c_1aef50e71958efdcf42ad6fc94813cadd8" prot="public" static="yes"
+                       mutable="no">
+                <type>
+                    <ref refid="struct_prefs" kindref="compound">Prefs</ref>
+                </type>
+                <definition>Prefs idle[]</definition>
+                <argsstring>[]</argsstring>
+                <name>idle</name>
+                <initializer>=
+                    {
+                    {PURPLE_PREF_STRING, &quot;/purple/away/idle_reporting&quot;, &quot;Report Idle time&quot;,
+                    get_idle_options},
+                    {PURPLE_PREF_BOOLEAN, &quot;/purple/away/away_when_idle&quot;, &quot;Change status when idle&quot;,
+                    NULL},
+                    {PURPLE_PREF_INT, &quot;/purple/away/mins_before_away&quot;, &quot;Minutes before changing status&quot;,
+                    NULL},
+                    {PURPLE_PREF_INT, &quot;/purple/savedstatus/idleaway&quot;, &quot;Change status<ref
+                            refid="getopt_8c_1a7347696a672e26aa962713eb3ab3cdb6" kindref="member">to</ref>&quot;,
+                    get_status_titles},
+                    {PURPLE_PREF_NONE,<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">
+                        NULL</ref>,<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">
+                        NULL</ref>,<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">
+                        NULL</ref>},
+                    }
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          line="192" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          bodystart="192" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntprefs_8c_1ab9c843e752ac4956fd8cd340f4a0eada" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_prefs_init</definition>
+                <argsstring>()</argsstring>
+                <name>finch_prefs_init</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Perform necessary initializations.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          line="36" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          bodystart="36" bodyend="46"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprefs_8c_1ab19fa75bca9001029e9519a9eb4a7e4c" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_prefs_update_old</definition>
+                <argsstring>()</argsstring>
+                <name>finch_prefs_update_old</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>You don&apos;t need to know about this.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          line="48" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          bodystart="48" bodyend="58"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprefs_8c_1a6fa55a5c4a7ace1132b56a2b6568f8fc" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>GList *</type>
+                <definition>static GList* get_log_options</definition>
+                <argsstring>()</argsstring>
+                <name>get_log_options</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          line="69" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          bodystart="69" bodyend="72"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprefs_8c_1a76d1ce7f0ac68309a81eabeb9a55f974" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>GList *</type>
+                <definition>static GList* get_idle_options</definition>
+                <argsstring>()</argsstring>
+                <name>get_idle_options</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          line="75" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          bodystart="75" bodyend="85"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprefs_8c_1a101e964a5cdbc5eb52b6f8d4692d3b9b" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>GList *</type>
+                <definition>static GList* get_status_titles</definition>
+                <argsstring>()</argsstring>
+                <name>get_status_titles</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          line="88" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          bodystart="88" bodyend="102"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprefs_8c_1a649fdeec8976770d626ef18b102cbfd4" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>PurpleRequestField *</type>
+                <definition>static PurpleRequestField* get_pref_field</definition>
+                <argsstring>(Prefs *prefs)</argsstring>
+                <name>get_pref_field</name>
+                <param>
+                    <type>
+                        <ref refid="struct_prefs" kindref="compound">Prefs</ref>
+                        *
+                    </type>
+                    <declname>prefs</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          line="105" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          bodystart="105" bodyend="166"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprefs_8c_1ad604343aed79919003de1a990566f6ed" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void free_strings</definition>
+                <argsstring>()</argsstring>
+                <name>free_strings</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          line="202" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          bodystart="202" bodyend="207"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprefs_8c_1ab8a07d278d73775bea9fe9c092ced708" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void save_cb</definition>
+                <argsstring>(void *data, PurpleRequestFields *allfields)</argsstring>
+                <name>save_cb</name>
+                <param>
+                    <type>void *</type>
+                    <declname>data</declname>
+                </param>
+                <param>
+                    <type>PurpleRequestFields *</type>
+                    <declname>allfields</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          line="210" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          bodystart="210" bodyend="214"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprefs_8c_1a84d90857cda594a94857313de5ae391f" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void add_pref_group</definition>
+                <argsstring>(PurpleRequestFields *fields, const char *title, Prefs *prefs)</argsstring>
+                <name>add_pref_group</name>
+                <param>
+                    <type>PurpleRequestFields *</type>
+                    <declname>fields</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>title</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="struct_prefs" kindref="compound">Prefs</ref>
+                        *
+                    </type>
+                    <declname>prefs</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          line="217" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          bodystart="217" bodyend="231"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprefs_8c_1ab651b7e3ae4cd958d96f9ad93c614047" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_prefs_show_all</definition>
+                <argsstring>()</argsstring>
+                <name>finch_prefs_show_all</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Show the preferences dialog.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          line="233" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"
+                          bodystart="233" bodyend="248"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>GNT Preferences API</para>
+            <para>finch</para>
+            <para>Finch is the legal property of its developers, whose names are too numerous to list here. Please refer
+                to the COPYRIGHT file distributed with this source distribution.
+            </para>
+            <para>This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+                General Public License as published by the Free Software Foundation; either version 2 of the License, or
+                (at your option) any later version.
+            </para>
+            <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
+                the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public
+                License for more details.
+            </para>
+            <para>You should have received a copy of the GNU General Public License along with this program; if not,
+                write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+            </para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="25">
+                <highlight class="preprocessor">#include<sp/>&lt;prefs.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;savedstatuses.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="finch_8h" kindref="compound">
+                    finch.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntprefs_8h" kindref="compound">
+                    gntprefs.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntrequest_8h" kindref="compound">
+                    gntrequest.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;string.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>GList<sp/>*freestrings;
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>strings<sp/>to<sp/>be<sp/>freed<sp/>when<sp/>the<sp/>pref-window<sp/>
+                    is<sp/>closed<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntprefs_8c_1ab9c843e752ac4956fd8cd340f4a0eada" kindref="member">finch_prefs_init</ref>
+                    ()
+                </highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_add_none(
+                </highlight>
+                <highlight class="stringliteral">&quot;/finch&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_add_none(
+                </highlight>
+                <highlight class="stringliteral">&quot;/finch/plugins&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_add_path_list(
+                </highlight>
+                <highlight class="stringliteral">&quot;/finch/plugins/loaded&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_add_none(
+                </highlight>
+                <highlight class="stringliteral">&quot;/finch/conversations&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_add_bool(
+                </highlight>
+                <highlight class="stringliteral">&quot;/finch/conversations/timestamps&quot;</highlight>
+                <highlight class="normal">,<sp/>TRUE);
+                </highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_add_bool(
+                </highlight>
+                <highlight class="stringliteral">&quot;/finch/conversations/notify_typing&quot;</highlight>
+                <highlight class="normal">,<sp/>FALSE);
+                </highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntprefs_8c_1ab19fa75bca9001029e9519a9eb4a7e4c" kindref="member">
+                        finch_prefs_update_old</ref>()
+                </highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*str<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_rename(
+                </highlight>
+                <highlight class="stringliteral">&quot;/gaim/gnt&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/finch&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_rename(
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/gnt&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/finch&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>((str<sp/>=<sp/>purple_prefs_get_string(
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/away/idle_reporting&quot;</highlight>
+                <highlight class="normal">))<sp/>&amp;&amp;
+                </highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>strcmp(str,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;gaim&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_set_string(
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/away/idle_reporting&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;purple&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="60" refid="struct_prefs" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurplePrefType<sp/>type;
+                </highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntgf_8c_1a21e2f3a6dba4f898fc06fc26e4859bcf"
+                                                     kindref="member">pref</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*label;
+                </highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*(*lv)();
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>If<sp/>the<sp/>value<sp/>is<sp/>to<sp/>be<sp/>selected<sp/>from<sp/>a
+                    <sp/>number<sp/>of<sp/>choices<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal">}
+                    <sp/>
+                    <ref refid="struct_prefs" kindref="compound">Prefs</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>GList<sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal">get_log_options()</highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>purple_log_logger_get_options();
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>GList<sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal">get_idle_options()</highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*list<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>list<sp/>=<sp/>g_list_append(list,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Based<sp/>on<sp/>keyboard<sp/>use&quot;
+                </highlight>
+                <highlight class="normal">);
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>XXX:<sp/>string<sp/>freeze<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>list<sp/>=<sp/>g_list_append(list,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;system&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="80">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>list<sp/>=<sp/>g_list_append(list,<sp/>(
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal">*)_(</highlight>
+                <highlight class="stringliteral">&quot;From<sp/>last<sp/>sent<sp/>message&quot;
+                </highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>list<sp/>=<sp/>g_list_append(list,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;purple&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>list<sp/>=<sp/>g_list_append(list,<sp/>(
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal">*)_(</highlight>
+                <highlight class="stringliteral">&quot;Never&quot;</highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>list<sp/>=<sp/>g_list_append(list,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;never&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>list;
+                </highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>GList<sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal">get_status_titles()</highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*list<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal"><sp/>GList<sp/>*iter;
+                </highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(iter<sp/>=<sp/>purple_savedstatuses_get_all();<sp/>iter;<sp/>iter<sp/>=
+                    <sp/>iter-&gt;next)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="93">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*str;
+                </highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(purple_savedstatus_is_transient(iter-&gt;data))
+                </highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">continue</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>str<sp/>=<sp/>g_strdup_printf(
+                </highlight>
+                <highlight class="stringliteral">&quot;%ld&quot;</highlight>
+                <highlight class="normal">,<sp/>purple_savedstatus_get_creation_time(iter-&gt;data));
+                </highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>list<sp/>=<sp/>g_list_append(list,<sp/>(
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal">*)purple_savedstatus_get_title(iter-&gt;data));</highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>list<sp/>=<sp/>g_list_append(list,<sp/>str);
+                </highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>freestrings<sp/>=<sp/>g_list_prepend(freestrings,<sp/>str);
+                </highlight>
+            </codeline>
+            <codeline lineno="100">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="101">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>list;
+                </highlight>
+            </codeline>
+            <codeline lineno="102">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="103">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="104">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>PurpleRequestField<sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="105">
+                <highlight class="normal">get_pref_field(
+                    <ref refid="struct_prefs" kindref="compound">Prefs</ref>
+                    <sp/>*prefs)
+                </highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="107">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleRequestField<sp/>*field<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="108">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="109">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(prefs-&gt;
+                    <ref refid="struct_prefs_1adae5bf0d9563b0707e5dd936ae2396cb" kindref="member">lv</ref>
+                    <sp/>==
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="110">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="111">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">switch</highlight>
+                <highlight class="normal"><sp/>(prefs-&gt;<ref refid="struct_prefs_1a8f163f5117c28294901cca7d046941af"
+                                                               kindref="member">type</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="112">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="113">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal"><sp/>PURPLE_PREF_BOOLEAN:
+                </highlight>
+            </codeline>
+            <codeline lineno="114">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>field<sp/>=<sp/>purple_request_field_bool_new(prefs-&gt;<ref
+                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>,<sp/>
+                    _(prefs-&gt;<ref refid="struct_prefs_1ab5fbdb5052858ca8d2538566229fbe64" kindref="member">
+                    label</ref>),
+                </highlight>
+            </codeline>
+            <codeline lineno="115">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_get_bool(prefs-&gt;<ref refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122"
+                                                              kindref="member">pref</ref>));
+                </highlight>
+            </codeline>
+            <codeline lineno="116">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="117">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal"><sp/>PURPLE_PREF_INT:
+                </highlight>
+            </codeline>
+            <codeline lineno="118">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>field<sp/>=<sp/>purple_request_field_int_new(prefs-&gt;<ref
+                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>,<sp/>
+                    _(prefs-&gt;<ref refid="struct_prefs_1ab5fbdb5052858ca8d2538566229fbe64" kindref="member">
+                    label</ref>),
+                </highlight>
+            </codeline>
+            <codeline lineno="119">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_get_int(prefs-&gt;<ref refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122"
+                                                             kindref="member">pref</ref>));
+                </highlight>
+            </codeline>
+            <codeline lineno="120">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="121">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal"><sp/>PURPLE_PREF_STRING:
+                </highlight>
+            </codeline>
+            <codeline lineno="122">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>field<sp/>=<sp/>purple_request_field_string_new(prefs-&gt;<ref
+                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>,<sp/>
+                    _(prefs-&gt;<ref refid="struct_prefs_1ab5fbdb5052858ca8d2538566229fbe64" kindref="member">
+                    label</ref>),
+                </highlight>
+            </codeline>
+            <codeline lineno="123">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_get_string(prefs-&gt;<ref refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122"
+                                                                kindref="member">pref</ref>),<sp/>FALSE);
+                </highlight>
+            </codeline>
+            <codeline lineno="124">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="125">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">default</highlight>
+                <highlight class="normal">:</highlight>
+            </codeline>
+            <codeline lineno="126">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="127">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="128">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="129">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="130">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="131">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*list<sp/>=<sp/>prefs-&gt;<ref
+                        refid="struct_prefs_1adae5bf0d9563b0707e5dd936ae2396cb" kindref="member">lv</ref>(),<sp/>*iter;
+                </highlight>
+            </codeline>
+            <codeline lineno="132">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(list)
+                </highlight>
+            </codeline>
+            <codeline lineno="133">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>field<sp/>=<sp/>purple_request_field_list_new(prefs-&gt;<ref
+                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>,<sp/>
+                    _(prefs-&gt;<ref refid="struct_prefs_1ab5fbdb5052858ca8d2538566229fbe64" kindref="member">
+                    label</ref>));
+                </highlight>
+            </codeline>
+            <codeline lineno="134">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(iter<sp/>=<sp/>list;<sp/>iter;<sp/>iter<sp/>=<sp/>iter-&gt;next)
+                </highlight>
+            </codeline>
+            <codeline lineno="135">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="136">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean<sp/>select<sp/>=<sp/>FALSE;
+                </highlight>
+            </codeline>
+            <codeline lineno="137">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*data<sp/>=<sp/>iter-&gt;data;
+                </highlight>
+            </codeline>
+            <codeline lineno="138">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>idata;
+                </highlight>
+            </codeline>
+            <codeline lineno="139">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>iter<sp/>=<sp/>iter-&gt;next;
+                </highlight>
+            </codeline>
+            <codeline lineno="140">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">switch</highlight>
+                <highlight class="normal"><sp/>(prefs-&gt;<ref refid="struct_prefs_1a8f163f5117c28294901cca7d046941af"
+                                                               kindref="member">type</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="141">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="142">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal"><sp/>PURPLE_PREF_BOOLEAN:
+                </highlight>
+            </codeline>
+            <codeline lineno="143">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>sscanf(iter-&gt;data,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;%d&quot;</highlight>
+                <highlight class="normal">,<sp/>&amp;idata);
+                </highlight>
+            </codeline>
+            <codeline lineno="144">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(purple_prefs_get_bool(prefs-&gt;<ref
+                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>)<sp/>==<sp/>
+                    idata)
+                </highlight>
+            </codeline>
+            <codeline lineno="145">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>select<sp/>=<sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="146">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="147">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal"><sp/>PURPLE_PREF_INT:
+                </highlight>
+            </codeline>
+            <codeline lineno="148">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>sscanf(iter-&gt;data,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;%d&quot;</highlight>
+                <highlight class="normal">,<sp/>&amp;idata);
+                </highlight>
+            </codeline>
+            <codeline lineno="149">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(purple_prefs_get_int(prefs-&gt;<ref
+                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>)<sp/>==<sp/>
+                    idata)
+                </highlight>
+            </codeline>
+            <codeline lineno="150">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>select<sp/>=<sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="151">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="152">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal"><sp/>PURPLE_PREF_STRING:
+                </highlight>
+            </codeline>
+            <codeline lineno="153">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(purple_prefs_get_string(prefs-&gt;<ref
+                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>),<sp/>iter-&gt;data)
+                    <sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="154">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>select<sp/>=<sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="155">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="156">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">default</highlight>
+                <highlight class="normal">:</highlight>
+            </codeline>
+            <codeline lineno="157">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="158">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="159">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_field_list_add(field,<sp/>data,<sp/>iter-&gt;data);
+                </highlight>
+            </codeline>
+            <codeline lineno="160">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(select)
+                </highlight>
+            </codeline>
+            <codeline lineno="161">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_field_list_add_selected(field,<sp/>data);
+                </highlight>
+            </codeline>
+            <codeline lineno="162">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="163">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_list_free(list);
+                </highlight>
+            </codeline>
+            <codeline lineno="164">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="165">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>field;
+                </highlight>
+            </codeline>
+            <codeline lineno="166">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="167">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="168">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct_prefs" kindref="compound">Prefs</ref>
+                    <sp/>blist[]<sp/>=
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="169">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="170">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{PURPLE_PREF_BOOLEAN,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/finch/blist/idletime&quot;</highlight>
+                <highlight class="normal">,<sp/>N_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Show<sp/>Idle<sp/>Time&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>},
+                </highlight>
+            </codeline>
+            <codeline lineno="171">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{PURPLE_PREF_BOOLEAN,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/finch/blist/showoffline&quot;</highlight>
+                <highlight class="normal">,<sp/>N_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Show<sp/>Offline<sp/>Buddies&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>},
+                </highlight>
+            </codeline>
+            <codeline lineno="172">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{PURPLE_PREF_NONE,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,<sp/>NULL}
+                </highlight>
+            </codeline>
+            <codeline lineno="173">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="174">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="175">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct_prefs" kindref="compound">Prefs</ref>
+                    <sp/>convs[]<sp/>=
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="176">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="177">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{PURPLE_PREF_BOOLEAN,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/finch/conversations/timestamps&quot;</highlight>
+                <highlight class="normal">,<sp/>N_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Show<sp/>Timestamps&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>},
+                </highlight>
+            </codeline>
+            <codeline lineno="178">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{PURPLE_PREF_BOOLEAN,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/finch/conversations/notify_typing&quot;</highlight>
+                <highlight class="normal">,<sp/>N_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Notify<sp/>buddies<sp/>when<sp/>you<sp/>are<sp/>typing&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>},
+                </highlight>
+            </codeline>
+            <codeline lineno="179">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{PURPLE_PREF_NONE,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,<sp/>NULL}
+                </highlight>
+            </codeline>
+            <codeline lineno="180">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="181">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="182">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct_prefs" kindref="compound">Prefs</ref>
+                    <sp/>logging[]<sp/>=
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="183">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="184">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{PURPLE_PREF_STRING,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/logging/format&quot;</highlight>
+                <highlight class="normal">,<sp/>N_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Log<sp/>format&quot;
+                </highlight>
+                <highlight class="normal">),<sp/>get_log_options},
+                </highlight>
+            </codeline>
+            <codeline lineno="185">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{PURPLE_PREF_BOOLEAN,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/logging/log_ims&quot;</highlight>
+                <highlight class="normal">,<sp/>N_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Log<sp/>IMs&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>},
+                </highlight>
+            </codeline>
+            <codeline lineno="186">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{PURPLE_PREF_BOOLEAN,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/logging/log_chats&quot;</highlight>
+                <highlight class="normal">,<sp/>N_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Log<sp/>chats&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>},
+                </highlight>
+            </codeline>
+            <codeline lineno="187">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{PURPLE_PREF_BOOLEAN,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/logging/log_system&quot;</highlight>
+                <highlight class="normal">,<sp/>N_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Log<sp/>status<sp/>change<sp/>events&quot;
+                </highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>},
+                </highlight>
+            </codeline>
+            <codeline lineno="188">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{PURPLE_PREF_NONE,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,<sp/>NULL},
+                </highlight>
+            </codeline>
+            <codeline lineno="189">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="190">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="191">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>XXX:<sp/>Translate<sp/>after<sp/>the<sp/>freeze<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="192">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct_prefs" kindref="compound">Prefs</ref>
+                    <sp/>idle[]<sp/>=
+                </highlight>
+            </codeline>
+            <codeline lineno="193">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="194">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{PURPLE_PREF_STRING,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/away/idle_reporting&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Report<sp/>Idle<sp/>time&quot;
+                </highlight>
+                <highlight class="normal">,<sp/>get_idle_options},
+                </highlight>
+            </codeline>
+            <codeline lineno="195">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{PURPLE_PREF_BOOLEAN,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/away/away_when_idle&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Change<sp/>status<sp/>when<sp/>idle&quot;
+                </highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>},
+                </highlight>
+            </codeline>
+            <codeline lineno="196">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{PURPLE_PREF_INT,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/away/mins_before_away&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Minutes<sp/>before<sp/>changing<sp/>status&quot;
+                </highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>},
+                </highlight>
+            </codeline>
+            <codeline lineno="197">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{PURPLE_PREF_INT,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/savedstatus/idleaway&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Change<sp/>status<sp/>to&quot;
+                </highlight>
+                <highlight class="normal">,<sp/>get_status_titles},
+                </highlight>
+            </codeline>
+            <codeline lineno="198">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{PURPLE_PREF_NONE,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,<sp/>NULL},
+                </highlight>
+            </codeline>
+            <codeline lineno="199">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="200">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="201">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="202">
+                <highlight class="normal">free_strings()</highlight>
+            </codeline>
+            <codeline lineno="203">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="204">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_list_foreach(freestrings,<sp/>(GFunc)g_free,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="205">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_list_free(freestrings);
+                </highlight>
+            </codeline>
+            <codeline lineno="206">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>freestrings<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="207">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="208">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="209">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="210">
+                <highlight class="normal">save_cb(</highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>*data,<sp/>PurpleRequestFields<sp/>*allfields)
+                </highlight>
+            </codeline>
+            <codeline lineno="211">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="212">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntrequest_8c_1a6d4123bd0fc451e7d6bf6278f331f22c" kindref="member">
+                        finch_request_save_in_prefs</ref>(data,<sp/>allfields);
+                </highlight>
+            </codeline>
+            <codeline lineno="213">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>free_strings();
+                </highlight>
+            </codeline>
+            <codeline lineno="214">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="215">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="216">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="217">
+                <highlight class="normal">add_pref_group(PurpleRequestFields<sp/>*fields,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*title,
+                    <sp/>
+                    <ref refid="struct_prefs" kindref="compound">Prefs</ref>
+                    <sp/>*prefs)
+                </highlight>
+            </codeline>
+            <codeline lineno="218">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="219">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleRequestField<sp/>*field;
+                </highlight>
+            </codeline>
+            <codeline lineno="220">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleRequestFieldGroup<sp/>*group;
+                </highlight>
+            </codeline>
+            <codeline lineno="221">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>i;
+                </highlight>
+            </codeline>
+            <codeline lineno="222">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="223">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>group<sp/>=<sp/>purple_request_field_group_new(title);
+                </highlight>
+            </codeline>
+            <codeline lineno="224">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_fields_add_group(fields,<sp/>group);
+                </highlight>
+            </codeline>
+            <codeline lineno="225">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>prefs[i].<ref
+                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>;<sp/>i++)
+                </highlight>
+            </codeline>
+            <codeline lineno="226">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="227">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>field<sp/>=<sp/>get_pref_field(prefs<sp/>+<sp/>i);
+                </highlight>
+            </codeline>
+            <codeline lineno="228">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(field)
+                </highlight>
+            </codeline>
+            <codeline lineno="229">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_field_group_add_field(group,<sp/>field);
+                </highlight>
+            </codeline>
+            <codeline lineno="230">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="231">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="232">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="233">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntprefs_8c_1ab651b7e3ae4cd958d96f9ad93c614047" kindref="member">
+                        finch_prefs_show_all</ref>()
+                </highlight>
+            </codeline>
+            <codeline lineno="234">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="235">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleRequestFields<sp/>*fields;
+                </highlight>
+            </codeline>
+            <codeline lineno="236">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="237">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>fields<sp/>=<sp/>purple_request_fields_new();
+                </highlight>
+            </codeline>
+            <codeline lineno="238">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="239">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>add_pref_group(fields,<sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Buddy<sp/>List&quot;
+                </highlight>
+                <highlight class="normal">),<sp/>blist);
+                </highlight>
+            </codeline>
+            <codeline lineno="240">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>add_pref_group(fields,<sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Conversations&quot;</highlight>
+                <highlight class="normal">),<sp/>convs);
+                </highlight>
+            </codeline>
+            <codeline lineno="241">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>add_pref_group(fields,<sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Logging&quot;</highlight>
+                <highlight class="normal">),<sp/>logging);
+                </highlight>
+            </codeline>
+            <codeline lineno="242">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>add_pref_group(fields,<sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Idle&quot;</highlight>
+                <highlight class="normal">),<sp/>idle);
+                </highlight>
+            </codeline>
+            <codeline lineno="243">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="244">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_fields(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                    kindref="member">NULL</ref>,<sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Preferences&quot;</highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,<sp/>fields,
+                </highlight>
+            </codeline>
+            <codeline lineno="245">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Save&quot;</highlight>
+                <highlight class="normal">),<sp/>G_CALLBACK(save_cb),<sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Cancel&quot;</highlight>
+                <highlight class="normal">),<sp/>free_strings,
+                </highlight>
+            </codeline>
+            <codeline lineno="246">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="247">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="248">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="249">
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntprefs.c"/>
+    </compounddef>
+</doxygen>

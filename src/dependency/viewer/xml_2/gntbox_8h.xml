@@ -1,0 +1,1753 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntbox_8h" kind="file">
+        <compoundname>gntbox.h</compoundname>
+        <includes refid="gnt_8h" local="yes">gnt.h</includes>
+        <includes refid="gntwidget_8h" local="yes">gntwidget.h</includes>
+        <includedby refid="gntaccount_8c" local="no">gntaccount.c</includedby>
+        <includedby refid="gntblist_8c" local="yes">gntblist.c</includedby>
+        <includedby refid="gntconv_8c" local="yes">gntconv.c</includedby>
+        <includedby refid="gntdebug_8c" local="no">gntdebug.c</includedby>
+        <includedby refid="gntft_8c" local="no">gntft.c</includedby>
+        <includedby refid="gntnotify_8c" local="no">gntnotify.c</includedby>
+        <includedby refid="gntplugin_8c" local="no">gntplugin.c</includedby>
+        <includedby refid="gntpounce_8c" local="no">gntpounce.c</includedby>
+        <includedby refid="gntrequest_8c" local="no">gntrequest.c</includedby>
+        <includedby refid="gntstatus_8c" local="no">gntstatus.c</includedby>
+        <includedby refid="gntbox_8c" local="yes">libgnt/gntbox.c</includedby>
+        <includedby refid="gntcombobox_8c" local="yes">libgnt/gntcombobox.c</includedby>
+        <includedby refid="gntentry_8c" local="yes">libgnt/gntentry.c</includedby>
+        <includedby refid="gntwindow_8h" local="yes">libgnt/gntwindow.h</includedby>
+        <includedby refid="gntmain_8c" local="yes">libgnt/gntmain.c</includedby>
+        <includedby refid="gntwm_8c" local="yes">libgnt/gntwm.c</includedby>
+        <includedby refid="s_8c" local="yes">libgnt/wms/s.c</includedby>
+        <includedby refid="gntgf_8c" local="no">plugins/gntgf.c</includedby>
+        <incdepgraph>
+            <node id="796">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="789" relation="include">
+                </childnode>
+            </node>
+            <node id="799">
+                <label>term.h</label>
+            </node>
+            <node id="793">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="791" relation="include">
+                </childnode>
+                <childnode refid="789" relation="include">
+                </childnode>
+                <childnode refid="794" relation="include">
+                </childnode>
+                <childnode refid="792" relation="include">
+                </childnode>
+            </node>
+            <node id="795">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="791" relation="include">
+                </childnode>
+                <childnode refid="789" relation="include">
+                </childnode>
+                <childnode refid="794" relation="include">
+                </childnode>
+            </node>
+            <node id="788">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="789" relation="include">
+                </childnode>
+                <childnode refid="790" relation="include">
+                </childnode>
+                <childnode refid="795" relation="include">
+                </childnode>
+                <childnode refid="796" relation="include">
+                </childnode>
+                <childnode refid="797" relation="include">
+                </childnode>
+            </node>
+            <node id="798">
+                <label>curses.h</label>
+            </node>
+            <node id="787">
+                <label>libgnt/gntbox.h</label>
+                <link refid="gntbox.h"/>
+                <childnode refid="788" relation="include">
+                </childnode>
+                <childnode refid="790" relation="include">
+                </childnode>
+            </node>
+            <node id="789">
+                <label>glib.h</label>
+            </node>
+            <node id="790">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="791" relation="include">
+                </childnode>
+                <childnode refid="789" relation="include">
+                </childnode>
+                <childnode refid="792" relation="include">
+                </childnode>
+                <childnode refid="793" relation="include">
+                </childnode>
+            </node>
+            <node id="797">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="798" relation="include">
+                </childnode>
+                <childnode refid="799" relation="include">
+                </childnode>
+            </node>
+            <node id="792">
+                <label>ncurses.h</label>
+            </node>
+            <node id="791">
+                <label>stdio.h</label>
+            </node>
+            <node id="794">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="806">
+                <label>gntnotify.c</label>
+                <link refid="gntnotify_8c"/>
+            </node>
+            <node id="823">
+                <label>plugins/gntgf.c</label>
+                <link refid="gntgf_8c"/>
+            </node>
+            <node id="821">
+                <label>plugins/lastlog.c</label>
+                <link refid="lastlog_8c"/>
+            </node>
+            <node id="822">
+                <label>libgnt/gntmain.c</label>
+                <link refid="gntmain_8c"/>
+            </node>
+            <node id="820">
+                <label>libgnt/wms/s.c</label>
+                <link refid="s_8c"/>
+            </node>
+            <node id="801">
+                <label>gntaccount.c</label>
+                <link refid="gntaccount_8c"/>
+            </node>
+            <node id="812">
+                <label>libgnt/gntcombobox.c</label>
+                <link refid="gntcombobox_8c"/>
+            </node>
+            <node id="819">
+                <label>libgnt/gntwm.c</label>
+                <link refid="gntwm_8c"/>
+            </node>
+            <node id="807">
+                <label>gntplugin.c</label>
+                <link refid="gntplugin_8c"/>
+            </node>
+            <node id="802">
+                <label>gntblist.c</label>
+                <link refid="gntblist_8c"/>
+            </node>
+            <node id="818">
+                <label>libgnt/gntwindow.c</label>
+                <link refid="gntwindow_8c"/>
+            </node>
+            <node id="814">
+                <label>libgnt/gntwindow.h</label>
+                <link refid="gntwindow_8h"/>
+                <childnode refid="802" relation="include">
+                </childnode>
+                <childnode refid="815" relation="include">
+                </childnode>
+                <childnode refid="817" relation="include">
+                </childnode>
+                <childnode refid="818" relation="include">
+                </childnode>
+                <childnode refid="819" relation="include">
+                </childnode>
+                <childnode refid="820" relation="include">
+                </childnode>
+                <childnode refid="821" relation="include">
+                </childnode>
+            </node>
+            <node id="809">
+                <label>gntrequest.c</label>
+                <link refid="gntrequest_8c"/>
+            </node>
+            <node id="817">
+                <label>libgnt/gntutils.c</label>
+                <link refid="gntutils_8c"/>
+            </node>
+            <node id="811">
+                <label>libgnt/gntbox.c</label>
+                <link refid="gntbox_8c"/>
+            </node>
+            <node id="800">
+                <label>libgnt/gntbox.h</label>
+                <link refid="gntbox.h"/>
+                <childnode refid="801" relation="include">
+                </childnode>
+                <childnode refid="802" relation="include">
+                </childnode>
+                <childnode refid="803" relation="include">
+                </childnode>
+                <childnode refid="804" relation="include">
+                </childnode>
+                <childnode refid="805" relation="include">
+                </childnode>
+                <childnode refid="806" relation="include">
+                </childnode>
+                <childnode refid="807" relation="include">
+                </childnode>
+                <childnode refid="808" relation="include">
+                </childnode>
+                <childnode refid="809" relation="include">
+                </childnode>
+                <childnode refid="810" relation="include">
+                </childnode>
+                <childnode refid="811" relation="include">
+                </childnode>
+                <childnode refid="812" relation="include">
+                </childnode>
+                <childnode refid="813" relation="include">
+                </childnode>
+                <childnode refid="814" relation="include">
+                </childnode>
+                <childnode refid="822" relation="include">
+                </childnode>
+                <childnode refid="819" relation="include">
+                </childnode>
+                <childnode refid="820" relation="include">
+                </childnode>
+                <childnode refid="823" relation="include">
+                </childnode>
+            </node>
+            <node id="813">
+                <label>libgnt/gntentry.c</label>
+                <link refid="gntentry_8c"/>
+            </node>
+            <node id="805">
+                <label>gntft.c</label>
+                <link refid="gntft_8c"/>
+            </node>
+            <node id="808">
+                <label>gntpounce.c</label>
+                <link refid="gntpounce_8c"/>
+            </node>
+            <node id="803">
+                <label>gntconv.c</label>
+                <link refid="gntconv_8c"/>
+            </node>
+            <node id="804">
+                <label>gntdebug.c</label>
+                <link refid="gntdebug_8c"/>
+            </node>
+            <node id="810">
+                <label>gntstatus.c</label>
+                <link refid="gntstatus_8c"/>
+            </node>
+            <node id="816">
+                <label>libgnt/gntfilesel.c</label>
+                <link refid="gntfilesel_8c"/>
+            </node>
+            <node id="815">
+                <label>libgnt/gntfilesel.h</label>
+                <link refid="gntfilesel_8h"/>
+                <childnode refid="809" relation="include">
+                </childnode>
+                <childnode refid="816" relation="include">
+                </childnode>
+            </node>
+        </invincdepgraph>
+        <innerclass refid="struct___gnt_box" prot="public">_GntBox</innerclass>
+        <innerclass refid="struct___gnt_box_class" prot="public">_GntBoxClass</innerclass>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="gntbox_8h_1aa29ba876cc2c38c4f65e286f31ae59a7" prot="public" static="no">
+                <name>GNT_TYPE_BOX</name>
+                <initializer>(<ref refid="gntbox_8h_1a8eb7c035c32d95f12fbe66472cb7810a" kindref="member">
+                    gnt_box_get_gtype</ref>())
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="7" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        bodystart="7" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" prot="public" static="no">
+                <name>GNT_BOX</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_INSTANCE_CAST((obj),<ref refid="gntbox_8h_1aa29ba876cc2c38c4f65e286f31ae59a7"
+                                                                    kindref="member">GNT_TYPE_BOX</ref>,<ref
+                        refid="gntbox_8h_1a8672bd52b8b0b1ca2cf69817b280db30" kindref="member">GntBox</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="8" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        bodystart="8" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntbox_8h_1ae42dfae780c84020a8fcf27dc65fc739" prot="public" static="no">
+                <name>GNT_BOX_CLASS</name>
+                <param>
+                    <defname>klass</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_CLASS_CAST((klass),<ref refid="gntbox_8h_1aa29ba876cc2c38c4f65e286f31ae59a7"
+                                                                   kindref="member">GNT_TYPE_BOX</ref>,<ref
+                        refid="gntbox_8h_1a124fe7b324e9055b0909a7a8ddba0987" kindref="member">GntBoxClass</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="9" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        bodystart="9" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntbox_8h_1a4461edd75b1e4a2a3850bbfe14ba8f66" prot="public" static="no">
+                <name>GNT_IS_BOX</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_INSTANCE_TYPE((obj),<ref refid="gntbox_8h_1aa29ba876cc2c38c4f65e286f31ae59a7"
+                                                                    kindref="member">GNT_TYPE_BOX</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="10" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        bodystart="10" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntbox_8h_1a712d9098702bb6d925f6833515ff1766" prot="public" static="no">
+                <name>GNT_IS_BOX_CLASS</name>
+                <param>
+                    <defname>klass</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_CLASS_TYPE((klass),<ref refid="gntbox_8h_1aa29ba876cc2c38c4f65e286f31ae59a7"
+                                                                   kindref="member">GNT_TYPE_BOX</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="11" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        bodystart="11" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntbox_8h_1a0ffa9e7828863de3bdfdd46b3e5e481c" prot="public" static="no">
+                <name>GNT_BOX_GET_CLASS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_INSTANCE_GET_CLASS((obj),<ref refid="gntbox_8h_1aa29ba876cc2c38c4f65e286f31ae59a7"
+                                                                   kindref="member">GNT_TYPE_BOX</ref>,<ref
+                        refid="gntbox_8h_1a124fe7b324e9055b0909a7a8ddba0987" kindref="member">GntBoxClass</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="12" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        bodystart="12" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntbox_8h_1a2d45d265c7266ba5af351042fde9e718" prot="public" static="no">
+                <name>gnt_vbox_new</name>
+                <param>
+                    <defname>homo</defname>
+                </param>
+                <initializer><ref refid="gntbox_8h_1ac304059b8993d55d11556c359497017c" kindref="member">
+                    gnt_box_new</ref>(homo, TRUE)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="66" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        bodystart="66" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntbox_8h_1adb651f9ad56bc755eb4e2ff6050264d1" prot="public" static="no">
+                <name>gnt_hbox_new</name>
+                <param>
+                    <defname>homo</defname>
+                </param>
+                <initializer><ref refid="gntbox_8h_1ac304059b8993d55d11556c359497017c" kindref="member">
+                    gnt_box_new</ref>(homo, FALSE)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="67" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        bodystart="67" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="enum">
+            <memberdef kind="enum" id="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19" prot="public" static="no">
+                <name>GntAlignment</name>
+                <enumvalue id="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19a26e8730cf7732ec54d4a902ef3d93acf"
+                           prot="public">
+                    <name>GNT_ALIGN_LEFT</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19a6c94a2f44693d0f5ae9ef14a26453436"
+                           prot="public">
+                    <name>GNT_ALIGN_RIGHT</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19aae4fd781c018d03a56f8e8f54454f3ab"
+                           prot="public">
+                    <name>GNT_ALIGN_MID</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19abbd75ef00db74577024791189521bd05"
+                           prot="public">
+                    <name>GNT_ALIGN_TOP</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19aa4dfb57540c96676985ce88164f99dd4"
+                           prot="public">
+                    <name>GNT_ALIGN_BOTTOM</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="18" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        bodystart="17" bodyend="28"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="typedef">
+            <memberdef kind="typedef" id="gntbox_8h_1a8672bd52b8b0b1ca2cf69817b280db30" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_box" kindref="compound">_GntBox</ref>
+                </type>
+                <definition>typedef struct _GntBox GntBox</definition>
+                <argsstring></argsstring>
+                <name>GntBox</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="765" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        bodystart="14" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntbox_8h_1a124fe7b324e9055b0909a7a8ddba0987" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_box_class" kindref="compound">_GntBoxClass</ref>
+                </type>
+                <definition>typedef struct _GntBoxClass GntBoxClass</definition>
+                <argsstring></argsstring>
+                <name>GntBoxClass</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="765" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        bodystart="15" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntbox_8h_1a8eb7c035c32d95f12fbe66472cb7810a" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>G_BEGIN_DECLS GType</type>
+                <definition>G_BEGIN_DECLS GType gnt_box_get_gtype</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_box_get_gtype</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="64" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.c"
+                        bodystart="525" bodyend="550"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbox_8h_1ac304059b8993d55d11556c359497017c" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* gnt_box_new</definition>
+                <argsstring>(gboolean homo, gboolean vert)</argsstring>
+                <name>gnt_box_new</name>
+                <param>
+                    <type>gboolean</type>
+                    <declname>homo</declname>
+                </param>
+                <param>
+                    <type>gboolean</type>
+                    <declname>vert</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="69" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.c"
+                        bodystart="552" bodyend="562"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbox_8h_1a306c828f23c3835dbaf79f3132740241" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_box_add_widget</definition>
+                <argsstring>(GntBox *box, GntWidget *widget)</argsstring>
+                <name>gnt_box_add_widget</name>
+                <param>
+                    <type>
+                        <ref refid="gntbox_8h_1a8672bd52b8b0b1ca2cf69817b280db30" kindref="member">GntBox</ref>
+                        *
+                    </type>
+                    <declname>box</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="71" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.c"
+                        bodystart="564" bodyend="568"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbox_8h_1a5d3061a21127e5b0f3e3f83f62072ff9" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_box_set_title</definition>
+                <argsstring>(GntBox *box, const char *title)</argsstring>
+                <name>gnt_box_set_title</name>
+                <param>
+                    <type>
+                        <ref refid="gntbox_8h_1a8672bd52b8b0b1ca2cf69817b280db30" kindref="member">GntBox</ref>
+                        *
+                    </type>
+                    <declname>box</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>title</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="73" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.c"
+                        bodystart="570" bodyend="583"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbox_8h_1a3b7044e63e2ae35e7c8efaf5a1f8efdc" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_box_set_pad</definition>
+                <argsstring>(GntBox *box, int pad)</argsstring>
+                <name>gnt_box_set_pad</name>
+                <param>
+                    <type>
+                        <ref refid="gntbox_8h_1a8672bd52b8b0b1ca2cf69817b280db30" kindref="member">GntBox</ref>
+                        *
+                    </type>
+                    <declname>box</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>pad</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="75" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.c"
+                        bodystart="585" bodyend="589"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbox_8h_1a7789c41d63e8b6b204727919c398ad0a" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_box_set_toplevel</definition>
+                <argsstring>(GntBox *box, gboolean set)</argsstring>
+                <name>gnt_box_set_toplevel</name>
+                <param>
+                    <type>
+                        <ref refid="gntbox_8h_1a8672bd52b8b0b1ca2cf69817b280db30" kindref="member">GntBox</ref>
+                        *
+                    </type>
+                    <declname>box</declname>
+                </param>
+                <param>
+                    <type>gboolean</type>
+                    <declname>set</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="77" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.c"
+                        bodystart="591" bodyend="604"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbox_8h_1ad62cee90b0caf9dce70663082d213131" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_box_sync_children</definition>
+                <argsstring>(GntBox *box)</argsstring>
+                <name>gnt_box_sync_children</name>
+                <param>
+                    <type>
+                        <ref refid="gntbox_8h_1a8672bd52b8b0b1ca2cf69817b280db30" kindref="member">GntBox</ref>
+                        *
+                    </type>
+                    <declname>box</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="79" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.c"
+                        bodystart="606" bodyend="657"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbox_8h_1afb6c544e642e187a84cd7c2e1b664ab0" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_box_set_alignment</definition>
+                <argsstring>(GntBox *box, GntAlignment alignment)</argsstring>
+                <name>gnt_box_set_alignment</name>
+                <param>
+                    <type>
+                        <ref refid="gntbox_8h_1a8672bd52b8b0b1ca2cf69817b280db30" kindref="member">GntBox</ref>
+                        *
+                    </type>
+                    <declname>box</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19" kindref="member">GntAlignment</ref>
+                    </type>
+                    <declname>alignment</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="81" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.c"
+                        bodystart="659" bodyend="662"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbox_8h_1add777e02bf9b18086aeec5a2ff125c1f" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_box_remove</definition>
+                <argsstring>(GntBox *box, GntWidget *widget)</argsstring>
+                <name>gnt_box_remove</name>
+                <param>
+                    <type>
+                        <ref refid="gntbox_8h_1a8672bd52b8b0b1ca2cf69817b280db30" kindref="member">GntBox</ref>
+                        *
+                    </type>
+                    <declname>box</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="83" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.c"
+                        bodystart="664" bodyend="681"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbox_8h_1ac0248f0aaccda28f78a0b8418a7f1619" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_box_remove_all</definition>
+                <argsstring>(GntBox *box)</argsstring>
+                <name>gnt_box_remove_all</name>
+                <param>
+                    <type>
+                        <ref refid="gntbox_8h_1a8672bd52b8b0b1ca2cf69817b280db30" kindref="member">GntBox</ref>
+                        *
+                    </type>
+                    <declname>box</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="85" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.c"
+                        bodystart="683" bodyend="692"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbox_8h_1a8a5bd5c5a9f01e79bc51a0da00a0d3a5" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_box_readjust</definition>
+                <argsstring>(GntBox *box)</argsstring>
+                <name>gnt_box_readjust</name>
+                <param>
+                    <type>
+                        <ref refid="gntbox_8h_1a8672bd52b8b0b1ca2cf69817b280db30" kindref="member">GntBox</ref>
+                        *
+                    </type>
+                    <declname>box</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="87" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.c"
+                        bodystart="694" bodyend="731"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbox_8h_1ade48185acb40af09200649e416bb8ce1" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_box_set_fill</definition>
+                <argsstring>(GntBox *box, gboolean fill)</argsstring>
+                <name>gnt_box_set_fill</name>
+                <param>
+                    <type>
+                        <ref refid="gntbox_8h_1a8672bd52b8b0b1ca2cf69817b280db30" kindref="member">GntBox</ref>
+                        *
+                    </type>
+                    <declname>box</declname>
+                </param>
+                <param>
+                    <type>gboolean</type>
+                    <declname>fill</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="89" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.c"
+                        bodystart="733" bodyend="736"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbox_8h_1a4f580391f8ece4781f3457e1bdff354a" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_box_move_focus</definition>
+                <argsstring>(GntBox *box, int dir)</argsstring>
+                <name>gnt_box_move_focus</name>
+                <param>
+                    <type>
+                        <ref refid="gntbox_8h_1a8672bd52b8b0b1ca2cf69817b280db30" kindref="member">GntBox</ref>
+                        *
+                    </type>
+                    <declname>box</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>dir</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="91" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.c"
+                        bodystart="738" bodyend="763"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbox_8h_1afc2ee44da9c90e43847936e6d0eef8b0" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_box_give_focus_to_child</definition>
+                <argsstring>(GntBox *box, GntWidget *widget)</argsstring>
+                <name>gnt_box_give_focus_to_child</name>
+                <param>
+                    <type>
+                        <ref refid="gntbox_8h_1a8672bd52b8b0b1ca2cf69817b280db30" kindref="member">GntBox</ref>
+                        *
+                    </type>
+                    <declname>box</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"
+                        line="93" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.c"
+                        bodystart="765" bodyend="779"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1">
+                <highlight class="preprocessor">#ifndef<sp/>GNT_BOX_H
+                </highlight>
+            </codeline>
+            <codeline lineno="2">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_BOX_H
+                </highlight>
+            </codeline>
+            <codeline lineno="3">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="4">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gnt_8h" kindref="compound">gnt.h</ref>
+                    &quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="5">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntwidget_8h" kindref="compound">
+                    gntwidget.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="6">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="7" refid="gntbox_8h_1aa29ba876cc2c38c4f65e286f31ae59a7" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_TYPE_BOX
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(gnt_box_get_gtype())
+                </highlight>
+            </codeline>
+            <codeline lineno="8" refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_BOX(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_INSTANCE_CAST((obj),<sp/>GNT_TYPE_BOX,<sp/>GntBox))
+                </highlight>
+            </codeline>
+            <codeline lineno="9" refid="gntbox_8h_1ae42dfae780c84020a8fcf27dc65fc739" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_BOX_CLASS(klass)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_CLASS_CAST((klass),<sp/>GNT_TYPE_BOX,<sp/>GntBoxClass))
+                </highlight>
+            </codeline>
+            <codeline lineno="10" refid="gntbox_8h_1a4461edd75b1e4a2a3850bbfe14ba8f66" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_IS_BOX(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_INSTANCE_TYPE((obj),<sp/>GNT_TYPE_BOX))
+                </highlight>
+            </codeline>
+            <codeline lineno="11" refid="gntbox_8h_1a712d9098702bb6d925f6833515ff1766" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_IS_BOX_CLASS(klass)<sp/>
+                    (G_TYPE_CHECK_CLASS_TYPE((klass),<sp/>GNT_TYPE_BOX))
+                </highlight>
+            </codeline>
+            <codeline lineno="12" refid="gntbox_8h_1a0ffa9e7828863de3bdfdd46b3e5e481c" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_BOX_GET_CLASS(obj)
+                    <sp/>
+                    <sp/>(G_TYPE_INSTANCE_GET_CLASS((obj),<sp/>GNT_TYPE_BOX,<sp/>GntBoxClass))
+                </highlight>
+            </codeline>
+            <codeline lineno="13">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="14" refid="gntbox_8h_1a8672bd52b8b0b1ca2cf69817b280db30" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_box" kindref="compound">_GntBox</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_box" kindref="compound">GntBox</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="15" refid="gntbox_8h_1a124fe7b324e9055b0909a7a8ddba0987" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_box_class" kindref="compound">_GntBoxClass</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_box_class" kindref="compound">GntBoxClass</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="16">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="17" refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">enum</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="18">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>These<sp/>for<sp/>vertical<sp/>boxes<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="20" refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19a26e8730cf7732ec54d4a902ef3d93acf"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19a26e8730cf7732ec54d4a902ef3d93acf"
+                         kindref="member">GNT_ALIGN_LEFT</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="21" refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19a6c94a2f44693d0f5ae9ef14a26453436"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19a6c94a2f44693d0f5ae9ef14a26453436"
+                         kindref="member">GNT_ALIGN_RIGHT</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="23" refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19aae4fd781c018d03a56f8e8f54454f3ab"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19aae4fd781c018d03a56f8e8f54454f3ab"
+                         kindref="member">GNT_ALIGN_MID</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>These<sp/>for<sp/>horizontal<sp/>boxes<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26" refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19abbd75ef00db74577024791189521bd05"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19abbd75ef00db74577024791189521bd05"
+                         kindref="member">GNT_ALIGN_TOP</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="27" refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19aa4dfb57540c96676985ce88164f99dd4"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19aa4dfb57540c96676985ce88164f99dd4"
+                         kindref="member">GNT_ALIGN_BOTTOM
+                    </ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal">}
+                    <sp/>
+                    <ref refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19" kindref="member">GntAlignment</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30" refid="struct___gnt_box" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_box" kindref="compound">_GntBox</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="32" refid="struct___gnt_box_1ae3e3b55c7e6209f0e555f25a2e5fd1a9" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_box_1ae3e3b55c7e6209f0e555f25a2e5fd1a9" kindref="member">parent</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34" refid="struct___gnt_box_1a1dc37b6d283a2e71bbb553c6ce180c64" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean
+                    <sp/>
+                    <ref refid="struct___gnt_box_1a1dc37b6d283a2e71bbb553c6ce180c64" kindref="member">vertical</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="35" refid="struct___gnt_box_1af6cb752cbec23b78a4cc34b0223b9d5a" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean
+                    <sp/>
+                    <ref refid="struct___gnt_box_1af6cb752cbec23b78a4cc34b0223b9d5a" kindref="member">homogeneous</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="36" refid="struct___gnt_box_1a2f9d1826d599b0c0df688deedbc30277" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean
+                    <sp/>
+                    <ref refid="struct___gnt_box_1a2f9d1826d599b0c0df688deedbc30277" kindref="member">fill</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="37" refid="struct___gnt_box_1a4dd2ca5f40d57a1f17e9130154bdfe88" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*<ref refid="struct___gnt_box_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">
+                    list</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>List<sp/>of<sp/>widgets<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="39" refid="struct___gnt_box_1a8fb9e42e6fa3c9e659b98d9d99bf586e" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="struct___gnt_box_1a8fb9e42e6fa3c9e659b98d9d99bf586e" kindref="member">active</ref>
+                    ;
+                </highlight>
+            </codeline>
+            <codeline lineno="40" refid="struct___gnt_box_1af1d40a330bc745f51d8b079c9dc473ff" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_box_1af1d40a330bc745f51d8b079c9dc473ff" kindref="member">pad</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Number<sp/>of<sp/>spaces<sp/>to<sp/>use<sp/>between<sp/>widgets<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="41" refid="struct___gnt_box_1adb24389425881d6593b606bb3c923f58" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19" kindref="member">GntAlignment</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_box_1adb24389425881d6593b606bb3c923f58" kindref="member">alignment</ref>;
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>How<sp/>are<sp/>the<sp/>widgets<sp/>going<sp/>to<sp/>be<sp/>aligned?
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="43" refid="struct___gnt_box_1af06d911bb9e05f491ef3da520d03796c" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___gnt_box_1af06d911bb9e05f491ef3da520d03796c"
+                                                     kindref="member">title</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="44" refid="struct___gnt_box_1a80ed35e68ad1ef7feefa9d973ff66c59" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*<ref refid="struct___gnt_box_1a80ed35e68ad1ef7feefa9d973ff66c59" kindref="member">
+                    focus</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>List<sp/>of<sp/>widgets<sp/>to<sp/>cycle<sp/>focus<sp/>(only<sp/>valid
+                    <sp/>for<sp/>parent<sp/>boxes)<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="46" refid="struct___gnt_box_1a89dfce3a9aa0299a7819f8a4b9df5cef" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_box_1a89dfce3a9aa0299a7819f8a4b9df5cef" kindref="member">
+                    gnt_reserved1</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="47" refid="struct___gnt_box_1abc424f0d49c73831a72f061af6b0ce1d" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_box_1abc424f0d49c73831a72f061af6b0ce1d" kindref="member">
+                    gnt_reserved2</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="48" refid="struct___gnt_box_1a1e0be0259f96a3bff95418925fe8163e" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_box_1a1e0be0259f96a3bff95418925fe8163e" kindref="member">
+                    gnt_reserved3</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="49" refid="struct___gnt_box_1a3f7d85f4e8f04f18386922c69c245469" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_box_1a3f7d85f4e8f04f18386922c69c245469" kindref="member">
+                    gnt_reserved4</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="52" refid="struct___gnt_box_class" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_box_class" kindref="compound">_GntBoxClass</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="54" refid="struct___gnt_box_class_1a67dea6bdb089093d277840b7ad43a1f2" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget_class" kindref="compound">GntWidgetClass</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_box_class_1a67dea6bdb089093d277840b7ad43a1f2" kindref="member">parent</ref>
+                    ;
+                </highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="56" refid="struct___gnt_box_class_1a89dfce3a9aa0299a7819f8a4b9df5cef" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_box_class_1a89dfce3a9aa0299a7819f8a4b9df5cef"
+                                         kindref="member">gnt_reserved1</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="57" refid="struct___gnt_box_class_1abc424f0d49c73831a72f061af6b0ce1d" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_box_class_1abc424f0d49c73831a72f061af6b0ce1d"
+                                         kindref="member">gnt_reserved2</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="58" refid="struct___gnt_box_class_1a1e0be0259f96a3bff95418925fe8163e" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_box_class_1a1e0be0259f96a3bff95418925fe8163e"
+                                         kindref="member">gnt_reserved3</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="59" refid="struct___gnt_box_class_1a3f7d85f4e8f04f18386922c69c245469" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_box_class_1a3f7d85f4e8f04f18386922c69c245469"
+                                         kindref="member">gnt_reserved4</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal">G_BEGIN_DECLS</highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">GType
+                    <sp/>
+                    <ref refid="gntbox_8c_1ad1e4dabcca897bdb4ec1297d04bb22db" kindref="member">gnt_box_get_gtype</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="66" refid="gntbox_8h_1a2d45d265c7266ba5af351042fde9e718" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>gnt_vbox_new(homo)<sp/>gnt_box_new(homo,<sp/>TRUE)
+                </highlight>
+            </codeline>
+            <codeline lineno="67" refid="gntbox_8h_1adb651f9ad56bc755eb4e2ff6050264d1" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>gnt_hbox_new(homo)<sp/>gnt_box_new(homo,<sp/>FALSE)
+                </highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal">
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntbox_8c_1ac304059b8993d55d11556c359497017c" kindref="member">gnt_box_new</ref>
+                    (gboolean<sp/>homo,<sp/>gboolean<sp/>vert);
+                </highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="struct___gnt_box" kindref="compound">GntBox</ref>
+                    <sp/>*box,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntbox_8c_1a44429c371d6ea90f89d63a57cffabc66" kindref="member">gnt_box_set_title</ref>(
+                    <ref refid="struct___gnt_box" kindref="compound">GntBox</ref>
+                    <sp/>*box,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*title);
+                </highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntbox_8c_1a3b7044e63e2ae35e7c8efaf5a1f8efdc" kindref="member">gnt_box_set_pad</ref>(
+                    <ref refid="struct___gnt_box" kindref="compound">GntBox</ref>
+                    <sp/>*box,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>pad);
+                </highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntbox_8c_1a7789c41d63e8b6b204727919c398ad0a" kindref="member">
+                        gnt_box_set_toplevel</ref>(
+                    <ref refid="struct___gnt_box" kindref="compound">GntBox</ref>
+                    <sp/>*box,<sp/>gboolean<sp/>set);
+                </highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntbox_8c_1ad62cee90b0caf9dce70663082d213131" kindref="member">
+                        gnt_box_sync_children</ref>(
+                    <ref refid="struct___gnt_box" kindref="compound">GntBox</ref>
+                    <sp/>*box);
+                </highlight>
+            </codeline>
+            <codeline lineno="80">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntbox_8c_1afb6c544e642e187a84cd7c2e1b664ab0" kindref="member">
+                        gnt_box_set_alignment</ref>(
+                    <ref refid="struct___gnt_box" kindref="compound">GntBox</ref>
+                    <sp/>*box,
+                    <sp/>
+                    <ref refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19" kindref="member">GntAlignment</ref>
+                    <sp/>alignment);
+                </highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntbox_8c_1add777e02bf9b18086aeec5a2ff125c1f" kindref="member">gnt_box_remove</ref>(
+                    <ref refid="struct___gnt_box" kindref="compound">GntBox</ref>
+                    <sp/>*box,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>XXX:<sp/>does<sp/>NOT<sp/>destroy<sp/>widget<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntbox_8c_1ac0248f0aaccda28f78a0b8418a7f1619" kindref="member">gnt_box_remove_all</ref>(
+                    <ref refid="struct___gnt_box" kindref="compound">GntBox</ref>
+                    <sp/>*box);
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Removes<sp/>AND<sp/>destroys<sp/>all<sp/>the<sp/>widgets<sp/>in<sp/>it
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntbox_8c_1a8a5bd5c5a9f01e79bc51a0da00a0d3a5" kindref="member">gnt_box_readjust</ref>(
+                    <ref refid="struct___gnt_box" kindref="compound">GntBox</ref>
+                    <sp/>*box);
+                </highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntbox_8c_1ade48185acb40af09200649e416bb8ce1" kindref="member">gnt_box_set_fill</ref>(
+                    <ref refid="struct___gnt_box" kindref="compound">GntBox</ref>
+                    <sp/>*box,<sp/>gboolean<sp/>fill);
+                </highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntbox_8c_1a4f580391f8ece4781f3457e1bdff354a" kindref="member">gnt_box_move_focus</ref>(
+                    <ref refid="struct___gnt_box" kindref="compound">GntBox</ref>
+                    <sp/>*box,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>dir);
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>+1<sp/>to<sp/>move<sp/>forward,<sp/>-1<sp/>for<sp/>backward<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="93">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntbox_8c_1afc2ee44da9c90e43847936e6d0eef8b0" kindref="member">
+                        gnt_box_give_focus_to_child</ref>(
+                    <ref refid="struct___gnt_box" kindref="compound">GntBox</ref>
+                    <sp/>*box,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal">G_END_DECLS</highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>GNT_BOX_H<sp/>*/
+                </highlight>
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntbox.h"/>
+    </compounddef>
+</doxygen>

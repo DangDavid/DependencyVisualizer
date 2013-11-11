@@ -1,0 +1,1907 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gnttextview_8h" kind="file">
+        <compoundname>gnttextview.h</compoundname>
+        <includes refid="gntwidget_8h" local="yes">gntwidget.h</includes>
+        <includes refid="gnt_8h" local="yes">gnt.h</includes>
+        <includes refid="gntcolors_8h" local="yes">gntcolors.h</includes>
+        <includes refid="gntkeys_8h" local="yes">gntkeys.h</includes>
+        <includedby refid="gntconv_8c" local="yes">gntconv.c</includedby>
+        <includedby refid="gntdebug_8c" local="no">gntdebug.c</includedby>
+        <includedby refid="gnttree_8h" local="yes">libgnt/gnttree.h</includedby>
+        <includedby refid="gntlabel_8h" local="yes">libgnt/gntlabel.h</includedby>
+        <includedby refid="gnttextview_8c" local="yes">libgnt/gnttextview.c</includedby>
+        <includedby refid="gntutils_8c" local="yes">libgnt/gntutils.c</includedby>
+        <includedby refid="gntwm_8c" local="yes">libgnt/gntwm.c</includedby>
+        <includedby refid="lastlog_8c" local="no">plugins/lastlog.c</includedby>
+        <incdepgraph>
+            <node id="1656">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="1650" relation="include">
+                </childnode>
+            </node>
+            <node id="1647">
+                <label>libgnt/gnttextview.h</label>
+                <link refid="gnttextview.h"/>
+                <childnode refid="1648" relation="include">
+                </childnode>
+                <childnode refid="1654" relation="include">
+                </childnode>
+                <childnode refid="1656" relation="include">
+                </childnode>
+                <childnode refid="1657" relation="include">
+                </childnode>
+            </node>
+            <node id="1659">
+                <label>term.h</label>
+            </node>
+            <node id="1652">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="1649" relation="include">
+                </childnode>
+                <childnode refid="1650" relation="include">
+                </childnode>
+                <childnode refid="1653" relation="include">
+                </childnode>
+                <childnode refid="1651" relation="include">
+                </childnode>
+            </node>
+            <node id="1655">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="1649" relation="include">
+                </childnode>
+                <childnode refid="1650" relation="include">
+                </childnode>
+                <childnode refid="1653" relation="include">
+                </childnode>
+            </node>
+            <node id="1654">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="1650" relation="include">
+                </childnode>
+                <childnode refid="1648" relation="include">
+                </childnode>
+                <childnode refid="1655" relation="include">
+                </childnode>
+                <childnode refid="1656" relation="include">
+                </childnode>
+                <childnode refid="1657" relation="include">
+                </childnode>
+            </node>
+            <node id="1658">
+                <label>curses.h</label>
+            </node>
+            <node id="1650">
+                <label>glib.h</label>
+            </node>
+            <node id="1648">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="1649" relation="include">
+                </childnode>
+                <childnode refid="1650" relation="include">
+                </childnode>
+                <childnode refid="1651" relation="include">
+                </childnode>
+                <childnode refid="1652" relation="include">
+                </childnode>
+            </node>
+            <node id="1657">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="1658" relation="include">
+                </childnode>
+                <childnode refid="1659" relation="include">
+                </childnode>
+            </node>
+            <node id="1651">
+                <label>ncurses.h</label>
+            </node>
+            <node id="1649">
+                <label>stdio.h</label>
+            </node>
+            <node id="1653">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="1667">
+                <label>gntnotify.c</label>
+                <link refid="gntnotify_8c"/>
+            </node>
+            <node id="1693">
+                <label>plugins/gntgf.c</label>
+                <link refid="gntgf_8c"/>
+            </node>
+            <node id="1687">
+                <label>libgnt/gntmenuitem.c</label>
+                <link refid="gntmenuitem_8c"/>
+            </node>
+            <node id="1683">
+                <label>libgnt/gntmenuitem.h</label>
+                <link refid="gntmenuitem_8h"/>
+                <childnode refid="1665" relation="include">
+                </childnode>
+                <childnode refid="1674" relation="include">
+                </childnode>
+                <childnode refid="1684" relation="include">
+                </childnode>
+                <childnode refid="1687" relation="include">
+                </childnode>
+            </node>
+            <node id="1682">
+                <label>plugins/lastlog.c</label>
+                <link refid="lastlog_8c"/>
+            </node>
+            <node id="1688">
+                <label>libgnt/gntmain.c</label>
+                <link refid="gntmain_8c"/>
+            </node>
+            <node id="1686">
+                <label>libgnt/gntmenuitemcheck.c</label>
+                <link refid="gntmenuitemcheck_8c"/>
+            </node>
+            <node id="1684">
+                <label>libgnt/gntmenuitemcheck.h</label>
+                <link refid="gntmenuitemcheck_8h"/>
+                <childnode refid="1665" relation="include">
+                </childnode>
+                <childnode refid="1685" relation="include">
+                </childnode>
+                <childnode refid="1686" relation="include">
+                </childnode>
+            </node>
+            <node id="1696">
+                <label>libgnt/gnttextview.c</label>
+                <link refid="gnttextview_8c"/>
+            </node>
+            <node id="1660">
+                <label>libgnt/gnttextview.h</label>
+                <link refid="gnttextview.h"/>
+                <childnode refid="1661" relation="include">
+                </childnode>
+                <childnode refid="1662" relation="include">
+                </childnode>
+                <childnode refid="1663" relation="include">
+                </childnode>
+                <childnode refid="1694" relation="include">
+                </childnode>
+                <childnode refid="1696" relation="include">
+                </childnode>
+                <childnode refid="1678" relation="include">
+                </childnode>
+                <childnode refid="1680" relation="include">
+                </childnode>
+                <childnode refid="1682" relation="include">
+                </childnode>
+            </node>
+            <node id="1681">
+                <label>libgnt/wms/s.c</label>
+                <link refid="s_8c"/>
+            </node>
+            <node id="1664">
+                <label>gntaccount.c</label>
+                <link refid="gntaccount_8c"/>
+            </node>
+            <node id="1672">
+                <label>libgnt/gntcombobox.c</label>
+                <link refid="gntcombobox_8c"/>
+            </node>
+            <node id="1680">
+                <label>libgnt/gntwm.c</label>
+                <link refid="gntwm_8c"/>
+            </node>
+            <node id="1689">
+                <label>libgnt/gntwm.h</label>
+                <link refid="gntwm_8h"/>
+                <childnode refid="1690" relation="include">
+                </childnode>
+                <childnode refid="1688" relation="include">
+                </childnode>
+                <childnode refid="1680" relation="include">
+                </childnode>
+                <childnode refid="1681" relation="include">
+                </childnode>
+                <childnode refid="1691" relation="include">
+                </childnode>
+            </node>
+            <node id="1690">
+                <label>gntidle.c</label>
+                <link refid="gntidle_8c"/>
+            </node>
+            <node id="1668">
+                <label>gntplugin.c</label>
+                <link refid="gntplugin_8c"/>
+            </node>
+            <node id="1665">
+                <label>gntblist.c</label>
+                <link refid="gntblist_8c"/>
+            </node>
+            <node id="1679">
+                <label>libgnt/gntwindow.c</label>
+                <link refid="gntwindow_8c"/>
+            </node>
+            <node id="1675">
+                <label>libgnt/gntwindow.h</label>
+                <link refid="gntwindow_8h"/>
+                <childnode refid="1665" relation="include">
+                </childnode>
+                <childnode refid="1676" relation="include">
+                </childnode>
+                <childnode refid="1678" relation="include">
+                </childnode>
+                <childnode refid="1679" relation="include">
+                </childnode>
+                <childnode refid="1680" relation="include">
+                </childnode>
+                <childnode refid="1681" relation="include">
+                </childnode>
+                <childnode refid="1682" relation="include">
+                </childnode>
+            </node>
+            <node id="1670">
+                <label>gntrequest.c</label>
+                <link refid="gntrequest_8c"/>
+            </node>
+            <node id="1691">
+                <label>plugins/gntclipboard.c</label>
+                <link refid="plugins_2gntclipboard_8c"/>
+            </node>
+            <node id="1678">
+                <label>libgnt/gntutils.c</label>
+                <link refid="gntutils_8c"/>
+            </node>
+            <node id="1695">
+                <label>libgnt/gntlabel.c</label>
+                <link refid="gntlabel_8c"/>
+            </node>
+            <node id="1694">
+                <label>libgnt/gntlabel.h</label>
+                <link refid="gntlabel_8h"/>
+                <childnode refid="1664" relation="include">
+                </childnode>
+                <childnode refid="1665" relation="include">
+                </childnode>
+                <childnode refid="1666" relation="include">
+                </childnode>
+                <childnode refid="1667" relation="include">
+                </childnode>
+                <childnode refid="1668" relation="include">
+                </childnode>
+                <childnode refid="1669" relation="include">
+                </childnode>
+                <childnode refid="1670" relation="include">
+                </childnode>
+                <childnode refid="1671" relation="include">
+                </childnode>
+                <childnode refid="1677" relation="include">
+                </childnode>
+                <childnode refid="1695" relation="include">
+                </childnode>
+                <childnode refid="1678" relation="include">
+                </childnode>
+                <childnode refid="1680" relation="include">
+                </childnode>
+                <childnode refid="1681" relation="include">
+                </childnode>
+                <childnode refid="1693" relation="include">
+                </childnode>
+            </node>
+            <node id="1673">
+                <label>libgnt/gntentry.c</label>
+                <link refid="gntentry_8c"/>
+            </node>
+            <node id="1666">
+                <label>gntft.c</label>
+                <link refid="gntft_8c"/>
+            </node>
+            <node id="1669">
+                <label>gntpounce.c</label>
+                <link refid="gntpounce_8c"/>
+            </node>
+            <node id="1685">
+                <label>libgnt/gntmenu.c</label>
+                <link refid="gntmenu_8c"/>
+            </node>
+            <node id="1674">
+                <label>libgnt/gntmenu.h</label>
+                <link refid="gntmenu_8h"/>
+                <childnode refid="1665" relation="include">
+                </childnode>
+                <childnode refid="1675" relation="include">
+                </childnode>
+                <childnode refid="1683" relation="include">
+                </childnode>
+                <childnode refid="1688" relation="include">
+                </childnode>
+                <childnode refid="1689" relation="include">
+                </childnode>
+                <childnode refid="1685" relation="include">
+                </childnode>
+                <childnode refid="1687" relation="include">
+                </childnode>
+                <childnode refid="1680" relation="include">
+                </childnode>
+                <childnode refid="1681" relation="include">
+                </childnode>
+            </node>
+            <node id="1661">
+                <label>gntconv.c</label>
+                <link refid="gntconv_8c"/>
+            </node>
+            <node id="1692">
+                <label>libgnt/gnttree.c</label>
+                <link refid="gnttree_8c"/>
+            </node>
+            <node id="1663">
+                <label>libgnt/gnttree.h</label>
+                <link refid="gnttree_8h"/>
+                <childnode refid="1664" relation="include">
+                </childnode>
+                <childnode refid="1665" relation="include">
+                </childnode>
+                <childnode refid="1666" relation="include">
+                </childnode>
+                <childnode refid="1667" relation="include">
+                </childnode>
+                <childnode refid="1668" relation="include">
+                </childnode>
+                <childnode refid="1669" relation="include">
+                </childnode>
+                <childnode refid="1670" relation="include">
+                </childnode>
+                <childnode refid="1671" relation="include">
+                </childnode>
+                <childnode refid="1672" relation="include">
+                </childnode>
+                <childnode refid="1673" relation="include">
+                </childnode>
+                <childnode refid="1674" relation="include">
+                </childnode>
+                <childnode refid="1677" relation="include">
+                </childnode>
+                <childnode refid="1688" relation="include">
+                </childnode>
+                <childnode refid="1692" relation="include">
+                </childnode>
+                <childnode refid="1678" relation="include">
+                </childnode>
+                <childnode refid="1680" relation="include">
+                </childnode>
+                <childnode refid="1693" relation="include">
+                </childnode>
+            </node>
+            <node id="1662">
+                <label>gntdebug.c</label>
+                <link refid="gntdebug_8c"/>
+            </node>
+            <node id="1671">
+                <label>gntstatus.c</label>
+                <link refid="gntstatus_8c"/>
+            </node>
+            <node id="1677">
+                <label>libgnt/gntfilesel.c</label>
+                <link refid="gntfilesel_8c"/>
+            </node>
+            <node id="1676">
+                <label>libgnt/gntfilesel.h</label>
+                <link refid="gntfilesel_8h"/>
+                <childnode refid="1670" relation="include">
+                </childnode>
+                <childnode refid="1677" relation="include">
+                </childnode>
+            </node>
+        </invincdepgraph>
+        <innerclass refid="struct___gnt_text_view" prot="public">_GntTextView</innerclass>
+        <innerclass refid="struct___gnt_text_view_class" prot="public">_GntTextViewClass</innerclass>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="gnttextview_8h_1ac1365df03c4fddba5420b6fd80aa829b" prot="public" static="no">
+                <name>GNT_TYPE_TEXT_VIEW</name>
+                <initializer>(<ref refid="gnttextview_8h_1a86719c8ee345a7f8a8ccffd1bb52ce4a" kindref="member">
+                    gnt_text_view_get_gtype</ref>())
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="9" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        bodystart="9" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" prot="public" static="no">
+                <name>GNT_TEXT_VIEW</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_INSTANCE_CAST((obj),<ref
+                        refid="gnttextview_8h_1ac1365df03c4fddba5420b6fd80aa829b" kindref="member">
+                    GNT_TYPE_TEXT_VIEW</ref>,<ref refid="gnttextview_8h_1a0f0993c949fa79d7d2b1d128ca9000f3"
+                                                  kindref="member">GntTextView</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="10" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        bodystart="10" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gnttextview_8h_1a46ac48d001bfe813ece87086fcb392d2" prot="public" static="no">
+                <name>GNT_TEXT_VIEW_CLASS</name>
+                <param>
+                    <defname>klass</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_CLASS_CAST((klass),<ref
+                        refid="gnttextview_8h_1ac1365df03c4fddba5420b6fd80aa829b" kindref="member">
+                    GNT_TYPE_TEXT_VIEW</ref>,<ref refid="gnttextview_8h_1a78173779904427afd705030f399238e0"
+                                                  kindref="member">GntTextViewClass</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="11" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        bodystart="11" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gnttextview_8h_1a9fbcb2608164265878e79d8c45919bc6" prot="public" static="no">
+                <name>GNT_IS_TEXT_VIEW</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_INSTANCE_TYPE((obj),<ref
+                        refid="gnttextview_8h_1ac1365df03c4fddba5420b6fd80aa829b" kindref="member">
+                    GNT_TYPE_TEXT_VIEW</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="12" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        bodystart="12" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gnttextview_8h_1ab22b30da88e08849c59b96eb6ed23b8f" prot="public" static="no">
+                <name>GNT_IS_TEXT_VIEW_CLASS</name>
+                <param>
+                    <defname>klass</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_CLASS_TYPE((klass),<ref
+                        refid="gnttextview_8h_1ac1365df03c4fddba5420b6fd80aa829b" kindref="member">
+                    GNT_TYPE_TEXT_VIEW</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="13" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        bodystart="13" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gnttextview_8h_1ade50ee10018b45c5b40a10a03f7701f1" prot="public" static="no">
+                <name>GNT_TEXT_VIEW_GET_CLASS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_INSTANCE_GET_CLASS((obj),<ref
+                        refid="gnttextview_8h_1ac1365df03c4fddba5420b6fd80aa829b" kindref="member">
+                    GNT_TYPE_TEXT_VIEW</ref>,<ref refid="gnttextview_8h_1a78173779904427afd705030f399238e0"
+                                                  kindref="member">GntTextViewClass</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="14" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        bodystart="14" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gnttextview_8h_1aadd9a573f6b86938525f7ee752f149d6" prot="public" static="no">
+                <name>GNT_TEXT_VIEW_FLAGS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(<ref refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">
+                    GNT_TEXT_VIEW</ref>(obj)-&gt;priv.flags)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="16" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        bodystart="16" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gnttextview_8h_1ae97d441a11a958b0cc129fa85169b5ec" prot="public" static="no">
+                <name>GNT_TEXT_VIEW_SET_FLAGS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <param>
+                    <defname>flags</defname>
+                </param>
+                <initializer>(<ref refid="gnttextview_8h_1aadd9a573f6b86938525f7ee752f149d6" kindref="member">
+                    GNT_TEXT_VIEW_FLAGS</ref>(obj) |= flags)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="17" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        bodystart="17" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gnttextview_8h_1aca0fef1a89c6f068e038b66d8c2d7a93" prot="public" static="no">
+                <name>GNT_TEXT_VIEW_UNSET_FLAGS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <param>
+                    <defname>flags</defname>
+                </param>
+                <initializer>(<ref refid="gnttextview_8h_1aadd9a573f6b86938525f7ee752f149d6" kindref="member">
+                    GNT_TEXT_VIEW_FLAGS</ref>(obj) &amp;= ~(flags))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="18" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        bodystart="18" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="enum">
+            <memberdef kind="enum" id="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddf" prot="public" static="no">
+                <name>GntTextFormatFlags</name>
+                <enumvalue id="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44ca22374b4f5f6078f171aeb5f2e7b1"
+                           prot="public">
+                    <name>GNT_TEXT_FLAG_NORMAL</name>
+                    <initializer>= 0</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44fb1f1c685640d25a63350923fd0359"
+                           prot="public">
+                    <name>GNT_TEXT_FLAG_BOLD</name>
+                    <initializer>= 1 &lt;&lt; 0</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa417fb816e5064925152e3a8c4f1699c8"
+                           prot="public">
+                    <name>GNT_TEXT_FLAG_UNDERLINE</name>
+                    <initializer>= 1 &lt;&lt; 1</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa0fe909155f8b0770c0a4db440eecfb61"
+                           prot="public">
+                    <name>GNT_TEXT_FLAG_BLINK</name>
+                    <initializer>= 1 &lt;&lt; 2</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa97edcbde7df935eb10bea1cbb72cd11d"
+                           prot="public">
+                    <name>GNT_TEXT_FLAG_DIM</name>
+                    <initializer>= 1 &lt;&lt; 3</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa758e66af5271b074ac57ffbfa3da63f1"
+                           prot="public">
+                    <name>GNT_TEXT_FLAG_HIGHLIGHT</name>
+                    <initializer>= 1 &lt;&lt; 4</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="35" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        bodystart="34" bodyend="42"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="typedef">
+            <memberdef kind="typedef" id="gnttextview_8h_1a0f0993c949fa79d7d2b1d128ca9000f3" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_text_view" kindref="compound">_GntTextView</ref>
+                </type>
+                <definition>typedef struct _GntTextView GntTextView</definition>
+                <argsstring></argsstring>
+                <name>GntTextView</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="30" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        bodystart="20" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gnttextview_8h_1a7d773445caa4bf4a0733b02652080afa" prot="public" static="no">
+                <type>struct _GntTextViewPriv</type>
+                <definition>typedef struct _GntTextViewPriv GntTextViewPriv</definition>
+                <argsstring></argsstring>
+                <name>GntTextViewPriv</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="30" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        bodystart="21" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gnttextview_8h_1a78173779904427afd705030f399238e0" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_text_view_class" kindref="compound">_GntTextViewClass</ref>
+                </type>
+                <definition>typedef struct _GntTextViewClass GntTextViewClass</definition>
+                <argsstring></argsstring>
+                <name>GntTextViewClass</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="30" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        bodystart="22" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gnttextview_8h_1a86719c8ee345a7f8a8ccffd1bb52ce4a" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>G_BEGIN_DECLS GType</type>
+                <definition>G_BEGIN_DECLS GType gnt_text_view_get_gtype</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_text_view_get_gtype</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="56" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.c"
+                        bodystart="409" bodyend="434"/>
+            </memberdef>
+            <memberdef kind="function" id="gnttextview_8h_1a18616164f0d15fea17a833206f7e0572" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* gnt_text_view_new</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_text_view_new</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="60" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.c"
+                        bodystart="436" bodyend="448"/>
+            </memberdef>
+            <memberdef kind="function" id="gnttextview_8h_1abe14d408a8c657fa9f5f707717e9e72f" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_text_view_scroll</definition>
+                <argsstring>(GntTextView *view, int scroll)</argsstring>
+                <name>gnt_text_view_scroll</name>
+                <param>
+                    <type>
+                        <ref refid="gnttextview_8h_1a0f0993c949fa79d7d2b1d128ca9000f3" kindref="member">GntTextView
+                        </ref>
+                        *
+                    </type>
+                    <declname>view</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>scroll</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="63" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.c"
+                        bodystart="559" bodyend="581"/>
+            </memberdef>
+            <memberdef kind="function" id="gnttextview_8h_1a491ccc844a5ec91e80108ecb40b105e7" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_text_view_append_text_with_flags</definition>
+                <argsstring>(GntTextView *view, const char *text, GntTextFormatFlags flags)</argsstring>
+                <name>gnt_text_view_append_text_with_flags</name>
+                <param>
+                    <type>
+                        <ref refid="gnttextview_8h_1a0f0993c949fa79d7d2b1d128ca9000f3" kindref="member">GntTextView
+                        </ref>
+                        *
+                    </type>
+                    <declname>view</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>text</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddf" kindref="member">
+                            GntTextFormatFlags
+                        </ref>
+                    </type>
+                    <declname>flags</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="65" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.c"
+                        bodystart="450" bodyend="453"/>
+            </memberdef>
+            <memberdef kind="function" id="gnttextview_8h_1a09905c13345009997de3704613247eff" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_text_view_append_text_with_tag</definition>
+                <argsstring>(GntTextView *view, const char *text, GntTextFormatFlags flags, const char *tag)
+                </argsstring>
+                <name>gnt_text_view_append_text_with_tag</name>
+                <param>
+                    <type>
+                        <ref refid="gnttextview_8h_1a0f0993c949fa79d7d2b1d128ca9000f3" kindref="member">GntTextView
+                        </ref>
+                        *
+                    </type>
+                    <declname>view</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>text</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddf" kindref="member">
+                            GntTextFormatFlags
+                        </ref>
+                    </type>
+                    <declname>flags</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>tag</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="67" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.c"
+                        bodystart="455" bodyend="557"/>
+            </memberdef>
+            <memberdef kind="function" id="gnttextview_8h_1ac80d84b76326d5abde5d0d817b4ceb2c" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_text_view_next_line</definition>
+                <argsstring>(GntTextView *view)</argsstring>
+                <name>gnt_text_view_next_line</name>
+                <param>
+                    <type>
+                        <ref refid="gnttextview_8h_1a0f0993c949fa79d7d2b1d128ca9000f3" kindref="member">GntTextView
+                        </ref>
+                        *
+                    </type>
+                    <declname>view</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="71" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.c"
+                        bodystart="583" bodyend="591"/>
+            </memberdef>
+            <memberdef kind="function" id="gnttextview_8h_1acf631987cd28089c066483e178a5ef54" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>chtype</type>
+                <definition>chtype gnt_text_format_flag_to_chtype</definition>
+                <argsstring>(GntTextFormatFlags flags)</argsstring>
+                <name>gnt_text_format_flag_to_chtype</name>
+                <param>
+                    <type>
+                        <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddf" kindref="member">
+                            GntTextFormatFlags
+                        </ref>
+                    </type>
+                    <declname>flags</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="73" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.c"
+                        bodystart="593" bodyend="612"/>
+            </memberdef>
+            <memberdef kind="function" id="gnttextview_8h_1a100b34187493fc9985191ac6b9a8c9f5" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_text_view_clear</definition>
+                <argsstring>(GntTextView *view)</argsstring>
+                <name>gnt_text_view_clear</name>
+                <param>
+                    <type>
+                        <ref refid="gnttextview_8h_1a0f0993c949fa79d7d2b1d128ca9000f3" kindref="member">GntTextView
+                        </ref>
+                        *
+                    </type>
+                    <declname>view</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="75" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.c"
+                        bodystart="614" bodyend="630"/>
+            </memberdef>
+            <memberdef kind="function" id="gnttextview_8h_1a835ee4bb2f0cbe1b0b801a3d4d264194" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>int</type>
+                <definition>int gnt_text_view_get_lines_below</definition>
+                <argsstring>(GntTextView *view)</argsstring>
+                <name>gnt_text_view_get_lines_below</name>
+                <param>
+                    <type>
+                        <ref refid="gnttextview_8h_1a0f0993c949fa79d7d2b1d128ca9000f3" kindref="member">GntTextView
+                        </ref>
+                        *
+                    </type>
+                    <declname>view</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="77" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.c"
+                        bodystart="632" bodyend="639"/>
+            </memberdef>
+            <memberdef kind="function" id="gnttextview_8h_1ab4f505d56c126ef764db5528c2486134" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>int</type>
+                <definition>int gnt_text_view_get_lines_above</definition>
+                <argsstring>(GntTextView *view)</argsstring>
+                <name>gnt_text_view_get_lines_above</name>
+                <param>
+                    <type>
+                        <ref refid="gnttextview_8h_1a0f0993c949fa79d7d2b1d128ca9000f3" kindref="member">GntTextView
+                        </ref>
+                        *
+                    </type>
+                    <declname>view</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="79" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.c"
+                        bodystart="641" bodyend="651"/>
+            </memberdef>
+            <memberdef kind="function" id="gnttextview_8h_1a73246bd56eee232af955f3751b5400ee" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>int</type>
+                <definition>int gnt_text_view_tag_change</definition>
+                <argsstring>(GntTextView *view, const char *name, const char *text, gboolean all)</argsstring>
+                <name>gnt_text_view_tag_change</name>
+                <param>
+                    <type>
+                        <ref refid="gnttextview_8h_1a0f0993c949fa79d7d2b1d128ca9000f3" kindref="member">GntTextView
+                        </ref>
+                        *
+                    </type>
+                    <declname>view</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>name</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>text</declname>
+                </param>
+                <param>
+                    <type>gboolean</type>
+                    <declname>all</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>XXX: There are quite possibly more than a few bugs here.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="82" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.c"
+                        bodystart="656" bodyend="740"/>
+            </memberdef>
+            <memberdef kind="function" id="gnttextview_8h_1aade2b1776dffd7396e5c3de4250ed550" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_text_view_attach_scroll_widget</definition>
+                <argsstring>(GntTextView *view, GntWidget *widget)</argsstring>
+                <name>gnt_text_view_attach_scroll_widget</name>
+                <param>
+                    <type>
+                        <ref refid="gnttextview_8h_1a0f0993c949fa79d7d2b1d128ca9000f3" kindref="member">GntTextView
+                        </ref>
+                        *
+                    </type>
+                    <declname>view</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"
+                        line="84" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.c"
+                        bodystart="759" bodyend="762"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1">
+                <highlight class="preprocessor">#ifndef<sp/>GNT_TEXT_VIEW_H
+                </highlight>
+            </codeline>
+            <codeline lineno="2">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_TEXT_VIEW_H
+                </highlight>
+            </codeline>
+            <codeline lineno="3">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="4">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntwidget_8h" kindref="compound">
+                    gntwidget.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="5">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gnt_8h" kindref="compound">gnt.h</ref>
+                    &quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="6">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntcolors_8h" kindref="compound">
+                    gntcolors.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntkeys_8h" kindref="compound">
+                    gntkeys.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="8">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="9" refid="gnttextview_8h_1ac1365df03c4fddba5420b6fd80aa829b" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_TYPE_TEXT_VIEW
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(gnt_text_view_get_gtype())
+                </highlight>
+            </codeline>
+            <codeline lineno="10" refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_TEXT_VIEW(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_INSTANCE_CAST((obj),<sp/>GNT_TYPE_TEXT_VIEW,<sp/>GntTextView))
+                </highlight>
+            </codeline>
+            <codeline lineno="11" refid="gnttextview_8h_1a46ac48d001bfe813ece87086fcb392d2" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_TEXT_VIEW_CLASS(klass)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_CLASS_CAST((klass),<sp/>GNT_TYPE_TEXT_VIEW,<sp/>GntTextViewClass))
+                </highlight>
+            </codeline>
+            <codeline lineno="12" refid="gnttextview_8h_1a9fbcb2608164265878e79d8c45919bc6" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_IS_TEXT_VIEW(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_INSTANCE_TYPE((obj),<sp/>GNT_TYPE_TEXT_VIEW))
+                </highlight>
+            </codeline>
+            <codeline lineno="13" refid="gnttextview_8h_1ab22b30da88e08849c59b96eb6ed23b8f" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_IS_TEXT_VIEW_CLASS(klass)
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_CLASS_TYPE((klass),<sp/>GNT_TYPE_TEXT_VIEW))
+                </highlight>
+            </codeline>
+            <codeline lineno="14" refid="gnttextview_8h_1ade50ee10018b45c5b40a10a03f7701f1" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_TEXT_VIEW_GET_CLASS(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_INSTANCE_GET_CLASS((obj),<sp/>GNT_TYPE_TEXT_VIEW,<sp/>GntTextViewClass))
+                </highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="16" refid="gnttextview_8h_1aadd9a573f6b86938525f7ee752f149d6" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_TEXT_VIEW_FLAGS(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_TEXT_VIEW(obj)-&gt;priv.flags)
+                </highlight>
+            </codeline>
+            <codeline lineno="17" refid="gnttextview_8h_1ae97d441a11a958b0cc129fa85169b5ec" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_TEXT_VIEW_SET_FLAGS(obj,<sp/>flags)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_TEXT_VIEW_FLAGS(obj)<sp/>|=<sp/>flags)
+                </highlight>
+            </codeline>
+            <codeline lineno="18" refid="gnttextview_8h_1aca0fef1a89c6f068e038b66d8c2d7a93" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_TEXT_VIEW_UNSET_FLAGS(obj,<sp/>flags)
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_TEXT_VIEW_FLAGS(obj)<sp/>&amp;=<sp/>~(flags))
+                </highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="20" refid="gnttextview_8h_1a0f0993c949fa79d7d2b1d128ca9000f3" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_text_view" kindref="compound">_GntTextView</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_text_view" kindref="compound">GntTextView</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="21" refid="gnttextview_8h_1a7d773445caa4bf4a0733b02652080afa" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">_GntTextViewPriv
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a7d773445caa4bf4a0733b02652080afa" kindref="member">
+                        GntTextViewPriv</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="22" refid="gnttextview_8h_1a78173779904427afd705030f399238e0" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_text_view_class" kindref="compound">_GntTextViewClass</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_text_view_class" kindref="compound">GntTextViewClass</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="24" refid="struct___gnt_text_view" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_text_view" kindref="compound">_GntTextView</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="26" refid="struct___gnt_text_view_1ae3e3b55c7e6209f0e555f25a2e5fd1a9" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_text_view_1ae3e3b55c7e6209f0e555f25a2e5fd1a9" kindref="member">parent</ref>
+                    ;
+                </highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28" refid="struct___gnt_text_view_1a0b8c2528f8c99f1e1e094b8f931e583f" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GString<sp/>*<ref refid="struct___gnt_text_view_1a0b8c2528f8c99f1e1e094b8f931e583f"
+                                           kindref="member">string</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="29" refid="struct___gnt_text_view_1a4dd2ca5f40d57a1f17e9130154bdfe88" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*<ref refid="struct___gnt_text_view_1a4dd2ca5f40d57a1f17e9130154bdfe88"
+                                         kindref="member">list</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>List<sp/>of<sp/>GntTextLine<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31" refid="struct___gnt_text_view_1ade9ab0f42f12dab30724d3300df7ddc4" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*<ref refid="struct___gnt_text_view_1ade9ab0f42f12dab30724d3300df7ddc4"
+                                         kindref="member">tags</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>A<sp/>list<sp/>of<sp/>tags<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34" refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddf" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">enum</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="36"
+                      refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44ca22374b4f5f6078f171aeb5f2e7b1"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44ca22374b4f5f6078f171aeb5f2e7b1"
+                         kindref="member">GNT_TEXT_FLAG_NORMAL
+                    </ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>=<sp/>0,
+                </highlight>
+            </codeline>
+            <codeline lineno="37"
+                      refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44fb1f1c685640d25a63350923fd0359"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44fb1f1c685640d25a63350923fd0359"
+                         kindref="member">GNT_TEXT_FLAG_BOLD
+                    </ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>=<sp/>1<sp/>&lt;&lt;<sp/>0,
+                </highlight>
+            </codeline>
+            <codeline lineno="38"
+                      refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa417fb816e5064925152e3a8c4f1699c8"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa417fb816e5064925152e3a8c4f1699c8"
+                         kindref="member">GNT_TEXT_FLAG_UNDERLINE
+                    </ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>=<sp/>1<sp/>&lt;&lt;<sp/>1,
+                </highlight>
+            </codeline>
+            <codeline lineno="39"
+                      refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa0fe909155f8b0770c0a4db440eecfb61"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa0fe909155f8b0770c0a4db440eecfb61"
+                         kindref="member">GNT_TEXT_FLAG_BLINK
+                    </ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>=<sp/>1<sp/>&lt;&lt;<sp/>2,
+                </highlight>
+            </codeline>
+            <codeline lineno="40"
+                      refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa97edcbde7df935eb10bea1cbb72cd11d"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa97edcbde7df935eb10bea1cbb72cd11d"
+                         kindref="member">GNT_TEXT_FLAG_DIM
+                    </ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>=<sp/>1<sp/>&lt;&lt;<sp/>3,
+                </highlight>
+            </codeline>
+            <codeline lineno="41"
+                      refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa758e66af5271b074ac57ffbfa3da63f1"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa758e66af5271b074ac57ffbfa3da63f1"
+                         kindref="member">GNT_TEXT_FLAG_HIGHLIGHT
+                    </ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>=<sp/>1<sp/>&lt;&lt;<sp/>4,
+                </highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal">}
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddf" kindref="member">
+                        GntTextFormatFlags</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="44" refid="struct___gnt_text_view_class" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_text_view_class" kindref="compound">_GntTextViewClass</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="46" refid="struct___gnt_text_view_class_1a67dea6bdb089093d277840b7ad43a1f2"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget_class" kindref="compound">GntWidgetClass</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_text_view_class_1a67dea6bdb089093d277840b7ad43a1f2" kindref="member">
+                        parent</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="48" refid="struct___gnt_text_view_class_1a89dfce3a9aa0299a7819f8a4b9df5cef"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_text_view_class_1a89dfce3a9aa0299a7819f8a4b9df5cef"
+                                         kindref="member">gnt_reserved1</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="49" refid="struct___gnt_text_view_class_1abc424f0d49c73831a72f061af6b0ce1d"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_text_view_class_1abc424f0d49c73831a72f061af6b0ce1d"
+                                         kindref="member">gnt_reserved2</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="50" refid="struct___gnt_text_view_class_1a1e0be0259f96a3bff95418925fe8163e"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_text_view_class_1a1e0be0259f96a3bff95418925fe8163e"
+                                         kindref="member">gnt_reserved3</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="51" refid="struct___gnt_text_view_class_1a3f7d85f4e8f04f18386922c69c245469"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_text_view_class_1a3f7d85f4e8f04f18386922c69c245469"
+                                         kindref="member">gnt_reserved4</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal">G_BEGIN_DECLS</highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal">GType
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a5bec894868957327aeb0bc741aec1fc9" kindref="member">
+                        gnt_text_view_get_gtype</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>XXX:<sp/>For<sp/>now,<sp/>don&apos;t<sp/>set<sp/>a<sp/>textview<sp/>to
+                    <sp/>have<sp/>any<sp/>border.
+                </highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="comment"><sp/>*
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>If<sp/>you<sp/>want<sp/>borders<sp/>real<sp/>bad,<sp/>put<sp/>it<sp/>in<sp/>a<sp/>box.<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal">
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gnttextview_8c_1a3bdd397329f307fbdc41e776772bd316" kindref="member">
+                    gnt_text_view_new</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>scroll<sp/>&gt;<sp/>0<sp/>means<sp/>scroll<sp/>up,<sp/>&lt;<sp/>0<sp/>
+                    means<sp/>scroll<sp/>down,<sp/>==<sp/>0<sp/>means<sp/>scroll<sp/>to<sp/>the<sp/>end<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnttextview_8c_1abe14d408a8c657fa9f5f707717e9e72f" kindref="member">
+                        gnt_text_view_scroll</ref>(
+                    <ref refid="struct___gnt_text_view" kindref="compound">GntTextView</ref>
+                    <sp/>*view,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>scroll);
+                </highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a491ccc844a5ec91e80108ecb40b105e7" kindref="member">
+                        gnt_text_view_append_text_with_flags</ref>(
+                    <ref refid="struct___gnt_text_view" kindref="compound">GntTextView</ref>
+                    <sp/>*view,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text,
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddf" kindref="member">GntTextFormatFlags
+                    </ref>
+                    <sp/>flags);
+                </highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a3e6f3fa45c59f6516f7669dcb1777356" kindref="member">
+                        gnt_text_view_append_text_with_tag</ref>(
+                    <ref refid="struct___gnt_text_view" kindref="compound">GntTextView</ref>
+                    <sp/>*view,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text,
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddf" kindref="member">GntTextFormatFlags
+                    </ref>
+                    <sp/>flags,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*tag);
+                </highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>Move<sp/>the<sp/>cursor<sp/>to<sp/>the<sp/>beginning<sp/>of<sp/>the
+                    <sp/>next<sp/>line<sp/>and<sp/>resets<sp/>text-attributes.
+                </highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="comment"><sp/>*<sp/>It<sp/>first<sp/>completes<sp/>the<sp/>current<sp/>line<sp/>with
+                    <sp/>the<sp/>current<sp/>text-attributes.<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnttextview_8c_1ac80d84b76326d5abde5d0d817b4ceb2c" kindref="member">
+                        gnt_text_view_next_line</ref>(
+                    <ref refid="struct___gnt_text_view" kindref="compound">GntTextView</ref>
+                    <sp/>*view);
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal">chtype
+                    <sp/>
+                    <ref refid="gnttextview_8c_1acf631987cd28089c066483e178a5ef54" kindref="member">
+                        gnt_text_format_flag_to_chtype</ref>(
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddf" kindref="member">GntTextFormatFlags
+                    </ref>
+                    <sp/>flags);
+                </highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a100b34187493fc9985191ac6b9a8c9f5" kindref="member">
+                        gnt_text_view_clear</ref>(
+                    <ref refid="struct___gnt_text_view" kindref="compound">GntTextView</ref>
+                    <sp/>*view);
+                </highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a835ee4bb2f0cbe1b0b801a3d4d264194" kindref="member">
+                        gnt_text_view_get_lines_below</ref>(
+                    <ref refid="struct___gnt_text_view" kindref="compound">GntTextView</ref>
+                    <sp/>*view);
+                </highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnttextview_8c_1ab4f505d56c126ef764db5528c2486134" kindref="member">
+                        gnt_text_view_get_lines_above</ref>(
+                    <ref refid="struct___gnt_text_view" kindref="compound">GntTextView</ref>
+                    <sp/>*view);
+                </highlight>
+            </codeline>
+            <codeline lineno="80">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>If<sp/>text<sp/>is<sp/>NULL,<sp/>then<sp/>the<sp/>tag<sp/>is<sp/>
+                    removed.<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a73246bd56eee232af955f3751b5400ee" kindref="member">
+                        gnt_text_view_tag_change</ref>(
+                    <ref refid="struct___gnt_text_view" kindref="compound">GntTextView</ref>
+                    <sp/>*view,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*name,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text,<sp/>gboolean<sp/>all);
+                </highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnttextview_8c_1aade2b1776dffd7396e5c3de4250ed550" kindref="member">
+                        gnt_text_view_attach_scroll_widget</ref>(
+                    <ref refid="struct___gnt_text_view" kindref="compound">GntTextView</ref>
+                    <sp/>*view,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal">G_END_DECLS</highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>GNT_TEXT_VIEW_H<sp/>*/
+                </highlight>
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+        </programlisting>
+        <location
+                file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gnttextview.h"/>
+    </compounddef>
+</doxygen>

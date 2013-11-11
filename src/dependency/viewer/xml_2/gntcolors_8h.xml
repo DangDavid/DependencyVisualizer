@@ -1,0 +1,1386 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntcolors_8h" kind="file">
+        <compoundname>gntcolors.h</compoundname>
+        <includes local="no">glib.h</includes>
+        <includedby refid="gnt_8h" local="yes">libgnt/gnt.h</includedby>
+        <includedby refid="gntcheckbox_8h" local="yes">libgnt/gntcheckbox.h</includedby>
+        <includedby refid="gntcolors_8c" local="yes">libgnt/gntcolors.c</includedby>
+        <includedby refid="gntcombobox_8h" local="yes">libgnt/gntcombobox.h</includedby>
+        <includedby refid="gnttree_8h" local="yes">libgnt/gnttree.h</includedby>
+        <includedby refid="gnttextview_8h" local="yes">libgnt/gnttextview.h</includedby>
+        <includedby refid="gntentry_8h" local="yes">libgnt/gntentry.h</includedby>
+        <includedby refid="gntwindow_8h" local="yes">libgnt/gntwindow.h</includedby>
+        <includedby refid="gntmenu_8h" local="yes">libgnt/gntmenu.h</includedby>
+        <includedby refid="gntfilesel_8h" local="yes">libgnt/gntfilesel.h</includedby>
+        <includedby refid="gntline_8h" local="yes">libgnt/gntline.h</includedby>
+        <includedby refid="gntmain_8c" local="yes">libgnt/gntmain.c</includedby>
+        <includedby refid="gntmenuitemcheck_8h" local="yes">libgnt/gntmenuitemcheck.h</includedby>
+        <includedby refid="gntstyle_8c" local="yes">libgnt/gntstyle.c</includedby>
+        <incdepgraph>
+            <node id="1030">
+                <label>libgnt/gntcolors.h</label>
+                <link refid="gntcolors.h"/>
+                <childnode refid="1031" relation="include">
+                </childnode>
+            </node>
+            <node id="1031">
+                <label>glib.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="1067">
+                <label>libgnt/gntbutton.c</label>
+                <link refid="gntbutton_8c"/>
+            </node>
+            <node id="1049">
+                <label>gntnotify.c</label>
+                <link refid="gntnotify_8c"/>
+            </node>
+            <node id="1075">
+                <label>libgnt/gntbutton.h</label>
+                <link refid="gntbutton_8h"/>
+                <childnode refid="1037" relation="include">
+                </childnode>
+                <childnode refid="1047" relation="include">
+                </childnode>
+                <childnode refid="1048" relation="include">
+                </childnode>
+                <childnode refid="1049" relation="include">
+                </childnode>
+                <childnode refid="1043" relation="include">
+                </childnode>
+                <childnode refid="1050" relation="include">
+                </childnode>
+                <childnode refid="1051" relation="include">
+                </childnode>
+                <childnode refid="1052" relation="include">
+                </childnode>
+                <childnode refid="1067" relation="include">
+                </childnode>
+                <childnode refid="1076" relation="include">
+                </childnode>
+                <childnode refid="1057" relation="include">
+                </childnode>
+                <childnode refid="1071" relation="include">
+                </childnode>
+                <childnode refid="1045" relation="include">
+                </childnode>
+            </node>
+            <node id="1045">
+                <label>plugins/gntgf.c</label>
+                <link refid="gntgf_8c"/>
+            </node>
+            <node id="1085">
+                <label>libgnt/gntmenuitem.c</label>
+                <link refid="gntmenuitem_8c"/>
+            </node>
+            <node id="1081">
+                <label>libgnt/gntmenuitem.h</label>
+                <link refid="gntmenuitem_8h"/>
+                <childnode refid="1039" relation="include">
+                </childnode>
+                <childnode refid="1080" relation="include">
+                </childnode>
+                <childnode refid="1082" relation="include">
+                </childnode>
+                <childnode refid="1085" relation="include">
+                </childnode>
+            </node>
+            <node id="1041">
+                <label>plugins/lastlog.c</label>
+                <link refid="lastlog_8c"/>
+            </node>
+            <node id="1055">
+                <label>libgnt/gntcolors.c</label>
+                <link refid="gntcolors_8c"/>
+            </node>
+            <node id="1032">
+                <label>libgnt/gntcolors.h</label>
+                <link refid="gntcolors.h"/>
+                <childnode refid="1033" relation="include">
+                </childnode>
+                <childnode refid="1076" relation="include">
+                </childnode>
+                <childnode refid="1055" relation="include">
+                </childnode>
+                <childnode refid="1078" relation="include">
+                </childnode>
+                <childnode refid="1079" relation="include">
+                </childnode>
+                <childnode refid="1088" relation="include">
+                </childnode>
+                <childnode refid="1090" relation="include">
+                </childnode>
+                <childnode refid="1073" relation="include">
+                </childnode>
+                <childnode refid="1080" relation="include">
+                </childnode>
+                <childnode refid="1074" relation="include">
+                </childnode>
+                <childnode refid="1091" relation="include">
+                </childnode>
+                <childnode refid="1058" relation="include">
+                </childnode>
+                <childnode refid="1082" relation="include">
+                </childnode>
+                <childnode refid="1059" relation="include">
+                </childnode>
+            </node>
+            <node id="1058">
+                <label>libgnt/gntmain.c</label>
+                <link refid="gntmain_8c"/>
+            </node>
+            <node id="1084">
+                <label>libgnt/gntmenuitemcheck.c</label>
+                <link refid="gntmenuitemcheck_8c"/>
+            </node>
+            <node id="1082">
+                <label>libgnt/gntmenuitemcheck.h</label>
+                <link refid="gntmenuitemcheck_8h"/>
+                <childnode refid="1039" relation="include">
+                </childnode>
+                <childnode refid="1083" relation="include">
+                </childnode>
+                <childnode refid="1084" relation="include">
+                </childnode>
+            </node>
+            <node id="1070">
+                <label>libgnt/gnttextview.c</label>
+                <link refid="gnttextview_8c"/>
+            </node>
+            <node id="1088">
+                <label>libgnt/gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="1040" relation="include">
+                </childnode>
+                <childnode refid="1047" relation="include">
+                </childnode>
+                <childnode refid="1079" relation="include">
+                </childnode>
+                <childnode refid="1089" relation="include">
+                </childnode>
+                <childnode refid="1070" relation="include">
+                </childnode>
+                <childnode refid="1071" relation="include">
+                </childnode>
+                <childnode refid="1063" relation="include">
+                </childnode>
+                <childnode refid="1041" relation="include">
+                </childnode>
+            </node>
+            <node id="1064">
+                <label>libgnt/wms/s.c</label>
+                <link refid="s_8c"/>
+            </node>
+            <node id="1037">
+                <label>gntaccount.c</label>
+                <link refid="gntaccount_8c"/>
+            </node>
+            <node id="1054">
+                <label>libgnt/gntbindable.c</label>
+                <link refid="gntbindable_8c"/>
+            </node>
+            <node id="1068">
+                <label>libgnt/gntcombobox.c</label>
+                <link refid="gntcombobox_8c"/>
+            </node>
+            <node id="1078">
+                <label>libgnt/gntcombobox.h</label>
+                <link refid="gntcombobox_8h"/>
+                <childnode refid="1037" relation="include">
+                </childnode>
+                <childnode refid="1039" relation="include">
+                </childnode>
+                <childnode refid="1050" relation="include">
+                </childnode>
+                <childnode refid="1051" relation="include">
+                </childnode>
+                <childnode refid="1052" relation="include">
+                </childnode>
+                <childnode refid="1068" relation="include">
+                </childnode>
+                <childnode refid="1071" relation="include">
+                </childnode>
+            </node>
+            <node id="1063">
+                <label>libgnt/gntwm.c</label>
+                <link refid="gntwm_8c"/>
+            </node>
+            <node id="1086">
+                <label>libgnt/gntwm.h</label>
+                <link refid="gntwm_8h"/>
+                <childnode refid="1087" relation="include">
+                </childnode>
+                <childnode refid="1058" relation="include">
+                </childnode>
+                <childnode refid="1063" relation="include">
+                </childnode>
+                <childnode refid="1064" relation="include">
+                </childnode>
+                <childnode refid="1044" relation="include">
+                </childnode>
+            </node>
+            <node id="1046">
+                <label>plugins/gnthistory.c</label>
+                <link refid="gnthistory_8c"/>
+            </node>
+            <node id="1033">
+                <label>libgnt/gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="1034" relation="include">
+                </childnode>
+                <childnode refid="1037" relation="include">
+                </childnode>
+                <childnode refid="1038" relation="include">
+                </childnode>
+                <childnode refid="1042" relation="include">
+                </childnode>
+                <childnode refid="1040" relation="include">
+                </childnode>
+                <childnode refid="1047" relation="include">
+                </childnode>
+                <childnode refid="1048" relation="include">
+                </childnode>
+                <childnode refid="1049" relation="include">
+                </childnode>
+                <childnode refid="1043" relation="include">
+                </childnode>
+                <childnode refid="1050" relation="include">
+                </childnode>
+                <childnode refid="1051" relation="include">
+                </childnode>
+                <childnode refid="1052" relation="include">
+                </childnode>
+                <childnode refid="1053" relation="include">
+                </childnode>
+                <childnode refid="1054" relation="include">
+                </childnode>
+                <childnode refid="1065" relation="include">
+                </childnode>
+                <childnode refid="1072" relation="include">
+                </childnode>
+                <childnode refid="1075" relation="include">
+                </childnode>
+                <childnode refid="1076" relation="include">
+                </childnode>
+                <childnode refid="1078" relation="include">
+                </childnode>
+                <childnode refid="1079" relation="include">
+                </childnode>
+                <childnode refid="1088" relation="include">
+                </childnode>
+                <childnode refid="1090" relation="include">
+                </childnode>
+                <childnode refid="1073" relation="include">
+                </childnode>
+                <childnode refid="1074" relation="include">
+                </childnode>
+                <childnode refid="1089" relation="include">
+                </childnode>
+                <childnode refid="1091" relation="include">
+                </childnode>
+                <childnode refid="1058" relation="include">
+                </childnode>
+                <childnode refid="1082" relation="include">
+                </childnode>
+                <childnode refid="1061" relation="include">
+                </childnode>
+                <childnode refid="1063" relation="include">
+                </childnode>
+                <childnode refid="1064" relation="include">
+                </childnode>
+                <childnode refid="1045" relation="include">
+                </childnode>
+                <childnode refid="1041" relation="include">
+                </childnode>
+            </node>
+            <node id="1087">
+                <label>gntidle.c</label>
+                <link refid="gntidle_8c"/>
+            </node>
+            <node id="1043">
+                <label>gntplugin.c</label>
+                <link refid="gntplugin_8c"/>
+            </node>
+            <node id="1039">
+                <label>gntblist.c</label>
+                <link refid="gntblist_8c"/>
+            </node>
+            <node id="1042">
+                <label>gntplugin.h</label>
+                <link refid="gntplugin_8h"/>
+                <childnode refid="1040" relation="include">
+                </childnode>
+                <childnode refid="1043" relation="include">
+                </childnode>
+                <childnode refid="1036" relation="include">
+                </childnode>
+                <childnode refid="1044" relation="include">
+                </childnode>
+                <childnode refid="1045" relation="include">
+                </childnode>
+                <childnode refid="1046" relation="include">
+                </childnode>
+                <childnode refid="1041" relation="include">
+                </childnode>
+            </node>
+            <node id="1062">
+                <label>libgnt/gntwindow.c</label>
+                <link refid="gntwindow_8c"/>
+            </node>
+            <node id="1073">
+                <label>libgnt/gntwindow.h</label>
+                <link refid="gntwindow_8h"/>
+                <childnode refid="1039" relation="include">
+                </childnode>
+                <childnode refid="1074" relation="include">
+                </childnode>
+                <childnode refid="1071" relation="include">
+                </childnode>
+                <childnode refid="1062" relation="include">
+                </childnode>
+                <childnode refid="1063" relation="include">
+                </childnode>
+                <childnode refid="1064" relation="include">
+                </childnode>
+                <childnode refid="1041" relation="include">
+                </childnode>
+            </node>
+            <node id="1059">
+                <label>libgnt/gntstyle.c</label>
+                <link refid="gntstyle_8c"/>
+            </node>
+            <node id="1053">
+                <label>libgnt/gntstyle.h</label>
+                <link refid="gntstyle_8h"/>
+                <childnode refid="1054" relation="include">
+                </childnode>
+                <childnode refid="1055" relation="include">
+                </childnode>
+                <childnode refid="1056" relation="include">
+                </childnode>
+                <childnode refid="1057" relation="include">
+                </childnode>
+                <childnode refid="1058" relation="include">
+                </childnode>
+                <childnode refid="1059" relation="include">
+                </childnode>
+                <childnode refid="1060" relation="include">
+                </childnode>
+                <childnode refid="1061" relation="include">
+                </childnode>
+                <childnode refid="1062" relation="include">
+                </childnode>
+                <childnode refid="1063" relation="include">
+                </childnode>
+                <childnode refid="1064" relation="include">
+                </childnode>
+            </node>
+            <node id="1051">
+                <label>gntrequest.c</label>
+                <link refid="gntrequest_8c"/>
+            </node>
+            <node id="1044">
+                <label>plugins/gntclipboard.c</label>
+                <link refid="plugins_2gntclipboard_8c"/>
+            </node>
+            <node id="1071">
+                <label>libgnt/gntutils.c</label>
+                <link refid="gntutils_8c"/>
+            </node>
+            <node id="1065">
+                <label>libgnt/gntutils.h</label>
+                <link refid="gntutils_8h"/>
+                <childnode refid="1039" relation="include">
+                </childnode>
+                <childnode refid="1054" relation="include">
+                </childnode>
+                <childnode refid="1066" relation="include">
+                </childnode>
+                <childnode refid="1067" relation="include">
+                </childnode>
+                <childnode refid="1068" relation="include">
+                </childnode>
+                <childnode refid="1056" relation="include">
+                </childnode>
+                <childnode refid="1069" relation="include">
+                </childnode>
+                <childnode refid="1058" relation="include">
+                </childnode>
+                <childnode refid="1070" relation="include">
+                </childnode>
+                <childnode refid="1060" relation="include">
+                </childnode>
+                <childnode refid="1071" relation="include">
+                </childnode>
+                <childnode refid="1061" relation="include">
+                </childnode>
+                <childnode refid="1063" relation="include">
+                </childnode>
+            </node>
+            <node id="1066">
+                <label>libgnt/gntbox.c</label>
+                <link refid="gntbox_8c"/>
+            </node>
+            <node id="1072">
+                <label>libgnt/gntbox.h</label>
+                <link refid="gntbox_8h"/>
+                <childnode refid="1037" relation="include">
+                </childnode>
+                <childnode refid="1039" relation="include">
+                </childnode>
+                <childnode refid="1040" relation="include">
+                </childnode>
+                <childnode refid="1047" relation="include">
+                </childnode>
+                <childnode refid="1048" relation="include">
+                </childnode>
+                <childnode refid="1049" relation="include">
+                </childnode>
+                <childnode refid="1043" relation="include">
+                </childnode>
+                <childnode refid="1050" relation="include">
+                </childnode>
+                <childnode refid="1051" relation="include">
+                </childnode>
+                <childnode refid="1052" relation="include">
+                </childnode>
+                <childnode refid="1066" relation="include">
+                </childnode>
+                <childnode refid="1068" relation="include">
+                </childnode>
+                <childnode refid="1056" relation="include">
+                </childnode>
+                <childnode refid="1073" relation="include">
+                </childnode>
+                <childnode refid="1058" relation="include">
+                </childnode>
+                <childnode refid="1063" relation="include">
+                </childnode>
+                <childnode refid="1064" relation="include">
+                </childnode>
+                <childnode refid="1045" relation="include">
+                </childnode>
+            </node>
+            <node id="1069">
+                <label>libgnt/gntlabel.c</label>
+                <link refid="gntlabel_8c"/>
+            </node>
+            <node id="1089">
+                <label>libgnt/gntlabel.h</label>
+                <link refid="gntlabel_8h"/>
+                <childnode refid="1037" relation="include">
+                </childnode>
+                <childnode refid="1039" relation="include">
+                </childnode>
+                <childnode refid="1048" relation="include">
+                </childnode>
+                <childnode refid="1049" relation="include">
+                </childnode>
+                <childnode refid="1043" relation="include">
+                </childnode>
+                <childnode refid="1050" relation="include">
+                </childnode>
+                <childnode refid="1051" relation="include">
+                </childnode>
+                <childnode refid="1052" relation="include">
+                </childnode>
+                <childnode refid="1057" relation="include">
+                </childnode>
+                <childnode refid="1069" relation="include">
+                </childnode>
+                <childnode refid="1071" relation="include">
+                </childnode>
+                <childnode refid="1063" relation="include">
+                </childnode>
+                <childnode refid="1064" relation="include">
+                </childnode>
+                <childnode refid="1045" relation="include">
+                </childnode>
+            </node>
+            <node id="1056">
+                <label>libgnt/gntentry.c</label>
+                <link refid="gntentry_8c"/>
+            </node>
+            <node id="1090">
+                <label>libgnt/gntentry.h</label>
+                <link refid="gntentry_8h"/>
+                <childnode refid="1037" relation="include">
+                </childnode>
+                <childnode refid="1039" relation="include">
+                </childnode>
+                <childnode refid="1040" relation="include">
+                </childnode>
+                <childnode refid="1050" relation="include">
+                </childnode>
+                <childnode refid="1051" relation="include">
+                </childnode>
+                <childnode refid="1052" relation="include">
+                </childnode>
+                <childnode refid="1056" relation="include">
+                </childnode>
+                <childnode refid="1057" relation="include">
+                </childnode>
+                <childnode refid="1071" relation="include">
+                </childnode>
+            </node>
+            <node id="1048">
+                <label>gntft.c</label>
+                <link refid="gntft_8c"/>
+            </node>
+            <node id="1050">
+                <label>gntpounce.c</label>
+                <link refid="gntpounce_8c"/>
+            </node>
+            <node id="1061">
+                <label>libgnt/gntwidget.c</label>
+                <link refid="gntwidget_8c"/>
+            </node>
+            <node id="1035">
+                <label>finch.c</label>
+                <link refid="finch_8c"/>
+            </node>
+            <node id="1036">
+                <label>gntui.c</label>
+                <link refid="gntui_8c"/>
+            </node>
+            <node id="1034">
+                <label>gntui.h</label>
+                <link refid="gntui_8h"/>
+                <childnode refid="1035" relation="include">
+                </childnode>
+                <childnode refid="1036" relation="include">
+                </childnode>
+            </node>
+            <node id="1083">
+                <label>libgnt/gntmenu.c</label>
+                <link refid="gntmenu_8c"/>
+            </node>
+            <node id="1080">
+                <label>libgnt/gntmenu.h</label>
+                <link refid="gntmenu_8h"/>
+                <childnode refid="1039" relation="include">
+                </childnode>
+                <childnode refid="1073" relation="include">
+                </childnode>
+                <childnode refid="1081" relation="include">
+                </childnode>
+                <childnode refid="1058" relation="include">
+                </childnode>
+                <childnode refid="1086" relation="include">
+                </childnode>
+                <childnode refid="1083" relation="include">
+                </childnode>
+                <childnode refid="1085" relation="include">
+                </childnode>
+                <childnode refid="1063" relation="include">
+                </childnode>
+                <childnode refid="1064" relation="include">
+                </childnode>
+            </node>
+            <node id="1040">
+                <label>gntconv.c</label>
+                <link refid="gntconv_8c"/>
+            </node>
+            <node id="1038">
+                <label>gntconv.h</label>
+                <link refid="gntconv_8h"/>
+                <childnode refid="1039" relation="include">
+                </childnode>
+                <childnode refid="1040" relation="include">
+                </childnode>
+                <childnode refid="1036" relation="include">
+                </childnode>
+                <childnode refid="1041" relation="include">
+                </childnode>
+            </node>
+            <node id="1092">
+                <label>libgnt/gntline.c</label>
+                <link refid="gntline_8c"/>
+            </node>
+            <node id="1091">
+                <label>libgnt/gntline.h</label>
+                <link refid="gntline_8h"/>
+                <childnode refid="1037" relation="include">
+                </childnode>
+                <childnode refid="1039" relation="include">
+                </childnode>
+                <childnode refid="1047" relation="include">
+                </childnode>
+                <childnode refid="1043" relation="include">
+                </childnode>
+                <childnode refid="1050" relation="include">
+                </childnode>
+                <childnode refid="1051" relation="include">
+                </childnode>
+                <childnode refid="1052" relation="include">
+                </childnode>
+                <childnode refid="1092" relation="include">
+                </childnode>
+                <childnode refid="1071" relation="include">
+                </childnode>
+            </node>
+            <node id="1060">
+                <label>libgnt/gnttree.c</label>
+                <link refid="gnttree_8c"/>
+            </node>
+            <node id="1079">
+                <label>libgnt/gnttree.h</label>
+                <link refid="gnttree_8h"/>
+                <childnode refid="1037" relation="include">
+                </childnode>
+                <childnode refid="1039" relation="include">
+                </childnode>
+                <childnode refid="1048" relation="include">
+                </childnode>
+                <childnode refid="1049" relation="include">
+                </childnode>
+                <childnode refid="1043" relation="include">
+                </childnode>
+                <childnode refid="1050" relation="include">
+                </childnode>
+                <childnode refid="1051" relation="include">
+                </childnode>
+                <childnode refid="1052" relation="include">
+                </childnode>
+                <childnode refid="1068" relation="include">
+                </childnode>
+                <childnode refid="1056" relation="include">
+                </childnode>
+                <childnode refid="1080" relation="include">
+                </childnode>
+                <childnode refid="1057" relation="include">
+                </childnode>
+                <childnode refid="1058" relation="include">
+                </childnode>
+                <childnode refid="1060" relation="include">
+                </childnode>
+                <childnode refid="1071" relation="include">
+                </childnode>
+                <childnode refid="1063" relation="include">
+                </childnode>
+                <childnode refid="1045" relation="include">
+                </childnode>
+            </node>
+            <node id="1047">
+                <label>gntdebug.c</label>
+                <link refid="gntdebug_8c"/>
+            </node>
+            <node id="1052">
+                <label>gntstatus.c</label>
+                <link refid="gntstatus_8c"/>
+            </node>
+            <node id="1057">
+                <label>libgnt/gntfilesel.c</label>
+                <link refid="gntfilesel_8c"/>
+            </node>
+            <node id="1074">
+                <label>libgnt/gntfilesel.h</label>
+                <link refid="gntfilesel_8h"/>
+                <childnode refid="1051" relation="include">
+                </childnode>
+                <childnode refid="1057" relation="include">
+                </childnode>
+            </node>
+            <node id="1077">
+                <label>libgnt/gntcheckbox.c</label>
+                <link refid="gntcheckbox_8c"/>
+            </node>
+            <node id="1076">
+                <label>libgnt/gntcheckbox.h</label>
+                <link refid="gntcheckbox_8h"/>
+                <childnode refid="1037" relation="include">
+                </childnode>
+                <childnode refid="1047" relation="include">
+                </childnode>
+                <childnode refid="1048" relation="include">
+                </childnode>
+                <childnode refid="1050" relation="include">
+                </childnode>
+                <childnode refid="1051" relation="include">
+                </childnode>
+                <childnode refid="1077" relation="include">
+                </childnode>
+                <childnode refid="1071" relation="include">
+                </childnode>
+                <childnode refid="1045" relation="include">
+                </childnode>
+            </node>
+        </invincdepgraph>
+        <sectiondef kind="enum">
+            <memberdef kind="enum" id="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0" prot="public" static="no">
+                <name>GntColorType</name>
+                <enumvalue id="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aade44b623e10d9f44be58a2784aa567d"
+                           prot="public">
+                    <name>GNT_COLOR_NORMAL</name>
+                    <initializer>= 1</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a3de54c6a119d98c257ec10689814a1f7"
+                           prot="public">
+                    <name>GNT_COLOR_HIGHLIGHT</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a025f48f226829415911f9b42eeb664ad"
+                           prot="public">
+                    <name>GNT_COLOR_DISABLED</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ac9b4aed155e810d635d8e3eb87d6dae6"
+                           prot="public">
+                    <name>GNT_COLOR_HIGHLIGHT_D</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a07aa330dbe7795c97ab5accaa4913424"
+                           prot="public">
+                    <name>GNT_COLOR_TEXT_NORMAL</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ad1e38f675a08f6c3cca5b335e2a5fc23"
+                           prot="public">
+                    <name>GNT_COLOR_TEXT_INACTIVE</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a45c5c8cd94b9f70ad41c13d8f7fc3680"
+                           prot="public">
+                    <name>GNT_COLOR_MNEMONIC</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a7ba8a00ccc6eac8c319e68b9fa3a28a8"
+                           prot="public">
+                    <name>GNT_COLOR_MNEMONIC_D</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aaa231d289817f065bdfeffee201207d4"
+                           prot="public">
+                    <name>GNT_COLOR_SHADOW</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0af8f690b9f6d3ea48b5a643b264c7dcf5"
+                           prot="public">
+                    <name>GNT_COLOR_TITLE</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a3d0818e09840fc110cc4378cb72a8699"
+                           prot="public">
+                    <name>GNT_COLOR_TITLE_D</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ad54e83409eb0264d17ab26e926cf60ff"
+                           prot="public">
+                    <name>GNT_COLOR_URGENT</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ae94a3a46dc507b572bd76867fdc62292"
+                           prot="public">
+                    <name>GNT_COLORS</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcolors.h"
+                        line="7" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcolors.h"
+                        bodystart="6" bodyend="21"/>
+            </memberdef>
+            <memberdef kind="enum" id="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4d" prot="public" static="no">
+                <name>@14</name>
+                <enumvalue id="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da2bb05a848869e9ec48bf7d420807a803"
+                           prot="public">
+                    <name>GNT_COLOR_BLACK</name>
+                    <initializer>= 0</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da277b26f9dfb981037abe10eaea9bf64f"
+                           prot="public">
+                    <name>GNT_COLOR_RED</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da6a0c94a222a26adaa851d15eac7e156a"
+                           prot="public">
+                    <name>GNT_COLOR_GREEN</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da82e600f8e9448d99e6acf29fdc3f4f60"
+                           prot="public">
+                    <name>GNT_COLOR_BLUE</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4dad498d6855e5adbc86a98857df5f4aa17"
+                           prot="public">
+                    <name>GNT_COLOR_WHITE</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da8dcfd413e96ad6ff457922abdad192b7"
+                           prot="public">
+                    <name>GNT_COLOR_GRAY</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da597f3f12f9c1a36bba1f5187682c477a"
+                           prot="public">
+                    <name>GNT_COLOR_DARK_GRAY</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da781e4b8249d50a6e4579e5ee8ed5e439"
+                           prot="public">
+                    <name>GNT_TOTAL_COLORS</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcolors.h"
+                        line="24" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcolors.h"
+                        bodystart="23" bodyend="33"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntcolors_8h_1aaf39bcc3f260831c0eb97e020dcc6b2e" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_init_colors</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_init_colors</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcolors.h"
+                        line="36" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcolors.c"
+                        bodystart="46" bodyend="105"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcolors_8h_1a86df2cf97e78d6503fe4e9a4a84d6bfd" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_uninit_colors</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_uninit_colors</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcolors.h"
+                        line="38" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcolors.c"
+                        bodystart="108" bodyend="112"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1">
+                <highlight class="preprocessor">#ifndef<sp/>GNT_COLORS_H
+                </highlight>
+            </codeline>
+            <codeline lineno="2">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_COLORS_H
+                </highlight>
+            </codeline>
+            <codeline lineno="3">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="4">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;glib.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="5">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="6" refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">enum</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="8"
+                      refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aade44b623e10d9f44be58a2784aa567d"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aade44b623e10d9f44be58a2784aa567d"
+                         kindref="member">GNT_COLOR_NORMAL
+                    </ref>
+                    <sp/>=<sp/>1,
+                </highlight>
+            </codeline>
+            <codeline lineno="9"
+                      refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a3de54c6a119d98c257ec10689814a1f7"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a3de54c6a119d98c257ec10689814a1f7"
+                         kindref="member">GNT_COLOR_HIGHLIGHT</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>eg.<sp/>when<sp/>a<sp/>button<sp/>is<sp/>selected<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="10"
+                      refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a025f48f226829415911f9b42eeb664ad"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a025f48f226829415911f9b42eeb664ad"
+                         kindref="member">GNT_COLOR_DISABLED</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>eg.<sp/>when<sp/>a<sp/>button<sp/>is<sp/>disabled<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="11"
+                      refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ac9b4aed155e810d635d8e3eb87d6dae6"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ac9b4aed155e810d635d8e3eb87d6dae6"
+                         kindref="member">GNT_COLOR_HIGHLIGHT_D</ref>,
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>eg.<sp/>when<sp/>a<sp/>button<sp/>is<sp/>selected,<sp/>but<sp/>some
+                    <sp/>other<sp/>window<sp/>is<sp/>in<sp/>focus<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="12"
+                      refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a07aa330dbe7795c97ab5accaa4913424"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a07aa330dbe7795c97ab5accaa4913424"
+                         kindref="member">GNT_COLOR_TEXT_NORMAL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="13"
+                      refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ad1e38f675a08f6c3cca5b335e2a5fc23"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ad1e38f675a08f6c3cca5b335e2a5fc23"
+                         kindref="member">GNT_COLOR_TEXT_INACTIVE</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>when<sp/>the<sp/>entry<sp/>is<sp/>out<sp/>of<sp/>focus<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="14"
+                      refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a45c5c8cd94b9f70ad41c13d8f7fc3680"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a45c5c8cd94b9f70ad41c13d8f7fc3680"
+                         kindref="member">GNT_COLOR_MNEMONIC</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="15"
+                      refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a7ba8a00ccc6eac8c319e68b9fa3a28a8"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a7ba8a00ccc6eac8c319e68b9fa3a28a8"
+                         kindref="member">GNT_COLOR_MNEMONIC_D</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="16"
+                      refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aaa231d289817f065bdfeffee201207d4"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aaa231d289817f065bdfeffee201207d4"
+                         kindref="member">GNT_COLOR_SHADOW</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="17"
+                      refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0af8f690b9f6d3ea48b5a643b264c7dcf5"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0af8f690b9f6d3ea48b5a643b264c7dcf5"
+                         kindref="member">GNT_COLOR_TITLE</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="18"
+                      refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a3d0818e09840fc110cc4378cb72a8699"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a3d0818e09840fc110cc4378cb72a8699"
+                         kindref="member">GNT_COLOR_TITLE_D</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="19"
+                      refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ad54e83409eb0264d17ab26e926cf60ff"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ad54e83409eb0264d17ab26e926cf60ff"
+                         kindref="member">GNT_COLOR_URGENT</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>this<sp/>is<sp/>for<sp/>the<sp/>&apos;urgent&apos;<sp/>windows<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="20"
+                      refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ae94a3a46dc507b572bd76867fdc62292"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0ae94a3a46dc507b572bd76867fdc62292"
+                         kindref="member">GNT_COLORS
+                    </ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="normal">}
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0" kindref="member">GntColorType</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">enum</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="25"
+                      refid="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da2bb05a848869e9ec48bf7d420807a803"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da2bb05a848869e9ec48bf7d420807a803"
+                         kindref="member">GNT_COLOR_BLACK
+                    </ref>
+                    <sp/>=<sp/>0,
+                </highlight>
+            </codeline>
+            <codeline lineno="26"
+                      refid="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da277b26f9dfb981037abe10eaea9bf64f"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da277b26f9dfb981037abe10eaea9bf64f"
+                         kindref="member">GNT_COLOR_RED</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="27"
+                      refid="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da6a0c94a222a26adaa851d15eac7e156a"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da6a0c94a222a26adaa851d15eac7e156a"
+                         kindref="member">GNT_COLOR_GREEN</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="28"
+                      refid="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da82e600f8e9448d99e6acf29fdc3f4f60"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da82e600f8e9448d99e6acf29fdc3f4f60"
+                         kindref="member">GNT_COLOR_BLUE</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="29"
+                      refid="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4dad498d6855e5adbc86a98857df5f4aa17"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4dad498d6855e5adbc86a98857df5f4aa17"
+                         kindref="member">GNT_COLOR_WHITE</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="30"
+                      refid="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da8dcfd413e96ad6ff457922abdad192b7"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da8dcfd413e96ad6ff457922abdad192b7"
+                         kindref="member">GNT_COLOR_GRAY</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="31"
+                      refid="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da597f3f12f9c1a36bba1f5187682c477a"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da597f3f12f9c1a36bba1f5187682c477a"
+                         kindref="member">GNT_COLOR_DARK_GRAY</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="32"
+                      refid="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da781e4b8249d50a6e4579e5ee8ed5e439"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1a16af7b253440dadd46a80a4b9fddba4da781e4b8249d50a6e4579e5ee8ed5e439"
+                         kindref="member">GNT_TOTAL_COLORS
+                    </ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>populate<sp/>some<sp/>default<sp/>colors<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntcolors_8c_1afe15bd9c959d523acf01e753189ae272" kindref="member">gnt_init_colors</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntcolors_8c_1aad9c02cf994de9b9eed6aff9d91b4441" kindref="member">
+                        gnt_uninit_colors</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#if<sp/>GLIB_CHECK_VERSION(2,6,0)
+                </highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>gnt_colors_parse(GKeyFile<sp/>*kfile);
+                </highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>gnt_color_pairs_parse(GKeyFile<sp/>*kfile);
+                </highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntcolors.h"/>
+    </compounddef>
+</doxygen>

@@ -1,0 +1,2266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntwm_8h" kind="file">
+        <compoundname>gntwm.h</compoundname>
+        <includes refid="gntwidget_8h" local="yes">gntwidget.h</includes>
+        <includes refid="gntmenu_8h" local="yes">gntmenu.h</includes>
+        <includes local="no">panel.h</includes>
+        <includes local="no">time.h</includes>
+        <includedby refid="gntidle_8c" local="yes">gntidle.c</includedby>
+        <includedby refid="gntmain_8c" local="yes">libgnt/gntmain.c</includedby>
+        <includedby refid="gntwm_8c" local="yes">libgnt/gntwm.c</includedby>
+        <includedby refid="s_8c" local="yes">libgnt/wms/s.c</includedby>
+        <includedby refid="plugins_2gntclipboard_8c" local="no">plugins/gntclipboard.c</includedby>
+        <incdepgraph>
+            <node id="2004">
+                <label>gntmenuitem.h</label>
+                <link refid="gntmenuitem_8h"/>
+                <childnode refid="1991" relation="include">
+                </childnode>
+                <childnode refid="1994" relation="include">
+                </childnode>
+                <childnode refid="1995" relation="include">
+                </childnode>
+            </node>
+            <node id="1999">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="1991" relation="include">
+                </childnode>
+            </node>
+            <node id="2003">
+                <label>gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="1989" relation="include">
+                </childnode>
+                <childnode refid="1997" relation="include">
+                </childnode>
+                <childnode refid="1999" relation="include">
+                </childnode>
+                <childnode refid="2000" relation="include">
+                </childnode>
+            </node>
+            <node id="2002">
+                <label>term.h</label>
+            </node>
+            <node id="1993">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="1990" relation="include">
+                </childnode>
+                <childnode refid="1991" relation="include">
+                </childnode>
+                <childnode refid="1994" relation="include">
+                </childnode>
+                <childnode refid="1992" relation="include">
+                </childnode>
+            </node>
+            <node id="1988">
+                <label>libgnt/gntwm.h</label>
+                <link refid="gntwm.h"/>
+                <childnode refid="1989" relation="include">
+                </childnode>
+                <childnode refid="1995" relation="include">
+                </childnode>
+                <childnode refid="2005" relation="include">
+                </childnode>
+                <childnode refid="2006" relation="include">
+                </childnode>
+            </node>
+            <node id="1998">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="1990" relation="include">
+                </childnode>
+                <childnode refid="1991" relation="include">
+                </childnode>
+                <childnode refid="1994" relation="include">
+                </childnode>
+            </node>
+            <node id="1997">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="1991" relation="include">
+                </childnode>
+                <childnode refid="1989" relation="include">
+                </childnode>
+                <childnode refid="1998" relation="include">
+                </childnode>
+                <childnode refid="1999" relation="include">
+                </childnode>
+                <childnode refid="2000" relation="include">
+                </childnode>
+            </node>
+            <node id="2001">
+                <label>curses.h</label>
+            </node>
+            <node id="2005">
+                <label>panel.h</label>
+            </node>
+            <node id="1991">
+                <label>glib.h</label>
+            </node>
+            <node id="2006">
+                <label>time.h</label>
+            </node>
+            <node id="1989">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="1990" relation="include">
+                </childnode>
+                <childnode refid="1991" relation="include">
+                </childnode>
+                <childnode refid="1992" relation="include">
+                </childnode>
+                <childnode refid="1993" relation="include">
+                </childnode>
+            </node>
+            <node id="2000">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="2001" relation="include">
+                </childnode>
+                <childnode refid="2002" relation="include">
+                </childnode>
+            </node>
+            <node id="1992">
+                <label>ncurses.h</label>
+            </node>
+            <node id="1995">
+                <label>gntmenu.h</label>
+                <link refid="gntmenu_8h"/>
+                <childnode refid="1996" relation="include">
+                </childnode>
+                <childnode refid="1999" relation="include">
+                </childnode>
+                <childnode refid="2000" relation="include">
+                </childnode>
+                <childnode refid="2004" relation="include">
+                </childnode>
+            </node>
+            <node id="1996">
+                <label>gnttree.h</label>
+                <link refid="gnttree_8h"/>
+                <childnode refid="1989" relation="include">
+                </childnode>
+                <childnode refid="1997" relation="include">
+                </childnode>
+                <childnode refid="1999" relation="include">
+                </childnode>
+                <childnode refid="2000" relation="include">
+                </childnode>
+                <childnode refid="2003" relation="include">
+                </childnode>
+            </node>
+            <node id="1990">
+                <label>stdio.h</label>
+            </node>
+            <node id="1994">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="2009">
+                <label>libgnt/gntmain.c</label>
+                <link refid="gntmain_8c"/>
+            </node>
+            <node id="2011">
+                <label>libgnt/wms/s.c</label>
+                <link refid="s_8c"/>
+            </node>
+            <node id="2010">
+                <label>libgnt/gntwm.c</label>
+                <link refid="gntwm_8c"/>
+            </node>
+            <node id="2007">
+                <label>libgnt/gntwm.h</label>
+                <link refid="gntwm.h"/>
+                <childnode refid="2008" relation="include">
+                </childnode>
+                <childnode refid="2009" relation="include">
+                </childnode>
+                <childnode refid="2010" relation="include">
+                </childnode>
+                <childnode refid="2011" relation="include">
+                </childnode>
+                <childnode refid="2012" relation="include">
+                </childnode>
+            </node>
+            <node id="2008">
+                <label>gntidle.c</label>
+                <link refid="gntidle_8c"/>
+            </node>
+            <node id="2012">
+                <label>plugins/gntclipboard.c</label>
+                <link refid="plugins_2gntclipboard_8c"/>
+            </node>
+        </invincdepgraph>
+        <innerclass refid="struct_gnt_node" prot="public">GntNode</innerclass>
+        <innerclass refid="struct___gnt_position" prot="public">_GntPosition</innerclass>
+        <innerclass refid="struct___gnt_action" prot="public">_GntAction</innerclass>
+        <innerclass refid="struct___gntt_w_m" prot="public">_GnttWM</innerclass>
+        <innerclass refid="struct___gnt_w_m_class" prot="public">_GntWMClass</innerclass>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="gntwm_8h_1a2853deb471877c37125bcad5551353a3" prot="public" static="no">
+                <name>GNT_TYPE_WM</name>
+                <initializer>(<ref refid="gntwm_8h_1ab51d75de218f5f864c95777679d78ecc" kindref="member">
+                    gnt_wm_get_gtype</ref>())
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="8" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        bodystart="8" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntwm_8h_1a90b4a0953dcc4878eda4d0e7ae47a4d5" prot="public" static="no">
+                <name>GNT_WM</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_INSTANCE_CAST((obj),<ref refid="gntwm_8h_1a2853deb471877c37125bcad5551353a3"
+                                                                    kindref="member">GNT_TYPE_WM</ref>,<ref
+                        refid="gntwm_8h_1ad630f6e688e7b58c92648b27862b9564" kindref="member">GntWM</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="9" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        bodystart="9" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntwm_8h_1a6c007188f263be62cc8c91e8603ebacc" prot="public" static="no">
+                <name>GNT_WM_CLASS</name>
+                <param>
+                    <defname>klass</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_CLASS_CAST((klass),<ref refid="gntwm_8h_1a2853deb471877c37125bcad5551353a3"
+                                                                   kindref="member">GNT_TYPE_WM</ref>,<ref
+                        refid="gntwm_8h_1a45787ee7dd2c64a6fac479bd8d2e7a3f" kindref="member">GntWMClass</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="10" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        bodystart="10" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntwm_8h_1a43b6f66bbe49af554df95ffbb8d51e44" prot="public" static="no">
+                <name>GNT_IS_WM</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_INSTANCE_TYPE((obj),<ref refid="gntwm_8h_1a2853deb471877c37125bcad5551353a3"
+                                                                    kindref="member">GNT_TYPE_WM</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="11" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        bodystart="11" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntwm_8h_1a50344e0fd6ead1cc5ff5fda24c075598" prot="public" static="no">
+                <name>GNT_IS_WM_CLASS</name>
+                <param>
+                    <defname>klass</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_CLASS_TYPE((klass),<ref refid="gntwm_8h_1a2853deb471877c37125bcad5551353a3"
+                                                                   kindref="member">GNT_TYPE_WM</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="12" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        bodystart="12" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntwm_8h_1aba134ba164034e0929e0cd3d51f2b712" prot="public" static="no">
+                <name>GNT_WM_GET_CLASS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_INSTANCE_GET_CLASS((obj),<ref refid="gntwm_8h_1a2853deb471877c37125bcad5551353a3"
+                                                                   kindref="member">GNT_TYPE_WM</ref>,<ref
+                        refid="gntwm_8h_1a45787ee7dd2c64a6fac479bd8d2e7a3f" kindref="member">GntWMClass</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="13" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        bodystart="13" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="enum">
+            <memberdef kind="enum" id="gntwm_8h_1a018d80a37ed88f71c117798e9fb12a17" prot="public" static="no">
+                <name>GntKeyPressMode</name>
+                <enumvalue id="gntwm_8h_1a018d80a37ed88f71c117798e9fb12a17a364be7cc5ad57db679fd43a7fd84263f"
+                           prot="public">
+                    <name>GNT_KP_MODE_NORMAL</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntwm_8h_1a018d80a37ed88f71c117798e9fb12a17aceac7217a9499d4561cabe0df3af0336"
+                           prot="public">
+                    <name>GNT_KP_MODE_RESIZE</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntwm_8h_1a018d80a37ed88f71c117798e9fb12a17ae06fe199eeddfc9f1d3353a5e1bdaf37"
+                           prot="public">
+                    <name>GNT_KP_MODE_MOVE</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="16" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        bodystart="15" bodyend="20"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="typedef">
+            <memberdef kind="typedef" id="gntwm_8h_1ad630f6e688e7b58c92648b27862b9564" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gntt_w_m" kindref="compound">_GnttWM</ref>
+                </type>
+                <definition>typedef struct _GnttWM GntWM</definition>
+                <argsstring></argsstring>
+                <name>GntWM</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="1565" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        bodystart="31" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntwm_8h_1a9067266735497bf5663cdecf4198518a" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_position" kindref="compound">_GntPosition</ref>
+                </type>
+                <definition>typedef struct _GntPosition GntPosition</definition>
+                <argsstring></argsstring>
+                <name>GntPosition</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="37" column="1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntwm_8h_1a1f78ab49732d1e99c0a0eb022e9b6514" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_action" kindref="compound">_GntAction</ref>
+                </type>
+                <definition>typedef struct _GntAction GntAction</definition>
+                <argsstring></argsstring>
+                <name>GntAction</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>An application can register actions which will show up in a &apos;start-menu&apos; like
+                        popup
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="46" column="1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntwm_8h_1a45787ee7dd2c64a6fac479bd8d2e7a3f" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_w_m_class" kindref="compound">_GntWMClass</ref>
+                </type>
+                <definition>typedef struct _GntWMClass GntWMClass</definition>
+                <argsstring></argsstring>
+                <name>GntWMClass</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="1565" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        bodystart="93" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntwm_8h_1ab51d75de218f5f864c95777679d78ecc" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>G_BEGIN_DECLS GType</type>
+                <definition>G_BEGIN_DECLS GType gnt_wm_get_gtype</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_wm_get_gtype</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="147" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.c"
+                        bodystart="1087" bodyend="1111"/>
+            </memberdef>
+            <memberdef kind="function" id="gntwm_8h_1ad5a8725c8272db929927d44405b16e30" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_wm_new_window</definition>
+                <argsstring>(GntWM *wm, GntWidget *widget)</argsstring>
+                <name>gnt_wm_new_window</name>
+                <param>
+                    <type>
+                        <ref refid="gntwm_8h_1ad630f6e688e7b58c92648b27862b9564" kindref="member">GntWM</ref>
+                        *
+                    </type>
+                    <declname>wm</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="149" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.c"
+                        bodystart="1209" bodyend="1245"/>
+            </memberdef>
+            <memberdef kind="function" id="gntwm_8h_1a7b064f5f4751b2211c11faa22db0a687" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_wm_window_decorate</definition>
+                <argsstring>(GntWM *wm, GntWidget *widget)</argsstring>
+                <name>gnt_wm_window_decorate</name>
+                <param>
+                    <type>
+                        <ref refid="gntwm_8h_1ad630f6e688e7b58c92648b27862b9564" kindref="member">GntWM</ref>
+                        *
+                    </type>
+                    <declname>wm</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="151" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.c"
+                        bodystart="1247" bodyend="1250"/>
+            </memberdef>
+            <memberdef kind="function" id="gntwm_8h_1a7911a198d01e991cc4f16627d91fe5f3" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_wm_window_close</definition>
+                <argsstring>(GntWM *wm, GntWidget *widget)</argsstring>
+                <name>gnt_wm_window_close</name>
+                <param>
+                    <type>
+                        <ref refid="gntwm_8h_1ad630f6e688e7b58c92648b27862b9564" kindref="member">GntWM</ref>
+                        *
+                    </type>
+                    <declname>wm</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="153" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.c"
+                        bodystart="1252" bodyend="1279"/>
+            </memberdef>
+            <memberdef kind="function" id="gntwm_8h_1aaeffb121a3364b7d8b0479ddf518ad1d" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>gboolean gnt_wm_process_input</definition>
+                <argsstring>(GntWM *wm, const char *string)</argsstring>
+                <name>gnt_wm_process_input</name>
+                <param>
+                    <type>
+                        <ref refid="gntwm_8h_1ad630f6e688e7b58c92648b27862b9564" kindref="member">GntWM</ref>
+                        *
+                    </type>
+                    <declname>wm</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>string</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="155" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.c"
+                        bodystart="1286" bodyend="1381"/>
+            </memberdef>
+            <memberdef kind="function" id="gntwm_8h_1a4bc3ddcbbdd68e75413d569436196ddb" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>gboolean gnt_wm_process_click</definition>
+                <argsstring>(GntWM *wm, GntMouseEvent event, int x, int y, GntWidget *widget)</argsstring>
+                <name>gnt_wm_process_click</name>
+                <param>
+                    <type>
+                        <ref refid="gntwm_8h_1ad630f6e688e7b58c92648b27862b9564" kindref="member">GntWM</ref>
+                        *
+                    </type>
+                    <declname>wm</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1af939a8069659e4960fd62c1a7f4e4cf5" kindref="member">GntMouseEvent
+                        </ref>
+                    </type>
+                    <declname>event</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>x</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>y</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="157" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.c"
+                        bodystart="1552" bodyend="1558"/>
+            </memberdef>
+            <memberdef kind="function" id="gntwm_8h_1aad013690e77583833ffbe77d2de3fcfd" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_wm_resize_window</definition>
+                <argsstring>(GntWM *wm, GntWidget *widget, int width, int height)</argsstring>
+                <name>gnt_wm_resize_window</name>
+                <param>
+                    <type>
+                        <ref refid="gntwm_8h_1ad630f6e688e7b58c92648b27862b9564" kindref="member">GntWM</ref>
+                        *
+                    </type>
+                    <declname>wm</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>width</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>height</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="159" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.c"
+                        bodystart="1395" bodyend="1427"/>
+            </memberdef>
+            <memberdef kind="function" id="gntwm_8h_1a8ccf780e303d8c7bf90b99316732cf6d" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_wm_move_window</definition>
+                <argsstring>(GntWM *wm, GntWidget *widget, int x, int y)</argsstring>
+                <name>gnt_wm_move_window</name>
+                <param>
+                    <type>
+                        <ref refid="gntwm_8h_1ad630f6e688e7b58c92648b27862b9564" kindref="member">GntWM</ref>
+                        *
+                    </type>
+                    <declname>wm</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>x</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>y</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="161" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.c"
+                        bodystart="1469" bodyend="1502"/>
+            </memberdef>
+            <memberdef kind="function" id="gntwm_8h_1af906898497354409ea9f29bac822c976" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_wm_update_window</definition>
+                <argsstring>(GntWM *wm, GntWidget *widget)</argsstring>
+                <name>gnt_wm_update_window</name>
+                <param>
+                    <type>
+                        <ref refid="gntwm_8h_1ad630f6e688e7b58c92648b27862b9564" kindref="member">GntWM</ref>
+                        *
+                    </type>
+                    <declname>wm</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="163" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.c"
+                        bodystart="1532" bodyend="1550"/>
+            </memberdef>
+            <memberdef kind="function" id="gntwm_8h_1ae2d75465ea34f6de3a0d40d5b3778362" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_wm_raise_window</definition>
+                <argsstring>(GntWM *wm, GntWidget *widget)</argsstring>
+                <name>gnt_wm_raise_window</name>
+                <param>
+                    <type>
+                        <ref refid="gntwm_8h_1ad630f6e688e7b58c92648b27862b9564" kindref="member">GntWM</ref>
+                        *
+                    </type>
+                    <declname>wm</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="165" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.c"
+                        bodystart="1560" bodyend="1563"/>
+            </memberdef>
+            <memberdef kind="function" id="gntwm_8h_1a1aff3468b47dee73931395ae58be4cbc" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_wm_set_event_stack</definition>
+                <argsstring>(GntWM *wm, gboolean set)</argsstring>
+                <name>gnt_wm_set_event_stack</name>
+                <param>
+                    <type>
+                        <ref refid="gntwm_8h_1ad630f6e688e7b58c92648b27862b9564" kindref="member">GntWM</ref>
+                        *
+                    </type>
+                    <declname>wm</declname>
+                </param>
+                <param>
+                    <type>gboolean</type>
+                    <declname>set</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="167" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.c"
+                        bodystart="1565" bodyend="1568"/>
+            </memberdef>
+            <memberdef kind="function" id="gntwm_8h_1ac6489cb0e109b2f700432d1632d919ab" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>time_t</type>
+                <definition>time_t gnt_wm_get_idle_time</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_wm_get_idle_time</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"
+                        line="169" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.c"
+                        bodystart="1281" bodyend="1284"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="2">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntwidget_8h" kindref="compound">
+                    gntwidget.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="3">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntmenu_8h" kindref="compound">
+                    gntmenu.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="4">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="5">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;panel.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="6">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;time.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="8" refid="gntwm_8h_1a2853deb471877c37125bcad5551353a3" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_TYPE_WM
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(gnt_wm_get_gtype())
+                </highlight>
+            </codeline>
+            <codeline lineno="9" refid="gntwm_8h_1a90b4a0953dcc4878eda4d0e7ae47a4d5" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_WM(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_INSTANCE_CAST((obj),<sp/>GNT_TYPE_WM,<sp/>GntWM))
+                </highlight>
+            </codeline>
+            <codeline lineno="10" refid="gntwm_8h_1a6c007188f263be62cc8c91e8603ebacc" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_WM_CLASS(klass)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_CLASS_CAST((klass),<sp/>GNT_TYPE_WM,<sp/>GntWMClass))
+                </highlight>
+            </codeline>
+            <codeline lineno="11" refid="gntwm_8h_1a43b6f66bbe49af554df95ffbb8d51e44" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_IS_WM(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_INSTANCE_TYPE((obj),<sp/>GNT_TYPE_WM))
+                </highlight>
+            </codeline>
+            <codeline lineno="12" refid="gntwm_8h_1a50344e0fd6ead1cc5ff5fda24c075598" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_IS_WM_CLASS(klass)
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_CLASS_TYPE((klass),<sp/>GNT_TYPE_WM))
+                </highlight>
+            </codeline>
+            <codeline lineno="13" refid="gntwm_8h_1aba134ba164034e0929e0cd3d51f2b712" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_WM_GET_CLASS(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_INSTANCE_GET_CLASS((obj),<sp/>GNT_TYPE_WM,<sp/>GntWMClass))
+                </highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="15" refid="gntwm_8h_1a018d80a37ed88f71c117798e9fb12a17" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">enum</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="16">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="17" refid="gntwm_8h_1a018d80a37ed88f71c117798e9fb12a17a364be7cc5ad57db679fd43a7fd84263f"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwm_8h_1a018d80a37ed88f71c117798e9fb12a17a364be7cc5ad57db679fd43a7fd84263f"
+                         kindref="member">GNT_KP_MODE_NORMAL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="18" refid="gntwm_8h_1a018d80a37ed88f71c117798e9fb12a17aceac7217a9499d4561cabe0df3af0336"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwm_8h_1a018d80a37ed88f71c117798e9fb12a17aceac7217a9499d4561cabe0df3af0336"
+                         kindref="member">GNT_KP_MODE_RESIZE</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="19" refid="gntwm_8h_1a018d80a37ed88f71c117798e9fb12a17ae06fe199eeddfc9f1d3353a5e1bdaf37"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwm_8h_1a018d80a37ed88f71c117798e9fb12a17ae06fe199eeddfc9f1d3353a5e1bdaf37"
+                         kindref="member">GNT_KP_MODE_MOVE</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="20">
+                <highlight class="normal">}
+                    <sp/>
+                    <ref refid="gntwm_8h_1a018d80a37ed88f71c117798e9fb12a17" kindref="member">GntKeyPressMode</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="22" refid="struct_gnt_node" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="24" refid="struct_gnt_node_1a980e052030e677979e606714e2062afa" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="struct_gnt_node_1a980e052030e677979e606714e2062afa" kindref="member">me</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26" refid="struct_gnt_node_1a0be00a12c1375a8dedc45ff82141e217" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>WINDOW<sp/>*<ref refid="struct_gnt_node_1a0be00a12c1375a8dedc45ff82141e217" kindref="member">
+                    window</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="27" refid="struct_gnt_node_1a06b53676896b840c29ff225c6d03582b" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct_gnt_node_1a06b53676896b840c29ff225c6d03582b" kindref="member">scroll</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="28" refid="struct_gnt_node_1a247ef67512d42fc1efa5ff716ef7a5d1" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PANEL<sp/>*<ref refid="struct_gnt_node_1a247ef67512d42fc1efa5ff716ef7a5d1" kindref="member">
+                    panel</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal">}
+                    <sp/>
+                    <ref refid="struct_gnt_node" kindref="compound">GntNode</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31" refid="gntwm_8h_1ad630f6e688e7b58c92648b27862b9564" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gntt_w_m" kindref="compound">_GnttWM</ref>
+                    <sp/>
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33" refid="struct___gnt_position" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_position" kindref="compound">_GntPosition</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="35" refid="struct___gnt_position_1a6150e0515f7202e2fb518f7206ed97dc" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_position_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="36" refid="struct___gnt_position_1a0a2f84ed7838f07779ae24c5a9086d33" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_position_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal">}
+                    <sp/>
+                    <ref refid="gntwm_8h_1a9067266735497bf5663cdecf4198518a" kindref="member">GntPosition</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="42" refid="struct___gnt_action" refkind="compound">
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_action" kindref="compound">_GntAction</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="44" refid="struct___gnt_action_1ab5fbdb5052858ca8d2538566229fbe64" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___gnt_action_1ab5fbdb5052858ca8d2538566229fbe64"
+                                                     kindref="member">label</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="45" refid="struct___gnt_action_1acfa53b46dd6b21a7ef814bad269447b9" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_action_1acfa53b46dd6b21a7ef814bad269447b9"
+                                         kindref="member">callback</ref>)();
+                </highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal">}
+                    <sp/>
+                    <ref refid="gntwm_8h_1a1f78ab49732d1e99c0a0eb022e9b6514" kindref="member">GntAction</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="48" refid="struct___gntt_w_m" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gntt_w_m" kindref="compound">_GnttWM</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="50" refid="struct___gntt_w_m_1ab26ce706ca209429120f27e30d68d40d" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_bindable" kindref="compound">GntBindable</ref>
+                    <sp/>
+                    <ref refid="struct___gntt_w_m_1ab26ce706ca209429120f27e30d68d40d" kindref="member">inherit</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="52" refid="struct___gntt_w_m_1a35126dd286141bc2cc1f045de5e1f81a" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GMainLoop<sp/>*<ref refid="struct___gntt_w_m_1a35126dd286141bc2cc1f045de5e1f81a"
+                                             kindref="member">loop</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="54" refid="struct___gntt_w_m_1a4dd2ca5f40d57a1f17e9130154bdfe88" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*<ref refid="struct___gntt_w_m_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">
+                    list</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>List<sp/>of<sp/>windows<sp/>ordered<sp/>on<sp/>their<sp/>creation<sp/>
+                    time<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="55" refid="struct___gntt_w_m_1ae33dc696a6eb22c704df40b690a7303c" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*<ref refid="struct___gntt_w_m_1ae33dc696a6eb22c704df40b690a7303c" kindref="member">
+                    ordered</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>List<sp/>of<sp/>windows<sp/>ordered<sp/>on<sp/>their<sp/>focus<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="58" refid="struct___gntt_w_m_1af21fe6008e6e5d82746bc45e9cec36d3" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="struct___gntt_w_m_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">
+                    window</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="59" refid="struct___gntt_w_m_1a02b069dc0867c55ec3886c1cf6223359" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="struct___gntt_w_m_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                    <sp/>
+                    <ref refid="struct___gntt_w_m_1ad1b522d32093b8638ba0ae3acc48ef7f" kindref="member">_list</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<ref refid="struct___gntt_w_m_1a6ec4f17ad83b5ce38058fa56941548e7" kindref="member">
+                    windows</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Window-list<sp/>window<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<ref refid="struct___gntt_w_m_1a2eb7d834c3e0db28b5e0435bcaa15644" kindref="member">
+                    actions</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Action-list<sp/>window<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="64" refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GHashTable<sp/>*<ref refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021"
+                                              kindref="member">nodes</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>GntWidget<sp/>-&gt;<sp/>GntNode<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="66" refid="struct___gntt_w_m_1afec6ae4cf166588b23230889e7fa076d" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*<ref refid="struct___gntt_w_m_1afec6ae4cf166588b23230889e7fa076d" kindref="member">
+                    acts</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>List<sp/>of<sp/>actions<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="74" refid="struct___gntt_w_m_1ae48f79ad4a1fc6931f03de2b02528e15" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_menu" kindref="compound">GntMenu</ref>
+                    <sp/>*<ref refid="struct___gntt_w_m_1ae48f79ad4a1fc6931f03de2b02528e15" kindref="member">menu</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Currently<sp/>active<sp/>menu<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="81" refid="struct___gntt_w_m_1ace3180489427faa37d995cb43d72a384" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean
+                    <sp/>
+                    <ref refid="struct___gntt_w_m_1ace3180489427faa37d995cb43d72a384" kindref="member">event_stack</ref>
+                    ;
+                </highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="83" refid="struct___gntt_w_m_1a4bba9c43ae0a5b3737927a9fff3be4f9" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwm_8h_1a018d80a37ed88f71c117798e9fb12a17" kindref="member">GntKeyPressMode</ref>
+                    <sp/>
+                    <ref refid="struct___gntt_w_m_1a4bba9c43ae0a5b3737927a9fff3be4f9" kindref="member">mode</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="85" refid="struct___gntt_w_m_1a6377c296cb324754921ac84eabab3b40" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GHashTable<sp/>*<ref refid="struct___gntt_w_m_1a6377c296cb324754921ac84eabab3b40"
+                                              kindref="member">positions</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="87" refid="struct___gntt_w_m_1a7607287af948f4d43e1e36acdfdccd4d" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___gntt_w_m_1a7607287af948f4d43e1e36acdfdccd4d"
+                                                     kindref="member">res1</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="88" refid="struct___gntt_w_m_1a751a55b85021c538e71eb6defd17bbb1" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___gntt_w_m_1a751a55b85021c538e71eb6defd17bbb1"
+                                                     kindref="member">res2</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="89" refid="struct___gntt_w_m_1a47a4ffb02909b2fc42f0e97a3ddd7d24" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___gntt_w_m_1a47a4ffb02909b2fc42f0e97a3ddd7d24"
+                                                     kindref="member">res3</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="90" refid="struct___gntt_w_m_1a42dcd4960e7762dcfd60015a88398093" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___gntt_w_m_1a42dcd4960e7762dcfd60015a88398093"
+                                                     kindref="member">res4</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="93" refid="gntwm_8h_1a45787ee7dd2c64a6fac479bd8d2e7a3f" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_w_m_class" kindref="compound">_GntWMClass</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="95" refid="struct___gnt_w_m_class" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_w_m_class" kindref="compound">_GntWMClass</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="97" refid="struct___gnt_w_m_class_1a696607bf58b134c4ce8fce91488b110c" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_bindable_class" kindref="compound">GntBindableClass</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_w_m_class_1a696607bf58b134c4ce8fce91488b110c" kindref="member">parent</ref>
+                    ;
+                </highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>This<sp/>is<sp/>called<sp/>when<sp/>a<sp/>new<sp/>window<sp/>is<sp/>
+                    shown<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="100" refid="struct___gnt_w_m_class_1ad8809e95bd890d3aa86e80f256dbacb5" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_w_m_class_1ad8809e95bd890d3aa86e80f256dbacb5"
+                                         kindref="member">new_window</ref>)(
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*win);
+                </highlight>
+            </codeline>
+            <codeline lineno="101">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="102" refid="struct___gnt_w_m_class_1a639588480a2a3dbad619def247564d32" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_w_m_class_1a639588480a2a3dbad619def247564d32"
+                                         kindref="member">decorate_window</ref>)(
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*win);
+                </highlight>
+            </codeline>
+            <codeline lineno="103">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>This<sp/>is<sp/>called<sp/>when<sp/>a<sp/>window<sp/>is<sp/>being<sp/>
+                    closed<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="104" refid="struct___gnt_w_m_class_1af70fca095a0d1e8ccb25bbf92fb45b0c" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean<sp/>(*<ref refid="struct___gnt_w_m_class_1af70fca095a0d1e8ccb25bbf92fb45b0c"
+                                             kindref="member">close_window</ref>)(
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*win);
+                </highlight>
+            </codeline>
+            <codeline lineno="105">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>The<sp/>WM<sp/>may<sp/>want<sp/>to<sp/>confirm<sp/>a<sp/>size<sp/>for
+                    <sp/>a<sp/>window<sp/>first<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="107" refid="struct___gnt_w_m_class_1a78bfd0ec57ae28c45966200b2a4beae4" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean<sp/>(*<ref refid="struct___gnt_w_m_class_1a78bfd0ec57ae28c45966200b2a4beae4"
+                                             kindref="member">window_resize_confirm</ref>)(
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*win,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>*w,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>*h);
+                </highlight>
+            </codeline>
+            <codeline lineno="108">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="109" refid="struct___gnt_w_m_class_1a1ce043336c456a0971359af9db3fece1" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_w_m_class_1a1ce043336c456a0971359af9db3fece1"
+                                         kindref="member">window_resized</ref>)(
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                    <ref refid="struct_gnt_node" kindref="compound">GntNode</ref>
+                    <sp/>*node);
+                </highlight>
+            </codeline>
+            <codeline lineno="110">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="111">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>The<sp/>WM<sp/>may<sp/>want<sp/>to<sp/>confirm<sp/>the<sp/>position
+                    <sp/>of<sp/>a<sp/>window<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="112" refid="struct___gnt_w_m_class_1a6daaa41db0e30f92430d226db2a4619b" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean<sp/>(*<ref refid="struct___gnt_w_m_class_1a6daaa41db0e30f92430d226db2a4619b"
+                                             kindref="member">window_move_confirm</ref>)(
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*win,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>*x,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>*y);
+                </highlight>
+            </codeline>
+            <codeline lineno="113">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="114" refid="struct___gnt_w_m_class_1a3ab61f1ea569ddafb79ea41c7e42a494" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_w_m_class_1a3ab61f1ea569ddafb79ea41c7e42a494"
+                                         kindref="member">window_moved</ref>)(
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                    <ref refid="struct_gnt_node" kindref="compound">GntNode</ref>
+                    <sp/>*node);
+                </highlight>
+            </codeline>
+            <codeline lineno="115">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="116">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>This<sp/>gets<sp/>called<sp/>when:
+                </highlight>
+            </codeline>
+            <codeline lineno="117">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*
+                    <sp/>
+                    <sp/>
+                    <sp/>-<sp/>the<sp/>title<sp/>of<sp/>the<sp/>window<sp/>changes
+                </highlight>
+            </codeline>
+            <codeline lineno="118">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*
+                    <sp/>
+                    <sp/>
+                    <sp/>-<sp/>the<sp/>&apos;urgency&apos;<sp/>of<sp/>the<sp/>window<sp/>changes
+                </highlight>
+            </codeline>
+            <codeline lineno="119">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="120" refid="struct___gnt_w_m_class_1ad0f04b1dc81b5723c534119f0762bf9a" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_w_m_class_1ad0f04b1dc81b5723c534119f0762bf9a"
+                                         kindref="member">window_update</ref>)(
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                    <ref refid="struct_gnt_node" kindref="compound">GntNode</ref>
+                    <sp/>*node);
+                </highlight>
+            </codeline>
+            <codeline lineno="121">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="122">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>This<sp/>should<sp/>usually<sp/>return<sp/>NULL<sp/>if<sp/>the<sp/>
+                    keys<sp/>were<sp/>processed<sp/>by<sp/>the<sp/>WM.
+                </highlight>
+            </codeline>
+            <codeline lineno="123">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<sp/>If<sp/>not,<sp/>the<sp/>WM<sp/>can<sp/>simply<sp/>return<sp/>the<sp/>original<sp/>string,
+                    <sp/>which<sp/>will<sp/>be
+                </highlight>
+            </codeline>
+            <codeline lineno="124">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<sp/>processed<sp/>by<sp/>the<sp/>default<sp/>WM.<sp/>The<sp/>custom<sp/>WM<sp/>can<sp/>also
+                    <sp/>return<sp/>a<sp/>different
+                </highlight>
+            </codeline>
+            <codeline lineno="125">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<sp/>static<sp/>string<sp/>for<sp/>the<sp/>default<sp/>WM<sp/>to<sp/>process.
+                </highlight>
+            </codeline>
+            <codeline lineno="126">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="127" refid="struct___gnt_w_m_class_1abdf7a852926d740924ad71994e18fb5d" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean<sp/>(*<ref refid="struct___gnt_w_m_class_1abdf7a852926d740924ad71994e18fb5d"
+                                             kindref="member">key_pressed</ref>)(
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*key);
+                </highlight>
+            </codeline>
+            <codeline lineno="128">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="129" refid="struct___gnt_w_m_class_1aea23ecfcedf13ee341ff48e47d286378" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean<sp/>(*<ref refid="struct___gnt_w_m_class_1aea23ecfcedf13ee341ff48e47d286378"
+                                             kindref="member">mouse_clicked</ref>)(
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                    <ref refid="gntwidget_8h_1af939a8069659e4960fd62c1a7f4e4cf5" kindref="member">GntMouseEvent</ref>
+                    <sp/>event,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>x,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>y,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="130">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="131">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Whatever<sp/>the<sp/>WM<sp/>wants<sp/>to<sp/>do<sp/>when<sp/>a<sp/>
+                    window<sp/>is<sp/>given<sp/>focus<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="132" refid="struct___gnt_w_m_class_1ad99e14c4f4425d93e8ed6e0ab26a8719" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_w_m_class_1ad99e14c4f4425d93e8ed6e0ab26a8719"
+                                         kindref="member">give_focus</ref>)(
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="133">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="134">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>List<sp/>of<sp/>windows.<sp/>Although<sp/>the<sp/>WM<sp/>can<sp/>keep
+                    <sp/>a<sp/>list<sp/>of<sp/>its<sp/>own<sp/>for<sp/>the<sp/>windows,
+                </highlight>
+            </codeline>
+            <codeline lineno="135">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<sp/>it&apos;d<sp/>be<sp/>better<sp/>if<sp/>there<sp/>was<sp/>a<sp/>way<sp/>to<sp/>share<sp/>
+                    between<sp/>the<sp/>&apos;core&apos;<sp/>and<sp/>the<sp/>WM.
+                </highlight>
+            </codeline>
+            <codeline lineno="136">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="137">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*const<sp/>GList<sp/>*(*window_list)();*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="138">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="139" refid="struct___gnt_w_m_class_1a9c0d92e378f69fbbc2db099eaa97e8e3" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_w_m_class_1a9c0d92e378f69fbbc2db099eaa97e8e3"
+                                         kindref="member">res1</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="140" refid="struct___gnt_w_m_class_1aec6270b2ecdd73c8405b88298370e516" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_w_m_class_1aec6270b2ecdd73c8405b88298370e516"
+                                         kindref="member">res2</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="141" refid="struct___gnt_w_m_class_1af822f3665fdfb8599b6e87d1f24e38cf" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_w_m_class_1af822f3665fdfb8599b6e87d1f24e38cf"
+                                         kindref="member">res3</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="142" refid="struct___gnt_w_m_class_1a89dd3c805466da8976dc05090b91df2a" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_w_m_class_1a89dd3c805466da8976dc05090b91df2a"
+                                         kindref="member">res4</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="143">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="144">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="145">
+                <highlight class="normal">G_BEGIN_DECLS</highlight>
+            </codeline>
+            <codeline lineno="146">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="147">
+                <highlight class="normal">GType
+                    <sp/>
+                    <ref refid="gntwm_8c_1af90c8cd9fb9eb69f279c0abae6abc735" kindref="member">gnt_wm_get_gtype</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="148">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="149">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntwm_8c_1ad5a8725c8272db929927d44405b16e30" kindref="member">gnt_wm_new_window</ref>(
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="150">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="151">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntwm_8c_1a7b064f5f4751b2211c11faa22db0a687" kindref="member">
+                        gnt_wm_window_decorate</ref>(
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="152">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="153">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntwm_8c_1a7911a198d01e991cc4f16627d91fe5f3" kindref="member">gnt_wm_window_close</ref>(
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="154">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="155">
+                <highlight class="normal">gboolean
+                    <sp/>
+                    <ref refid="gntwm_8c_1a6f09aa62b8e5f34fded703c3aa3be8ff" kindref="member">gnt_wm_process_input</ref>
+                    (
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*
+                </highlight>
+                <highlight class="keywordtype">string</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="156">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="157">
+                <highlight class="normal">gboolean
+                    <sp/>
+                    <ref refid="gntwm_8c_1a4bc3ddcbbdd68e75413d569436196ddb" kindref="member">gnt_wm_process_click</ref>
+                    (
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                    <ref refid="gntwidget_8h_1af939a8069659e4960fd62c1a7f4e4cf5" kindref="member">GntMouseEvent</ref>
+                    <sp/>event,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>x,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>y,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="158">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="159">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntwm_8c_1aad013690e77583833ffbe77d2de3fcfd" kindref="member">gnt_wm_resize_window</ref>
+                    (
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>width,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>height);
+                </highlight>
+            </codeline>
+            <codeline lineno="160">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="161">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntwm_8c_1a8ccf780e303d8c7bf90b99316732cf6d" kindref="member">gnt_wm_move_window</ref>(
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>x,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>y);
+                </highlight>
+            </codeline>
+            <codeline lineno="162">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="163">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntwm_8c_1af906898497354409ea9f29bac822c976" kindref="member">gnt_wm_update_window</ref>
+                    (
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="164">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="165">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntwm_8c_1ae2d75465ea34f6de3a0d40d5b3778362" kindref="member">gnt_wm_raise_window</ref>(
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="166">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="167">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntwm_8c_1a1aff3468b47dee73931395ae58be4cbc" kindref="member">
+                        gnt_wm_set_event_stack</ref>(
+                    <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,<sp/>
+                    gboolean<sp/>set);
+                </highlight>
+            </codeline>
+            <codeline lineno="168">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="169">
+                <highlight class="normal">time_t
+                    <sp/>
+                    <ref refid="gntwm_8c_1aadf4b9e97773a6b93da1719ddb2ba6c0" kindref="member">gnt_wm_get_idle_time</ref>
+                    (
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="170">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="171">
+                <highlight class="normal">G_END_DECLS</highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntwm.h"/>
+    </compounddef>
+</doxygen>

@@ -110,7 +110,9 @@ public class SortDependencies {
             if (childDataObjects.containsKey(item)) {
                 String type = childDataObjects.get(item);
 
-
+                if (item.equals("NULL")) {
+                    continue;
+                }
                 if (type.equals("function")) {
                     behavioralDependency.addDependency(parent, child);
                 } else {

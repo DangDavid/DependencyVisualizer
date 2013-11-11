@@ -1,0 +1,1279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntmenuitem_8h" kind="file">
+        <compoundname>gntmenuitem.h</compoundname>
+        <includes local="no">glib.h</includes>
+        <includes local="no">glib-object.h</includes>
+        <includes refid="gntmenu_8h" local="yes">gntmenu.h</includes>
+        <includedby refid="gntblist_8c" local="yes">gntblist.c</includedby>
+        <includedby refid="gntmenu_8h" local="yes">libgnt/gntmenu.h</includedby>
+        <includedby refid="gntmenuitemcheck_8h" local="yes">libgnt/gntmenuitemcheck.h</includedby>
+        <includedby refid="gntmenuitem_8c" local="yes">libgnt/gntmenuitem.c</includedby>
+        <incdepgraph>
+            <node id="1512">
+                <label>libgnt/gntmenuitem.h</label>
+                <link refid="gntmenuitem.h"/>
+                <childnode refid="1513" relation="include">
+                </childnode>
+                <childnode refid="1514" relation="include">
+                </childnode>
+                <childnode refid="1515" relation="include">
+                </childnode>
+            </node>
+            <node id="1523">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="1513" relation="include">
+                </childnode>
+            </node>
+            <node id="1527">
+                <label>gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="1517" relation="include">
+                </childnode>
+                <childnode refid="1521" relation="include">
+                </childnode>
+                <childnode refid="1523" relation="include">
+                </childnode>
+                <childnode refid="1524" relation="include">
+                </childnode>
+            </node>
+            <node id="1526">
+                <label>term.h</label>
+            </node>
+            <node id="1520">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="1518" relation="include">
+                </childnode>
+                <childnode refid="1513" relation="include">
+                </childnode>
+                <childnode refid="1514" relation="include">
+                </childnode>
+                <childnode refid="1519" relation="include">
+                </childnode>
+            </node>
+            <node id="1522">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="1518" relation="include">
+                </childnode>
+                <childnode refid="1513" relation="include">
+                </childnode>
+                <childnode refid="1514" relation="include">
+                </childnode>
+            </node>
+            <node id="1521">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="1513" relation="include">
+                </childnode>
+                <childnode refid="1517" relation="include">
+                </childnode>
+                <childnode refid="1522" relation="include">
+                </childnode>
+                <childnode refid="1523" relation="include">
+                </childnode>
+                <childnode refid="1524" relation="include">
+                </childnode>
+            </node>
+            <node id="1525">
+                <label>curses.h</label>
+            </node>
+            <node id="1513">
+                <label>glib.h</label>
+            </node>
+            <node id="1517">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="1518" relation="include">
+                </childnode>
+                <childnode refid="1513" relation="include">
+                </childnode>
+                <childnode refid="1519" relation="include">
+                </childnode>
+                <childnode refid="1520" relation="include">
+                </childnode>
+            </node>
+            <node id="1524">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="1525" relation="include">
+                </childnode>
+                <childnode refid="1526" relation="include">
+                </childnode>
+            </node>
+            <node id="1519">
+                <label>ncurses.h</label>
+            </node>
+            <node id="1515">
+                <label>gntmenu.h</label>
+                <link refid="gntmenu_8h"/>
+                <childnode refid="1516" relation="include">
+                </childnode>
+                <childnode refid="1523" relation="include">
+                </childnode>
+                <childnode refid="1524" relation="include">
+                </childnode>
+                <childnode refid="1512" relation="include">
+                </childnode>
+            </node>
+            <node id="1516">
+                <label>gnttree.h</label>
+                <link refid="gnttree_8h"/>
+                <childnode refid="1517" relation="include">
+                </childnode>
+                <childnode refid="1521" relation="include">
+                </childnode>
+                <childnode refid="1523" relation="include">
+                </childnode>
+                <childnode refid="1524" relation="include">
+                </childnode>
+                <childnode refid="1527" relation="include">
+                </childnode>
+            </node>
+            <node id="1518">
+                <label>stdio.h</label>
+            </node>
+            <node id="1514">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="1545">
+                <label>libgnt/gntmenuitem.c</label>
+                <link refid="gntmenuitem_8c"/>
+            </node>
+            <node id="1528">
+                <label>libgnt/gntmenuitem.h</label>
+                <link refid="gntmenuitem.h"/>
+                <childnode refid="1529" relation="include">
+                </childnode>
+                <childnode refid="1530" relation="include">
+                </childnode>
+                <childnode refid="1546" relation="include">
+                </childnode>
+                <childnode refid="1545" relation="include">
+                </childnode>
+            </node>
+            <node id="1539">
+                <label>plugins/lastlog.c</label>
+                <link refid="lastlog_8c"/>
+            </node>
+            <node id="1540">
+                <label>libgnt/gntmain.c</label>
+                <link refid="gntmain_8c"/>
+            </node>
+            <node id="1547">
+                <label>libgnt/gntmenuitemcheck.c</label>
+                <link refid="gntmenuitemcheck_8c"/>
+            </node>
+            <node id="1546">
+                <label>libgnt/gntmenuitemcheck.h</label>
+                <link refid="gntmenuitemcheck_8h"/>
+                <childnode refid="1529" relation="include">
+                </childnode>
+                <childnode refid="1544" relation="include">
+                </childnode>
+                <childnode refid="1547" relation="include">
+                </childnode>
+            </node>
+            <node id="1538">
+                <label>libgnt/wms/s.c</label>
+                <link refid="s_8c"/>
+            </node>
+            <node id="1537">
+                <label>libgnt/gntwm.c</label>
+                <link refid="gntwm_8c"/>
+            </node>
+            <node id="1541">
+                <label>libgnt/gntwm.h</label>
+                <link refid="gntwm_8h"/>
+                <childnode refid="1542" relation="include">
+                </childnode>
+                <childnode refid="1540" relation="include">
+                </childnode>
+                <childnode refid="1537" relation="include">
+                </childnode>
+                <childnode refid="1538" relation="include">
+                </childnode>
+                <childnode refid="1543" relation="include">
+                </childnode>
+            </node>
+            <node id="1542">
+                <label>gntidle.c</label>
+                <link refid="gntidle_8c"/>
+            </node>
+            <node id="1529">
+                <label>gntblist.c</label>
+                <link refid="gntblist_8c"/>
+            </node>
+            <node id="1536">
+                <label>libgnt/gntwindow.c</label>
+                <link refid="gntwindow_8c"/>
+            </node>
+            <node id="1531">
+                <label>libgnt/gntwindow.h</label>
+                <link refid="gntwindow_8h"/>
+                <childnode refid="1529" relation="include">
+                </childnode>
+                <childnode refid="1532" relation="include">
+                </childnode>
+                <childnode refid="1535" relation="include">
+                </childnode>
+                <childnode refid="1536" relation="include">
+                </childnode>
+                <childnode refid="1537" relation="include">
+                </childnode>
+                <childnode refid="1538" relation="include">
+                </childnode>
+                <childnode refid="1539" relation="include">
+                </childnode>
+            </node>
+            <node id="1533">
+                <label>gntrequest.c</label>
+                <link refid="gntrequest_8c"/>
+            </node>
+            <node id="1543">
+                <label>plugins/gntclipboard.c</label>
+                <link refid="plugins_2gntclipboard_8c"/>
+            </node>
+            <node id="1535">
+                <label>libgnt/gntutils.c</label>
+                <link refid="gntutils_8c"/>
+            </node>
+            <node id="1544">
+                <label>libgnt/gntmenu.c</label>
+                <link refid="gntmenu_8c"/>
+            </node>
+            <node id="1530">
+                <label>libgnt/gntmenu.h</label>
+                <link refid="gntmenu_8h"/>
+                <childnode refid="1529" relation="include">
+                </childnode>
+                <childnode refid="1531" relation="include">
+                </childnode>
+                <childnode refid="1528" relation="include">
+                </childnode>
+                <childnode refid="1540" relation="include">
+                </childnode>
+                <childnode refid="1541" relation="include">
+                </childnode>
+                <childnode refid="1544" relation="include">
+                </childnode>
+                <childnode refid="1545" relation="include">
+                </childnode>
+                <childnode refid="1537" relation="include">
+                </childnode>
+                <childnode refid="1538" relation="include">
+                </childnode>
+            </node>
+            <node id="1534">
+                <label>libgnt/gntfilesel.c</label>
+                <link refid="gntfilesel_8c"/>
+            </node>
+            <node id="1532">
+                <label>libgnt/gntfilesel.h</label>
+                <link refid="gntfilesel_8h"/>
+                <childnode refid="1533" relation="include">
+                </childnode>
+                <childnode refid="1534" relation="include">
+                </childnode>
+            </node>
+        </invincdepgraph>
+        <innerclass refid="struct___gnt_menu_item_priv" prot="public">_GntMenuItemPriv</innerclass>
+        <innerclass refid="struct___gnt_menu_item" prot="public">_GntMenuItem</innerclass>
+        <innerclass refid="struct___gnt_menu_item_class" prot="public">_GntMenuItemClass</innerclass>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="gntmenuitem_8h_1a1f2e917aba1ec82c64a1de544566e3e6" prot="public" static="no">
+                <name>GNT_TYPE_MENU_ITEM</name>
+                <initializer>(<ref refid="gntmenuitem_8h_1a4219242dd0865611c724ae40e4a975df" kindref="member">
+                    gnt_menuitem_get_gtype</ref>())
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        line="7" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        bodystart="7" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntmenuitem_8h_1ab776b9b4d4f3d9d0d4db69ca59ecad03" prot="public" static="no">
+                <name>GNT_MENU_ITEM</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_INSTANCE_CAST((obj),<ref
+                        refid="gntmenuitem_8h_1a1f2e917aba1ec82c64a1de544566e3e6" kindref="member">
+                    GNT_TYPE_MENU_ITEM</ref>,<ref refid="gntmenuitem_8h_1a0aedc185b64ea4c6306ed3de41d47359"
+                                                  kindref="member">GntMenuItem</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        line="8" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        bodystart="8" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntmenuitem_8h_1a0a1497079088d29ee17dd7d4e9d4afc8" prot="public" static="no">
+                <name>GNT_MENU_ITEM_CLASS</name>
+                <param>
+                    <defname>klass</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_CLASS_CAST((klass),<ref
+                        refid="gntmenuitem_8h_1a1f2e917aba1ec82c64a1de544566e3e6" kindref="member">
+                    GNT_TYPE_MENU_ITEM</ref>,<ref refid="gntmenuitem_8h_1ab939b68962dc1c6f2d8e18f5369ba604"
+                                                  kindref="member">GntMenuItemClass</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        line="9" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        bodystart="9" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntmenuitem_8h_1a5e3bd5b98798da9311938226eaa0382f" prot="public" static="no">
+                <name>GNT_IS_MENU_ITEM</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_INSTANCE_TYPE((obj),<ref
+                        refid="gntmenuitem_8h_1a1f2e917aba1ec82c64a1de544566e3e6" kindref="member">
+                    GNT_TYPE_MENU_ITEM</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        line="10" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        bodystart="10" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntmenuitem_8h_1aeb8bd76b8200b3ed4d80cb030087408f" prot="public" static="no">
+                <name>GNT_IS_MENU_ITEM_CLASS</name>
+                <param>
+                    <defname>klass</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_CLASS_TYPE((klass),<ref
+                        refid="gntmenuitem_8h_1a1f2e917aba1ec82c64a1de544566e3e6" kindref="member">
+                    GNT_TYPE_MENU_ITEM</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        line="11" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        bodystart="11" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntmenuitem_8h_1af42343ee6a7f19325499f347dc1ed245" prot="public" static="no">
+                <name>GNT_MENU_ITEM_GET_CLASS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_INSTANCE_GET_CLASS((obj),<ref
+                        refid="gntmenuitem_8h_1a1f2e917aba1ec82c64a1de544566e3e6" kindref="member">
+                    GNT_TYPE_MENU_ITEM</ref>,<ref refid="gntmenuitem_8h_1ab939b68962dc1c6f2d8e18f5369ba604"
+                                                  kindref="member">GntMenuItemClass</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        line="12" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        bodystart="12" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntmenuitem_8h_1a0350c0585ade7d740a3bc02c2eb02144" prot="public" static="no">
+                <name>GNT_MENU_ITEM_FLAGS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(<ref refid="gntmenuitem_8h_1ab776b9b4d4f3d9d0d4db69ca59ecad03" kindref="member">
+                    GNT_MENU_ITEM</ref>(obj)-&gt;priv.flags)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        line="14" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        bodystart="14" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntmenuitem_8h_1afeffd4ceffbf204bf6392093ec71bb21" prot="public" static="no">
+                <name>GNT_MENU_ITEM_SET_FLAGS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <param>
+                    <defname>flags</defname>
+                </param>
+                <initializer>(<ref refid="gntmenuitem_8h_1a0350c0585ade7d740a3bc02c2eb02144" kindref="member">
+                    GNT_MENU_ITEM_FLAGS</ref>(obj) |= flags)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        line="15" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        bodystart="15" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntmenuitem_8h_1ac8a0d6ae5755095b147c63d56ddcf34e" prot="public" static="no">
+                <name>GNT_MENU_ITEM_UNSET_FLAGS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <param>
+                    <defname>flags</defname>
+                </param>
+                <initializer>(<ref refid="gntmenuitem_8h_1a0350c0585ade7d740a3bc02c2eb02144" kindref="member">
+                    GNT_MENU_ITEM_FLAGS</ref>(obj) &amp;= ~(flags))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        line="16" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        bodystart="16" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="typedef">
+            <memberdef kind="typedef" id="gntmenuitem_8h_1a0aedc185b64ea4c6306ed3de41d47359" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_menu_item" kindref="compound">_GntMenuItem</ref>
+                </type>
+                <definition>typedef struct _GntMenuItem GntMenuItem</definition>
+                <argsstring></argsstring>
+                <name>GntMenuItem</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        line="78" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        bodystart="18" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntmenuitem_8h_1aebbff8960eb7d14adb51d91bf62b9de5" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_menu_item_priv" kindref="compound">_GntMenuItemPriv</ref>
+                </type>
+                <definition>typedef struct _GntMenuItemPriv GntMenuItemPriv</definition>
+                <argsstring></argsstring>
+                <name>GntMenuItemPriv</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        line="78" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        bodystart="19" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntmenuitem_8h_1ab939b68962dc1c6f2d8e18f5369ba604" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_menu_item_class" kindref="compound">_GntMenuItemClass</ref>
+                </type>
+                <definition>typedef struct _GntMenuItemClass GntMenuItemClass</definition>
+                <argsstring></argsstring>
+                <name>GntMenuItemClass</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        line="78" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        bodystart="20" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntmenuitem_8h_1a28e745323c6294e03f8bba7dfae666fe" prot="public" static="no">
+                <type>void(*</type>
+                <definition>typedef void(* GntMenuItemCallback)(GntMenuItem *item, gpointer data)</definition>
+                <argsstring>)(GntMenuItem *item, gpointer data)</argsstring>
+                <name>GntMenuItemCallback</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        line="31" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        bodystart="31" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntmenuitem_8h_1a4219242dd0865611c724ae40e4a975df" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>G_BEGIN_DECLS GType</type>
+                <definition>G_BEGIN_DECLS GType gnt_menuitem_get_gtype</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_menuitem_get_gtype</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        line="61" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.c"
+                        bodystart="35" bodyend="60"/>
+            </memberdef>
+            <memberdef kind="function" id="gntmenuitem_8h_1a9f386e79e3498ad6552e7ade5c23ae18" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>
+                    <ref refid="gntmenuitem_8h_1a0aedc185b64ea4c6306ed3de41d47359" kindref="member">GntMenuItem</ref>
+                    *
+                </type>
+                <definition>GntMenuItem* gnt_menuitem_new</definition>
+                <argsstring>(const char *text)</argsstring>
+                <name>gnt_menuitem_new</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>text</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        line="63" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.c"
+                        bodystart="62" bodyend="70"/>
+            </memberdef>
+            <memberdef kind="function" id="gntmenuitem_8h_1a5ead6ec7d3a95763d161a4e7038b9907" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_menuitem_set_callback</definition>
+                <argsstring>(GntMenuItem *item, GntMenuItemCallback callback, gpointer data)</argsstring>
+                <name>gnt_menuitem_set_callback</name>
+                <param>
+                    <type>
+                        <ref refid="gntmenuitem_8h_1a0aedc185b64ea4c6306ed3de41d47359" kindref="member">GntMenuItem
+                        </ref>
+                        *
+                    </type>
+                    <declname>item</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntmenuitem_8h_1a28e745323c6294e03f8bba7dfae666fe" kindref="member">
+                            GntMenuItemCallback
+                        </ref>
+                    </type>
+                    <declname>callback</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>data</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        line="65" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.c"
+                        bodystart="72" bodyend="76"/>
+            </memberdef>
+            <memberdef kind="function" id="gntmenuitem_8h_1a2cddbee82bb907898a46931250782cd2" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_menuitem_set_submenu</definition>
+                <argsstring>(GntMenuItem *item, GntMenu *menu)</argsstring>
+                <name>gnt_menuitem_set_submenu</name>
+                <param>
+                    <type>
+                        <ref refid="gntmenuitem_8h_1a0aedc185b64ea4c6306ed3de41d47359" kindref="member">GntMenuItem
+                        </ref>
+                        *
+                    </type>
+                    <declname>item</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntmenu_8h_1a4d309441dea824ba711bc65208b80fb9" kindref="member">GntMenu</ref>
+                        *
+                    </type>
+                    <declname>menu</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"
+                        line="67" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.c"
+                        bodystart="78" bodyend="83"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1">
+                <highlight class="preprocessor">#ifndef<sp/>GNT_MENUITEM_H
+                </highlight>
+            </codeline>
+            <codeline lineno="2">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_MENUITEM_H
+                </highlight>
+            </codeline>
+            <codeline lineno="3">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="4">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;glib.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="5">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;glib-object.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="6">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="7" refid="gntmenuitem_8h_1a1f2e917aba1ec82c64a1de544566e3e6" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_TYPE_MENU_ITEM
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(gnt_menuitem_get_gtype())
+                </highlight>
+            </codeline>
+            <codeline lineno="8" refid="gntmenuitem_8h_1ab776b9b4d4f3d9d0d4db69ca59ecad03" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_MENU_ITEM(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_INSTANCE_CAST((obj),<sp/>GNT_TYPE_MENU_ITEM,<sp/>GntMenuItem))
+                </highlight>
+            </codeline>
+            <codeline lineno="9" refid="gntmenuitem_8h_1a0a1497079088d29ee17dd7d4e9d4afc8" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_MENU_ITEM_CLASS(klass)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_CLASS_CAST((klass),<sp/>GNT_TYPE_MENU_ITEM,<sp/>GntMenuItemClass))
+                </highlight>
+            </codeline>
+            <codeline lineno="10" refid="gntmenuitem_8h_1a5e3bd5b98798da9311938226eaa0382f" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_IS_MENU_ITEM(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_INSTANCE_TYPE((obj),<sp/>GNT_TYPE_MENU_ITEM))
+                </highlight>
+            </codeline>
+            <codeline lineno="11" refid="gntmenuitem_8h_1aeb8bd76b8200b3ed4d80cb030087408f" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_IS_MENU_ITEM_CLASS(klass)
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_CLASS_TYPE((klass),<sp/>GNT_TYPE_MENU_ITEM))
+                </highlight>
+            </codeline>
+            <codeline lineno="12" refid="gntmenuitem_8h_1af42343ee6a7f19325499f347dc1ed245" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_MENU_ITEM_GET_CLASS(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_INSTANCE_GET_CLASS((obj),<sp/>GNT_TYPE_MENU_ITEM,<sp/>GntMenuItemClass))
+                </highlight>
+            </codeline>
+            <codeline lineno="13">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="14" refid="gntmenuitem_8h_1a0350c0585ade7d740a3bc02c2eb02144" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_MENU_ITEM_FLAGS(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_MENU_ITEM(obj)-&gt;priv.flags)
+                </highlight>
+            </codeline>
+            <codeline lineno="15" refid="gntmenuitem_8h_1afeffd4ceffbf204bf6392093ec71bb21" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_MENU_ITEM_SET_FLAGS(obj,<sp/>flags)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_MENU_ITEM_FLAGS(obj)<sp/>|=<sp/>flags)
+                </highlight>
+            </codeline>
+            <codeline lineno="16" refid="gntmenuitem_8h_1ac8a0d6ae5755095b147c63d56ddcf34e" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_MENU_ITEM_UNSET_FLAGS(obj,<sp/>flags)
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_MENU_ITEM_FLAGS(obj)<sp/>&amp;=<sp/>~(flags))
+                </highlight>
+            </codeline>
+            <codeline lineno="17">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="18" refid="gntmenuitem_8h_1a0aedc185b64ea4c6306ed3de41d47359" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_menu_item" kindref="compound">_GntMenuItem</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_menu_item" kindref="compound">GntMenuItem</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="19" refid="gntmenuitem_8h_1aebbff8960eb7d14adb51d91bf62b9de5" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_menu_item_priv" kindref="compound">_GntMenuItemPriv</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_menu_item_priv" kindref="compound">GntMenuItemPriv</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="20" refid="gntmenuitem_8h_1ab939b68962dc1c6f2d8e18f5369ba604" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_menu_item_class" kindref="compound">_GntMenuItemClass</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_menu_item_class" kindref="compound">GntMenuItemClass</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntmenu_8h" kindref="compound">
+                    gntmenu.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="24" refid="struct___gnt_menu_item_priv" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_menu_item_priv" kindref="compound">_GntMenuItemPriv</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>These<sp/>will<sp/>be<sp/>used<sp/>to<sp/>determine<sp/>the<sp/>
+                    position<sp/>of<sp/>the<sp/>submenu<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27" refid="struct___gnt_menu_item_priv_1a6150e0515f7202e2fb518f7206ed97dc"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_menu_item_priv_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>
+                    ;
+                </highlight>
+            </codeline>
+            <codeline lineno="28" refid="struct___gnt_menu_item_priv_1a0a2f84ed7838f07779ae24c5a9086d33"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_menu_item_priv_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>
+                    ;
+                </highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31" refid="gntmenuitem_8h_1a28e745323c6294e03f8bba7dfae666fe" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal"><sp/>void<sp/>(*<ref refid="gntmenuitem_8h_1a28e745323c6294e03f8bba7dfae666fe"
+                                                               kindref="member">GntMenuItemCallback</ref>)(
+                    <ref refid="struct___gnt_menu_item" kindref="compound">GntMenuItem</ref>
+                    <sp/>*item,<sp/>gpointer<sp/>data);
+                </highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33" refid="struct___gnt_menu_item" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_menu_item" kindref="compound">_GntMenuItem</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="35" refid="struct___gnt_menu_item_1a119e262dd6f86f1488d00a7ce2d28abf" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GObject
+                    <sp/>
+                    <ref refid="struct___gnt_menu_item_1a119e262dd6f86f1488d00a7ce2d28abf" kindref="member">parent</ref>
+                    ;
+                </highlight>
+            </codeline>
+            <codeline lineno="36" refid="struct___gnt_menu_item_1a641cefa125ce714232aa255913f61348" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_menu_item_priv" kindref="compound">GntMenuItemPriv</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_menu_item_1a641cefa125ce714232aa255913f61348" kindref="member">priv</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="38" refid="struct___gnt_menu_item_1a5633b1433389cec21ade3811bbe9ca5b" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="struct___gnt_menu_item_1a5633b1433389cec21ade3811bbe9ca5b"
+                                                     kindref="member">text</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>A<sp/>GntMenuItem<sp/>can<sp/>have<sp/>a<sp/>callback<sp/>associated
+                    <sp/>with<sp/>it.
+                </highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<sp/>The<sp/>callback<sp/>will<sp/>be<sp/>activated<sp/>whenever<sp/>the<sp/>suer<sp/>selects
+                    <sp/>it<sp/>and<sp/>presses<sp/>enter<sp/>(or<sp/>clicks).
+                </highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<sp/>However,<sp/>if<sp/>the<sp/>GntMenuItem<sp/>has<sp/>some<sp/>child,<sp/>then<sp/>the<sp/>
+                    callback<sp/>and<sp/>callbackdata<sp/>will<sp/>be<sp/>ignored.<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="43" refid="struct___gnt_menu_item_1aba954997e000c9f03aa8ba1c86146e80" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gpointer
+                    <sp/>
+                    <ref refid="struct___gnt_menu_item_1aba954997e000c9f03aa8ba1c86146e80" kindref="member">
+                        callbackdata</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="44" refid="struct___gnt_menu_item_1a1d0f3df82f8ca16cb6f30e070404e3a5" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntmenuitem_8h_1a28e745323c6294e03f8bba7dfae666fe" kindref="member">
+                        GntMenuItemCallback
+                    </ref>
+                    <sp/>
+                    <ref refid="struct___gnt_menu_item_1a1d0f3df82f8ca16cb6f30e070404e3a5" kindref="member">
+                        callback</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="46" refid="struct___gnt_menu_item_1a91ca0e10f99cf4f266af41fefa72600b" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_menu" kindref="compound">GntMenu</ref>
+                    <sp/>*<ref refid="struct___gnt_menu_item_1a91ca0e10f99cf4f266af41fefa72600b" kindref="member">
+                    submenu</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="49" refid="struct___gnt_menu_item_class" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_menu_item_class" kindref="compound">_GntMenuItemClass</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="51" refid="struct___gnt_menu_item_class_1ade82ad984770be7543923661acc7a8d5"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GObjectClass
+                    <sp/>
+                    <ref refid="struct___gnt_menu_item_class_1ade82ad984770be7543923661acc7a8d5" kindref="member">
+                        parent</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="53" refid="struct___gnt_menu_item_class_1a89dfce3a9aa0299a7819f8a4b9df5cef"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_menu_item_class_1a89dfce3a9aa0299a7819f8a4b9df5cef"
+                                         kindref="member">gnt_reserved1</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="54" refid="struct___gnt_menu_item_class_1abc424f0d49c73831a72f061af6b0ce1d"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_menu_item_class_1abc424f0d49c73831a72f061af6b0ce1d"
+                                         kindref="member">gnt_reserved2</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="55" refid="struct___gnt_menu_item_class_1a1e0be0259f96a3bff95418925fe8163e"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_menu_item_class_1a1e0be0259f96a3bff95418925fe8163e"
+                                         kindref="member">gnt_reserved3</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="56" refid="struct___gnt_menu_item_class_1a3f7d85f4e8f04f18386922c69c245469"
+                      refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_menu_item_class_1a3f7d85f4e8f04f18386922c69c245469"
+                                         kindref="member">gnt_reserved4</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal">G_BEGIN_DECLS</highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal">GType
+                    <sp/>
+                    <ref refid="gntmenuitem_8c_1af6392103f60a5901b018d6c11f43f31c" kindref="member">
+                        gnt_menuitem_get_gtype</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal">
+                    <ref refid="struct___gnt_menu_item" kindref="compound">GntMenuItem</ref>
+                    <sp/>*<ref refid="gntmenuitem_8c_1a9f386e79e3498ad6552e7ade5c23ae18" kindref="member">
+                    gnt_menuitem_new</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text);
+                </highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntmenuitem_8c_1a5ead6ec7d3a95763d161a4e7038b9907" kindref="member">
+                        gnt_menuitem_set_callback</ref>(
+                    <ref refid="struct___gnt_menu_item" kindref="compound">GntMenuItem</ref>
+                    <sp/>*item,
+                    <sp/>
+                    <ref refid="gntmenuitem_8h_1a28e745323c6294e03f8bba7dfae666fe" kindref="member">
+                        GntMenuItemCallback
+                    </ref>
+                    <sp/>callback,<sp/>gpointer<sp/>data);
+                </highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntmenuitem_8c_1a2cddbee82bb907898a46931250782cd2" kindref="member">
+                        gnt_menuitem_set_submenu</ref>(
+                    <ref refid="struct___gnt_menu_item" kindref="compound">GntMenuItem</ref>
+                    <sp/>*item,
+                    <sp/>
+                    <ref refid="struct___gnt_menu" kindref="compound">GntMenu</ref>
+                    <sp/>*menu);
+                </highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal">G_END_DECLS</highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>GNT_MENUITEM_H<sp/>*/
+                </highlight>
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+        </programlisting>
+        <location
+                file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntmenuitem.h"/>
+    </compounddef>
+</doxygen>

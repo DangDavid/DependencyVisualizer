@@ -1,0 +1,3513 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntdebug_8c" kind="file">
+        <compoundname>gntdebug.c</compoundname>
+        <includes refid="gnt_8h" local="no">gnt.h</includes>
+        <includes refid="gntbox_8h" local="no">gntbox.h</includes>
+        <includes refid="gnttextview_8h" local="no">gnttextview.h</includes>
+        <includes refid="gntbutton_8h" local="no">gntbutton.h</includes>
+        <includes refid="gntcheckbox_8h" local="no">gntcheckbox.h</includes>
+        <includes refid="gntline_8h" local="no">gntline.h</includes>
+        <includes refid="gntdebug_8h" local="yes">gntdebug.h</includes>
+        <includes refid="finch_8h" local="yes">finch.h</includes>
+        <includes local="yes">util.h</includes>
+        <includes local="no">stdio.h</includes>
+        <includes local="no">string.h</includes>
+        <incdepgraph>
+            <node id="255">
+                <label>gntbutton.h</label>
+                <link refid="gntbutton_8h"/>
+                <childnode refid="242" relation="include">
+                </childnode>
+                <childnode refid="247" relation="include">
+                </childnode>
+                <childnode refid="241" relation="include">
+                </childnode>
+                <childnode refid="243" relation="include">
+                </childnode>
+            </node>
+            <node id="249">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="242" relation="include">
+                </childnode>
+            </node>
+            <node id="254">
+                <label>gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="243" relation="include">
+                </childnode>
+                <childnode refid="241" relation="include">
+                </childnode>
+                <childnode refid="249" relation="include">
+                </childnode>
+                <childnode refid="250" relation="include">
+                </childnode>
+            </node>
+            <node id="252">
+                <label>term.h</label>
+            </node>
+            <node id="246">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="244" relation="include">
+                </childnode>
+                <childnode refid="242" relation="include">
+                </childnode>
+                <childnode refid="247" relation="include">
+                </childnode>
+                <childnode refid="245" relation="include">
+                </childnode>
+            </node>
+            <node id="248">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="244" relation="include">
+                </childnode>
+                <childnode refid="242" relation="include">
+                </childnode>
+                <childnode refid="247" relation="include">
+                </childnode>
+            </node>
+            <node id="241">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="242" relation="include">
+                </childnode>
+                <childnode refid="243" relation="include">
+                </childnode>
+                <childnode refid="248" relation="include">
+                </childnode>
+                <childnode refid="249" relation="include">
+                </childnode>
+                <childnode refid="250" relation="include">
+                </childnode>
+            </node>
+            <node id="251">
+                <label>curses.h</label>
+            </node>
+            <node id="253">
+                <label>gntbox.h</label>
+                <link refid="gntbox_8h"/>
+                <childnode refid="241" relation="include">
+                </childnode>
+                <childnode refid="243" relation="include">
+                </childnode>
+            </node>
+            <node id="263">
+                <label>string.h</label>
+            </node>
+            <node id="242">
+                <label>glib.h</label>
+            </node>
+            <node id="243">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="244" relation="include">
+                </childnode>
+                <childnode refid="242" relation="include">
+                </childnode>
+                <childnode refid="245" relation="include">
+                </childnode>
+                <childnode refid="246" relation="include">
+                </childnode>
+            </node>
+            <node id="260">
+                <label>finch.h</label>
+                <link refid="finch_8h"/>
+                <childnode refid="242" relation="include">
+                </childnode>
+                <childnode refid="261" relation="include">
+                </childnode>
+            </node>
+            <node id="250">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="251" relation="include">
+                </childnode>
+                <childnode refid="252" relation="include">
+                </childnode>
+            </node>
+            <node id="245">
+                <label>ncurses.h</label>
+            </node>
+            <node id="257">
+                <label>gntline.h</label>
+                <link refid="gntline_8h"/>
+                <childnode refid="243" relation="include">
+                </childnode>
+                <childnode refid="241" relation="include">
+                </childnode>
+                <childnode refid="249" relation="include">
+                </childnode>
+                <childnode refid="250" relation="include">
+                </childnode>
+            </node>
+            <node id="240">
+                <label>gntdebug.c</label>
+                <link refid="gntdebug.c"/>
+                <childnode refid="241" relation="include">
+                </childnode>
+                <childnode refid="253" relation="include">
+                </childnode>
+                <childnode refid="254" relation="include">
+                </childnode>
+                <childnode refid="255" relation="include">
+                </childnode>
+                <childnode refid="256" relation="include">
+                </childnode>
+                <childnode refid="257" relation="include">
+                </childnode>
+                <childnode refid="258" relation="include">
+                </childnode>
+                <childnode refid="260" relation="include">
+                </childnode>
+                <childnode refid="262" relation="include">
+                </childnode>
+                <childnode refid="244" relation="include">
+                </childnode>
+                <childnode refid="263" relation="include">
+                </childnode>
+            </node>
+            <node id="258">
+                <label>gntdebug.h</label>
+                <link refid="gntdebug_8h"/>
+                <childnode refid="259" relation="include">
+                </childnode>
+            </node>
+            <node id="259">
+                <label>debug.h</label>
+            </node>
+            <node id="262">
+                <label>util.h</label>
+            </node>
+            <node id="244">
+                <label>stdio.h</label>
+            </node>
+            <node id="261">
+                <label>libpurple/internal.h</label>
+            </node>
+            <node id="256">
+                <label>gntcheckbox.h</label>
+                <link refid="gntcheckbox_8h"/>
+                <childnode refid="255" relation="include">
+                </childnode>
+                <childnode refid="241" relation="include">
+                </childnode>
+                <childnode refid="249" relation="include">
+                </childnode>
+                <childnode refid="250" relation="include">
+                </childnode>
+            </node>
+            <node id="247">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="gntdebug_8c_1a15131c6233e6369f1dfb088b32dcb732" prot="public" static="no">
+                <name>PREF_ROOT</name>
+                <initializer>&quot;/finch/debug&quot;</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="39" column="9"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="39" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntdebug_8c_1a706239b42cb68f4f06dd577320bb2a23" prot="public" static="no">
+                <name>REGISTER_G_LOG_HANDLER</name>
+                <param>
+                    <defname>name</defname>
+                </param>
+                <initializer>g_log_set_handler((name), G_LOG_LEVEL_MASK | G_LOG_FLAG_FATAL \
+                    | G_LOG_FLAG_RECURSION, \
+                    purple_glib_log_handler,<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">
+                        NULL</ref>)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="270" column="9"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="var">
+            <memberdef kind="variable" id="gntdebug_8c_1af21fe6008e6e5d82746bc45e9cec36d3" prot="public" static="no"
+                       mutable="no">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* window</definition>
+                <argsstring></argsstring>
+                <name>window</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="43" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="43" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntdebug_8c_1ac02aa2949869a23966f6b550804fadb4" prot="public" static="no"
+                       mutable="no">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* tview</definition>
+                <argsstring></argsstring>
+                <name>tview</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="44" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="44" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntdebug_8c_1ace47c2ce612b6ad62921b62662b9aaad" prot="public" static="no"
+                       mutable="no">
+                <type>gboolean</type>
+                <definition>gboolean paused</definition>
+                <argsstring></argsstring>
+                <name>paused</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="45" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="45" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntdebug_8c_1a2bcc511dd6ef95bbdffe9886515321f7" prot="public" static="no"
+                       mutable="no">
+                <type>gboolean</type>
+                <definition>gboolean timestamps</definition>
+                <argsstring></argsstring>
+                <name>timestamps</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="46" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="46" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntdebug_8c_1ab1b88f31225823bf62800998ba2649c5" prot="public" static="yes"
+                       mutable="no">
+                <type>struct @3</type>
+                <definition>struct @3 debug</definition>
+                <argsstring></argsstring>
+                <name>debug</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="47" column="1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntdebug_8c_1a14636454fb0dc5f036cdb36f0f206dcb" prot="public" static="yes"
+                       mutable="no">
+                <type>PurpleDebugUiOps</type>
+                <definition>PurpleDebugUiOps uiops</definition>
+                <argsstring></argsstring>
+                <name>uiops</name>
+                <initializer>=
+                    {
+                    finch_debug_print,
+                    finch_debug_is_enabled,
+
+
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>
+                    }
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="95" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="95" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntdebug_8c_1a47a8cb1262f76bc661e80e3440fddea1" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void finch_debug_print</definition>
+                <argsstring>(PurpleDebugLevel level, const char *category, const char *args)</argsstring>
+                <name>finch_debug_print</name>
+                <param>
+                    <type>PurpleDebugLevel</type>
+                    <declname>level</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>category</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>args</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="50" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="50" bodyend="87"/>
+            </memberdef>
+            <memberdef kind="function" id="gntdebug_8c_1ae3bca0efcffe12796b16c4651669f0b0" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>static gboolean finch_debug_is_enabled</definition>
+                <argsstring>(PurpleDebugLevel level, const char *category)</argsstring>
+                <name>finch_debug_is_enabled</name>
+                <param>
+                    <type>PurpleDebugLevel</type>
+                    <declname>level</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>category</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="90" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="90" bodyend="93"/>
+            </memberdef>
+            <memberdef kind="function" id="gntdebug_8c_1a94205c7040766e2b4250f0941c1e7eb6" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>PurpleDebugUiOps *</type>
+                <definition>PurpleDebugUiOps* finch_debug_get_ui_ops</definition>
+                <argsstring>()</argsstring>
+                <name>finch_debug_get_ui_ops</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Get the ui-functions.</para>
+                    <para>
+                        <simplesect kind="return">
+                            <para>The PurpleDebugUiOps structure populated with the appropriate functions.</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="107" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="107" bodyend="110"/>
+            </memberdef>
+            <memberdef kind="function" id="gntdebug_8c_1a0e2a966123390b4f40dc91c48f52b9f4" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void reset_debug_win</definition>
+                <argsstring>(GntWidget *w, gpointer null)</argsstring>
+                <name>reset_debug_win</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>w</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>null</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="113" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="113" bodyend="116"/>
+            </memberdef>
+            <memberdef kind="function" id="gntdebug_8c_1a6890894c620b58f15977aa9e61205751" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void clear_debug_win</definition>
+                <argsstring>(GntWidget *w, GntTextView *tv)</argsstring>
+                <name>clear_debug_win</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>w</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gnttextview_8h_1a0f0993c949fa79d7d2b1d128ca9000f3" kindref="member">GntTextView
+                        </ref>
+                        *
+                    </type>
+                    <declname>tv</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="119" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="119" bodyend="122"/>
+            </memberdef>
+            <memberdef kind="function" id="gntdebug_8c_1a1ca3553323979e6ce45e6255a687c6a0" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void print_stderr</definition>
+                <argsstring>(const char *string)</argsstring>
+                <name>print_stderr</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>string</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="125" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="125" bodyend="128"/>
+            </memberdef>
+            <memberdef kind="function" id="gntdebug_8c_1a03d8791bdb06c0da28cc2823be956035" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void suppress_error_messages</definition>
+                <argsstring>(const char *message)</argsstring>
+                <name>suppress_error_messages</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>message</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="131" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="131" bodyend="132"/>
+            </memberdef>
+            <memberdef kind="function" id="gntdebug_8c_1a2ccf792e3dd53b4eb22f5ec4ec956c15" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void toggle_pause</definition>
+                <argsstring>(GntWidget *w, gpointer n)</argsstring>
+                <name>toggle_pause</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>w</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>n</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="135" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="135" bodyend="138"/>
+            </memberdef>
+            <memberdef kind="function" id="gntdebug_8c_1a4860069b1c84ae923fcb8a2043dcd7a5" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void toggle_timestamps</definition>
+                <argsstring>(GntWidget *w, gpointer n)</argsstring>
+                <name>toggle_timestamps</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>w</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>n</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="141" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="141" bodyend="145"/>
+            </memberdef>
+            <memberdef kind="function" id="gntdebug_8c_1a73e610a91c6ebce3b451df96fd679a4f" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void purple_glib_log_handler</definition>
+                <argsstring>(const gchar *domain, GLogLevelFlags flags, const gchar *msg, gpointer user_data)
+                </argsstring>
+                <name>purple_glib_log_handler</name>
+                <param>
+                    <type>const gchar *</type>
+                    <declname>domain</declname>
+                </param>
+                <param>
+                    <type>GLogLevelFlags</type>
+                    <declname>flags</declname>
+                </param>
+                <param>
+                    <type>const gchar *</type>
+                    <declname>msg</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>user_data</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="149" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="149" bodyend="191"/>
+            </memberdef>
+            <memberdef kind="function" id="gntdebug_8c_1a8c20319a4023fa852a93b0aafeff5f82" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void size_changed_cb</definition>
+                <argsstring>(GntWidget *widget, int oldw, int oldh)</argsstring>
+                <name>size_changed_cb</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>oldw</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>oldh</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="194" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="194" bodyend="200"/>
+            </memberdef>
+            <memberdef kind="function" id="gntdebug_8c_1ad98c4589a05641a0c95d5fb90a518a5a" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_debug_window_show</definition>
+                <argsstring>()</argsstring>
+                <name>finch_debug_window_show</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Show the debug window.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="202" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="202" bodyend="258"/>
+            </memberdef>
+            <memberdef kind="function" id="gntdebug_8c_1a173632b9140616805fdff6b7456c68c6" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>static gboolean start_with_debugwin</definition>
+                <argsstring>(gpointer null)</argsstring>
+                <name>start_with_debugwin</name>
+                <param>
+                    <type>gpointer</type>
+                    <declname>null</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="261" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="261" bodyend="265"/>
+            </memberdef>
+            <memberdef kind="function" id="gntdebug_8c_1a56f21fb787b461ccb66a54abadec1dff" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_debug_init</definition>
+                <argsstring>()</argsstring>
+                <name>finch_debug_init</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Perform necessary initializations.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="267" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="267" bodyend="292"/>
+            </memberdef>
+            <memberdef kind="function" id="gntdebug_8c_1a7acaac49cd6262e0538e3afa823fd1a3" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_debug_uninit</definition>
+                <argsstring>()</argsstring>
+                <name>finch_debug_uninit</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Perform necessary uninitializations.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          line="294" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"
+                          bodystart="294" bodyend="296"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>GNT Debug API</para>
+            <para>finch</para>
+            <para>Finch is the legal property of its developers, whose names are too numerous to list here. Please refer
+                to the COPYRIGHT file distributed with this source distribution.
+            </para>
+            <para>This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+                General Public License as published by the Free Software Foundation; either version 2 of the License, or
+                (at your option) any later version.
+            </para>
+            <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
+                the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public
+                License for more details.
+            </para>
+            <para>You should have received a copy of the GNU General Public License along with this program; if not,
+                write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+            </para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="25">
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gnt_8h" kindref="compound">gnt.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gntbox_8h" kindref="compound">
+                    gntbox.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gnttextview_8h" kindref="compound">
+                    gnttextview.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gntbutton_8h" kindref="compound">
+                    gntbutton.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gntcheckbox_8h" kindref="compound">
+                    gntcheckbox.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gntline_8h" kindref="compound">
+                    gntline.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntdebug_8h" kindref="compound">
+                    gntdebug.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="finch_8h" kindref="compound">
+                    finch.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;util.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;string.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>PREF_ROOT<sp/>&quot;/finch/debug&quot;
+                </highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntdebug_8c_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntdebug_8c_1ac02aa2949869a23966f6b550804fadb4" kindref="member">tview</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean
+                    <sp/>
+                    <ref refid="gntdebug_8c_1ace47c2ce612b6ad62921b62662b9aaad" kindref="member">paused</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean
+                    <sp/>
+                    <ref refid="gntdebug_8c_1a2bcc511dd6ef95bbdffe9886515321f7" kindref="member">timestamps</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal">}<sp/>debug;
+                </highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal">finch_debug_print(PurpleDebugLevel<sp/>level,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*category,
+                </highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*args)
+                </highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(debug.window<sp/>&amp;&amp;<sp/>!debug.paused)
+                </highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>pos<sp/>=
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a835ee4bb2f0cbe1b0b801a3d4d264194" kindref="member">
+                        gnt_text_view_get_lines_below</ref>(<ref
+                            refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">
+                        GNT_TEXT_VIEW</ref>(debug.tview));
+                </highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddf" kindref="member">GntTextFormatFlags
+                    </ref>
+                    <sp/>flag<sp/>=
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44ca22374b4f5f6078f171aeb5f2e7b1"
+                         kindref="member">GNT_TEXT_FLAG_NORMAL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(debug.timestamps)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*mdate;
+                </highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>time_t<sp/>mtime<sp/>=<sp/>time(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                              kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>mdate<sp/>=<sp/>purple_utf8_strftime(
+                </highlight>
+                <highlight class="stringliteral">&quot;%H:%M:%S<sp/>&quot;
+                </highlight>
+                <highlight class="normal">,<sp/>localtime(&amp;mtime));
+                </highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a491ccc844a5ec91e80108ecb40b105e7" kindref="member">
+                        gnt_text_view_append_text_with_flags</ref>(<ref
+                        refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW</ref>
+                    (debug.tview),
+                </highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>mdate,<sp/>flag);
+                </highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a491ccc844a5ec91e80108ecb40b105e7" kindref="member">
+                        gnt_text_view_append_text_with_flags</ref>(<ref
+                        refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW</ref>
+                    (debug.tview),
+                </highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>category,
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44fb1f1c685640d25a63350923fd0359"
+                         kindref="member">GNT_TEXT_FLAG_BOLD</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a491ccc844a5ec91e80108ecb40b105e7" kindref="member">
+                        gnt_text_view_append_text_with_flags</ref>(<ref
+                        refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW</ref>
+                    (debug.tview),
+                </highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;:<sp/>&quot;
+                </highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44fb1f1c685640d25a63350923fd0359"
+                         kindref="member">GNT_TEXT_FLAG_BOLD</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">switch</highlight>
+                <highlight class="normal"><sp/>(level)
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal"><sp/>PURPLE_DEBUG_WARNING:
+                </highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>flag<sp/>|=
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa417fb816e5064925152e3a8c4f1699c8"
+                         kindref="member">GNT_TEXT_FLAG_UNDERLINE</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal"><sp/>PURPLE_DEBUG_ERROR:
+                </highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal"><sp/>PURPLE_DEBUG_FATAL:
+                </highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>flag<sp/>|=
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44fb1f1c685640d25a63350923fd0359"
+                         kindref="member">GNT_TEXT_FLAG_BOLD</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">default</highlight>
+                <highlight class="normal">:</highlight>
+            </codeline>
+            <codeline lineno="80">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a491ccc844a5ec91e80108ecb40b105e7" kindref="member">
+                        gnt_text_view_append_text_with_flags</ref>(<ref
+                        refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW</ref>
+                    (debug.tview),<sp/>args,<sp/>flag);
+                </highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(pos<sp/>&lt;=<sp/>1)
+                </highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8c_1abe14d408a8c657fa9f5f707717e9e72f" kindref="member">
+                        gnt_text_view_scroll</ref>(<ref refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6"
+                                                        kindref="member">GNT_TEXT_VIEW</ref>(debug.tview),<sp/>0);
+                </highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>gboolean
+                </highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal">finch_debug_is_enabled(PurpleDebugLevel<sp/>level,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*category)
+                </highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>debug.window<sp/>&amp;&amp;<sp/>!debug.paused;
+                </highlight>
+            </codeline>
+            <codeline lineno="93">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>PurpleDebugUiOps<sp/>uiops<sp/>=
+                </highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>finch_debug_print,
+                </highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>finch_debug_is_enabled,
+                </highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="100">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>padding<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="101">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="102">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="103">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="104">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>NULL
+                </highlight>
+            </codeline>
+            <codeline lineno="105">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="107">
+                <highlight class="normal">PurpleDebugUiOps<sp/>*<ref
+                        refid="gntdebug_8c_1a94205c7040766e2b4250f0941c1e7eb6" kindref="member">
+                    finch_debug_get_ui_ops</ref>()
+                </highlight>
+            </codeline>
+            <codeline lineno="108">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="109">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>&amp;uiops;
+                </highlight>
+            </codeline>
+            <codeline lineno="110">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="111">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="112">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="113">
+                <highlight class="normal">reset_debug_win(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*w,<sp/>gpointer<sp/>null)
+                </highlight>
+            </codeline>
+            <codeline lineno="114">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="115">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>debug.window<sp/>=<sp/>debug.tview<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="116">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="117">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="118">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="119">
+                <highlight class="normal">clear_debug_win(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*w,
+                    <sp/>
+                    <ref refid="struct___gnt_text_view" kindref="compound">GntTextView</ref>
+                    <sp/>*tv)
+                </highlight>
+            </codeline>
+            <codeline lineno="120">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="121">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a100b34187493fc9985191ac6b9a8c9f5" kindref="member">
+                        gnt_text_view_clear</ref>(tv);
+                </highlight>
+            </codeline>
+            <codeline lineno="122">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="123">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="124">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="125">
+                <highlight class="normal">print_stderr(</highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*
+                </highlight>
+                <highlight class="keywordtype">string</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="126">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="127">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_printerr(
+                </highlight>
+                <highlight class="stringliteral">&quot;%s&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">string</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="128">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="129">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="130">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="131">
+                <highlight class="normal">suppress_error_messages(</highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*message)
+                </highlight>
+            </codeline>
+            <codeline lineno="132">
+                <highlight class="normal">{}</highlight>
+            </codeline>
+            <codeline lineno="133">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="134">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="135">
+                <highlight class="normal">toggle_pause(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*w,<sp/>gpointer<sp/>n)
+                </highlight>
+            </codeline>
+            <codeline lineno="136">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="137">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>debug.paused<sp/>=<sp/>!debug.paused;
+                </highlight>
+            </codeline>
+            <codeline lineno="138">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="139">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="140">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="141">
+                <highlight class="normal">toggle_timestamps(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*w,<sp/>gpointer<sp/>n)
+                </highlight>
+            </codeline>
+            <codeline lineno="142">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="143">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>debug.timestamps<sp/>=<sp/>!debug.timestamps;
+                </highlight>
+            </codeline>
+            <codeline lineno="144">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_set_bool(
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/debug/timestamps&quot;</highlight>
+                <highlight class="normal">,<sp/>debug.timestamps);
+                </highlight>
+            </codeline>
+            <codeline lineno="145">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="146">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="147">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>Xerox<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="148">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="149">
+                <highlight class="normal">purple_glib_log_handler(</highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal"><sp/>gchar<sp/>*domain,<sp/>GLogLevelFlags<sp/>flags,
+                </highlight>
+            </codeline>
+            <codeline lineno="150">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal"><sp/>gchar<sp/>*msg,<sp/>gpointer<sp/>user_data)
+                </highlight>
+            </codeline>
+            <codeline lineno="151">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="152">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleDebugLevel<sp/>level;
+                </highlight>
+            </codeline>
+            <codeline lineno="153">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*new_msg<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="154">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*new_domain<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="155">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="156">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>((flags<sp/>&amp;<sp/>G_LOG_LEVEL_ERROR)<sp/>==<sp/>G_LOG_LEVEL_ERROR)
+                </highlight>
+            </codeline>
+            <codeline lineno="157">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>level<sp/>=<sp/>PURPLE_DEBUG_ERROR;
+                </highlight>
+            </codeline>
+            <codeline lineno="158">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>((flags<sp/>&amp;<sp/>G_LOG_LEVEL_CRITICAL)<sp/>==<sp/>
+                    G_LOG_LEVEL_CRITICAL)
+                </highlight>
+            </codeline>
+            <codeline lineno="159">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>level<sp/>=<sp/>PURPLE_DEBUG_FATAL;
+                </highlight>
+            </codeline>
+            <codeline lineno="160">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>((flags<sp/>&amp;<sp/>G_LOG_LEVEL_WARNING)<sp/>==<sp/>
+                    G_LOG_LEVEL_WARNING)
+                </highlight>
+            </codeline>
+            <codeline lineno="161">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>level<sp/>=<sp/>PURPLE_DEBUG_WARNING;
+                </highlight>
+            </codeline>
+            <codeline lineno="162">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>((flags<sp/>&amp;<sp/>G_LOG_LEVEL_MESSAGE)<sp/>==<sp/>
+                    G_LOG_LEVEL_MESSAGE)
+                </highlight>
+            </codeline>
+            <codeline lineno="163">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>level<sp/>=<sp/>PURPLE_DEBUG_INFO;
+                </highlight>
+            </codeline>
+            <codeline lineno="164">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>((flags<sp/>&amp;<sp/>G_LOG_LEVEL_INFO)<sp/>==<sp/>G_LOG_LEVEL_INFO)
+                </highlight>
+            </codeline>
+            <codeline lineno="165">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>level<sp/>=<sp/>PURPLE_DEBUG_INFO;
+                </highlight>
+            </codeline>
+            <codeline lineno="166">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>((flags<sp/>&amp;<sp/>G_LOG_LEVEL_DEBUG)<sp/>==<sp/>G_LOG_LEVEL_DEBUG)
+                </highlight>
+            </codeline>
+            <codeline lineno="167">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>level<sp/>=<sp/>PURPLE_DEBUG_MISC;
+                </highlight>
+            </codeline>
+            <codeline lineno="168">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="169">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="170">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_debug_warning(
+                </highlight>
+                <highlight class="stringliteral">&quot;gntdebug&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="171">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Unknown<sp/>glib<sp/>logging<sp/>level<sp/>in<sp/>%d\n&quot;
+                </highlight>
+                <highlight class="normal">,<sp/>flags);
+                </highlight>
+            </codeline>
+            <codeline lineno="172">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="173">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>level<sp/>=<sp/>PURPLE_DEBUG_MISC;
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>This<sp/>will<sp/>never<sp/>happen.<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="174">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="175">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="176">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(msg<sp/>!=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="177">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>new_msg<sp/>=<sp/>purple_utf8_try_convert(msg);
+                </highlight>
+            </codeline>
+            <codeline lineno="178">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="179">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(domain<sp/>!=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="180">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>new_domain<sp/>=<sp/>purple_utf8_try_convert(domain);
+                </highlight>
+            </codeline>
+            <codeline lineno="181">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="182">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(new_msg<sp/>!=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="183">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="184">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_debug(level,<sp/>(new_domain<sp/>!=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>
+                    <sp/>?<sp/>new_domain<sp/>:
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;g_log&quot;</highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="185">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;%s\n&quot;</highlight>
+                <highlight class="normal">,<sp/>new_msg);
+                </highlight>
+            </codeline>
+            <codeline lineno="186">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="187">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(new_msg);
+                </highlight>
+            </codeline>
+            <codeline lineno="188">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="189">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="190">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(new_domain);
+                </highlight>
+            </codeline>
+            <codeline lineno="191">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="192">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="193">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="194">
+                <highlight class="normal">size_changed_cb(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>oldw,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>oldh)
+                </highlight>
+            </codeline>
+            <codeline lineno="195">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="196">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>w,<sp/>h;
+                </highlight>
+            </codeline>
+            <codeline lineno="197">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1ac2604b88005bf4a59008ef05a3869df3" kindref="member">
+                        gnt_widget_get_size</ref>(widget,<sp/>&amp;w,<sp/>&amp;h);
+                </highlight>
+            </codeline>
+            <codeline lineno="198">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_set_int(
+                    <ref refid="gntdebug_8c_1a15131c6233e6369f1dfb088b32dcb732" kindref="member">PREF_ROOT</ref>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/size/width&quot;</highlight>
+                <highlight class="normal">,<sp/>w);
+                </highlight>
+            </codeline>
+            <codeline lineno="199">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_set_int(
+                    <ref refid="gntdebug_8c_1a15131c6233e6369f1dfb088b32dcb732" kindref="member">PREF_ROOT</ref>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/size/height&quot;</highlight>
+                <highlight class="normal">,<sp/>h);
+                </highlight>
+            </codeline>
+            <codeline lineno="200">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="201">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="202">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntdebug_8c_1ad98c4589a05641a0c95d5fb90a518a5a" kindref="member">
+                        finch_debug_window_show</ref>()
+                </highlight>
+            </codeline>
+            <codeline lineno="203">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="204">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>debug.paused<sp/>=<sp/>FALSE;
+                </highlight>
+            </codeline>
+            <codeline lineno="205">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>debug.timestamps<sp/>=<sp/>purple_prefs_get_bool(
+                </highlight>
+                <highlight class="stringliteral">&quot;/purple/debug/timestamps&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="206">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(debug.window<sp/>==
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="207">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="208">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*wid,<sp/>*box;
+                </highlight>
+            </codeline>
+            <codeline lineno="209">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>debug.window<sp/>=
+                    <sp/>
+                    <ref refid="gntbox_8h_1a2d45d265c7266ba5af351042fde9e718" kindref="member">gnt_vbox_new</ref>
+                    (FALSE);
+                </highlight>
+            </codeline>
+            <codeline lineno="210">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1a7789c41d63e8b6b204727919c398ad0a" kindref="member">
+                        gnt_box_set_toplevel</ref>(<ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec"
+                                                        kindref="member">GNT_BOX</ref>(debug.window),<sp/>TRUE);
+                </highlight>
+            </codeline>
+            <codeline lineno="211">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1a44429c371d6ea90f89d63a57cffabc66" kindref="member">gnt_box_set_title</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>
+                    (debug.window),<sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Debug<sp/>Window&quot;
+                </highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="212">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1a3b7044e63e2ae35e7c8efaf5a1f8efdc" kindref="member">gnt_box_set_pad</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>
+                    (debug.window),<sp/>0);
+                </highlight>
+            </codeline>
+            <codeline lineno="213">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1afb6c544e642e187a84cd7c2e1b664ab0" kindref="member">
+                        gnt_box_set_alignment</ref>(<ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec"
+                                                         kindref="member">GNT_BOX</ref>(debug.window),
+                    <sp/>
+                    <ref refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19aae4fd781c018d03a56f8e8f54454f3ab"
+                         kindref="member">GNT_ALIGN_MID</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="214">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="215">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>debug.tview<sp/>=
+                    <sp/>
+                    <ref refid="gnttextview_8c_1a3bdd397329f307fbdc41e776772bd316" kindref="member">
+                        gnt_text_view_new</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="216">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>
+                    (debug.window),<sp/>debug.tview);
+                </highlight>
+            </codeline>
+            <codeline lineno="217">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1a188549229f86aeddafd3a5f937c4e986" kindref="member">
+                        gnt_widget_set_size</ref>(debug.tview,
+                </highlight>
+            </codeline>
+            <codeline lineno="218">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_get_int(
+                    <ref refid="gntdebug_8c_1a15131c6233e6369f1dfb088b32dcb732" kindref="member">PREF_ROOT</ref>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/size/width&quot;</highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="219">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_get_int(
+                    <ref refid="gntdebug_8c_1a15131c6233e6369f1dfb088b32dcb732" kindref="member">PREF_ROOT</ref>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/size/height&quot;</highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="220">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect(G_OBJECT(debug.tview),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;size_changed&quot;</highlight>
+                <highlight class="normal">,<sp/>G_CALLBACK(size_changed_cb),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="221">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="222">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>
+                    (debug.window),
+                    <sp/>
+                    <ref refid="gntline_8c_1a9c5f84737611dbfd8325e8dc00f96133" kindref="member">gnt_line_new</ref>
+                    (FALSE));
+                </highlight>
+            </codeline>
+            <codeline lineno="223">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="224">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>box<sp/>=
+                    <sp/>
+                    <ref refid="gntbox_8h_1adb651f9ad56bc755eb4e2ff6050264d1" kindref="member">gnt_hbox_new</ref>
+                    (FALSE);
+                </highlight>
+            </codeline>
+            <codeline lineno="225">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1afb6c544e642e187a84cd7c2e1b664ab0" kindref="member">
+                        gnt_box_set_alignment</ref>(<ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec"
+                                                         kindref="member">GNT_BOX</ref>(box),
+                    <sp/>
+                    <ref refid="gntbox_8h_1a4c6e732672fedbd250ff72d4dca01e19aae4fd781c018d03a56f8e8f54454f3ab"
+                         kindref="member">GNT_ALIGN_MID</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="226">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1ade48185acb40af09200649e416bb8ce1" kindref="member">gnt_box_set_fill</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    FALSE);
+                </highlight>
+            </codeline>
+            <codeline lineno="227">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="228">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>XXX:<sp/>Setting<sp/>the<sp/>GROW_Y<sp/>for<sp/>the<sp/>following<sp/>
+                    widgets<sp/>don&apos;t<sp/>make<sp/>sense.<sp/>But<sp/>right<sp/>now
+                </highlight>
+            </codeline>
+            <codeline lineno="229">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<sp/>it&apos;s<sp/>necessary<sp/>to<sp/>make<sp/>the<sp/>width<sp/>of<sp/>the<sp/>debug<sp/>
+                    window<sp/>resizable<sp/>...<sp/>like<sp/>I<sp/>said,
+                </highlight>
+            </codeline>
+            <codeline lineno="230">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<sp/>it<sp/>doesn&apos;t<sp/>make<sp/>sense.<sp/>The<sp/>bug<sp/>is<sp/>likely<sp/>in<sp/>the
+                    <sp/>packing<sp/>in<sp/>gntbox.c.
+                </highlight>
+            </codeline>
+            <codeline lineno="231">
+                <highlight class="comment">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="232">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>wid<sp/>=
+                    <sp/>
+                    <ref refid="gntbutton_8c_1aa28a2afc35e0a72e4565f7424a52713b" kindref="member">gnt_button_new</ref>
+                    (_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Clear&quot;</highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="233">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect(G_OBJECT(wid),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;activate&quot;</highlight>
+                <highlight class="normal">,<sp/>G_CALLBACK(clear_debug_win),<sp/>debug.tview);
+                </highlight>
+            </codeline>
+            <codeline lineno="234">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8h_1a5f05379dd2b5934fcd802ba477b6d9a5" kindref="member">
+                        GNT_WIDGET_SET_FLAGS</ref>(wid,
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18a4898f9d8ccad6e6ad740f96873566b5b"
+                         kindref="member">GNT_WIDGET_GROW_Y</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="235">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    wid);
+                </highlight>
+            </codeline>
+            <codeline lineno="236">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="237">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>wid<sp/>=
+                    <sp/>
+                    <ref refid="gntcheckbox_8c_1ae04b63ddc8f367b865f0dcbd884a5db3" kindref="member">
+                        gnt_check_box_new</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Pause&quot;</highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="238">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect(G_OBJECT(wid),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;toggled&quot;</highlight>
+                <highlight class="normal">,<sp/>G_CALLBACK(toggle_pause),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="239">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8h_1a5f05379dd2b5934fcd802ba477b6d9a5" kindref="member">
+                        GNT_WIDGET_SET_FLAGS</ref>(wid,
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18a4898f9d8ccad6e6ad740f96873566b5b"
+                         kindref="member">GNT_WIDGET_GROW_Y</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="240">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    wid);
+                </highlight>
+            </codeline>
+            <codeline lineno="241">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="242">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>wid<sp/>=
+                    <sp/>
+                    <ref refid="gntcheckbox_8c_1ae04b63ddc8f367b865f0dcbd884a5db3" kindref="member">
+                        gnt_check_box_new</ref>(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Timestamps&quot;</highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="243">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcheckbox_8c_1a8804e6c777345a90d50496f427502262" kindref="member">
+                        gnt_check_box_set_checked</ref>(<ref refid="gntcheckbox_8h_1a95d353f78d9d1038279ff939720b6438"
+                                                             kindref="member">GNT_CHECK_BOX</ref>(wid),<sp/>
+                    debug.timestamps);
+                </highlight>
+            </codeline>
+            <codeline lineno="244">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect(G_OBJECT(wid),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;toggled&quot;</highlight>
+                <highlight class="normal">,<sp/>G_CALLBACK(toggle_timestamps),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="245">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8h_1a5f05379dd2b5934fcd802ba477b6d9a5" kindref="member">
+                        GNT_WIDGET_SET_FLAGS</ref>(wid,
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18a4898f9d8ccad6e6ad740f96873566b5b"
+                         kindref="member">GNT_WIDGET_GROW_Y</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="246">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    wid);
+                </highlight>
+            </codeline>
+            <codeline lineno="247">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="248">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>
+                    (debug.window),<sp/>box);
+                </highlight>
+            </codeline>
+            <codeline lineno="249">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8h_1a5f05379dd2b5934fcd802ba477b6d9a5" kindref="member">
+                        GNT_WIDGET_SET_FLAGS</ref>(box,
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18a4898f9d8ccad6e6ad740f96873566b5b"
+                         kindref="member">GNT_WIDGET_GROW_Y</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="250">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="251">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1a8e81d17891b3f57cd7f3932fe231d813" kindref="member">
+                        gnt_widget_set_name</ref>(debug.window,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;debug-window&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="252">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="253">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect(G_OBJECT(debug.window),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;destroy&quot;</highlight>
+                <highlight class="normal">,<sp/>G_CALLBACK(reset_debug_win),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="254">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8c_1aade2b1776dffd7396e5c3de4250ed550" kindref="member">
+                        gnt_text_view_attach_scroll_widget</ref>(<ref
+                        refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW</ref>
+                    (debug.tview),<sp/>debug.window);
+                </highlight>
+            </codeline>
+            <codeline lineno="255">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="256">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="257">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1acbf324f0d58ea327e559829cf187def4" kindref="member">gnt_widget_show</ref>
+                    (debug.window);
+                </highlight>
+            </codeline>
+            <codeline lineno="258">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="259">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="260">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>gboolean
+                </highlight>
+            </codeline>
+            <codeline lineno="261">
+                <highlight class="normal">start_with_debugwin(gpointer<sp/>null)
+                </highlight>
+            </codeline>
+            <codeline lineno="262">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="263">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntdebug_8c_1ad98c4589a05641a0c95d5fb90a518a5a" kindref="member">
+                        finch_debug_window_show</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="264">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>FALSE;
+                </highlight>
+            </codeline>
+            <codeline lineno="265">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="266">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="267">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntdebug_8c_1a56f21fb787b461ccb66a54abadec1dff" kindref="member">finch_debug_init</ref>
+                    ()
+                </highlight>
+            </codeline>
+            <codeline lineno="268">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="269">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>Xerox<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="270">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>REGISTER_G_LOG_HANDLER(name)<sp/>\
+                </highlight>
+            </codeline>
+            <codeline lineno="271">
+                <highlight class="preprocessor">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_log_set_handler((name),<sp/>G_LOG_LEVEL_MASK<sp/>|<sp/>G_LOG_FLAG_FATAL<sp/>\
+                </highlight>
+            </codeline>
+            <codeline lineno="272">
+                <highlight class="preprocessor">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>|<sp/>G_LOG_FLAG_RECURSION,<sp/>\
+                </highlight>
+            </codeline>
+            <codeline lineno="273">
+                <highlight class="preprocessor">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_glib_log_handler,<sp/>NULL)
+                </highlight>
+            </codeline>
+            <codeline lineno="274">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="275">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Register<sp/>the<sp/>glib<sp/>log<sp/>handlers.<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="276">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntdebug_8c_1a706239b42cb68f4f06dd577320bb2a23" kindref="member">
+                        REGISTER_G_LOG_HANDLER</ref>(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                          kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="277">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntdebug_8c_1a706239b42cb68f4f06dd577320bb2a23" kindref="member">
+                        REGISTER_G_LOG_HANDLER</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;GLib&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="278">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntdebug_8c_1a706239b42cb68f4f06dd577320bb2a23" kindref="member">
+                        REGISTER_G_LOG_HANDLER</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;GModule&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="279">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntdebug_8c_1a706239b42cb68f4f06dd577320bb2a23" kindref="member">
+                        REGISTER_G_LOG_HANDLER</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;GLib-GObject&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="280">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntdebug_8c_1a706239b42cb68f4f06dd577320bb2a23" kindref="member">
+                        REGISTER_G_LOG_HANDLER</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;GThread&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="281">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="282">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_set_print_handler(print_stderr);
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Redirect<sp/>the<sp/>debug<sp/>messages<sp/>to<sp/>stderr<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="283">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_set_printerr_handler(suppress_error_messages);
+                </highlight>
+            </codeline>
+            <codeline lineno="284">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="285">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_add_none(<ref refid="gntdebug_8c_1a15131c6233e6369f1dfb088b32dcb732"
+                                                    kindref="member">PREF_ROOT</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="286">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_add_none(
+                    <ref refid="gntdebug_8c_1a15131c6233e6369f1dfb088b32dcb732" kindref="member">PREF_ROOT</ref>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/size&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="287">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_add_int(
+                    <ref refid="gntdebug_8c_1a15131c6233e6369f1dfb088b32dcb732" kindref="member">PREF_ROOT</ref>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/size/width&quot;</highlight>
+                <highlight class="normal">,<sp/>60);
+                </highlight>
+            </codeline>
+            <codeline lineno="288">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_prefs_add_int(
+                    <ref refid="gntdebug_8c_1a15131c6233e6369f1dfb088b32dcb732" kindref="member">PREF_ROOT</ref>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;/size/height&quot;</highlight>
+                <highlight class="normal">,<sp/>15);
+                </highlight>
+            </codeline>
+            <codeline lineno="289">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="290">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(purple_debug_is_enabled())
+                </highlight>
+            </codeline>
+            <codeline lineno="291">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_timeout_add(0,<sp/>start_with_debugwin,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="292">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="293">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="294">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntdebug_8c_1a7acaac49cd6262e0538e3afa823fd1a3" kindref="member">
+                        finch_debug_uninit</ref>()
+                </highlight>
+            </codeline>
+            <codeline lineno="295">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="296">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="297">
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/gntdebug.c"/>
+    </compounddef>
+</doxygen>

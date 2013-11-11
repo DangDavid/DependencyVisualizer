@@ -1,0 +1,2307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntbutton_8c" kind="file">
+        <compoundname>gntbutton.c</compoundname>
+        <includes local="no">stdlib.h</includes>
+        <includes local="no">string.h</includes>
+        <includes refid="gntinternal_8h" local="yes">gntinternal.h</includes>
+        <includes refid="gntbutton_8h" local="yes">gntbutton.h</includes>
+        <includes refid="gntstyle_8h" local="yes">gntstyle.h</includes>
+        <includes refid="gntutils_8h" local="yes">gntutils.h</includes>
+        <incdepgraph>
+            <node id="1402">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="1403" relation="include">
+                </childnode>
+                <childnode refid="1404" relation="include">
+                </childnode>
+            </node>
+            <node id="1410">
+                <label>gntmenuitem.h</label>
+                <link refid="gntmenuitem_8h"/>
+                <childnode refid="1392" relation="include">
+                </childnode>
+                <childnode refid="1394" relation="include">
+                </childnode>
+                <childnode refid="1407" relation="include">
+                </childnode>
+            </node>
+            <node id="1409">
+                <label>gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="1396" relation="include">
+                </childnode>
+                <childnode refid="1395" relation="include">
+                </childnode>
+                <childnode refid="1401" relation="include">
+                </childnode>
+                <childnode refid="1402" relation="include">
+                </childnode>
+            </node>
+            <node id="1407">
+                <label>gntmenu.h</label>
+                <link refid="gntmenu_8h"/>
+                <childnode refid="1408" relation="include">
+                </childnode>
+                <childnode refid="1401" relation="include">
+                </childnode>
+                <childnode refid="1402" relation="include">
+                </childnode>
+                <childnode refid="1410" relation="include">
+                </childnode>
+            </node>
+            <node id="1389">
+                <label>stdlib.h</label>
+            </node>
+            <node id="1404">
+                <label>term.h</label>
+            </node>
+            <node id="1403">
+                <label>curses.h</label>
+            </node>
+            <node id="1388">
+                <label>libgnt/gntbutton.c</label>
+                <link refid="gntbutton.c"/>
+                <childnode refid="1389" relation="include">
+                </childnode>
+                <childnode refid="1390" relation="include">
+                </childnode>
+                <childnode refid="1391" relation="include">
+                </childnode>
+                <childnode refid="1393" relation="include">
+                </childnode>
+                <childnode refid="1405" relation="include">
+                </childnode>
+                <childnode refid="1414" relation="include">
+                </childnode>
+            </node>
+            <node id="1393">
+                <label>gntbutton.h</label>
+                <link refid="gntbutton_8h"/>
+                <childnode refid="1392" relation="include">
+                </childnode>
+                <childnode refid="1394" relation="include">
+                </childnode>
+                <childnode refid="1395" relation="include">
+                </childnode>
+                <childnode refid="1396" relation="include">
+                </childnode>
+            </node>
+            <node id="1401">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="1392" relation="include">
+                </childnode>
+            </node>
+            <node id="1391">
+                <label>gntinternal.h</label>
+                <link refid="gntinternal_8h"/>
+                <childnode refid="1392" relation="include">
+                </childnode>
+            </node>
+            <node id="1405">
+                <label>gntstyle.h</label>
+                <link refid="gntstyle_8h"/>
+                <childnode refid="1395" relation="include">
+                </childnode>
+                <childnode refid="1406" relation="include">
+                </childnode>
+            </node>
+            <node id="1412">
+                <label>panel.h</label>
+            </node>
+            <node id="1411">
+                <label>gntws.h</label>
+                <link refid="gntws_8h"/>
+                <childnode refid="1396" relation="include">
+                </childnode>
+                <childnode refid="1412" relation="include">
+                </childnode>
+            </node>
+            <node id="1390">
+                <label>string.h</label>
+            </node>
+            <node id="1396">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="1397" relation="include">
+                </childnode>
+                <childnode refid="1392" relation="include">
+                </childnode>
+                <childnode refid="1398" relation="include">
+                </childnode>
+                <childnode refid="1399" relation="include">
+                </childnode>
+            </node>
+            <node id="1400">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="1397" relation="include">
+                </childnode>
+                <childnode refid="1392" relation="include">
+                </childnode>
+                <childnode refid="1394" relation="include">
+                </childnode>
+            </node>
+            <node id="1392">
+                <label>glib.h</label>
+            </node>
+            <node id="1413">
+                <label>time.h</label>
+            </node>
+            <node id="1408">
+                <label>gnttree.h</label>
+                <link refid="gnttree_8h"/>
+                <childnode refid="1396" relation="include">
+                </childnode>
+                <childnode refid="1395" relation="include">
+                </childnode>
+                <childnode refid="1401" relation="include">
+                </childnode>
+                <childnode refid="1402" relation="include">
+                </childnode>
+                <childnode refid="1409" relation="include">
+                </childnode>
+            </node>
+            <node id="1399">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="1397" relation="include">
+                </childnode>
+                <childnode refid="1392" relation="include">
+                </childnode>
+                <childnode refid="1394" relation="include">
+                </childnode>
+                <childnode refid="1398" relation="include">
+                </childnode>
+            </node>
+            <node id="1398">
+                <label>ncurses.h</label>
+            </node>
+            <node id="1395">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="1392" relation="include">
+                </childnode>
+                <childnode refid="1396" relation="include">
+                </childnode>
+                <childnode refid="1400" relation="include">
+                </childnode>
+                <childnode refid="1401" relation="include">
+                </childnode>
+                <childnode refid="1402" relation="include">
+                </childnode>
+            </node>
+            <node id="1414">
+                <label>gntutils.h</label>
+                <link refid="gntutils_8h"/>
+                <childnode refid="1392" relation="include">
+                </childnode>
+                <childnode refid="1395" relation="include">
+                </childnode>
+                <childnode refid="1409" relation="include">
+                </childnode>
+                <childnode refid="1396" relation="include">
+                </childnode>
+            </node>
+            <node id="1406">
+                <label>gntwm.h</label>
+                <link refid="gntwm_8h"/>
+                <childnode refid="1396" relation="include">
+                </childnode>
+                <childnode refid="1407" relation="include">
+                </childnode>
+                <childnode refid="1411" relation="include">
+                </childnode>
+                <childnode refid="1412" relation="include">
+                </childnode>
+                <childnode refid="1413" relation="include">
+                </childnode>
+            </node>
+            <node id="1397">
+                <label>stdio.h</label>
+            </node>
+            <node id="1394">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <sectiondef kind="enum">
+            <memberdef kind="enum" id="gntbutton_8c_1a16af7b253440dadd46a80a4b9fddba4d" prot="public" static="no">
+                <name>@14</name>
+                <enumvalue id="gntbutton_8c_1a16af7b253440dadd46a80a4b9fddba4daac63ff3768fddf9c273cceb94cc75012"
+                           prot="public">
+                    <name>SIGS</name>
+                    <initializer>= 1</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>GNT - The GLib Ncurses Toolkit</para>
+                    <para>GNT is the legal property of its developers, whose names are too numerous to list here. Please
+                        refer to the COPYRIGHT file distributed with this source distribution.
+                    </para>
+                    <para>This library is free software; you can redistribute it and/or modify it under the terms of the
+                        GNU General Public License as published by the Free Software Foundation; either version 2 of the
+                        License, or (at your option) any later version.
+                    </para>
+                    <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+                        without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+                        the GNU General Public License for more details.
+                    </para>
+                    <para>You should have received a copy of the GNU General Public License along with this program; if
+                        not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+                        02111-1301 USA
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          line="32" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          bodystart="31" bodyend="34"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="var">
+            <memberdef kind="variable" id="gntbutton_8c_1ac64f6c9db00fc11a2360466fa1e2d1ac" prot="public" static="yes"
+                       mutable="no">
+                <type>
+                    <ref refid="gntwidget_8h_1ace656c76f3a8bb8f5aa250637f06f1de" kindref="member">GntWidgetClass</ref>
+                    *
+                </type>
+                <definition>GntWidgetClass* parent_class</definition>
+                <argsstring></argsstring>
+                <name>parent_class</name>
+                <initializer>=
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          line="36" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          bodystart="36" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntbutton_8c_1a9a0eff2433605481a192e8d8bd3ac532" prot="public" static="yes"
+                       mutable="no">
+                <type>gboolean</type>
+                <definition>gboolean small_button</definition>
+                <argsstring></argsstring>
+                <name>small_button</name>
+                <initializer>= FALSE</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          line="37" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          bodystart="37" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntbutton_8c_1ac8f268fcb78faac8abbb12b56f266b8d" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void gnt_button_draw</definition>
+                <argsstring>(GntWidget *widget)</argsstring>
+                <name>gnt_button_draw</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          line="40" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          bodystart="40" bodyend="59"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbutton_8c_1ada609992e42ee36ada12de059ee38f71" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void gnt_button_size_request</definition>
+                <argsstring>(GntWidget *widget)</argsstring>
+                <name>gnt_button_size_request</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          line="62" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          bodystart="62" bodyend="70"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbutton_8c_1ace29203f39c7ec01cb8eddc26273a281" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void gnt_button_map</definition>
+                <argsstring>(GntWidget *widget)</argsstring>
+                <name>gnt_button_map</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          line="73" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          bodystart="73" bodyend="78"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbutton_8c_1a4fa0be1db1ce91a53bc26d0b8e4c2950" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>static gboolean gnt_button_clicked</definition>
+                <argsstring>(GntWidget *widget, GntMouseEvent event, int x, int y)</argsstring>
+                <name>gnt_button_clicked</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1af939a8069659e4960fd62c1a7f4e4cf5" kindref="member">GntMouseEvent
+                        </ref>
+                    </type>
+                    <declname>event</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>x</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>y</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          line="81" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          bodystart="81" bodyend="88"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbutton_8c_1ada30c1b9d466ea00130f7731878205c2" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void gnt_button_destroy</definition>
+                <argsstring>(GntWidget *widget)</argsstring>
+                <name>gnt_button_destroy</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          line="91" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          bodystart="91" bodyend="96"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbutton_8c_1ac1290acc353d2cacbb68568179513d87" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>static gboolean button_activate</definition>
+                <argsstring>(GntBindable *bind, GList *null)</argsstring>
+                <name>button_activate</name>
+                <param>
+                    <type>
+                        <ref refid="gntbindable_8h_1a8c5469214b998bb43a95b4b32ba62a22" kindref="member">GntBindable
+                        </ref>
+                        *
+                    </type>
+                    <declname>bind</declname>
+                </param>
+                <param>
+                    <type>GList *</type>
+                    <declname>null</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          line="99" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          bodystart="99" bodyend="103"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbutton_8c_1ac840872f1aed084bf8ac565cf5f80fc6" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void gnt_button_class_init</definition>
+                <argsstring>(GntWidgetClass *klass)</argsstring>
+                <name>gnt_button_class_init</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1ace656c76f3a8bb8f5aa250637f06f1de" kindref="member">GntWidgetClass
+                        </ref>
+                        *
+                    </type>
+                    <declname>klass</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          line="106" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          bodystart="106" bodyend="125"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbutton_8c_1a88f6ee09868cb9d5017912a5043ca2db" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void gnt_button_init</definition>
+                <argsstring>(GTypeInstance *instance, gpointer class)</argsstring>
+                <name>gnt_button_init</name>
+                <param>
+                    <type>GTypeInstance *</type>
+                    <declname>instance</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>class</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          line="128" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          bodystart="128" bodyend="140"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbutton_8c_1a7928e09f9e60ecacfe7b12bf3aeccf45" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>GType</type>
+                <definition>GType gnt_button_get_gtype</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_button_get_gtype</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <simplesect kind="return">
+                            <para>GType for Gntbutton</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          line="146" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          bodystart="146" bodyend="169"/>
+            </memberdef>
+            <memberdef kind="function" id="gntbutton_8c_1aa28a2afc35e0a72e4565f7424a52713b" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* gnt_button_new</definition>
+                <argsstring>(const char *text)</argsstring>
+                <name>gnt_button_new</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>text</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Create a new button.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>text</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The text for the button.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>The newly created button.</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          line="171" column="1"
+                          bodyfile="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"
+                          bodystart="171" bodyend="180"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="23">
+                <highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;string.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntinternal_8h" kindref="compound">
+                    gntinternal.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntbutton_8h" kindref="compound">
+                    gntbutton.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntstyle_8h" kindref="compound">
+                    gntstyle.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntutils_8h" kindref="compound">
+                    gntutils.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">enum</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1a05589fbab0657f08285ebdfe93f5ec9eaac63ff3768fddf9c273cceb94cc75012"
+                         kindref="member">SIGS
+                    </ref>
+                    <sp/>=<sp/>1,
+                </highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_widget_class" kindref="compound">GntWidgetClass</ref>
+                    <sp/>*parent_class<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>gboolean<sp/>small_button<sp/>=<sp/>FALSE;
+                </highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal">gnt_button_draw(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget)
+                </highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_button" kindref="compound">GntButton</ref>
+                    <sp/>*button<sp/>=
+                    <sp/>
+                    <ref refid="gntbutton_8h_1abcbc6dde30a5bf75b115d99c93a30731" kindref="member">GNT_BUTTON</ref>
+                    (widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0" kindref="member">GntColorType</ref>
+                    <sp/>type;
+                </highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean<sp/>focus;
+                </highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>((focus<sp/>=
+                    <sp/>
+                    <ref refid="gnt_8h_1aad96e2482fc6d0d0a876b8b1ea5c01c1" kindref="member">gnt_widget_has_focus</ref>
+                    (widget)))
+                </highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>type<sp/>=
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a3de54c6a119d98c257ec10689814a1f7"
+                         kindref="member">GNT_COLOR_HIGHLIGHT</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>type<sp/>=
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aade44b623e10d9f44be58a2784aa567d"
+                         kindref="member">GNT_COLOR_NORMAL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>wbkgdset(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
+                                                  kindref="member">window</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;\0&apos;</highlight>
+                <highlight class="normal"><sp/>|
+                    <sp/>
+                    <ref refid="gntcolors_8c_1a35f4238441549b5c0858db2c98a0b704" kindref="member">gnt_color_pair</ref>
+                    (type));
+                </highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>mvwaddstr(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
+                                                   kindref="member">window</ref>,<sp/>(small_button)<sp/>?<sp/>0<sp/>:
+                    <sp/>1,<sp/>2,
+                    <sp/>
+                    <ref refid="gntinternal_8h_1a9b4818b62bedd2db5a6acfa436e47bf7" kindref="member">C_</ref>(button-&gt;
+                    <ref refid="struct___gnt_button_1a36cec353d9d374c14a9b038bca81bd58" kindref="member">priv</ref>-&gt;
+                    <ref refid="struct___gnt_button_priv_1a5633b1433389cec21ade3811bbe9ca5b" kindref="member">text</ref>
+                    ));
+                </highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(small_button)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>type<sp/>=
+                    <sp/>
+                    <ref refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0a3de54c6a119d98c257ec10689814a1f7"
+                         kindref="member">GNT_COLOR_HIGHLIGHT</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>mvwchgat(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
+                                                  kindref="member">window</ref>,<sp/>0,<sp/>0,<sp/>widget-&gt;<ref
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
+                    ,<sp/>focus<sp/>?<sp/>A_BOLD<sp/>:<sp/>A_REVERSE,<sp/>type,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbindable_8h_1a16e18dcaa9f49751889441b3cfc937ea" kindref="member">GNTDEBUG</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal">gnt_button_size_request(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget)
+                </highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_button" kindref="compound">GntButton</ref>
+                    <sp/>*button<sp/>=
+                    <sp/>
+                    <ref refid="gntbutton_8h_1abcbc6dde30a5bf75b115d99c93a30731" kindref="member">GNT_BUTTON</ref>
+                    (widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntutils_8c_1ad83a4c9fc7023ffadca1d49c5210ffc7" kindref="member">
+                        gnt_util_get_text_bound</ref>(button-&gt;<ref
+                        refid="struct___gnt_button_1a36cec353d9d374c14a9b038bca81bd58" kindref="member">priv</ref>-&gt;
+                    <ref refid="struct___gnt_button_priv_1a5633b1433389cec21ade3811bbe9ca5b" kindref="member">text</ref>
+                    ,
+                </highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&amp;widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                              kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
+                    ,<sp/>&amp;widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                               kindref="member">priv</ref>.<ref
+                        refid="struct___gnt_widget_priv_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">
+                    height</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                         kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
+                    <sp/>+=<sp/>4;
+                </highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!<ref refid="gntwidget_8h_1a161763c25bf46d0b5741a800a50ca907"
+                                                      kindref="member">GNT_WIDGET_IS_FLAG_SET</ref>(widget,
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18a8e7de21c4c04abced0009fc58414f00f"
+                         kindref="member">GNT_WIDGET_NO_BORDER</ref>))
+                </highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                         kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height
+                    </ref>
+                    <sp/>+=<sp/>2;
+                </highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal">gnt_button_map(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget)
+                </highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(widget-&gt;<ref
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
+                    <sp/>==<sp/>0<sp/>||<sp/>widget-&gt;<ref
+                            refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height
+                    </ref>
+                    <sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1a6fe0c87ef7a1de6615301080f9e13270" kindref="member">
+                        gnt_widget_size_request</ref>(widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbindable_8h_1a16e18dcaa9f49751889441b3cfc937ea" kindref="member">GNTDEBUG</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="80">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>gboolean
+                </highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="normal">gnt_button_clicked(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget,
+                    <sp/>
+                    <ref refid="gntwidget_8h_1af939a8069659e4960fd62c1a7f4e4cf5" kindref="member">GntMouseEvent</ref>
+                    <sp/>event,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="jquery_8js_1a4c3eadaa5164016d2c340d495fc6e55e" kindref="member">x</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>y)
+                </highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(event<sp/>==
+                    <sp/>
+                    <ref refid="gntwidget_8h_1a9876dcfe5cdb1f1b8953617b2a5f403aa15e0987dea3b3b3c04b13523f091f7db"
+                         kindref="member">GNT_LEFT_MOUSE_DOWN</ref>)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1a4e1b79e2b5c6a189c9a91d08d6532c44" kindref="member">
+                        gnt_widget_activate</ref>(widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>FALSE;
+                </highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal">gnt_button_destroy(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget)
+                </highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="93">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_button" kindref="compound">GntButton</ref>
+                    <sp/>*button<sp/>=
+                    <sp/>
+                    <ref refid="gntbutton_8h_1abcbc6dde30a5bf75b115d99c93a30731" kindref="member">GNT_BUTTON</ref>
+                    (widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(button-&gt;<ref refid="struct___gnt_button_1a36cec353d9d374c14a9b038bca81bd58"
+                                                kindref="member">priv</ref>-&gt;
+                    <ref
+                            refid="struct___gnt_button_priv_1a5633b1433389cec21ade3811bbe9ca5b" kindref="member">text
+                    </ref>
+                    );
+                </highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(button-&gt;<ref refid="struct___gnt_button_1a36cec353d9d374c14a9b038bca81bd58"
+                                                kindref="member">priv</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>gboolean
+                </highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="normal">button_activate(
+                    <ref refid="struct___gnt_bindable" kindref="compound">GntBindable</ref>
+                    <sp/>*bind,<sp/>GList<sp/>*null)
+                </highlight>
+            </codeline>
+            <codeline lineno="100">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="101">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1a4e1b79e2b5c6a189c9a91d08d6532c44" kindref="member">
+                        gnt_widget_activate</ref>(<ref refid="gntwidget_8h_1a0ddc46716b8cb35d504595ab4bca8a82"
+                                                       kindref="member">GNT_WIDGET</ref>(bind));
+                </highlight>
+            </codeline>
+            <codeline lineno="102">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>TRUE;
+                </highlight>
+            </codeline>
+            <codeline lineno="103">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="104">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="105">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="normal">gnt_button_class_init(
+                    <ref refid="struct___gnt_widget_class" kindref="compound">GntWidgetClass</ref>
+                    <sp/>*<ref refid="gntbindable_8c_1aa084f6474fb231a7247cc6c5299bad55" kindref="member">klass</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="107">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="108">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*style;
+                </highlight>
+            </codeline>
+            <codeline lineno="109">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_bindable_class" kindref="compound">GntBindableClass</ref>
+                    <sp/>*bindable<sp/>=
+                    <sp/>
+                    <ref refid="gntbindable_8h_1ab063c4396dce13a1d35434e14f3766df" kindref="member">
+                        GNT_BINDABLE_CLASS</ref>(klass);
+                </highlight>
+            </codeline>
+            <codeline lineno="110">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="111">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>parent_class<sp/>=
+                    <sp/>
+                    <ref refid="gntwidget_8h_1ab6e8e805c7b988cc35ee86ed1305345e" kindref="member">GNT_WIDGET_CLASS</ref>
+                    (klass);
+                </highlight>
+            </codeline>
+            <codeline lineno="112">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>parent_class-&gt;
+                    <ref refid="struct___gnt_widget_class_1a887d5b4ee4066dd6f6032a9601d6c0ac" kindref="member">draw
+                    </ref>
+                    <sp/>=<sp/>gnt_button_draw;
+                </highlight>
+            </codeline>
+            <codeline lineno="113">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>parent_class-&gt;
+                    <ref refid="struct___gnt_widget_class_1ad3d1ce1119dfef8e1bc32e418b6b75ab" kindref="member">map</ref>
+                    <sp/>=<sp/>gnt_button_map;
+                </highlight>
+            </codeline>
+            <codeline lineno="114">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>parent_class-&gt;
+                    <ref refid="struct___gnt_widget_class_1a38c53854c011ca68ea821e8c84df9da6" kindref="member">
+                        size_request
+                    </ref>
+                    <sp/>=<sp/>gnt_button_size_request;
+                </highlight>
+            </codeline>
+            <codeline lineno="115">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>parent_class-&gt;
+                    <ref refid="struct___gnt_widget_class_1a73d87e8e716d2ac714d6cb70a5ae026e" kindref="member">clicked
+                    </ref>
+                    <sp/>=<sp/>gnt_button_clicked;
+                </highlight>
+            </codeline>
+            <codeline lineno="116">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>parent_class-&gt;
+                    <ref refid="struct___gnt_widget_class_1a35a4e3d7332f006374f7dceb5739f77e" kindref="member">destroy
+                    </ref>
+                    <sp/>=<sp/>gnt_button_destroy;
+                </highlight>
+            </codeline>
+            <codeline lineno="117">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="118">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>style<sp/>=
+                    <sp/>
+                    <ref refid="gntstyle_8c_1aa335965cfaaa567317404247be8c3553" kindref="member">
+                        gnt_style_get_from_name</ref>(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                           kindref="member">NULL</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;small-button&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="119">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>small_button<sp/>=
+                    <sp/>
+                    <ref refid="gntstyle_8c_1a8c7614179ec08fd57a7c66b862b3ce38" kindref="member">
+                        gnt_style_parse_bool</ref>(style);
+                </highlight>
+            </codeline>
+            <codeline lineno="120">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(style);
+                </highlight>
+            </codeline>
+            <codeline lineno="121">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="122">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbindable_8c_1aa2193191acda77bf125daff10a5aaf48" kindref="member">
+                        gnt_bindable_class_register_action</ref>(bindable,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;activate&quot;</highlight>
+                <highlight class="normal">,<sp/>button_activate,
+                </highlight>
+            </codeline>
+            <codeline lineno="123">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a39c47391dd043ebc7e6acd61d41bf09d" kindref="member">GNT_KEY_ENTER</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="124">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntstyle_8c_1ad4640e55d46a8def37bbf7313b46693a" kindref="member">
+                        gnt_style_read_actions</ref>(G_OBJECT_CLASS_TYPE(klass),
+                    <sp/>
+                    <ref refid="gntbindable_8h_1ab063c4396dce13a1d35434e14f3766df" kindref="member">
+                        GNT_BINDABLE_CLASS</ref>(klass));
+                </highlight>
+            </codeline>
+            <codeline lineno="125">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="126">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="127">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="128">
+                <highlight class="normal">gnt_button_init(GTypeInstance<sp/>*instance,<sp/>gpointer
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">class</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="129">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="130">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget<sp/>=
+                    <sp/>
+                    <ref refid="gntwidget_8h_1a0ddc46716b8cb35d504595ab4bca8a82" kindref="member">GNT_WIDGET</ref>
+                    (instance);
+                </highlight>
+            </codeline>
+            <codeline lineno="131">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_button" kindref="compound">GntButton</ref>
+                    <sp/>*button<sp/>=
+                    <sp/>
+                    <ref refid="gntbutton_8h_1abcbc6dde30a5bf75b115d99c93a30731" kindref="member">GNT_BUTTON</ref>
+                    (instance);
+                </highlight>
+            </codeline>
+            <codeline lineno="132">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>button-&gt;
+                    <ref refid="struct___gnt_button_1a36cec353d9d374c14a9b038bca81bd58" kindref="member">priv</ref>
+                    <sp/>=<sp/>g_new0(<ref refid="struct___gnt_button_priv" kindref="compound">GntButtonPriv</ref>,
+                    <sp/>
+                    1);
+                </highlight>
+            </codeline>
+            <codeline lineno="133">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="134">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                         kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1af0a99cf275a2f9731f39c442320a9f3a" kindref="member">minw</ref>
+                    <sp/>=<sp/>4;
+                </highlight>
+            </codeline>
+            <codeline lineno="135">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                         kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1aa2d5e3ec0f6ff0386df32bfa5b3b5885" kindref="member">minh</ref>
+                    <sp/>=<sp/>small_button<sp/>?<sp/>1<sp/>:<sp/>3;
+                </highlight>
+            </codeline>
+            <codeline lineno="136">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(small_button)
+                </highlight>
+            </codeline>
+            <codeline lineno="137">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8h_1a5f05379dd2b5934fcd802ba477b6d9a5" kindref="member">
+                        GNT_WIDGET_SET_FLAGS</ref>(widget,
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18a8e7de21c4c04abced0009fc58414f00f"
+                         kindref="member">GNT_WIDGET_NO_BORDER
+                    </ref>
+                    <sp/>|
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18aed65281af82570d4b7bd7b53b2f29635"
+                         kindref="member">GNT_WIDGET_NO_SHADOW</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="138">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8h_1ad937f43c2d5d70292e743dfcde05e8a9" kindref="member">
+                        GNT_WIDGET_UNSET_FLAGS</ref>(widget,
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18ad213e9af0f0490e0b501e6996980f259"
+                         kindref="member">GNT_WIDGET_GROW_X
+                    </ref>
+                    <sp/>|
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18a4898f9d8ccad6e6ad740f96873566b5b"
+                         kindref="member">GNT_WIDGET_GROW_Y</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="139">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbindable_8h_1a16e18dcaa9f49751889441b3cfc937ea" kindref="member">GNTDEBUG</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="140">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="141">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="142">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">
+                    /******************************************************************************
+                </highlight>
+            </codeline>
+            <codeline lineno="143">
+                <highlight class="comment"><sp/>*<sp/>GntButton<sp/>API
+                </highlight>
+            </codeline>
+            <codeline lineno="144">
+                <highlight class="comment">
+                    <sp/>
+                    *****************************************************************************/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="145">
+                <highlight class="normal">GType</highlight>
+            </codeline>
+            <codeline lineno="146">
+                <highlight class="normal"><ref refid="gntbutton_8c_1a7928e09f9e60ecacfe7b12bf3aeccf45" kindref="member">
+                    gnt_button_get_gtype</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="147">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>GType<sp/>type<sp/>=<sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="148">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="149">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal">(type<sp/>==<sp/>0)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="150">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal"><sp/>GTypeInfo<sp/>info<sp/>=<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="151">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">sizeof</highlight>
+                <highlight class="normal">(<ref refid="gntbutton_8h_1a508d45fa15308d4a46e55af6fe9c1737"
+                                                kindref="member">GntButtonClass</ref>),
+                </highlight>
+            </codeline>
+            <codeline lineno="152">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>base_init
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="153">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>base_finalize
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="154">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(GClassInitFunc)gnt_button_class_init,
+                </highlight>
+            </codeline>
+            <codeline lineno="155">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>class_finalize
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="156">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>class_data
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="157">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">sizeof</highlight>
+                <highlight class="normal">(<ref refid="gntbutton_8h_1adfbe6072f21072bc5b2a4159391dd590"
+                                                kindref="member">GntButton</ref>),
+                </highlight>
+            </codeline>
+            <codeline lineno="158">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>0,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>n_preallocs
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="159">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gnt_button_init,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>instance_init
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="160">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>NULL
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>value_table
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="161">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>};
+                </highlight>
+            </codeline>
+            <codeline lineno="162">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="163">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>type<sp/>=<sp/>g_type_register_static(<ref
+                        refid="gntwidget_8h_1a1f3fe24503b438d7c230c405e25a2805" kindref="member">GNT_TYPE_WIDGET</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="164">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;GntButton&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="165">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&amp;info,<sp/>0);
+                </highlight>
+            </codeline>
+            <codeline lineno="166">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="167">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="168">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>type;
+                </highlight>
+            </codeline>
+            <codeline lineno="169">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="170">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="171">
+                <highlight class="normal">
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntbutton_8c_1aa28a2afc35e0a72e4565f7424a52713b" kindref="member">
+                    gnt_button_new</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text)
+                </highlight>
+            </codeline>
+            <codeline lineno="172">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="173">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget<sp/>=<sp/>g_object_new(<ref refid="gntbutton_8h_1aee3ace3051e1b527853f7faaa73f0631"
+                                                             kindref="member">GNT_TYPE_BUTTON</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="174">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_button" kindref="compound">GntButton</ref>
+                    <sp/>*button<sp/>=
+                    <sp/>
+                    <ref refid="gntbutton_8h_1abcbc6dde30a5bf75b115d99c93a30731" kindref="member">GNT_BUTTON</ref>
+                    (widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="175">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="176">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>button-&gt;<ref refid="struct___gnt_button_1a36cec353d9d374c14a9b038bca81bd58"
+                                         kindref="member">priv</ref>-&gt;
+                    <ref refid="struct___gnt_button_priv_1a5633b1433389cec21ade3811bbe9ca5b" kindref="member">text</ref>
+                    <sp/>=
+                    <sp/>
+                    <ref refid="gntutils_8c_1a9a74566ea2b80ce87b911f1ee428329c" kindref="member">
+                        gnt_util_onscreen_fit_string</ref>(text,<sp/>-1);
+                </highlight>
+            </codeline>
+            <codeline lineno="177">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1a4dc1d06b9860b34f1f3625c6319a5d90" kindref="member">
+                        gnt_widget_set_take_focus</ref>(widget,<sp/>TRUE);
+                </highlight>
+            </codeline>
+            <codeline lineno="178">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="179">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>widget;
+                </highlight>
+            </codeline>
+            <codeline lineno="180">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="181">
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="F:/Downloads/pidgin-2.10.7.tar/pidgin-2.10.7/pidgin-2.10.7/finch/libgnt/gntbutton.c"/>
+    </compounddef>
+</doxygen>

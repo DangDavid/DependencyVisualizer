@@ -1,0 +1,865 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntutils_8h" kind="file">
+        <compoundname>gntutils.h</compoundname>
+        <includes local="no">glib.h</includes>
+        <includes refid="gnt_8h" local="yes">gnt.h</includes>
+        <includes refid="gntwidget_8h" local="yes">gntwidget.h</includes>
+        <includedby refid="gntblist_8c" local="yes">gntblist.c</includedby>
+        <includedby refid="gntbindable_8c" local="yes">libgnt/gntbindable.c</includedby>
+        <includedby refid="gntbox_8c" local="yes">libgnt/gntbox.c</includedby>
+        <includedby refid="gntbutton_8c" local="yes">libgnt/gntbutton.c</includedby>
+        <includedby refid="gntcombobox_8c" local="yes">libgnt/gntcombobox.c</includedby>
+        <includedby refid="gntentry_8c" local="yes">libgnt/gntentry.c</includedby>
+        <includedby refid="gntlabel_8c" local="yes">libgnt/gntlabel.c</includedby>
+        <includedby refid="gntmain_8c" local="yes">libgnt/gntmain.c</includedby>
+        <includedby refid="gnttextview_8c" local="yes">libgnt/gnttextview.c</includedby>
+        <includedby refid="gnttree_8c" local="yes">libgnt/gnttree.c</includedby>
+        <includedby refid="gntutils_8c" local="yes">libgnt/gntutils.c</includedby>
+        <includedby refid="gntwidget_8c" local="yes">libgnt/gntwidget.c</includedby>
+        <includedby refid="gntwm_8c" local="yes">libgnt/gntwm.c</includedby>
+        <incdepgraph>
+            <node id="1805">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="1797" relation="include">
+                </childnode>
+            </node>
+            <node id="1808">
+                <label>term.h</label>
+            </node>
+            <node id="1802">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="1800" relation="include">
+                </childnode>
+                <childnode refid="1797" relation="include">
+                </childnode>
+                <childnode refid="1803" relation="include">
+                </childnode>
+                <childnode refid="1801" relation="include">
+                </childnode>
+            </node>
+            <node id="1804">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="1800" relation="include">
+                </childnode>
+                <childnode refid="1797" relation="include">
+                </childnode>
+                <childnode refid="1803" relation="include">
+                </childnode>
+            </node>
+            <node id="1798">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="1797" relation="include">
+                </childnode>
+                <childnode refid="1799" relation="include">
+                </childnode>
+                <childnode refid="1804" relation="include">
+                </childnode>
+                <childnode refid="1805" relation="include">
+                </childnode>
+                <childnode refid="1806" relation="include">
+                </childnode>
+            </node>
+            <node id="1807">
+                <label>curses.h</label>
+            </node>
+            <node id="1796">
+                <label>libgnt/gntutils.h</label>
+                <link refid="gntutils.h"/>
+                <childnode refid="1797" relation="include">
+                </childnode>
+                <childnode refid="1798" relation="include">
+                </childnode>
+                <childnode refid="1799" relation="include">
+                </childnode>
+            </node>
+            <node id="1797">
+                <label>glib.h</label>
+            </node>
+            <node id="1799">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="1800" relation="include">
+                </childnode>
+                <childnode refid="1797" relation="include">
+                </childnode>
+                <childnode refid="1801" relation="include">
+                </childnode>
+                <childnode refid="1802" relation="include">
+                </childnode>
+            </node>
+            <node id="1806">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="1807" relation="include">
+                </childnode>
+                <childnode refid="1808" relation="include">
+                </childnode>
+            </node>
+            <node id="1801">
+                <label>ncurses.h</label>
+            </node>
+            <node id="1800">
+                <label>stdio.h</label>
+            </node>
+            <node id="1803">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="1813">
+                <label>libgnt/gntbutton.c</label>
+                <link refid="gntbutton_8c"/>
+            </node>
+            <node id="1817">
+                <label>libgnt/gntmain.c</label>
+                <link refid="gntmain_8c"/>
+            </node>
+            <node id="1818">
+                <label>libgnt/gnttextview.c</label>
+                <link refid="gnttextview_8c"/>
+            </node>
+            <node id="1811">
+                <label>libgnt/gntbindable.c</label>
+                <link refid="gntbindable_8c"/>
+            </node>
+            <node id="1814">
+                <label>libgnt/gntcombobox.c</label>
+                <link refid="gntcombobox_8c"/>
+            </node>
+            <node id="1822">
+                <label>libgnt/gntwm.c</label>
+                <link refid="gntwm_8c"/>
+            </node>
+            <node id="1810">
+                <label>gntblist.c</label>
+                <link refid="gntblist_8c"/>
+            </node>
+            <node id="1820">
+                <label>libgnt/gntutils.c</label>
+                <link refid="gntutils_8c"/>
+            </node>
+            <node id="1809">
+                <label>libgnt/gntutils.h</label>
+                <link refid="gntutils.h"/>
+                <childnode refid="1810" relation="include">
+                </childnode>
+                <childnode refid="1811" relation="include">
+                </childnode>
+                <childnode refid="1812" relation="include">
+                </childnode>
+                <childnode refid="1813" relation="include">
+                </childnode>
+                <childnode refid="1814" relation="include">
+                </childnode>
+                <childnode refid="1815" relation="include">
+                </childnode>
+                <childnode refid="1816" relation="include">
+                </childnode>
+                <childnode refid="1817" relation="include">
+                </childnode>
+                <childnode refid="1818" relation="include">
+                </childnode>
+                <childnode refid="1819" relation="include">
+                </childnode>
+                <childnode refid="1820" relation="include">
+                </childnode>
+                <childnode refid="1821" relation="include">
+                </childnode>
+                <childnode refid="1822" relation="include">
+                </childnode>
+            </node>
+            <node id="1812">
+                <label>libgnt/gntbox.c</label>
+                <link refid="gntbox_8c"/>
+            </node>
+            <node id="1816">
+                <label>libgnt/gntlabel.c</label>
+                <link refid="gntlabel_8c"/>
+            </node>
+            <node id="1815">
+                <label>libgnt/gntentry.c</label>
+                <link refid="gntentry_8c"/>
+            </node>
+            <node id="1821">
+                <label>libgnt/gntwidget.c</label>
+                <link refid="gntwidget_8c"/>
+            </node>
+            <node id="1819">
+                <label>libgnt/gnttree.c</label>
+                <link refid="gnttree_8c"/>
+            </node>
+        </invincdepgraph>
+        <sectiondef kind="typedef">
+            <memberdef kind="typedef" id="gntutils_8h_1a3f3734c8ea24f4c77a4f2774792a548b" prot="public" static="no">
+                <type>gpointer(*</type>
+                <definition>typedef gpointer(* GDupFunc)(gconstpointer data)</definition>
+                <argsstring>)(gconstpointer data)</argsstring>
+                <name>GDupFunc</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.h"
+                        line="6" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.h"
+                        bodystart="6" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntutils_8h_1ad83a4c9fc7023ffadca1d49c5210ffc7" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_util_get_text_bound</definition>
+                <argsstring>(const char *text, int *width, int *height)</argsstring>
+                <name>gnt_util_get_text_bound</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>text</declname>
+                </param>
+                <param>
+                    <type>int *</type>
+                    <declname>width</declname>
+                </param>
+                <param>
+                    <type>int *</type>
+                    <declname>height</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.h"
+                        line="8" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.c"
+                        bodystart="25" bodyend="57"/>
+            </memberdef>
+            <memberdef kind="function" id="gntutils_8h_1a8accc80ef45b27fb238d66236f161a8a" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>int</type>
+                <definition>int gnt_util_onscreen_width</definition>
+                <argsstring>(const char *start, const char *end)</argsstring>
+                <name>gnt_util_onscreen_width</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>start</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>end</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.h"
+                        line="11" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.c"
+                        bodystart="59" bodyend="71"/>
+            </memberdef>
+            <memberdef kind="function" id="gntutils_8h_1a2dad82fa872eb480216a48d6e9abc85e" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>const char *</type>
+                <definition>const char* gnt_util_onscreen_width_to_pointer</definition>
+                <argsstring>(const char *str, int len, int *w)</argsstring>
+                <name>gnt_util_onscreen_width_to_pointer</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>str</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>len</declname>
+                </param>
+                <param>
+                    <type>int *</type>
+                    <declname>w</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.h"
+                        line="13" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.c"
+                        bodystart="73" bodyend="93"/>
+            </memberdef>
+            <memberdef kind="function" id="gntutils_8h_1a9a74566ea2b80ce87b911f1ee428329c" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>char *</type>
+                <definition>char* gnt_util_onscreen_fit_string</definition>
+                <argsstring>(const char *string, int maxw)</argsstring>
+                <name>gnt_util_onscreen_fit_string</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>string</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>maxw</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.h"
+                        line="21" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.c"
+                        bodystart="95" bodyend="123"/>
+            </memberdef>
+            <memberdef kind="function" id="gntutils_8h_1a1a59e8b19bfca4c11339aaa672adc256" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>GHashTable *</type>
+                <definition>GHashTable* g_hash_table_duplicate</definition>
+                <argsstring>(GHashTable *src, GHashFunc hash, GEqualFunc equal, GDestroyNotify key_d, GDestroyNotify
+                    value_d, GDupFunc key_dup, GDupFunc value_dup)
+                </argsstring>
+                <name>g_hash_table_duplicate</name>
+                <param>
+                    <type>GHashTable *</type>
+                    <declname>src</declname>
+                </param>
+                <param>
+                    <type>GHashFunc</type>
+                    <declname>hash</declname>
+                </param>
+                <param>
+                    <type>GEqualFunc</type>
+                    <declname>equal</declname>
+                </param>
+                <param>
+                    <type>GDestroyNotify</type>
+                    <declname>key_d</declname>
+                </param>
+                <param>
+                    <type>GDestroyNotify</type>
+                    <declname>value_d</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntutils_8h_1a3f3734c8ea24f4c77a4f2774792a548b" kindref="member">GDupFunc</ref>
+                    </type>
+                    <declname>key_dup</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntutils_8h_1a3f3734c8ea24f4c77a4f2774792a548b" kindref="member">GDupFunc</ref>
+                    </type>
+                    <declname>value_dup</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.h"
+                        line="23" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.c"
+                        bodystart="140" bodyend="148"/>
+            </memberdef>
+            <memberdef kind="function" id="gntutils_8h_1aabbf0de8b1c162e032dbd876e7429243" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>gboolean gnt_boolean_handled_accumulator</definition>
+                <argsstring>(GSignalInvocationHint *ihint, GValue *return_accu, const GValue *handler_return, gpointer
+                    dummy)
+                </argsstring>
+                <name>gnt_boolean_handled_accumulator</name>
+                <param>
+                    <type>GSignalInvocationHint *</type>
+                    <declname>ihint</declname>
+                </param>
+                <param>
+                    <type>GValue *</type>
+                    <declname>return_accu</declname>
+                </param>
+                <param>
+                    <type>const GValue *</type>
+                    <declname>handler_return</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>dummy</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>To be used with g_signal_new. Look in the key_pressed signal-definition in gntwidget.c for
+                        usage.
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.h"
+                        line="32" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.c"
+                        bodystart="150" bodyend="163"/>
+            </memberdef>
+            <memberdef kind="function" id="gntutils_8h_1a879657504a9924156cfae84d1de3afdb" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* gnt_widget_bindings_view</definition>
+                <argsstring>(GntWidget *widget)</argsstring>
+                <name>gnt_widget_bindings_view</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Returns a GntTree populated with &quot;key&quot; -&gt; &quot;binding&quot; for the widget.
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.h"
+                        line="40" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.c"
+                        bodystart="192" bodyend="211"/>
+            </memberdef>
+            <memberdef kind="function" id="gntutils_8h_1a8d1bd6b9c45c17bd88f49add43a9b284" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_util_parse_widgets</definition>
+                <argsstring>(const char *string, int num,...)</argsstring>
+                <name>gnt_util_parse_widgets</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>string</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>num</declname>
+                </param>
+                <param>
+                    <type>...</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Parse widgets from &apos;string&apos;.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.h"
+                        line="45" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.c"
+                        bodystart="327" bodyend="354"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1">
+                <highlight class="preprocessor">#include<sp/>&lt;glib.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="2">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="3">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gnt_8h" kindref="compound">gnt.h</ref>
+                    &quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="4">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntwidget_8h" kindref="compound">
+                    gntwidget.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="5">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="6" refid="gntutils_8h_1a3f3734c8ea24f4c77a4f2774792a548b" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal"><sp/>gpointer<sp/>(*<ref
+                        refid="gntutils_8h_1a3f3734c8ea24f4c77a4f2774792a548b" kindref="member">GDupFunc</ref>
+                    )(gconstpointer<sp/>data);
+                </highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="8">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntutils_8c_1ad83a4c9fc7023ffadca1d49c5210ffc7" kindref="member">
+                        gnt_util_get_text_bound</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>*width,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>*height);
+                </highlight>
+            </codeline>
+            <codeline lineno="9">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="10">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>excluding<sp/>*end<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="11">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntutils_8c_1a8accc80ef45b27fb238d66236f161a8a" kindref="member">
+                        gnt_util_onscreen_width</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*start,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*end);
+                </highlight>
+            </codeline>
+            <codeline lineno="12">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="13">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntutils_8c_1a35086b64cb7a2b574ab7a7fafecdeed5"
+                                                     kindref="member">gnt_util_onscreen_width_to_pointer</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*str,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>len,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>*w);
+                </highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>Inserts<sp/>newlines<sp/>in<sp/>&apos;string&apos;<sp/>where<sp/>
+                    necessary<sp/>so<sp/>that<sp/>its<sp/>onscreen<sp/>width<sp/>is
+                </highlight>
+            </codeline>
+            <codeline lineno="16">
+                <highlight class="comment"><sp/>*<sp/>no<sp/>more<sp/>than<sp/>&apos;maxw&apos;.
+                </highlight>
+            </codeline>
+            <codeline lineno="17">
+                <highlight class="comment"><sp/>*<sp/>&apos;maxw&apos;<sp/>can<sp/>be<sp/>&lt;=<sp/>0,<sp/>in<sp/>which
+                    <sp/>case<sp/>the<sp/>maximum<sp/>screen<sp/>width<sp/>is<sp/>considered.
+                </highlight>
+            </codeline>
+            <codeline lineno="18">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="comment"><sp/>*<sp/>Returns<sp/>a<sp/>newly<sp/>allocated<sp/>string.
+                </highlight>
+            </codeline>
+            <codeline lineno="20">
+                <highlight class="comment"><sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntutils_8c_1a9a74566ea2b80ce87b911f1ee428329c"
+                                                     kindref="member">gnt_util_onscreen_fit_string</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*
+                </highlight>
+                <highlight class="keywordtype">string</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>maxw);
+                </highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="normal">GHashTable<sp/>*<ref refid="gntutils_8c_1a1a59e8b19bfca4c11339aaa672adc256"
+                                                               kindref="member">g_hash_table_duplicate</ref>(GHashTable
+                    <sp/>*src,<sp/>GHashFunc<sp/>hash,
+                </highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GEqualFunc<sp/>equal,<sp/>GDestroyNotify<sp/>key_d,<sp/>GDestroyNotify<sp/>value_d,
+                </highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntutils_8h_1a3f3734c8ea24f4c77a4f2774792a548b" kindref="member">GDupFunc</ref>
+                    <sp/>key_dup,
+                    <sp/>
+                    <ref refid="gntutils_8h_1a3f3734c8ea24f4c77a4f2774792a548b" kindref="member">GDupFunc</ref>
+                    <sp/>value_dup);
+                </highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal">gboolean
+                    <sp/>
+                    <ref refid="gntutils_8c_1aabbf0de8b1c162e032dbd876e7429243" kindref="member">
+                        gnt_boolean_handled_accumulator</ref>(GSignalInvocationHint<sp/>*ihint,
+                </highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GValue
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*return_accu,
+                </highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal"><sp/>GValue
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*handler_return,
+                </highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gpointer
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>dummy);
+                </highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal">
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntutils_8c_1a879657504a9924156cfae84d1de3afdb" kindref="member">
+                    gnt_widget_bindings_view</ref>(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntutils_8c_1a8d1bd6b9c45c17bd88f49add43a9b284" kindref="member">
+                        gnt_util_parse_widgets</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*
+                </highlight>
+                <highlight class="keywordtype">string</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>num,<sp/>...);
+                </highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.0.0.tar/pidgin-2.0.0/pidgin-2.0.0/finch/libgnt/gntutils.h"/>
+    </compounddef>
+</doxygen>
