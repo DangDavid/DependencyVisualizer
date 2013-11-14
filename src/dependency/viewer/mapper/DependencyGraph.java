@@ -98,7 +98,7 @@ public class DependencyGraph {
 
     }
 
-    private int getModuleIndex(String name) {
+    public int getModuleIndex(String name) {
 
 
         for (int index = 0; index < fileNameDirectory.length; index++) {
@@ -113,6 +113,9 @@ public class DependencyGraph {
     }
 
 
+    public Map<String, List<String>> getClusters() {
+        return clusters;
+    }
     public String[] getFileNameDirectory() {
         return fileNameDirectory;
     }

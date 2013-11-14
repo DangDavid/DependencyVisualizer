@@ -2,6 +2,10 @@ package dependency.viewer.visualizer;
 
 import dependency.viewer.mapper.DependencyGraph;
 import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.List;
+import java.util.ArrayList;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,31 +15,70 @@ import java.io.File;
  * To change this template use File | Settings | File Templates.
  */
 public class VisualizerParser {
-    private Integer[][] matrix;
+    DependencyGraph dependencyGraph;
 
-    public VisualizerParser(Integer[][] matrix) {
-        this.matrix = matrix;
+    public VisualizerParser(DependencyGraph graph) {
+        dependencyGraph = graph;
     }
 
 
 
-    private String matrixToDigraph(Integer[][] matrix) {
+    private String matrixToDigraph() {
+        Map<String, List<String>> cluster = dependencyGraph.getClusters();
+        String[] fileNameDirectory = dependencyGraph.getFileNameDirectory();
+        Map<Integer, List<Integer>> intCluster = convertCluster(cluster, fileNameDirectory);
+        System.out.println(intCluster);
+
         String diGraph = "graph G {\n";
-        for (Integer j = 0; j < matrix.length; j++) {
-            for (Integer i = 0; i < j; i++) {
-                if (isDependency(matrix[i][j])) {
-                    String dependency = j.toString();
+        String dependency = "";
+        List<Integer> keys = new ArrayList<Integer>();
+        for (String file : fileNameDirectory) {
+            Integer key = dependencyGraph.getModuleIndex(file);
+            //block for big cluster
+            if (key != 40){
+            if (intCluster.containsKey(key)) {
+                keys.add(key);
+                dependency = "subgraph cluster";
+                dependency += key;
+                dependency += " { \n";
+                for (Integer fileNum : intCluster.get(key)) {
+                    dependency += key;
                     dependency += " -- ";
-                    dependency += i.toString();
-                    dependency += "[penwidth=";
-                    dependency += scaleDependencySize(matrix[i][j].doubleValue()).toString();
-                    dependency += "];\n";
-                    diGraph += dependency;
+                    dependency += fileNum;
+                    dependency += ";\n";
                 }
+                dependency += "}\n";
+                diGraph += dependency;
+            }
             }
         }
+        //TODO-KEVIN: make graph work for bigger cluster
+        for (Integer key : keys) {
+            diGraph += key;
+            diGraph += " -- cluster";
+            diGraph += "40";
+            diGraph += "\n";
+        }
+
         diGraph += "\n}";
         return diGraph;
+    }
+
+    private Map<Integer, List<Integer>> convertCluster(Map<String, List<String>> cluster, String[] fileNameDirectory) {
+        System.out.println(fileNameDirectory);
+        Map<Integer, List<Integer>> indexCluster = new HashMap<Integer, List<Integer>>();
+        for (String file: fileNameDirectory) {
+            if (cluster.containsKey(file)) {
+                Integer moduleIndex = dependencyGraph.getModuleIndex(file);
+                List<String> fileList = cluster.get(file);
+                List<Integer> intList = new ArrayList<Integer>();
+                for (String file1 : fileList) {
+                    intList.add(dependencyGraph.getModuleIndex(file1));
+                }
+                indexCluster.put(moduleIndex, intList);
+            }
+        }
+        return indexCluster;
     }
 
     private Double scaleDependencySize(Double i) {
@@ -44,7 +87,7 @@ public class VisualizerParser {
 
     public void drawGraph()
     {
-        String diGraph = matrixToDigraph(this.matrix);
+        String diGraph = matrixToDigraph();
         GraphViz gv = new GraphViz();
         gv.addln(diGraph);
         System.out.println(gv.getDotSource());

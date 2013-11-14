@@ -46,14 +46,14 @@ public class Main {
         // Graph Each Set Of Data
         DependencyGraph mat = matrices.get(0);
         //matrixToDigraph(mat);
-        //drawGraph(m1);
+        drawGraph(mat);
 
 
     }
 
 
-    private static void drawGraph(Integer[][] matrix) {
-        VisualizerParser vis = new VisualizerParser(matrix);
+    private static void drawGraph(DependencyGraph dgraph) {
+        VisualizerParser vis = new VisualizerParser(dgraph);
         vis.drawGraph();
     }
 
