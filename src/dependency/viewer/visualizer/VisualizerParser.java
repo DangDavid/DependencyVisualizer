@@ -52,6 +52,7 @@ public class VisualizerParser {
             }
             }
         }
+        /*
         //TODO-KEVIN: make graph work for bigger cluster
         for (Integer key : keys) {
             diGraph += key;
@@ -59,7 +60,7 @@ public class VisualizerParser {
             diGraph += "40";
             diGraph += "\n";
         }
-
+        */
         diGraph += "\n}";
         return diGraph;
     }
