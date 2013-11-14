@@ -38,6 +38,7 @@ public class DependencyGraph {
         fileNameDirectory = new String[size];
 
         Map<String, List<DependencyEdge>> map = model.getNodeMap();
+        // keys are all module names in the current "model"(DependencyData) 
         Set<String> keys = map.keySet();
         int index = 0;
         for (String moduleName : keys) {
@@ -97,7 +98,11 @@ public class DependencyGraph {
 
 
     }
-
+    
+/*
+ * Get the index of the module: name
+ * index applies to the above 2-D array 
+ */
     public int getModuleIndex(String name) {
 
 
