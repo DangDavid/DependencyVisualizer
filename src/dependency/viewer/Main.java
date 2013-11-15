@@ -31,10 +31,10 @@ public class Main {
 
 
         // Map Each Set Of Data
-        SortDependencies sorter = new SortDependencies();
-        List<DependencyGraph> matricesI = sorter.mapDependency(rawInitialData);
+        SortDependencies sorter = new SortDependencies(rawInitialData, rawFinalData);
+        List<DependencyGraph> matricesI = sorter.matrixifyInit();
 
-        List<DependencyGraph> matricesF = sorter.mapDependency(rawFinalData);
+        List<DependencyGraph> matricesF = sorter.matrixifyFinal();
 
         // Graph Each Set Of Data
         //DependencyGraph mat = matrices.get(0);

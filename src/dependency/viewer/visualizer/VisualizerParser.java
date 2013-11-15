@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
 import java.util.Map;
 import java.util.List;
 import java.util.ArrayList;
@@ -68,14 +69,15 @@ public class VisualizerParser {
         String colorNodes = assignColor(cluster);
 
         String initGraphString = makeGraph(initalGraph.get(0), initalGraph.get(1), colorNodes);
-        String finalGraphString = makeGraph(finalGraph.get(0), finalGraph.get(1), colorNodes);
+        String finalGraphString = makeGraph(finalGraph.get(0), finalGraph.get(1), colorNodes, initalGraph.get(0).getFileNameDirectory());
 
 
         fileWrite(initGraphString, finalGraphString);
 
     }
 
-    private String makeGraph(DependencyGraph dataGraph, DependencyGraph behaviourGraph, String colorNodes) {
+    private String makeGraph(DependencyGraph dataGraph, DependencyGraph behaviourGraph,
+                             String colorNodes) {
         Map<String, List<String>> cluster = behaviourGraph.getClusters();
         String[] fileNameDirectory = behaviourGraph.getFileNameDirectory();
         String diGraph = graphHeader;
@@ -83,6 +85,64 @@ public class VisualizerParser {
         String nodes = "";
 
         dependency += colorNodes;
+
+
+        List<String> keys = new ArrayList<String>();
+        for (String file : fileNameDirectory) {
+            String key = file;
+            //block for big cluster
+            if (cluster.containsKey(key) && cluster.get(key).size() > 1) {
+                keys.add(key);
+                dependency += "subgraph cluster_";
+                dependency += key;
+                dependency += " { \n";
+                for (String f : cluster.get(key)) {
+                    dependency += f;
+                    dependency += ";\n";
+                }
+                dependency += "}\n";
+            }
+        }
+
+
+        fileNameDirectory = dataGraph.getFileNameDirectory();
+
+
+        Integer[][] matrix = dataGraph.getMatrix();
+        for (Integer j = 0; j < matrix.length; j++) {
+            for (Integer i = 0; i < j; i++) {
+                if (isDependency(matrix[i][j])) {
+                    nodes += fileNameDirectory[i];
+                    nodes += " -- ";
+                    nodes += fileNameDirectory[j];
+                    nodes += ";\n";
+                }
+            }
+        }
+
+        diGraph += dependency;
+        diGraph += nodes;
+        diGraph += "\n}";
+        return diGraph;
+    }
+
+    private String makeGraph(DependencyGraph dataGraph, DependencyGraph behaviourGraph,
+                             String colorNodes, String[] detectNewFiles) {
+        Map<String, List<String>> cluster = behaviourGraph.getClusters();
+        String[] fileNameDirectory = behaviourGraph.getFileNameDirectory();
+        String diGraph = graphHeader;
+        String dependency = "";
+        String nodes = "";
+
+        dependency += colorNodes;
+
+
+        List<String> existingFiles = new ArrayList<String>(Arrays.asList(detectNewFiles));
+        for (String file : fileNameDirectory) {
+            if (!existingFiles.contains(file)) {
+                dependency += file + "[ color= black, shape = box];\n";
+            }
+        }
 
 
         List<String> keys = new ArrayList<String>();
