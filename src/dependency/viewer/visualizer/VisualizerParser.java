@@ -1,6 +1,7 @@
 package dependency.viewer.visualizer;
 
 import dependency.viewer.mapper.DependencyGraph;
+
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
@@ -15,17 +16,17 @@ import java.util.ArrayList;
  * To change this template use File | Settings | File Templates.
  */
 public class VisualizerParser {
-    DependencyGraph dependencyGraph;
+    List<DependencyGraph> dependencyGraph;
 
-    public VisualizerParser(DependencyGraph graph) {
+    public VisualizerParser(List<DependencyGraph> graph) {
         dependencyGraph = graph;
     }
 
 
-
-    private String matrixToDigraph() {
-        Map<String, List<String>> cluster = dependencyGraph.getClusters();
-        String[] fileNameDirectory = dependencyGraph.getFileNameDirectory();
+    public String matrixToDigraph() {
+        DependencyGraph finalBehavioural = dependencyGraph.get(1);
+        Map<String, List<String>> cluster = finalBehavioural.getClusters();
+        String[] fileNameDirectory = finalBehavioural.getFileNameDirectory();
         List<String> clusterList = new ArrayList<String>();
         System.out.println(cluster);
 
@@ -42,9 +43,9 @@ public class VisualizerParser {
         for (String file : fileNameDirectory) {
             String key = file;
             //block for big cluster
-            if (cluster.containsKey(key)) {
+            if (cluster.containsKey(key) && cluster.get(key).size() > 1) {
                 keys.add(key);
-                dependency += "subgraph cluster";
+                dependency += "subgraph cluster_";
                 dependency += key;
                 dependency += " { \n";
                 for (String f : cluster.get(key)) {
@@ -61,8 +62,14 @@ public class VisualizerParser {
         System.out.println(clusterList.size());
         System.out.println("keys:");
         System.out.println(keys.size());
+
+
+        DependencyGraph finalData = dependencyGraph.get(0);
+        fileNameDirectory = finalData.getFileNameDirectory();
+
+        /*
         for (String file : fileNameDirectory) {
-            Integer[] fileIndex = dependencyGraph.getMatrix()[dependencyGraph.getModuleIndex(file)];
+            Integer[] fileIndex = finalData.getMatrix()[finalData.getModuleIndex(file)];
             node += file;
             node += "\n";
             for (int i = 0; i < fileIndex.length; i++){
@@ -73,9 +80,22 @@ public class VisualizerParser {
                 nodes += ";\n";
                 }
             }
+        }      */
+
+        Integer[][] matrix = finalData.getMatrix();
+        for (Integer j = 0; j < matrix.length; j++) {
+            for (Integer i = 0; i < j; i++) {
+                if (isDependency(matrix[i][j])) {
+                    nodes += fileNameDirectory[i];
+                    nodes += " -- ";
+                    nodes += fileNameDirectory[j];
+                    nodes += ";\n";
+                }
+            }
         }
-        //diGraph += nodes;
+
         diGraph += dependency;
+        diGraph += nodes;
         diGraph += "\n}";
         return diGraph;
     }
@@ -84,8 +104,7 @@ public class VisualizerParser {
         return 0.75 + (i / 100);
     }
 
-    public void drawGraph()
-    {
+    public void drawGraph() {
         String diGraph = matrixToDigraph();
         GraphViz gv = new GraphViz();
         gv.addln(diGraph);
@@ -93,10 +112,10 @@ public class VisualizerParser {
 
         String type = "gif";
         File out = new File("/tmp/out." + type);
-        gv.writeGraphToFile( gv.getGraph( gv.getDotSource(), type ), out );
+        gv.writeGraphToFile(gv.getGraph(gv.getDotSource(), type), out);
     }
 
     public Boolean isDependency(Integer dependency) {
-        return (dependency == 0)? false : true;
+        return (dependency == 0) ? false : true;
     }
 }
