@@ -16,7 +16,10 @@ public class DependencyGraph {
     Integer[][] matrix;                        // holds the value of the dependencies between module
     String[] fileNameDirectory;                // holds the file name, used to get the index for the matrix
     Map<String, List<String>> clusters;    // Key is the cluster which the modules belongs to, and value is the list of modules that belong there
-
+    /* the difference between two versions of DependencyData's, i.e. new nodes */
+    /* only be set when dealing with the 2nd version of the code base */
+    Map<String, List<DependencyEdge>> DependencyDataDifference;
+    
     public DependencyGraph(DependencyData model) {
         this.type = model.getType();
         clusters = new HashMap<String, List<String>>();
@@ -129,12 +132,12 @@ public class DependencyGraph {
         return matrix;
     }
 
-    /*
+    /**
      *  generate difference between two DependencyData's, which is a Map<String, List<DependencyEdge>>
      */
-    public Map<String, List<DependencyEdge>> getDifference(DependencyData model, DependencyData v2Model){
-    	
-    	Map<String, List<DependencyEdge>> difference = new HashMap<String, List<DependencyEdge>>();
+    private void setDifference(DependencyData model, DependencyData v2Model){
+    	// DependencyDataDifference is a global variable in this class
+    	DependencyDataDifference = new HashMap<String, List<DependencyEdge>>();
     	Map<String, List<DependencyEdge>> v1NodeMap = model.getNodeMap();
     	Map<String, List<DependencyEdge>> v2NodeMap = v2Model.getNodeMap();
     	
@@ -144,11 +147,21 @@ public class DependencyGraph {
     	
     	//generate a Map of list<DependencyEdge>'s for newkeys
     	for(String key : newKeys){
-    		difference.put(key, v2NodeMap.get(key));
+    		DependencyDataDifference.put(key, v2NodeMap.get(key));
     	}
-    	    	    	
-    	return difference;
+    	    	
+    	return;
     }
     
+    /**
+     * 
+     */
+    public Map<String, List<DependencyEdge>> getDependencyDataDifference(){
+    	try{
+    		return new HashMap<String, List<DependencyEdge>>(DependencyDataDifference);
+    	}catch(NullPointerException ne){
+    		return null;
+    	}
+    }
     
 }
