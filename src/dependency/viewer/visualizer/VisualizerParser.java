@@ -3,7 +3,9 @@ package dependency.viewer.visualizer;
 import dependency.viewer.mapper.DependencyGraph;
 
 import java.io.File;
-import java.util.HashMap;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.Map;
 import java.util.List;
 import java.util.ArrayList;
@@ -16,32 +18,25 @@ import java.util.ArrayList;
  * To change this template use File | Settings | File Templates.
  */
 public class VisualizerParser {
-    List<DependencyGraph> dependencyGraph;
+    List<DependencyGraph> initalGraph;
 
-    public VisualizerParser(List<DependencyGraph> graph) {
-        dependencyGraph = graph;
-    }
+    List<DependencyGraph> finalGraph;
+    private ArrayList<String> listOfcolor;
+
+    private String graphHeader = "graph G {\n" +
+            "sep=\"+25,25\";\n" +
+            "nodesep=0.6;\n" +
+            "edge[weight=0.8];\n" +
+            "overlap = false;\n" +
+            "splines=true;\n" +
+            "node [shape = circle ,sides = 4,distortion = 0.0,orientation = 0.0,skew = 0.0 , style = filled ];\n";
 
 
-    public String matrixToDigraph() {
-        DependencyGraph finalBehavioural = dependencyGraph.get(1);
-        Map<String, List<String>> cluster = finalBehavioural.getClusters();
-        String[] fileNameDirectory = finalBehavioural.getFileNameDirectory();
-        List<String> clusterList = new ArrayList<String>();
-        System.out.println(cluster);
+    public VisualizerParser(List<DependencyGraph> initG, List<DependencyGraph> finalG) {
+        initalGraph = initG;
+        finalGraph = finalG;
 
-        String diGraph = "graph G {\n" +
-                "sep=\"+25,25\";\n" +
-                "nodesep=0.6;\n" +
-                "edge[weight=0.8];\n" +
-                "overlap = false;\n" +
-                "splines=true;\n" +
-                "node [shape = circle ,sides = 4,distortion = 0.0,orientation = 0.0,skew = 0.0 ];\n";
-
-        String dependency = "";
-        String nodes = "";
-        String node = "";
-        List<String>listOfcolor = new ArrayList<String>();
+        listOfcolor = new ArrayList<String>();
         listOfcolor.add("red");
         listOfcolor.add("yellow");
         listOfcolor.add("blue");
@@ -62,25 +57,34 @@ public class VisualizerParser {
         listOfcolor.add("blueviolet");
         listOfcolor.add("deepskyblue");
         listOfcolor.add("salmon");
-        
-     int index = 0;
-       for(String key : cluster.keySet()){
-    	
-    	    if (cluster.containsKey(key) && cluster.get(key).size() > 1) {
-    	    	  String color = listOfcolor.get(index);
-    	   for(String f: cluster.get(key)){
-    		   dependency += f;
-    		   dependency += "[ color="+ color +", style = filled];\n";
+    }
 
-    	   }    	    
-    	   index++;
 
-    	   
-    	    }
-       }
-       
-        
-        
+    public void matrixToDigraph() {
+        DependencyGraph initBehaviour = initalGraph.get(1);
+        Map<String, List<String>> cluster = initBehaviour.getClusters();
+
+
+        String colorNodes = assignColor(cluster);
+
+        String initGraphString = makeGraph(initalGraph.get(0), initalGraph.get(1), colorNodes);
+        String finalGraphString = makeGraph(finalGraph.get(0), finalGraph.get(1), colorNodes);
+
+
+        fileWrite(initGraphString, finalGraphString);
+
+    }
+
+    private String makeGraph(DependencyGraph dataGraph, DependencyGraph behaviourGraph, String colorNodes) {
+        Map<String, List<String>> cluster = behaviourGraph.getClusters();
+        String[] fileNameDirectory = behaviourGraph.getFileNameDirectory();
+        String diGraph = graphHeader;
+        String dependency = "";
+        String nodes = "";
+
+        dependency += colorNodes;
+
+
         List<String> keys = new ArrayList<String>();
         for (String file : fileNameDirectory) {
             String key = file;
@@ -91,40 +95,18 @@ public class VisualizerParser {
                 dependency += key;
                 dependency += " { \n";
                 for (String f : cluster.get(key)) {
-                    clusterList.add(f);
                     dependency += f;
                     dependency += ";\n";
                 }
                 dependency += "}\n";
             }
         }
-        System.out.println("files:");
-        System.out.println(fileNameDirectory.length);
-        System.out.println("clusterList:");
-        System.out.println(clusterList.size());
-        System.out.println("keys:");
-        System.out.println(keys.size());
 
 
-        DependencyGraph finalData = dependencyGraph.get(0);
-        fileNameDirectory = finalData.getFileNameDirectory();
+        fileNameDirectory = dataGraph.getFileNameDirectory();
 
-        /*
-        for (String file : fileNameDirectory) {
-            Integer[] fileIndex = finalData.getMatrix()[finalData.getModuleIndex(file)];
-            node += file;
-            node += "\n";
-            for (int i = 0; i < fileIndex.length; i++){
-                if (isDependency(fileIndex[i])) {
-                nodes += fileNameDirectory[i];
-                nodes += " -- ";
-                nodes += file;
-                nodes += ";\n";
-                }
-            }
-        }      */
 
-        Integer[][] matrix = finalData.getMatrix();
+        Integer[][] matrix = dataGraph.getMatrix();
         for (Integer j = 0; j < matrix.length; j++) {
             for (Integer i = 0; i < j; i++) {
                 if (isDependency(matrix[i][j])) {
@@ -142,12 +124,32 @@ public class VisualizerParser {
         return diGraph;
     }
 
+    private String assignColor(Map<String, List<String>> cluster) {
+        String colorNodes = "";
+        int index = 0;
+        for (String key : cluster.keySet()) {
+
+            if (cluster.containsKey(key) && cluster.get(key).size() > 1) {
+                String color = listOfcolor.get(index);
+                for (String f : cluster.get(key)) {
+
+                    colorNodes += f + "[ color=" + color + "];\n";
+
+                }
+                index++;
+
+
+            }
+        }
+        return colorNodes;
+    }
+
     private Double scaleDependencySize(Double i) {
         return 0.75 + (i / 100);
     }
 
     public void drawGraph() {
-        String diGraph = matrixToDigraph();
+        String diGraph = ""; //matrixToDigraph();
         GraphViz gv = new GraphViz();
         gv.addln(diGraph);
         System.out.println(gv.getDotSource());
@@ -159,5 +161,27 @@ public class VisualizerParser {
 
     public Boolean isDependency(Integer dependency) {
         return (dependency == 0) ? false : true;
+    }
+
+    private void fileWrite(String initG, String finalG) {
+        PrintWriter writer = null;
+        try {
+            writer = new PrintWriter("init.txt", "UTF-8");
+            writer.println(initG);
+
+            writer.close();
+
+
+            writer = new PrintWriter("final.txt", "UTF-8");
+            writer.println(finalG);
+
+            writer.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+
+
     }
 }
