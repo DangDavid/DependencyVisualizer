@@ -128,4 +128,27 @@ public class DependencyGraph {
     public Integer[][] getMatrix() {
         return matrix;
     }
+
+    /*
+     *  generate difference between two DependencyData's, which is a Map<String, List<DependencyEdge>>
+     */
+    public Map<String, List<DependencyEdge>> getDifference(DependencyData model, DependencyData v2Model){
+    	
+    	Map<String, List<DependencyEdge>> difference = new HashMap<String, List<DependencyEdge>>();
+    	Map<String, List<DependencyEdge>> v1NodeMap = model.getNodeMap();
+    	Map<String, List<DependencyEdge>> v2NodeMap = v2Model.getNodeMap();
+    	
+    	//generate newKeys = key difference  between v2NodeMap and the other
+    	Set<String> newKeys = new HashSet<String>(v2NodeMap.keySet());
+    	newKeys.removeAll(v1NodeMap.keySet());
+    	
+    	//generate a list of DependencyData for newkeys
+    	for(String key : newKeys){
+    		difference.put(key, v2NodeMap.get(key));
+    	}
+    	    	    	
+    	return difference;
+    }
+    
+    
 }
