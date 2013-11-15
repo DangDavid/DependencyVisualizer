@@ -1,6 +1,7 @@
 package dependency.viewer.visualizer;
 
 import dependency.viewer.mapper.DependencyEdge;
+
 import dependency.viewer.mapper.DependencyGraph;
 import java.io.File;
 import java.util.HashMap;
@@ -16,9 +17,9 @@ import java.util.ArrayList;
  * To change this template use File | Settings | File Templates.
  */
 public class VisualizerParser {
-    DependencyGraph dependencyGraph;
+	List<DependencyGraph> dependencyGraph;
 
-    public VisualizerParser(DependencyGraph graph) {
+    public VisualizerParser(List<DependencyGraph> graph) {
         dependencyGraph = graph;
     }
 
@@ -27,13 +28,14 @@ public class VisualizerParser {
      * generate a giant String(dot language of the graph)
      * @return String
      */
-    private String matrixToDigraph() {
-    	// get the list of new modules, keep its structure as map for now(only need module name for now)
-    	Map<String, List<DependencyEdge>> difference = dependencyGraph.getDependencyDataDifference();
-    	String shape = "star";
+    public String matrixToDigraph() {
+//    	// get the list of new modules, keep its structure as map for now(only need module name for now)
+//    	Map<String, List<DependencyEdge>> difference = dependencyGraph.getDependencyDataDifference();
+//    	String shape = "star";
     	
-        Map<String, List<String>> cluster = dependencyGraph.getClusters();
-        String[] fileNameDirectory = dependencyGraph.getFileNameDirectory();
+    	DependencyGraph finalBehavioural = dependencyGraph.get(1);
+        Map<String, List<String>> cluster = finalBehavioural.getClusters();
+        String[] fileNameDirectory = finalBehavioural.getFileNameDirectory();
         List<String> clusterList = new ArrayList<String>();
         System.out.println(cluster);
 
@@ -50,21 +52,21 @@ public class VisualizerParser {
         for (String file : fileNameDirectory) {
             String key = file;
             //block for big cluster
-            if (cluster.containsKey(key)) {
+            if (cluster.containsKey(key) && cluster.get(key).size() > 1) {
                 keys.add(key);
-                dependency += "subgraph cluster";
+                dependency += "subgraph cluster_";
                 dependency += key;
                 dependency += " { \n";
                 for (String f : cluster.get(key)) {
                     clusterList.add(f);
                     dependency += f;
                     
-                    /* new node will be given a different shape when being declared in dot language*/
-                    if(isNewNode(f, difference)){
-                    	dependency += " [shape=";
-                    	dependency += shape;
-                    	dependency += "]";
-                    }	
+//                    /* new node will be given a different shape when being declared in dot language*/
+//                    if(isNewNode(f, difference)){
+//                    	dependency += " [shape=";
+//                    	dependency += shape;
+//                    	dependency += "]";
+//                    }	
                     
                     dependency += ";\n";
                 }
@@ -77,8 +79,14 @@ public class VisualizerParser {
         System.out.println(clusterList.size());
         System.out.println("keys:");
         System.out.println(keys.size());
+
+
+        DependencyGraph finalData = dependencyGraph.get(0);
+        fileNameDirectory = finalData.getFileNameDirectory();
+
+        /*
         for (String file : fileNameDirectory) {
-            Integer[] fileIndex = dependencyGraph.getMatrix()[dependencyGraph.getModuleIndex(file)];
+            Integer[] fileIndex = finalData.getMatrix()[finalData.getModuleIndex(file)];
             node += file;
             node += "\n";
             for (int i = 0; i < fileIndex.length; i++){
@@ -89,11 +97,24 @@ public class VisualizerParser {
                 nodes += ";\n";
                 }
             }
+        }      */
+        
+        Integer[][] matrix = finalData.getMatrix();
+        for (Integer j = 0; j < matrix.length; j++) {
+            for (Integer i = 0; i < j; i++) {
+                if (isDependency(matrix[i][j])) {
+                    nodes += fileNameDirectory[i];
+                    nodes += " -- ";
+                    nodes += fileNameDirectory[j];
+                    nodes += ";\n";
+                }
+            }
         }
-        //diGraph += nodes;
-        diGraph += dependency;
-        diGraph += "\n}";
-        return diGraph;
+            
+            diGraph += dependency;
+            diGraph += nodes;
+            diGraph += "\n}";
+            return diGraph;
     }
 
     /**
@@ -114,8 +135,7 @@ public class VisualizerParser {
         return 0.75 + (i / 100);
     }
 
-    public void drawGraph()
-    {
+    public void drawGraph(){
         String diGraph = matrixToDigraph();
         GraphViz gv = new GraphViz();
         gv.addln(diGraph);
@@ -123,7 +143,7 @@ public class VisualizerParser {
 
         String type = "gif";
         File out = new File("/tmp/out." + type);
-        gv.writeGraphToFile( gv.getGraph( gv.getDotSource(), type ), out );
+        gv.writeGraphToFile(gv.getGraph(gv.getDotSource(), type), out);
     }
 
     public Boolean isDependency(Integer dependency) {

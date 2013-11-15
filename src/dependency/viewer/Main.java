@@ -35,50 +35,20 @@ public class Main {
         List<DependencyGraph> matrices = sorter.mapDependency(rawFinalData);
 
 
-        Integer[][] m0 = matrices.get(0).getMatrix();
-        Integer[][] m1 = matrices.get(1).getMatrix();
-
-        List<DependencyData> list = sorter.sortDataDependency(rawFinalData);
-
-        DependencyData data = list.get(1);    //get behavioural
-
-
         // Graph Each Set Of Data
-        DependencyGraph mat = matrices.get(0);
+        //DependencyGraph mat = matrices.get(0);
         //matrixToDigraph(mat);
-        drawGraph(mat);
+        drawGraph(matrices);
 
 
     }
 
 
-    private static void drawGraph(DependencyGraph dgraph) {
+    private static void drawGraph(List<DependencyGraph> dgraph) {
         VisualizerParser vis = new VisualizerParser(dgraph);
-        vis.drawGraph();
+        //vis.drawGraph();
+        System.out.println(vis.matrixToDigraph());
     }
 
-
-    private static void matrixToDigraph(DependencyGraph graph) {
-
-
-        Integer[][] matrix = graph.getMatrix();
-        String[] names = graph.getFileNameDirectory();
-
-        String diGraph = "graph G {\n";
-        for (Integer j = 0; j < matrix.length; j++) {
-            for (Integer i = 0; i < j; i++) {
-                if (matrix[i][j] > 0) {
-                    String dependency = names[i];
-                    dependency += " -- ";
-                    dependency += names[j];
-
-                    dependency += ";\n";
-                    diGraph += dependency;
-                }
-            }
-        }
-        diGraph += "\n}";
-        System.out.println(diGraph);
-    }
 
 }
