@@ -142,7 +142,7 @@ public class DependencyGraph {
     	Set<String> newKeys = new HashSet<String>(v2NodeMap.keySet());
     	newKeys.removeAll(v1NodeMap.keySet());
     	
-    	//generate a list of DependencyData for newkeys
+    	//generate a Map of list<DependencyEdge>'s for newkeys
     	for(String key : newKeys){
     		difference.put(key, v2NodeMap.get(key));
     	}
