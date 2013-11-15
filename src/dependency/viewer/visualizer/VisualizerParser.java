@@ -35,10 +35,52 @@ public class VisualizerParser {
                 "nodesep=0.6;\n" +
                 "edge[weight=0.8];\n" +
                 "overlap = false;\n" +
-                "splines=true;\n";
+                "splines=true;\n" +
+                "node [shape = circle ,sides = 4,distortion = 0.0,orientation = 0.0,skew = 0.0 ];\n";
+
         String dependency = "";
         String nodes = "";
         String node = "";
+        List<String>listOfcolor = new ArrayList<String>();
+        listOfcolor.add("red");
+        listOfcolor.add("yellow");
+        listOfcolor.add("blue");
+        listOfcolor.add("purple");
+        listOfcolor.add("orange");
+        listOfcolor.add("green");
+        listOfcolor.add("cyan");
+        listOfcolor.add("tan");
+        listOfcolor.add("brown");
+        listOfcolor.add("pink");
+        listOfcolor.add("olive");
+        listOfcolor.add("grey");
+        listOfcolor.add("gold");
+        listOfcolor.add("coral");
+        listOfcolor.add("labender");
+        listOfcolor.add("fuchasia");
+        listOfcolor.add("forestgreen");
+        listOfcolor.add("blueviolet");
+        listOfcolor.add("deepskyblue");
+        listOfcolor.add("salmon");
+        
+     int index = 0;
+       for(String key : cluster.keySet()){
+    	
+    	    if (cluster.containsKey(key) && cluster.get(key).size() > 1) {
+    	    	  String color = listOfcolor.get(index);
+    	   for(String f: cluster.get(key)){
+    		   dependency += f;
+    		   dependency += "[ color="+ color +", style = filled];\n";
+
+    	   }    	    
+    	   index++;
+
+    	   
+    	    }
+       }
+       
+        
+        
         List<String> keys = new ArrayList<String>();
         for (String file : fileNameDirectory) {
             String key = file;
@@ -111,7 +153,7 @@ public class VisualizerParser {
         System.out.println(gv.getDotSource());
 
         String type = "gif";
-        File out = new File("/tmp/out." + type);
+        File out = new File("C:/temp/out." + type);
         gv.writeGraphToFile(gv.getGraph(gv.getDotSource(), type), out);
     }
 
