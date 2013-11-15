@@ -1,5 +1,6 @@
 package dependency.viewer.visualizer;
 
+import dependency.viewer.mapper.DependencyEdge;
 import dependency.viewer.mapper.DependencyGraph;
 import java.io.File;
 import java.util.HashMap;
@@ -27,6 +28,10 @@ public class VisualizerParser {
      * @return String
      */
     private String matrixToDigraph() {
+    	// get the list of new modules, keep its structure as map for now(only need module name for now)
+    	Map<String, List<DependencyEdge>> difference = dependencyGraph.getDependencyDataDifference();
+    	String shape = "star";
+    	
         Map<String, List<String>> cluster = dependencyGraph.getClusters();
         String[] fileNameDirectory = dependencyGraph.getFileNameDirectory();
         List<String> clusterList = new ArrayList<String>();
@@ -53,6 +58,14 @@ public class VisualizerParser {
                 for (String f : cluster.get(key)) {
                     clusterList.add(f);
                     dependency += f;
+                    
+                    /* new node will be given a different shape when being declared in dot language*/
+                    if(isNewNode(f, difference)){
+                    	dependency += " [shape=";
+                    	dependency += shape;
+                    	dependency += "]";
+                    }	
+                    
                     dependency += ";\n";
                 }
                 dependency += "}\n";
@@ -83,7 +96,21 @@ public class VisualizerParser {
         return diGraph;
     }
 
-    private Double scaleDependencySize(Double i) {
+    /**
+     * calculate if a given string f exists in difference:
+     * 		if difference is not null and key exists in difference, then return true
+     * 			,else(difference is null or the key does not exist) return false
+     * @param f - String
+     * @param difference - Map<String, List<DependencyEdge>>
+     * @return boolean
+     */
+    private boolean isNewNode(String f, Map<String, List<DependencyEdge>> difference) {
+    	    
+		return ( (difference != null) && (difference.containsKey(f)) );
+	}
+
+
+	private Double scaleDependencySize(Double i) {
         return 0.75 + (i / 100);
     }
 
