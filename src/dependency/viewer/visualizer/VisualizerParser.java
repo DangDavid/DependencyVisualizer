@@ -22,7 +22,10 @@ public class VisualizerParser {
     }
 
 
-
+    /**
+     * generate a giant String(dot language of the graph)
+     * @return String
+     */
     private String matrixToDigraph() {
         Map<String, List<String>> cluster = dependencyGraph.getClusters();
         String[] fileNameDirectory = dependencyGraph.getFileNameDirectory();
