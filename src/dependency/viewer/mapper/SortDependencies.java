@@ -6,25 +6,22 @@ import dependency.viewer.parser.ModuleData;
 
 public class SortDependencies {
 
-    static List<DependencyData> listDependencyData = new ArrayList<DependencyData>();
     private DependencyData dataDependency;
     private DependencyData behavioralDependency;
 
-    // Fill this in
-    public SortDependencies() {
+    List<ModuleData> rawInitialData;
+    List<ModuleData> rawFinalData;
 
-        dataDependency = new DependencyData(new HashMap<String, List<DependencyEdge>>(), DependencyType.DATA);
-        behavioralDependency = new DependencyData(new HashMap<String, List<DependencyEdge>>(), DependencyType.BEHAVIOURAL);
-        listDependencyData.add(dataDependency);
-        listDependencyData.add(behavioralDependency);
+    // Fill this in
+    public SortDependencies(List<ModuleData> rawInitialData, List<ModuleData> rawFinalData) {
+        this.rawInitialData = rawInitialData;
+        this.rawFinalData = rawFinalData;
+
 
     }
 
 
-    /*
-     *  do:
-     */
-    public List<DependencyData> sortDataDependency(List<ModuleData> rawData) {
+    public void sortDataDependency(List<ModuleData> rawData) {
 
         List<ModuleData> mergeData = mergeModules(rawData);
 
@@ -32,9 +29,8 @@ public class SortDependencies {
         generateDependencyData(rawData, mergeData);
 
 
-        return listDependencyData;
-
     }
+
 
     private void generateDependencyData(List<ModuleData> rawData, List<ModuleData> mergeData) {
         for (ModuleData moduleData : mergeData) {
@@ -46,12 +42,9 @@ public class SortDependencies {
             dataDependency.initDependency(moduleName);
 
             for (String key : mapReferences.keySet()) {
-                //key is other module where the Module is referencing to.
 
-                ///typeOfDataObject.clear();// to start off with fresh list
 
                 List<String> items = mapReferences.get(key);
-                // I will use dataOrBehavioral method to find out whether the string of the key has behavioral or data dependency
                 insertDependency(moduleName, key, items, rawData);
 
 
@@ -107,6 +100,7 @@ public class SortDependencies {
         Map<String, String> childDataObjects = childNode.getDataObjects();
 
         for (String item : items) {
+
             if (childDataObjects.containsKey(item)) {
                 String type = childDataObjects.get(item);
 
@@ -123,49 +117,31 @@ public class SortDependencies {
     }
 
 
-    public List<DependencyGraph> matrixify() {
+    public List<DependencyGraph> matrixifyInit() {
+        List<DependencyGraph> graph = matrixHelper(rawInitialData);
+        return graph;
+
+    }
+
+    private List<DependencyGraph> matrixHelper(List<ModuleData> input) {
         List<DependencyGraph> graph = new ArrayList<DependencyGraph>();
 
+        dataDependency = new DependencyData(new HashMap<String, List<DependencyEdge>>(), DependencyType.DATA);
+        behavioralDependency = new DependencyData(new HashMap<String, List<DependencyEdge>>(), DependencyType.BEHAVIOURAL);
+        sortDataDependency(input);
         graph.add(new DependencyGraph(dataDependency));
         graph.add(new DependencyGraph(behavioralDependency));
+        return graph;
+    }
+
+    public List<DependencyGraph> matrixifyFinal() {
+        List<DependencyGraph> graph = matrixHelper(rawFinalData);
+
         return graph;
 
     }
 
 
-    public static void print() {
-
-        for (int i = 0; i < listDependencyData.size(); i++) {
-
-            System.out.println("list of DependencyData type" + listDependencyData.get(i).type);
-
-
-            for (int e = 0; e < listDependencyData.get(i).getNodeMap().keySet().size(); e++) {
-                // print out
-
-                for (String key : listDependencyData.get(i).getNodeMap().keySet()) {
-                    if (listDependencyData.get(i).getNodeMap().keySet().isEmpty()) {
-                        break;
-                    }
-
-                    if (listDependencyData.get(i).getNodeMap().get(key) != null) {
-                        System.out.println("\t" + "parent node of the key:" + listDependencyData.get(i).getNodeMap().get(key).get(e).getParentNode());
-                        System.out.println("\t" + "1. child node of the key: " + listDependencyData.get(i).getNodeMap().get(key).get(e).getChildNode());
-                        //	System.out.println("\t" +"2. keys stored in data: " + listDependencyData.get(i).getNodeMap().keySet())	;
-                        System.out.println("\t" + "3. finch key values: " + listDependencyData.get(i).getNodeMap().get(key));
-
-                    }
-                }
-            }
-        }
-    }
-
-
-    public List<DependencyGraph> mapDependency(List<ModuleData> rawData) {
-
-        sortDataDependency(rawData);
-        return matrixify();
-    }
 }
 
 

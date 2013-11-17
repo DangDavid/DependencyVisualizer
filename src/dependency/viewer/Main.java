@@ -31,23 +31,24 @@ public class Main {
 
 
         // Map Each Set Of Data
-        SortDependencies sorter = new SortDependencies();
-        List<DependencyGraph> matrices = sorter.mapDependency(rawFinalData);
+        SortDependencies sorter = new SortDependencies(rawInitialData, rawFinalData);
+        List<DependencyGraph> matricesI = sorter.matrixifyInit();
 
+        List<DependencyGraph> matricesF = sorter.matrixifyFinal();
 
         // Graph Each Set Of Data
         //DependencyGraph mat = matrices.get(0);
         //matrixToDigraph(mat);
-        drawGraph(matrices);
+        drawGraph(matricesI, matricesF);
 
 
     }
 
 
-    private static void drawGraph(List<DependencyGraph> dgraph) {
-        VisualizerParser vis = new VisualizerParser(dgraph);
+    private static void drawGraph(List<DependencyGraph> initG, List<DependencyGraph> finalG) {
+        VisualizerParser vis = new VisualizerParser(initG, finalG);
         //vis.drawGraph();
-        System.out.println(vis.matrixToDigraph());
+        vis.matrixToDigraph();
     }
 
 
