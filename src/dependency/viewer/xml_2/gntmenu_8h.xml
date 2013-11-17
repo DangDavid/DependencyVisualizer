@@ -416,7 +416,8 @@
                 <param>
                     <defname>obj</defname>
                 </param>
-                <initializer>(<ref refid="gntmenu_8h_1ab0fecc24bb841a7607a9f61cd6c9be3b" kindref="member">GNT_MENU</ref>
+                <initializer>(
+                    <ref refid="gntmenu_8h_1ab0fecc24bb841a7607a9f61cd6c9be3b" kindref="member">GNT_MENU</ref>
                     (obj)-&gt;priv.flags)
                 </initializer>
                 <briefdescription>
@@ -776,7 +777,8 @@
             </codeline>
             <codeline lineno="13" refid="gntmenu_8h_1a98cb079513150ee78c9e6e6f3cb1477e" refkind="member">
                 <highlight class="preprocessor"></highlight>
-                <highlight class="preprocessor">#define<sp/>GNT_MENU_GET_CLASS(obj)<sp/>
+                <highlight class="preprocessor">#define<sp/>GNT_MENU_GET_CLASS(obj)
+                    <sp/>
                     (G_TYPE_INSTANCE_GET_CLASS((obj),<sp/>GNT_TYPE_MENU,<sp/>GntMenuClass))
                 </highlight>
             </codeline>
@@ -1037,7 +1039,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>This<sp/>will<sp/>keep<sp/>track<sp/>of<sp/>its<sp/>immediate<sp/>
+                <highlight class="comment">/*<sp/>This<sp/>will<sp/>keep<sp/>track<sp/>of<sp/>its<sp/>immediate
+                    <sp/>
                     submenu<sp/>which<sp/>is<sp/>visible<sp/>so<sp/>that
                 </highlight>
             </codeline>
@@ -1169,7 +1172,8 @@
             <codeline lineno="64">
                 <highlight class="normal">
                     <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
-                    <sp/>*<ref refid="gntmenu_8c_1a3379ec1f4204c57d58c5a56eeb97bc1f" kindref="member">gnt_menu_new</ref>
+                    <sp/>*
+                    <ref refid="gntmenu_8c_1a3379ec1f4204c57d58c5a56eeb97bc1f" kindref="member">gnt_menu_new</ref>
                     (
                     <ref refid="gntmenu_8h_1adcb0a7441f0114f4921e54fce8ff659d" kindref="member">GntMenuType</ref>
                     <sp/>type);

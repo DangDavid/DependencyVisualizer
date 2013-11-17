@@ -1183,7 +1183,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>This<sp/>is<sp/>the<sp/>next<sp/>byte<sp/>of<sp/>the<sp/>last<sp/>
+                <highlight class="comment">/*<sp/>This<sp/>is<sp/>the<sp/>next<sp/>byte<sp/>of<sp/>the<sp/>last
+                    <sp/>
                     character<sp/>of<sp/>this<sp/>segment<sp/>*/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -1253,7 +1254,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>The<sp/>current<sp/>length<sp/>of<sp/>the<sp/>line<sp/>so<sp/>far<sp/>
+                <highlight class="comment">/*<sp/>The<sp/>current<sp/>length<sp/>of<sp/>the<sp/>line<sp/>so<sp/>far
+                    <sp/>
                     (ie.<sp/>onscreen<sp/>width)<sp/>*/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -1276,7 +1278,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>TRUE<sp/>if<sp/>it&apos;s<sp/>an<sp/>overflow<sp/>from<sp/>prev.<sp/>
+                <highlight class="comment">/*<sp/>TRUE<sp/>if<sp/>it&apos;s<sp/>an<sp/>overflow<sp/>from<sp/>prev.
+                    <sp/>
                     line<sp/>*/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -1476,7 +1479,8 @@
                 <highlight class="keywordflow">for</highlight>
                 <highlight class="normal"><sp/>(i<sp/>=<sp/>0,<sp/>lines<sp/>=<sp/>view-&gt;<ref
                         refid="struct___gnt_text_view_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>;
-                    <sp/>i<sp/>&lt;<sp/>widget-&gt;priv.height<sp/>&amp;&amp;<sp/>lines;<sp/>i++,<sp/>lines<sp/>=<sp/>
+                    <sp/>i<sp/>&lt;<sp/>widget-&gt;priv.height<sp/>&amp;&amp;<sp/>lines;<sp/>i++,<sp/>lines<sp/>=
+                    <sp/>
                     lines-&gt;next)
                 </highlight>
             </codeline>
@@ -1677,8 +1681,10 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
-                <highlight class="normal"><sp/>(select_start<sp/>&lt;<sp/>view-&gt;<ref
-                        refid="libgnt_2gntclipboard_8c_1ab3d21fdbc8b6f00959a92ae08f904c5d" kindref="member">string</ref>
+                <highlight class="normal"><sp/>(select_start<sp/>&lt;<sp/>view-&gt;
+                    <ref
+                            refid="libgnt_2gntclipboard_8c_1ab3d21fdbc8b6f00959a92ae08f904c5d" kindref="member">string
+                    </ref>
                     -&gt;str<sp/>+<sp/>seg-&gt;
                     <ref refid="struct_gnt_text_segment_1a37722a150250e2a5a98e5e0d11e53449" kindref="member">start</ref>
                     <sp/>&amp;&amp;<sp/>select_end<sp/>&gt;<sp/>view-&gt;<ref
@@ -1802,8 +1808,10 @@
                         refid="struct___gnt_text_view_1a0b8c2528f8c99f1e1e094b8f931e583f" kindref="member">string</ref>-&gt;str
                     <sp/>+<sp/>seg-&gt;
                     <ref refid="struct_gnt_text_segment_1a37722a150250e2a5a98e5e0d11e53449" kindref="member">start</ref>
-                    <sp/>&amp;&amp;<sp/>select_start<sp/>&lt;=<sp/>view-&gt;<ref
-                        refid="libgnt_2gntclipboard_8c_1ab3d21fdbc8b6f00959a92ae08f904c5d" kindref="member">string</ref>
+                    <sp/>&amp;&amp;<sp/>select_start<sp/>&lt;=<sp/>view-&gt;
+                    <ref
+                            refid="libgnt_2gntclipboard_8c_1ab3d21fdbc8b6f00959a92ae08f904c5d" kindref="member">string
+                    </ref>
                     -&gt;str<sp/>+<sp/>seg-&gt;<ref refid="struct_gnt_text_segment_1abce9f5dc9c83f2639b72024fdee5d388"
                                                     kindref="member">end</ref>)<sp/>||
                 </highlight>
@@ -1825,12 +1833,16 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>(select_end<sp/>&lt;=<sp/>view-&gt;<ref
-                        refid="libgnt_2gntclipboard_8c_1ab3d21fdbc8b6f00959a92ae08f904c5d" kindref="member">string</ref>
+                    <sp/>(select_end<sp/>&lt;=<sp/>view-&gt;
+                    <ref
+                            refid="libgnt_2gntclipboard_8c_1ab3d21fdbc8b6f00959a92ae08f904c5d" kindref="member">string
+                    </ref>
                     -&gt;str<sp/>+<sp/>seg-&gt;
                     <ref refid="struct_gnt_text_segment_1abce9f5dc9c83f2639b72024fdee5d388" kindref="member">end</ref>
-                    <sp/>&amp;&amp;<sp/>select_start<sp/>&lt;=<sp/>view-&gt;<ref
-                        refid="libgnt_2gntclipboard_8c_1ab3d21fdbc8b6f00959a92ae08f904c5d" kindref="member">string</ref>
+                    <sp/>&amp;&amp;<sp/>select_start<sp/>&lt;=<sp/>view-&gt;
+                    <ref
+                            refid="libgnt_2gntclipboard_8c_1ab3d21fdbc8b6f00959a92ae08f904c5d" kindref="member">string
+                    </ref>
                     -&gt;str<sp/>+<sp/>seg-&gt;<ref refid="struct_gnt_text_segment_1a37722a150250e2a5a98e5e0d11e53449"
                                                     kindref="member">start</ref>)))<sp/>{
                 </highlight>
@@ -1960,7 +1972,8 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
-                <highlight class="normal"><sp/>(cur<sp/>&gt;=<sp/>select_start<sp/>&amp;&amp;<sp/>cur<sp/>&lt;=<sp/>
+                <highlight class="normal"><sp/>(cur<sp/>&gt;=<sp/>select_start<sp/>&amp;&amp;<sp/>cur<sp/>&lt;=
+                    <sp/>
                     select_end)
                 </highlight>
             </codeline>
@@ -2503,7 +2516,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>position<sp/>=<sp/>(rows<sp/>-<sp/>showing)<sp/>*<sp/>up<sp/>/<sp/>MAX(1,<sp/>up<sp/>+<sp/>
+                    <sp/>position<sp/>=<sp/>(rows<sp/>-<sp/>showing)<sp/>*<sp/>up<sp/>/<sp/>MAX(1,<sp/>up<sp/>+
+                    <sp/>
                     down);
                 </highlight>
             </codeline>
@@ -2518,7 +2532,8 @@
                     <sp/>
                     <sp/>position<sp/>=<sp/>MAX((lines<sp/>!=
                     <sp/>
-                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>),<sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>),
+                    <sp/>
                     position);
                 </highlight>
             </codeline>
@@ -4107,8 +4122,10 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>select_start<sp/>=<sp/>gnt_text_view_get_p(<ref
-                        refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW</ref>
+                    <sp/>select_start<sp/>=<sp/>gnt_text_view_get_p(
+                    <ref
+                            refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW
+                    </ref>
                     (widget),<sp/>x<sp/>-<sp/>widget-&gt;<ref
                         refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.<ref
                         refid="struct___gnt_widget_priv_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,
@@ -4194,8 +4211,10 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>select_end<sp/>=<sp/>gnt_text_view_get_p(<ref
-                        refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW</ref>
+                    <sp/>select_end<sp/>=<sp/>gnt_text_view_get_p(
+                    <ref
+                            refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW
+                    </ref>
                     (widget),<sp/>x<sp/>-<sp/>widget-&gt;<ref
                         refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.<ref
                         refid="struct___gnt_widget_priv_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,
@@ -4363,7 +4382,8 @@
                     <sp/>
                     <sp/>
                     <sp/>clip<sp/>=<sp/>select_word_text(<ref refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6"
-                                                              kindref="member">GNT_TEXT_VIEW</ref>(widget),<sp/>
+                                                              kindref="member">GNT_TEXT_VIEW</ref>(widget),
+                    <sp/>
                     select_start);
                 </highlight>
             </codeline>
@@ -5227,8 +5247,10 @@
                     <sp/>
                     <sp/>
                     <ref refid="gnttextview_8c_1a491ccc844a5ec91e80108ecb40b105e7" kindref="member">
-                        gnt_text_view_append_text_with_flags</ref>(view,<sp/>start,<sp/>seg-&gt;<ref
-                        refid="struct_gnt_text_segment_1ab0d528a419ad237d1000618ed75adcbd" kindref="member">tvflag</ref>
+                        gnt_text_view_append_text_with_flags</ref>(view,<sp/>start,<sp/>seg-&gt;
+                    <ref
+                            refid="struct_gnt_text_segment_1ab0d528a419ad237d1000618ed75adcbd" kindref="member">tvflag
+                    </ref>
                     );
                 </highlight>
             </codeline>
@@ -5339,7 +5361,8 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">while</highlight>
-                <highlight class="normal"><sp/>(((<ref refid="struct_gnt_text_line" kindref="compound">GntTextLine</ref>
+                <highlight class="normal"><sp/>(((
+                    <ref refid="struct_gnt_text_line" kindref="compound">GntTextLine</ref>
                     *)list-&gt;data)-&gt;soft)
                 </highlight>
             </codeline>
@@ -5483,8 +5506,10 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(w<sp/>!=<sp/>widget-&gt;<ref
-                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.<ref
-                        refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
                     )<sp/>{
                 </highlight>
             </codeline>
@@ -5751,7 +5776,8 @@
                 </highlight>
             </codeline>
             <codeline lineno="407">
-                <highlight class="comment"><sp/>
+                <highlight class="comment">
+                    <sp/>
                     *****************************************************************************/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -7387,8 +7413,10 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>seg<sp/>=<sp/>g_list_last(line-&gt;<ref
-                        refid="struct_gnt_text_line_1a37d9dcce80cfe95cf585d413711859f1" kindref="member">segments</ref>
+                    <sp/>seg<sp/>=<sp/>g_list_last(line-&gt;
+                    <ref
+                            refid="struct_gnt_text_line_1a37d9dcce80cfe95cf585d413711859f1" kindref="member">segments
+                    </ref>
                     )-&gt;data;
                 </highlight>
             </codeline>
@@ -8962,7 +8990,8 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(strcmp(tag-&gt;<ref
-                        refid="struct_gnt_text_tag_1a5ac083a645d964373f022d03df4849c8" kindref="member">name</ref>,<sp/>
+                        refid="struct_gnt_text_tag_1a5ac083a645d964373f022d03df4849c8" kindref="member">name</ref>,
+                    <sp/>
                     name)<sp/>==<sp/>0)<sp/>{
                 </highlight>
             </codeline>
@@ -10515,7 +10544,8 @@
                     <sp/>
                     <sp/>g_printerr(
                 </highlight>
-                <highlight class="stringliteral">&quot;WTF!<sp/>This<sp/>needs<sp/>to<sp/>be<sp/>handled<sp/>
+                <highlight class="stringliteral">&quot;WTF!<sp/>This<sp/>needs<sp/>to<sp/>be<sp/>handled
+                    <sp/>
                     properly!!\n&quot;
                 </highlight>
                 <highlight class="normal">);</highlight>
@@ -10842,7 +10872,8 @@
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(strcmp(key,
                     <sp/>
-                    <ref refid="gntkeys_8h_1ae6adb88682096b0de8f63153de464b69" kindref="member">GNT_KEY_PGUP</ref>)<sp/>
+                    <ref refid="gntkeys_8h_1ae6adb88682096b0de8f63153de464b69" kindref="member">GNT_KEY_PGUP</ref>)
+                    <sp/>
                     ==<sp/>0)<sp/>{
                 </highlight>
             </codeline>
@@ -10913,7 +10944,8 @@
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(strcmp(key,
                     <sp/>
-                    <ref refid="gntkeys_8h_1a9f1051b5041b0f49305a57079dce9f8f" kindref="member">GNT_KEY_DOWN</ref>)<sp/>
+                    <ref refid="gntkeys_8h_1a9f1051b5041b0f49305a57079dce9f8f" kindref="member">GNT_KEY_DOWN</ref>)
+                    <sp/>
                     ==<sp/>0)<sp/>{
                 </highlight>
             </codeline>

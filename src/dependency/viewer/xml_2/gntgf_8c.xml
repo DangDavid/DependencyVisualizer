@@ -509,7 +509,8 @@
                 <name>prefs</name>
                 <initializer>=
                     {
-                    {<ref refid="gntgf_8c_1a6b2e78497287f48980258226509570f9" kindref="member">PREFS_EVENT_SIGNONF</ref>
+                    {
+                    <ref refid="gntgf_8c_1a6b2e78497287f48980258226509570f9" kindref="member">PREFS_EVENT_SIGNONF</ref>
                     , N_(&quot;Buddy signs on/off&quot;)},
                     {PREFS_EVENT_IM_MSG, N_(&quot;You receive an IM&quot;)},
                     {PREFS_EVENT_CHAT_MSG, N_(&quot;Someone speaks in a chat&quot;)},
@@ -1546,7 +1547,8 @@
                     <sp/>
                     <ref refid="gntwidget_8c_1a614616c0edfd4ea660cbfd23eaaee7ec" kindref="member">
                         gnt_widget_get_position</ref>(toast-&gt;<ref
-                        refid="struct_gnt_toast_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>,<sp/>
+                        refid="struct_gnt_toast_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>,
+                    <sp/>
                     &amp;x,<sp/>&amp;y);
                 </highlight>
             </codeline>
@@ -1685,7 +1687,8 @@
                 <highlight class="normal">,
                     <sp/>
                 </highlight>
-                <highlight class="stringliteral">&quot;Could<sp/>not<sp/>set<sp/>urgent<sp/>to<sp/>the<sp/>window:<sp/>
+                <highlight class="stringliteral">&quot;Could<sp/>not<sp/>set<sp/>urgent<sp/>to<sp/>the<sp/>window:
+                    <sp/>
                     %s.\n&quot;
                 </highlight>
                 <highlight class="normal">,<sp/>buffer);
@@ -2948,8 +2951,10 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
-                <highlight class="normal"><sp/>(purple_prefs_get_bool(<ref
-                        refid="gntgf_8c_1a1e2d733db6164cf0a753cc1492abf5c0" kindref="member">PREFS_EVENT_CHAT_NICK</ref>
+                <highlight class="normal"><sp/>(purple_prefs_get_bool(
+                    <ref
+                            refid="gntgf_8c_1a1e2d733db6164cf0a753cc1492abf5c0" kindref="member">PREFS_EVENT_CHAT_NICK
+                    </ref>
                     )<sp/>&amp;&amp;
                 </highlight>
             </codeline>
@@ -2997,8 +3002,10 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
-                <highlight class="normal"><sp/>(purple_prefs_get_bool(<ref
-                        refid="gntgf_8c_1adc6e8501b85b30688878038fda26fc51" kindref="member">PREFS_EVENT_CHAT_MSG</ref>
+                <highlight class="normal"><sp/>(purple_prefs_get_bool(
+                    <ref
+                            refid="gntgf_8c_1adc6e8501b85b30688878038fda26fc51" kindref="member">PREFS_EVENT_CHAT_MSG
+                    </ref>
                     ))
                 </highlight>
             </codeline>
@@ -3489,7 +3496,8 @@
                     <sp/>
                     <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
                     <sp/>*<ref refid="gntdebug_8c_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>,
-                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,
+                    <sp/>
                     *check;
                 </highlight>
             </codeline>
@@ -3770,7 +3778,8 @@
                     <sp/>
                     <ref refid="gntcheckbox_8c_1a8804e6c777345a90d50496f427502262" kindref="member">
                         gnt_check_box_set_checked</ref>(<ref refid="gntcheckbox_8h_1a95d353f78d9d1038279ff939720b6438"
-                                                             kindref="member">GNT_CHECK_BOX</ref>(check),<sp/>
+                                                             kindref="member">GNT_CHECK_BOX</ref>(check),
+                    <sp/>
                     purple_prefs_get_bool(<ref refid="gntgf_8c_1a7d715b3e3a2580506b9cd4a8b6e1a3f5" kindref="member">
                     PREFS_BEEP</ref>));
                 </highlight>
@@ -3831,7 +3840,8 @@
                     <sp/>
                     <ref refid="gntcheckbox_8c_1a8804e6c777345a90d50496f427502262" kindref="member">
                         gnt_check_box_set_checked</ref>(<ref refid="gntcheckbox_8h_1a95d353f78d9d1038279ff939720b6438"
-                                                             kindref="member">GNT_CHECK_BOX</ref>(check),<sp/>
+                                                             kindref="member">GNT_CHECK_BOX</ref>(check),
+                    <sp/>
                     purple_prefs_get_bool(PREFS_URGENT));
                 </highlight>
             </codeline>
@@ -4286,7 +4296,8 @@
             </codeline>
             <codeline lineno="410">
                 <highlight class="normal">PURPLE_INIT_PLUGIN(<ref refid="gntgf_8c_1a913f5012c22fe2adbf2c6753125536ca"
-                                                                  kindref="member">PLUGIN_STATIC_NAME</ref>,<sp/>
+                                                                  kindref="member">PLUGIN_STATIC_NAME</ref>,
+                    <sp/>
                     init_plugin,<sp/>info)
                 </highlight>
             </codeline>

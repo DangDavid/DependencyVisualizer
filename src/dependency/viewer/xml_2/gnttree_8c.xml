@@ -3232,8 +3232,10 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordtype">char</highlight>
-                <highlight class="normal"><sp/>*one<sp/>=<sp/>g_utf8_casefold(((<ref refid="struct___gnt_tree_col"
-                                                                                     kindref="compound">GntTreeCol</ref>
+                <highlight class="normal"><sp/>*one<sp/>=<sp/>g_utf8_casefold(((
+                    <ref refid="struct___gnt_tree_col"
+                         kindref="compound">GntTreeCol
+                    </ref>
                     *)row-&gt;<ref refid="struct___gnt_tree_row_1a6352274d3f344f71360c408b230b35ba" kindref="member">
                         columns</ref>-&gt;data)-&gt;text,<sp/>-1);
                 </highlight>
@@ -4267,7 +4269,8 @@
                 </highlight>
             </codeline>
             <codeline lineno="193">
-                <highlight class="comment"><sp/>*<sp/>If<sp/>a<sp/>is<sp/>&apos;above&apos;<sp/>b,<sp/>then<sp/>the<sp/>
+                <highlight class="comment"><sp/>*<sp/>If<sp/>a<sp/>is<sp/>&apos;above&apos;<sp/>b,<sp/>then<sp/>the
+                    <sp/>
                     distance<sp/>is<sp/>positive<sp/>*/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -4300,7 +4303,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>First<sp/>get<sp/>the<sp/>distance<sp/>from<sp/>a<sp/>to<sp/>the<sp/>
+                <highlight class="comment">/*<sp/>First<sp/>get<sp/>the<sp/>distance<sp/>from<sp/>a<sp/>to<sp/>the
+                    <sp/>
                     root.
                 </highlight>
             </codeline>
@@ -4562,8 +4566,10 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">while</highlight>
-                <highlight class="normal"><sp/>(lastvisible<sp/>&amp;&amp;<sp/>tree-&gt;<ref
-                        refid="struct___gnt_tree_1a66b78c699de0941028a50500d46eaafb" kindref="member">columns</ref>
+                <highlight class="normal"><sp/>(lastvisible<sp/>&amp;&amp;<sp/>tree-&gt;
+                    <ref
+                            refid="struct___gnt_tree_1a66b78c699de0941028a50500d46eaafb" kindref="member">columns
+                    </ref>
                     [lastvisible].<ref
                             refid="struct___gnt_tree_1_1___gnt_tree_col_info_1ad52193bea764f6adf8601489f8d9e2a2"
                             kindref="member">invisible</ref>)
@@ -4653,8 +4659,10 @@
                 <highlight class="normal"><sp/>len<sp/>=
                     <sp/>
                     <ref refid="gntutils_8c_1a8accc80ef45b27fb238d66236f161a8a" kindref="member">
-                        gnt_util_onscreen_width</ref>(col-&gt;<ref
-                            refid="struct___gnt_tree_col_1a5633b1433389cec21ade3811bbe9ca5b" kindref="member">text</ref>
+                        gnt_util_onscreen_width</ref>(col-&gt;
+                    <ref
+                            refid="struct___gnt_tree_col_1a5633b1433389cec21ade3811bbe9ca5b" kindref="member">text
+                    </ref>
                     ,
                     <sp/>
                     <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
@@ -5800,7 +5808,8 @@
             </codeline>
             <codeline lineno="304">
                 <highlight class="normal"></highlight>
-                <highlight class="preprocessor">#define<sp/>NEXT_X<sp/>x<sp/>+=<sp/>tree-&gt;columns[i].width<sp/>+<sp/>
+                <highlight class="preprocessor">#define<sp/>NEXT_X<sp/>x<sp/>+=<sp/>tree-&gt;columns[i].width<sp/>+
+                    <sp/>
                     (i<sp/>&gt;<sp/>0<sp/>?<sp/>1<sp/>:<sp/>0)
                 </highlight>
             </codeline>
@@ -5976,8 +5985,10 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
-                <highlight class="normal"><sp/>(!tree-&gt;<ref
-                        refid="struct___gnt_tree_1a66b78c699de0941028a50500d46eaafb" kindref="member">columns</ref>
+                <highlight class="normal"><sp/>(!tree-&gt;
+                    <ref
+                            refid="struct___gnt_tree_1a66b78c699de0941028a50500d46eaafb" kindref="member">columns
+                    </ref>
                     [i+1].
                     <ref refid="struct___gnt_tree_1_1___gnt_tree_col_info_1ad52193bea764f6adf8601489f8d9e2a2"
                          kindref="member">invisible
@@ -6349,7 +6360,8 @@
                     <sp/>
                     <sp/>
                     <sp/>mvwhline(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
-                                                  kindref="member">window</ref>,<sp/>pos<sp/>+<sp/>1,<sp/>pos,<sp/>
+                                                  kindref="member">window</ref>,<sp/>pos<sp/>+<sp/>1,<sp/>pos,
+                    <sp/>
                     ACS_HLINE<sp/>|<sp/>COLOR_PAIR(<ref
                         refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aade44b623e10d9f44be58a2784aa567d"
                         kindref="member">GNT_COLOR_NORMAL</ref>),
@@ -6439,7 +6451,8 @@
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
                 <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>tree-&gt;<ref
-                        refid="struct___gnt_tree_1a87e8ca5d4bb7a89c76b4393fa61d96c6" kindref="member">ncol</ref>;<sp/>
+                        refid="struct___gnt_tree_1a87e8ca5d4bb7a89c76b4393fa61d96c6" kindref="member">ncol</ref>;
+                    <sp/>
                     i++)
                 </highlight>
             </codeline>
@@ -6873,7 +6886,8 @@
                     <sp/>
                     <sp/>
                     <sp/>up<sp/>=<sp/>get_distance(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">top</ref>,<sp/>
+                        refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">top</ref>,
+                    <sp/>
                     tree-&gt;<ref refid="struct___gnt_tree_1a9c79c3f5d45f06a40ed52c0434d249b4" kindref="member">
                     current</ref>);
                 </highlight>
@@ -7207,7 +7221,8 @@
                 </highlight>
                 <highlight class="keywordtype">char</highlight>
                 <highlight class="normal">*)<ref refid="gntutils_8c_1a35086b64cb7a2b574ab7a7fafecdeed5"
-                                                 kindref="member">gnt_util_onscreen_width_to_pointer</ref>(str,<sp/>
+                                                 kindref="member">gnt_util_onscreen_width_to_pointer</ref>(str,
+                    <sp/>
                     scrcol,<sp/>&amp;wr);
                 </highlight>
             </codeline>
@@ -7987,7 +8002,8 @@
                     <sp/>
                     <sp/>get_next_n_opt(tree-&gt;<ref refid="struct___gnt_tree_1a10173a9ecf9cd73697beb606e50b8c10"
                                                       kindref="member">root</ref>,<sp/>g_list_length(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>),<sp/>
+                        refid="struct___gnt_tree_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>),
+                    <sp/>
                     &amp;total);
                 </highlight>
             </codeline>
@@ -8040,7 +8056,8 @@
                     <sp/>
                     <sp/>
                     <sp/>up<sp/>=<sp/>get_distance(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a10173a9ecf9cd73697beb606e50b8c10" kindref="member">root</ref>,<sp/>
+                        refid="struct___gnt_tree_1a10173a9ecf9cd73697beb606e50b8c10" kindref="member">root</ref>,
+                    <sp/>
                     tree-&gt;<ref refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">
                     top</ref>);
                 </highlight>
@@ -8069,7 +8086,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>position<sp/>=<sp/>(rows<sp/>-<sp/>showing)<sp/>*<sp/>up<sp/>/<sp/>MAX(1,<sp/>up<sp/>+<sp/>
+                    <sp/>position<sp/>=<sp/>(rows<sp/>-<sp/>showing)<sp/>*<sp/>up<sp/>/<sp/>MAX(1,<sp/>up<sp/>+
+                    <sp/>
                     down);
                 </highlight>
             </codeline>
@@ -8405,7 +8423,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>If<sp/>there&apos;s<sp/>a<sp/>search-text,<sp/>show<sp/>it<sp/>in<sp/>
+                <highlight class="comment">/*<sp/>If<sp/>there&apos;s<sp/>a<sp/>search-text,<sp/>show<sp/>it<sp/>in
+                    <sp/>
                     the<sp/>bottom<sp/>of<sp/>the<sp/>tree<sp/>*/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -8721,7 +8740,8 @@
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
                 <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>tree-&gt;<ref
-                        refid="struct___gnt_tree_1a87e8ca5d4bb7a89c76b4393fa61d96c6" kindref="member">ncol</ref>;<sp/>
+                        refid="struct___gnt_tree_1a87e8ca5d4bb7a89c76b4393fa61d96c6" kindref="member">ncol</ref>;
+                    <sp/>
                     i++)
                 </highlight>
             </codeline>
@@ -9618,7 +9638,8 @@
                 </highlight>
                 <highlight class="keywordtype">int</highlight>
                 <highlight class="normal"><sp/>dist<sp/>=<sp/>get_distance(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">top</ref>,<sp/>
+                        refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">top</ref>,
+                    <sp/>
                     tree-&gt;<ref refid="struct___gnt_tree_1a9c79c3f5d45f06a40ed52c0434d249b4" kindref="member">
                         current</ref>);
                 </highlight>
@@ -9880,7 +9901,8 @@
                 </highlight>
                 <highlight class="keywordtype">int</highlight>
                 <highlight class="normal"><sp/>dist<sp/>=<sp/>get_distance(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">top</ref>,<sp/>
+                        refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">top</ref>,
+                    <sp/>
                     tree-&gt;<ref refid="struct___gnt_tree_1a9c79c3f5d45f06a40ed52c0434d249b4" kindref="member">
                         current</ref>);
                 </highlight>
@@ -9895,7 +9917,8 @@
                     <sp/>
                     <sp/>
                     <sp/>row<sp/>=<sp/>get_prev_n(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">top</ref>,<sp/>
+                        refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">top</ref>,
+                    <sp/>
                     widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">
                     priv</ref>.
                     <ref refid="struct___gnt_widget_priv_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height
@@ -10140,7 +10163,8 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(tree-&gt;<ref
-                        refid="struct___gnt_tree_1af60c480948626e1fb885ba034cc26e63" kindref="member">search</ref>)<sp/>
+                        refid="struct___gnt_tree_1af60c480948626e1fb885ba034cc26e63" kindref="member">search</ref>)
+                    <sp/>
                     {
                 </highlight>
             </codeline>
@@ -10381,7 +10405,8 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(tree-&gt;<ref
-                        refid="struct___gnt_tree_1af60c480948626e1fb885ba034cc26e63" kindref="member">search</ref>)<sp/>
+                        refid="struct___gnt_tree_1af60c480948626e1fb885ba034cc26e63" kindref="member">search</ref>)
+                    <sp/>
                     {
                 </highlight>
             </codeline>
@@ -10428,7 +10453,8 @@
                     <sp/>tree-&gt;
                     <ref refid="struct___gnt_tree_1af60c480948626e1fb885ba034cc26e63" kindref="member">search</ref>
                     <sp/>=<sp/>g_string_append_c(tree-&gt;<ref
-                        refid="struct___gnt_tree_1af60c480948626e1fb885ba034cc26e63" kindref="member">search</ref>,<sp/>
+                        refid="struct___gnt_tree_1af60c480948626e1fb885ba034cc26e63" kindref="member">search</ref>,
+                    <sp/>
                     *text);
                 </highlight>
             </codeline>
@@ -11058,7 +11084,8 @@
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
                 <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>tree-&gt;<ref
-                        refid="struct___gnt_tree_1a87e8ca5d4bb7a89c76b4393fa61d96c6" kindref="member">ncol</ref>;<sp/>
+                        refid="struct___gnt_tree_1a87e8ca5d4bb7a89c76b4393fa61d96c6" kindref="member">ncol</ref>;
+                    <sp/>
                     i++)
                 </highlight>
             </codeline>
@@ -11376,7 +11403,8 @@
                     <sp/>
                     <sp/>
                     <sp/>row<sp/>=<sp/>get_next_n(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">top</ref>,<sp/>
+                        refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">top</ref>,
+                    <sp/>
                     pos);
                 </highlight>
             </codeline>
@@ -11831,7 +11859,8 @@
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
                 <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>tree-&gt;<ref
-                        refid="struct___gnt_tree_1a87e8ca5d4bb7a89c76b4393fa61d96c6" kindref="member">ncol</ref>;<sp/>
+                        refid="struct___gnt_tree_1a87e8ca5d4bb7a89c76b4393fa61d96c6" kindref="member">ncol</ref>;
+                    <sp/>
                     ++i)
                 </highlight>
             </codeline>
@@ -13407,7 +13436,8 @@
                 </highlight>
             </codeline>
             <codeline lineno="924">
-                <highlight class="comment"><sp/>
+                <highlight class="comment">
+                    <sp/>
                     *****************************************************************************/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -14124,7 +14154,8 @@
             <codeline lineno="975">
                 <highlight class="normal">
                     <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
-                    <sp/>*<ref refid="gnttree_8c_1a9970244840eebd4cf70c0fbd17e998af" kindref="member">gnt_tree_new</ref>
+                    <sp/>*
+                    <ref refid="gnttree_8c_1a9970244840eebd4cf70c0fbd17e998af" kindref="member">gnt_tree_new</ref>
                     ()
                 </highlight>
             </codeline>
@@ -14440,7 +14471,8 @@
                     <sp/>
                     <sp/>
                     <sp/>row<sp/>=<sp/>get_prev_n(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">top</ref>,<sp/>
+                        refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">top</ref>,
+                    <sp/>
                     -count);
                 </highlight>
             </codeline>
@@ -14690,7 +14722,8 @@
                     <sp/>
                     <sp/>
                     <sp/>row<sp/>=<sp/>g_hash_table_lookup(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,<sp/>
+                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,
+                    <sp/>
                     parent);
                 </highlight>
             </codeline>
@@ -14984,7 +15017,8 @@
                     <sp/>
                     <sp/>
                     <sp/>row<sp/>=<sp/>g_hash_table_lookup(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,<sp/>
+                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,
+                    <sp/>
                     key);
                 </highlight>
             </codeline>
@@ -15007,7 +15041,8 @@
                     <sp/>
                     <sp/>
                     <sp/>current<sp/>=<sp/>g_list_index(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>,<sp/>
+                        refid="struct___gnt_tree_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>,
+                    <sp/>
                     key);
                 </highlight>
             </codeline>
@@ -15245,7 +15280,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>row-&gt;prev<sp/>cannot<sp/>be<sp/>NULL<sp/>at<sp/>this<sp/>point<sp/>
+                <highlight class="comment">/*<sp/>row-&gt;prev<sp/>cannot<sp/>be<sp/>NULL<sp/>at<sp/>this<sp/>point
+                    <sp/>
                     */
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -15496,7 +15532,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>row<sp/>was<sp/>the<sp/>first<sp/>child<sp/>of<sp/>its<sp/>parent<sp/>
+                <highlight class="comment">/*<sp/>row<sp/>was<sp/>the<sp/>first<sp/>child<sp/>of<sp/>its<sp/>parent
+                    <sp/>
                     */
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -15745,7 +15782,8 @@
                     <sp/>tree-&gt;
                     <ref refid="struct___gnt_tree_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>
                     <sp/>=<sp/>g_list_reposition_child(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>,<sp/>
+                        refid="struct___gnt_tree_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>,
+                    <sp/>
                     current,<sp/>newp);
                 </highlight>
             </codeline>
@@ -16015,7 +16053,8 @@
                     <sp/>
                     <sp/>
                     <sp/>pr<sp/>=<sp/>g_hash_table_lookup(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,<sp/>
+                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,
+                    <sp/>
                     bigbro);
                 </highlight>
             </codeline>
@@ -16195,7 +16234,8 @@
                     <sp/>
                     <sp/>
                     <sp/>position<sp/>=<sp/>g_list_index(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>,<sp/>
+                        refid="struct___gnt_tree_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>,
+                    <sp/>
                     bigbro);
                 </highlight>
             </codeline>
@@ -16277,7 +16317,8 @@
                     <sp/>
                     <sp/>
                     <sp/>pr<sp/>=<sp/>g_hash_table_lookup(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,<sp/>
+                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,
+                    <sp/>
                     parent);
                 </highlight>
             </codeline>
@@ -16433,7 +16474,8 @@
                     <sp/>
                     <sp/>
                     <sp/>position<sp/>=<sp/>g_list_index(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>,<sp/>
+                        refid="struct___gnt_tree_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>,
+                    <sp/>
                     parent);
                 </highlight>
             </codeline>
@@ -16692,7 +16734,8 @@
                     <sp/>tree-&gt;
                     <ref refid="struct___gnt_tree_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>
                     <sp/>=<sp/>g_list_insert(tree-&gt;<ref refid="struct___gnt_tree_1a4dd2ca5f40d57a1f17e9130154bdfe88"
-                                                           kindref="member">list</ref>,<sp/>key,<sp/>position<sp/>+<sp/>
+                                                           kindref="member">list</ref>,<sp/>key,<sp/>position<sp/>+
+                    <sp/>
                     1);
                 </highlight>
             </codeline>
@@ -16804,7 +16847,8 @@
                     <ref refid="struct___gnt_tree_row" kindref="compound">GntTreeRow</ref>
                     <sp/>*pr<sp/>=
                     <sp/>
-                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,<sp/>*br<sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,<sp/>*br
+                    <sp/>
                     =
                     <sp/>
                     <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
@@ -16834,7 +16878,8 @@
                     <sp/>
                     <sp/>
                     <sp/>pr<sp/>=<sp/>g_hash_table_lookup(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,<sp/>
+                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,
+                    <sp/>
                     parent);
                 </highlight>
             </codeline>
@@ -17282,7 +17327,8 @@
                     <sp/>
                     <ref refid="struct___gnt_tree_row" kindref="compound">GntTreeRow</ref>
                     <sp/>*row<sp/>=<sp/>g_hash_table_lookup(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,<sp/>
+                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,
+                    <sp/>
                     key);
                 </highlight>
             </codeline>
@@ -17301,7 +17347,8 @@
                 <highlight class="normal"><sp/>depth<sp/>=<sp/>0;
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>Only<sp/>redraw<sp/>after<sp/>all<sp/>child<sp/>nodes<sp/>are<sp/>
+                <highlight class="comment">/*<sp/>Only<sp/>redraw<sp/>after<sp/>all<sp/>child<sp/>nodes<sp/>are
+                    <sp/>
                     removed<sp/>*/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -17478,7 +17525,8 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(get_distance(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">top</ref>,<sp/>
+                        refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">top</ref>,
+                    <sp/>
                     row)<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>get_distance(row,<sp/>tree-&gt;<ref
                             refid="struct___gnt_tree_1a7c9feb7b9599a57e21bef167bd79a82c" kindref="member">bottom</ref>)
                     <sp/>&gt;=<sp/>0)
@@ -18174,7 +18222,8 @@
                     <sp/>
                     <sp/>
                     <sp/>g_hash_table_foreach_remove(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,<sp/>
+                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,
+                    <sp/>
                     (GHRFunc)return_true,<sp/>tree);
                 </highlight>
             </codeline>
@@ -18244,7 +18293,8 @@
                 </highlight>
                 <highlight class="keywordflow">return</highlight>
                 <highlight class="normal"><sp/>get_distance(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">top</ref>,<sp/>
+                        refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">top</ref>,
+                    <sp/>
                     tree-&gt;<ref refid="struct___gnt_tree_1a9c79c3f5d45f06a40ed52c0434d249b4" kindref="member">
                         current</ref>)<sp/>+
                 </highlight>
@@ -18347,7 +18397,8 @@
                     <sp/>
                     <sp/>
                     <sp/>row<sp/>=<sp/>g_hash_table_lookup(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,<sp/>
+                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,
+                    <sp/>
                     key);
                 </highlight>
             </codeline>
@@ -18430,7 +18481,8 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(get_distance(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">top</ref>,<sp/>
+                        refid="struct___gnt_tree_1a586a3cfe60e0fafe34d17544c92b53bc" kindref="member">top</ref>,
+                    <sp/>
                     row)<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>get_distance(row,<sp/>tree-&gt;<ref
                             refid="struct___gnt_tree_1a7c9feb7b9599a57e21bef167bd79a82c" kindref="member">bottom</ref>)
                     <sp/>&gt;=<sp/>0)
@@ -18509,7 +18561,8 @@
                     <sp/>
                     <sp/>
                     <sp/>r<sp/>=<sp/>g_hash_table_lookup(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,<sp/>
+                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,
+                    <sp/>
                     key);
                 </highlight>
             </codeline>
@@ -18601,7 +18654,8 @@
                     <sp/>
                     <sp/>
                     <sp/>r<sp/>=<sp/>g_hash_table_lookup(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,<sp/>
+                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,
+                    <sp/>
                     parent);
                 </highlight>
             </codeline>
@@ -18877,7 +18931,8 @@
                     <sp/>
                     <ref refid="struct___gnt_tree_row" kindref="compound">GntTreeRow</ref>
                     <sp/>*row<sp/>=<sp/>g_hash_table_lookup(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,<sp/>
+                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,
+                    <sp/>
                     key);
                 </highlight>
             </codeline>
@@ -18970,7 +19025,8 @@
                     <sp/>
                     <ref refid="struct___gnt_tree_row" kindref="compound">GntTreeRow</ref>
                     <sp/>*row<sp/>=<sp/>g_hash_table_lookup(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,<sp/>
+                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,
+                    <sp/>
                     key);
                 </highlight>
             </codeline>
@@ -19065,7 +19121,8 @@
                     <sp/>
                     <ref refid="struct___gnt_tree_row" kindref="compound">GntTreeRow</ref>
                     <sp/>*row<sp/>=<sp/>g_hash_table_lookup(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,<sp/>
+                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,
+                    <sp/>
                     key);
                 </highlight>
             </codeline>
@@ -19166,7 +19223,8 @@
                     <sp/>
                     <ref refid="struct___gnt_tree_row" kindref="compound">GntTreeRow</ref>
                     <sp/>*row<sp/>=<sp/>g_hash_table_lookup(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,<sp/>
+                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,
+                    <sp/>
                     key);
                 </highlight>
             </codeline>
@@ -19404,7 +19462,8 @@
                     <ref refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>
                     <sp/>=<sp/>g_hash_table_new_full(g_direct_hash,<sp/>g_direct_equal,
                     <sp/>
-                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,<sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
                     free_tree_row);
                 </highlight>
             </codeline>
@@ -19825,7 +19884,8 @@
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
                 <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>tree-&gt;<ref
-                        refid="struct___gnt_tree_1a87e8ca5d4bb7a89c76b4393fa61d96c6" kindref="member">ncol</ref>;<sp/>
+                        refid="struct___gnt_tree_1a87e8ca5d4bb7a89c76b4393fa61d96c6" kindref="member">ncol</ref>;
+                    <sp/>
                     i++)
                 </highlight>
             </codeline>
@@ -20016,7 +20076,8 @@
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
                 <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>tree-&gt;<ref
-                        refid="struct___gnt_tree_1a87e8ca5d4bb7a89c76b4393fa61d96c6" kindref="member">ncol</ref>;<sp/>
+                        refid="struct___gnt_tree_1a87e8ca5d4bb7a89c76b4393fa61d96c6" kindref="member">ncol</ref>;
+                    <sp/>
                     i++)
                 </highlight>
             </codeline>
@@ -20190,7 +20251,8 @@
                     <sp/>
                     <ref refid="struct___gnt_tree_row" kindref="compound">GntTreeRow</ref>
                     <sp/>*row<sp/>=<sp/>g_hash_table_lookup(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,<sp/>
+                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,
+                    <sp/>
                     key);
                 </highlight>
             </codeline>
@@ -20445,8 +20507,10 @@
                 <highlight class="normal"><sp/>w<sp/>=
                     <sp/>
                     <ref refid="gntutils_8c_1a8accc80ef45b27fb238d66236f161a8a" kindref="member">
-                        gnt_util_onscreen_width</ref>(col-&gt;<ref
-                            refid="struct___gnt_tree_col_1a5633b1433389cec21ade3811bbe9ca5b" kindref="member">text</ref>
+                        gnt_util_onscreen_width</ref>(col-&gt;
+                    <ref
+                            refid="struct___gnt_tree_col_1a5633b1433389cec21ade3811bbe9ca5b" kindref="member">text
+                    </ref>
                     ,
                     <sp/>
                     <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
@@ -20646,7 +20710,8 @@
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
                 <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>tree-&gt;<ref
-                        refid="struct___gnt_tree_1a87e8ca5d4bb7a89c76b4393fa61d96c6" kindref="member">ncol</ref>;<sp/>
+                        refid="struct___gnt_tree_1a87e8ca5d4bb7a89c76b4393fa61d96c6" kindref="member">ncol</ref>;
+                    <sp/>
                     i++)<sp/>{
                 </highlight>
             </codeline>
@@ -20757,7 +20822,8 @@
                     <sp/>
                     <sp/>
                     <sp/>g_hash_table_foreach_remove(tree-&gt;<ref
-                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,<sp/>
+                        refid="struct___gnt_tree_1a04eec7ef11bc98458573e298eb7141fb" kindref="member">hash</ref>,
+                    <sp/>
                     return_true,
                     <sp/>
                     <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);

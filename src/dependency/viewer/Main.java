@@ -19,7 +19,7 @@ import java.util.*;
  */
 public class Main {
     private static final String INITIAL_DIR = "xml_2"; // the folder which had the initial source code in xml for comparison
-    private static final String FINAL_DIR = "xml_2_10";    // the folder which has the xml for the source code to be compared too
+    private static final String FINAL_DIR = "xml_2_2";    // the folder which has the xml for the source code to be compared too
 
     public static void main(String[] args) {
         System.out.println("Start of Main");

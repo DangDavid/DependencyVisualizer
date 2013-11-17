@@ -122,8 +122,10 @@
                 <name>convs</name>
                 <initializer>=
                     {
-                    {PURPLE_PREF_BOOLEAN, &quot;/finch/conversations/<ref
-                            refid="gntdebug_8c_1a2bcc511dd6ef95bbdffe9886515321f7" kindref="member">timestamps</ref>
+                    {PURPLE_PREF_BOOLEAN, &quot;/finch/conversations/
+                    <ref
+                            refid="gntdebug_8c_1a2bcc511dd6ef95bbdffe9886515321f7" kindref="member">timestamps
+                    </ref>
                     &quot;, N_(&quot;Show Timestamps&quot;), NULL},
                     {PURPLE_PREF_BOOLEAN, &quot;/finch/conversations/notify_typing&quot;, N_(&quot;Notify buddies when
                     you are typing&quot;), NULL},
@@ -504,7 +506,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>strings<sp/>to<sp/>be<sp/>freed<sp/>when<sp/>the<sp/>pref-window<sp/>
+                <highlight class="comment">/*<sp/>strings<sp/>to<sp/>be<sp/>freed<sp/>when<sp/>the<sp/>pref-window
+                    <sp/>
                     is<sp/>closed<sp/>*/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -1227,7 +1230,8 @@
                     <sp/>
                     <sp/>
                     <sp/>field<sp/>=<sp/>purple_request_field_bool_new(prefs-&gt;<ref
-                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>,<sp/>
+                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>,
+                    <sp/>
                     _(prefs-&gt;<ref refid="struct_prefs_1ab5fbdb5052858ca8d2538566229fbe64" kindref="member">
                     label</ref>),
                 </highlight>
@@ -1320,7 +1324,8 @@
                     <sp/>
                     <sp/>
                     <sp/>field<sp/>=<sp/>purple_request_field_int_new(prefs-&gt;<ref
-                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>,<sp/>
+                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>,
+                    <sp/>
                     _(prefs-&gt;<ref refid="struct_prefs_1ab5fbdb5052858ca8d2538566229fbe64" kindref="member">
                     label</ref>),
                 </highlight>
@@ -1413,7 +1418,8 @@
                     <sp/>
                     <sp/>
                     <sp/>field<sp/>=<sp/>purple_request_field_string_new(prefs-&gt;<ref
-                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>,<sp/>
+                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>,
+                    <sp/>
                     _(prefs-&gt;<ref refid="struct_prefs_1ab5fbdb5052858ca8d2538566229fbe64" kindref="member">
                     label</ref>),
                 </highlight>
@@ -1589,7 +1595,8 @@
                     <sp/>
                     <sp/>
                     <sp/>field<sp/>=<sp/>purple_request_field_list_new(prefs-&gt;<ref
-                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>,<sp/>
+                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>,
+                    <sp/>
                     _(prefs-&gt;<ref refid="struct_prefs_1ab5fbdb5052858ca8d2538566229fbe64" kindref="member">
                     label</ref>));
                 </highlight>
@@ -1807,7 +1814,8 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(purple_prefs_get_bool(prefs-&gt;<ref
-                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>)<sp/>==<sp/>
+                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>)<sp/>==
+                    <sp/>
                     idata)
                 </highlight>
             </codeline>
@@ -1941,7 +1949,8 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(purple_prefs_get_int(prefs-&gt;<ref
-                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>)<sp/>==<sp/>
+                        refid="struct_prefs_1a57c70e50814ce27c2752f18a191ba122" kindref="member">pref</ref>)<sp/>==
+                    <sp/>
                     idata)
                 </highlight>
             </codeline>

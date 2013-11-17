@@ -483,7 +483,8 @@
                 <param>
                     <defname>obj</defname>
                 </param>
-                <initializer>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd" kindref="member">GNT_TREE</ref>
+                <initializer>(
+                    <ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd" kindref="member">GNT_TREE</ref>
                     (obj)-&gt;priv.flags)
                 </initializer>
                 <briefdescription>
@@ -1698,7 +1699,8 @@
             </codeline>
             <codeline lineno="5">
                 <highlight class="normal"></highlight>
-                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gnt_8h" kindref="compound">gnt.h</ref>
+                <highlight class="preprocessor">#include<sp/>&quot;
+                    <ref refid="gnt_8h" kindref="compound">gnt.h</ref>
                     &quot;
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -1807,7 +1809,8 @@
             </codeline>
             <codeline lineno="15" refid="gnttree_8h_1a77466bdcf50ec3f2f8f84c33ad209264" refkind="member">
                 <highlight class="preprocessor"></highlight>
-                <highlight class="preprocessor">#define<sp/>GNT_TREE_GET_CLASS(obj)<sp/>
+                <highlight class="preprocessor">#define<sp/>GNT_TREE_GET_CLASS(obj)
+                    <sp/>
                     (G_TYPE_INSTANCE_GET_CLASS((obj),<sp/>GNT_TYPE_TREE,<sp/>GntTreeClass))
                 </highlight>
             </codeline>
@@ -2128,7 +2131,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>We<sp/>need<sp/>this<sp/>for<sp/>quickly<sp/>referencing<sp/>the<sp/>
+                <highlight class="comment">/*<sp/>We<sp/>need<sp/>this<sp/>for<sp/>quickly<sp/>referencing<sp/>the
+                    <sp/>
                     rows<sp/>*/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -2426,7 +2430,8 @@
                     <sp/>void<sp/>(*<ref refid="struct___gnt_tree_class_1a2c787ef09c5315dfc054fbc9ba9fe69d"
                                          kindref="member">toggled</ref>)(
                     <ref refid="struct___gnt_tree" kindref="compound">GntTree</ref>
-                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,
+                    <sp/>
                     gpointer<sp/>key);
                 </highlight>
             </codeline>
@@ -2496,7 +2501,8 @@
             <codeline lineno="79">
                 <highlight class="normal">
                     <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
-                    <sp/>*<ref refid="gnttree_8c_1a9970244840eebd4cf70c0fbd17e998af" kindref="member">gnt_tree_new</ref>
+                    <sp/>*
+                    <ref refid="gnttree_8c_1a9970244840eebd4cf70c0fbd17e998af" kindref="member">gnt_tree_new</ref>
                     (
                 </highlight>
                 <highlight class="keywordtype">void</highlight>
@@ -2686,7 +2692,8 @@
                     <sp/>
                     <ref refid="gnttree_8c_1af8cb31d771d9765914f0848903c2021c" kindref="member">gnt_tree_remove</ref>(
                     <ref refid="struct___gnt_tree" kindref="compound">GntTree</ref>
-                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,
+                    <sp/>
                     gpointer<sp/>key);
                 </highlight>
             </codeline>
@@ -2709,7 +2716,8 @@
             </codeline>
             <codeline lineno="106">
                 <highlight class="normal"></highlight>
-                <highlight class="comment">/*<sp/>Returns<sp/>the<sp/>visible<sp/>line<sp/>number<sp/>of<sp/>the<sp/>
+                <highlight class="comment">/*<sp/>Returns<sp/>the<sp/>visible<sp/>line<sp/>number<sp/>of<sp/>the
+                    <sp/>
                     selected<sp/>row<sp/>*/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -2736,7 +2744,8 @@
                     <ref refid="gnttree_8c_1a1cdcc19039879d3a665061b818a80e03" kindref="member">
                         gnt_tree_change_text</ref>(
                     <ref refid="struct___gnt_tree" kindref="compound">GntTree</ref>
-                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,
+                    <sp/>
                     gpointer<sp/>key,
                     <sp/>
                 </highlight>
@@ -2864,7 +2873,8 @@
                     <sp/>*<ref refid="gnttree_8c_1acef12ae8d90290b6620a15826d330b44" kindref="member">
                     gnt_tree_create_row</ref>(
                     <ref refid="struct___gnt_tree" kindref="compound">GntTree</ref>
-                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,
+                    <sp/>
                     ...);
                 </highlight>
             </codeline>
@@ -2877,7 +2887,8 @@
                     <sp/>*<ref refid="gnttree_8c_1a2ce287da231c4d39e941fe1bf5a3d94f" kindref="member">
                     gnt_tree_create_row_from_list</ref>(
                     <ref refid="struct___gnt_tree" kindref="compound">GntTree</ref>
-                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,
+                    <sp/>
                     GList<sp/>*list);
                 </highlight>
             </codeline>
@@ -2914,7 +2925,8 @@
                     <ref refid="gnttree_8c_1aa8e0c0c6c4e292a6a610af3c37aa3132" kindref="member">
                         gnt_tree_set_column_titles</ref>(
                     <ref refid="struct___gnt_tree" kindref="compound">GntTree</ref>
-                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,
+                    <sp/>
                     ...);
                 </highlight>
             </codeline>
@@ -2929,7 +2941,8 @@
                     <ref refid="gnttree_8c_1a1dc3d32c0d06738fced75686d5d9d34c" kindref="member">
                         gnt_tree_set_show_title</ref>(
                     <ref refid="struct___gnt_tree" kindref="compound">GntTree</ref>
-                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,
+                    <sp/>
                     gboolean<sp/>set);
                 </highlight>
             </codeline>
@@ -2944,7 +2957,8 @@
                     <ref refid="gnttree_8c_1ab5fa3bfe0a651c909caf80d7f691a7c8" kindref="member">
                         gnt_tree_set_compare_func</ref>(
                     <ref refid="struct___gnt_tree" kindref="compound">GntTree</ref>
-                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,
+                    <sp/>
                     GCompareFunc<sp/>func);
                 </highlight>
             </codeline>
@@ -2977,7 +2991,8 @@
                     <ref refid="gnttree_8c_1a1210dcadc5a4e7d83653a16906dd811e" kindref="member">
                         gnt_tree_set_show_separator</ref>(
                     <ref refid="struct___gnt_tree" kindref="compound">GntTree</ref>
-                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,
+                    <sp/>
                     gboolean<sp/>set);
                 </highlight>
             </codeline>
@@ -3003,7 +3018,8 @@
             </codeline>
             <codeline lineno="139">
                 <highlight class="normal"></highlight>
-                <highlight class="comment">/*<sp/>This<sp/>will<sp/>try<sp/>to<sp/>automatically<sp/>adjust<sp/>the<sp/>
+                <highlight class="comment">/*<sp/>This<sp/>will<sp/>try<sp/>to<sp/>automatically<sp/>adjust<sp/>the
+                    <sp/>
                     width<sp/>of<sp/>the<sp/>columns<sp/>in<sp/>the<sp/>tree<sp/>*/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -3030,7 +3046,8 @@
                     <ref refid="gnttree_8c_1a075dcc861e255c9c7b5384e087759bd1" kindref="member">
                         gnt_tree_set_hash_fns</ref>(
                     <ref refid="struct___gnt_tree" kindref="compound">GntTree</ref>
-                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,
+                    <sp/>
                     gpointer<sp/>hash,<sp/>gpointer<sp/>eq,<sp/>gpointer<sp/>kd);
                 </highlight>
             </codeline>
@@ -3044,7 +3061,8 @@
                 </highlight>
             </codeline>
             <codeline lineno="145">
-                <highlight class="comment"><sp/>*<sp/>which<sp/>we<sp/>don&apos;t<sp/>want/need<sp/>to<sp/>display.<sp/>
+                <highlight class="comment"><sp/>*<sp/>which<sp/>we<sp/>don&apos;t<sp/>want/need<sp/>to<sp/>display.
+                    <sp/>
                     */
                 </highlight>
                 <highlight class="normal"></highlight>

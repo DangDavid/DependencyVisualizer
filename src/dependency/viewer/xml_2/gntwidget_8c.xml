@@ -1235,7 +1235,8 @@
             </codeline>
             <codeline lineno="7">
                 <highlight class="normal"></highlight>
-                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gnt_8h" kindref="compound">gnt.h</ref>
+                <highlight class="preprocessor">#include<sp/>&quot;
+                    <ref refid="gnt_8h" kindref="compound">gnt.h</ref>
                     &quot;
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -1820,7 +1821,8 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
-                <highlight class="normal"><sp/>(width<sp/>&lt;<sp/>widget-&gt;priv.minw<sp/>||<sp/>height<sp/>&lt;<sp/>
+                <highlight class="normal"><sp/>(width<sp/>&lt;<sp/>widget-&gt;priv.minw<sp/>||<sp/>height<sp/>&lt;
+                    <sp/>
                     widget-&gt;priv.minh)
                 </highlight>
             </codeline>
@@ -5017,7 +5019,8 @@
                 </highlight>
             </codeline>
             <codeline lineno="253">
-                <highlight class="comment"><sp/>
+                <highlight class="comment">
+                    <sp/>
                     *****************************************************************************/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -6487,8 +6490,10 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(<ref refid="gntbindable_8c_1a5f74aeeebc30c23decda5a588e4b76da"
-                                                     kindref="member">gnt_bindable_perform_action_key</ref>(<ref
-                        refid="gntbindable_8h_1a385eb94df73d3d565c9b5e0e43dc5910" kindref="member">GNT_BINDABLE</ref>
+                                                     kindref="member">gnt_bindable_perform_action_key</ref>(
+                    <ref
+                            refid="gntbindable_8h_1a385eb94df73d3d565c9b5e0e43dc5910" kindref="member">GNT_BINDABLE
+                    </ref>
                     (widget),<sp/>keys))
                 </highlight>
             </codeline>
@@ -6708,7 +6713,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>XXX:<sp/>I<sp/>have<sp/>no<sp/>clue<sp/>why,<sp/>but<sp/>this<sp/>
+                <highlight class="comment">/*<sp/>XXX:<sp/>I<sp/>have<sp/>no<sp/>clue<sp/>why,<sp/>but<sp/>this
+                    <sp/>
                     seemed<sp/>to<sp/>be<sp/>necessary.<sp/>*/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -6736,8 +6742,10 @@
                     <sp/>
                     <sp/>mvwvline(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
                                                   kindref="member">window</ref>,<sp/>1,<sp/>widget-&gt;<ref
-                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.<ref
-                        refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
                     ,
                     <sp/>
                 </highlight>
@@ -6833,7 +6841,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>XXX:<sp/>Need<sp/>to<sp/>install<sp/>properties<sp/>for<sp/>these<sp/>
+                <highlight class="comment">/*<sp/>XXX:<sp/>Need<sp/>to<sp/>install<sp/>properties<sp/>for<sp/>these
+                    <sp/>
                     and<sp/>g_object_notify<sp/>*/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -7244,7 +7253,8 @@
                     <sp/>
                     <sp/>
                     <sp/>mvwvline(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
-                                                  kindref="member">window</ref>,<sp/>0,<sp/>0,<sp/>ACS_VLINE<sp/>|<sp/>
+                                                  kindref="member">window</ref>,<sp/>0,<sp/>0,<sp/>ACS_VLINE<sp/>|
+                    <sp/>
                     COLOR_PAIR(<ref
                         refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aade44b623e10d9f44be58a2784aa567d"
                         kindref="member">GNT_COLOR_NORMAL</ref>),<sp/>widget-&gt;<ref
@@ -7332,8 +7342,10 @@
                     <sp/>ACS_HLINE<sp/>|<sp/>COLOR_PAIR(<ref
                         refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aade44b623e10d9f44be58a2784aa567d"
                         kindref="member">GNT_COLOR_NORMAL</ref>),<sp/>widget-&gt;<ref
-                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.<ref
-                        refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
                     );
                 </highlight>
             </codeline>
@@ -7347,12 +7359,15 @@
                     <sp/>
                     <sp/>
                     <sp/>mvwhline(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
-                                                  kindref="member">window</ref>,<sp/>0,<sp/>0,<sp/>ACS_HLINE<sp/>|<sp/>
+                                                  kindref="member">window</ref>,<sp/>0,<sp/>0,<sp/>ACS_HLINE<sp/>|
+                    <sp/>
                     COLOR_PAIR(<ref
                         refid="gntcolors_8h_1aee9f25292f81043e02f019b9ae5651a0aade44b623e10d9f44be58a2784aa567d"
                         kindref="member">GNT_COLOR_NORMAL</ref>),<sp/>widget-&gt;<ref
-                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.<ref
-                        refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
                     );
                 </highlight>
             </codeline>
@@ -7553,8 +7568,10 @@
                     <sp/>
                     <sp/>mvwvline(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
                                                   kindref="member">window</ref>,<sp/>1,<sp/>widget-&gt;<ref
-                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.<ref
-                        refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
                     ,
                     <sp/>
                 </highlight>
@@ -7585,8 +7602,10 @@
                 <highlight class="charliteral">&apos;<sp/>&apos;
                 </highlight>
                 <highlight class="normal">,<sp/>widget-&gt;<ref
-                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.<ref
-                        refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>
+                        refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d" kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
                     );
                 </highlight>
             </codeline>
@@ -7709,8 +7728,10 @@
                     <sp/>
                     <sp/>
                     <sp/>width<sp/>=<sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
-                                                         kindref="member">priv</ref>.<ref
-                        refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>
+                                                         kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
                     ;
                 </highlight>
             </codeline>
@@ -7752,7 +7773,8 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(<ref refid="gntwidget_8h_1a161763c25bf46d0b5741a800a50ca907"
-                                                     kindref="member">GNT_WIDGET_IS_FLAG_SET</ref>(widget,<sp/>
+                                                     kindref="member">GNT_WIDGET_IS_FLAG_SET</ref>(widget,
+                    <sp/>
                     GNT_WIDGET_MAPPED))
                 </highlight>
             </codeline>
@@ -7884,8 +7906,10 @@
                     <sp/>
                     <sp/>
                     <sp/>oldw<sp/>=<sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
-                                                        kindref="member">priv</ref>.<ref
-                        refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>
+                                                        kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
                     ;
                 </highlight>
             </codeline>
@@ -7953,8 +7977,10 @@
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(width<sp/>+<sp/>shadow<sp/>&gt;=<sp/>getmaxx(widget-&gt;<ref
                         refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217" kindref="member">window</ref>)
-                    <sp/>||<sp/>height<sp/>+<sp/>shadow<sp/>&gt;=<sp/>getmaxy(widget-&gt;<ref
-                            refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217" kindref="member">window</ref>
+                    <sp/>||<sp/>height<sp/>+<sp/>shadow<sp/>&gt;=<sp/>getmaxy(widget-&gt;
+                    <ref
+                            refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217" kindref="member">window
+                    </ref>
                     ))<sp/>{
                 </highlight>
             </codeline>
@@ -8094,7 +8120,8 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(<ref refid="gntwidget_8h_1a161763c25bf46d0b5741a800a50ca907"
-                                                     kindref="member">GNT_WIDGET_IS_FLAG_SET</ref>(widget,<sp/>
+                                                     kindref="member">GNT_WIDGET_IS_FLAG_SET</ref>(widget,
+                    <sp/>
                     GNT_WIDGET_MAPPED))
                 </highlight>
             </codeline>
@@ -8418,8 +8445,10 @@
                     <sp/>
                     <sp/>
                     <sp/>g_free(widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
-                                                kindref="member">priv</ref>.<ref
-                        refid="struct___gnt_widget_priv_1a5ac083a645d964373f022d03df4849c8" kindref="member">name</ref>
+                                                kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1a5ac083a645d964373f022d03df4849c8" kindref="member">name
+                    </ref>
                     );
                 </highlight>
             </codeline>
@@ -8572,7 +8601,8 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(<ref refid="gntwidget_8h_1a161763c25bf46d0b5741a800a50ca907"
-                                                     kindref="member">GNT_WIDGET_IS_FLAG_SET</ref>(widget,<sp/>
+                                                     kindref="member">GNT_WIDGET_IS_FLAG_SET</ref>(widget,
+                    <sp/>
                     GNT_WIDGET_MAPPED))
                 </highlight>
             </codeline>

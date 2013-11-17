@@ -298,7 +298,8 @@
                 <param>
                     <defname>obj</defname>
                 </param>
-                <initializer>(<ref refid="gntline_8h_1a070659346e3105c4192de0793aec426b" kindref="member">GNT_LINE</ref>
+                <initializer>(
+                    <ref refid="gntline_8h_1a070659346e3105c4192de0793aec426b" kindref="member">GNT_LINE</ref>
                     (obj)-&gt;priv.flags)
                 </initializer>
                 <briefdescription>
@@ -528,7 +529,8 @@
             </codeline>
             <codeline lineno="5">
                 <highlight class="normal"></highlight>
-                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gnt_8h" kindref="compound">gnt.h</ref>
+                <highlight class="preprocessor">#include<sp/>&quot;
+                    <ref refid="gnt_8h" kindref="compound">gnt.h</ref>
                     &quot;
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -630,7 +632,8 @@
             </codeline>
             <codeline lineno="14" refid="gntline_8h_1af3458aa32275d5697173baaa601ca498" refkind="member">
                 <highlight class="preprocessor"></highlight>
-                <highlight class="preprocessor">#define<sp/>GNT_LINE_GET_CLASS(obj)<sp/>
+                <highlight class="preprocessor">#define<sp/>GNT_LINE_GET_CLASS(obj)
+                    <sp/>
                     (G_TYPE_INSTANCE_GET_CLASS((obj),<sp/>GNT_TYPE_LINE,<sp/>GntLineClass))
                 </highlight>
             </codeline>
@@ -892,7 +895,8 @@
             <codeline lineno="48">
                 <highlight class="normal">
                     <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
-                    <sp/>*<ref refid="gntline_8c_1a9c5f84737611dbfd8325e8dc00f96133" kindref="member">gnt_line_new</ref>
+                    <sp/>*
+                    <ref refid="gntline_8c_1a9c5f84737611dbfd8325e8dc00f96133" kindref="member">gnt_line_new</ref>
                     (gboolean<sp/>vertical);
                 </highlight>
             </codeline>

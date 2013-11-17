@@ -73,7 +73,7 @@ public class VisualizerParser {
 
 
         fileWrite(initGraphString, finalGraphString);
-  
+
 
     }
 
@@ -155,12 +155,12 @@ public class VisualizerParser {
             if (cluster.containsKey(key) && cluster.get(key).size() > 1) {
                 keys.add(key);
                 dependency += "subgraph cluster_";
-             
+
                 dependency += key;
                 dependency += " { \n";
                 dependency += "penwidth= 10\n";
                 for (String f : cluster.get(key)) {
-                	
+
                     dependency += f;
                     dependency += ";\n";
                 }

@@ -66,13 +66,13 @@ public class GraphViz {
      * The dir. where temporary files will be created.
      */
     //private static String TEMP_DIR = "F:/Temp";    // Linux
-      private static String TEMP_DIR = "C:/temp";	// Windows
+    private static String TEMP_DIR = "C:/temp";    // Windows
 
     //private static String TEMP_DIR = "/tmp";
     /**
      * Where is your dot program located? It will be called externally.
      */
-   // private static String DOT = "/usr/local/bin/fdp";	// Linux
+    // private static String DOT = "/usr/local/bin/fdp";	// Linux
     private static String DOT = "C:/Program Files (x86)/Graphviz2.30/bin/fdp";    // Windows
 
     /**

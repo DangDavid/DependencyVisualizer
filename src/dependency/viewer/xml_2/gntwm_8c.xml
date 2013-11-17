@@ -2482,7 +2482,8 @@
             </codeline>
             <codeline lineno="16">
                 <highlight class="normal"></highlight>
-                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gnt_8h" kindref="compound">gnt.h</ref>
+                <highlight class="preprocessor">#include<sp/>&quot;
+                    <ref refid="gnt_8h" kindref="compound">gnt.h</ref>
                     &quot;
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -2939,7 +2940,8 @@
             <codeline lineno="74">
                 <highlight class="normal">draw_taskbar(
                     <ref refid="struct___gntt_w_m" kindref="compound">GntWM</ref>
-                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,<sp/>
+                    <sp/>*<ref refid="gntmain_8c_1aeaa72f9b248cdf35b938ca07511ae0d0" kindref="member">wm</ref>,
+                    <sp/>
                     gboolean<sp/>reposition)
                 </highlight>
             </codeline>
@@ -3140,7 +3142,8 @@
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
                 <highlight class="normal"><sp/>(i<sp/>=<sp/>0,<sp/>iter<sp/>=<sp/>wm-&gt;<ref
-                        refid="struct___gntt_w_m_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>;<sp/>
+                        refid="struct___gntt_w_m_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>;
+                    <sp/>
                     iter;<sp/>iter<sp/>=<sp/>iter-&gt;next,<sp/>i++)
                 </highlight>
             </codeline>
@@ -3297,7 +3300,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>This<sp/>is<sp/>a<sp/>window<sp/>with<sp/>the<sp/>URGENT<sp/>hint<sp/>
+                <highlight class="comment">/*<sp/>This<sp/>is<sp/>a<sp/>window<sp/>with<sp/>the<sp/>URGENT<sp/>hint
+                    <sp/>
                     set<sp/>*/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -3452,7 +3456,8 @@
                 </highlight>
                 <highlight class="charliteral">&apos;<sp/>&apos;
                 </highlight>
-                <highlight class="normal"><sp/>|<sp/>COLOR_PAIR(color),<sp/>getmaxx(stdscr)<sp/>-<sp/>width<sp/>*<sp/>
+                <highlight class="normal"><sp/>|<sp/>COLOR_PAIR(color),<sp/>getmaxx(stdscr)<sp/>-<sp/>width<sp/>*
+                    <sp/>
                     i);
                 </highlight>
             </codeline>
@@ -3746,7 +3751,8 @@
                     <sp/>
                     <ref refid="struct_gnt_node" kindref="compound">GntNode</ref>
                     <sp/>*node<sp/>=<sp/>g_hash_table_lookup(wm-&gt;<ref
-                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,<sp/>
+                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,
+                    <sp/>
                     top);
                 </highlight>
             </codeline>
@@ -4911,7 +4917,8 @@
                     <sp/>
                     <sp/>g_printerr(
                 </highlight>
-                <highlight class="stringliteral">&quot;GntWM:<sp/>Invalid<sp/>number<sp/>of<sp/>arguments<sp/>for<sp/>
+                <highlight class="stringliteral">&quot;GntWM:<sp/>Invalid<sp/>number<sp/>of<sp/>arguments<sp/>for
+                    <sp/>
                     positioing<sp/>a<sp/>window.\n&quot;
                 </highlight>
                 <highlight class="normal">);</highlight>
@@ -5177,7 +5184,8 @@
                     <ref refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>
                     <sp/>=<sp/>g_hash_table_new_full(g_direct_hash,<sp/>g_direct_equal,
                     <sp/>
-                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,<sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
                     free_node);
                 </highlight>
             </codeline>
@@ -5372,7 +5380,8 @@
                     <sp/>
                     <sp/>
                     <sp/>pos<sp/>=<sp/>g_list_index(wm-&gt;<ref
-                        refid="struct___gntt_w_m_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>,<sp/>
+                        refid="struct___gntt_w_m_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>,
+                    <sp/>
                     w);
                 </highlight>
             </codeline>
@@ -5465,7 +5474,8 @@
                     <sp/>
                     <sp/>
                     <sp/>wid<sp/>=<sp/>g_list_nth_data(wm-&gt;<ref
-                        refid="struct___gntt_w_m_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>,<sp/>
+                        refid="struct___gntt_w_m_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>,
+                    <sp/>
                     pos);
                 </highlight>
             </codeline>
@@ -5804,7 +5814,8 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>((l<sp/>=<sp/>g_list_nth(wm-&gt;<ref
-                        refid="struct___gntt_w_m_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>,<sp/>
+                        refid="struct___gntt_w_m_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>,
+                    <sp/>
                     n))<sp/>!=
                     <sp/>
                     <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)
@@ -5996,7 +6007,8 @@
                     <sp/>
                     <sp/>
                     <sp/>node<sp/>=<sp/>g_hash_table_lookup(wm-&gt;<ref
-                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,<sp/>
+                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,
+                    <sp/>
                     window);
                 </highlight>
             </codeline>
@@ -6209,7 +6221,8 @@
                     <sp/>
                     <sp/>
                     <sp/>node<sp/>=<sp/>g_hash_table_lookup(wm-&gt;<ref
-                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,<sp/>
+                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,
+                    <sp/>
                     window);
                 </highlight>
             </codeline>
@@ -6616,7 +6629,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1a44429c371d6ea90f89d63a57cffabc66" kindref="member">gnt_box_set_title</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(win),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(win),
+                    <sp/>
                     title);
                 </highlight>
             </codeline>
@@ -6642,7 +6656,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(win),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(win),
+                    <sp/>
                     tree);
                 </highlight>
             </codeline>
@@ -6818,7 +6833,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
-                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,
+                    <sp/>
                     *win;
                 </highlight>
             </codeline>
@@ -6854,7 +6870,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1a3b7044e63e2ae35e7c8efaf5a1f8efdc" kindref="member">gnt_box_set_pad</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(win),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(win),
+                    <sp/>
                     0);
                 </highlight>
             </codeline>
@@ -6894,7 +6911,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(win),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(win),
+                    <sp/>
                     tree);
                 </highlight>
             </codeline>
@@ -7064,7 +7082,8 @@
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
                 <highlight class="normal"><sp/>(iter<sp/>=<sp/>wm-&gt;<ref
-                        refid="struct___gntt_w_m_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>;<sp/>
+                        refid="struct___gntt_w_m_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>;
+                    <sp/>
                     iter;<sp/>iter<sp/>=<sp/>iter-&gt;next)<sp/>{
                 </highlight>
             </codeline>
@@ -7568,7 +7587,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
-                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,
+                    <sp/>
                     *win;
                 </highlight>
             </codeline>
@@ -7763,7 +7783,8 @@
                     <sp/>
                     <ref refid="gnttree_8c_1ad74be8f3a1f13ec14c727567d935521f" kindref="member">
                         gnt_tree_set_col_width</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
-                                                          kindref="member">GNT_TREE</ref>(tree),<sp/>0,<sp/>
+                                                          kindref="member">GNT_TREE</ref>(tree),<sp/>0,
+                    <sp/>
                     getmaxx(stdscr)<sp/>/<sp/>3);
                 </highlight>
             </codeline>
@@ -8341,7 +8362,8 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
-                <highlight class="normal"><sp/>((now<sp/>&amp;<sp/>A_COLOR)<sp/>!=<sp/>(old<sp/>&amp;<sp/>A_COLOR)<sp/>
+                <highlight class="normal"><sp/>((now<sp/>&amp;<sp/>A_COLOR)<sp/>!=<sp/>(old<sp/>&amp;<sp/>A_COLOR)
+                    <sp/>
                     ||
                 </highlight>
             </codeline>
@@ -8736,10 +8758,12 @@
                     <sp/>
                     <sp/>fg.r<sp/>=
                     <sp/>
-                    <ref refid="gntcolors_8c_1aabe7912b6160ad63616663e8d7c63839" kindref="member">r</ref>;<sp/>fg.b<sp/>
+                    <ref refid="gntcolors_8c_1aabe7912b6160ad63616663e8d7c63839" kindref="member">r</ref>;<sp/>fg.b
+                    <sp/>
                     =
                     <sp/>
-                    <ref refid="gntcolors_8c_1a14c92240a8c7badaaa4e18952e560053" kindref="member">b</ref>;<sp/>fg.g<sp/>
+                    <ref refid="gntcolors_8c_1a14c92240a8c7badaaa4e18952e560053" kindref="member">b</ref>;<sp/>fg.g
+                    <sp/>
                     =
                     <sp/>
                     <ref refid="gntcolors_8c_1ac22ef9012585a39864a27c5d518b0198" kindref="member">g</ref>;
@@ -8784,10 +8808,12 @@
                     <sp/>
                     <sp/>bg.r<sp/>=
                     <sp/>
-                    <ref refid="gntcolors_8c_1aabe7912b6160ad63616663e8d7c63839" kindref="member">r</ref>;<sp/>bg.b<sp/>
+                    <ref refid="gntcolors_8c_1aabe7912b6160ad63616663e8d7c63839" kindref="member">r</ref>;<sp/>bg.b
+                    <sp/>
                     =
                     <sp/>
-                    <ref refid="gntcolors_8c_1a14c92240a8c7badaaa4e18952e560053" kindref="member">b</ref>;<sp/>bg.g<sp/>
+                    <ref refid="gntcolors_8c_1a14c92240a8c7badaaa4e18952e560053" kindref="member">b</ref>;<sp/>bg.g
+                    <sp/>
                     =
                     <sp/>
                     <ref refid="gntcolors_8c_1ac22ef9012585a39864a27c5d518b0198" kindref="member">g</ref>;
@@ -10674,7 +10700,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
-                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,
+                    <sp/>
                     *win;
                 </highlight>
             </codeline>
@@ -10869,7 +10896,8 @@
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
                 <highlight class="normal"><sp/>(iter<sp/>=<sp/>wm-&gt;<ref
-                        refid="struct___gntt_w_m_1afec6ae4cf166588b23230889e7fa076d" kindref="member">acts</ref>;<sp/>
+                        refid="struct___gntt_w_m_1afec6ae4cf166588b23230889e7fa076d" kindref="member">acts</ref>;
+                    <sp/>
                     iter;<sp/>iter<sp/>=<sp/>iter-&gt;next)<sp/>{
                 </highlight>
             </codeline>
@@ -10966,7 +10994,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntwidget_8c_1abe4a87243a54971235d6d91ef4adf9b1" kindref="member">
-                        gnt_widget_set_position</ref>(win,<sp/>0,<sp/>getmaxy(stdscr)<sp/>-<sp/>3<sp/>-<sp/>
+                        gnt_widget_set_position</ref>(win,<sp/>0,<sp/>getmaxy(stdscr)<sp/>-<sp/>3<sp/>-
+                    <sp/>
                     g_list_length(wm-&gt;<ref refid="struct___gntt_w_m_1afec6ae4cf166588b23230889e7fa076d"
                                               kindref="member">acts</ref>));
                 </highlight>
@@ -11582,7 +11611,8 @@
                     <sp/>
                     <sp/>
                     <sp/>copy_win(win,<sp/>g_hash_table_lookup(wm-&gt;<ref
-                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,<sp/>
+                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,
+                    <sp/>
                     win));
                 </highlight>
             </codeline>
@@ -12262,7 +12292,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1a3b7044e63e2ae35e7c8efaf5a1f8efdc" kindref="member">gnt_box_set_pad</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(clip),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(clip),
+                    <sp/>
                     0);
                 </highlight>
             </codeline>
@@ -12632,7 +12663,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,<sp/>
+                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,
+                    <sp/>
                     new_window),
                 </highlight>
             </codeline>
@@ -12811,7 +12843,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,<sp/>
+                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,
+                    <sp/>
                     decorate_window),
                 </highlight>
             </codeline>
@@ -12990,7 +13023,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,<sp/>
+                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,
+                    <sp/>
                     close_window),
                 </highlight>
             </codeline>
@@ -13169,7 +13203,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,<sp/>
+                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,
+                    <sp/>
                     window_resize_confirm),
                 </highlight>
             </codeline>
@@ -13354,7 +13389,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,<sp/>
+                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,
+                    <sp/>
                     window_move_confirm),
                 </highlight>
             </codeline>
@@ -13539,7 +13575,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,<sp/>
+                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,
+                    <sp/>
                     window_resized),
                 </highlight>
             </codeline>
@@ -13718,7 +13755,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,<sp/>
+                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,
+                    <sp/>
                     window_moved),
                 </highlight>
             </codeline>
@@ -13897,7 +13935,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,<sp/>
+                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,
+                    <sp/>
                     window_update),
                 </highlight>
             </codeline>
@@ -14079,7 +14118,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,<sp/>
+                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,
+                    <sp/>
                     give_focus),
                 </highlight>
             </codeline>
@@ -14261,7 +14301,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,<sp/>
+                    <sp/>G_STRUCT_OFFSET(<ref refid="struct___gnt_w_m_class" kindref="compound">GntWMClass</ref>,
+                    <sp/>
                     mouse_clicked),
                 </highlight>
             </codeline>
@@ -15234,7 +15275,8 @@
                 </highlight>
             </codeline>
             <codeline lineno="1085">
-                <highlight class="comment"><sp/>
+                <highlight class="comment">
+                    <sp/>
                     *****************************************************************************/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -15913,7 +15955,8 @@
                         gnt_tree_set_row_flags</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
                                                           kindref="member">GNT_TREE</ref>(wm-&gt;<ref
                         refid="struct___gntt_w_m_1a6ec4f17ad83b5ce38058fa56941548e7" kindref="member">windows</ref>-&gt;
-                    <ref refid="struct___gntt_w_m_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>),<sp/>
+                    <ref refid="struct___gntt_w_m_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>),
+                    <sp/>
                     wid,<sp/>flag);
                 </highlight>
             </codeline>
@@ -16190,8 +16233,10 @@
                     <sp/>
                     <sp/>
                     <sp/>w<sp/>=<sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
-                                                     kindref="member">priv</ref>.<ref
-                        refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>
+                                                     kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
                     ;
                 </highlight>
             </codeline>
@@ -16840,7 +16885,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gnt_8h_1a0d61ff0e5939b49794411451ab5f488d" kindref="member">gnt_widget_set_urgent</ref>
-                    (node-&gt;<ref refid="struct_gnt_node_1a980e052030e677979e606714e2062afa" kindref="member">me</ref>
+                    (node-&gt;
+                    <ref refid="struct_gnt_node_1a980e052030e677979e606714e2062afa" kindref="member">me</ref>
                     );
                 </highlight>
             </codeline>
@@ -17070,7 +17116,8 @@
                     <sp/>
                     <sp/>
                     <sp/>sanitize_position(widget,<sp/>&amp;p-&gt;<ref
-                        refid="struct___gnt_position_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,<sp/>
+                        refid="struct___gnt_position_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,
+                    <sp/>
                     &amp;p-&gt;<ref refid="struct___gnt_position_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">
                     y</ref>);
                 </highlight>
@@ -17091,8 +17138,10 @@
                     <sp/>
                     <ref refid="gntwidget_8c_1abe4a87243a54971235d6d91ef4adf9b1" kindref="member">
                         gnt_widget_set_position</ref>(widget,<sp/>p-&gt;<ref
-                        refid="struct___gnt_position_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,<sp/>
-                    p-&gt;<ref refid="struct___gnt_position_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>
+                        refid="struct___gnt_position_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,
+                    <sp/>
+                    p-&gt;
+                    <ref refid="struct___gnt_position_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>
                     );
                 </highlight>
             </codeline>
@@ -17111,8 +17160,10 @@
                     <sp/>
                     <sp/>mvwin(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
                                                kindref="member">window</ref>,<sp/>p-&gt;<ref
-                        refid="struct___gnt_position_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>,<sp/>
-                    p-&gt;<ref refid="struct___gnt_position_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>
+                        refid="struct___gnt_position_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>,
+                    <sp/>
+                    p-&gt;
+                    <ref refid="struct___gnt_position_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>
                     );
                 </highlight>
             </codeline>
@@ -17245,7 +17296,8 @@
                         gnt_tree_add_row_last</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
                                                          kindref="member">GNT_TREE</ref>(wm-&gt;<ref
                         refid="struct___gntt_w_m_1a6ec4f17ad83b5ce38058fa56941548e7" kindref="member">windows</ref>-&gt;
-                    <ref refid="struct___gntt_w_m_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>),<sp/>
+                    <ref refid="struct___gntt_w_m_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>),
+                    <sp/>
                     widget,
                 </highlight>
             </codeline>
@@ -17448,7 +17500,8 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>((node<sp/>=<sp/>g_hash_table_lookup(wm-&gt;<ref
-                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,<sp/>
+                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,
+                    <sp/>
                     widget))<sp/>==
                     <sp/>
                     <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)
@@ -17518,7 +17571,8 @@
                     <ref refid="gnttree_8c_1af8cb31d771d9765914f0848903c2021c" kindref="member">gnt_tree_remove</ref>(
                     <ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd" kindref="member">GNT_TREE</ref>(wm-&gt;
                     <ref refid="struct___gntt_w_m_1a6ec4f17ad83b5ce38058fa56941548e7" kindref="member">windows</ref>-&gt;
-                    <ref refid="struct___gntt_w_m_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>),<sp/>
+                    <ref refid="struct___gntt_w_m_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>),
+                    <sp/>
                     widget);
                 </highlight>
             </codeline>
@@ -17539,7 +17593,8 @@
                     <sp/>
                     <sp/>
                     <sp/>pos<sp/>=<sp/>g_list_index(wm-&gt;<ref
-                        refid="struct___gntt_w_m_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>,<sp/>
+                        refid="struct___gntt_w_m_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>,
+                    <sp/>
                     widget);
                 </highlight>
             </codeline>
@@ -17752,8 +17807,10 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(<ref refid="gntbindable_8c_1a5f74aeeebc30c23decda5a588e4b76da"
-                                                     kindref="member">gnt_bindable_perform_action_key</ref>(<ref
-                        refid="gntbindable_8h_1a385eb94df73d3d565c9b5e0e43dc5910" kindref="member">GNT_BINDABLE</ref>
+                                                     kindref="member">gnt_bindable_perform_action_key</ref>(
+                    <ref
+                            refid="gntbindable_8h_1a385eb94df73d3d565c9b5e0e43dc5910" kindref="member">GNT_BINDABLE
+                    </ref>
                     (wm),<sp/>keys))<sp/>{
                 </highlight>
             </codeline>
@@ -17824,7 +17881,8 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordtype">int</highlight>
-                <highlight class="normal"><sp/>xmin<sp/>=<sp/>0,<sp/>ymin<sp/>=<sp/>0,<sp/>xmax<sp/>=<sp/>
+                <highlight class="normal"><sp/>xmin<sp/>=<sp/>0,<sp/>ymin<sp/>=<sp/>0,<sp/>xmax<sp/>=
+                    <sp/>
                     getmaxx(stdscr),<sp/>ymax<sp/>=<sp/>getmaxy(stdscr)<sp/>-<sp/>1;
                 </highlight>
             </codeline>
@@ -17971,7 +18029,8 @@
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(strcmp(keys,
                     <sp/>
-                    <ref refid="gntkeys_8h_1a3610efeedee6919c5b317929b9a8008e" kindref="member">GNT_KEY_LEFT</ref>)<sp/>
+                    <ref refid="gntkeys_8h_1a3610efeedee6919c5b317929b9a8008e" kindref="member">GNT_KEY_LEFT</ref>)
+                    <sp/>
                     ==<sp/>0)<sp/>{
                 </highlight>
             </codeline>
@@ -18193,7 +18252,8 @@
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(strcmp(keys,
                     <sp/>
-                    <ref refid="gntkeys_8h_1a9f1051b5041b0f49305a57079dce9f8f" kindref="member">GNT_KEY_DOWN</ref>)<sp/>
+                    <ref refid="gntkeys_8h_1a9f1051b5041b0f49305a57079dce9f8f" kindref="member">GNT_KEY_DOWN</ref>)
+                    <sp/>
                     ==<sp/>0)<sp/>{
                 </highlight>
             </codeline>
@@ -18403,7 +18463,8 @@
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(strcmp(keys,
                     <sp/>
-                    <ref refid="gntkeys_8h_1a3610efeedee6919c5b317929b9a8008e" kindref="member">GNT_KEY_LEFT</ref>)<sp/>
+                    <ref refid="gntkeys_8h_1a3610efeedee6919c5b317929b9a8008e" kindref="member">GNT_KEY_LEFT</ref>)
+                    <sp/>
                     ==<sp/>0)<sp/>{
                 </highlight>
             </codeline>
@@ -18571,7 +18632,8 @@
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(strcmp(keys,
                     <sp/>
-                    <ref refid="gntkeys_8h_1a9f1051b5041b0f49305a57079dce9f8f" kindref="member">GNT_KEY_DOWN</ref>)<sp/>
+                    <ref refid="gntkeys_8h_1a9f1051b5041b0f49305a57079dce9f8f" kindref="member">GNT_KEY_DOWN</ref>)
+                    <sp/>
                     ==<sp/>0)<sp/>{
                 </highlight>
             </codeline>
@@ -18889,7 +18951,8 @@
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(wm-&gt;<ref refid="struct___gntt_w_m_1ad1b522d32093b8638ba0ae3acc48ef7f"
                                                             kindref="member">_list</ref>.<ref
-                        refid="struct___gntt_w_m_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>)<sp/>
+                        refid="struct___gntt_w_m_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>)
+                    <sp/>
                     {
                 </highlight>
             </codeline>
@@ -19141,7 +19204,8 @@
                     <ref refid="gntwidget_8c_1a9709f0f4a82fdbe3f36d9832b582bd71" kindref="member">
                         gnt_widget_key_pressed</ref>(<ref refid="gntwidget_8h_1a0ddc46716b8cb35d504595ab4bca8a82"
                                                           kindref="member">GNT_WIDGET</ref>(wm-&gt;<ref
-                        refid="struct___gntt_w_m_1ae48f79ad4a1fc6931f03de2b02528e15" kindref="member">menu</ref>),<sp/>
+                        refid="struct___gntt_w_m_1ae48f79ad4a1fc6931f03de2b02528e15" kindref="member">menu</ref>),
+                    <sp/>
                     keys);
                 </highlight>
             </codeline>
@@ -19176,7 +19240,8 @@
                     <ref refid="gntwidget_8c_1a9709f0f4a82fdbe3f36d9832b582bd71" kindref="member">
                         gnt_widget_key_pressed</ref>(wm-&gt;<ref
                         refid="struct___gntt_w_m_1ad1b522d32093b8638ba0ae3acc48ef7f" kindref="member">_list</ref>.<ref
-                        refid="struct___gntt_w_m_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>,<sp/>
+                        refid="struct___gntt_w_m_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>,
+                    <sp/>
                     keys);
                 </highlight>
             </codeline>
@@ -19411,7 +19476,8 @@
                     <sp/>
                     <sp/>
                     <sp/>node<sp/>=<sp/>g_hash_table_lookup(wm-&gt;<ref
-                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,<sp/>
+                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,
+                    <sp/>
                     widget);
                 </highlight>
             </codeline>
@@ -19660,8 +19726,10 @@
                 </highlight>
                 <highlight class="keywordtype">char</highlight>
                 <highlight class="normal"><sp/>*)key,<sp/>p-&gt;<ref
-                        refid="struct___gnt_position_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,<sp/>
-                    p-&gt;<ref refid="struct___gnt_position_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>
+                        refid="struct___gnt_position_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,
+                    <sp/>
+                    p-&gt;
+                    <ref refid="struct___gnt_position_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>
                     );
                 </highlight>
             </codeline>
@@ -19768,7 +19836,8 @@
                     <sp/>
                     <sp/>g_printerr(
                 </highlight>
-                <highlight class="stringliteral">&quot;GntWM:<sp/>error<sp/>opening<sp/>file<sp/>to<sp/>save<sp/>
+                <highlight class="stringliteral">&quot;GntWM:<sp/>error<sp/>opening<sp/>file<sp/>to<sp/>save
+                    <sp/>
                     positions\n&quot;
                 </highlight>
                 <highlight class="normal">);</highlight>
@@ -20016,7 +20085,8 @@
                     <sp/>
                     <sp/>
                     <sp/>node<sp/>=<sp/>g_hash_table_lookup(wm-&gt;<ref
-                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,<sp/>
+                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,
+                    <sp/>
                     widget);
                 </highlight>
             </codeline>
@@ -20372,7 +20442,8 @@
                     <sp/>
                     <ref refid="struct_gnt_node" kindref="compound">GntNode</ref>
                     <sp/>*node<sp/>=<sp/>g_hash_table_lookup(wm-&gt;<ref
-                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,<sp/>
+                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,
+                    <sp/>
                     widget);
                 </highlight>
             </codeline>
@@ -20559,7 +20630,8 @@
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(wm-&gt;<ref refid="struct___gntt_w_m_1ad1b522d32093b8638ba0ae3acc48ef7f"
                                                             kindref="member">_list</ref>.<ref
-                        refid="struct___gntt_w_m_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>)<sp/>
+                        refid="struct___gntt_w_m_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>)
+                    <sp/>
                     {
                 </highlight>
             </codeline>
@@ -20575,7 +20647,8 @@
                     <sp/>
                     <ref refid="struct_gnt_node" kindref="compound">GntNode</ref>
                     <sp/>*nd<sp/>=<sp/>g_hash_table_lookup(wm-&gt;<ref
-                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,<sp/>
+                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,
+                    <sp/>
                     wm-&gt;<ref refid="struct___gntt_w_m_1ad1b522d32093b8638ba0ae3acc48ef7f" kindref="member">
                     _list</ref>.<ref refid="struct___gntt_w_m_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">
                     window</ref>);
@@ -20715,7 +20788,8 @@
                     <sp/>
                     <sp/>
                     <sp/>node<sp/>=<sp/>g_hash_table_lookup(wm-&gt;<ref
-                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,<sp/>
+                        refid="struct___gntt_w_m_1ae50a4423acc1d37f62d5644dc9aee021" kindref="member">nodes</ref>,
+                    <sp/>
                     widget);
                 </highlight>
             </codeline>

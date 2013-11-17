@@ -1488,7 +1488,8 @@
                 </highlight>
             </codeline>
             <codeline lineno="71">
-                <highlight class="normal">setup_button_box(gpointer<sp/>userdata,<sp/>gpointer<sp/>cb,<sp/>gpointer<sp/>
+                <highlight class="normal">setup_button_box(gpointer<sp/>userdata,<sp/>gpointer<sp/>cb,<sp/>gpointer
+                    <sp/>
                     data,<sp/>...)
                 </highlight>
             </codeline>
@@ -1629,7 +1630,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),
+                    <sp/>
                     button);
                 </highlight>
             </codeline>
@@ -2012,7 +2014,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>window<sp/>=<sp/>setup_request_window(title,<sp/>primary,<sp/>secondary,<sp/>
+                    <sp/>window<sp/>=<sp/>setup_request_window(title,<sp/>primary,<sp/>secondary,
+                    <sp/>
                     PURPLE_REQUEST_INPUT);
                 </highlight>
             </codeline>
@@ -2315,7 +2318,8 @@
                 <highlight class="normal"><sp/>choice<sp/>=<sp/>GPOINTER_TO_INT(<ref
                         refid="gntcombobox_8c_1ada494aebec792da283bd75b9d89a217f" kindref="member">
                     gnt_combo_box_get_selected_data</ref>(<ref refid="gntcombobox_8h_1a6e56c4b7c7d4d842858b5bab100957d6"
-                                                               kindref="member">GNT_COMBO_BOX</ref>(combo)))<sp/>-<sp/>
+                                                               kindref="member">GNT_COMBO_BOX</ref>(combo)))<sp/>-
+                    <sp/>
                     1;
                 </highlight>
             </codeline>
@@ -2566,7 +2570,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>window<sp/>=<sp/>setup_request_window(title,<sp/>primary,<sp/>secondary,<sp/>
+                    <sp/>window<sp/>=<sp/>setup_request_window(title,<sp/>primary,<sp/>secondary,
+                    <sp/>
                     PURPLE_REQUEST_CHOICE);
                 </highlight>
             </codeline>
@@ -2649,7 +2654,8 @@
                     <sp/>
                     <ref refid="gntcombobox_8c_1ae140f0f45344d9d535ac4edfbbbad2d2" kindref="member">
                         gnt_combo_box_add_data</ref>(<ref refid="gntcombobox_8h_1a6e56c4b7c7d4d842858b5bab100957d6"
-                                                          kindref="member">GNT_COMBO_BOX</ref>(combo),<sp/>
+                                                          kindref="member">GNT_COMBO_BOX</ref>(combo),
+                    <sp/>
                     GINT_TO_POINTER(val<sp/>+<sp/>1),<sp/>text);
                 </highlight>
             </codeline>
@@ -2669,7 +2675,8 @@
                     <sp/>
                     <ref refid="gntcombobox_8c_1a47f2b2ddd25e689f897087c47fe1b5e0" kindref="member">
                         gnt_combo_box_set_selected</ref>(<ref refid="gntcombobox_8h_1a6e56c4b7c7d4d842858b5bab100957d6"
-                                                              kindref="member">GNT_COMBO_BOX</ref>(combo),<sp/>
+                                                              kindref="member">GNT_COMBO_BOX</ref>(combo),
+                    <sp/>
                     GINT_TO_POINTER(default_value<sp/>+<sp/>1));
                 </highlight>
             </codeline>
@@ -2998,7 +3005,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>window<sp/>=<sp/>setup_request_window(title,<sp/>primary,<sp/>secondary,<sp/>
+                    <sp/>window<sp/>=<sp/>setup_request_window(title,<sp/>primary,<sp/>secondary,
+                    <sp/>
                     PURPLE_REQUEST_ACTION);
                 </highlight>
             </codeline>
@@ -3114,7 +3122,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),
+                    <sp/>
                     button);
                 </highlight>
             </codeline>
@@ -3306,7 +3315,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>*<sp/>instantly<sp/>whenever<sp/>a<sp/>change<sp/>is<sp/>made.<sp/>That<sp/>allows<sp/>it<sp/>
+                    <sp/>*<sp/>instantly<sp/>whenever<sp/>a<sp/>change<sp/>is<sp/>made.<sp/>That<sp/>allows<sp/>it
+                    <sp/>
                     to<sp/>make<sp/>sure<sp/>the
                 </highlight>
             </codeline>
@@ -3348,7 +3358,8 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
-                <highlight class="normal"><sp/>(list<sp/>=<sp/>purple_request_fields_get_groups(fields);<sp/>list;<sp/>
+                <highlight class="normal"><sp/>(list<sp/>=<sp/>purple_request_fields_get_groups(fields);<sp/>list;
+                    <sp/>
                     list<sp/>=<sp/>list-&gt;next)
                 </highlight>
             </codeline>
@@ -3815,7 +3826,8 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordtype">int</highlight>
-                <highlight class="normal"><sp/>value<sp/>=<sp/>(text<sp/>&amp;&amp;<sp/>*text)<sp/>?<sp/>atoi(text)<sp/>
+                <highlight class="normal"><sp/>value<sp/>=<sp/>(text<sp/>&amp;&amp;<sp/>*text)<sp/>?<sp/>atoi(text)
+                    <sp/>
                     :<sp/>0;
                 </highlight>
             </codeline>
@@ -4506,8 +4518,10 @@
                     <sp/>gpointer<sp/>data<sp/>=
                     <sp/>
                     <ref refid="gntcombobox_8c_1ada494aebec792da283bd75b9d89a217f" kindref="member">
-                        gnt_combo_box_get_selected_data</ref>(<ref
-                        refid="gntcombobox_8h_1a6e56c4b7c7d4d842858b5bab100957d6" kindref="member">GNT_COMBO_BOX</ref>
+                        gnt_combo_box_get_selected_data</ref>(
+                    <ref
+                            refid="gntcombobox_8h_1a6e56c4b7c7d4d842858b5bab100957d6" kindref="member">GNT_COMBO_BOX
+                    </ref>
                     (combo));
                 </highlight>
             </codeline>
@@ -4695,8 +4709,10 @@
                     <sp/>PurpleAccount<sp/>*acc<sp/>=
                     <sp/>
                     <ref refid="gntcombobox_8c_1ada494aebec792da283bd75b9d89a217f" kindref="member">
-                        gnt_combo_box_get_selected_data</ref>(<ref
-                        refid="gntcombobox_8h_1a6e56c4b7c7d4d842858b5bab100957d6" kindref="member">GNT_COMBO_BOX</ref>
+                        gnt_combo_box_get_selected_data</ref>(
+                    <ref
+                            refid="gntcombobox_8h_1a6e56c4b7c7d4d842858b5bab100957d6" kindref="member">GNT_COMBO_BOX
+                    </ref>
                     (combo));
                 </highlight>
             </codeline>
@@ -4977,7 +4993,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>window<sp/>=<sp/>setup_request_window(title,<sp/>primary,<sp/>secondary,<sp/>
+                    <sp/>window<sp/>=<sp/>setup_request_window(title,<sp/>primary,<sp/>secondary,
+                    <sp/>
                     PURPLE_REQUEST_FIELDS);
                 </highlight>
             </codeline>
@@ -5033,7 +5050,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1a3b7044e63e2ae35e7c8efaf5a1f8efdc" kindref="member">gnt_box_set_pad</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),
+                    <sp/>
                     0);
                 </highlight>
             </codeline>
@@ -5044,7 +5062,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1ade48185acb40af09200649e416bb8ce1" kindref="member">gnt_box_set_fill</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),
+                    <sp/>
                     TRUE);
                 </highlight>
             </codeline>
@@ -5056,7 +5075,8 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
-                <highlight class="normal"><sp/>(grlist<sp/>=<sp/>purple_request_fields_get_groups(allfields);<sp/>
+                <highlight class="normal"><sp/>(grlist<sp/>=<sp/>purple_request_fields_get_groups(allfields);
+                    <sp/>
                     grlist;<sp/>grlist<sp/>=<sp/>grlist-&gt;next)
                 </highlight>
             </codeline>
@@ -5235,7 +5255,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>XXX:<sp/>Break<sp/>each<sp/>of<sp/>the<sp/>fields<sp/>into<sp/>a<sp/>
+                <highlight class="comment">/*<sp/>XXX:<sp/>Break<sp/>each<sp/>of<sp/>the<sp/>fields<sp/>into<sp/>a
+                    <sp/>
                     separate<sp/>function?<sp/>*/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -5354,7 +5375,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),
+                    <sp/>
                     hbox);
                 </highlight>
             </codeline>
@@ -5475,7 +5497,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),
+                    <sp/>
                     l);
                 </highlight>
             </codeline>
@@ -5628,7 +5651,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),
+                    <sp/>
                     check);
                 </highlight>
             </codeline>
@@ -5943,7 +5967,8 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
-                <highlight class="normal"><sp/>(;<sp/>node;<sp/>node<sp/>=<sp/>purple_blist_node_next(node,<sp/>
+                <highlight class="normal"><sp/>(;<sp/>node;<sp/>node<sp/>=<sp/>purple_blist_node_next(node,
+                    <sp/>
                     offline))<sp/>{
                 </highlight>
             </codeline>
@@ -6040,7 +6065,8 @@
                     <sp/>
                     <ref refid="gntentry_8c_1a018cbacf15daf3d96561d872452da5cb" kindref="member">
                         gnt_entry_add_suggest</ref>(<ref refid="gntentry_8h_1ad918238867ebaf71f678d5777b4adbcc"
-                                                         kindref="member">GNT_ENTRY</ref>(entry),<sp/>
+                                                         kindref="member">GNT_ENTRY</ref>(entry),
+                    <sp/>
                     purple_buddy_get_name((PurpleBuddy*)node));
                 </highlight>
             </codeline>
@@ -6175,7 +6201,8 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
-                <highlight class="normal"><sp/>(node<sp/>=<sp/>purple_blist_get_root();<sp/>node;<sp/>node<sp/>=<sp/>
+                <highlight class="normal"><sp/>(node<sp/>=<sp/>purple_blist_get_root();<sp/>node;<sp/>node<sp/>=
+                    <sp/>
                     node-&gt;next)<sp/>{
                 </highlight>
             </codeline>
@@ -6242,7 +6269,8 @@
                     <sp/>
                     <ref refid="gntentry_8c_1a018cbacf15daf3d96561d872452da5cb" kindref="member">
                         gnt_entry_add_suggest</ref>(<ref refid="gntentry_8h_1ad918238867ebaf71f678d5777b4adbcc"
-                                                         kindref="member">GNT_ENTRY</ref>(entry),<sp/>((PurpleGroup<sp/>
+                                                         kindref="member">GNT_ENTRY</ref>(entry),<sp/>((PurpleGroup
+                    <sp/>
                     *)node)-&gt;name);
                 </highlight>
             </codeline>
@@ -6309,7 +6337,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),
+                    <sp/>
                     entry);
                 </highlight>
             </codeline>
@@ -6572,7 +6601,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),
+                    <sp/>
                     entry);
                 </highlight>
             </codeline>
@@ -6741,7 +6771,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),
+                    <sp/>
                     combo);
                 </highlight>
             </codeline>
@@ -7162,7 +7193,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),
+                    <sp/>
                     tree);
                 </highlight>
             </codeline>
@@ -7641,7 +7673,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),
+                    <sp/>
                     combo);
                 </highlight>
             </codeline>
@@ -7838,7 +7871,8 @@
                     <sp/>
                     <ref refid="gntcombobox_8c_1ae140f0f45344d9d535ac4edfbbbad2d2" kindref="member">
                         gnt_combo_box_add_data</ref>(<ref refid="gntcombobox_8h_1a6e56c4b7c7d4d842858b5bab100957d6"
-                                                          kindref="member">GNT_COMBO_BOX</ref>(combo),<sp/>key,<sp/>
+                                                          kindref="member">GNT_COMBO_BOX</ref>(combo),<sp/>key,
+                    <sp/>
                     text);
                 </highlight>
             </codeline>
@@ -8137,7 +8171,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),
+                    <sp/>
                     combo);
                 </highlight>
             </codeline>
@@ -8627,7 +8662,8 @@
                     <sp/>
                     <ref refid="gntcombobox_8c_1ae140f0f45344d9d535ac4edfbbbad2d2" kindref="member">
                         gnt_combo_box_add_data</ref>(<ref refid="gntcombobox_8h_1a6e56c4b7c7d4d842858b5bab100957d6"
-                                                          kindref="member">GNT_COMBO_BOX</ref>(combo),<sp/>account,<sp/>
+                                                          kindref="member">GNT_COMBO_BOX</ref>(combo),<sp/>account,
+                    <sp/>
                     text);
                 </highlight>
             </codeline>
@@ -9194,8 +9230,10 @@
                 <highlight class="normal"><sp/>*file<sp/>=
                     <sp/>
                     <ref refid="gntfilesel_8c_1a34caa54a3fc75e65f3f70a8618458e96" kindref="member">
-                        gnt_file_sel_get_selected_file</ref>(<ref
-                            refid="gntfilesel_8h_1ae4a1ec6920c12738a3c8bf2954e63286" kindref="member">GNT_FILE_SEL</ref>
+                        gnt_file_sel_get_selected_file</ref>(
+                    <ref
+                            refid="gntfilesel_8h_1ae4a1ec6920c12738a3c8bf2954e63286" kindref="member">GNT_FILE_SEL
+                    </ref>
                     (data-&gt;<ref refid="struct_purple_gnt_file_request_1ad5ea5678edcf9de0f8904689c70f6702"
                                    kindref="member">dialog</ref>));
                 </highlight>

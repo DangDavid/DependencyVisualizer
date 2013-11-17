@@ -943,7 +943,8 @@
             </codeline>
             <codeline lineno="77">
                 <highlight class="normal"></highlight>
-                <highlight class="comment">/*<sp/>Anything<sp/>IO-related<sp/>is<sp/>directly<sp/>copied<sp/>from<sp/>
+                <highlight class="comment">/*<sp/>Anything<sp/>IO-related<sp/>is<sp/>directly<sp/>copied<sp/>from
+                    <sp/>
                     gtkpurple&apos;s<sp/>source<sp/>tree<sp/>*/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -960,7 +961,8 @@
             </codeline>
             <codeline lineno="80">
                 <highlight class="preprocessor"></highlight>
-                <highlight class="preprocessor">#define<sp/>FINCH_WRITE_COND<sp/>(G_IO_OUT<sp/>|<sp/>G_IO_HUP<sp/>|<sp/>
+                <highlight class="preprocessor">#define<sp/>FINCH_WRITE_COND<sp/>(G_IO_OUT<sp/>|<sp/>G_IO_HUP<sp/>|
+                    <sp/>
                     G_IO_ERR<sp/>|<sp/>G_IO_NVAL)
                 </highlight>
             </codeline>
@@ -1057,7 +1059,8 @@
             <codeline lineno="94">
                 <highlight class="normal"></highlight>
                 <highlight class="keyword">static</highlight>
-                <highlight class="normal"><sp/>gboolean<sp/>purple_gnt_io_invoke(GIOChannel<sp/>*source,<sp/>
+                <highlight class="normal"><sp/>gboolean<sp/>purple_gnt_io_invoke(GIOChannel<sp/>*source,
+                    <sp/>
                     GIOCondition<sp/>condition,<sp/>gpointer<sp/>data)
                 </highlight>
             </codeline>
@@ -1407,7 +1410,8 @@
             <codeline lineno="129">
                 <highlight class="normal"></highlight>
                 <highlight class="keyword">static</highlight>
-                <highlight class="normal"><sp/>guint<sp/>gnt_input_add(gint<sp/>fd,<sp/>PurpleInputCondition<sp/>
+                <highlight class="normal"><sp/>guint<sp/>gnt_input_add(gint<sp/>fd,<sp/>PurpleInputCondition
+                    <sp/>
                     condition,<sp/>PurpleInputFunction
                     <sp/>
                 </highlight>
@@ -1787,7 +1791,8 @@
             </codeline>
             <codeline lineno="173">
                 <highlight class="normal"></highlight>
-                <highlight class="comment">/*<sp/>This<sp/>is<sp/>mostly<sp/>copied<sp/>from<sp/>gtkpurple&apos;s<sp/>
+                <highlight class="comment">/*<sp/>This<sp/>is<sp/>mostly<sp/>copied<sp/>from<sp/>gtkpurple&apos;s
+                    <sp/>
                     source<sp/>tree<sp/>*/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -1850,7 +1855,8 @@
                     <sp/>
                     <sp/>text<sp/>=<sp/>g_strdup_printf(_(
                 </highlight>
-                <highlight class="stringliteral">&quot;%s.<sp/>Try<sp/>`%s<sp/>-h&apos;<sp/>for<sp/>more<sp/>
+                <highlight class="stringliteral">&quot;%s.<sp/>Try<sp/>`%s<sp/>-h&apos;<sp/>for<sp/>more
+                    <sp/>
                     information.\n&quot;
                 </highlight>
                 <highlight class="normal">),<sp/>VERSION,<sp/>name);
@@ -2626,7 +2632,8 @@
                     <sp/>
                     <sp/>long_options,
                     <sp/>
-                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>))<sp/>!=<sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>))<sp/>!=
+                    <sp/>
                     -1)<sp/>{
                 </highlight>
             </codeline>
@@ -3398,7 +3405,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>If<sp/>we&apos;re<sp/>using<sp/>a<sp/>custom<sp/>configuration<sp/>
+                <highlight class="comment">/*<sp/>If<sp/>we&apos;re<sp/>using<sp/>a<sp/>custom<sp/>configuration
+                    <sp/>
                     directory,<sp/>we
                 </highlight>
             </codeline>
@@ -3612,7 +3620,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="stringliteral">&quot;migration<sp/>by<sp/>hand.<sp/>Please<sp/>report<sp/>this<sp/>
+                <highlight class="stringliteral">&quot;migration<sp/>by<sp/>hand.<sp/>Please<sp/>report<sp/>this
+                    <sp/>
                     error<sp/>at<sp/>http://developer.pidgin.im&quot;
                 </highlight>
                 <highlight class="normal">),<sp/>_(
@@ -4016,7 +4025,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>TODO:<sp/>Move<sp/>pounces<sp/>loading<sp/>into<sp/>
+                <highlight class="comment">/*<sp/>TODO:<sp/>Move<sp/>pounces<sp/>loading<sp/>into
+                    <sp/>
                     purple_pounces_init()<sp/>*/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -4092,7 +4102,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>If<sp/>we&apos;ve<sp/>used<sp/>this<sp/>type+message<sp/>before,<sp/>
+                <highlight class="comment">/*<sp/>If<sp/>we&apos;ve<sp/>used<sp/>this<sp/>type+message<sp/>before,
+                    <sp/>
                     lookup<sp/>the<sp/>transient<sp/>status<sp/>*/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -4193,7 +4204,8 @@
                     <sp/>
                     <sp/>
                     <sp/>saved_status<sp/>=<sp/>purple_savedstatus_new(<ref
-                        refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,<sp/>
+                        refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
                     PURPLE_STATUS_OFFLINE);
                 </highlight>
             </codeline>
@@ -4264,7 +4276,8 @@
                     <sp/>
                     <sp/>
                 </highlight>
-                <highlight class="comment">/*<sp/>Everything<sp/>is<sp/>good<sp/>to<sp/>go--sign<sp/>on<sp/>already<sp/>
+                <highlight class="comment">/*<sp/>Everything<sp/>is<sp/>good<sp/>to<sp/>go--sign<sp/>on<sp/>already
+                    <sp/>
                     */
                 </highlight>
                 <highlight class="normal"></highlight>

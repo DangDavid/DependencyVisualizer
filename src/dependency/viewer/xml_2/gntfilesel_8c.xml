@@ -2211,7 +2211,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>*<sp/>same<sp/>element<sp/>and<sp/>overlap,<sp/>the<sp/>result<sp/>is<sp/>exactly<sp/>that<sp/>
+                    <sp/>*<sp/>same<sp/>element<sp/>and<sp/>overlap,<sp/>the<sp/>result<sp/>is<sp/>exactly<sp/>that
+                    <sp/>
                     element
                 </highlight>
             </codeline>
@@ -3192,8 +3193,10 @@
                     <sp/>
                     <ref refid="gntentry_8c_1afabb5fb27e654edbde94650e99ebc5a0" kindref="member">
                         gnt_entry_set_text</ref>(<ref refid="gntentry_8h_1ad918238867ebaf71f678d5777b4adbcc"
-                                                      kindref="member">GNT_ENTRY</ref>(sel-&gt;<ref
-                        refid="struct___gnt_file_sel_1a3fce88ebd4084ba2abd4e4f35b6de854" kindref="member">location</ref>
+                                                      kindref="member">GNT_ENTRY</ref>(sel-&gt;
+                    <ref
+                            refid="struct___gnt_file_sel_1a3fce88ebd4084ba2abd4e4f35b6de854" kindref="member">location
+                    </ref>
                     ),<sp/>old);
                 </highlight>
             </codeline>
@@ -4062,8 +4065,10 @@
                     <sp/>
                     <ref refid="gntentry_8c_1afabb5fb27e654edbde94650e99ebc5a0" kindref="member">
                         gnt_entry_set_text</ref>(<ref refid="gntentry_8h_1ad918238867ebaf71f678d5777b4adbcc"
-                                                      kindref="member">GNT_ENTRY</ref>(sel-&gt;<ref
-                        refid="struct___gnt_file_sel_1a3fce88ebd4084ba2abd4e4f35b6de854" kindref="member">location</ref>
+                                                      kindref="member">GNT_ENTRY</ref>(sel-&gt;
+                    <ref
+                            refid="struct___gnt_file_sel_1a3fce88ebd4084ba2abd4e4f35b6de854" kindref="member">location
+                    </ref>
                     ),
                     <sp/>
                     <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
@@ -4514,8 +4519,10 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
-                <highlight class="normal"><sp/>(!sel-&gt;<ref
-                        refid="struct___gnt_file_sel_1a6051914b60b69c4c95ed1575c55bef58" kindref="member">dirsonly</ref>
+                <highlight class="normal"><sp/>(!sel-&gt;
+                    <ref
+                            refid="struct___gnt_file_sel_1a6051914b60b69c4c95ed1575c55bef58" kindref="member">dirsonly
+                    </ref>
                     )<sp/>{
                 </highlight>
             </codeline>
@@ -4909,8 +4916,10 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>dir<sp/>=<sp/>g_path_get_basename(sel-&gt;<ref
-                        refid="struct___gnt_file_sel_1a22e917e348486f1469a6411c8a481141" kindref="member">current</ref>
+                    <sp/>dir<sp/>=<sp/>g_path_get_basename(sel-&gt;
+                    <ref
+                            refid="struct___gnt_file_sel_1a22e917e348486f1469a6411c8a481141" kindref="member">current
+                    </ref>
                     );
                 </highlight>
             </codeline>
@@ -4927,7 +4936,8 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(!<ref refid="gntfilesel_8c_1ab0cc50d758c0198cef85dc30a0bb01a5"
-                                                      kindref="member">gnt_file_sel_set_current_location</ref>(sel,<sp/>
+                                                      kindref="member">gnt_file_sel_set_current_location</ref>(sel,
+                    <sp/>
                     path))<sp/>{
                 </highlight>
             </codeline>
@@ -5318,7 +5328,8 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(<ref refid="gntfilesel_8c_1ab0cc50d758c0198cef85dc30a0bb01a5"
-                                                     kindref="member">gnt_file_sel_set_current_location</ref>(sel,<sp/>
+                                                     kindref="member">gnt_file_sel_set_current_location</ref>(sel,
+                    <sp/>
                     path))
                 </highlight>
             </codeline>
@@ -5368,7 +5379,8 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(!<ref refid="gntfilesel_8c_1ab0cc50d758c0198cef85dc30a0bb01a5"
-                                                      kindref="member">gnt_file_sel_set_current_location</ref>(sel,<sp/>
+                                                      kindref="member">gnt_file_sel_set_current_location</ref>(sel,
+                    <sp/>
                     path))<sp/>{
                 </highlight>
             </codeline>
@@ -5533,8 +5545,10 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
-                <highlight class="normal"><sp/>(!S_ISDIR(st.st_mode)<sp/>&amp;&amp;<sp/>!sel-&gt;<ref
-                        refid="struct___gnt_file_sel_1a6051914b60b69c4c95ed1575c55bef58" kindref="member">dirsonly</ref>
+                <highlight class="normal"><sp/>(!S_ISDIR(st.st_mode)<sp/>&amp;&amp;<sp/>!sel-&gt;
+                    <ref
+                            refid="struct___gnt_file_sel_1a6051914b60b69c4c95ed1575c55bef58" kindref="member">dirsonly
+                    </ref>
                     )<sp/>{
                 </highlight>
             </codeline>
@@ -5574,7 +5588,8 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
-                <highlight class="normal"><sp/>(count<sp/>=<sp/>0;<sp/>count<sp/>&lt;<sp/>gl.gl_pathc;<sp/>count++)<sp/>
+                <highlight class="normal"><sp/>(count<sp/>=<sp/>0;<sp/>count<sp/>&lt;<sp/>gl.gl_pathc;<sp/>count++)
+                    <sp/>
                     {
                 </highlight>
             </codeline>
@@ -6166,7 +6181,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1a3b7044e63e2ae35e7c8efaf5a1f8efdc" kindref="member">gnt_box_set_pad</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(vbox),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(vbox),
+                    <sp/>
                     0);
                 </highlight>
             </codeline>
@@ -6216,7 +6232,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1a3b7044e63e2ae35e7c8efaf5a1f8efdc" kindref="member">gnt_box_set_pad</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),
+                    <sp/>
                     0);
                 </highlight>
             </codeline>
@@ -6230,7 +6247,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),
+                    <sp/>
                     sel-&gt;<ref refid="struct___gnt_file_sel_1abcf774d63129c961dc11518b231a8518" kindref="member">
                     dirs</ref>);
                 </highlight>
@@ -6246,8 +6264,10 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
-                <highlight class="normal"><sp/>(!sel-&gt;<ref
-                        refid="struct___gnt_file_sel_1a6051914b60b69c4c95ed1575c55bef58" kindref="member">dirsonly</ref>
+                <highlight class="normal"><sp/>(!sel-&gt;
+                    <ref
+                            refid="struct___gnt_file_sel_1a6051914b60b69c4c95ed1575c55bef58" kindref="member">dirsonly
+                    </ref>
                     )<sp/>{
                 </highlight>
             </codeline>
@@ -6262,7 +6282,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),
+                    <sp/>
                     sel-&gt;<ref refid="struct___gnt_file_sel_1ac369dfa898bda7f592b2927f153c9ab7" kindref="member">
                     files</ref>);
                 </highlight>
@@ -6314,7 +6335,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(vbox),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(vbox),
+                    <sp/>
                     hbox);
                 </highlight>
             </codeline>
@@ -6325,7 +6347,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(vbox),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(vbox),
+                    <sp/>
                     sel-&gt;<ref refid="struct___gnt_file_sel_1a3fce88ebd4084ba2abd4e4f35b6de854" kindref="member">
                     location</ref>);
                 </highlight>
@@ -6362,7 +6385,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),
+                    <sp/>
                     sel-&gt;<ref refid="struct___gnt_file_sel_1af4a473bf995d5c01cd969997a47843dc" kindref="member">
                     cancel</ref>);
                 </highlight>
@@ -6374,7 +6398,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(hbox),
+                    <sp/>
                     sel-&gt;<ref refid="struct___gnt_file_sel_1a3c2bc606b16ae0bc22699059b3873e32" kindref="member">
                     select</ref>);
                 </highlight>
@@ -6386,7 +6411,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(vbox),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(vbox),
+                    <sp/>
                     hbox);
                 </highlight>
             </codeline>
@@ -6400,7 +6426,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(sel),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(sel),
+                    <sp/>
                     vbox);
                 </highlight>
             </codeline>
@@ -6742,8 +6769,10 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbindable_8c_1abe8191085a192d60eefa4d458ca11e4f" kindref="member">
-                        gnt_bindable_perform_action_named</ref>(<ref
-                        refid="gntbindable_8h_1a385eb94df73d3d565c9b5e0e43dc5910" kindref="member">GNT_BINDABLE</ref>
+                        gnt_bindable_perform_action_named</ref>(
+                    <ref
+                            refid="gntbindable_8h_1a385eb94df73d3d565c9b5e0e43dc5910" kindref="member">GNT_BINDABLE
+                    </ref>
                     (tree),
                     <sp/>
                 </highlight>
@@ -7090,8 +7119,10 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>dir<sp/>=<sp/>g_path_get_basename(sel-&gt;<ref
-                        refid="struct___gnt_file_sel_1a22e917e348486f1469a6411c8a481141" kindref="member">current</ref>
+                    <sp/>dir<sp/>=<sp/>g_path_get_basename(sel-&gt;
+                    <ref
+                            refid="struct___gnt_file_sel_1a22e917e348486f1469a6411c8a481141" kindref="member">current
+                    </ref>
                     );
                 </highlight>
             </codeline>
@@ -7104,7 +7135,8 @@
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(<ref refid="gntfilesel_8c_1ab0cc50d758c0198cef85dc30a0bb01a5"
-                                                     kindref="member">gnt_file_sel_set_current_location</ref>(sel,<sp/>
+                                                     kindref="member">gnt_file_sel_set_current_location</ref>(sel,
+                    <sp/>
                     path))
                 </highlight>
             </codeline>
@@ -7564,7 +7596,8 @@
                 </highlight>
             </codeline>
             <codeline lineno="567">
-                <highlight class="comment"><sp/>
+                <highlight class="comment">
+                    <sp/>
                     *****************************************************************************/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -8377,8 +8410,10 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>g_signal_connect(G_OBJECT(sel-&gt;<ref
-                        refid="struct___gnt_file_sel_1a3fce88ebd4084ba2abd4e4f35b6de854" kindref="member">location</ref>
+                    <sp/>g_signal_connect(G_OBJECT(sel-&gt;
+                    <ref
+                            refid="struct___gnt_file_sel_1a3fce88ebd4084ba2abd4e4f35b6de854" kindref="member">location
+                    </ref>
                     ),
                     <sp/>
                 </highlight>
@@ -8698,8 +8733,10 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">return</highlight>
-                <highlight class="normal"><sp/>sel-&gt;<ref
-                        refid="struct___gnt_file_sel_1a6051914b60b69c4c95ed1575c55bef58" kindref="member">dirsonly</ref>
+                <highlight class="normal"><sp/>sel-&gt;
+                    <ref
+                            refid="struct___gnt_file_sel_1a6051914b60b69c4c95ed1575c55bef58" kindref="member">dirsonly
+                    </ref>
                     ;
                 </highlight>
             </codeline>
@@ -8778,8 +8815,10 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
-                <highlight class="normal"><sp/>(sel-&gt;<ref
-                        refid="struct___gnt_file_sel_1a6051914b60b69c4c95ed1575c55bef58" kindref="member">dirsonly</ref>
+                <highlight class="normal"><sp/>(sel-&gt;
+                    <ref
+                            refid="struct___gnt_file_sel_1a6051914b60b69c4c95ed1575c55bef58" kindref="member">dirsonly
+                    </ref>
                     )<sp/>{
                 </highlight>
             </codeline>

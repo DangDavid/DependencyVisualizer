@@ -19,6 +19,7 @@ public class DependencyData {
 
     /**
      * Default constructor
+     *
      * @param object
      * @param data
      */
@@ -29,6 +30,7 @@ public class DependencyData {
 
     /**
      * A getter method for variable type
+     *
      * @return
      */
     public DependencyType getType() {
@@ -37,6 +39,7 @@ public class DependencyData {
 
     /**
      * A getter method for the size of nodeMap
+     *
      * @return
      */
     public int getSize() {
@@ -45,6 +48,7 @@ public class DependencyData {
 
     /**
      * A setter method to set the type of this DependencyData
+     *
      * @param type
      */
     public void setType(DependencyType type) {
@@ -52,7 +56,8 @@ public class DependencyData {
     }
 
     /**
-     * Given a parent and a child, add an edge for the parent node in nodeMap 
+     * Given a parent and a child, add an edge for the parent node in nodeMap
+     *
      * @param key
      * @param child
      */
@@ -84,6 +89,7 @@ public class DependencyData {
 
     /**
      * A getter method for the variable nodeMap
+     *
      * @return
      */
     public Map<String, List<DependencyEdge>> getNodeMap() {
@@ -94,6 +100,7 @@ public class DependencyData {
     /**
      * Initialize the DependencyData instance by adding a new list of DependencyEdge's
      * in the nodeMap
+     *
      * @param key
      */
     public void initDependency(String key) {

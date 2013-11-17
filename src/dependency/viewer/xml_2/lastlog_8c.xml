@@ -613,7 +613,8 @@
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(strcmp(key,
                     <sp/>
-                    <ref refid="gntkeys_8h_1a9f1051b5041b0f49305a57079dce9f8f" kindref="member">GNT_KEY_DOWN</ref>)<sp/>
+                    <ref refid="gntkeys_8h_1a9f1051b5041b0f49305a57079dce9f8f" kindref="member">GNT_KEY_DOWN</ref>)
+                    <sp/>
                     ==<sp/>0)
                 </highlight>
             </codeline>
@@ -737,7 +738,8 @@
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(strcmp(key,
                     <sp/>
-                    <ref refid="gntkeys_8h_1ae6adb88682096b0de8f63153de464b69" kindref="member">GNT_KEY_PGUP</ref>)<sp/>
+                    <ref refid="gntkeys_8h_1ae6adb88682096b0de8f63153de464b69" kindref="member">GNT_KEY_PGUP</ref>)
+                    <sp/>
                     ==<sp/>0)
                 </highlight>
             </codeline>
@@ -883,8 +885,10 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordtype">char</highlight>
-                <highlight class="normal"><sp/>**strings<sp/>=<sp/>g_strsplit(<ref
-                        refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW</ref>
+                <highlight class="normal"><sp/>**strings<sp/>=<sp/>g_strsplit(
+                    <ref
+                            refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW
+                    </ref>
                     (ggconv-&gt;<ref refid="struct___finch_conv_1a6f9f9b30ca8fbff3a99ef9ed4ae483c3" kindref="member">
                         tv</ref>)-&gt;string-&gt;str,
                     <sp/>
@@ -935,7 +939,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1a44429c371d6ea90f89d63a57cffabc66" kindref="member">gnt_box_set_title</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(win),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(win),
+                    <sp/>
                     _(
                 </highlight>
                 <highlight class="stringliteral">&quot;Lastlog&quot;</highlight>
@@ -962,7 +967,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(win),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(win),
+                    <sp/>
                     tv);
                 </highlight>
             </codeline>
@@ -1094,8 +1100,10 @@
                     <sp/>
                     <sp/>
                     <ref refid="gnttextview_8c_1a491ccc844a5ec91e80108ecb40b105e7" kindref="member">
-                        gnt_text_view_append_text_with_flags</ref>(<ref
-                        refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW</ref>
+                        gnt_text_view_append_text_with_flags</ref>(
+                    <ref
+                            refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW
+                    </ref>
                     (tv),<sp/>args[0],
                     <sp/>
                     <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44fb1f1c685640d25a63350923fd0359"
@@ -1121,8 +1129,10 @@
                     <sp/>
                     <sp/>
                     <ref refid="gnttextview_8c_1a491ccc844a5ec91e80108ecb40b105e7" kindref="member">
-                        gnt_text_view_append_text_with_flags</ref>(<ref
-                        refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW</ref>
+                        gnt_text_view_append_text_with_flags</ref>(
+                    <ref
+                            refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW
+                    </ref>
                     (tv),<sp/>finds[j],
                     <sp/>
                     <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44ca22374b4f5f6078f171aeb5f2e7b1"
@@ -1176,8 +1186,10 @@
                     <sp/>
                     <sp/>
                     <ref refid="gnttextview_8c_1a491ccc844a5ec91e80108ecb40b105e7" kindref="member">
-                        gnt_text_view_append_text_with_flags</ref>(<ref
-                        refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW</ref>
+                        gnt_text_view_append_text_with_flags</ref>(
+                    <ref
+                            refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW
+                    </ref>
                     (tv),
                     <sp/>
                 </highlight>
@@ -1657,7 +1669,8 @@
             </codeline>
             <codeline lineno="147">
                 <highlight class="normal">PURPLE_INIT_PLUGIN(<ref refid="lastlog_8c_1a913f5012c22fe2adbf2c6753125536ca"
-                                                                  kindref="member">PLUGIN_STATIC_NAME</ref>,<sp/>
+                                                                  kindref="member">PLUGIN_STATIC_NAME</ref>,
+                    <sp/>
                     init_plugin,<sp/>info)
                 </highlight>
             </codeline>

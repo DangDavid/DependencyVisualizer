@@ -984,7 +984,8 @@
             <codeline lineno="68">
                 <highlight class="normal">plugin_toggled_cb(
                     <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
-                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,
+                    <sp/>
                     PurplePlugin<sp/>*plugin,<sp/>gpointer<sp/>null)
                 </highlight>
             </codeline>
@@ -1416,7 +1417,8 @@
                     <sp/>
                     <sp/>text<sp/>=<sp/>g_strdup_printf(_(
                 </highlight>
-                <highlight class="stringliteral">&quot;Name:<sp/>%s\nVersion:<sp/>%s\nDescription:<sp/>%s\nAuthor:<sp/>
+                <highlight class="stringliteral">&quot;Name:<sp/>%s\nVersion:<sp/>%s\nDescription:<sp/>%s\nAuthor:
+                    <sp/>
                     %s\nWebsite:<sp/>%s\nFilename:<sp/>%s\n&quot;
                 </highlight>
                 <highlight class="normal">),</highlight>
@@ -1470,8 +1472,10 @@
                     <sp/>
                     <sp/>
                     <ref refid="gnttextview_8c_1a491ccc844a5ec91e80108ecb40b105e7" kindref="member">
-                        gnt_text_view_append_text_with_flags</ref>(<ref
-                        refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW</ref>
+                        gnt_text_view_append_text_with_flags</ref>(
+                    <ref
+                            refid="gnttextview_8h_1afe504429f5cee8c07f840d75194b86f6" kindref="member">GNT_TEXT_VIEW
+                    </ref>
                     (plugins.aboot),
                 </highlight>
             </codeline>
@@ -1838,7 +1842,8 @@
                     <sp/>
                     <sp/>_(
                 </highlight>
-                <highlight class="stringliteral">&quot;Plugin<sp/>need<sp/>to<sp/>be<sp/>loaded<sp/>before<sp/>you<sp/>
+                <highlight class="stringliteral">&quot;Plugin<sp/>need<sp/>to<sp/>be<sp/>loaded<sp/>before<sp/>you
+                    <sp/>
                     can<sp/>configure<sp/>it.&quot;
                 </highlight>
                 <highlight class="normal">),
@@ -2118,7 +2123,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),
+                    <sp/>
                     button);
                 </highlight>
             </codeline>
@@ -2422,8 +2428,10 @@
                     <sp/>
                     <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
                     <sp/>*<ref refid="gntdebug_8c_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>,
-                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
-                    *box,<sp/>*<ref refid="gntplugin_8c_1ac526ec532eaae5dc07f912126d33274f" kindref="member">aboot</ref>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,
+                    <sp/>
+                    *box,<sp/>*
+                    <ref refid="gntplugin_8c_1ac526ec532eaae5dc07f912126d33274f" kindref="member">aboot</ref>
                     ,<sp/>*button;
                 </highlight>
             </codeline>
@@ -2563,7 +2571,8 @@
                     <sp/>
                     <ref refid="gntlabel_8c_1a41ae500efcc7c1185c68177097bf7af4" kindref="member">gnt_label_new</ref>(_(
                 </highlight>
-                <highlight class="stringliteral">&quot;You<sp/>can<sp/>(un)load<sp/>plugins<sp/>from<sp/>the<sp/>
+                <highlight class="stringliteral">&quot;You<sp/>can<sp/>(un)load<sp/>plugins<sp/>from<sp/>the
+                    <sp/>
                     following<sp/>list.&quot;
                 </highlight>
                 <highlight class="normal">)));</highlight>
@@ -2627,7 +2636,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1a3b7044e63e2ae35e7c8efaf5a1f8efdc" kindref="member">gnt_box_set_pad</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),
+                    <sp/>
                     0);
                 </highlight>
             </codeline>
@@ -2649,7 +2659,8 @@
                     <sp/>
                     <ref refid="gnttree_8c_1ab5fa3bfe0a651c909caf80d7f691a7c8" kindref="member">
                         gnt_tree_set_compare_func</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
-                                                             kindref="member">GNT_TREE</ref>(tree),<sp/>
+                                                             kindref="member">GNT_TREE</ref>(tree),
+                    <sp/>
                     (GCompareFunc)plugin_compare);
                 </highlight>
             </codeline>
@@ -2673,7 +2684,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),
+                    <sp/>
                     tree);
                 </highlight>
             </codeline>
@@ -2720,7 +2732,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),
+                    <sp/>
                     aboot);
                 </highlight>
             </codeline>
@@ -2735,7 +2748,8 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
-                <highlight class="normal"><sp/>(iter<sp/>=<sp/>purple_plugins_get_all();<sp/>iter;<sp/>iter<sp/>=<sp/>
+                <highlight class="normal"><sp/>(iter<sp/>=<sp/>purple_plugins_get_all();<sp/>iter;<sp/>iter<sp/>=
+                    <sp/>
                     iter-&gt;next)
                 </highlight>
             </codeline>
@@ -2884,7 +2898,8 @@
                     <sp/>
                     <ref refid="gnttree_8c_1a88fda0e1af95b48e63a9ccda00f0236a" kindref="member">
                         gnt_tree_set_choice</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
-                                                       kindref="member">GNT_TREE</ref>(tree),<sp/>plug,<sp/>
+                                                       kindref="member">GNT_TREE</ref>(tree),<sp/>plug,
+                    <sp/>
                     purple_plugin_is_loaded(plug));
                 </highlight>
             </codeline>
@@ -2983,7 +2998,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),
+                    <sp/>
                     button);
                 </highlight>
             </codeline>
@@ -3039,7 +3055,8 @@
                     <sp/>
                     <sp/>
                     <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
-                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),<sp/>
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),
+                    <sp/>
                     button);
                 </highlight>
             </codeline>
@@ -3538,7 +3555,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>field<sp/>=<sp/>purple_request_field_bool_new(name,<sp/>label,<sp/>
+                    <sp/>field<sp/>=<sp/>purple_request_field_bool_new(name,<sp/>label,
+                    <sp/>
                     purple_prefs_get_bool(name));
                 </highlight>
             </codeline>
@@ -3661,7 +3679,8 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>field<sp/>=<sp/>purple_request_field_string_new(name,<sp/>label,<sp/>
+                    <sp/>field<sp/>=<sp/>purple_request_field_string_new(name,<sp/>label,
+                    <sp/>
                     purple_prefs_get_string(name),
                 </highlight>
             </codeline>

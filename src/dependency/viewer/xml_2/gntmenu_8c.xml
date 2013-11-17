@@ -937,7 +937,8 @@
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
                 <highlight class="normal"><sp/>(i<sp/>=<sp/>0,<sp/>iter<sp/>=<sp/>menu-&gt;<ref
-                        refid="struct___gnt_menu_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>;<sp/>
+                        refid="struct___gnt_menu_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>;
+                    <sp/>
                     iter;<sp/>iter<sp/>=<sp/>iter-&gt;next,<sp/>i++)<sp/>{
                 </highlight>
             </codeline>
@@ -1488,8 +1489,10 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
-                <highlight class="normal"><sp/>(0<sp/>&amp;&amp;<sp/>item-&gt;<ref
-                        refid="struct___gnt_menu_item_1a91ca0e10f99cf4f266af41fefa72600b" kindref="member">submenu</ref>
+                <highlight class="normal"><sp/>(0<sp/>&amp;&amp;<sp/>item-&gt;
+                    <ref
+                            refid="struct___gnt_menu_item_1a91ca0e10f99cf4f266af41fefa72600b" kindref="member">submenu
+                    </ref>
                     )<sp/>{
                 </highlight>
             </codeline>
@@ -1536,7 +1539,8 @@
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
                 <highlight class="normal"><sp/>(iter<sp/>=<sp/>sub-&gt;<ref
-                        refid="struct___gnt_menu_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>;<sp/>
+                        refid="struct___gnt_menu_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>;
+                    <sp/>
                     iter;<sp/>iter<sp/>=<sp/>iter-&gt;next)<sp/>{
                 </highlight>
             </codeline>
@@ -1733,7 +1737,8 @@
                 </highlight>
                 <highlight class="keywordflow">for</highlight>
                 <highlight class="normal"><sp/>(iter<sp/>=<sp/>menu-&gt;<ref
-                        refid="struct___gnt_menu_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>;<sp/>
+                        refid="struct___gnt_menu_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>;
+                    <sp/>
                     iter;<sp/>iter<sp/>=<sp/>iter-&gt;next)<sp/>{
                 </highlight>
             </codeline>
@@ -1882,8 +1887,10 @@
                     <sp/>
                 </highlight>
                 <highlight class="keywordflow">if</highlight>
-                <highlight class="normal"><sp/>(item-&gt;<ref
-                        refid="struct___gnt_menu_item_1a91ca0e10f99cf4f266af41fefa72600b" kindref="member">submenu</ref>
+                <highlight class="normal"><sp/>(item-&gt;
+                    <ref
+                            refid="struct___gnt_menu_item_1a91ca0e10f99cf4f266af41fefa72600b" kindref="member">submenu
+                    </ref>
                     )<sp/>{
                 </highlight>
             </codeline>
@@ -2115,8 +2122,10 @@
                         refid="struct___gnt_menu_item_1a641cefa125ce714232aa255913f61348" kindref="member">priv</ref>.
                     <ref refid="struct___gnt_menu_item_priv_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>
                     ,<sp/>item-&gt;<ref refid="struct___gnt_menu_item_1a641cefa125ce714232aa255913f61348"
-                                        kindref="member">priv</ref>.<ref
-                        refid="struct___gnt_menu_item_priv_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>
+                                        kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_menu_item_priv_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y
+                    </ref>
                     );
                 </highlight>
             </codeline>
@@ -2605,7 +2614,8 @@
                 <highlight class="keywordflow">if</highlight>
                 <highlight class="normal"><sp/>(strcmp(text,
                     <sp/>
-                    <ref refid="gntkeys_8h_1a3610efeedee6919c5b317929b9a8008e" kindref="member">GNT_KEY_LEFT</ref>)<sp/>
+                    <ref refid="gntkeys_8h_1a3610efeedee6919c5b317929b9a8008e" kindref="member">GNT_KEY_LEFT</ref>)
+                    <sp/>
                     ==<sp/>0)<sp/>{
                 </highlight>
             </codeline>
@@ -3007,7 +3017,8 @@
             <codeline lineno="186">
                 <highlight class="normal">gnt_menu_toggled(
                     <ref refid="struct___gnt_tree" kindref="compound">GntTree</ref>
-                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,<sp/>
+                    <sp/>*<ref refid="gntnotify_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>,
+                    <sp/>
                     gpointer<sp/>key)
                 </highlight>
             </codeline>
@@ -3214,7 +3225,8 @@
                     <sp/>
                     <sp/>
                     <sp/>item<sp/>=<sp/>g_list_nth_data(menu-&gt;<ref
-                        refid="struct___gnt_menu_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>,<sp/>
+                        refid="struct___gnt_menu_1a4dd2ca5f40d57a1f17e9130154bdfe88" kindref="member">list</ref>,
+                    <sp/>
                     menu-&gt;<ref refid="struct___gnt_menu_1adab4da51ba40d5a492becdceccccbfcd" kindref="member">
                     selected</ref>);
                 </highlight>
@@ -3480,8 +3492,10 @@
                     <sp/>
                     <sp/>
                     <sp/>
-                    <sp/>org_draw<sp/>=<sp/>wid_class-&gt;<ref
-                        refid="struct___gnt_widget_class_1a887d5b4ee4066dd6f6032a9601d6c0ac" kindref="member">draw</ref>
+                    <sp/>org_draw<sp/>=<sp/>wid_class-&gt;
+                    <ref
+                            refid="struct___gnt_widget_class_1a887d5b4ee4066dd6f6032a9601d6c0ac" kindref="member">draw
+                    </ref>
                     ;
                 </highlight>
             </codeline>
@@ -3710,7 +3724,8 @@
                 </highlight>
             </codeline>
             <codeline lineno="263">
-                <highlight class="comment"><sp/>
+                <highlight class="comment">
+                    <sp/>
                     *****************************************************************************/
                 </highlight>
                 <highlight class="normal"></highlight>
@@ -4284,7 +4299,8 @@
             <codeline lineno="292">
                 <highlight class="normal">
                     <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
-                    <sp/>*<ref refid="gntmenu_8c_1a3379ec1f4204c57d58c5a56eeb97bc1f" kindref="member">gnt_menu_new</ref>
+                    <sp/>*
+                    <ref refid="gntmenu_8c_1a3379ec1f4204c57d58c5a56eeb97bc1f" kindref="member">gnt_menu_new</ref>
                     (
                     <ref refid="gntmenu_8h_1adcb0a7441f0114f4921e54fce8ff659d" kindref="member">GntMenuType</ref>
                     <sp/>type)
