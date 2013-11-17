@@ -30,7 +30,7 @@ public class VisualizerParser {
             "edge[weight=0.8];\n" +
             "overlap = false;\n" +
             "splines=true;\n" +
-            "node [shape = circle ,sides = 4,distortion = 0.0,orientation = 0.0,skew = 0.0 , style = filled ];\n";
+            "node [shape = circle,width = 1.4,height= 1.4,fixedsize = true,sides = 4,distortion = 0.0,orientation = 0.0,skew = 0.0 , style = filled];\n";
 
 
     public VisualizerParser(List<DependencyGraph> initG, List<DependencyGraph> finalG) {
@@ -73,6 +73,7 @@ public class VisualizerParser {
 
 
         fileWrite(initGraphString, finalGraphString);
+  
 
     }
 
@@ -140,7 +141,7 @@ public class VisualizerParser {
         List<String> existingFiles = new ArrayList<String>(Arrays.asList(detectNewFiles));
         for (String file : fileNameDirectory) {
             if (!existingFiles.contains(file)) {
-                dependency += file + "[ color= black, shape = box];\n";
+                dependency += file + "[shape = invtriangle, color= hotpink1 ];\n";
             }
         }
 
@@ -152,12 +153,15 @@ public class VisualizerParser {
             if (cluster.containsKey(key) && cluster.get(key).size() > 1) {
                 keys.add(key);
                 dependency += "subgraph cluster_";
+             
                 dependency += key;
                 dependency += " { \n";
                 for (String f : cluster.get(key)) {
+                	   dependency += "penwidth= 10\n";
                     dependency += f;
                     dependency += ";\n";
                 }
+                dependency += "color = indigo\n";
                 dependency += "}\n";
             }
         }
