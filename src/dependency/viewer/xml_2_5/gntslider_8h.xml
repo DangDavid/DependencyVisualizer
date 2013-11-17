@@ -1,0 +1,1773 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntslider_8h" kind="file">
+        <compoundname>gntslider.h</compoundname>
+        <includes refid="gntwidget_8h" local="yes">gntwidget.h</includes>
+        <includes refid="gnt_8h" local="yes">gnt.h</includes>
+        <includes refid="gntlabel_8h" local="yes">gntlabel.h</includes>
+        <includedby refid="gntsound_8c" local="yes">gntsound.c</includedby>
+        <includedby refid="gntslider_8c" local="yes">libgnt/gntslider.c</includedby>
+        <incdepgraph>
+            <node id="2092">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="2093" relation="include">
+                </childnode>
+                <childnode refid="2094" relation="include">
+                </childnode>
+                <childnode refid="2095" relation="include">
+                </childnode>
+                <childnode refid="2096" relation="include">
+                </childnode>
+            </node>
+            <node id="2103">
+                <label>term.h</label>
+            </node>
+            <node id="2105">
+                <label>gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="2092" relation="include">
+                </childnode>
+                <childnode refid="2098" relation="include">
+                </childnode>
+                <childnode refid="2100" relation="include">
+                </childnode>
+                <childnode refid="2101" relation="include">
+                </childnode>
+            </node>
+            <node id="2104">
+                <label>gntlabel.h</label>
+                <link refid="gntlabel_8h"/>
+                <childnode refid="2098" relation="include">
+                </childnode>
+                <childnode refid="2092" relation="include">
+                </childnode>
+                <childnode refid="2105" relation="include">
+                </childnode>
+            </node>
+            <node id="2102">
+                <label>curses.h</label>
+            </node>
+            <node id="2101">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="2102" relation="include">
+                </childnode>
+                <childnode refid="2103" relation="include">
+                </childnode>
+            </node>
+            <node id="2091">
+                <label>libgnt/gntslider.h</label>
+                <link refid="gntslider.h"/>
+                <childnode refid="2092" relation="include">
+                </childnode>
+                <childnode refid="2098" relation="include">
+                </childnode>
+                <childnode refid="2104" relation="include">
+                </childnode>
+            </node>
+            <node id="2100">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="2094" relation="include">
+                </childnode>
+            </node>
+            <node id="2096">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="2093" relation="include">
+                </childnode>
+                <childnode refid="2094" relation="include">
+                </childnode>
+                <childnode refid="2097" relation="include">
+                </childnode>
+                <childnode refid="2095" relation="include">
+                </childnode>
+            </node>
+            <node id="2094">
+                <label>glib.h</label>
+            </node>
+            <node id="2099">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="2093" relation="include">
+                </childnode>
+                <childnode refid="2094" relation="include">
+                </childnode>
+                <childnode refid="2097" relation="include">
+                </childnode>
+            </node>
+            <node id="2095">
+                <label>ncurses.h</label>
+            </node>
+            <node id="2098">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="2094" relation="include">
+                </childnode>
+                <childnode refid="2092" relation="include">
+                </childnode>
+                <childnode refid="2099" relation="include">
+                </childnode>
+                <childnode refid="2100" relation="include">
+                </childnode>
+                <childnode refid="2101" relation="include">
+                </childnode>
+            </node>
+            <node id="2093">
+                <label>stdio.h</label>
+            </node>
+            <node id="2097">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="2108">
+                <label>libgnt/gntslider.c</label>
+                <link refid="gntslider_8c"/>
+            </node>
+            <node id="2106">
+                <label>libgnt/gntslider.h</label>
+                <link refid="gntslider.h"/>
+                <childnode refid="2107" relation="include">
+                </childnode>
+                <childnode refid="2108" relation="include">
+                </childnode>
+            </node>
+            <node id="2107">
+                <label>gntsound.c</label>
+                <link refid="gntsound_8c"/>
+            </node>
+        </invincdepgraph>
+        <innerclass refid="struct___gnt_slider" prot="public">_GntSlider</innerclass>
+        <innerclass refid="struct___gnt_slider_class" prot="public">_GntSliderClass</innerclass>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="gntslider_8h_1ad041eeebb2c29b858a249f134afab239" prot="public" static="no">
+                <name>GNT_TYPE_SLIDER</name>
+                <initializer>(<ref refid="gntslider_8h_1af446ce40481f5c8f804bb3ebe4ae91e5" kindref="member">
+                    gnt_slider_get_gtype</ref>())
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="34" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        bodystart="34" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntslider_8h_1a2128da6bbdead1515996ae36e34fa9f8" prot="public" static="no">
+                <name>GNT_SLIDER</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_INSTANCE_CAST((obj),<ref
+                        refid="gntslider_8h_1ad041eeebb2c29b858a249f134afab239" kindref="member">GNT_TYPE_SLIDER</ref>,
+                    <ref refid="gntslider_8h_1af9cce58c5f44e059fd3f352c166456b0" kindref="member">GntSlider</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="35" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        bodystart="35" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntslider_8h_1af102df94cc03b0d494b88e26b7737571" prot="public" static="no">
+                <name>GNT_SLIDER_CLASS</name>
+                <param>
+                    <defname>klass</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_CLASS_CAST((<ref refid="gntbindable_8c_1aa084f6474fb231a7247cc6c5299bad55"
+                                                            kindref="member">klass</ref>),<ref
+                        refid="gntslider_8h_1ad041eeebb2c29b858a249f134afab239" kindref="member">GNT_TYPE_SLIDER</ref>,
+                    <ref refid="gntslider_8h_1a1347392f69dffc83e42c0232fd534c98" kindref="member">GntSliderClass</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="36" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        bodystart="36" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntslider_8h_1a1254a30fb14562bf7d9e9c7d82c57683" prot="public" static="no">
+                <name>GNT_IS_SLIDER</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_INSTANCE_TYPE((obj),<ref
+                        refid="gntslider_8h_1ad041eeebb2c29b858a249f134afab239" kindref="member">GNT_TYPE_SLIDER</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="37" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        bodystart="37" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntslider_8h_1af8a83ecc16f4b774b4a180f712369caa" prot="public" static="no">
+                <name>GNT_IS_SLIDER_CLASS</name>
+                <param>
+                    <defname>klass</defname>
+                </param>
+                <initializer>(G_TYPE_CHECK_CLASS_TYPE((<ref refid="gntbindable_8c_1aa084f6474fb231a7247cc6c5299bad55"
+                                                            kindref="member">klass</ref>),<ref
+                        refid="gntslider_8h_1ad041eeebb2c29b858a249f134afab239" kindref="member">GNT_TYPE_SLIDER</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="38" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        bodystart="38" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntslider_8h_1a4670d4a35fc0f70eacf6dce08d112918" prot="public" static="no">
+                <name>GNT_SLIDER_GET_CLASS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(G_TYPE_INSTANCE_GET_CLASS((obj),<ref
+                        refid="gntslider_8h_1ad041eeebb2c29b858a249f134afab239" kindref="member">GNT_TYPE_SLIDER</ref>,
+                    <ref refid="gntslider_8h_1a1347392f69dffc83e42c0232fd534c98" kindref="member">GntSliderClass</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="39" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        bodystart="39" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntslider_8h_1a0263fadb10f565896e156fb5f7e680e3" prot="public" static="no">
+                <name>GNT_SLIDER_FLAGS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <initializer>(<ref refid="gntslider_8h_1a2128da6bbdead1515996ae36e34fa9f8" kindref="member">
+                    GNT_SLIDER</ref>(obj)-&gt;priv.flags)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="41" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        bodystart="41" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntslider_8h_1a1a35f595e6de269d2dca119ecdb3a7e1" prot="public" static="no">
+                <name>GNT_SLIDER_SET_FLAGS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <param>
+                    <defname>flags</defname>
+                </param>
+                <initializer>(<ref refid="gntslider_8h_1a0263fadb10f565896e156fb5f7e680e3" kindref="member">
+                    GNT_SLIDER_FLAGS</ref>(obj) |= flags)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="42" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        bodystart="42" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntslider_8h_1a20b1392ccfef103e122083ec11ebe713" prot="public" static="no">
+                <name>GNT_SLIDER_UNSET_FLAGS</name>
+                <param>
+                    <defname>obj</defname>
+                </param>
+                <param>
+                    <defname>flags</defname>
+                </param>
+                <initializer>(<ref refid="gntslider_8h_1a0263fadb10f565896e156fb5f7e680e3" kindref="member">
+                    GNT_SLIDER_FLAGS</ref>(obj) &amp;= ~(flags))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="43" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        bodystart="43" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntslider_8h_1a8058fd31dccaf010ecf3b324d39ce532" prot="public" static="no">
+                <name>gnt_hslider_new</name>
+                <param>
+                    <defname>max</defname>
+                </param>
+                <param>
+                    <defname>min</defname>
+                </param>
+                <initializer><ref refid="gntslider_8h_1abcfa4d0b4061eaabbb95212a66e70ab3" kindref="member">
+                    gnt_slider_new</ref>(FALSE, max, min)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="83" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        bodystart="83" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntslider_8h_1a339463cec35759a14e0a49c69e821b63" prot="public" static="no">
+                <name>gnt_vslider_new</name>
+                <param>
+                    <defname>max</defname>
+                </param>
+                <param>
+                    <defname>min</defname>
+                </param>
+                <initializer><ref refid="gntslider_8h_1abcfa4d0b4061eaabbb95212a66e70ab3" kindref="member">
+                    gnt_slider_new</ref>(TRUE, max, min)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="84" column="9"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        bodystart="84" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="typedef">
+            <memberdef kind="typedef" id="gntslider_8h_1af9cce58c5f44e059fd3f352c166456b0" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_slider" kindref="compound">_GntSlider</ref>
+                </type>
+                <definition>typedef struct _GntSlider GntSlider</definition>
+                <argsstring></argsstring>
+                <name>GntSlider</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="339" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        bodystart="45" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntslider_8h_1a30a33b5854e124a36f2fcd10a98b1b10" prot="public" static="no">
+                <type>struct _GntSliderPriv</type>
+                <definition>typedef struct _GntSliderPriv GntSliderPriv</definition>
+                <argsstring></argsstring>
+                <name>GntSliderPriv</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="339" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        bodystart="46" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntslider_8h_1a1347392f69dffc83e42c0232fd534c98" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___gnt_slider_class" kindref="compound">_GntSliderClass</ref>
+                </type>
+                <definition>typedef struct _GntSliderClass GntSliderClass</definition>
+                <argsstring></argsstring>
+                <name>GntSliderClass</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="339" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        bodystart="47" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntslider_8h_1af446ce40481f5c8f804bb3ebe4ae91e5" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>G_BEGIN_DECLS GType</type>
+                <definition>G_BEGIN_DECLS GType gnt_slider_get_gtype</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_slider_get_gtype</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <simplesect kind="return">
+                            <para>The GType for GntSlider</para>
+                        </simplesect>
+                        <simplesect kind="since">
+                            <para>2.0.0 (gnt), 2.1.0 (pidgin)</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="81" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.c"
+                        bodystart="238" bodyend="263"/>
+            </memberdef>
+            <memberdef kind="function" id="gntslider_8h_1abcfa4d0b4061eaabbb95212a66e70ab3" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* gnt_slider_new</definition>
+                <argsstring>(gboolean orient, int max, int min)</argsstring>
+                <name>gnt_slider_new</name>
+                <param>
+                    <type>gboolean</type>
+                    <declname>orient</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>max</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>min</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Create a new slider.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>orient</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>A vertical slider is created if<computeroutput>TRUE</computeroutput>,
+                                        otherwise the slider is horizontal.
+                                    </para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>max</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The maximum value for the slider</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>min</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The minimum value for the slider</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>The newly created slider</para>
+                        </simplesect>
+                        <simplesect kind="since">
+                            <para>2.0.0 (gnt), 2.1.0 (pidgin)</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="97" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.c"
+                        bodystart="265" bodyend="282"/>
+            </memberdef>
+            <memberdef kind="function" id="gntslider_8h_1a1bb4dfbda7c5e73f1e365bbdbad95fb0" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_slider_set_range</definition>
+                <argsstring>(GntSlider *slider, int max, int min)</argsstring>
+                <name>gnt_slider_set_range</name>
+                <param>
+                    <type>
+                        <ref refid="gntslider_8h_1af9cce58c5f44e059fd3f352c166456b0" kindref="member">GntSlider</ref>
+                        *
+                    </type>
+                    <declname>slider</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>max</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>min</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Set the range of the slider.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>slider</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The slider</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>max</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The maximum value</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>min</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The minimum value</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="since">
+                            <para>2.0.0 (gnt), 2.1.0 (pidgin)</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="108" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.c"
+                        bodystart="324" bodyend="329"/>
+            </memberdef>
+            <memberdef kind="function" id="gntslider_8h_1a234b1ed4a9938316f96001bf1295c66f" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_slider_set_step</definition>
+                <argsstring>(GntSlider *slider, int step)</argsstring>
+                <name>gnt_slider_set_step</name>
+                <param>
+                    <type>
+                        <ref refid="gntslider_8h_1af9cce58c5f44e059fd3f352c166456b0" kindref="member">GntSlider</ref>
+                        *
+                    </type>
+                    <declname>slider</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>step</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Sets the amount of change at each step.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>slider</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The slider</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>step</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The amount for each step</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="since">
+                            <para>2.0.0 (gnt), 2.1.0 (pidgin)</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="118" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.c"
+                        bodystart="309" bodyend="312"/>
+            </memberdef>
+            <memberdef kind="function" id="gntslider_8h_1af7e25aed3e37268859df6e02eba9735f" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_slider_set_small_step</definition>
+                <argsstring>(GntSlider *slider, int step)</argsstring>
+                <name>gnt_slider_set_small_step</name>
+                <param>
+                    <type>
+                        <ref refid="gntslider_8h_1af9cce58c5f44e059fd3f352c166456b0" kindref="member">GntSlider</ref>
+                        *
+                    </type>
+                    <declname>slider</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>step</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Sets the amount of change a small step.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>slider</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The slider</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>step</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The amount for a small step (for the slider)</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="since">
+                            <para>2.2.0</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="128" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.c"
+                        bodystart="314" bodyend="317"/>
+            </memberdef>
+            <memberdef kind="function" id="gntslider_8h_1a8b24d4332eadd2c3b60c431881b69dee" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_slider_set_large_step</definition>
+                <argsstring>(GntSlider *slider, int step)</argsstring>
+                <name>gnt_slider_set_large_step</name>
+                <param>
+                    <type>
+                        <ref refid="gntslider_8h_1af9cce58c5f44e059fd3f352c166456b0" kindref="member">GntSlider</ref>
+                        *
+                    </type>
+                    <declname>slider</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>step</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Sets the amount of change a large step.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>slider</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The slider</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>step</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The amount for a large step (for the slider)</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="since">
+                            <para>2.2.0</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="138" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.c"
+                        bodystart="319" bodyend="322"/>
+            </memberdef>
+            <memberdef kind="function" id="gntslider_8h_1ad513302b0a48d2544186acc301c6a51b" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>int</type>
+                <definition>int gnt_slider_advance_step</definition>
+                <argsstring>(GntSlider *slider, int steps)</argsstring>
+                <name>gnt_slider_advance_step</name>
+                <param>
+                    <type>
+                        <ref refid="gntslider_8h_1af9cce58c5f44e059fd3f352c166456b0" kindref="member">GntSlider</ref>
+                        *
+                    </type>
+                    <declname>slider</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>steps</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Advance the slider forward or backward.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>slider</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The slider</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>steps</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The number of amounts to change, positive to change forward, negative to
+                                        change backward
+                                    </para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>The value of the slider after the change</para>
+                        </simplesect>
+                        <simplesect kind="since">
+                            <para>2.0.0 (gnt), 2.1.0 (pidgin)</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="151" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.c"
+                        bodystart="303" bodyend="307"/>
+            </memberdef>
+            <memberdef kind="function" id="gntslider_8h_1a3592afe0a0d743779e5e25ca6b89c3c6" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_slider_set_value</definition>
+                <argsstring>(GntSlider *slider, int value)</argsstring>
+                <name>gnt_slider_set_value</name>
+                <param>
+                    <type>
+                        <ref refid="gntslider_8h_1af9cce58c5f44e059fd3f352c166456b0" kindref="member">GntSlider</ref>
+                        *
+                    </type>
+                    <declname>slider</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>value</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Set the current value for the slider.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>slider</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The slider</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>value</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The current value</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="since">
+                            <para>2.0.0 (gnt), 2.1.0 (pidgin)</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="161" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.c"
+                        bodystart="284" bodyend="296"/>
+            </memberdef>
+            <memberdef kind="function" id="gntslider_8h_1a6cd983352034910ae4fe74e69e38b0bc" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>int</type>
+                <definition>int gnt_slider_get_value</definition>
+                <argsstring>(GntSlider *slider)</argsstring>
+                <name>gnt_slider_get_value</name>
+                <param>
+                    <type>
+                        <ref refid="gntslider_8h_1af9cce58c5f44e059fd3f352c166456b0" kindref="member">GntSlider</ref>
+                        *
+                    </type>
+                    <declname>slider</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Get the current value for the slider.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>slider</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The slider</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="since">
+                            <para>2.0.0 (gnt), 2.1.0 (pidgin)</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="171" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.c"
+                        bodystart="298" bodyend="301"/>
+            </memberdef>
+            <memberdef kind="function" id="gntslider_8h_1aecbd88ff1707bb5bfbfd0fb2203cccea" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_slider_reflect_label</definition>
+                <argsstring>(GntSlider *slider, GntLabel *label)</argsstring>
+                <name>gnt_slider_reflect_label</name>
+                <param>
+                    <type>
+                        <ref refid="gntslider_8h_1af9cce58c5f44e059fd3f352c166456b0" kindref="member">GntSlider</ref>
+                        *
+                    </type>
+                    <declname>slider</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gntlabel_8h_1aed2c0bee54b33fe6c0f14d69b359ff0f" kindref="member">GntLabel</ref>
+                        *
+                    </type>
+                    <declname>label</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Update a label with the value of the slider whenever the value changes.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>slider</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The slider</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>label</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The label to update</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="since">
+                            <para>2.0.0 (gnt), 2.1.0 (pidgin)</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"
+                        line="181" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.c"
+                        bodystart="339" bodyend="342"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>Slider API</para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="5">
+                <highlight class="comment">/*</highlight>
+            </codeline>
+            <codeline lineno="6">
+                <highlight class="comment"><sp/>*<sp/>GNT<sp/>-<sp/>The<sp/>GLib<sp/>Ncurses<sp/>Toolkit
+                </highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="8">
+                <highlight class="comment"><sp/>*<sp/>GNT<sp/>is<sp/>the<sp/>legal<sp/>property<sp/>of<sp/>its
+                    <sp/>
+                    developers,<sp/>whose<sp/>names<sp/>are<sp/>too<sp/>numerous
+                </highlight>
+            </codeline>
+            <codeline lineno="9">
+                <highlight class="comment"><sp/>*<sp/>to<sp/>list<sp/>here.
+                    <sp/>
+                    <sp/>Please<sp/>refer<sp/>to<sp/>the<sp/>COPYRIGHT<sp/>file<sp/>distributed<sp/>with<sp/>this
+                </highlight>
+            </codeline>
+            <codeline lineno="10">
+                <highlight class="comment"><sp/>*<sp/>source<sp/>distribution.
+                </highlight>
+            </codeline>
+            <codeline lineno="11">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="12">
+                <highlight class="comment"><sp/>*<sp/>This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can
+                    <sp/>redistribute<sp/>it<sp/>and/or<sp/>modify
+                </highlight>
+            </codeline>
+            <codeline lineno="13">
+                <highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General
+                    <sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by
+                </highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version
+                    <sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or
+                </highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.
+                </highlight>
+            </codeline>
+            <codeline lineno="16">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="17">
+                <highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope
+                    <sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,
+                </highlight>
+            </codeline>
+            <codeline lineno="18">
+                <highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the
+                    <sp/>implied<sp/>warranty<sp/>of
+                </highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR
+                    <sp/>PURPOSE.
+                    <sp/>
+                    <sp/>See<sp/>the
+                </highlight>
+            </codeline>
+            <codeline lineno="20">
+                <highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more
+                    <sp/>
+                    details.
+                </highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the
+                    <sp/>GNU<sp/>General<sp/>Public<sp/>License
+                </highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write
+                    <sp/>to<sp/>the<sp/>Free<sp/>Software
+                </highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth
+                    <sp/>Floor,<sp/>Boston,<sp/>MA
+                    <sp/>
+                    <sp/>02111-1301
+                    <sp/>
+                    <sp/>USA
+                </highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="comment"><sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#ifndef<sp/>GNT_SLIDER_H
+                </highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_SLIDER_H
+                </highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntwidget_8h" kindref="compound">
+                    gntwidget.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;
+                    <ref refid="gnt_8h" kindref="compound">gnt.h</ref>
+                    &quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntlabel_8h" kindref="compound">
+                    gntlabel.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34" refid="gntslider_8h_1ad041eeebb2c29b858a249f134afab239" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_TYPE_SLIDER
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(gnt_slider_get_gtype())
+                </highlight>
+            </codeline>
+            <codeline lineno="35" refid="gntslider_8h_1a2128da6bbdead1515996ae36e34fa9f8" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_SLIDER(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_INSTANCE_CAST((obj),<sp/>GNT_TYPE_SLIDER,<sp/>GntSlider))
+                </highlight>
+            </codeline>
+            <codeline lineno="36" refid="gntslider_8h_1af102df94cc03b0d494b88e26b7737571" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_SLIDER_CLASS(klass)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_CLASS_CAST((klass),<sp/>GNT_TYPE_SLIDER,<sp/>GntSliderClass))
+                </highlight>
+            </codeline>
+            <codeline lineno="37" refid="gntslider_8h_1a1254a30fb14562bf7d9e9c7d82c57683" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_IS_SLIDER(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_INSTANCE_TYPE((obj),<sp/>GNT_TYPE_SLIDER))
+                </highlight>
+            </codeline>
+            <codeline lineno="38" refid="gntslider_8h_1af8a83ecc16f4b774b4a180f712369caa" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_IS_SLIDER_CLASS(klass)
+                    <sp/>
+                    <sp/>(G_TYPE_CHECK_CLASS_TYPE((klass),<sp/>GNT_TYPE_SLIDER))
+                </highlight>
+            </codeline>
+            <codeline lineno="39" refid="gntslider_8h_1a4670d4a35fc0f70eacf6dce08d112918" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_SLIDER_GET_CLASS(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>(G_TYPE_INSTANCE_GET_CLASS((obj),<sp/>GNT_TYPE_SLIDER,<sp/>GntSliderClass))
+                </highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="41" refid="gntslider_8h_1a0263fadb10f565896e156fb5f7e680e3" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_SLIDER_FLAGS(obj)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_SLIDER(obj)-&gt;priv.flags)
+                </highlight>
+            </codeline>
+            <codeline lineno="42" refid="gntslider_8h_1a1a35f595e6de269d2dca119ecdb3a7e1" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_SLIDER_SET_FLAGS(obj,<sp/>flags)
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_SLIDER_FLAGS(obj)<sp/>|=<sp/>flags)
+                </highlight>
+            </codeline>
+            <codeline lineno="43" refid="gntslider_8h_1a20b1392ccfef103e122083ec11ebe713" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>GNT_SLIDER_UNSET_FLAGS(obj,<sp/>flags)
+                    <sp/>
+                    <sp/>
+                    <sp/>(GNT_SLIDER_FLAGS(obj)<sp/>&amp;=<sp/>~(flags))
+                </highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="45" refid="gntslider_8h_1af9cce58c5f44e059fd3f352c166456b0" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_slider" kindref="compound">_GntSlider</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_slider" kindref="compound">GntSlider</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="46" refid="gntslider_8h_1a30a33b5854e124a36f2fcd10a98b1b10" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">_GntSliderPriv
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntslider_8h_1a30a33b5854e124a36f2fcd10a98b1b10" kindref="member">GntSliderPriv</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="47" refid="gntslider_8h_1a1347392f69dffc83e42c0232fd534c98" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_slider_class" kindref="compound">_GntSliderClass</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_slider_class" kindref="compound">GntSliderClass</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="49" refid="struct___gnt_slider" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_slider" kindref="compound">_GntSlider</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="51" refid="struct___gnt_slider_1ae3e3b55c7e6209f0e555f25a2e5fd1a9" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_slider_1ae3e3b55c7e6209f0e555f25a2e5fd1a9" kindref="member">parent</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="53" refid="struct___gnt_slider_1a1dc37b6d283a2e71bbb553c6ce180c64" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gboolean
+                    <sp/>
+                    <ref refid="struct___gnt_slider_1a1dc37b6d283a2e71bbb553c6ce180c64" kindref="member">vertical</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="55" refid="struct___gnt_slider_1ae1e1dde676c120fa6d10f3bb2c14059e" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_slider_1ae1e1dde676c120fa6d10f3bb2c14059e" kindref="member">max</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>maximum<sp/>value<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="56" refid="struct___gnt_slider_1a3e202b201e6255d975cd6d3aff1f5a4d" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_slider_1a3e202b201e6255d975cd6d3aff1f5a4d" kindref="member">min</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>minimum<sp/>value<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="57" refid="struct___gnt_slider_1abc16e65f240ed0c8f3e876e8732c0a33" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_slider_1abc16e65f240ed0c8f3e876e8732c0a33" kindref="member">step</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>amount<sp/>to<sp/>change<sp/>at<sp/>each<sp/>step<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="58" refid="struct___gnt_slider_1ab04e2d55ea4a544f3575812582af7b51" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_slider_1ab04e2d55ea4a544f3575812582af7b51" kindref="member">current</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>current<sp/>value<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="59" refid="struct___gnt_slider_1aafce5e3f3b3fea8067e179c3e7ecb5a5" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_slider_1aafce5e3f3b3fea8067e179c3e7ecb5a5" kindref="member">smallstep</ref>
+                    ;
+                </highlight>
+            </codeline>
+            <codeline lineno="60" refid="struct___gnt_slider_1a6a27cfae820054debdfed4c308972ec7" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_slider_1a6a27cfae820054debdfed4c308972ec7" kindref="member">largestep</ref>
+                    ;
+                </highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="63" refid="struct___gnt_slider_class" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___gnt_slider_class" kindref="compound">_GntSliderClass</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="65" refid="struct___gnt_slider_class_1a67dea6bdb089093d277840b7ad43a1f2" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget_class" kindref="compound">GntWidgetClass</ref>
+                    <sp/>
+                    <ref refid="struct___gnt_slider_class_1a67dea6bdb089093d277840b7ad43a1f2" kindref="member">
+                        parent</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="67" refid="struct___gnt_slider_class_1af4cfdc0a675fa1cd1a260af265f4a954" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_slider_class_1af4cfdc0a675fa1cd1a260af265f4a954"
+                                         kindref="member">changed</ref>)(
+                    <ref refid="struct___gnt_slider" kindref="compound">GntSlider</ref>
+                    <sp/>*slider,<sp/>int);
+                </highlight>
+            </codeline>
+            <codeline lineno="68" refid="struct___gnt_slider_class_1a89dfce3a9aa0299a7819f8a4b9df5cef" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_slider_class_1a89dfce3a9aa0299a7819f8a4b9df5cef"
+                                         kindref="member">gnt_reserved1</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="69" refid="struct___gnt_slider_class_1abc424f0d49c73831a72f061af6b0ce1d" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_slider_class_1abc424f0d49c73831a72f061af6b0ce1d"
+                                         kindref="member">gnt_reserved2</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="70" refid="struct___gnt_slider_class_1a1e0be0259f96a3bff95418925fe8163e" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_slider_class_1a1e0be0259f96a3bff95418925fe8163e"
+                                         kindref="member">gnt_reserved3</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="71" refid="struct___gnt_slider_class_1a3f7d85f4e8f04f18386922c69c245469" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>void<sp/>(*<ref refid="struct___gnt_slider_class_1a3f7d85f4e8f04f18386922c69c245469"
+                                         kindref="member">gnt_reserved4</ref>)(void);
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal">G_BEGIN_DECLS</highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="normal">GType
+                    <sp/>
+                    <ref refid="gntslider_8c_1afbbf7afb13c0a409a492bf2404b8fba0" kindref="member">
+                        gnt_slider_get_gtype</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="83" refid="gntslider_8h_1a8058fd31dccaf010ecf3b324d39ce532" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>gnt_hslider_new(max,<sp/>min)<sp/>gnt_slider_new(FALSE,
+                    <sp/>
+                    max,<sp/>min)
+                </highlight>
+            </codeline>
+            <codeline lineno="84" refid="gntslider_8h_1a339463cec35759a14e0a49c69e821b63" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>gnt_vslider_new(max,<sp/>min)<sp/>gnt_slider_new(TRUE,
+                    <sp/>
+                    max,<sp/>min)
+                </highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal">
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*
+                    <sp/>
+                    <ref refid="gntslider_8c_1a0a7e3d54e44f026cb12c797667e4bc3a" kindref="member">gnt_slider_new</ref>
+                    (gboolean<sp/>orient,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>max,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>min);
+                </highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="108">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntslider_8c_1a1bb4dfbda7c5e73f1e365bbdbad95fb0" kindref="member">
+                        gnt_slider_set_range</ref>(
+                    <ref refid="struct___gnt_slider" kindref="compound">GntSlider</ref>
+                    <sp/>*slider,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>max,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>min);
+                </highlight>
+            </codeline>
+            <codeline lineno="109">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="118">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntslider_8c_1a234b1ed4a9938316f96001bf1295c66f" kindref="member">
+                        gnt_slider_set_step</ref>(
+                    <ref refid="struct___gnt_slider" kindref="compound">GntSlider</ref>
+                    <sp/>*slider,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>step);
+                </highlight>
+            </codeline>
+            <codeline lineno="119">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="128">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntslider_8c_1af7e25aed3e37268859df6e02eba9735f" kindref="member">
+                        gnt_slider_set_small_step</ref>(
+                    <ref refid="struct___gnt_slider" kindref="compound">GntSlider</ref>
+                    <sp/>*slider,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>step);
+                </highlight>
+            </codeline>
+            <codeline lineno="129">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="138">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntslider_8c_1a8b24d4332eadd2c3b60c431881b69dee" kindref="member">
+                        gnt_slider_set_large_step</ref>(
+                    <ref refid="struct___gnt_slider" kindref="compound">GntSlider</ref>
+                    <sp/>*slider,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>step);
+                </highlight>
+            </codeline>
+            <codeline lineno="139">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="151">
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntslider_8c_1ad513302b0a48d2544186acc301c6a51b" kindref="member">
+                        gnt_slider_advance_step</ref>(
+                    <ref refid="struct___gnt_slider" kindref="compound">GntSlider</ref>
+                    <sp/>*slider,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>steps);
+                </highlight>
+            </codeline>
+            <codeline lineno="152">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="161">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntslider_8c_1a3592afe0a0d743779e5e25ca6b89c3c6" kindref="member">
+                        gnt_slider_set_value</ref>(
+                    <ref refid="struct___gnt_slider" kindref="compound">GntSlider</ref>
+                    <sp/>*slider,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntwm_8c_1a8378be79f6105367d446b3ac45cae716" kindref="member">value</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="162">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="171">
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntslider_8c_1a6cd983352034910ae4fe74e69e38b0bc" kindref="member">
+                        gnt_slider_get_value</ref>(
+                    <ref refid="struct___gnt_slider" kindref="compound">GntSlider</ref>
+                    <sp/>*slider);
+                </highlight>
+            </codeline>
+            <codeline lineno="172">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="181">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntslider_8c_1aecbd88ff1707bb5bfbfd0fb2203cccea" kindref="member">
+                        gnt_slider_reflect_label</ref>(
+                    <ref refid="struct___gnt_slider" kindref="compound">GntSlider</ref>
+                    <sp/>*slider,
+                    <sp/>
+                    <ref refid="struct___gnt_label" kindref="compound">GntLabel</ref>
+                    <sp/>*label);
+                </highlight>
+            </codeline>
+            <codeline lineno="182">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="183">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="184">
+                <highlight class="normal">G_END_DECLS</highlight>
+            </codeline>
+            <codeline lineno="185">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="186">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>GNT_SLIDER_H<sp/>*/
+                </highlight>
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntslider.h"/>
+    </compounddef>
+</doxygen>

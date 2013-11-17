@@ -1,0 +1,488 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntplugin_8h" kind="file">
+        <compoundname>gntplugin.h</compoundname>
+        <includes refid="gnt_8h" local="no">gnt.h</includes>
+        <includes local="no">plugin.h</includes>
+        <includes local="no">pluginpref.h</includes>
+        <includes local="no">string.h</includes>
+        <includes refid="finch_8h" local="yes">finch.h</includes>
+        <includedby refid="gntconv_8c" local="yes">gntconv.c</includedby>
+        <includedby refid="gntplugin_8c" local="yes">gntplugin.c</includedby>
+        <includedby refid="gntui_8c" local="yes">gntui.c</includedby>
+        <includedby refid="plugins_2gntclipboard_8c" local="no">plugins/gntclipboard.c</includedby>
+        <includedby refid="gntgf_8c" local="yes">plugins/gntgf.c</includedby>
+        <includedby refid="gnthistory_8c" local="yes">plugins/gnthistory.c</includedby>
+        <includedby refid="lastlog_8c" local="no">plugins/lastlog.c</includedby>
+        <incdepgraph>
+            <node id="461">
+                <label>gntplugin.h</label>
+                <link refid="gntplugin.h"/>
+                <childnode refid="462" relation="include">
+                </childnode>
+                <childnode refid="474" relation="include">
+                </childnode>
+                <childnode refid="475" relation="include">
+                </childnode>
+                <childnode refid="476" relation="include">
+                </childnode>
+                <childnode refid="477" relation="include">
+                </childnode>
+            </node>
+            <node id="477">
+                <label>finch.h</label>
+                <link refid="finch_8h"/>
+                <childnode refid="463" relation="include">
+                </childnode>
+                <childnode refid="478" relation="include">
+                </childnode>
+            </node>
+            <node id="473">
+                <label>term.h</label>
+            </node>
+            <node id="462">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="463" relation="include">
+                </childnode>
+                <childnode refid="464" relation="include">
+                </childnode>
+                <childnode refid="469" relation="include">
+                </childnode>
+                <childnode refid="470" relation="include">
+                </childnode>
+                <childnode refid="471" relation="include">
+                </childnode>
+            </node>
+            <node id="472">
+                <label>curses.h</label>
+            </node>
+            <node id="464">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="465" relation="include">
+                </childnode>
+                <childnode refid="463" relation="include">
+                </childnode>
+                <childnode refid="466" relation="include">
+                </childnode>
+                <childnode refid="467" relation="include">
+                </childnode>
+            </node>
+            <node id="475">
+                <label>pluginpref.h</label>
+            </node>
+            <node id="470">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="463" relation="include">
+                </childnode>
+            </node>
+            <node id="476">
+                <label>string.h</label>
+            </node>
+            <node id="474">
+                <label>plugin.h</label>
+            </node>
+            <node id="463">
+                <label>glib.h</label>
+            </node>
+            <node id="467">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="465" relation="include">
+                </childnode>
+                <childnode refid="463" relation="include">
+                </childnode>
+                <childnode refid="468" relation="include">
+                </childnode>
+                <childnode refid="466" relation="include">
+                </childnode>
+            </node>
+            <node id="466">
+                <label>ncurses.h</label>
+            </node>
+            <node id="465">
+                <label>stdio.h</label>
+            </node>
+            <node id="478">
+                <label>libpurple/internal.h</label>
+            </node>
+            <node id="471">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="472" relation="include">
+                </childnode>
+                <childnode refid="473" relation="include">
+                </childnode>
+            </node>
+            <node id="469">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="465" relation="include">
+                </childnode>
+                <childnode refid="463" relation="include">
+                </childnode>
+                <childnode refid="468" relation="include">
+                </childnode>
+            </node>
+            <node id="468">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="481">
+                <label>gntplugin.c</label>
+                <link refid="gntplugin_8c"/>
+            </node>
+            <node id="479">
+                <label>gntplugin.h</label>
+                <link refid="gntplugin.h"/>
+                <childnode refid="480" relation="include">
+                </childnode>
+                <childnode refid="481" relation="include">
+                </childnode>
+                <childnode refid="482" relation="include">
+                </childnode>
+                <childnode refid="483" relation="include">
+                </childnode>
+                <childnode refid="484" relation="include">
+                </childnode>
+                <childnode refid="485" relation="include">
+                </childnode>
+                <childnode refid="486" relation="include">
+                </childnode>
+            </node>
+            <node id="480">
+                <label>gntconv.c</label>
+                <link refid="gntconv_8c"/>
+            </node>
+            <node id="486">
+                <label>plugins/lastlog.c</label>
+                <link refid="lastlog_8c"/>
+            </node>
+            <node id="482">
+                <label>gntui.c</label>
+                <link refid="gntui_8c"/>
+            </node>
+            <node id="484">
+                <label>plugins/gntgf.c</label>
+                <link refid="gntgf_8c"/>
+            </node>
+            <node id="485">
+                <label>plugins/gnthistory.c</label>
+                <link refid="gnthistory_8c"/>
+            </node>
+            <node id="483">
+                <label>plugins/gntclipboard.c</label>
+                <link refid="plugins_2gntclipboard_8c"/>
+            </node>
+        </invincdepgraph>
+        <sectiondef kind="user-defined">
+            <memberdef kind="define" id="gntplugin_8h_1a31fcf635fac18d79453f8b3a516be522" prot="public" static="no">
+                <name>FINCH_PLUGIN_TYPE</name>
+                <initializer>
+                    <ref refid="finch_8h_1ad0d0069435cfbff1b86014654d36fe3c" kindref="member">FINCH_UI</ref>
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntplugin.h" line="45"
+                          column="9" bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntplugin.h"
+                          bodystart="45" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntplugin_8h_1a888681a90a979d6ced2ba23142e664e0" prot="public" static="no">
+                <name>PURPLE_IS_GNT_PLUGIN</name>
+                <param>
+                    <defname>plugin</defname>
+                </param>
+                <initializer>((plugin)-&gt;info !=
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>
+                    &amp;&amp; (plugin)-&gt;info-&gt;ui_info !=
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>
+                    &amp;&amp; \
+                    !strcmp((plugin)-&gt;info-&gt;ui_requirement,<ref
+                            refid="gntplugin_8h_1a31fcf635fac18d79453f8b3a516be522" kindref="member">
+                        FINCH_PLUGIN_TYPE</ref>))
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Decide whether a plugin is a GNT-plugin.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntplugin.h" line="50"
+                          column="9" bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntplugin.h"
+                          bodystart="50" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntplugin_8h_1a78e94cfdd9159587874beb605e0c263f" prot="public" static="no">
+                <name>FINCH_PLUGIN_UI_INFO</name>
+                <param>
+                    <defname>plugin</defname>
+                </param>
+                <initializer>(<ref refid="gntplugin_8h_1ae6c0044cf09db615edcf3a0a8b08a211" kindref="member">
+                    FinchPluginFrame</ref>)((plugin)-&gt;info-&gt;ui_info)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Get the ui-info from GNT-plugins.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntplugin.h" line="57"
+                          column="9" bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntplugin.h"
+                          bodystart="57" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="typedef" id="gntplugin_8h_1ae6c0044cf09db615edcf3a0a8b08a211" prot="public" static="no">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *(*
+                </type>
+                <definition>typedef GntWidget*(* FinchPluginFrame)()</definition>
+                <argsstring>)()</argsstring>
+                <name>FinchPluginFrame</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntplugin.h" line="42"
+                          column="1" bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntplugin.h"
+                          bodystart="42" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="function" id="gntplugin_8h_1a228fc2951e0d93d2efcd1bc6b3a170e7" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_plugins_show_all</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_plugins_show_all</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Show a list of plugins.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntplugin.h" line="63"
+                          column="1" bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntplugin.c"
+                          bodystart="239" bodyend="323"/>
+            </memberdef>
+            <memberdef kind="function" id="gntplugin_8h_1afe64ec3451ac2de336ec3ad934c263ab" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_plugins_save_loaded</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_plugins_save_loaded</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Save the list of loaded plugins.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntplugin.h" line="68"
+                          column="1" bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntplugin.c"
+                          bodystart="98" bodyend="101"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>GNT Plugins API</para>
+            <para>finch</para>
+            <para>Finch is the legal property of its developers, whose names are too numerous to list here. Please refer
+                to the COPYRIGHT file distributed with this source distribution.
+            </para>
+            <para>This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+                General Public License as published by the Free Software Foundation; either version 2 of the License, or
+                (at your option) any later version.
+            </para>
+            <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
+                the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public
+                License for more details.
+            </para>
+            <para>You should have received a copy of the GNU General Public License along with this program; if not,
+                write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02111-1301 USA
+            </para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="25">
+                <highlight class="preprocessor">#ifndef<sp/>_GNT_PLUGIN_H
+                </highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>_GNT_PLUGIN_H
+                </highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;<ref refid="gnt_8h" kindref="compound">gnt.h</ref>&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;plugin.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;pluginpref.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;string.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="finch_8h" kindref="compound">
+                    finch.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/**********************************************************************
+                </highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="comment"><sp/>*<sp/>@name<sp/>GNT<sp/>Plugins<sp/>API
+                </highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="comment"><sp/>**********************************************************************/
+                </highlight>
+            </codeline>
+            <codeline lineno="42" refid="gntplugin_8h_1ae6c0044cf09db615edcf3a0a8b08a211" refkind="member">
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>*<sp/>(*FinchPluginFrame)<sp/>();
+                </highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>Guess<sp/>where<sp/>these<sp/>came<sp/>from<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="45" refid="gntplugin_8h_1a31fcf635fac18d79453f8b3a516be522" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>FINCH_PLUGIN_TYPE<sp/>FINCH_UI
+                </highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+            <codeline lineno="50" refid="gntplugin_8h_1a888681a90a979d6ced2ba23142e664e0" refkind="member">
+                <highlight class="preprocessor">#define<sp/>PURPLE_IS_GNT_PLUGIN(plugin)<sp/>\
+                </highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="preprocessor">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>((plugin)-&gt;info<sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/>(plugin)-&gt;info-&gt;ui_info<sp/>!=<sp/>
+                    NULL<sp/>&amp;&amp;<sp/>\
+                </highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="preprocessor">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>!strcmp((plugin)-&gt;info-&gt;ui_requirement,<sp/>FINCH_PLUGIN_TYPE))
+                </highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+            <codeline lineno="57" refid="gntplugin_8h_1a78e94cfdd9159587874beb605e0c263f" refkind="member">
+                <highlight class="preprocessor">#define<sp/>FINCH_PLUGIN_UI_INFO(plugin)<sp/>\
+                </highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="preprocessor">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(FinchPluginFrame)((plugin)-&gt;info-&gt;ui_info)
+                </highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntplugin_8c_1ae1c81cceb9612a868c011fc30b9a57ac" kindref="member">
+                        finch_plugins_show_all</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntplugin_8c_1afe64ec3451ac2de336ec3ad934c263ab" kindref="member">
+                        finch_plugins_save_loaded</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntplugin.h"/>
+    </compounddef>
+</doxygen>

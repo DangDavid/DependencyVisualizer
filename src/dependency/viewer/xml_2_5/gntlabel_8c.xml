@@ -1,0 +1,2774 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntlabel_8c" kind="file">
+        <compoundname>gntlabel.c</compoundname>
+        <includes refid="gntlabel_8h" local="yes">gntlabel.h</includes>
+        <includes refid="gntutils_8h" local="yes">gntutils.h</includes>
+        <includes local="no">string.h</includes>
+        <incdepgraph>
+            <node id="1723">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="1724" relation="include">
+                </childnode>
+                <childnode refid="1722" relation="include">
+                </childnode>
+                <childnode refid="1725" relation="include">
+                </childnode>
+                <childnode refid="1726" relation="include">
+                </childnode>
+            </node>
+            <node id="1734">
+                <label>gntutils.h</label>
+                <link refid="gntutils_8h"/>
+                <childnode refid="1722" relation="include">
+                </childnode>
+                <childnode refid="1721" relation="include">
+                </childnode>
+                <childnode refid="1733" relation="include">
+                </childnode>
+                <childnode refid="1723" relation="include">
+                </childnode>
+            </node>
+            <node id="1732">
+                <label>term.h</label>
+            </node>
+            <node id="1733">
+                <label>gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="1723" relation="include">
+                </childnode>
+                <childnode refid="1721" relation="include">
+                </childnode>
+                <childnode refid="1729" relation="include">
+                </childnode>
+                <childnode refid="1730" relation="include">
+                </childnode>
+            </node>
+            <node id="1719">
+                <label>libgnt/gntlabel.c</label>
+                <link refid="gntlabel.c"/>
+                <childnode refid="1720" relation="include">
+                </childnode>
+                <childnode refid="1734" relation="include">
+                </childnode>
+                <childnode refid="1735" relation="include">
+                </childnode>
+            </node>
+            <node id="1720">
+                <label>gntlabel.h</label>
+                <link refid="gntlabel_8h"/>
+                <childnode refid="1721" relation="include">
+                </childnode>
+                <childnode refid="1723" relation="include">
+                </childnode>
+                <childnode refid="1733" relation="include">
+                </childnode>
+            </node>
+            <node id="1731">
+                <label>curses.h</label>
+            </node>
+            <node id="1730">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="1731" relation="include">
+                </childnode>
+                <childnode refid="1732" relation="include">
+                </childnode>
+            </node>
+            <node id="1729">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="1722" relation="include">
+                </childnode>
+            </node>
+            <node id="1726">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="1724" relation="include">
+                </childnode>
+                <childnode refid="1722" relation="include">
+                </childnode>
+                <childnode refid="1727" relation="include">
+                </childnode>
+                <childnode refid="1725" relation="include">
+                </childnode>
+            </node>
+            <node id="1735">
+                <label>string.h</label>
+            </node>
+            <node id="1722">
+                <label>glib.h</label>
+            </node>
+            <node id="1728">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="1724" relation="include">
+                </childnode>
+                <childnode refid="1722" relation="include">
+                </childnode>
+                <childnode refid="1727" relation="include">
+                </childnode>
+            </node>
+            <node id="1725">
+                <label>ncurses.h</label>
+            </node>
+            <node id="1721">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="1722" relation="include">
+                </childnode>
+                <childnode refid="1723" relation="include">
+                </childnode>
+                <childnode refid="1728" relation="include">
+                </childnode>
+                <childnode refid="1729" relation="include">
+                </childnode>
+                <childnode refid="1730" relation="include">
+                </childnode>
+            </node>
+            <node id="1724">
+                <label>stdio.h</label>
+            </node>
+            <node id="1727">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <sectiondef kind="enum">
+            <memberdef kind="enum" id="gntlabel_8c_1a39fca1837c5ce7715cbf571669660c13" prot="public" static="no">
+                <name>@22</name>
+                <enumvalue id="gntlabel_8c_1a39fca1837c5ce7715cbf571669660c13ac37dda0da1a44e10c0504afeeb863f3c"
+                           prot="public">
+                    <name>PROP_0</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntlabel_8c_1a39fca1837c5ce7715cbf571669660c13ab540071645d3f5ade38a113863b7ee7a"
+                           prot="public">
+                    <name>PROP_TEXT</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <enumvalue id="gntlabel_8c_1a39fca1837c5ce7715cbf571669660c13a692fd00f6b73df33db65111fc1de8d3b"
+                           prot="public">
+                    <name>PROP_TEXT_FLAG</name>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>GNT - The GLib Ncurses Toolkit</para>
+                    <para>GNT is the legal property of its developers, whose names are too numerous to list here. Please
+                        refer to the COPYRIGHT file distributed with this source distribution.
+                    </para>
+                    <para>This library is free software; you can redistribute it and/or modify it under the terms of the
+                        GNU General Public License as published by the Free Software Foundation; either version 2 of the
+                        License, or (at your option) any later version.
+                    </para>
+                    <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+                        without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+                        the GNU General Public License for more details.
+                    </para>
+                    <para>You should have received a copy of the GNU General Public License along with this program; if
+                        not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+                        02111-1301 USA
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        line="29" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        bodystart="28" bodyend="33"/>
+            </memberdef>
+            <memberdef kind="enum" id="gntlabel_8c_1aaf8fd5f0e57d456151c951e0f3715fc4" prot="public" static="no">
+                <name>@23</name>
+                <enumvalue id="gntlabel_8c_1aaf8fd5f0e57d456151c951e0f3715fc4aac63ff3768fddf9c273cceb94cc75012"
+                           prot="public">
+                    <name>SIGS</name>
+                    <initializer>= 1</initializer>
+                    <briefdescription>
+                    </briefdescription>
+                    <detaileddescription>
+                    </detaileddescription>
+                </enumvalue>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        line="36" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        bodystart="35" bodyend="38"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="var">
+            <memberdef kind="variable" id="gntlabel_8c_1ac64f6c9db00fc11a2360466fa1e2d1ac" prot="public" static="yes"
+                       mutable="no">
+                <type>
+                    <ref refid="gntwidget_8h_1ace656c76f3a8bb8f5aa250637f06f1de" kindref="member">GntWidgetClass</ref>
+                    *
+                </type>
+                <definition>GntWidgetClass* parent_class</definition>
+                <argsstring></argsstring>
+                <name>parent_class</name>
+                <initializer>=
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        line="40" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        bodystart="40" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntlabel_8c_1a926847ec81b4feff0aa285f1ed9fb453" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void gnt_label_destroy</definition>
+                <argsstring>(GntWidget *widget)</argsstring>
+                <name>gnt_label_destroy</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        line="43" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        bodystart="43" bodyend="47"/>
+            </memberdef>
+            <memberdef kind="function" id="gntlabel_8c_1a2a6472aee47060b518f8ce291f55a601" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void gnt_label_draw</definition>
+                <argsstring>(GntWidget *widget)</argsstring>
+                <name>gnt_label_draw</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        line="50" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        bodystart="50" bodyend="59"/>
+            </memberdef>
+            <memberdef kind="function" id="gntlabel_8c_1a3679563663807dbc93f6a38eb854e529" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void gnt_label_size_request</definition>
+                <argsstring>(GntWidget *widget)</argsstring>
+                <name>gnt_label_size_request</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        line="62" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        bodystart="62" bodyend="68"/>
+            </memberdef>
+            <memberdef kind="function" id="gntlabel_8c_1aad6801d1002bd31163f2fb4799af5f63" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void gnt_label_set_property</definition>
+                <argsstring>(GObject *obj, guint prop_id, const GValue *value, GParamSpec *spec)</argsstring>
+                <name>gnt_label_set_property</name>
+                <param>
+                    <type>GObject *</type>
+                    <declname>obj</declname>
+                </param>
+                <param>
+                    <type>guint</type>
+                    <declname>prop_id</declname>
+                </param>
+                <param>
+                    <type>const GValue *</type>
+                    <declname>value</declname>
+                </param>
+                <param>
+                    <type>GParamSpec *</type>
+                    <declname>spec</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        line="71" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        bodystart="71" bodyend="87"/>
+            </memberdef>
+            <memberdef kind="function" id="gntlabel_8c_1aa2bcba624290e631f597ac92903f279b" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void gnt_label_get_property</definition>
+                <argsstring>(GObject *obj, guint prop_id, GValue *value, GParamSpec *spec)</argsstring>
+                <name>gnt_label_get_property</name>
+                <param>
+                    <type>GObject *</type>
+                    <declname>obj</declname>
+                </param>
+                <param>
+                    <type>guint</type>
+                    <declname>prop_id</declname>
+                </param>
+                <param>
+                    <type>GValue *</type>
+                    <declname>value</declname>
+                </param>
+                <param>
+                    <type>GParamSpec *</type>
+                    <declname>spec</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        line="90" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        bodystart="90" bodyend="104"/>
+            </memberdef>
+            <memberdef kind="function" id="gntlabel_8c_1ac3958ae8c7bc114a383fced6c5bc19d7" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void gnt_label_class_init</definition>
+                <argsstring>(GntLabelClass *klass)</argsstring>
+                <name>gnt_label_class_init</name>
+                <param>
+                    <type>
+                        <ref refid="gntlabel_8h_1a22fba8a7b7150877542450183e0f8d3d" kindref="member">GntLabelClass</ref>
+                        *
+                    </type>
+                    <declname>klass</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        line="107" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        bodystart="107" bodyend="141"/>
+            </memberdef>
+            <memberdef kind="function" id="gntlabel_8c_1a41c09f825d78b5106e0b45cfb8f9c79a" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void gnt_label_init</definition>
+                <argsstring>(GTypeInstance *instance, gpointer class)</argsstring>
+                <name>gnt_label_init</name>
+                <param>
+                    <type>GTypeInstance *</type>
+                    <declname>instance</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>class</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        line="144" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        bodystart="144" bodyend="153"/>
+            </memberdef>
+            <memberdef kind="function" id="gntlabel_8c_1a365434fe662c9d6b9344478390e4f9af" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>GType</type>
+                <definition>GType gnt_label_get_gtype</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_label_get_gtype</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <simplesect kind="return">
+                            <para>GType for GntLabel.</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        line="159" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        bodystart="159" bodyend="184"/>
+            </memberdef>
+            <memberdef kind="function" id="gntlabel_8c_1a41ae500efcc7c1185c68177097bf7af4" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* gnt_label_new</definition>
+                <argsstring>(const char *text)</argsstring>
+                <name>gnt_label_new</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>text</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Create a new GntLabel.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>text</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The text of the label.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>The newly created label.</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        line="186" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        bodystart="186" bodyend="189"/>
+            </memberdef>
+            <memberdef kind="function" id="gntlabel_8c_1a2b7594db972f18e063b756e5a43a5734" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* gnt_label_new_with_format</definition>
+                <argsstring>(const char *text, GntTextFormatFlags flags)</argsstring>
+                <name>gnt_label_new_with_format</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>text</declname>
+                </param>
+                <param>
+                    <type>
+                        <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddf" kindref="member">
+                            GntTextFormatFlags
+                        </ref>
+                    </type>
+                    <declname>flags</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Create a new label with specified text attributes.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>text</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The text.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>flags</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>Text attributes for the text.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>The newly created label.</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        line="191" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        bodystart="191" bodyend="195"/>
+            </memberdef>
+            <memberdef kind="function" id="gntlabel_8c_1a2761b25442c93d24bf93e31a9aef5eaf" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_label_set_text</definition>
+                <argsstring>(GntLabel *label, const char *text)</argsstring>
+                <name>gnt_label_set_text</name>
+                <param>
+                    <type>
+                        <ref refid="gntlabel_8h_1aed2c0bee54b33fe6c0f14d69b359ff0f" kindref="member">GntLabel</ref>
+                        *
+                    </type>
+                    <declname>label</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>text</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Change the text of a label.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>label</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The label.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>text</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The new text to set in the label.</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location
+                        file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        line="197" column="1"
+                        bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"
+                        bodystart="197" bodyend="206"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="23">
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntlabel_8h" kindref="compound">
+                    gntlabel.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntutils_8h" kindref="compound">
+                    gntutils.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;string.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">enum</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1ac36f475ca5b446f4fde4c9b90bec77c8ac37dda0da1a44e10c0504afeeb863f3c"
+                         kindref="member">PROP_0</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntlabel_8c_1a39fca1837c5ce7715cbf571669660c13ab540071645d3f5ade38a113863b7ee7a"
+                         kindref="member">PROP_TEXT</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntlabel_8c_1a39fca1837c5ce7715cbf571669660c13a692fd00f6b73df33db65111fc1de8d3b"
+                         kindref="member">PROP_TEXT_FLAG
+                    </ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">enum</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1a05589fbab0657f08285ebdfe93f5ec9eaac63ff3768fddf9c273cceb94cc75012"
+                         kindref="member">SIGS
+                    </ref>
+                    <sp/>=<sp/>1,
+                </highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct___gnt_widget_class" kindref="compound">GntWidgetClass</ref>
+                    <sp/>*parent_class<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal">gnt_label_destroy(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget)
+                </highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_label" kindref="compound">GntLabel</ref>
+                    <sp/>*label<sp/>=
+                    <sp/>
+                    <ref refid="gntlabel_8h_1a80360ada1a62519d0313fa508cf23e8b" kindref="member">GNT_LABEL</ref>
+                    (widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(label-&gt;<ref refid="struct___gnt_label_1a5633b1433389cec21ade3811bbe9ca5b"
+                                               kindref="member">text</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal">gnt_label_draw(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget)
+                </highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_label" kindref="compound">GntLabel</ref>
+                    <sp/>*label<sp/>=
+                    <sp/>
+                    <ref refid="gntlabel_8h_1a80360ada1a62519d0313fa508cf23e8b" kindref="member">GNT_LABEL</ref>
+                    (widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>chtype<sp/>flag<sp/>=
+                    <sp/>
+                    <ref refid="gnttextview_8c_1acf631987cd28089c066483e178a5ef54" kindref="member">
+                        gnt_text_format_flag_to_chtype</ref>(label-&gt;<ref
+                        refid="struct___gnt_label_1a8e8ce2892a6c2bfb61172320736ad282" kindref="member">flags</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>wbkgdset(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
+                                                  kindref="member">window</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;\0&apos;</highlight>
+                <highlight class="normal"><sp/>|<sp/>flag);
+                </highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>mvwaddstr(widget-&gt;<ref refid="struct___gnt_widget_1a0be00a12c1375a8dedc45ff82141e217"
+                                                   kindref="member">window</ref>,<sp/>0,<sp/>0,<sp/>label-&gt;<ref
+                        refid="struct___gnt_label_1a5633b1433389cec21ade3811bbe9ca5b" kindref="member">text</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbindable_8h_1a16e18dcaa9f49751889441b3cfc937ea" kindref="member">GNTDEBUG</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal">gnt_label_size_request(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget)
+                </highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_label" kindref="compound">GntLabel</ref>
+                    <sp/>*label<sp/>=
+                    <sp/>
+                    <ref refid="gntlabel_8h_1a80360ada1a62519d0313fa508cf23e8b" kindref="member">GNT_LABEL</ref>
+                    (widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntutils_8c_1ad83a4c9fc7023ffadca1d49c5210ffc7" kindref="member">
+                        gnt_util_get_text_bound</ref>(label-&gt;<ref
+                        refid="struct___gnt_label_1a5633b1433389cec21ade3811bbe9ca5b" kindref="member">text</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&amp;widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                              kindref="member">priv</ref>.
+                    <ref
+                            refid="struct___gnt_widget_priv_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width
+                    </ref>
+                    ,<sp/>&amp;widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                               kindref="member">priv</ref>.<ref
+                        refid="struct___gnt_widget_priv_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">
+                    height</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal">gnt_label_set_property(GObject<sp/>*<ref
+                        refid="namespacepietray_1ac1d524eefafdd0448ff4db794faae7ae" kindref="member">obj</ref>,
+                    <sp/>
+                    guint<sp/>prop_id,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal"><sp/>GValue<sp/>*<ref refid="gntwm_8c_1a8378be79f6105367d446b3ac45cae716"
+                                                                kindref="member">value</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GParamSpec<sp/>*spec)
+                </highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_label" kindref="compound">GntLabel</ref>
+                    <sp/>*label<sp/>=
+                    <sp/>
+                    <ref refid="gntlabel_8h_1a80360ada1a62519d0313fa508cf23e8b" kindref="member">GNT_LABEL</ref>(obj);
+                </highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">switch</highlight>
+                <highlight class="normal"><sp/>(prop_id)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntlabel_8c_1a39fca1837c5ce7715cbf571669660c13ab540071645d3f5ade38a113863b7ee7a"
+                         kindref="member">PROP_TEXT</ref>:
+                </highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(label-&gt;<ref refid="struct___gnt_label_1a5633b1433389cec21ade3811bbe9ca5b"
+                                               kindref="member">text</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>label-&gt;
+                    <ref refid="struct___gnt_label_1a5633b1433389cec21ade3811bbe9ca5b" kindref="member">text</ref>
+                    <sp/>=
+                    <sp/>
+                    <ref refid="gntutils_8c_1a9a74566ea2b80ce87b911f1ee428329c" kindref="member">
+                        gnt_util_onscreen_fit_string</ref>(g_value_get_string(value),<sp/>-1);
+                </highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="80">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntlabel_8c_1a39fca1837c5ce7715cbf571669660c13a692fd00f6b73df33db65111fc1de8d3b"
+                         kindref="member">PROP_TEXT_FLAG</ref>:
+                </highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>label-&gt;
+                    <ref refid="struct___gnt_label_1a8e8ce2892a6c2bfb61172320736ad282" kindref="member">flags</ref>
+                    <sp/>=<sp/>g_value_get_int(value);
+                </highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">default</highlight>
+                <highlight class="normal">:</highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_return_if_reached();
+                </highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal">gnt_label_get_property(GObject<sp/>*obj,<sp/>guint<sp/>prop_id,<sp/>GValue
+                    <sp/>*value,
+                </highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GParamSpec<sp/>*spec)
+                </highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="93">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_label" kindref="compound">GntLabel</ref>
+                    <sp/>*label<sp/>=
+                    <sp/>
+                    <ref refid="gntlabel_8h_1a80360ada1a62519d0313fa508cf23e8b" kindref="member">GNT_LABEL</ref>(obj);
+                </highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">switch</highlight>
+                <highlight class="normal"><sp/>(prop_id)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntlabel_8c_1a39fca1837c5ce7715cbf571669660c13ab540071645d3f5ade38a113863b7ee7a"
+                         kindref="member">PROP_TEXT</ref>:
+                </highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_value_set_string(value,<sp/>label-&gt;<ref
+                        refid="struct___gnt_label_1a5633b1433389cec21ade3811bbe9ca5b" kindref="member">text</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">case</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntlabel_8c_1a39fca1837c5ce7715cbf571669660c13a692fd00f6b73df33db65111fc1de8d3b"
+                         kindref="member">PROP_TEXT_FLAG</ref>:
+                </highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_value_set_int(value,<sp/>label-&gt;<ref
+                        refid="struct___gnt_label_1a8e8ce2892a6c2bfb61172320736ad282" kindref="member">flags</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="100">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="101">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">default</highlight>
+                <highlight class="normal">:</highlight>
+            </codeline>
+            <codeline lineno="102">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">break</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="103">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="104">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="105">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="107">
+                <highlight class="normal">gnt_label_class_init(
+                    <ref refid="struct___gnt_label_class" kindref="compound">GntLabelClass</ref>
+                    <sp/>*<ref refid="gntbindable_8c_1aa084f6474fb231a7247cc6c5299bad55" kindref="member">klass</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="108">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="109">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GObjectClass<sp/>*gclass<sp/>=<sp/>G_OBJECT_CLASS(klass);
+                </highlight>
+            </codeline>
+            <codeline lineno="110">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="111">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>parent_class<sp/>=
+                    <sp/>
+                    <ref refid="gntwidget_8h_1ab6e8e805c7b988cc35ee86ed1305345e" kindref="member">GNT_WIDGET_CLASS</ref>
+                    (klass);
+                </highlight>
+            </codeline>
+            <codeline lineno="112">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>parent_class-&gt;
+                    <ref refid="struct___gnt_widget_class_1a35a4e3d7332f006374f7dceb5739f77e" kindref="member">destroy
+                    </ref>
+                    <sp/>=<sp/>gnt_label_destroy;
+                </highlight>
+            </codeline>
+            <codeline lineno="113">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>parent_class-&gt;
+                    <ref refid="struct___gnt_widget_class_1a887d5b4ee4066dd6f6032a9601d6c0ac" kindref="member">draw
+                    </ref>
+                    <sp/>=<sp/>gnt_label_draw;
+                </highlight>
+            </codeline>
+            <codeline lineno="114">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>parent_class-&gt;
+                    <ref refid="struct___gnt_widget_class_1ad3d1ce1119dfef8e1bc32e418b6b75ab" kindref="member">map</ref>
+                    <sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="115">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>parent_class-&gt;
+                    <ref refid="struct___gnt_widget_class_1a38c53854c011ca68ea821e8c84df9da6" kindref="member">
+                        size_request
+                    </ref>
+                    <sp/>=<sp/>gnt_label_size_request;
+                </highlight>
+            </codeline>
+            <codeline lineno="116">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="117">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gclass-&gt;set_property<sp/>=<sp/>gnt_label_set_property;
+                </highlight>
+            </codeline>
+            <codeline lineno="118">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gclass-&gt;get_property<sp/>=<sp/>gnt_label_get_property;
+                </highlight>
+            </codeline>
+            <codeline lineno="119">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="120">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_object_class_install_property(gclass,
+                </highlight>
+            </codeline>
+            <codeline lineno="121">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntlabel_8c_1a39fca1837c5ce7715cbf571669660c13ab540071645d3f5ade38a113863b7ee7a"
+                         kindref="member">PROP_TEXT</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="122">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_param_spec_string(
+                </highlight>
+                <highlight class="stringliteral">&quot;text&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Text&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="123">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;The<sp/>text<sp/>for<sp/>the<sp/>label.&quot;
+                </highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="124">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="125">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>G_PARAM_READWRITE|<ref refid="gnt_8h_1ad5f6164768a5209e9b9151f1bbe17d53" kindref="member">
+                    G_PARAM_STATIC_NAME</ref>|<ref refid="gnt_8h_1a1809847e9153472b2841a3deca602614" kindref="member">
+                    G_PARAM_STATIC_NICK</ref>|
+                    <ref refid="gnt_8h_1a5b6913c40584431bd1819c188d2627da" kindref="member">G_PARAM_STATIC_BLURB</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="126">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>)
+                </highlight>
+            </codeline>
+            <codeline lineno="127">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>);
+                </highlight>
+            </codeline>
+            <codeline lineno="128">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="129">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_object_class_install_property(gclass,
+                </highlight>
+            </codeline>
+            <codeline lineno="130">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntlabel_8c_1a39fca1837c5ce7715cbf571669660c13a692fd00f6b73df33db65111fc1de8d3b"
+                         kindref="member">PROP_TEXT_FLAG</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="131">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_param_spec_int(
+                </highlight>
+                <highlight class="stringliteral">&quot;text-flag&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Text<sp/>flag&quot;
+                </highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="132">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Text<sp/>attribute<sp/>to<sp/>use<sp/>when<sp/>displaying<sp/>the
+                    <sp/>text<sp/>in<sp/>the<sp/>label.&quot;
+                </highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="133">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44ca22374b4f5f6078f171aeb5f2e7b1"
+                         kindref="member">GNT_TEXT_FLAG_NORMAL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="134">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44ca22374b4f5f6078f171aeb5f2e7b1"
+                         kindref="member">GNT_TEXT_FLAG_NORMAL</ref>|<ref
+                        refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44fb1f1c685640d25a63350923fd0359"
+                        kindref="member">GNT_TEXT_FLAG_BOLD</ref>|<ref
+                        refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa417fb816e5064925152e3a8c4f1699c8"
+                        kindref="member">GNT_TEXT_FLAG_UNDERLINE</ref>|
+                </highlight>
+            </codeline>
+            <codeline lineno="135">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa0fe909155f8b0770c0a4db440eecfb61"
+                         kindref="member">GNT_TEXT_FLAG_BLINK</ref>|<ref
+                        refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa97edcbde7df935eb10bea1cbb72cd11d"
+                        kindref="member">GNT_TEXT_FLAG_DIM</ref>|<ref
+                        refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa758e66af5271b074ac57ffbfa3da63f1"
+                        kindref="member">GNT_TEXT_FLAG_HIGHLIGHT</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="136">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddfa44ca22374b4f5f6078f171aeb5f2e7b1"
+                         kindref="member">GNT_TEXT_FLAG_NORMAL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="137">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>G_PARAM_READWRITE|<ref refid="gnt_8h_1ad5f6164768a5209e9b9151f1bbe17d53" kindref="member">
+                    G_PARAM_STATIC_NAME</ref>|<ref refid="gnt_8h_1a1809847e9153472b2841a3deca602614" kindref="member">
+                    G_PARAM_STATIC_NICK</ref>|
+                    <ref refid="gnt_8h_1a5b6913c40584431bd1819c188d2627da" kindref="member">G_PARAM_STATIC_BLURB</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="138">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>)
+                </highlight>
+            </codeline>
+            <codeline lineno="139">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>);
+                </highlight>
+            </codeline>
+            <codeline lineno="140">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbindable_8h_1a16e18dcaa9f49751889441b3cfc937ea" kindref="member">GNTDEBUG</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="141">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="142">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="143">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="144">
+                <highlight class="normal">gnt_label_init(GTypeInstance<sp/>*instance,<sp/>gpointer
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">class</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="145">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="146">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget<sp/>=
+                    <sp/>
+                    <ref refid="gntwidget_8h_1a0ddc46716b8cb35d504595ab4bca8a82" kindref="member">GNT_WIDGET</ref>
+                    (instance);
+                </highlight>
+            </codeline>
+            <codeline lineno="147">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1a4dc1d06b9860b34f1f3625c6319a5d90" kindref="member">
+                        gnt_widget_set_take_focus</ref>(widget,<sp/>FALSE);
+                </highlight>
+            </codeline>
+            <codeline lineno="148">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8h_1a5f05379dd2b5934fcd802ba477b6d9a5" kindref="member">
+                        GNT_WIDGET_SET_FLAGS</ref>(widget,
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18a8e7de21c4c04abced0009fc58414f00f"
+                         kindref="member">GNT_WIDGET_NO_BORDER
+                    </ref>
+                    <sp/>|
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18aed65281af82570d4b7bd7b53b2f29635"
+                         kindref="member">GNT_WIDGET_NO_SHADOW</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="149">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8h_1a5f05379dd2b5934fcd802ba477b6d9a5" kindref="member">
+                        GNT_WIDGET_SET_FLAGS</ref>(widget,
+                    <sp/>
+                    <ref refid="gntwidget_8h_1adf5a237b339fb53cca180af6d7bcff18ad213e9af0f0490e0b501e6996980f259"
+                         kindref="member">GNT_WIDGET_GROW_X</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="150">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                         kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1af0a99cf275a2f9731f39c442320a9f3a" kindref="member">minw</ref>
+                    <sp/>=<sp/>3;
+                </highlight>
+            </codeline>
+            <codeline lineno="151">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>widget-&gt;<ref refid="struct___gnt_widget_1a629acbe275b54f7425e0218cef1a1c3d"
+                                         kindref="member">priv</ref>.
+                    <ref refid="struct___gnt_widget_priv_1aa2d5e3ec0f6ff0386df32bfa5b3b5885" kindref="member">minh</ref>
+                    <sp/>=<sp/>1;
+                </highlight>
+            </codeline>
+            <codeline lineno="152">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbindable_8h_1a16e18dcaa9f49751889441b3cfc937ea" kindref="member">GNTDEBUG</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="153">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="154">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="155">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">
+                    /******************************************************************************
+                </highlight>
+            </codeline>
+            <codeline lineno="156">
+                <highlight class="comment"><sp/>*<sp/>GntLabel<sp/>API
+                </highlight>
+            </codeline>
+            <codeline lineno="157">
+                <highlight class="comment">
+                    <sp/>
+                    *****************************************************************************/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="158">
+                <highlight class="normal">GType</highlight>
+            </codeline>
+            <codeline lineno="159">
+                <highlight class="normal"><ref refid="gntlabel_8c_1a365434fe662c9d6b9344478390e4f9af" kindref="member">
+                    gnt_label_get_gtype</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="160">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="161">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>GType<sp/>type<sp/>=<sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="162">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="163">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal">(type<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="164">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="165">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal"><sp/>GTypeInfo<sp/>info<sp/>=<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="166">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">sizeof</highlight>
+                <highlight class="normal">(<ref refid="gntlabel_8h_1a22fba8a7b7150877542450183e0f8d3d" kindref="member">
+                    GntLabelClass</ref>),
+                </highlight>
+            </codeline>
+            <codeline lineno="167">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>base_init
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="168">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>base_finalize
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="169">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(GClassInitFunc)gnt_label_class_init,
+                </highlight>
+            </codeline>
+            <codeline lineno="170">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>class_finalize
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="171">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>class_data
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="172">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">sizeof</highlight>
+                <highlight class="normal">(<ref refid="gntlabel_8h_1aed2c0bee54b33fe6c0f14d69b359ff0f" kindref="member">
+                    GntLabel</ref>),
+                </highlight>
+            </codeline>
+            <codeline lineno="173">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>0,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>n_preallocs
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="174">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gnt_label_init,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>instance_init
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="175">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>NULL
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>value_table
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="176">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>};
+                </highlight>
+            </codeline>
+            <codeline lineno="177">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="178">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>type<sp/>=<sp/>g_type_register_static(<ref
+                        refid="gntwidget_8h_1a1f3fe24503b438d7c230c405e25a2805" kindref="member">GNT_TYPE_WIDGET</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="179">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;GntLabel&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="180">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&amp;info,<sp/>0);
+                </highlight>
+            </codeline>
+            <codeline lineno="181">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="182">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="183">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>type;
+                </highlight>
+            </codeline>
+            <codeline lineno="184">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="185">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="186">
+                <highlight class="normal">
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntlabel_8c_1a41ae500efcc7c1185c68177097bf7af4" kindref="member">
+                    gnt_label_new</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text)
+                </highlight>
+            </codeline>
+            <codeline lineno="187">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="188">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntlabel_8c_1a2b7594db972f18e063b756e5a43a5734" kindref="member">
+                        gnt_label_new_with_format</ref>(text,<sp/>0);
+                </highlight>
+            </codeline>
+            <codeline lineno="189">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="190">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="191">
+                <highlight class="normal">
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntlabel_8c_1a2b7594db972f18e063b756e5a43a5734" kindref="member">
+                    gnt_label_new_with_format</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text,
+                    <sp/>
+                    <ref refid="gnttextview_8h_1a271a981817202e72d3566da4d94c9ddf" kindref="member">GntTextFormatFlags
+                    </ref>
+                    <sp/>
+                    <ref refid="struct__node_1ac8bf36fe0577cba66bccda3a6f7e80a4" kindref="member">flags</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="192">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="193">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget<sp/>=<sp/>g_object_new(<ref refid="gntlabel_8h_1a911f8699b28c8908e9d215d8e83f1393"
+                                                             kindref="member">GNT_TYPE_LABEL</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;text-flag&quot;</highlight>
+                <highlight class="normal">,<sp/>flags,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;text&quot;</highlight>
+                <highlight class="normal">,<sp/>text,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="194">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>widget;
+                </highlight>
+            </codeline>
+            <codeline lineno="195">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="196">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="197">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntlabel_8c_1a2761b25442c93d24bf93e31a9aef5eaf" kindref="member">
+                        gnt_label_set_text</ref>(
+                    <ref refid="struct___gnt_label" kindref="compound">GntLabel</ref>
+                    <sp/>*label,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text)
+                </highlight>
+            </codeline>
+            <codeline lineno="198">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="199">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_object_set(label,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;text&quot;</highlight>
+                <highlight class="normal">,<sp/>text,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="200">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="201">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(<ref refid="gntwidget_8h_1a0ddc46716b8cb35d504595ab4bca8a82"
+                                                     kindref="member">GNT_WIDGET</ref>(label)-&gt;<ref
+                        refid="gntcertmgr_8c_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="202">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="203">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>werase(<ref refid="gntwidget_8h_1a0ddc46716b8cb35d504595ab4bca8a82" kindref="member">
+                    GNT_WIDGET</ref>(label)-&gt;<ref refid="gntcertmgr_8c_1af21fe6008e6e5d82746bc45e9cec36d3"
+                                                     kindref="member">window</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="204">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1a5649d1eef659c94f4b9f137759982b72" kindref="member">gnt_widget_draw</ref>(
+                    <ref refid="gntwidget_8h_1a0ddc46716b8cb35d504595ab4bca8a82" kindref="member">GNT_WIDGET</ref>
+                    (label));
+                </highlight>
+            </codeline>
+            <codeline lineno="205">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="206">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="207">
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/libgnt/gntlabel.c"/>
+    </compounddef>
+</doxygen>

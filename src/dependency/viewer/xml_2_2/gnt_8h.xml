@@ -1,0 +1,2201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gnt_8h" kind="file">
+        <compoundname>gnt.h</compoundname>
+        <includes local="no">glib.h</includes>
+        <includes refid="gntwidget_8h" local="yes">gntwidget.h</includes>
+        <includes refid="gntclipboard_8h" local="yes">gntclipboard.h</includes>
+        <includes refid="gntcolors_8h" local="yes">gntcolors.h</includes>
+        <includes refid="gntkeys_8h" local="yes">gntkeys.h</includes>
+        <includedby refid="gntui_8h" local="yes">gntui.h</includedby>
+        <includedby refid="gntaccount_8c" local="no">gntaccount.c</includedby>
+        <includedby refid="gntconv_8h" local="no">gntconv.h</includedby>
+        <includedby refid="gntplugin_8h" local="no">gntplugin.h</includedby>
+        <includedby refid="gntconv_8c" local="yes">gntconv.c</includedby>
+        <includedby refid="gntdebug_8c" local="no">gntdebug.c</includedby>
+        <includedby refid="gntft_8c" local="no">gntft.c</includedby>
+        <includedby refid="gntnotify_8c" local="no">gntnotify.c</includedby>
+        <includedby refid="gntplugin_8c" local="no">gntplugin.c</includedby>
+        <includedby refid="gntpounce_8c" local="no">gntpounce.c</includedby>
+        <includedby refid="gntprefs_8c" local="yes">gntprefs.c</includedby>
+        <includedby refid="gntrequest_8c" local="no">gntrequest.c</includedby>
+        <includedby refid="gntstatus_8c" local="no">gntstatus.c</includedby>
+        <includedby refid="gntstyle_8h" local="yes">libgnt/gntstyle.h</includedby>
+        <includedby refid="gnttree_8h" local="yes">libgnt/gnttree.h</includedby>
+        <includedby refid="gnttextview_8h" local="yes">libgnt/gnttextview.h</includedby>
+        <includedby refid="gntbindable_8c" local="yes">libgnt/gntbindable.c</includedby>
+        <includedby refid="gntutils_8h" local="yes">libgnt/gntutils.h</includedby>
+        <includedby refid="gntbox_8h" local="yes">libgnt/gntbox.h</includedby>
+        <includedby refid="gntbutton_8h" local="yes">libgnt/gntbutton.h</includedby>
+        <includedby refid="gntwindow_8h" local="yes">libgnt/gntwindow.h</includedby>
+        <includedby refid="gntlabel_8h" local="yes">libgnt/gntlabel.h</includedby>
+        <includedby refid="gntcheckbox_8h" local="yes">libgnt/gntcheckbox.h</includedby>
+        <includedby refid="gntcombobox_8h" local="yes">libgnt/gntcombobox.h</includedby>
+        <includedby refid="gntentry_8h" local="yes">libgnt/gntentry.h</includedby>
+        <includedby refid="gntfilesel_8h" local="yes">libgnt/gntfilesel.h</includedby>
+        <includedby refid="gntline_8h" local="yes">libgnt/gntline.h</includedby>
+        <includedby refid="gntmain_8c" local="yes">libgnt/gntmain.c</includedby>
+        <includedby refid="gntmenuitemcheck_8h" local="yes">libgnt/gntmenuitemcheck.h</includedby>
+        <includedby refid="gntslider_8h" local="yes">libgnt/gntslider.h</includedby>
+        <includedby refid="gntwidget_8c" local="yes">libgnt/gntwidget.c</includedby>
+        <includedby refid="gntwm_8c" local="yes">libgnt/gntwm.c</includedby>
+        <includedby refid="common_8h" local="yes">libgnt/pygnt/common.h</includedby>
+        <includedby refid="irssi_8c" local="yes">libgnt/wms/irssi.c</includedby>
+        <includedby refid="s_8c" local="yes">libgnt/wms/s.c</includedby>
+        <includedby refid="gntgf_8c" local="no">plugins/gntgf.c</includedby>
+        <includedby refid="lastlog_8c" local="no">plugins/lastlog.c</includedby>
+        <incdepgraph>
+            <node id="760">
+                <label>term.h</label>
+            </node>
+            <node id="749">
+                <label>libgnt/gnt.h</label>
+                <link refid="gnt.h"/>
+                <childnode refid="750" relation="include">
+                </childnode>
+                <childnode refid="751" relation="include">
+                </childnode>
+                <childnode refid="756" relation="include">
+                </childnode>
+                <childnode refid="757" relation="include">
+                </childnode>
+                <childnode refid="758" relation="include">
+                </childnode>
+            </node>
+            <node id="759">
+                <label>curses.h</label>
+            </node>
+            <node id="751">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="752" relation="include">
+                </childnode>
+                <childnode refid="750" relation="include">
+                </childnode>
+                <childnode refid="753" relation="include">
+                </childnode>
+                <childnode refid="754" relation="include">
+                </childnode>
+            </node>
+            <node id="757">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="750" relation="include">
+                </childnode>
+            </node>
+            <node id="750">
+                <label>glib.h</label>
+            </node>
+            <node id="754">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="752" relation="include">
+                </childnode>
+                <childnode refid="750" relation="include">
+                </childnode>
+                <childnode refid="755" relation="include">
+                </childnode>
+                <childnode refid="753" relation="include">
+                </childnode>
+            </node>
+            <node id="753">
+                <label>ncurses.h</label>
+            </node>
+            <node id="752">
+                <label>stdio.h</label>
+            </node>
+            <node id="758">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="759" relation="include">
+                </childnode>
+                <childnode refid="760" relation="include">
+                </childnode>
+            </node>
+            <node id="756">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="752" relation="include">
+                </childnode>
+                <childnode refid="750" relation="include">
+                </childnode>
+                <childnode refid="755" relation="include">
+                </childnode>
+            </node>
+            <node id="755">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="829">
+                <label>libgnt/pygnt/common.c</label>
+                <link refid="common_8c"/>
+            </node>
+            <node id="816">
+                <label>libgnt/gntbox.c</label>
+                <link refid="gntbox_8c"/>
+            </node>
+            <node id="828">
+                <label>libgnt/pygnt/common.h</label>
+                <link refid="common_8h"/>
+                <childnode refid="829" relation="include">
+                </childnode>
+            </node>
+            <node id="820">
+                <label>libgnt/gntbox.h</label>
+                <link refid="gntbox_8h"/>
+                <childnode refid="765" relation="include">
+                </childnode>
+                <childnode refid="767" relation="include">
+                </childnode>
+                <childnode refid="768" relation="include">
+                </childnode>
+                <childnode refid="776" relation="include">
+                </childnode>
+                <childnode refid="777" relation="include">
+                </childnode>
+                <childnode refid="778" relation="include">
+                </childnode>
+                <childnode refid="773" relation="include">
+                </childnode>
+                <childnode refid="779" relation="include">
+                </childnode>
+                <childnode refid="781" relation="include">
+                </childnode>
+                <childnode refid="769" relation="include">
+                </childnode>
+                <childnode refid="782" relation="include">
+                </childnode>
+                <childnode refid="784" relation="include">
+                </childnode>
+                <childnode refid="810" relation="include">
+                </childnode>
+                <childnode refid="816" relation="include">
+                </childnode>
+                <childnode refid="813" relation="include">
+                </childnode>
+                <childnode refid="787" relation="include">
+                </childnode>
+                <childnode refid="789" relation="include">
+                </childnode>
+                <childnode refid="796" relation="include">
+                </childnode>
+                <childnode refid="804" relation="include">
+                </childnode>
+                <childnode refid="797" relation="include">
+                </childnode>
+                <childnode refid="798" relation="include">
+                </childnode>
+                <childnode refid="770" relation="include">
+                </childnode>
+            </node>
+            <node id="773">
+                <label>gntplugin.c</label>
+                <link refid="gntplugin_8c"/>
+            </node>
+            <node id="767">
+                <label>gntblist.c</label>
+                <link refid="gntblist_8c"/>
+            </node>
+            <node id="772">
+                <label>gntplugin.h</label>
+                <link refid="gntplugin_8h"/>
+                <childnode refid="768" relation="include">
+                </childnode>
+                <childnode refid="773" relation="include">
+                </childnode>
+                <childnode refid="764" relation="include">
+                </childnode>
+                <childnode refid="774" relation="include">
+                </childnode>
+                <childnode refid="770" relation="include">
+                </childnode>
+                <childnode refid="775" relation="include">
+                </childnode>
+                <childnode refid="771" relation="include">
+                </childnode>
+            </node>
+            <node id="788">
+                <label>libgnt/gntfilesel.c</label>
+                <link refid="gntfilesel_8c"/>
+            </node>
+            <node id="811">
+                <label>libgnt/gntfilesel.h</label>
+                <link refid="gntfilesel_8h"/>
+                <childnode refid="781" relation="include">
+                </childnode>
+                <childnode refid="769" relation="include">
+                </childnode>
+                <childnode refid="788" relation="include">
+                </childnode>
+            </node>
+            <node id="827">
+                <label>libgnt/gntline.c</label>
+                <link refid="gntline_8c"/>
+            </node>
+            <node id="826">
+                <label>libgnt/gntline.h</label>
+                <link refid="gntline_8h"/>
+                <childnode refid="765" relation="include">
+                </childnode>
+                <childnode refid="767" relation="include">
+                </childnode>
+                <childnode refid="776" relation="include">
+                </childnode>
+                <childnode refid="773" relation="include">
+                </childnode>
+                <childnode refid="779" relation="include">
+                </childnode>
+                <childnode refid="781" relation="include">
+                </childnode>
+                <childnode refid="769" relation="include">
+                </childnode>
+                <childnode refid="782" relation="include">
+                </childnode>
+                <childnode refid="827" relation="include">
+                </childnode>
+                <childnode refid="812" relation="include">
+                </childnode>
+            </node>
+            <node id="780">
+                <label>gntprefs.c</label>
+                <link refid="gntprefs_8c"/>
+            </node>
+            <node id="769">
+                <label>gntsound.c</label>
+                <link refid="gntsound_8c"/>
+            </node>
+            <node id="763">
+                <label>finch.c</label>
+                <link refid="finch_8c"/>
+            </node>
+            <node id="809">
+                <label>libgnt/gntmenuitem.c</label>
+                <link refid="gntmenuitem_8c"/>
+            </node>
+            <node id="805">
+                <label>libgnt/gntmenuitem.h</label>
+                <link refid="gntmenuitem_8h"/>
+                <childnode refid="767" relation="include">
+                </childnode>
+                <childnode refid="766" relation="include">
+                </childnode>
+                <childnode refid="768" relation="include">
+                </childnode>
+                <childnode refid="801" relation="include">
+                </childnode>
+                <childnode refid="806" relation="include">
+                </childnode>
+                <childnode refid="809" relation="include">
+                </childnode>
+            </node>
+            <node id="804">
+                <label>libgnt/gntws.c</label>
+                <link refid="gntws_8c"/>
+            </node>
+            <node id="779">
+                <label>gntpounce.c</label>
+                <link refid="gntpounce_8c"/>
+            </node>
+            <node id="823">
+                <label>libgnt/gntcheckbox.c</label>
+                <link refid="gntcheckbox_8c"/>
+            </node>
+            <node id="822">
+                <label>libgnt/gntcheckbox.h</label>
+                <link refid="gntcheckbox_8h"/>
+                <childnode refid="765" relation="include">
+                </childnode>
+                <childnode refid="776" relation="include">
+                </childnode>
+                <childnode refid="777" relation="include">
+                </childnode>
+                <childnode refid="779" relation="include">
+                </childnode>
+                <childnode refid="781" relation="include">
+                </childnode>
+                <childnode refid="769" relation="include">
+                </childnode>
+                <childnode refid="823" relation="include">
+                </childnode>
+                <childnode refid="812" relation="include">
+                </childnode>
+                <childnode refid="770" relation="include">
+                </childnode>
+            </node>
+            <node id="776">
+                <label>gntdebug.c</label>
+                <link refid="gntdebug_8c"/>
+            </node>
+            <node id="765">
+                <label>gntaccount.c</label>
+                <link refid="gntaccount_8c"/>
+            </node>
+            <node id="798">
+                <label>libgnt/wms/s.c</label>
+                <link refid="s_8c"/>
+            </node>
+            <node id="787">
+                <label>libgnt/gntentry.c</label>
+                <link refid="gntentry_8c"/>
+            </node>
+            <node id="825">
+                <label>libgnt/gntentry.h</label>
+                <link refid="gntentry_8h"/>
+                <childnode refid="765" relation="include">
+                </childnode>
+                <childnode refid="767" relation="include">
+                </childnode>
+                <childnode refid="768" relation="include">
+                </childnode>
+                <childnode refid="776" relation="include">
+                </childnode>
+                <childnode refid="779" relation="include">
+                </childnode>
+                <childnode refid="781" relation="include">
+                </childnode>
+                <childnode refid="769" relation="include">
+                </childnode>
+                <childnode refid="782" relation="include">
+                </childnode>
+                <childnode refid="787" relation="include">
+                </childnode>
+                <childnode refid="788" relation="include">
+                </childnode>
+                <childnode refid="812" relation="include">
+                </childnode>
+                <childnode refid="796" relation="include">
+                </childnode>
+            </node>
+            <node id="761">
+                <label>libgnt/gnt.h</label>
+                <link refid="gnt.h"/>
+                <childnode refid="762" relation="include">
+                </childnode>
+                <childnode refid="765" relation="include">
+                </childnode>
+                <childnode refid="766" relation="include">
+                </childnode>
+                <childnode refid="772" relation="include">
+                </childnode>
+                <childnode refid="768" relation="include">
+                </childnode>
+                <childnode refid="776" relation="include">
+                </childnode>
+                <childnode refid="777" relation="include">
+                </childnode>
+                <childnode refid="778" relation="include">
+                </childnode>
+                <childnode refid="773" relation="include">
+                </childnode>
+                <childnode refid="779" relation="include">
+                </childnode>
+                <childnode refid="780" relation="include">
+                </childnode>
+                <childnode refid="781" relation="include">
+                </childnode>
+                <childnode refid="782" relation="include">
+                </childnode>
+                <childnode refid="783" relation="include">
+                </childnode>
+                <childnode refid="799" relation="include">
+                </childnode>
+                <childnode refid="814" relation="include">
+                </childnode>
+                <childnode refid="784" relation="include">
+                </childnode>
+                <childnode refid="815" relation="include">
+                </childnode>
+                <childnode refid="820" relation="include">
+                </childnode>
+                <childnode refid="821" relation="include">
+                </childnode>
+                <childnode refid="810" relation="include">
+                </childnode>
+                <childnode refid="818" relation="include">
+                </childnode>
+                <childnode refid="822" relation="include">
+                </childnode>
+                <childnode refid="824" relation="include">
+                </childnode>
+                <childnode refid="825" relation="include">
+                </childnode>
+                <childnode refid="811" relation="include">
+                </childnode>
+                <childnode refid="826" relation="include">
+                </childnode>
+                <childnode refid="789" relation="include">
+                </childnode>
+                <childnode refid="806" relation="include">
+                </childnode>
+                <childnode refid="819" relation="include">
+                </childnode>
+                <childnode refid="794" relation="include">
+                </childnode>
+                <childnode refid="796" relation="include">
+                </childnode>
+                <childnode refid="828" relation="include">
+                </childnode>
+                <childnode refid="797" relation="include">
+                </childnode>
+                <childnode refid="798" relation="include">
+                </childnode>
+                <childnode refid="770" relation="include">
+                </childnode>
+                <childnode refid="771" relation="include">
+                </childnode>
+            </node>
+            <node id="768">
+                <label>gntconv.c</label>
+                <link refid="gntconv_8c"/>
+            </node>
+            <node id="766">
+                <label>gntconv.h</label>
+                <link refid="gntconv_8h"/>
+                <childnode refid="767" relation="include">
+                </childnode>
+                <childnode refid="768" relation="include">
+                </childnode>
+                <childnode refid="769" relation="include">
+                </childnode>
+                <childnode refid="764" relation="include">
+                </childnode>
+                <childnode refid="770" relation="include">
+                </childnode>
+                <childnode refid="771" relation="include">
+                </childnode>
+            </node>
+            <node id="771">
+                <label>plugins/lastlog.c</label>
+                <link refid="lastlog_8c"/>
+            </node>
+            <node id="794">
+                <label>libgnt/gntwidget.c</label>
+                <link refid="gntwidget_8c"/>
+            </node>
+            <node id="789">
+                <label>libgnt/gntmain.c</label>
+                <link refid="gntmain_8c"/>
+            </node>
+            <node id="808">
+                <label>libgnt/gntmenuitemcheck.c</label>
+                <link refid="gntmenuitemcheck_8c"/>
+            </node>
+            <node id="806">
+                <label>libgnt/gntmenuitemcheck.h</label>
+                <link refid="gntmenuitemcheck_8h"/>
+                <childnode refid="767" relation="include">
+                </childnode>
+                <childnode refid="768" relation="include">
+                </childnode>
+                <childnode refid="807" relation="include">
+                </childnode>
+                <childnode refid="808" relation="include">
+                </childnode>
+            </node>
+            <node id="764">
+                <label>gntui.c</label>
+                <link refid="gntui_8c"/>
+            </node>
+            <node id="762">
+                <label>gntui.h</label>
+                <link refid="gntui_8h"/>
+                <childnode refid="763" relation="include">
+                </childnode>
+                <childnode refid="764" relation="include">
+                </childnode>
+            </node>
+            <node id="791">
+                <label>libgnt/gntstyle.c</label>
+                <link refid="gntstyle_8c"/>
+            </node>
+            <node id="783">
+                <label>libgnt/gntstyle.h</label>
+                <link refid="gntstyle_8h"/>
+                <childnode refid="784" relation="include">
+                </childnode>
+                <childnode refid="785" relation="include">
+                </childnode>
+                <childnode refid="786" relation="include">
+                </childnode>
+                <childnode refid="787" relation="include">
+                </childnode>
+                <childnode refid="788" relation="include">
+                </childnode>
+                <childnode refid="789" relation="include">
+                </childnode>
+                <childnode refid="790" relation="include">
+                </childnode>
+                <childnode refid="791" relation="include">
+                </childnode>
+                <childnode refid="792" relation="include">
+                </childnode>
+                <childnode refid="793" relation="include">
+                </childnode>
+                <childnode refid="794" relation="include">
+                </childnode>
+                <childnode refid="795" relation="include">
+                </childnode>
+                <childnode refid="796" relation="include">
+                </childnode>
+                <childnode refid="797" relation="include">
+                </childnode>
+                <childnode refid="798" relation="include">
+                </childnode>
+            </node>
+            <node id="797">
+                <label>libgnt/wms/irssi.c</label>
+                <link refid="irssi_8c"/>
+            </node>
+            <node id="786">
+                <label>libgnt/gntcolors.c</label>
+                <link refid="gntcolors_8c"/>
+            </node>
+            <node id="792">
+                <label>libgnt/gnttextview.c</label>
+                <link refid="gnttextview_8c"/>
+            </node>
+            <node id="814">
+                <label>libgnt/gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="768" relation="include">
+                </childnode>
+                <childnode refid="776" relation="include">
+                </childnode>
+                <childnode refid="799" relation="include">
+                </childnode>
+                <childnode refid="815" relation="include">
+                </childnode>
+                <childnode refid="784" relation="include">
+                </childnode>
+                <childnode refid="818" relation="include">
+                </childnode>
+                <childnode refid="792" relation="include">
+                </childnode>
+                <childnode refid="812" relation="include">
+                </childnode>
+                <childnode refid="796" relation="include">
+                </childnode>
+                <childnode refid="771" relation="include">
+                </childnode>
+            </node>
+            <node id="812">
+                <label>libgnt/gntutils.c</label>
+                <link refid="gntutils_8c"/>
+            </node>
+            <node id="815">
+                <label>libgnt/gntutils.h</label>
+                <link refid="gntutils_8h"/>
+                <childnode refid="765" relation="include">
+                </childnode>
+                <childnode refid="767" relation="include">
+                </childnode>
+                <childnode refid="800" relation="include">
+                </childnode>
+                <childnode refid="768" relation="include">
+                </childnode>
+                <childnode refid="778" relation="include">
+                </childnode>
+                <childnode refid="779" relation="include">
+                </childnode>
+                <childnode refid="782" relation="include">
+                </childnode>
+                <childnode refid="784" relation="include">
+                </childnode>
+                <childnode refid="816" relation="include">
+                </childnode>
+                <childnode refid="785" relation="include">
+                </childnode>
+                <childnode refid="813" relation="include">
+                </childnode>
+                <childnode refid="787" relation="include">
+                </childnode>
+                <childnode refid="817" relation="include">
+                </childnode>
+                <childnode refid="789" relation="include">
+                </childnode>
+                <childnode refid="792" relation="include">
+                </childnode>
+                <childnode refid="793" relation="include">
+                </childnode>
+                <childnode refid="812" relation="include">
+                </childnode>
+                <childnode refid="794" relation="include">
+                </childnode>
+                <childnode refid="796" relation="include">
+                </childnode>
+            </node>
+            <node id="781">
+                <label>gntrequest.c</label>
+                <link refid="gntrequest_8c"/>
+            </node>
+            <node id="790">
+                <label>libgnt/gntslider.c</label>
+                <link refid="gntslider_8c"/>
+            </node>
+            <node id="819">
+                <label>libgnt/gntslider.h</label>
+                <link refid="gntslider_8h"/>
+                <childnode refid="769" relation="include">
+                </childnode>
+                <childnode refid="790" relation="include">
+                </childnode>
+            </node>
+            <node id="807">
+                <label>libgnt/gntmenu.c</label>
+                <link refid="gntmenu_8c"/>
+            </node>
+            <node id="801">
+                <label>libgnt/gntmenu.h</label>
+                <link refid="gntmenu_8h"/>
+                <childnode refid="767" relation="include">
+                </childnode>
+                <childnode refid="768" relation="include">
+                </childnode>
+                <childnode refid="802" relation="include">
+                </childnode>
+                <childnode refid="805" relation="include">
+                </childnode>
+                <childnode refid="810" relation="include">
+                </childnode>
+                <childnode refid="789" relation="include">
+                </childnode>
+                <childnode refid="807" relation="include">
+                </childnode>
+                <childnode refid="809" relation="include">
+                </childnode>
+                <childnode refid="796" relation="include">
+                </childnode>
+                <childnode refid="797" relation="include">
+                </childnode>
+                <childnode refid="798" relation="include">
+                </childnode>
+            </node>
+            <node id="785">
+                <label>libgnt/gntbutton.c</label>
+                <link refid="gntbutton_8c"/>
+            </node>
+            <node id="821">
+                <label>libgnt/gntbutton.h</label>
+                <link refid="gntbutton_8h"/>
+                <childnode refid="765" relation="include">
+                </childnode>
+                <childnode refid="800" relation="include">
+                </childnode>
+                <childnode refid="776" relation="include">
+                </childnode>
+                <childnode refid="777" relation="include">
+                </childnode>
+                <childnode refid="778" relation="include">
+                </childnode>
+                <childnode refid="773" relation="include">
+                </childnode>
+                <childnode refid="779" relation="include">
+                </childnode>
+                <childnode refid="781" relation="include">
+                </childnode>
+                <childnode refid="782" relation="include">
+                </childnode>
+                <childnode refid="784" relation="include">
+                </childnode>
+                <childnode refid="785" relation="include">
+                </childnode>
+                <childnode refid="822" relation="include">
+                </childnode>
+                <childnode refid="788" relation="include">
+                </childnode>
+                <childnode refid="789" relation="include">
+                </childnode>
+                <childnode refid="812" relation="include">
+                </childnode>
+                <childnode refid="796" relation="include">
+                </childnode>
+                <childnode refid="770" relation="include">
+                </childnode>
+            </node>
+            <node id="813">
+                <label>libgnt/gntcombobox.c</label>
+                <link refid="gntcombobox_8c"/>
+            </node>
+            <node id="824">
+                <label>libgnt/gntcombobox.h</label>
+                <link refid="gntcombobox_8h"/>
+                <childnode refid="765" relation="include">
+                </childnode>
+                <childnode refid="767" relation="include">
+                </childnode>
+                <childnode refid="779" relation="include">
+                </childnode>
+                <childnode refid="781" relation="include">
+                </childnode>
+                <childnode refid="769" relation="include">
+                </childnode>
+                <childnode refid="782" relation="include">
+                </childnode>
+                <childnode refid="813" relation="include">
+                </childnode>
+                <childnode refid="812" relation="include">
+                </childnode>
+            </node>
+            <node id="770">
+                <label>plugins/gntgf.c</label>
+                <link refid="gntgf_8c"/>
+            </node>
+            <node id="775">
+                <label>plugins/gnthistory.c</label>
+                <link refid="gnthistory_8c"/>
+            </node>
+            <node id="782">
+                <label>gntstatus.c</label>
+                <link refid="gntstatus_8c"/>
+            </node>
+            <node id="795">
+                <label>libgnt/gntwindow.c</label>
+                <link refid="gntwindow_8c"/>
+            </node>
+            <node id="810">
+                <label>libgnt/gntwindow.h</label>
+                <link refid="gntwindow_8h"/>
+                <childnode refid="765" relation="include">
+                </childnode>
+                <childnode refid="767" relation="include">
+                </childnode>
+                <childnode refid="800" relation="include">
+                </childnode>
+                <childnode refid="768" relation="include">
+                </childnode>
+                <childnode refid="769" relation="include">
+                </childnode>
+                <childnode refid="784" relation="include">
+                </childnode>
+                <childnode refid="811" relation="include">
+                </childnode>
+                <childnode refid="789" relation="include">
+                </childnode>
+                <childnode refid="812" relation="include">
+                </childnode>
+                <childnode refid="795" relation="include">
+                </childnode>
+                <childnode refid="796" relation="include">
+                </childnode>
+                <childnode refid="804" relation="include">
+                </childnode>
+                <childnode refid="797" relation="include">
+                </childnode>
+                <childnode refid="798" relation="include">
+                </childnode>
+                <childnode refid="771" relation="include">
+                </childnode>
+            </node>
+            <node id="778">
+                <label>gntnotify.c</label>
+                <link refid="gntnotify_8c"/>
+            </node>
+            <node id="796">
+                <label>libgnt/gntwm.c</label>
+                <link refid="gntwm_8c"/>
+            </node>
+            <node id="802">
+                <label>libgnt/gntwm.h</label>
+                <link refid="gntwm_8h"/>
+                <childnode refid="803" relation="include">
+                </childnode>
+                <childnode refid="783" relation="include">
+                </childnode>
+                <childnode refid="789" relation="include">
+                </childnode>
+                <childnode refid="796" relation="include">
+                </childnode>
+                <childnode refid="804" relation="include">
+                </childnode>
+                <childnode refid="797" relation="include">
+                </childnode>
+                <childnode refid="798" relation="include">
+                </childnode>
+                <childnode refid="774" relation="include">
+                </childnode>
+            </node>
+            <node id="784">
+                <label>libgnt/gntbindable.c</label>
+                <link refid="gntbindable_8c"/>
+            </node>
+            <node id="777">
+                <label>gntft.c</label>
+                <link refid="gntft_8c"/>
+            </node>
+            <node id="793">
+                <label>libgnt/gnttree.c</label>
+                <link refid="gnttree_8c"/>
+            </node>
+            <node id="799">
+                <label>libgnt/gnttree.h</label>
+                <link refid="gnttree_8h"/>
+                <childnode refid="765" relation="include">
+                </childnode>
+                <childnode refid="767" relation="include">
+                </childnode>
+                <childnode refid="800" relation="include">
+                </childnode>
+                <childnode refid="768" relation="include">
+                </childnode>
+                <childnode refid="777" relation="include">
+                </childnode>
+                <childnode refid="778" relation="include">
+                </childnode>
+                <childnode refid="773" relation="include">
+                </childnode>
+                <childnode refid="779" relation="include">
+                </childnode>
+                <childnode refid="781" relation="include">
+                </childnode>
+                <childnode refid="769" relation="include">
+                </childnode>
+                <childnode refid="782" relation="include">
+                </childnode>
+                <childnode refid="801" relation="include">
+                </childnode>
+                <childnode refid="784" relation="include">
+                </childnode>
+                <childnode refid="813" relation="include">
+                </childnode>
+                <childnode refid="787" relation="include">
+                </childnode>
+                <childnode refid="788" relation="include">
+                </childnode>
+                <childnode refid="789" relation="include">
+                </childnode>
+                <childnode refid="793" relation="include">
+                </childnode>
+                <childnode refid="812" relation="include">
+                </childnode>
+                <childnode refid="796" relation="include">
+                </childnode>
+                <childnode refid="770" relation="include">
+                </childnode>
+            </node>
+            <node id="774">
+                <label>plugins/gntclipboard.c</label>
+                <link refid="plugins_2gntclipboard_8c"/>
+            </node>
+            <node id="800">
+                <label>gntcertmgr.c</label>
+                <link refid="gntcertmgr_8c"/>
+            </node>
+            <node id="817">
+                <label>libgnt/gntlabel.c</label>
+                <link refid="gntlabel_8c"/>
+            </node>
+            <node id="818">
+                <label>libgnt/gntlabel.h</label>
+                <link refid="gntlabel_8h"/>
+                <childnode refid="765" relation="include">
+                </childnode>
+                <childnode refid="767" relation="include">
+                </childnode>
+                <childnode refid="800" relation="include">
+                </childnode>
+                <childnode refid="768" relation="include">
+                </childnode>
+                <childnode refid="776" relation="include">
+                </childnode>
+                <childnode refid="777" relation="include">
+                </childnode>
+                <childnode refid="778" relation="include">
+                </childnode>
+                <childnode refid="773" relation="include">
+                </childnode>
+                <childnode refid="779" relation="include">
+                </childnode>
+                <childnode refid="781" relation="include">
+                </childnode>
+                <childnode refid="769" relation="include">
+                </childnode>
+                <childnode refid="782" relation="include">
+                </childnode>
+                <childnode refid="784" relation="include">
+                </childnode>
+                <childnode refid="788" relation="include">
+                </childnode>
+                <childnode refid="817" relation="include">
+                </childnode>
+                <childnode refid="789" relation="include">
+                </childnode>
+                <childnode refid="819" relation="include">
+                </childnode>
+                <childnode refid="812" relation="include">
+                </childnode>
+                <childnode refid="796" relation="include">
+                </childnode>
+                <childnode refid="797" relation="include">
+                </childnode>
+                <childnode refid="798" relation="include">
+                </childnode>
+                <childnode refid="770" relation="include">
+                </childnode>
+            </node>
+            <node id="803">
+                <label>gntidle.c</label>
+                <link refid="gntidle_8c"/>
+            </node>
+        </invincdepgraph>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="gnt_8h_1ad5f6164768a5209e9b9151f1bbe17d53" prot="public" static="no">
+                <name>G_PARAM_STATIC_NAME</name>
+                <initializer>G_PARAM_PRIVATE</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Get things to compile in Glib &lt; 2.8</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="43"
+                          column="10"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h"
+                          bodystart="43" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gnt_8h_1a1809847e9153472b2841a3deca602614" prot="public" static="no">
+                <name>G_PARAM_STATIC_NICK</name>
+                <initializer>G_PARAM_PRIVATE</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="44"
+                          column="10"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h"
+                          bodystart="44" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gnt_8h_1a5b6913c40584431bd1819c188d2627da" prot="public" static="no">
+                <name>G_PARAM_STATIC_BLURB</name>
+                <initializer>G_PARAM_PRIVATE</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="45"
+                          column="10"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h"
+                          bodystart="45" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gnt_8h_1a2b8c2fa35acacd8927d85b840eb91f56" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_init</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_init</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="51"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="446" bodyend="505"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1ae0296189f67f03e933080f024419f417" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_main</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_main</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="56"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="507" bodyend="511"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1a9ccbb5dec9bfa8f46d6a09e7e7a472d5" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>gboolean gnt_ascii_only</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_ascii_only</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <simplesect kind="return">
+                            <para></para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="63"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="590" bodyend="593"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1a09a1f84dc62e62adb56eafe4f58f22ea" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_window_present</definition>
+                <argsstring>(GntWidget *window)</argsstring>
+                <name>gnt_window_present</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>window</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="65"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="517" bodyend="523"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1a210a39639e8d8febb16030e85924b56b" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_screen_occupy</definition>
+                <argsstring>(GntWidget *widget)</argsstring>
+                <name>gnt_screen_occupy</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>widget</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="70"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="525" bodyend="528"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1a895afadd293b683c4158c6fc2f2dfc42" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_screen_release</definition>
+                <argsstring>(GntWidget *widget)</argsstring>
+                <name>gnt_screen_release</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>widget</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="76"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="530" bodyend="534"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1a0f33139f770a7f35a49bece60dd7faf8" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_screen_update</definition>
+                <argsstring>(GntWidget *widget)</argsstring>
+                <name>gnt_screen_update</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>widget</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="82"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="536" bodyend="539"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1a6b12157f233c9c8bcd6d548d13e39a1b" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_screen_resize_widget</definition>
+                <argsstring>(GntWidget *widget, int width, int height)</argsstring>
+                <name>gnt_screen_resize_widget</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>width</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>height</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>widget</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>width</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>height</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="90"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="595" bodyend="598"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1a31ea6f8ad3a95fa2745a8375b6667898" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_screen_move_widget</definition>
+                <argsstring>(GntWidget *widget, int x, int y)</argsstring>
+                <name>gnt_screen_move_widget</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>x</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>y</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>widget</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>x</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>y</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="98"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="600" bodyend="603"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1aeb60822d36a169cfc1c5c5c23a30f932" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_screen_rename_widget</definition>
+                <argsstring>(GntWidget *widget, const char *text)</argsstring>
+                <name>gnt_screen_rename_widget</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>text</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>widget</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>text</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="105"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="605" bodyend="610"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1aad96e2482fc6d0d0a876b8b1ea5c01c1" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>gboolean gnt_widget_has_focus</definition>
+                <argsstring>(GntWidget *widget)</argsstring>
+                <name>gnt_widget_has_focus</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>widget</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para></para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="113"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="541" bodyend="563"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1a0d61ff0e5939b49794411451ab5f488d" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_widget_set_urgent</definition>
+                <argsstring>(GntWidget *widget)</argsstring>
+                <name>gnt_widget_set_urgent</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>widget</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>widget</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="119"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="565" bodyend="576"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1a3c1fd07358bf93a66ae7e247c528e633" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_register_action</definition>
+                <argsstring>(const char *label, void(*callback)())</argsstring>
+                <name>gnt_register_action</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>label</declname>
+                </param>
+                <param>
+                    <type>void(*)()</type>
+                    <declname>callback</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>label</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>callback</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="126"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="612" bodyend="619"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1a0ae6c1381f09ba65e5c9c3fbe2c9f7de" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>gboolean gnt_screen_menu_show</definition>
+                <argsstring>(gpointer menu)</argsstring>
+                <name>gnt_screen_menu_show</name>
+                <param>
+                    <type>gpointer</type>
+                    <declname>menu</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>menu</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para></para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="134"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="627" bodyend="643"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1ac27447a385580704f3909dc0b01023fc" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_quit</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_quit</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="139"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="578" bodyend="588"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1a9011dd2237e89ed2b5dd5f2a0d0708c2" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>
+                    <ref refid="gntclipboard_8h_1aceea25aa93db9f431bdb862dfa195e6a" kindref="member">GntClipboard</ref>
+                    *
+                </type>
+                <definition>GntClipboard* gnt_get_clipboard</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_get_clipboard</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <simplesect kind="return">
+                            <para></para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="146"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="650" bodyend="653"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1a75cf17e712e1192b149b46c75b79e6b7" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gchar *</type>
+                <definition>gchar* gnt_get_clipboard_string</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_get_clipboard_string</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <simplesect kind="return">
+                            <para></para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="153"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="655" bodyend="658"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1afd5941ce5b28f320bd3ffd6e7ca3f23d" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_set_clipboard_string</definition>
+                <argsstring>(gchar *string)</argsstring>
+                <name>gnt_set_clipboard_string</name>
+                <param>
+                    <type>gchar *</type>
+                    <declname>string</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>string</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="159"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="645" bodyend="648"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1a152050f30173949cc75ca6dd584d5941" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>gboolean gnt_giveup_console</definition>
+                <argsstring>(const char *wd, char **argv, char **envp, gint *stin, gint *stout, gint *sterr,
+                    void(*callback)(int status, gpointer data), gpointer data)
+                </argsstring>
+                <name>gnt_giveup_console</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>wd</declname>
+                </param>
+                <param>
+                    <type>char **</type>
+                    <declname>argv</declname>
+                </param>
+                <param>
+                    <type>char **</type>
+                    <declname>envp</declname>
+                </param>
+                <param>
+                    <type>gint *</type>
+                    <declname>stin</declname>
+                </param>
+                <param>
+                    <type>gint *</type>
+                    <declname>stout</declname>
+                </param>
+                <param>
+                    <type>gint *</type>
+                    <declname>sterr</declname>
+                </param>
+                <param>
+                    <type>void(*)(int status, gpointer<ref refid="gntwm_8c_1a10fb496e4431487bd53ab5a192614a0e"
+                                                           kindref="member">data</ref>)
+                    </type>
+                    <declname>callback</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>data</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Spawn a different application that will consume the console.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="164"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="683" bodyend="708"/>
+            </memberdef>
+            <memberdef kind="function" id="gnt_8h_1a2282db9aa15ff3a9f68a611f22157409" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>gboolean</type>
+                <definition>gboolean gnt_is_refugee</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_is_refugee</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h" line="168"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntmain.c"
+                          bodystart="710" bodyend="717"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>GNT API</para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="11">
+                <highlight class="comment">/*</highlight>
+            </codeline>
+            <codeline lineno="12">
+                <highlight class="comment"><sp/>*<sp/>GNT<sp/>-<sp/>The<sp/>GLib<sp/>Ncurses<sp/>Toolkit
+                </highlight>
+            </codeline>
+            <codeline lineno="13">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="comment"><sp/>*<sp/>GNT<sp/>is<sp/>the<sp/>legal<sp/>property<sp/>of<sp/>its<sp/>
+                    developers,<sp/>whose<sp/>names<sp/>are<sp/>too<sp/>numerous
+                </highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="comment"><sp/>*<sp/>to<sp/>list<sp/>here.
+                    <sp/>
+                    <sp/>Please<sp/>refer<sp/>to<sp/>the<sp/>COPYRIGHT<sp/>file<sp/>distributed<sp/>with<sp/>this
+                </highlight>
+            </codeline>
+            <codeline lineno="16">
+                <highlight class="comment"><sp/>*<sp/>source<sp/>distribution.
+                </highlight>
+            </codeline>
+            <codeline lineno="17">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="18">
+                <highlight class="comment"><sp/>*<sp/>This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can
+                    <sp/>redistribute<sp/>it<sp/>and/or<sp/>modify
+                </highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General
+                    <sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by
+                </highlight>
+            </codeline>
+            <codeline lineno="20">
+                <highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version
+                    <sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or
+                </highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.
+                </highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope
+                    <sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,
+                </highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the
+                    <sp/>implied<sp/>warranty<sp/>of
+                </highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR
+                    <sp/>PURPOSE.
+                    <sp/>
+                    <sp/>See<sp/>the
+                </highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>
+                    details.
+                </highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the
+                    <sp/>GNU<sp/>General<sp/>Public<sp/>License
+                </highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write
+                    <sp/>to<sp/>the<sp/>Free<sp/>Software
+                </highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth
+                    <sp/>Floor,<sp/>Boston,<sp/>MA
+                    <sp/>
+                    <sp/>02111-1301
+                    <sp/>
+                    <sp/>USA
+                </highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="comment"><sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;glib.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntwidget_8h" kindref="compound">
+                    gntwidget.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntclipboard_8h" kindref="compound">
+                    gntclipboard.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntcolors_8h" kindref="compound">
+                    gntcolors.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntkeys_8h" kindref="compound">
+                    gntkeys.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="preprocessor">#if<sp/>!GLIB_CHECK_VERSION(2,8,0)
+                </highlight>
+            </codeline>
+            <codeline lineno="43" refid="gnt_8h_1ad5f6164768a5209e9b9151f1bbe17d53" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>#define<sp/>G_PARAM_STATIC_NAME
+                    <sp/>
+                    <sp/>G_PARAM_PRIVATE
+                </highlight>
+            </codeline>
+            <codeline lineno="44" refid="gnt_8h_1a1809847e9153472b2841a3deca602614" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>#define<sp/>G_PARAM_STATIC_NICK
+                    <sp/>
+                    <sp/>G_PARAM_PRIVATE
+                </highlight>
+            </codeline>
+            <codeline lineno="45" refid="gnt_8h_1a5b6913c40584431bd1819c188d2627da" refkind="member">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>#define<sp/>G_PARAM_STATIC_BLURB
+                    <sp/>
+                    <sp/>G_PARAM_PRIVATE
+                </highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="preprocessor"></highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnt_8h_1a2b8c2fa35acacd8927d85b840eb91f56" kindref="member">gnt_init</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnt_8h_1ae0296189f67f03e933080f024419f417" kindref="member">gnt_main</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal">gboolean
+                    <sp/>
+                    <ref refid="gnt_8h_1a9ccbb5dec9bfa8f46d6a09e7e7a472d5" kindref="member">gnt_ascii_only</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnt_8h_1a09a1f84dc62e62adb56eafe4f58f22ea" kindref="member">gnt_window_present</ref>(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntcertmgr_8c_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnt_8h_1a210a39639e8d8febb16030e85924b56b" kindref="member">gnt_screen_occupy</ref>(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnt_8h_1a895afadd293b683c4158c6fc2f2dfc42" kindref="member">gnt_screen_release</ref>(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnt_8h_1a0f33139f770a7f35a49bece60dd7faf8" kindref="member">gnt_screen_update</ref>(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnt_8h_1a6b12157f233c9c8bcd6d548d13e39a1b" kindref="member">
+                        gnt_screen_resize_widget</ref>(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>width,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>height);
+                </highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnt_8h_1a31ea6f8ad3a95fa2745a8375b6667898" kindref="member">gnt_screen_move_widget</ref>
+                    (
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>x,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>y);
+                </highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="105">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnt_8h_1aeb60822d36a169cfc1c5c5c23a30f932" kindref="member">
+                        gnt_screen_rename_widget</ref>(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text);
+                </highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="113">
+                <highlight class="normal">gboolean
+                    <sp/>
+                    <ref refid="gnt_8h_1aad96e2482fc6d0d0a876b8b1ea5c01c1" kindref="member">gnt_widget_has_focus</ref>(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="114">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="119">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnt_8h_1a0d61ff0e5939b49794411451ab5f488d" kindref="member">gnt_widget_set_urgent</ref>(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*widget);
+                </highlight>
+            </codeline>
+            <codeline lineno="120">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="126">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnt_8h_1a3c1fd07358bf93a66ae7e247c528e633" kindref="member">gnt_register_action</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*label,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>(*callback)());
+                </highlight>
+            </codeline>
+            <codeline lineno="127">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="134">
+                <highlight class="normal">gboolean
+                    <sp/>
+                    <ref refid="gnt_8h_1a0ae6c1381f09ba65e5c9c3fbe2c9f7de" kindref="member">gnt_screen_menu_show</ref>
+                    (gpointer<sp/>menu);
+                </highlight>
+            </codeline>
+            <codeline lineno="135">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="139">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnt_8h_1ac27447a385580704f3909dc0b01023fc" kindref="member">gnt_quit</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="140">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="146">
+                <highlight class="normal">
+                    <ref refid="struct___gnt_clipboard" kindref="compound">GntClipboard</ref>
+                    <sp/>*
+                    <sp/>
+                    <ref refid="gnt_8h_1a9011dd2237e89ed2b5dd5f2a0d0708c2" kindref="member">gnt_get_clipboard</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="147">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="153">
+                <highlight class="normal">gchar<sp/>*
+                    <sp/>
+                    <ref refid="gnt_8h_1a75cf17e712e1192b149b46c75b79e6b7" kindref="member">
+                        gnt_get_clipboard_string</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="154">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="159">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gnt_8h_1afd5941ce5b28f320bd3ffd6e7ca3f23d" kindref="member">
+                        gnt_set_clipboard_string</ref>(gchar<sp/>*
+                </highlight>
+                <highlight class="keywordtype">string</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="160">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="164">
+                <highlight class="normal">gboolean
+                    <sp/>
+                    <ref refid="gnt_8h_1a152050f30173949cc75ca6dd584d5941" kindref="member">gnt_giveup_console</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*wd,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>**<ref refid="getopt1_8c_1a53f75c6ccd3a8828f9aa07f4bb698ad4"
+                                                      kindref="member">argv</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>**envp,
+                </highlight>
+            </codeline>
+            <codeline lineno="165">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gint<sp/>*stin,<sp/>gint<sp/>*stout,<sp/>gint<sp/>*sterr,
+                </highlight>
+            </codeline>
+            <codeline lineno="166">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>(*callback)(
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>status,<sp/>gpointer
+                    <sp/>
+                    <ref refid="gntwm_8c_1a10fb496e4431487bd53ab5a192614a0e" kindref="member">data</ref>),<sp/>gpointer
+                    <sp/>data);
+                </highlight>
+            </codeline>
+            <codeline lineno="167">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="168">
+                <highlight class="normal">gboolean
+                    <sp/>
+                    <ref refid="gnt_8h_1a2282db9aa15ff3a9f68a611f22157409" kindref="member">gnt_is_refugee</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gnt.h"/>
+    </compounddef>
+</doxygen>

@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="common_8c" kind="file">
+        <compoundname>common.c</compoundname>
+        <includes refid="common_8h" local="yes">common.h</includes>
+        <incdepgraph>
+            <node id="2532">
+                <label>libgnt/pygnt/common.c</label>
+                <link refid="common.c"/>
+                <childnode refid="2533" relation="include">
+                </childnode>
+            </node>
+            <node id="2533">
+                <label>common.h</label>
+                <link refid="common_8h"/>
+                <childnode refid="2534" relation="include">
+                </childnode>
+                <childnode refid="2535" relation="include">
+                </childnode>
+            </node>
+            <node id="2546">
+                <label>term.h</label>
+            </node>
+            <node id="2535">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="2536" relation="include">
+                </childnode>
+                <childnode refid="2537" relation="include">
+                </childnode>
+                <childnode refid="2542" relation="include">
+                </childnode>
+                <childnode refid="2543" relation="include">
+                </childnode>
+                <childnode refid="2544" relation="include">
+                </childnode>
+            </node>
+            <node id="2545">
+                <label>curses.h</label>
+            </node>
+            <node id="2537">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="2538" relation="include">
+                </childnode>
+                <childnode refid="2536" relation="include">
+                </childnode>
+                <childnode refid="2539" relation="include">
+                </childnode>
+                <childnode refid="2540" relation="include">
+                </childnode>
+            </node>
+            <node id="2543">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="2536" relation="include">
+                </childnode>
+            </node>
+            <node id="2534">
+                <label>Python.h</label>
+            </node>
+            <node id="2536">
+                <label>glib.h</label>
+            </node>
+            <node id="2540">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="2538" relation="include">
+                </childnode>
+                <childnode refid="2536" relation="include">
+                </childnode>
+                <childnode refid="2541" relation="include">
+                </childnode>
+                <childnode refid="2539" relation="include">
+                </childnode>
+            </node>
+            <node id="2539">
+                <label>ncurses.h</label>
+            </node>
+            <node id="2538">
+                <label>stdio.h</label>
+            </node>
+            <node id="2544">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="2545" relation="include">
+                </childnode>
+                <childnode refid="2546" relation="include">
+                </childnode>
+            </node>
+            <node id="2542">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="2538" relation="include">
+                </childnode>
+                <childnode refid="2536" relation="include">
+                </childnode>
+                <childnode refid="2541" relation="include">
+                </childnode>
+            </node>
+            <node id="2541">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="common_8c_1a31c3d760738cf8448004f6f7f417c391" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>PyObject *</type>
+                <definition>PyObject* create_pyobject_from_string_list</definition>
+                <argsstring>(GList *list)</argsstring>
+                <name>create_pyobject_from_string_list</name>
+                <param>
+                    <type>GList *</type>
+                    <declname>list</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/pygnt/common.c"
+                          line="4" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/pygnt/common.c"
+                          bodystart="4" bodyend="24"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1">
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="common_8h" kindref="compound">
+                    common.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="2">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="3">
+                <highlight class="normal">PyObject<sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="4">
+                <highlight class="normal"><ref refid="common_8c_1a31c3d760738cf8448004f6f7f417c391" kindref="member">
+                    create_pyobject_from_string_list</ref>(GList<sp/>*list)
+                </highlight>
+            </codeline>
+            <codeline lineno="5">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="6">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PyObject<sp/>*py_list;
+                </highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(list<sp/>==
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="8">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>Py_INCREF(Py_None);
+                </highlight>
+            </codeline>
+            <codeline lineno="9">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>Py_None;
+                </highlight>
+            </codeline>
+            <codeline lineno="10">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="11">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>((py_list<sp/>=<sp/>PyList_New(0))<sp/>==
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="12">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_list_foreach(list,<sp/>(GFunc)g_free,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="13">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_list_free(list);
+                </highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="16">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">while</highlight>
+                <highlight class="normal"><sp/>(list)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="17">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PyObject<sp/>*
+                    <ref refid="namespacetest_1ac1d524eefafdd0448ff4db794faae7ae" kindref="member">obj</ref>
+                    <sp/>=<sp/>PyString_FromString(list-&gt;data);
+                </highlight>
+            </codeline>
+            <codeline lineno="18">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PyList_Append(py_list,<sp/>obj);
+                </highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>Py_DECREF(obj);
+                </highlight>
+            </codeline>
+            <codeline lineno="20">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(list-&gt;data);
+                </highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>list<sp/>=<sp/>g_list_delete_link(list,<sp/>list);
+                </highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>py_list;
+                </highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="normal">}</highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/pygnt/common.c"/>
+    </compounddef>
+</doxygen>

@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntstatus_8h" kind="file">
+        <compoundname>gntstatus.h</compoundname>
+        <includes local="no">status.h</includes>
+        <includes local="no">savedstatuses.h</includes>
+        <includedby refid="gntblist_8c" local="yes">gntblist.c</includedby>
+        <includedby refid="gntconv_8c" local="yes">gntconv.c</includedby>
+        <includedby refid="gntstatus_8c" local="yes">gntstatus.c</includedby>
+        <includedby refid="gntui_8c" local="yes">gntui.c</includedby>
+        <incdepgraph>
+            <node id="675">
+                <label>savedstatuses.h</label>
+            </node>
+            <node id="674">
+                <label>status.h</label>
+            </node>
+            <node id="673">
+                <label>gntstatus.h</label>
+                <link refid="gntstatus.h"/>
+                <childnode refid="674" relation="include">
+                </childnode>
+                <childnode refid="675" relation="include">
+                </childnode>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="677">
+                <label>gntblist.c</label>
+                <link refid="gntblist_8c"/>
+            </node>
+            <node id="678">
+                <label>gntconv.c</label>
+                <link refid="gntconv_8c"/>
+            </node>
+            <node id="680">
+                <label>gntui.c</label>
+                <link refid="gntui_8c"/>
+            </node>
+            <node id="679">
+                <label>gntstatus.c</label>
+                <link refid="gntstatus_8c"/>
+            </node>
+            <node id="676">
+                <label>gntstatus.h</label>
+                <link refid="gntstatus.h"/>
+                <childnode refid="677" relation="include">
+                </childnode>
+                <childnode refid="678" relation="include">
+                </childnode>
+                <childnode refid="679" relation="include">
+                </childnode>
+                <childnode refid="680" relation="include">
+                </childnode>
+            </node>
+        </invincdepgraph>
+        <sectiondef kind="user-defined">
+            <memberdef kind="function" id="gntstatus_8h_1aabea427047c90dcc679454e6d29ccb47" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_savedstatus_show_all</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_savedstatus_show_all</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Show a dialog with all the saved statuses.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntstatus.h" line="39"
+                          column="1" bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntstatus.c"
+                          bodystart="164" bodyend="223"/>
+            </memberdef>
+            <memberdef kind="function" id="gntstatus_8h_1a6874d1b0b73aa7e5cce41f22c2ca7be9" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_savedstatus_edit</definition>
+                <argsstring>(PurpleSavedStatus *saved)</argsstring>
+                <name>finch_savedstatus_edit</name>
+                <param>
+                    <type>PurpleSavedStatus *</type>
+                    <declname>saved</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Show a dialog to edit a status.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>saved</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The saved status to edit. Set it to
+                                        <computeroutput>NULL</computeroutput>
+                                        to create a new status.
+                                    </para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntstatus.h" line="46"
+                          column="1" bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntstatus.c"
+                          bodystart="503" bodyend="617"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>GNT Status API</para>
+            <para>finch</para>
+            <para>Finch is the legal property of its developers, whose names are too numerous to list here. Please refer
+                to the COPYRIGHT file distributed with this source distribution.
+            </para>
+            <para>This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+                General Public License as published by the Free Software Foundation; either version 2 of the License, or
+                (at your option) any later version.
+            </para>
+            <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
+                the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public
+                License for more details.
+            </para>
+            <para>You should have received a copy of the GNU General Public License along with this program; if not,
+                write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02111-1301 USA
+            </para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="25">
+                <highlight class="preprocessor">#ifndef<sp/>_GNT_STATUS_H
+                </highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>_GNT_STATUS_H
+                </highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;status.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;savedstatuses.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/**********************************************************************
+                </highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="comment"><sp/>*<sp/>@name<sp/>GNT<sp/>BuddyList<sp/>API
+                </highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="comment"><sp/>**********************************************************************/
+                </highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntstatus_8c_1a35c5ee8020d9f1aa071286a990642dc5" kindref="member">
+                        finch_savedstatus_show_all</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntstatus_8c_1a6874d1b0b73aa7e5cce41f22c2ca7be9" kindref="member">
+                        finch_savedstatus_edit</ref>(PurpleSavedStatus<sp/>*saved);
+                </highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntstatus.h"/>
+    </compounddef>
+</doxygen>

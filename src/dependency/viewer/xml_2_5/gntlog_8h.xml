@@ -1,0 +1,693 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntlog_8h" kind="file">
+        <compoundname>gntlog.h</compoundname>
+        <includes local="yes">log.h</includes>
+        <includes local="yes">account.h</includes>
+        <includes refid="gntwidget_8h" local="yes">gntwidget.h</includes>
+        <includedby refid="gntblist_8c" local="yes">gntblist.c</includedby>
+        <includedby refid="gntconv_8c" local="yes">gntconv.c</includedby>
+        <includedby refid="gntlog_8c" local="yes">gntlog.c</includedby>
+        <includedby refid="gntui_8c" local="yes">gntui.c</includedby>
+        <incdepgraph>
+            <node id="482">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="483" relation="include">
+                </childnode>
+                <childnode refid="484" relation="include">
+                </childnode>
+                <childnode refid="485" relation="include">
+                </childnode>
+                <childnode refid="486" relation="include">
+                </childnode>
+            </node>
+            <node id="480">
+                <label>log.h</label>
+            </node>
+            <node id="481">
+                <label>account.h</label>
+            </node>
+            <node id="479">
+                <label>gntlog.h</label>
+                <link refid="gntlog.h"/>
+                <childnode refid="480" relation="include">
+                </childnode>
+                <childnode refid="481" relation="include">
+                </childnode>
+                <childnode refid="482" relation="include">
+                </childnode>
+            </node>
+            <node id="486">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="483" relation="include">
+                </childnode>
+                <childnode refid="484" relation="include">
+                </childnode>
+                <childnode refid="487" relation="include">
+                </childnode>
+                <childnode refid="485" relation="include">
+                </childnode>
+            </node>
+            <node id="484">
+                <label>glib.h</label>
+            </node>
+            <node id="485">
+                <label>ncurses.h</label>
+            </node>
+            <node id="483">
+                <label>stdio.h</label>
+            </node>
+            <node id="487">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="490">
+                <label>gntconv.c</label>
+                <link refid="gntconv_8c"/>
+            </node>
+            <node id="491">
+                <label>gntlog.c</label>
+                <link refid="gntlog_8c"/>
+            </node>
+            <node id="488">
+                <label>gntlog.h</label>
+                <link refid="gntlog.h"/>
+                <childnode refid="489" relation="include">
+                </childnode>
+                <childnode refid="490" relation="include">
+                </childnode>
+                <childnode refid="491" relation="include">
+                </childnode>
+                <childnode refid="492" relation="include">
+                </childnode>
+            </node>
+            <node id="492">
+                <label>gntui.c</label>
+                <link refid="gntui_8c"/>
+            </node>
+            <node id="489">
+                <label>gntblist.c</label>
+                <link refid="gntblist_8c"/>
+            </node>
+        </invincdepgraph>
+        <innerclass refid="struct___finch_log_viewer" prot="public">_FinchLogViewer</innerclass>
+        <sectiondef kind="user-defined">
+            <header>GNT Log Subsystem</header>
+            <memberdef kind="function" id="gntlog_8h_1a4b4c7202ee3f5c52d6d717077c34b0ad" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_log_init</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_log_init</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Initializes the GNT log subsystem.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntlog.h"
+                          line="66" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntlog.c"
+                          bodystart="525" bodyend="536"/>
+            </memberdef>
+            <memberdef kind="function" id="gntlog_8h_1afbd751f7b6ebd985683899ce89535c19" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void *</type>
+                <definition>void* finch_log_get_handle</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_log_get_handle</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Returns the GNT log subsystem handle.</para>
+                    <para>
+                        <simplesect kind="return">
+                            <para>The GNT log subsystem handle.</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntlog.h"
+                          line="73" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntlog.c"
+                          bodystart="518" bodyend="523"/>
+            </memberdef>
+            <memberdef kind="function" id="gntlog_8h_1aeee57dfb3ce2827e4319283646025801" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_log_uninit</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_log_uninit</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Uninitializes the GNT log subsystem.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntlog.h"
+                          line="78" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntlog.c"
+                          bodystart="539" bodyend="542"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="typedef">
+            <memberdef kind="typedef" id="gntlog_8h_1aa4b8778f3ee3cd11306b80dafb94b645" prot="public" static="no">
+                <type>struct
+                    <ref refid="struct___finch_log_viewer" kindref="compound">_FinchLogViewer</ref>
+                </type>
+                <definition>typedef struct _FinchLogViewer FinchLogViewer</definition>
+                <argsstring></argsstring>
+                <name>FinchLogViewer</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntlog.h"
+                          line="54" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntlog.h"
+                          bodystart="33" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntlog_8h_1a1a73267bbe254370e37a5fb31b0327e5" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_log_show</definition>
+                <argsstring>(PurpleLogType type, const char *screenname, PurpleAccount *account)</argsstring>
+                <name>finch_log_show</name>
+                <param>
+                    <type>PurpleLogType</type>
+                    <declname>type</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>screenname</declname>
+                </param>
+                <param>
+                    <type>PurpleAccount *</type>
+                    <declname>account</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntlog.h"
+                          line="53" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntlog.c"
+                          bodystart="368" bodyend="433"/>
+            </memberdef>
+            <memberdef kind="function" id="gntlog_8h_1adf45a8c85f67f34c777fe70da20e7d80" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_log_show_contact</definition>
+                <argsstring>(PurpleContact *contact)</argsstring>
+                <name>finch_log_show_contact</name>
+                <param>
+                    <type>PurpleContact *</type>
+                    <declname>contact</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntlog.h"
+                          line="54" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntlog.c"
+                          bodystart="435" bodyend="488"/>
+            </memberdef>
+            <memberdef kind="function" id="gntlog_8h_1a19d945188da34da88ff3ee659c284491" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_syslog_show</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_syslog_show</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntlog.h"
+                          line="56" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntlog.c"
+                          bodystart="490" bodyend="511"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>GNT Log viewer</para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="6">
+                <highlight class="comment">/*<sp/>finch
+                </highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="8">
+                <highlight class="comment"><sp/>*<sp/>Finch<sp/>is<sp/>the<sp/>legal<sp/>property<sp/>of<sp/>its
+                    <sp/>
+                    developers,<sp/>whose<sp/>names<sp/>are<sp/>too<sp/>numerous
+                </highlight>
+            </codeline>
+            <codeline lineno="9">
+                <highlight class="comment"><sp/>*<sp/>to<sp/>list<sp/>here.
+                    <sp/>
+                    <sp/>Please<sp/>refer<sp/>to<sp/>the<sp/>COPYRIGHT<sp/>file<sp/>distributed<sp/>with<sp/>this
+                </highlight>
+            </codeline>
+            <codeline lineno="10">
+                <highlight class="comment"><sp/>*<sp/>source<sp/>distribution.
+                </highlight>
+            </codeline>
+            <codeline lineno="11">
+                <highlight class="comment"><sp/>*
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="12">
+                <highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can
+                    <sp/>redistribute<sp/>it<sp/>and/or<sp/>modify
+                </highlight>
+            </codeline>
+            <codeline lineno="13">
+                <highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General
+                    <sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by
+                </highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version
+                    <sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or
+                </highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.
+                </highlight>
+            </codeline>
+            <codeline lineno="16">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="17">
+                <highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope
+                    <sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,
+                </highlight>
+            </codeline>
+            <codeline lineno="18">
+                <highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the
+                    <sp/>implied<sp/>warranty<sp/>of
+                </highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR
+                    <sp/>PURPOSE.
+                    <sp/>
+                    <sp/>See<sp/>the
+                </highlight>
+            </codeline>
+            <codeline lineno="20">
+                <highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more
+                    <sp/>
+                    details.
+                </highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the
+                    <sp/>GNU<sp/>General<sp/>Public<sp/>License
+                </highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write
+                    <sp/>to<sp/>the<sp/>Free<sp/>Software
+                </highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth
+                    <sp/>Floor,<sp/>Boston,<sp/>MA
+                    <sp/>
+                    <sp/>02111-1301
+                    <sp/>
+                    <sp/>USA
+                </highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="comment"><sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#ifndef<sp/>_FINCHLOG_H_
+                </highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>_FINCHLOG_H_
+                </highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;log.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;account.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntwidget_8h" kindref="compound">
+                    gntwidget.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33" refid="gntlog_8h_1aa4b8778f3ee3cd11306b80dafb94b645" refkind="member">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___finch_log_viewer" kindref="compound">_FinchLogViewer</ref>
+                    <sp/>
+                    <ref refid="struct___finch_log_viewer" kindref="compound">FinchLogViewer</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="38" refid="struct___finch_log_viewer" refkind="compound">
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct___finch_log_viewer" kindref="compound">_FinchLogViewer</ref>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="39" refid="struct___finch_log_viewer_1aa9bdb635fd09e73eb192dbd6a089c33b" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*<ref refid="struct___finch_log_viewer_1aa9bdb635fd09e73eb192dbd6a089c33b"
+                                         kindref="member">logs</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="41" refid="struct___finch_log_viewer_1af21fe6008e6e5d82746bc45e9cec36d3" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<ref refid="struct___finch_log_viewer_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">
+                    window</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="42" refid="struct___finch_log_viewer_1a02b069dc0867c55ec3886c1cf6223359" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<ref refid="struct___finch_log_viewer_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">
+                    tree</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="43" refid="struct___finch_log_viewer_1a2b15e17c44b39ef35e8b64b8af75e0df" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<ref refid="struct___finch_log_viewer_1a2b15e17c44b39ef35e8b64b8af75e0df" kindref="member">
+                    text</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="44" refid="struct___finch_log_viewer_1a8d12cefdd6ed5e989fa43b7db327f38b" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<ref refid="struct___finch_log_viewer_1a8d12cefdd6ed5e989fa43b7db327f38b" kindref="member">
+                    entry</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="46" refid="struct___finch_log_viewer_1a62ed2e4d4792ee9b09592a2ccfb64fb4" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<ref refid="struct___finch_log_viewer_1a62ed2e4d4792ee9b09592a2ccfb64fb4" kindref="member">
+                    label</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="47" refid="struct___finch_log_viewer_1a62181ada983f88afda858bbe35b6324d" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleLogReadFlags
+                    <sp/>
+                    <ref refid="struct___finch_log_viewer_1a62181ada983f88afda858bbe35b6324d" kindref="member">
+                        flags</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="48" refid="struct___finch_log_viewer_1aad4b53dc2fef51a522ec724c45532afb" refkind="member">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*<ref refid="struct___finch_log_viewer_1aad4b53dc2fef51a522ec724c45532afb" kindref="member">
+                    search</ref>;
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntlog_8c_1a1a73267bbe254370e37a5fb31b0327e5" kindref="member">finch_log_show</ref>
+                    (PurpleLogType<sp/>type,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*screenname,<sp/>PurpleAccount<sp/>*account);
+                </highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntlog_8c_1adf45a8c85f67f34c777fe70da20e7d80" kindref="member">
+                        finch_log_show_contact</ref>(PurpleContact<sp/>*contact);
+                </highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntlog_8c_1ac64989668b4c017833dbad157854c0fd" kindref="member">finch_syslog_show</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">
+                    /**************************************************************************/
+                </highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="comment">
+                    /**************************************************************************/
+                </highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntlog_8c_1a4b4c7202ee3f5c52d6d717077c34b0ad" kindref="member">finch_log_init</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntlog_8c_1afbd751f7b6ebd985683899ce89535c19"
+                                                     kindref="member">finch_log_get_handle</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntlog_8c_1aeee57dfb3ce2827e4319283646025801" kindref="member">finch_log_uninit</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntlog.h"/>
+    </compounddef>
+</doxygen>

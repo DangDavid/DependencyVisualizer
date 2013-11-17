@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntmodule_8c" kind="file">
+        <compoundname>gntmodule.c</compoundname>
+        <includes local="no">pygobject.h</includes>
+        <incdepgraph>
+            <node id="2572">
+                <label>libgnt/pygnt/gntmodule.c</label>
+                <link refid="gntmodule.c"/>
+                <childnode refid="2573" relation="include">
+                </childnode>
+            </node>
+            <node id="2573">
+                <label>pygobject.h</label>
+            </node>
+        </incdepgraph>
+        <sectiondef kind="var">
+            <memberdef kind="variable" id="gntmodule_8c_1a95818073da768afa304ea804476bfde4" prot="public" static="no"
+                       mutable="no">
+                <type>PyMethodDef</type>
+                <definition>PyMethodDef gnt_functions[]</definition>
+                <argsstring>[]</argsstring>
+                <name>gnt_functions</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/pygnt/gntmodule.c"
+                          line="4" column="1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntmodule_8c_1a1ed1d091e04fd84b297e0432d5e4d802" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_register_classes</definition>
+                <argsstring>(PyObject *d)</argsstring>
+                <name>gnt_register_classes</name>
+                <param>
+                    <type>PyObject *</type>
+                    <declname>d</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/pygnt/gntmodule.c"
+                          line="3" column="1"/>
+            </memberdef>
+            <memberdef kind="function" id="gntmodule_8c_1a67e4b4bc02edfd7fe397cb93d17769da" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type></type>
+                <definition>initgnt</definition>
+                <argsstring>(void)</argsstring>
+                <name>initgnt</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/pygnt/gntmodule.c"
+                          line="7" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/pygnt/gntmodule.c"
+                          bodystart="7" bodyend="22"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1">
+                <highlight class="preprocessor">#include<sp/>&lt;pygobject.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="2">
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="3">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntmodule_8c_1a1ed1d091e04fd84b297e0432d5e4d802" kindref="member">gnt_register_classes
+                    </ref>
+                    <sp/>(PyObject<sp/>*d);
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="4">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">extern</highlight>
+                <highlight class="normal"><sp/>PyMethodDef
+                    <sp/>
+                    <ref refid="gntmodule_8c_1a95818073da768afa304ea804476bfde4" kindref="member">gnt_functions</ref>[];
+                </highlight>
+            </codeline>
+            <codeline lineno="5">
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="6">
+                <highlight class="normal">DL_EXPORT(</highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="normal"><ref refid="gntmodule_8c_1a67e4b4bc02edfd7fe397cb93d17769da" kindref="member">
+                    initgnt</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="8">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="9">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PyObject<sp/>*m,<sp/>*d;
+                </highlight>
+            </codeline>
+            <codeline lineno="10">
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="11">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>init_pygobject<sp/>();
+                </highlight>
+            </codeline>
+            <codeline lineno="12">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="13">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>m<sp/>=<sp/>Py_InitModule<sp/>(
+                </highlight>
+                <highlight class="stringliteral">&quot;gnt&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="gntmodule_8c_1a95818073da768afa304ea804476bfde4" kindref="member">gnt_functions</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>d<sp/>=<sp/>PyModule_GetDict<sp/>(m);
+                </highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="16">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntmodule_8c_1a1ed1d091e04fd84b297e0432d5e4d802" kindref="member">gnt_register_classes
+                    </ref>
+                    <sp/>(d);
+                </highlight>
+            </codeline>
+            <codeline lineno="17">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gnt_add_constants(m,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;GNT_&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="18">
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(PyErr_Occurred<sp/>())<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="20">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>Py_FatalError<sp/>(
+                </highlight>
+                <highlight class="stringliteral">&quot;can&apos;t<sp/>initialise<sp/>module<sp/>sad&quot;
+                </highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/pygnt/gntmodule.c"/>
+    </compounddef>
+</doxygen>

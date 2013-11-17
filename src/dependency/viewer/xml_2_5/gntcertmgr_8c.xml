@@ -1,0 +1,3892 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntcertmgr_8c" kind="file">
+        <compoundname>gntcertmgr.c</compoundname>
+        <includes refid="finch_8h" local="yes">finch.h</includes>
+        <includes local="yes">certificate.h</includes>
+        <includes local="yes">debug.h</includes>
+        <includes local="yes">notify.h</includes>
+        <includes local="yes">request.h</includes>
+        <includes refid="gntcertmgr_8h" local="yes">gntcertmgr.h</includes>
+        <includes refid="gntbutton_8h" local="yes">gntbutton.h</includes>
+        <includes refid="gntlabel_8h" local="yes">gntlabel.h</includes>
+        <includes refid="gnttree_8h" local="yes">gnttree.h</includes>
+        <includes refid="gntutils_8h" local="yes">gntutils.h</includes>
+        <includes refid="gntwindow_8h" local="yes">gntwindow.h</includes>
+        <incdepgraph>
+            <node id="211">
+                <label>notify.h</label>
+            </node>
+            <node id="206">
+                <label>finch.h</label>
+                <link refid="finch_8h"/>
+                <childnode refid="207" relation="include">
+                </childnode>
+                <childnode refid="208" relation="include">
+                </childnode>
+            </node>
+            <node id="217">
+                <label>gntwidget.h</label>
+                <link refid="gntwidget_8h"/>
+                <childnode refid="218" relation="include">
+                </childnode>
+                <childnode refid="207" relation="include">
+                </childnode>
+                <childnode refid="219" relation="include">
+                </childnode>
+                <childnode refid="220" relation="include">
+                </childnode>
+            </node>
+            <node id="212">
+                <label>request.h</label>
+            </node>
+            <node id="229">
+                <label>gntutils.h</label>
+                <link refid="gntutils_8h"/>
+                <childnode refid="207" relation="include">
+                </childnode>
+                <childnode refid="216" relation="include">
+                </childnode>
+                <childnode refid="227" relation="include">
+                </childnode>
+                <childnode refid="217" relation="include">
+                </childnode>
+            </node>
+            <node id="225">
+                <label>term.h</label>
+            </node>
+            <node id="227">
+                <label>gnttextview.h</label>
+                <link refid="gnttextview_8h"/>
+                <childnode refid="217" relation="include">
+                </childnode>
+                <childnode refid="216" relation="include">
+                </childnode>
+                <childnode refid="222" relation="include">
+                </childnode>
+                <childnode refid="223" relation="include">
+                </childnode>
+            </node>
+            <node id="226">
+                <label>gntlabel.h</label>
+                <link refid="gntlabel_8h"/>
+                <childnode refid="216" relation="include">
+                </childnode>
+                <childnode refid="217" relation="include">
+                </childnode>
+                <childnode refid="227" relation="include">
+                </childnode>
+            </node>
+            <node id="224">
+                <label>curses.h</label>
+            </node>
+            <node id="223">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="224" relation="include">
+                </childnode>
+                <childnode refid="225" relation="include">
+                </childnode>
+            </node>
+            <node id="214">
+                <label>gntbutton.h</label>
+                <link refid="gntbutton_8h"/>
+                <childnode refid="207" relation="include">
+                </childnode>
+                <childnode refid="215" relation="include">
+                </childnode>
+                <childnode refid="216" relation="include">
+                </childnode>
+                <childnode refid="217" relation="include">
+                </childnode>
+            </node>
+            <node id="233">
+                <label>gntmenuitem.h</label>
+                <link refid="gntmenuitem_8h"/>
+                <childnode refid="207" relation="include">
+                </childnode>
+                <childnode refid="215" relation="include">
+                </childnode>
+                <childnode refid="232" relation="include">
+                </childnode>
+            </node>
+            <node id="232">
+                <label>gntmenu.h</label>
+                <link refid="gntmenu_8h"/>
+                <childnode refid="228" relation="include">
+                </childnode>
+                <childnode refid="222" relation="include">
+                </childnode>
+                <childnode refid="223" relation="include">
+                </childnode>
+                <childnode refid="233" relation="include">
+                </childnode>
+            </node>
+            <node id="222">
+                <label>gntcolors.h</label>
+                <link refid="gntcolors_8h"/>
+                <childnode refid="207" relation="include">
+                </childnode>
+            </node>
+            <node id="220">
+                <label>gntbindable.h</label>
+                <link refid="gntbindable_8h"/>
+                <childnode refid="218" relation="include">
+                </childnode>
+                <childnode refid="207" relation="include">
+                </childnode>
+                <childnode refid="215" relation="include">
+                </childnode>
+                <childnode refid="219" relation="include">
+                </childnode>
+            </node>
+            <node id="228">
+                <label>gnttree.h</label>
+                <link refid="gnttree_8h"/>
+                <childnode refid="217" relation="include">
+                </childnode>
+                <childnode refid="216" relation="include">
+                </childnode>
+                <childnode refid="222" relation="include">
+                </childnode>
+                <childnode refid="223" relation="include">
+                </childnode>
+                <childnode refid="227" relation="include">
+                </childnode>
+            </node>
+            <node id="205">
+                <label>gntcertmgr.c</label>
+                <link refid="gntcertmgr.c"/>
+                <childnode refid="206" relation="include">
+                </childnode>
+                <childnode refid="209" relation="include">
+                </childnode>
+                <childnode refid="210" relation="include">
+                </childnode>
+                <childnode refid="211" relation="include">
+                </childnode>
+                <childnode refid="212" relation="include">
+                </childnode>
+                <childnode refid="213" relation="include">
+                </childnode>
+                <childnode refid="214" relation="include">
+                </childnode>
+                <childnode refid="226" relation="include">
+                </childnode>
+                <childnode refid="228" relation="include">
+                </childnode>
+                <childnode refid="229" relation="include">
+                </childnode>
+                <childnode refid="230" relation="include">
+                </childnode>
+            </node>
+            <node id="213">
+                <label>gntcertmgr.h</label>
+                <link refid="gntcertmgr_8h"/>
+            </node>
+            <node id="207">
+                <label>glib.h</label>
+            </node>
+            <node id="221">
+                <label>gntclipboard.h</label>
+                <link refid="gntclipboard_8h"/>
+                <childnode refid="218" relation="include">
+                </childnode>
+                <childnode refid="207" relation="include">
+                </childnode>
+                <childnode refid="215" relation="include">
+                </childnode>
+            </node>
+            <node id="219">
+                <label>ncurses.h</label>
+            </node>
+            <node id="231">
+                <label>gntbox.h</label>
+                <link refid="gntbox_8h"/>
+                <childnode refid="216" relation="include">
+                </childnode>
+                <childnode refid="217" relation="include">
+                </childnode>
+            </node>
+            <node id="216">
+                <label>gnt.h</label>
+                <link refid="gnt_8h"/>
+                <childnode refid="207" relation="include">
+                </childnode>
+                <childnode refid="217" relation="include">
+                </childnode>
+                <childnode refid="221" relation="include">
+                </childnode>
+                <childnode refid="222" relation="include">
+                </childnode>
+                <childnode refid="223" relation="include">
+                </childnode>
+            </node>
+            <node id="210">
+                <label>debug.h</label>
+            </node>
+            <node id="218">
+                <label>stdio.h</label>
+            </node>
+            <node id="208">
+                <label>libpurple/internal.h</label>
+            </node>
+            <node id="230">
+                <label>gntwindow.h</label>
+                <link refid="gntwindow_8h"/>
+                <childnode refid="216" relation="include">
+                </childnode>
+                <childnode refid="231" relation="include">
+                </childnode>
+                <childnode refid="222" relation="include">
+                </childnode>
+                <childnode refid="223" relation="include">
+                </childnode>
+                <childnode refid="232" relation="include">
+                </childnode>
+            </node>
+            <node id="209">
+                <label>certificate.h</label>
+            </node>
+            <node id="215">
+                <label>glib-object.h</label>
+            </node>
+        </incdepgraph>
+        <sectiondef kind="var">
+            <memberdef kind="variable" id="gntcertmgr_8c_1af21fe6008e6e5d82746bc45e9cec36d3" prot="public" static="no"
+                       mutable="no">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* window</definition>
+                <argsstring></argsstring>
+                <name>window</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          line="44" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          bodystart="44" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntcertmgr_8c_1a02b069dc0867c55ec3886c1cf6223359" prot="public" static="no"
+                       mutable="no">
+                <type>
+                    <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                    *
+                </type>
+                <definition>GntWidget* tree</definition>
+                <argsstring></argsstring>
+                <name>tree</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          line="45" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          bodystart="45" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntcertmgr_8c_1ab3a5076cb789f7385643e9f5862f38b2" prot="public" static="no"
+                       mutable="no">
+                <type>PurpleCertificatePool *</type>
+                <definition>PurpleCertificatePool* pool</definition>
+                <argsstring></argsstring>
+                <name>pool</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          line="46" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          bodystart="46" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" prot="public" static="no"
+                       mutable="no">
+                <type>struct @2</type>
+                <definition>struct @2 certmgr</definition>
+                <argsstring></argsstring>
+                <name>certmgr</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          line="47" column="1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntcertmgr_8c_1ac7648c68bf0012e79c5bfee450b0a560" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void tls_peers_mgmt_import_ok2_cb</definition>
+                <argsstring>(gpointer data, const char *result)</argsstring>
+                <name>tls_peers_mgmt_import_ok2_cb</name>
+                <param>
+                    <type>gpointer</type>
+                    <declname>data</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>result</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          line="53" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          bodystart="53" bodyend="62"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcertmgr_8c_1a516c887b5a267b2a18f0c20a11fec822" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void tls_peers_mgmt_import_cancel2_cb</definition>
+                <argsstring>(gpointer data, const char *result)</argsstring>
+                <name>tls_peers_mgmt_import_cancel2_cb</name>
+                <param>
+                    <type>gpointer</type>
+                    <declname>data</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>result</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          line="65" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          bodystart="65" bodyend="69"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcertmgr_8c_1a600d599a1f7128c0b070fe0873770b48" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void tls_peers_mgmt_import_ok_cb</definition>
+                <argsstring>(gpointer data, const char *filename)</argsstring>
+                <name>tls_peers_mgmt_import_ok_cb</name>
+                <param>
+                    <type>gpointer</type>
+                    <declname>data</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>filename</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          line="72" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          bodystart="72" bodyend="103"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcertmgr_8c_1a710941975970873c97f76fa4ee71eab4" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void add_cert_cb</definition>
+                <argsstring>(GntWidget *button, gpointer null)</argsstring>
+                <name>add_cert_cb</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>button</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>null</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          line="106" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          bodystart="106" bodyend="115"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcertmgr_8c_1a0f4506189c4f38bbf800354e15ec2b98" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void tls_peers_mgmt_export_ok_cb</definition>
+                <argsstring>(gpointer data, const char *filename)</argsstring>
+                <name>tls_peers_mgmt_export_ok_cb</name>
+                <param>
+                    <type>gpointer</type>
+                    <declname>data</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>filename</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          line="119" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          bodystart="119" bodyend="135"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcertmgr_8c_1aa64a3380a9a0e4fc7b84aa0a6676ecbe" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void save_cert_cb</definition>
+                <argsstring>(GntWidget *button, gpointer null)</argsstring>
+                <name>save_cert_cb</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>button</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>null</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          line="138" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          bodystart="138" bodyend="164"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcertmgr_8c_1a1b51c1841221dd97cdda5259c95c3bf9" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void info_cert_cb</definition>
+                <argsstring>(GntWidget *button, gpointer null)</argsstring>
+                <name>info_cert_cb</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>button</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>null</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          line="168" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          bodystart="168" bodyend="205"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcertmgr_8c_1a9b67d204a4676b5d7e88b5f33ba6df29" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void tls_peers_mgmt_delete_confirm_cb</definition>
+                <argsstring>(gchar *id, gint dontcare)</argsstring>
+                <name>tls_peers_mgmt_delete_confirm_cb</name>
+                <param>
+                    <type>gchar *</type>
+                    <declname>id</declname>
+                </param>
+                <param>
+                    <type>gint</type>
+                    <declname>dontcare</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          line="209" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          bodystart="209" bodyend="217"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcertmgr_8c_1ac0353e332c3fc38f44ae2edaf0e2f563" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void delete_cert_cb</definition>
+                <argsstring>(GntWidget *button, gpointer null)</argsstring>
+                <name>delete_cert_cb</name>
+                <param>
+                    <type>
+                        <ref refid="gntwidget_8h_1a8bad7b03fe24fa49b0b5227a621db767" kindref="member">GntWidget</ref>
+                        *
+                    </type>
+                    <declname>button</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>null</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          line="220" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          bodystart="220" bodyend="244"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcertmgr_8c_1ad7916d3146b8ba6ed3a0e21fee61c2fe" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void populate_cert_list</definition>
+                <argsstring>(void)</argsstring>
+                <name>populate_cert_list</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          line="248" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          bodystart="248" bodyend="263"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcertmgr_8c_1a49d0660888de7daf8d657b5ab1e4e545" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void cert_list_added</definition>
+                <argsstring>(PurpleCertificatePool *pool, const char *id, gpointer null)</argsstring>
+                <name>cert_list_added</name>
+                <param>
+                    <type>PurpleCertificatePool *</type>
+                    <declname>pool</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>id</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>null</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          line="266" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          bodystart="266" bodyend="271"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcertmgr_8c_1a3fd362fababef13291ed14dc2f8831db" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void cert_list_removed</definition>
+                <argsstring>(PurpleCertificatePool *pool, const char *id, gpointer null)</argsstring>
+                <name>cert_list_removed</name>
+                <param>
+                    <type>PurpleCertificatePool *</type>
+                    <declname>pool</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>id</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>null</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          line="274" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          bodystart="274" bodyend="279"/>
+            </memberdef>
+            <memberdef kind="function" id="gntcertmgr_8c_1a175335b29959b3fd83ac0519f892f045" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_certmgr_show</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_certmgr_show</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          line="281" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"
+                          bodystart="281" bodyend="339"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>GNT Certificate Manager API</para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="6">
+                <highlight class="comment">/*<sp/>finch
+                </highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="8">
+                <highlight class="comment"><sp/>*<sp/>Finch<sp/>is<sp/>the<sp/>legal<sp/>property<sp/>of<sp/>its
+                    <sp/>
+                    developers,<sp/>whose<sp/>names<sp/>are<sp/>too<sp/>numerous
+                </highlight>
+            </codeline>
+            <codeline lineno="9">
+                <highlight class="comment"><sp/>*<sp/>to<sp/>list<sp/>here.
+                    <sp/>
+                    <sp/>Please<sp/>refer<sp/>to<sp/>the<sp/>COPYRIGHT<sp/>file<sp/>distributed<sp/>with<sp/>this
+                </highlight>
+            </codeline>
+            <codeline lineno="10">
+                <highlight class="comment"><sp/>*<sp/>source<sp/>distribution.
+                </highlight>
+            </codeline>
+            <codeline lineno="11">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="12">
+                <highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can
+                    <sp/>redistribute<sp/>it<sp/>and/or<sp/>modify
+                </highlight>
+            </codeline>
+            <codeline lineno="13">
+                <highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General
+                    <sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by
+                </highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version
+                    <sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or
+                </highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.
+                </highlight>
+            </codeline>
+            <codeline lineno="16">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="17">
+                <highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope
+                    <sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,
+                </highlight>
+            </codeline>
+            <codeline lineno="18">
+                <highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the
+                    <sp/>implied<sp/>warranty<sp/>of
+                </highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR
+                    <sp/>PURPOSE.
+                    <sp/>
+                    <sp/>See<sp/>the
+                </highlight>
+            </codeline>
+            <codeline lineno="20">
+                <highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more
+                    <sp/>
+                    details.
+                </highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the
+                    <sp/>GNU<sp/>General<sp/>Public<sp/>License
+                </highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write
+                    <sp/>to<sp/>the<sp/>Free<sp/>Software
+                </highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth
+                    <sp/>Floor,<sp/>Boston,<sp/>MA
+                    <sp/>
+                    <sp/>02111-1301
+                    <sp/>
+                    <sp/>USA
+                </highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="comment"><sp/>*
+                </highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="comment"><sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="finch_8h" kindref="compound">
+                    finch.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;certificate.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;debug.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;notify.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;request.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntcertmgr_8h" kindref="compound">
+                    gntcertmgr.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntbutton_8h" kindref="compound">
+                    gntbutton.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntlabel_8h" kindref="compound">
+                    gntlabel.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gnttree_8h" kindref="compound">
+                    gnttree.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntutils_8h" kindref="compound">
+                    gntutils.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntwindow_8h" kindref="compound">
+                    gntwindow.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntcertmgr_8c_1af21fe6008e6e5d82746bc45e9cec36d3" kindref="member">window</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*<ref refid="gntcertmgr_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">tree</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleCertificatePool<sp/>*<ref refid="gntcertmgr_8c_1ab3a5076cb789f7385643e9f5862f38b2"
+                                                         kindref="member">pool</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal">}
+                    <sp/>
+                    <ref refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>Pretty<sp/>much<sp/>Xerox<sp/>of<sp/>gtkcertmgr<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>Add<sp/>certificate<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal">tls_peers_mgmt_import_ok2_cb(gpointer
+                    <sp/>
+                    <ref refid="gntwm_8c_1a10fb496e4431487bd53ab5a192614a0e" kindref="member">data</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*result)
+                </highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleCertificate<sp/>*crt<sp/>=<sp/>(PurpleCertificate<sp/>*)<sp/>data;
+                </highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*
+                </highlight>
+                <highlight class="keywordtype">id</highlight>
+                <highlight class="normal"><sp/>=<sp/>result;
+                </highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>TODO:<sp/>Perhaps<sp/>prompt<sp/>if<sp/>you&apos;re<sp/>overwriting
+                    <sp/>a<sp/>cert?<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_certificate_pool_store(purple_certificate_find_pool(
+                </highlight>
+                <highlight class="stringliteral">&quot;x509&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;tls_peers&quot;</highlight>
+                <highlight class="normal">),
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">id</highlight>
+                <highlight class="normal">,<sp/>crt);
+                </highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_certificate_destroy(crt);
+                </highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal">tls_peers_mgmt_import_cancel2_cb(gpointer<sp/>data,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*result)
+                </highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleCertificate<sp/>*crt<sp/>=<sp/>(PurpleCertificate<sp/>*)<sp/>data;
+                </highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_certificate_destroy(crt);
+                </highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal">tls_peers_mgmt_import_ok_cb(gpointer<sp/>data,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*filename)
+                </highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleCertificateScheme<sp/>*x509;
+                </highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleCertificate<sp/>*crt;
+                </highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>x509<sp/>=<sp/>purple_certificate_pool_get_scheme(purple_certificate_find_pool(
+                </highlight>
+                <highlight class="stringliteral">&quot;x509&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;tls_peers&quot;</highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>crt<sp/>=<sp/>purple_certificate_import(x509,<sp/>filename);
+                </highlight>
+            </codeline>
+            <codeline lineno="80">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(crt<sp/>!=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gchar<sp/>*default_hostname;
+                </highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>default_hostname<sp/>=<sp/>purple_certificate_get_subject_name(crt);
+                </highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_input(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                   kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Certificate<sp/>Import&quot;
+                </highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Specify<sp/>a<sp/>hostname&quot;
+                </highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Type<sp/>the<sp/>host<sp/>name<sp/>this<sp/>certificate<sp/>is
+                    <sp/>for.&quot;
+                </highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>default_hostname,<sp/>FALSE,<sp/>FALSE,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;OK&quot;</highlight>
+                <highlight class="normal">),<sp/>G_CALLBACK(tls_peers_mgmt_import_ok2_cb),
+                </highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Cancel&quot;</highlight>
+                <highlight class="normal">),<sp/>G_CALLBACK(tls_peers_mgmt_import_cancel2_cb),
+                </highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>crt);
+                </highlight>
+            </codeline>
+            <codeline lineno="93">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(default_hostname);
+                </highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal"><sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gchar<sp/>*<sp/>secondary;
+                </highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>secondary<sp/>=<sp/>g_strdup_printf(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;File<sp/>%s<sp/>could<sp/>not<sp/>be<sp/>imported.\nMake<sp/>sure
+                    <sp/>that<sp/>the<sp/>file<sp/>is<sp/>readable<sp/>and<sp/>in<sp/>PEM<sp/>format.\n&quot;
+                </highlight>
+                <highlight class="normal">),<sp/>filename);
+                </highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_notify_error(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                  kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Certificate<sp/>Import<sp/>Error&quot;
+                </highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;X.509<sp/>certificate<sp/>import<sp/>failed&quot;
+                </highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="100">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>secondary);
+                </highlight>
+            </codeline>
+            <codeline lineno="101">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(secondary);
+                </highlight>
+            </codeline>
+            <codeline lineno="102">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="103">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="104">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="105">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="normal">add_cert_cb(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*button,<sp/>gpointer<sp/>null)
+                </highlight>
+            </codeline>
+            <codeline lineno="107">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="108">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_file(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                  kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="109">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Select<sp/>a<sp/>PEM<sp/>certificate&quot;
+                </highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="110">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;certificate.pem&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="111">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>FALSE,
+                </highlight>
+            </codeline>
+            <codeline lineno="112">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>G_CALLBACK(tls_peers_mgmt_import_ok_cb),
+                </highlight>
+            </codeline>
+            <codeline lineno="113">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="114">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>
+                    <sp/>);
+                </highlight>
+            </codeline>
+            <codeline lineno="115">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="116">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="117">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>Save<sp/>certs<sp/>in<sp/>some<sp/>file<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="118">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="119">
+                <highlight class="normal">tls_peers_mgmt_export_ok_cb(gpointer<sp/>data,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*filename)
+                </highlight>
+            </codeline>
+            <codeline lineno="120">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="121">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleCertificate<sp/>*crt<sp/>=<sp/>(PurpleCertificate<sp/>*)<sp/>data;
+                </highlight>
+            </codeline>
+            <codeline lineno="122">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="123">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!purple_certificate_export(filename,<sp/>crt))<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="124">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gchar<sp/>*<sp/>secondary;
+                </highlight>
+            </codeline>
+            <codeline lineno="125">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="126">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>secondary<sp/>=<sp/>g_strdup_printf(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Export<sp/>to<sp/>file<sp/>%s<sp/>failed.\nCheck<sp/>that<sp/>you
+                    <sp/>have<sp/>write<sp/>permission<sp/>to<sp/>the<sp/>target<sp/>path\n&quot;
+                </highlight>
+                <highlight class="normal">),<sp/>filename);
+                </highlight>
+            </codeline>
+            <codeline lineno="127">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_notify_error(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4"
+                                                  kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="128">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Certificate<sp/>Export<sp/>Error&quot;
+                </highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="129">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;X.509<sp/>certificate<sp/>export<sp/>failed&quot;
+                </highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="130">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>secondary);
+                </highlight>
+            </codeline>
+            <codeline lineno="131">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(secondary);
+                </highlight>
+            </codeline>
+            <codeline lineno="132">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="133">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="134">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_certificate_destroy(crt);
+                </highlight>
+            </codeline>
+            <codeline lineno="135">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="136">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="137">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="138">
+                <highlight class="normal">save_cert_cb(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*button,<sp/>gpointer<sp/>null)
+                </highlight>
+            </codeline>
+            <codeline lineno="139">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="140">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleCertificate<sp/>*crt;
+                </highlight>
+            </codeline>
+            <codeline lineno="141">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*key;
+                </highlight>
+            </codeline>
+            <codeline lineno="142">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="143">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!<ref refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b"
+                                                      kindref="member">certmgr</ref>.window)
+                </highlight>
+            </codeline>
+            <codeline lineno="144">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="145">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="146">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>key<sp/>=
+                    <sp/>
+                    <ref refid="gnttree_8c_1acc2a1aa7c3a6c453f85be5684767a231" kindref="member">
+                        gnt_tree_get_selection_data</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                               kindref="member">GNT_TREE</ref>(<ref
+                        refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>.tree));
+                </highlight>
+            </codeline>
+            <codeline lineno="147">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!key)
+                </highlight>
+            </codeline>
+            <codeline lineno="148">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="149">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="150">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>crt<sp/>=<sp/>purple_certificate_pool_retrieve(<ref
+                        refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>.pool,
+                    <sp/>key);
+                </highlight>
+            </codeline>
+            <codeline lineno="151">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!crt)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="152">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_debug_error(
+                </highlight>
+                <highlight class="stringliteral">&quot;gntcertmgr/tls_peers_mgmt&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="153">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Id<sp/>%s<sp/>was<sp/>not<sp/>in<sp/>the<sp/>peers<sp/>cache?!\n&quot;
+                </highlight>
+                <highlight class="normal">,<sp/>key);
+                </highlight>
+            </codeline>
+            <codeline lineno="154">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="155">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="156">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="157">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_file((
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">*)key,</highlight>
+            </codeline>
+            <codeline lineno="158">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;PEM<sp/>X.509<sp/>Certificate<sp/>Export&quot;
+                </highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="159">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;certificate.pem&quot;</highlight>
+                <highlight class="normal">,<sp/>TRUE,
+                </highlight>
+            </codeline>
+            <codeline lineno="160">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>G_CALLBACK(tls_peers_mgmt_export_ok_cb),
+                </highlight>
+            </codeline>
+            <codeline lineno="161">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>G_CALLBACK(purple_certificate_destroy),
+                </highlight>
+            </codeline>
+            <codeline lineno="162">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="163">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>crt);
+                </highlight>
+            </codeline>
+            <codeline lineno="164">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="165">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="166">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>Show<sp/>information<sp/>about<sp/>a<sp/>cert<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="167">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="168">
+                <highlight class="normal">info_cert_cb(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*button,<sp/>gpointer<sp/>null)
+                </highlight>
+            </codeline>
+            <codeline lineno="169">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="170">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*key;
+                </highlight>
+            </codeline>
+            <codeline lineno="171">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleCertificate<sp/>*crt;
+                </highlight>
+            </codeline>
+            <codeline lineno="172">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gchar<sp/>*subject;
+                </highlight>
+            </codeline>
+            <codeline lineno="173">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GByteArray<sp/>*fpr_sha1;
+                </highlight>
+            </codeline>
+            <codeline lineno="174">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gchar<sp/>*fpr_sha1_asc;
+                </highlight>
+            </codeline>
+            <codeline lineno="175">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gchar<sp/>*primary,<sp/>*secondary;
+                </highlight>
+            </codeline>
+            <codeline lineno="176">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="177">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!<ref refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b"
+                                                      kindref="member">certmgr</ref>.window)
+                </highlight>
+            </codeline>
+            <codeline lineno="178">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="179">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="180">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>key<sp/>=
+                    <sp/>
+                    <ref refid="gnttree_8c_1acc2a1aa7c3a6c453f85be5684767a231" kindref="member">
+                        gnt_tree_get_selection_data</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                               kindref="member">GNT_TREE</ref>(<ref
+                        refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>.tree));
+                </highlight>
+            </codeline>
+            <codeline lineno="181">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!key)
+                </highlight>
+            </codeline>
+            <codeline lineno="182">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="183">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="184">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>crt<sp/>=<sp/>purple_certificate_pool_retrieve(<ref
+                        refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>.pool,
+                    <sp/>key);
+                </highlight>
+            </codeline>
+            <codeline lineno="185">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_return_if_fail(crt);
+                </highlight>
+            </codeline>
+            <codeline lineno="186">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="187">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>primary<sp/>=<sp/>g_strdup_printf(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Certificate<sp/>for<sp/>%s&quot;
+                </highlight>
+                <highlight class="normal">),<sp/>key);
+                </highlight>
+            </codeline>
+            <codeline lineno="188">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="189">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>fpr_sha1<sp/>=<sp/>purple_certificate_get_fingerprint_sha1(crt);
+                </highlight>
+            </codeline>
+            <codeline lineno="190">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>fpr_sha1_asc<sp/>=<sp/>purple_base16_encode_chunked(fpr_sha1-&gt;data,
+                </highlight>
+            </codeline>
+            <codeline lineno="191">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>fpr_sha1-&gt;len);
+                </highlight>
+            </codeline>
+            <codeline lineno="192">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>subject<sp/>=<sp/>purple_certificate_get_subject_name(crt);
+                </highlight>
+            </codeline>
+            <codeline lineno="193">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="194">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>secondary<sp/>=<sp/>g_strdup_printf(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Common<sp/>name:<sp/>%s\n\nSHA1<sp/>fingerprint:\n%s&quot;
+                </highlight>
+                <highlight class="normal">),<sp/>subject,<sp/>fpr_sha1_asc);
+                </highlight>
+            </codeline>
+            <codeline lineno="195">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+            </codeline>
+            <codeline lineno="196">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_notify_info(<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">
+                    NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="197">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;SSL<sp/>Host<sp/>Certificate&quot;
+                </highlight>
+                <highlight class="normal">),<sp/>primary,<sp/>secondary);
+                </highlight>
+            </codeline>
+            <codeline lineno="198">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="199">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(primary);
+                </highlight>
+            </codeline>
+            <codeline lineno="200">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(secondary);
+                </highlight>
+            </codeline>
+            <codeline lineno="201">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_byte_array_free(fpr_sha1,<sp/>TRUE);
+                </highlight>
+            </codeline>
+            <codeline lineno="202">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(fpr_sha1_asc);
+                </highlight>
+            </codeline>
+            <codeline lineno="203">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(subject);
+                </highlight>
+            </codeline>
+            <codeline lineno="204">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_certificate_destroy(crt);
+                </highlight>
+            </codeline>
+            <codeline lineno="205">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="206">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="207">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>Delete<sp/>a<sp/>cert<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="208">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="209">
+                <highlight class="normal">tls_peers_mgmt_delete_confirm_cb(gchar<sp/>*
+                </highlight>
+                <highlight class="keywordtype">id</highlight>
+                <highlight class="normal">,<sp/>gint<sp/>dontcare)
+                </highlight>
+            </codeline>
+            <codeline lineno="210">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="211">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!purple_certificate_pool_delete(<ref
+                        refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>.pool,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">id</highlight>
+                <highlight class="normal">))<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="212">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_debug_warning(
+                </highlight>
+                <highlight class="stringliteral">&quot;gntcertmgr/tls_peers_mgmt&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="213">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Deletion<sp/>failed<sp/>on<sp/>id<sp/>%s\n&quot;
+                </highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">id</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="214">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>};
+                </highlight>
+            </codeline>
+            <codeline lineno="215">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="216">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(
+                </highlight>
+                <highlight class="keywordtype">id</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="217">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="218">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="219">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="220">
+                <highlight class="normal">delete_cert_cb(
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*button,<sp/>gpointer<sp/>null)
+                </highlight>
+            </codeline>
+            <codeline lineno="221">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="222">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gchar<sp/>*primary;
+                </highlight>
+            </codeline>
+            <codeline lineno="223">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*key;
+                </highlight>
+            </codeline>
+            <codeline lineno="224">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="225">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!<ref refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b"
+                                                      kindref="member">certmgr</ref>.window)
+                </highlight>
+            </codeline>
+            <codeline lineno="226">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="227">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="228">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>key<sp/>=
+                    <sp/>
+                    <ref refid="gnttree_8c_1acc2a1aa7c3a6c453f85be5684767a231" kindref="member">
+                        gnt_tree_get_selection_data</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                               kindref="member">GNT_TREE</ref>(<ref
+                        refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>.tree));
+                </highlight>
+            </codeline>
+            <codeline lineno="229">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!key)
+                </highlight>
+            </codeline>
+            <codeline lineno="230">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="231">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="232">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>primary<sp/>=<sp/>g_strdup_printf(_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Really<sp/>delete<sp/>certificate<sp/>for<sp/>%s?&quot;
+                </highlight>
+                <highlight class="normal">),<sp/>key);
+                </highlight>
+            </codeline>
+            <codeline lineno="233">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="234">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_close_with_handle((
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>*)key);
+                </highlight>
+            </codeline>
+            <codeline lineno="235">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_yes_no((
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>*)key,<sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Confirm<sp/>certificate<sp/>delete&quot;
+                </highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="236">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>primary,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="237">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>0,
+                </highlight>
+            </codeline>
+            <codeline lineno="238">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="239">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_strdup(key),
+                </highlight>
+            </codeline>
+            <codeline lineno="240">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>tls_peers_mgmt_delete_confirm_cb,
+                </highlight>
+            </codeline>
+            <codeline lineno="241">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free);
+                </highlight>
+            </codeline>
+            <codeline lineno="242">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="243">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(primary);
+                </highlight>
+            </codeline>
+            <codeline lineno="244">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="245">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="246">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>populate<sp/>the<sp/>list<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="247">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="248">
+                <highlight class="normal">populate_cert_list(</highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="249">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="250">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>GList<sp/>*idlist,<sp/>*l;
+                </highlight>
+            </codeline>
+            <codeline lineno="251">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="252">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!<ref refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b"
+                                                      kindref="member">certmgr</ref>.window)
+                </highlight>
+            </codeline>
+            <codeline lineno="253">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="254">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="255">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttree_8c_1a027256cd368a0ffe017426a49c99d7d5" kindref="member">
+                        gnt_tree_remove_all</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                       kindref="member">GNT_TREE</ref>(<ref
+                        refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>.tree));
+                </highlight>
+            </codeline>
+            <codeline lineno="256">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="257">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>idlist<sp/>=<sp/>purple_certificate_pool_get_idlist(purple_certificate_find_pool(
+                </highlight>
+                <highlight class="stringliteral">&quot;x509&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;tls_peers&quot;</highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="258">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(l<sp/>=<sp/>idlist;<sp/>l;<sp/>l<sp/>=<sp/>l-&gt;next)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="259">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttree_8c_1a1ed1e0153d3c9aa4e49d7df410ec56a8" kindref="member">
+                        gnt_tree_add_row_last</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                         kindref="member">GNT_TREE</ref>(<ref
+                        refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>.tree),
+                    <sp/>g_strdup(l-&gt;data),
+                </highlight>
+            </codeline>
+            <codeline lineno="260">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttree_8c_1acef12ae8d90290b6620a15826d330b44" kindref="member">
+                        gnt_tree_create_row</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                       kindref="member">GNT_TREE</ref>(<ref
+                        refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>.tree),
+                    <sp/>l-&gt;data),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="261">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="262">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_certificate_pool_destroy_idlist(idlist);
+                </highlight>
+            </codeline>
+            <codeline lineno="263">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="264">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="265">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="266">
+                <highlight class="normal">cert_list_added(PurpleCertificatePool<sp/>*<ref
+                        refid="gntcertmgr_8c_1ab3a5076cb789f7385643e9f5862f38b2" kindref="member">pool</ref>,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*
+                </highlight>
+                <highlight class="keywordtype">id</highlight>
+                <highlight class="normal">,<sp/>gpointer<sp/>null)
+                </highlight>
+            </codeline>
+            <codeline lineno="267">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="268">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_return_if_fail(<ref refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b"
+                                               kindref="member">certmgr</ref>.window);
+                </highlight>
+            </codeline>
+            <codeline lineno="269">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttree_8c_1a1ed1e0153d3c9aa4e49d7df410ec56a8" kindref="member">
+                        gnt_tree_add_row_last</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                         kindref="member">GNT_TREE</ref>(<ref
+                        refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>.tree),
+                    <sp/>g_strdup(
+                </highlight>
+                <highlight class="keywordtype">id</highlight>
+                <highlight class="normal">),</highlight>
+            </codeline>
+            <codeline lineno="270">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttree_8c_1acef12ae8d90290b6620a15826d330b44" kindref="member">
+                        gnt_tree_create_row</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                       kindref="member">GNT_TREE</ref>(<ref
+                        refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>.tree),
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">id</highlight>
+                <highlight class="normal">),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="271">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="272">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="273">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="274">
+                <highlight class="normal">cert_list_removed(PurpleCertificatePool<sp/>*pool,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*
+                </highlight>
+                <highlight class="keywordtype">id</highlight>
+                <highlight class="normal">,<sp/>gpointer<sp/>null)
+                </highlight>
+            </codeline>
+            <codeline lineno="275">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="276">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_return_if_fail(<ref refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b"
+                                               kindref="member">certmgr</ref>.window);
+                </highlight>
+            </codeline>
+            <codeline lineno="277">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_request_close_with_handle((
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">*)</highlight>
+                <highlight class="keywordtype">id</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="278">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttree_8c_1af8cb31d771d9765914f0848903c2021c" kindref="member">gnt_tree_remove</ref>(
+                    <ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd" kindref="member">GNT_TREE</ref>(<ref
+                        refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>.tree),
+                    <sp/>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">*)</highlight>
+                <highlight class="keywordtype">id</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="279">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="280">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="281">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntcertmgr_8c_1a175335b29959b3fd83ac0519f892f045" kindref="member">
+                        finch_certmgr_show</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">)</highlight>
+            </codeline>
+            <codeline lineno="282">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="283">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct___gnt_widget" kindref="compound">GntWidget</ref>
+                    <sp/>*win,<sp/>*<ref refid="gntcertmgr_8c_1a02b069dc0867c55ec3886c1cf6223359" kindref="member">
+                    tree</ref>,<sp/>*box,<sp/>*button;
+                </highlight>
+            </codeline>
+            <codeline lineno="284">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>PurpleCertificatePool<sp/>*<ref refid="gntcertmgr_8c_1ab3a5076cb789f7385643e9f5862f38b2"
+                                                         kindref="member">pool</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="285">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="286">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(<ref refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b"
+                                                     kindref="member">certmgr</ref>.window)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="287">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnt_8h_1a09a1f84dc62e62adb56eafe4f58f22ea" kindref="member">gnt_window_present</ref>(
+                    <ref refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>
+                    .window);
+                </highlight>
+            </codeline>
+            <codeline lineno="288">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="289">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="290">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="291">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>.window
+                    <sp/>=<sp/>win<sp/>=
+                    <sp/>
+                    <ref refid="gntwindow_8h_1ab6467137e42da2b191ca4220a378a517" kindref="member">gnt_vwindow_new</ref>
+                    (FALSE);
+                </highlight>
+            </codeline>
+            <codeline lineno="292">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1a44429c371d6ea90f89d63a57cffabc66" kindref="member">gnt_box_set_title</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(win),
+                    <sp/>
+                    _(
+                </highlight>
+                <highlight class="stringliteral">&quot;Certificate<sp/>Manager&quot;
+                </highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="293">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1a3b7044e63e2ae35e7c8efaf5a1f8efdc" kindref="member">gnt_box_set_pad</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(win),
+                    <sp/>
+                    0);
+                </highlight>
+            </codeline>
+            <codeline lineno="294">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="295">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>.tree
+                    <sp/>=<sp/>tree<sp/>=
+                    <sp/>
+                    <ref refid="gnttree_8c_1a9970244840eebd4cf70c0fbd17e998af" kindref="member">gnt_tree_new</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="296">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttree_8c_1a075dcc861e255c9c7b5384e087759bd1" kindref="member">
+                        gnt_tree_set_hash_fns</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                         kindref="member">GNT_TREE</ref>(tree),<sp/>g_str_hash,
+                    <sp/>
+                    g_str_equal,<sp/>g_free);
+                </highlight>
+            </codeline>
+            <codeline lineno="297">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttree_8c_1aab8c21065b580a35d3a8e8e3eaae1caf" kindref="member">
+                        gnt_tree_set_column_title</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                             kindref="member">GNT_TREE</ref>(tree),<sp/>0,<sp/>_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Hostname&quot;</highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="298">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gnttree_8c_1a1dc3d32c0d06738fced75686d5d9d34c" kindref="member">
+                        gnt_tree_set_show_title</ref>(<ref refid="gnttree_8h_1a6156e03cf5926bea202d98c201dacdfd"
+                                                           kindref="member">GNT_TREE</ref>(tree),<sp/>TRUE);
+                </highlight>
+            </codeline>
+            <codeline lineno="299">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="300">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(win),
+                    <sp/>
+                    tree);
+                </highlight>
+            </codeline>
+            <codeline lineno="301">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="302">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>box<sp/>=
+                    <sp/>
+                    <ref refid="gntbox_8h_1adb651f9ad56bc755eb4e2ff6050264d1" kindref="member">gnt_hbox_new</ref>
+                    (FALSE);
+                </highlight>
+            </codeline>
+            <codeline lineno="303">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(win),
+                    <sp/>
+                    box);
+                </highlight>
+            </codeline>
+            <codeline lineno="304">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="305">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>button<sp/>=
+                    <sp/>
+                    <ref refid="gntbutton_8c_1aa28a2afc35e0a72e4565f7424a52713b" kindref="member">gnt_button_new</ref>
+                    (_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Add&quot;</highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="306">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),
+                    <sp/>
+                    button);
+                </highlight>
+            </codeline>
+            <codeline lineno="307">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect(G_OBJECT(button),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;activate&quot;</highlight>
+                <highlight class="normal">,<sp/>G_CALLBACK(add_cert_cb),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="308">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntutils_8c_1ae845c3ce26e9fc38b187b8481da54ca2" kindref="member">
+                        gnt_util_set_trigger_widget</ref>(<ref refid="gntwidget_8h_1a0ddc46716b8cb35d504595ab4bca8a82"
+                                                               kindref="member">GNT_WIDGET</ref>(tree),
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a78ed62dffcfdc912e6336f3be2f6bf20" kindref="member">GNT_KEY_INS</ref>,
+                    <sp/>
+                    button);
+                </highlight>
+            </codeline>
+            <codeline lineno="309">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="310">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>button<sp/>=
+                    <sp/>
+                    <ref refid="gntbutton_8c_1aa28a2afc35e0a72e4565f7424a52713b" kindref="member">gnt_button_new</ref>
+                    (_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Save&quot;</highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="311">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),
+                    <sp/>
+                    button);
+                </highlight>
+            </codeline>
+            <codeline lineno="312">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect(G_OBJECT(button),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;activate&quot;</highlight>
+                <highlight class="normal">,<sp/>G_CALLBACK(save_cert_cb),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="313">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="314">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>button<sp/>=
+                    <sp/>
+                    <ref refid="gntbutton_8c_1aa28a2afc35e0a72e4565f7424a52713b" kindref="member">gnt_button_new</ref>
+                    (_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Info&quot;</highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="315">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),
+                    <sp/>
+                    button);
+                </highlight>
+            </codeline>
+            <codeline lineno="316">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect(G_OBJECT(button),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;activate&quot;</highlight>
+                <highlight class="normal">,<sp/>G_CALLBACK(info_cert_cb),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="317">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="318">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>button<sp/>=
+                    <sp/>
+                    <ref refid="gntbutton_8c_1aa28a2afc35e0a72e4565f7424a52713b" kindref="member">gnt_button_new</ref>
+                    (_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Delete&quot;</highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="319">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),
+                    <sp/>
+                    button);
+                </highlight>
+            </codeline>
+            <codeline lineno="320">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect(G_OBJECT(button),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;activate&quot;</highlight>
+                <highlight class="normal">,<sp/>G_CALLBACK(delete_cert_cb),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="321">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntutils_8c_1ae845c3ce26e9fc38b187b8481da54ca2" kindref="member">
+                        gnt_util_set_trigger_widget</ref>(<ref refid="gntwidget_8h_1a0ddc46716b8cb35d504595ab4bca8a82"
+                                                               kindref="member">GNT_WIDGET</ref>(tree),
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a0a134448abd45fb72c52e8a8b645a0a0" kindref="member">GNT_KEY_DEL</ref>,
+                    <sp/>
+                    button);
+                </highlight>
+            </codeline>
+            <codeline lineno="322">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="323">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>button<sp/>=
+                    <sp/>
+                    <ref refid="gntbutton_8c_1aa28a2afc35e0a72e4565f7424a52713b" kindref="member">gnt_button_new</ref>
+                    (_(
+                </highlight>
+                <highlight class="stringliteral">&quot;Close&quot;</highlight>
+                <highlight class="normal">));</highlight>
+            </codeline>
+            <codeline lineno="324">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntbox_8c_1addd5ae4c01ddef9e988beea5b6eb41db" kindref="member">gnt_box_add_widget</ref>(
+                    <ref refid="gntbox_8h_1a89406b8f9518c0efb064d13b5d946fec" kindref="member">GNT_BOX</ref>(box),
+                    <sp/>
+                    button);
+                </highlight>
+            </codeline>
+            <codeline lineno="325">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect_swapped(G_OBJECT(button),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;activate&quot;</highlight>
+                <highlight class="normal">,<sp/>G_CALLBACK(<ref refid="gntwidget_8c_1a78927c2fe18c25b7feb1f8b4ebd78279"
+                                                                kindref="member">gnt_widget_destroy</ref>),<sp/>win);
+                </highlight>
+            </codeline>
+            <codeline lineno="326">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="327">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect_swapped(G_OBJECT(win),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;destroy&quot;</highlight>
+                <highlight class="normal">,<sp/>G_CALLBACK(g_nullify_pointer),<sp/>&amp;<ref
+                        refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>.window);
+                </highlight>
+            </codeline>
+            <codeline lineno="328">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="329">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>populate_cert_list();
+                </highlight>
+            </codeline>
+            <codeline lineno="330">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="331">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>pool<sp/>=
+                    <sp/>
+                    <ref refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>.pool
+                    <sp/>=<sp/>purple_certificate_find_pool(
+                </highlight>
+                <highlight class="stringliteral">&quot;x509&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;tls_peers&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="332">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_signal_connect(pool,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;certificate-stored&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="333">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>win,<sp/>PURPLE_CALLBACK(cert_list_added),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="334">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>purple_signal_connect(pool,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;certificate-deleted&quot;</highlight>
+                <highlight class="normal">,</highlight>
+            </codeline>
+            <codeline lineno="335">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>win,<sp/>PURPLE_CALLBACK(cert_list_removed),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="336">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_signal_connect(G_OBJECT(win),
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;destroy&quot;</highlight>
+                <highlight class="normal">,<sp/>G_CALLBACK(purple_signals_disconnect_by_handle),
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="337">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="338">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntwidget_8c_1acbf324f0d58ea327e559829cf187def4" kindref="member">gnt_widget_show</ref>(
+                    <ref refid="gntcertmgr_8c_1a806f8b17fa7cee30533c29b7092fe73b" kindref="member">certmgr</ref>
+                    .window);
+                </highlight>
+            </codeline>
+            <codeline lineno="339">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="340">
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.5.0.tar/pidgin-2.5.0/pidgin-2.5.0/finch/gntcertmgr.c"/>
+    </compounddef>
+</doxygen>

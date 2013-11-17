@@ -1,0 +1,3763 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntkeys_8c" kind="file">
+        <compoundname>gntkeys.c</compoundname>
+        <includes refid="gntkeys_8h" local="yes">gntkeys.h</includes>
+        <includes local="no">glib.h</includes>
+        <includes local="no">stdlib.h</includes>
+        <includes local="no">string.h</includes>
+        <incdepgraph>
+            <node id="1469">
+                <label>stdlib.h</label>
+            </node>
+            <node id="1467">
+                <label>term.h</label>
+            </node>
+            <node id="1466">
+                <label>curses.h</label>
+            </node>
+            <node id="1470">
+                <label>string.h</label>
+            </node>
+            <node id="1468">
+                <label>glib.h</label>
+            </node>
+            <node id="1464">
+                <label>libgnt/gntkeys.c</label>
+                <link refid="gntkeys.c"/>
+                <childnode refid="1465" relation="include">
+                </childnode>
+                <childnode refid="1468" relation="include">
+                </childnode>
+                <childnode refid="1469" relation="include">
+                </childnode>
+                <childnode refid="1470" relation="include">
+                </childnode>
+            </node>
+            <node id="1465">
+                <label>gntkeys.h</label>
+                <link refid="gntkeys_8h"/>
+                <childnode refid="1466" relation="include">
+                </childnode>
+                <childnode refid="1467" relation="include">
+                </childnode>
+            </node>
+        </incdepgraph>
+        <innerclass refid="structgntkey" prot="public">gntkey</innerclass>
+        <innerclass refid="struct__node" prot="public">_node</innerclass>
+        <sectiondef kind="define">
+            <memberdef kind="define" id="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" prot="public" static="no">
+                <name>INSERT_KEY</name>
+                <param>
+                    <defname>k</defname>
+                </param>
+                <param>
+                    <defname>code</defname>
+                </param>
+                <initializer>do { \
+                    g_hash_table_insert(specials, g_strdup(k), g_strdup(code)); \
+                    <ref refid="gntkeys_8h_1aa3258e3131aadd25a925eaf38b3b6d7d" kindref="member">
+                        gnt_keys_add_combination</ref>(code); \
+                    } while (0)
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c" line="64"
+                          column="9"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8c_1a087f2f3e14557f0febfd99ac52523094" prot="public" static="no">
+                <name>REM_LENGTH</name>
+                <initializer>(sizeof(key) - (cur - key))</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c" line="98"
+                          column="9"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8c_1a7a86eff9e515fc967a6474f8edb7d99a" prot="public" static="no">
+                <name>INSERT_COMB</name>
+                <param>
+                    <defname>k</defname>
+                </param>
+                <param>
+                    <defname>code</defname>
+                </param>
+                <initializer>do { \
+                    snprintf(key, sizeof(key), &quot;%s%s%s&quot;, controls[<ref
+                            refid="getopt_8c_1a66b97d6dee15f33d7b6731ccf48092cf" kindref="member">c</ref>], alts[a], k);
+                    \
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(key,
+                    code); \
+                    } while (0);
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c" line="99"
+                          column="9"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8c_1a70ed59adcb4159ac551058053e649640" prot="public" static="no">
+                <name>SIZE</name>
+                <initializer>256</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>The key-bindings will be saved in a tree. When a keystroke happens, GNT will find the sequence
+                        that matches a binding and return the length. A sequence should not be a prefix of another
+                        sequence. If it is, then only the shortest one will be processed. If we want to change that, we
+                        will need to allow getting the k-th prefix that matches the input, and pay attention to the
+                        return value of gnt_wm_process_input in gntmain.c.
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          line="190" column="9"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="190" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="define" id="gntkeys_8c_1a50b1ab2b87c0def722a4a5b7b9e8030b" prot="public" static="no">
+                <name>IS_END</name>
+                <initializer>1 &lt;&lt; 0</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          line="192" column="9"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="192" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="var">
+            <memberdef kind="variable" id="gntkeys_8c_1af476842d27ec53797f7550d6e48e4f05" prot="public" static="no"
+                       mutable="no">
+                <type>char *</type>
+                <definition>char* gnt_key_cup</definition>
+                <argsstring></argsstring>
+                <name>gnt_key_cup</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>GNT - The GLib Ncurses Toolkit</para>
+                    <para>GNT is the legal property of its developers, whose names are too numerous to list here. Please
+                        refer to the COPYRIGHT file distributed with this source distribution.
+                    </para>
+                    <para>This library is free software; you can redistribute it and/or modify it under the terms of the
+                        GNU General Public License as published by the Free Software Foundation; either version 2 of the
+                        License, or (at your option) any later version.
+                    </para>
+                    <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+                        without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+                        the GNU General Public License for more details.
+                    </para>
+                    <para>You should have received a copy of the GNU General Public License along with this program; if
+                        not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+                        02111-1301 USA
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c" line="29"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="29" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntkeys_8c_1af48deab401d73253a6aed153efb4c498" prot="public" static="no"
+                       mutable="no">
+                <type>char *</type>
+                <definition>char* gnt_key_cdown</definition>
+                <argsstring></argsstring>
+                <name>gnt_key_cdown</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c" line="30"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="30" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntkeys_8c_1a15002149ce0034c8365675caca397bb2" prot="public" static="no"
+                       mutable="no">
+                <type>char *</type>
+                <definition>char* gnt_key_cleft</definition>
+                <argsstring></argsstring>
+                <name>gnt_key_cleft</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c" line="31"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="31" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntkeys_8c_1aa79f54f7e2bd770d85288fd50436707d" prot="public" static="no"
+                       mutable="no">
+                <type>char *</type>
+                <definition>char* gnt_key_cright</definition>
+                <argsstring></argsstring>
+                <name>gnt_key_cright</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c" line="32"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="32" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntkeys_8c_1a877fa505943cb57092e2ce06209a8337" prot="public" static="yes"
+                       mutable="no">
+                <type>const char *</type>
+                <definition>const char* term</definition>
+                <argsstring></argsstring>
+                <name>term</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c" line="34"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="34" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntkeys_8c_1a3796857f96636696cb764b150aca500f" prot="public" static="yes"
+                       mutable="no">
+                <type>GHashTable *</type>
+                <definition>GHashTable* specials</definition>
+                <argsstring></argsstring>
+                <name>specials</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c" line="35"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="35" bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="gntkeys_8c_1a4d8225c40c97e925dedada328ff95625" prot="public" static="yes"
+                       mutable="no">
+                <type>struct
+                    <ref refid="struct__node" kindref="compound">_node</ref>
+                </type>
+                <definition>struct _node root</definition>
+                <argsstring></argsstring>
+                <name>root</name>
+                <initializer>= {.ref = 1, .flags = 0}</initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          line="175" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="200" bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="gntkeys_8c_1ac2ec3169173531dd978a0e925fd6eba1" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_init_keys</definition>
+                <argsstring>()</argsstring>
+                <name>gnt_init_keys</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>This will do stuff with the terminal settings and stuff.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c" line="37"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="37" bodyend="137"/>
+            </memberdef>
+            <memberdef kind="function" id="gntkeys_8c_1a0b113f5ad7401654fdd58ba73c7bbb6a" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_keys_refine</definition>
+                <argsstring>(char *text)</argsstring>
+                <name>gnt_keys_refine</name>
+                <param>
+                    <type>char *</type>
+                    <declname>text</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>text</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          line="139" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="139" bodyend="153"/>
+            </memberdef>
+            <memberdef kind="function" id="gntkeys_8c_1ae2413e0cc4895523483172bb2e06937d" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>const char *</type>
+                <definition>const char* gnt_key_translate</definition>
+                <argsstring>(const char *name)</argsstring>
+                <name>gnt_key_translate</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>name</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          line="155" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="155" bodyend="158"/>
+            </memberdef>
+            <memberdef kind="function" id="gntkeys_8c_1a53c3c8670034d327592aa28c627a2a4c" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void get_key_name</definition>
+                <argsstring>(gpointer key, gpointer value, gpointer data)</argsstring>
+                <name>get_key_name</name>
+                <param>
+                    <type>gpointer</type>
+                    <declname>key</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>value</declname>
+                </param>
+                <param>
+                    <type>gpointer</type>
+                    <declname>data</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          line="166" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="166" bodyend="173"/>
+            </memberdef>
+            <memberdef kind="function" id="gntkeys_8c_1aa70e031cf2eb6cbf10ac3c9bcffc381b" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>const char *</type>
+                <definition>const char* gnt_key_lookup</definition>
+                <argsstring>(const char *key)</argsstring>
+                <name>gnt_key_lookup</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>key</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          line="175" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="175" bodyend="180"/>
+            </memberdef>
+            <memberdef kind="function" id="gntkeys_8c_1ace9bce5f191666bc127b059ac88d0ada" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void add_path</definition>
+                <argsstring>(struct _node *node, const char *path)</argsstring>
+                <name>add_path</name>
+                <param>
+                    <type>struct
+                        <ref refid="struct__node" kindref="compound">_node</ref>
+                        *
+                    </type>
+                    <declname>node</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>path</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          line="202" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="202" bodyend="220"/>
+            </memberdef>
+            <memberdef kind="function" id="gntkeys_8c_1aa3258e3131aadd25a925eaf38b3b6d7d" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_keys_add_combination</definition>
+                <argsstring>(const char *path)</argsstring>
+                <name>gnt_keys_add_combination</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>path</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>path</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          line="222" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="222" bodyend="225"/>
+            </memberdef>
+            <memberdef kind="function" id="gntkeys_8c_1acd6357f7f5713403d587386043181061" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void del_path</definition>
+                <argsstring>(struct _node *node, const char *path)</argsstring>
+                <name>del_path</name>
+                <param>
+                    <type>struct
+                        <ref refid="struct__node" kindref="compound">_node</ref>
+                        *
+                    </type>
+                    <declname>node</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>path</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          line="227" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="227" bodyend="242"/>
+            </memberdef>
+            <memberdef kind="function" id="gntkeys_8c_1a9ba105ee573e7b6eb543bdb7cda586bd" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_keys_del_combination</definition>
+                <argsstring>(const char *path)</argsstring>
+                <name>gnt_keys_del_combination</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>path</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>path</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          line="244" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="244" bodyend="247"/>
+            </memberdef>
+            <memberdef kind="function" id="gntkeys_8c_1ac43508bd4f5b68d8face929a07581140" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>int</type>
+                <definition>int gnt_keys_find_combination</definition>
+                <argsstring>(const char *path)</argsstring>
+                <name>gnt_keys_find_combination</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>path</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>path</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para></para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para></para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          line="249" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="249" bodyend="267"/>
+            </memberdef>
+            <memberdef kind="function" id="gntkeys_8c_1a910c84d42418cbab6477c27591d5cb58" prot="public" static="yes"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>static void print_path</definition>
+                <argsstring>(struct _node *node, int depth)</argsstring>
+                <name>print_path</name>
+                <param>
+                    <type>struct
+                        <ref refid="struct__node" kindref="compound">_node</ref>
+                        *
+                    </type>
+                    <declname>node</declname>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>depth</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          line="270" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="270" bodyend="280"/>
+            </memberdef>
+            <memberdef kind="function" id="gntkeys_8c_1aee4d8db747a3691bb77087d85c896fc1" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void gnt_keys_print_combinations</definition>
+                <argsstring>(void)</argsstring>
+                <name>gnt_keys_print_combinations</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          line="283" column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"
+                          bodystart="284" bodyend="289"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="23">
+                <highlight class="preprocessor">#include<sp/>&quot;<ref refid="gntkeys_8h" kindref="compound">
+                    gntkeys.h</ref>&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;glib.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;string.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntkeys_8c_1af476842d27ec53797f7550d6e48e4f05"
+                                                     kindref="member">gnt_key_cup</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntkeys_8c_1af48deab401d73253a6aed153efb4c498"
+                                                     kindref="member">gnt_key_cdown</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntkeys_8c_1a15002149ce0034c8365675caca397bb2"
+                                                     kindref="member">gnt_key_cleft</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntkeys_8c_1aa79f54f7e2bd770d85288fd50436707d"
+                                                     kindref="member">gnt_key_cright</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*term;
+                </highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal"><sp/>GHashTable<sp/>*specials;
+                </highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ac2ec3169173531dd978a0e925fd6eba1" kindref="member">gnt_init_keys</ref>()
+                </highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*controls[]<sp/>=<sp/>{
+                </highlight>
+                <highlight class="stringliteral">&quot;&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;c-&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;ctrl-&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;ctr-&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;ctl-&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>};
+                </highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*alts[]<sp/>=<sp/>{
+                </highlight>
+                <highlight class="stringliteral">&quot;&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;alt-&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;a-&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;m-&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;meta-&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>};
+                </highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="getopt_8c_1a66b97d6dee15f33d7b6731ccf48092cf" kindref="member">c</ref>,<sp/>a,<sp/>ch;
+                </highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="namespacetest_1a29eb8dd921f77e19e24a20bcd820c2ed" kindref="member">key</ref>[32];
+                </highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(term<sp/>==
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>term<sp/>=
+                    <sp/>
+                    <ref refid="getopt_8c_1aee28fd8a0e40b6d958f7d20348e45368" kindref="member">getenv</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;TERM&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!term)
+                </highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>term<sp/>=
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;&quot;</highlight>
+                <highlight class="normal">;
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Just<sp/>in<sp/>case<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(term,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;xterm&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0<sp/>||<sp/>strcmp(term,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;rxvt&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1af476842d27ec53797f7550d6e48e4f05" kindref="member">gnt_key_cup</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>=
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;\033&quot;</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;[1;5A&quot;</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1af48deab401d73253a6aed153efb4c498" kindref="member">gnt_key_cdown</ref>
+                    <sp/>
+                    <sp/>=
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;\033&quot;</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;[1;5B&quot;</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1aa79f54f7e2bd770d85288fd50436707d" kindref="member">gnt_key_cright</ref>
+                    <sp/>=
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;\033&quot;</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;[1;5C&quot;</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1a15002149ce0034c8365675caca397bb2" kindref="member">gnt_key_cleft</ref>
+                    <sp/>
+                    <sp/>=
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;\033&quot;</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;[1;5D&quot;</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(term,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;screen&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0<sp/>||<sp/>strcmp(term,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;rxvt-unicode&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1af476842d27ec53797f7550d6e48e4f05" kindref="member">gnt_key_cup</ref>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>=
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;\033&quot;</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Oa&quot;</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1af48deab401d73253a6aed153efb4c498" kindref="member">gnt_key_cdown</ref>
+                    <sp/>
+                    <sp/>=
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;\033&quot;</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Ob&quot;</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1aa79f54f7e2bd770d85288fd50436707d" kindref="member">gnt_key_cright</ref>
+                    <sp/>=
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;\033&quot;</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Oc&quot;</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1a15002149ce0034c8365675caca397bb2" kindref="member">gnt_key_cleft</ref>
+                    <sp/>
+                    <sp/>=
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;\033&quot;</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Od&quot;</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>specials<sp/>=<sp/>g_hash_table_new(g_str_hash,<sp/>g_str_equal);
+                </highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>INSERT_KEY(k,<sp/>code)<sp/>do<sp/>{<sp/>\
+                </highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="preprocessor">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_hash_table_insert(specials,<sp/>g_strdup(k),<sp/>g_strdup(code));<sp/>\
+                </highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="preprocessor">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>gnt_keys_add_combination(code);<sp/>\
+                </highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="preprocessor">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}<sp/>while<sp/>(0)
+                </highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;home&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a405146b1f444af420a78238cf565c6fd" kindref="member">GNT_KEY_HOME</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;end&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a47f2afea7e78b0a76342094c28c6828e" kindref="member">GNT_KEY_END</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;pageup&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1ae6adb88682096b0de8f63153de464b69" kindref="member">GNT_KEY_PGUP</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;pagedown&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="gntkeys_8h_1ac41fcbd7ddbe2b75727020bc46875d5c" kindref="member">GNT_KEY_PGDOWN</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;insert&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a78ed62dffcfdc912e6336f3be2f6bf20" kindref="member">GNT_KEY_INS</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;delete&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a0a134448abd45fb72c52e8a8b645a0a0" kindref="member">GNT_KEY_DEL</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;back_tab&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="gntkeys_8h_1ad43acffb2908722b287381ab9f0dfc86" kindref="member">GNT_KEY_BACK_TAB</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;left&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a3610efeedee6919c5b317929b9a8008e" kindref="member">GNT_KEY_LEFT</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="78">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;right&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1ab61e5a96c75ffdfcd777c0219820ccce" kindref="member">GNT_KEY_RIGHT</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="79">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;up&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a7c9f2883e0da9aa877aa50dca3c9b7f3" kindref="member">GNT_KEY_UP</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="80">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;down&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a9f1051b5041b0f49305a57079dce9f8f" kindref="member">GNT_KEY_DOWN</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="81">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="82">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;tab&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;\t&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="83">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;menu&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1ae31dba8acd77d359aa2d1a89848e23e7" kindref="member">GNT_KEY_POPUP</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="84">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="85">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;f1&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1abc58736f8d050636875291815a7ffcf8" kindref="member">GNT_KEY_F1</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="86">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;f2&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a2d78e8f2ee463f7a61ca61cb7ee5ef7b" kindref="member">GNT_KEY_F2</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="87">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;f3&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a8122c12e12fed3c0823ddda5d493e191" kindref="member">GNT_KEY_F3</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="88">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;f4&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a965d546444989fafcf6d561a29925e00" kindref="member">GNT_KEY_F4</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="89">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;f5&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a6f7aa42f7e14e78fba37a2477fb0cefc" kindref="member">GNT_KEY_F5</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="90">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;f6&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a6f19d1b7765bc89007183d1536006446" kindref="member">GNT_KEY_F6</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="91">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;f7&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1ad3d0a9dea8bad88a41bd43c10ff40c61" kindref="member">GNT_KEY_F7</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="92">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;f8&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1acf3bb3e92e4bab273426e4b273646869" kindref="member">GNT_KEY_F8</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="93">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;f9&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a61a1aba61c4396e7e2bddec389604788" kindref="member">GNT_KEY_F9</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="94">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;f10&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a3a5c2cf645d528a268d42df3f542d2c6" kindref="member">GNT_KEY_F10</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="95">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;f11&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1a5ed2fbf6ff0a36619e1c2401a8676206" kindref="member">GNT_KEY_F11</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="96">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ae08616119720b57c7e83a485db60a21a" kindref="member">INSERT_KEY</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;f12&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8h_1ab0be21bdfaecf4b4ed224ce3dfeaec6c" kindref="member">GNT_KEY_F12</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="97">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="98">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>REM_LENGTH
+                    <sp/>
+                    <sp/>(sizeof(key)<sp/>-<sp/>(cur<sp/>-<sp/>key))
+                </highlight>
+            </codeline>
+            <codeline lineno="99">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>INSERT_COMB(k,<sp/>code)<sp/>do<sp/>{<sp/>\
+                </highlight>
+            </codeline>
+            <codeline lineno="100">
+                <highlight class="preprocessor">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>snprintf(key,<sp/>sizeof(key),<sp/>&quot;%s%s%s&quot;,<sp/>controls[c],<sp/>alts[a],<sp/>k);
+                    <sp/>
+                    <sp/>\
+                </highlight>
+            </codeline>
+            <codeline lineno="101">
+                <highlight class="preprocessor">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>INSERT_KEY(key,<sp/>code);
+                    <sp/>
+                    <sp/>\
+                </highlight>
+            </codeline>
+            <codeline lineno="102">
+                <highlight class="preprocessor">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}<sp/>while<sp/>(0);
+                </highlight>
+            </codeline>
+            <codeline lineno="103">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="104">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Lower-case<sp/>alphabets<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="105">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(a<sp/>=<sp/>0,<sp/>c<sp/>=<sp/>0;<sp/>controls[<ref
+                        refid="getopt_8c_1a66b97d6dee15f33d7b6731ccf48092cf" kindref="member">c</ref>];<sp/>c++,<sp/>a
+                    <sp/>=<sp/>0)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="106">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(c)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="107">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1a7a86eff9e515fc967a6474f8edb7d99a" kindref="member">INSERT_COMB</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;up&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1af476842d27ec53797f7550d6e48e4f05" kindref="member">gnt_key_cup</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="108">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1a7a86eff9e515fc967a6474f8edb7d99a" kindref="member">INSERT_COMB</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;down&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1af48deab401d73253a6aed153efb4c498" kindref="member">gnt_key_cdown</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="109">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1a7a86eff9e515fc967a6474f8edb7d99a" kindref="member">INSERT_COMB</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;left&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1a15002149ce0034c8365675caca397bb2" kindref="member">gnt_key_cleft</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="110">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1a7a86eff9e515fc967a6474f8edb7d99a" kindref="member">INSERT_COMB</ref>(
+                </highlight>
+                <highlight class="stringliteral">&quot;right&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="gntkeys_8c_1aa79f54f7e2bd770d85288fd50436707d" kindref="member">gnt_key_cright</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="111">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="112">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="113">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(a<sp/>=<sp/>0;<sp/>alts[a];<sp/>a++)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="114">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(ch<sp/>=<sp/>0;<sp/>ch<sp/>&lt;<sp/>26;<sp/>ch++)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="115">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>str[2]<sp/>=<sp/>{
+                </highlight>
+                <highlight class="charliteral">&apos;a&apos;</highlight>
+                <highlight class="normal"><sp/>+<sp/>ch,<sp/>0},<sp/>code[4]<sp/>=
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;\0\0\0\0&quot;</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="116">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>ind<sp/>=<sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="117">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(a)
+                </highlight>
+            </codeline>
+            <codeline lineno="118">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>code[ind++]<sp/>=
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;\033&apos;</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="119">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>code[ind]<sp/>=<sp/>(c<sp/>?<sp/>1<sp/>:
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;a&apos;</highlight>
+                <highlight class="normal">)<sp/>+<sp/>ch;
+                </highlight>
+            </codeline>
+            <codeline lineno="120">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1a7a86eff9e515fc967a6474f8edb7d99a" kindref="member">INSERT_COMB</ref>(str,
+                    <sp/>code);
+                </highlight>
+            </codeline>
+            <codeline lineno="121">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="122">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="123">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="124">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>c<sp/>=<sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="125">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(a<sp/>=<sp/>0;<sp/>alts[a];<sp/>a++)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="126">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Upper-case<sp/>alphabets<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="127">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(ch<sp/>=<sp/>0;<sp/>ch<sp/>&lt;<sp/>26;<sp/>ch++)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="128">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>str[2]<sp/>=<sp/>{
+                </highlight>
+                <highlight class="charliteral">&apos;A&apos;</highlight>
+                <highlight class="normal"><sp/>+<sp/>ch,<sp/>0},<sp/>code[]<sp/>=<sp/>{
+                </highlight>
+                <highlight class="charliteral">&apos;\033&apos;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;A&apos;</highlight>
+                <highlight class="normal"><sp/>+<sp/>ch,<sp/>0};
+                </highlight>
+            </codeline>
+            <codeline lineno="129">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1a7a86eff9e515fc967a6474f8edb7d99a" kindref="member">INSERT_COMB</ref>(str,
+                    <sp/>code);
+                </highlight>
+            </codeline>
+            <codeline lineno="130">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="131">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Digits<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="132">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(ch<sp/>=<sp/>0;<sp/>ch<sp/>&lt;<sp/>10;<sp/>ch++)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="133">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>str[2]<sp/>=<sp/>{
+                </highlight>
+                <highlight class="charliteral">&apos;0&apos;</highlight>
+                <highlight class="normal"><sp/>+<sp/>ch,<sp/>0},<sp/>code[]<sp/>=<sp/>{
+                </highlight>
+                <highlight class="charliteral">&apos;\033&apos;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;0&apos;</highlight>
+                <highlight class="normal"><sp/>+<sp/>ch,<sp/>0};
+                </highlight>
+            </codeline>
+            <codeline lineno="134">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="gntkeys_8c_1a7a86eff9e515fc967a6474f8edb7d99a" kindref="member">INSERT_COMB</ref>(str,
+                    <sp/>code);
+                </highlight>
+            </codeline>
+            <codeline lineno="135">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="136">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="137">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="138">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="139">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntkeys_8c_1a0b113f5ad7401654fdd58ba73c7bbb6a" kindref="member">gnt_keys_refine</ref>(
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*text)
+                </highlight>
+            </codeline>
+            <codeline lineno="140">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="141">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(*text<sp/>==<sp/>27<sp/>&amp;&amp;<sp/>*(text<sp/>+<sp/>1)<sp/>==
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;[&apos;</highlight>
+                <highlight class="normal"><sp/>&amp;&amp;
+                </highlight>
+            </codeline>
+            <codeline lineno="142">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>(*(text<sp/>+<sp/>2)<sp/>&gt;=
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;A&apos;</highlight>
+                <highlight class="normal"><sp/>&amp;&amp;<sp/>*(text<sp/>+<sp/>2)<sp/>&lt;=
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;D&apos;</highlight>
+                <highlight class="normal">))<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="143">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Apparently<sp/>this<sp/>is<sp/>necessary<sp/>for<sp/>urxvt<sp/>and
+                    <sp/>screen<sp/>and<sp/>xterm<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="144">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(strcmp(term,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;screen&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0<sp/>||<sp/>strcmp(term,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;rxvt-unicode&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0<sp/>||
+                </highlight>
+            </codeline>
+            <codeline lineno="145">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>strcmp(term,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;xterm&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="146">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*(text<sp/>+<sp/>1)<sp/>=
+                    <sp/>
+                </highlight>
+                <highlight class="charliteral">&apos;O&apos;</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="147">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">else</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(*(
+                </highlight>
+                <highlight class="keywordtype">unsigned</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal">*)text<sp/>==<sp/>195)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="148">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(*(text<sp/>+<sp/>2)<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>strcmp(term,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;xterm&quot;</highlight>
+                <highlight class="normal">)<sp/>==<sp/>0)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="149">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*(text)<sp/>=<sp/>27;
+                </highlight>
+            </codeline>
+            <codeline lineno="150">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>*(text<sp/>+<sp/>1)<sp/>-=<sp/>64;
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>Say<sp/>wha?<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="151">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="152">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="153">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="154">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="155">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntkeys_8c_1ae2413e0cc4895523483172bb2e06937d"
+                                                     kindref="member">gnt_key_translate</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntbindable_8c_1a5ac083a645d964373f022d03df4849c8"
+                                                     kindref="member">name</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="156">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="157">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>name<sp/>?<sp/>g_hash_table_lookup(specials,<sp/>name)<sp/>:
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="158">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="159">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="160" refid="structgntkey" refkind="compound">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">typedef</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="161">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntbindable_8c_1a5ac083a645d964373f022d03df4849c8"
+                                                     kindref="member">name</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="162">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="namespacetest_1a29eb8dd921f77e19e24a20bcd820c2ed"
+                                                     kindref="member">key</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="163">
+                <highlight class="normal">}
+                    <sp/>
+                    <ref refid="structgntkey" kindref="compound">gntkey</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="164">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="165">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="166">
+                <highlight class="normal">get_key_name(gpointer<sp/>key,<sp/>gpointer
+                    <sp/>
+                    <ref refid="gntwm_8c_1a8378be79f6105367d446b3ac45cae716" kindref="member">value</ref>,<sp/>gpointer
+                    <sp/>
+                    <ref refid="gntwm_8c_1a10fb496e4431487bd53ab5a192614a0e" kindref="member">data</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="167">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="168">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="structgntkey" kindref="compound">gntkey</ref>
+                    <sp/>*k<sp/>=
+                    <sp/>
+                    <ref refid="gntwm_8c_1a10fb496e4431487bd53ab5a192614a0e" kindref="member">data</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="169">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(k-&gt;<ref refid="structgntkey_1a8f8f80d37794cde9472343e4487ba3eb"
+                                                           kindref="member">name</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="170">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="171">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(g_utf8_collate(value,<sp/>k-&gt;<ref
+                        refid="structgntkey_1acd3d88da3c0e0313c3645ff34f62f542" kindref="member">key</ref>)<sp/>==<sp/>
+                    0)
+                </highlight>
+            </codeline>
+            <codeline lineno="172">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>k-&gt;
+                    <ref refid="structgntkey_1a8f8f80d37794cde9472343e4487ba3eb" kindref="member">name</ref>
+                    <sp/>=
+                    <sp/>
+                    <ref refid="namespacetest_1a29eb8dd921f77e19e24a20bcd820c2ed" kindref="member">key</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="173">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="174">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="175">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="gntkeys_8c_1aa70e031cf2eb6cbf10ac3c9bcffc381b"
+                                                     kindref="member">gnt_key_lookup</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*key)
+                </highlight>
+            </codeline>
+            <codeline lineno="176">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="177">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="structgntkey" kindref="compound">gntkey</ref>
+                    <sp/>k<sp/>=<sp/>{<ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">
+                    NULL</ref>,<sp/>key};
+                </highlight>
+            </codeline>
+            <codeline lineno="178">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_hash_table_foreach(specials,<sp/>get_key_name,<sp/>&amp;k);
+                </highlight>
+            </codeline>
+            <codeline lineno="179">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>k.<ref refid="structgntkey_1a8f8f80d37794cde9472343e4487ba3eb"
+                                                      kindref="member">name</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="180">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="181">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="190">
+                <highlight class="preprocessor">#define<sp/>SIZE<sp/>256
+                </highlight>
+            </codeline>
+            <codeline lineno="191">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="192">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>IS_END
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>1<sp/>&lt;&lt;<sp/>0
+                </highlight>
+            </codeline>
+            <codeline lineno="193" refid="struct__node" refkind="compound">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct__node" kindref="compound">_node</ref>
+                </highlight>
+            </codeline>
+            <codeline lineno="194">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="195">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct__node" kindref="compound">_node</ref>
+                    <sp/>*<ref refid="struct__node_1ac70940a08d7e884c0e31f7416b3a8908" kindref="member">next</ref>[<ref
+                        refid="gntkeys_8c_1a70ed59adcb4159ac551058053e649640" kindref="member">SIZE</ref>];
+                </highlight>
+            </codeline>
+            <codeline lineno="196">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct__node_1adb528a1cb1ca190150183394d082590d" kindref="member">ref</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="197">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct__node_1ac8bf36fe0577cba66bccda3a6f7e80a4" kindref="member">flags</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="198">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="199">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="200">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct__node" kindref="compound">_node</ref>
+                    <sp/>root<sp/>=<sp/>{.
+                    <ref refid="struct__node_1adb528a1cb1ca190150183394d082590d" kindref="member">ref</ref>
+                    <sp/>=<sp/>1,<sp/>.flags<sp/>=<sp/>0};
+                </highlight>
+            </codeline>
+            <codeline lineno="201">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="202">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>add_path(
+                </highlight>
+                <highlight class="keyword">struct</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct__node" kindref="compound">_node</ref>
+                    <sp/>*node,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*<ref refid="namespacepietray_1ae6fc00af7c5b5a7c5f40ce6dc6b47d85"
+                                                     kindref="member">path</ref>)
+                </highlight>
+            </codeline>
+            <codeline lineno="203">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="204">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct__node" kindref="compound">_node</ref>
+                    <sp/>*n<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="205">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!path<sp/>||<sp/>!*path)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="206">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>node-&gt;
+                    <ref refid="struct__node_1ac8bf36fe0577cba66bccda3a6f7e80a4" kindref="member">flags</ref>
+                    <sp/>|=
+                    <sp/>
+                    <ref refid="gntkeys_8c_1a50b1ab2b87c0def722a4a5b7b9e8030b" kindref="member">IS_END</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="207">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="208">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="209">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">while</highlight>
+                <highlight class="normal"><sp/>(*path<sp/>&amp;&amp;<sp/>node-&gt;<ref
+                        refid="struct__node_1ac70940a08d7e884c0e31f7416b3a8908" kindref="member">next</ref>[(
+                </highlight>
+                <highlight class="keywordtype">unsigned</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal">)*path])<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="210">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>node<sp/>=<sp/>node-&gt;<ref refid="struct__node_1ac70940a08d7e884c0e31f7416b3a8908"
+                                                      kindref="member">next</ref>[(
+                </highlight>
+                <highlight class="keywordtype">unsigned</highlight>
+                <highlight class="normal"><sp/>char)*path];
+                </highlight>
+            </codeline>
+            <codeline lineno="211">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>node-&gt;<ref refid="struct__node_1adb528a1cb1ca190150183394d082590d" kindref="member">
+                    ref</ref>++;
+                </highlight>
+            </codeline>
+            <codeline lineno="212">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>path++;
+                </highlight>
+            </codeline>
+            <codeline lineno="213">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="214">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!*path)
+                </highlight>
+            </codeline>
+            <codeline lineno="215">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="216">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>n<sp/>=<sp/>g_new0(
+                </highlight>
+                <highlight class="keyword">struct</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct__node" kindref="compound">_node</ref>,<sp/>1);
+                </highlight>
+            </codeline>
+            <codeline lineno="217">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>n-&gt;
+                    <ref refid="struct__node_1adb528a1cb1ca190150183394d082590d" kindref="member">ref</ref>
+                    <sp/>=<sp/>1;
+                </highlight>
+            </codeline>
+            <codeline lineno="218">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>node-&gt;<ref refid="struct__node_1ac70940a08d7e884c0e31f7416b3a8908" kindref="member">
+                    next</ref>[(
+                </highlight>
+                <highlight class="keywordtype">unsigned</highlight>
+                <highlight class="normal"><sp/>char)*path++]<sp/>=<sp/>n;
+                </highlight>
+            </codeline>
+            <codeline lineno="219">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>add_path(n,<sp/>path);
+                </highlight>
+            </codeline>
+            <codeline lineno="220">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="221">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="222">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntkeys_8c_1aa3258e3131aadd25a925eaf38b3b6d7d" kindref="member">
+                        gnt_keys_add_combination</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*path)
+                </highlight>
+            </codeline>
+            <codeline lineno="223">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="224">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>add_path(&amp;root,<sp/>path);
+                </highlight>
+            </codeline>
+            <codeline lineno="225">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="226">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="227">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"><sp/>del_path(
+                </highlight>
+                <highlight class="keyword">struct</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct__node" kindref="compound">_node</ref>
+                    <sp/>*node,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*path)
+                </highlight>
+            </codeline>
+            <codeline lineno="228">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="229">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct__node" kindref="compound">_node</ref>
+                    <sp/>*
+                    <ref refid="struct__node_1ac70940a08d7e884c0e31f7416b3a8908" kindref="member">next</ref>
+                    <sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="230">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="231">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!*path)
+                </highlight>
+            </codeline>
+            <codeline lineno="232">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="233">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>next<sp/>=<sp/>node-&gt;<ref refid="struct__node_1ac70940a08d7e884c0e31f7416b3a8908"
+                                                      kindref="member">next</ref>[(
+                </highlight>
+                <highlight class="keywordtype">unsigned</highlight>
+                <highlight class="normal"><sp/>char)*path];
+                </highlight>
+            </codeline>
+            <codeline lineno="234">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!next)
+                </highlight>
+            </codeline>
+            <codeline lineno="235">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal">;</highlight>
+            </codeline>
+            <codeline lineno="236">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>del_path(next,<sp/>path<sp/>+<sp/>1);
+                </highlight>
+            </codeline>
+            <codeline lineno="237">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>next-&gt;<ref refid="struct__node_1adb528a1cb1ca190150183394d082590d" kindref="member">
+                    ref</ref>--;
+                </highlight>
+            </codeline>
+            <codeline lineno="238">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(next-&gt;
+                    <ref refid="struct__node_1adb528a1cb1ca190150183394d082590d" kindref="member">ref</ref>
+                    <sp/>==<sp/>0)<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="239">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>node-&gt;<ref refid="struct__node_1ac70940a08d7e884c0e31f7416b3a8908" kindref="member">
+                    next</ref>[(
+                </highlight>
+                <highlight class="keywordtype">unsigned</highlight>
+                <highlight class="normal"><sp/>char)*path]<sp/>=
+                    <sp/>
+                    <ref refid="getopt1_8c_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="240">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_free(next);
+                </highlight>
+            </codeline>
+            <codeline lineno="241">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="242">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="243">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="244">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntkeys_8c_1a9ba105ee573e7b6eb543bdb7cda586bd" kindref="member">
+                        gnt_keys_del_combination</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*path)
+                </highlight>
+            </codeline>
+            <codeline lineno="245">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="246">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>del_path(&amp;root,<sp/>path);
+                </highlight>
+            </codeline>
+            <codeline lineno="247">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="248">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="249">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntkeys_8c_1ac43508bd4f5b68d8face929a07581140" kindref="member">
+                        gnt_keys_find_combination</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*path)
+                </highlight>
+            </codeline>
+            <codeline lineno="250">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="251">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>depth<sp/>=<sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="252">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">struct
+                    <sp/>
+                </highlight>
+                <highlight class="normal">
+                    <ref refid="struct__node" kindref="compound">_node</ref>
+                    <sp/>*n<sp/>=<sp/>&amp;root;
+                </highlight>
+            </codeline>
+            <codeline lineno="253">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="254">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>root.
+                    <ref refid="struct__node_1ac8bf36fe0577cba66bccda3a6f7e80a4" kindref="member">flags</ref>
+                    <sp/>&amp;=<sp/>~<ref refid="gntkeys_8c_1a50b1ab2b87c0def722a4a5b7b9e8030b" kindref="member">
+                    IS_END</ref>;
+                </highlight>
+            </codeline>
+            <codeline lineno="255">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">while</highlight>
+                <highlight class="normal"><sp/>(*path<sp/>&amp;&amp;<sp/>n-&gt;<ref
+                        refid="struct__node_1ac70940a08d7e884c0e31f7416b3a8908" kindref="member">next</ref>[(
+                </highlight>
+                <highlight class="keywordtype">unsigned</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal">)*path]<sp/>&amp;&amp;<sp/>!(n-&gt;
+                    <ref refid="struct__node_1ac8bf36fe0577cba66bccda3a6f7e80a4" kindref="member">flags</ref>
+                    <sp/>&amp;
+                    <sp/>
+                    <ref refid="gntkeys_8c_1a50b1ab2b87c0def722a4a5b7b9e8030b" kindref="member">IS_END</ref>))<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="256">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!g_ascii_isspace(*path)<sp/>&amp;&amp;
+                </highlight>
+            </codeline>
+            <codeline lineno="257">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>!g_ascii_iscntrl(*path)<sp/>&amp;&amp;
+                </highlight>
+            </codeline>
+            <codeline lineno="258">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>!g_ascii_isgraph(*path))
+                </highlight>
+            </codeline>
+            <codeline lineno="259">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="260">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>n<sp/>=<sp/>n-&gt;<ref refid="struct__node_1ac70940a08d7e884c0e31f7416b3a8908"
+                                                kindref="member">next</ref>[(
+                </highlight>
+                <highlight class="keywordtype">unsigned</highlight>
+                <highlight class="normal"><sp/>char)*path++];
+                </highlight>
+            </codeline>
+            <codeline lineno="261">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>depth++;
+                </highlight>
+            </codeline>
+            <codeline lineno="262">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="263">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="264">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(!(n-&gt;
+                    <ref refid="struct__node_1ac8bf36fe0577cba66bccda3a6f7e80a4" kindref="member">flags</ref>
+                    <sp/>&amp;
+                    <sp/>
+                    <ref refid="gntkeys_8c_1a50b1ab2b87c0def722a4a5b7b9e8030b" kindref="member">IS_END</ref>))
+                </highlight>
+            </codeline>
+            <codeline lineno="265">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>depth<sp/>=<sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="266">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>depth;
+                </highlight>
+            </codeline>
+            <codeline lineno="267">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="268">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="269">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">static</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="270">
+                <highlight class="normal">print_path(</highlight>
+                <highlight class="keyword">struct</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="struct__node" kindref="compound">_node</ref>
+                    <sp/>*node,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>depth)
+                </highlight>
+            </codeline>
+            <codeline lineno="271">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="272">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>i;
+                </highlight>
+            </codeline>
+            <codeline lineno="273">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;
+                    <sp/>
+                    <ref refid="gntkeys_8c_1a70ed59adcb4159ac551058053e649640" kindref="member">SIZE</ref>;<sp/>i++)
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="274">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(node-&gt;<ref refid="struct__node_1ac70940a08d7e884c0e31f7416b3a8908"
+                                                              kindref="member">next</ref>[i])<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="275">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_printerr(
+                </highlight>
+                <highlight class="stringliteral">&quot;%*c<sp/>(%d:%d)\n&quot;
+                </highlight>
+                <highlight class="normal">,<sp/>depth<sp/>*<sp/>4,<sp/>i,<sp/>node-&gt;<ref
+                        refid="struct__node_1ac70940a08d7e884c0e31f7416b3a8908" kindref="member">next</ref>[i]-&gt;<ref
+                        refid="struct__node_1adb528a1cb1ca190150183394d082590d" kindref="member">ref</ref>,
+                </highlight>
+            </codeline>
+            <codeline lineno="276">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>node-&gt;<ref refid="struct__node_1ac70940a08d7e884c0e31f7416b3a8908" kindref="member">
+                    next</ref>[i]-&gt;<ref refid="struct__node_1ac8bf36fe0577cba66bccda3a6f7e80a4" kindref="member">
+                    flags</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="277">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>print_path(node-&gt;<ref refid="struct__node_1ac70940a08d7e884c0e31f7416b3a8908"
+                                                  kindref="member">next</ref>[i],<sp/>depth<sp/>+<sp/>1);
+                </highlight>
+            </codeline>
+            <codeline lineno="278">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="279">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="280">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="281">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="282">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/*<sp/>this<sp/>is<sp/>purely<sp/>for<sp/>debugging<sp/>purposes.<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="283">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntkeys_8c_1aee4d8db747a3691bb77087d85c896fc1" kindref="member">
+                        gnt_keys_print_combinations</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="284">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntkeys_8c_1aee4d8db747a3691bb77087d85c896fc1" kindref="member">
+                        gnt_keys_print_combinations</ref>()
+                </highlight>
+            </codeline>
+            <codeline lineno="285">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="286">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_printerr(
+                </highlight>
+                <highlight class="stringliteral">&quot;--------\n&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="287">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>print_path(&amp;root,<sp/>1);
+                </highlight>
+            </codeline>
+            <codeline lineno="288">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>g_printerr(
+                </highlight>
+                <highlight class="stringliteral">&quot;--------\n&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="289">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="290">
+                <highlight class="normal"></highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/libgnt/gntkeys.c"/>
+    </compounddef>
+</doxygen>

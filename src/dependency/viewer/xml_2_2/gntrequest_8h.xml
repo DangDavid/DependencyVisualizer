@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntrequest_8h" kind="file">
+        <compoundname>gntrequest.h</compoundname>
+        <includes local="yes">request.h</includes>
+        <includedby refid="gntplugin_8c" local="yes">gntplugin.c</includedby>
+        <includedby refid="gntprefs_8c" local="yes">gntprefs.c</includedby>
+        <includedby refid="gntrequest_8c" local="yes">gntrequest.c</includedby>
+        <includedby refid="gntui_8c" local="yes">gntui.c</includedby>
+        <incdepgraph>
+            <node id="592">
+                <label>request.h</label>
+            </node>
+            <node id="591">
+                <label>gntrequest.h</label>
+                <link refid="gntrequest.h"/>
+                <childnode refid="592" relation="include">
+                </childnode>
+            </node>
+        </incdepgraph>
+        <invincdepgraph>
+            <node id="594">
+                <label>gntplugin.c</label>
+                <link refid="gntplugin_8c"/>
+            </node>
+            <node id="595">
+                <label>gntprefs.c</label>
+                <link refid="gntprefs_8c"/>
+            </node>
+            <node id="597">
+                <label>gntui.c</label>
+                <link refid="gntui_8c"/>
+            </node>
+            <node id="596">
+                <label>gntrequest.c</label>
+                <link refid="gntrequest_8c"/>
+            </node>
+            <node id="593">
+                <label>gntrequest.h</label>
+                <link refid="gntrequest.h"/>
+                <childnode refid="594" relation="include">
+                </childnode>
+                <childnode refid="595" relation="include">
+                </childnode>
+                <childnode refid="596" relation="include">
+                </childnode>
+                <childnode refid="597" relation="include">
+                </childnode>
+            </node>
+        </invincdepgraph>
+        <sectiondef kind="user-defined">
+            <memberdef kind="function" id="gntrequest_8h_1a3c6f26235c80002056da2b5941b5f728" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>PurpleRequestUiOps *</type>
+                <definition>PurpleRequestUiOps* finch_request_get_ui_ops</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_request_get_ui_ops</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Get the ui-functions.</para>
+                    <para>
+                        <simplesect kind="return">
+                            <para>The PurpleRequestUiOps structure populated with the appropriate functions.</para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntrequest.h" line="40"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntrequest.c"
+                          bodystart="698" bodyend="701"/>
+            </memberdef>
+            <memberdef kind="function" id="gntrequest_8h_1a88439e55af7f4af58ca948f379f29f0f" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_request_init</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_request_init</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Perform necessary initializations.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntrequest.h" line="45"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntrequest.c"
+                          bodystart="703" bodyend="705"/>
+            </memberdef>
+            <memberdef kind="function" id="gntrequest_8h_1a4f1b9fa8a74485cf82205077f631225a" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_request_uninit</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_request_uninit</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Perform necessary uninitializations.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntrequest.h" line="50"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntrequest.c"
+                          bodystart="707" bodyend="709"/>
+            </memberdef>
+            <memberdef kind="function" id="gntrequest_8h_1a4a0418fa0a3a4d4758c4c976d0476dd1" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_request_save_in_prefs</definition>
+                <argsstring>(gpointer null, PurpleRequestFields *fields)</argsstring>
+                <name>finch_request_save_in_prefs</name>
+                <param>
+                    <type>gpointer</type>
+                    <declname>null</declname>
+                </param>
+                <param>
+                    <type>PurpleRequestFields *</type>
+                    <declname>fields</declname>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Save the request fields in preferences where the id attribute of each field is the id of a
+                        preference.
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntrequest.h" line="56"
+                          column="1"
+                          bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntrequest.c"
+                          bodystart="711" bodyend="763"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>GNT Request API</para>
+            <para>finch</para>
+            <para>Finch is the legal property of its developers, whose names are too numerous to list here. Please refer
+                to the COPYRIGHT file distributed with this source distribution.
+            </para>
+            <para>This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+                General Public License as published by the Free Software Foundation; either version 2 of the License, or
+                (at your option) any later version.
+            </para>
+            <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
+                the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public
+                License for more details.
+            </para>
+            <para>You should have received a copy of the GNU General Public License along with this program; if not,
+                write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02111-1301 USA
+            </para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="25">
+                <highlight class="preprocessor">#ifndef<sp/>_GNT_REQUEST_H
+                </highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>_GNT_REQUEST_H
+                </highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;request.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/**********************************************************************
+                </highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="comment"><sp/>*<sp/>@name<sp/>GNT<sp/>Request<sp/>API
+                </highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="comment"><sp/>**********************************************************************/
+                </highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal">PurpleRequestUiOps<sp/>*<ref
+                        refid="gntrequest_8c_1a9399bff75a28127246eafea0035e70bf" kindref="member">
+                    finch_request_get_ui_ops</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntrequest_8c_1aaaf663592842b3b58a91080127b6e6ec" kindref="member">
+                        finch_request_init</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntrequest_8c_1a3749c2646086e87b84c1204d050e344d" kindref="member">
+                        finch_request_uninit</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntrequest_8c_1a6d4123bd0fc451e7d6bf6278f331f22c" kindref="member">
+                        finch_request_save_in_prefs</ref>(gpointer<sp/>null,<sp/>PurpleRequestFields<sp/>*fields);
+                </highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntrequest.h"/>
+    </compounddef>
+</doxygen>

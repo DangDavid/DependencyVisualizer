@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.5">
+    <compounddef id="gntprefs_8h" kind="file">
+        <compoundname>gntprefs.h</compoundname>
+        <includedby refid="finch_8c" local="yes">finch.c</includedby>
+        <includedby refid="gntconv_8c" local="yes">gntconv.c</includedby>
+        <includedby refid="gntprefs_8c" local="yes">gntprefs.c</includedby>
+        <includedby refid="gntui_8c" local="yes">gntui.c</includedby>
+        <invincdepgraph>
+            <node id="557">
+                <label>gntprefs.c</label>
+                <link refid="gntprefs_8c"/>
+            </node>
+            <node id="554">
+                <label>gntprefs.h</label>
+                <link refid="gntprefs.h"/>
+                <childnode refid="555" relation="include">
+                </childnode>
+                <childnode refid="556" relation="include">
+                </childnode>
+                <childnode refid="557" relation="include">
+                </childnode>
+                <childnode refid="558" relation="include">
+                </childnode>
+            </node>
+            <node id="555">
+                <label>finch.c</label>
+                <link refid="finch_8c"/>
+            </node>
+            <node id="556">
+                <label>gntconv.c</label>
+                <link refid="gntconv_8c"/>
+            </node>
+            <node id="558">
+                <label>gntui.c</label>
+                <link refid="gntui_8c"/>
+            </node>
+        </invincdepgraph>
+        <sectiondef kind="user-defined">
+            <memberdef kind="function" id="gntprefs_8h_1a0c4287ffe09cf25fcc70906988364fd9" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_prefs_init</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_prefs_init</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Perform necessary initializations.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntprefs.h" line="36"
+                          column="1" bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntprefs.c"
+                          bodystart="44" bodyend="59"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprefs_8h_1a837408d237a361e118da8d29c02b77d3" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_prefs_show_all</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_prefs_show_all</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Show the preferences dialog.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntprefs.h" line="41"
+                          column="1" bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntprefs.c"
+                          bodystart="246" bodyend="267"/>
+            </memberdef>
+            <memberdef kind="function" id="gntprefs_8h_1a1c7364f7c3ae0565147fa9aa5c7a7aac" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void finch_prefs_update_old</definition>
+                <argsstring>(void)</argsstring>
+                <name>finch_prefs_update_old</name>
+                <param>
+                    <type>void</type>
+                </param>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>You don&apos;t need to know about this.</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntprefs.h" line="46"
+                          column="1" bodyfile="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntprefs.c"
+                          bodystart="61" bodyend="71"/>
+            </memberdef>
+        </sectiondef>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+            <para>GNT Preferences API</para>
+            <para>finch</para>
+            <para>Finch is the legal property of its developers, whose names are too numerous to list here. Please refer
+                to the COPYRIGHT file distributed with this source distribution.
+            </para>
+            <para>This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+                General Public License as published by the Free Software Foundation; either version 2 of the License, or
+                (at your option) any later version.
+            </para>
+            <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
+                the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public
+                License for more details.
+            </para>
+            <para>You should have received a copy of the GNU General Public License along with this program; if not,
+                write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02111-1301 USA
+            </para>
+        </detaileddescription>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="25">
+                <highlight class="preprocessor">#ifndef<sp/>_GNT_PREFS_H
+                </highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="preprocessor">#define<sp/>_GNT_PREFS_H
+                </highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="preprocessor"></highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal"></highlight>
+                <highlight class="comment">/**********************************************************************
+                </highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="comment"><sp/>*<sp/>@name<sp/>GNT<sp/>Preferences<sp/>API
+                </highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="comment"><sp/>**********************************************************************/
+                </highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntprefs_8c_1ab9c843e752ac4956fd8cd340f4a0eada" kindref="member">finch_prefs_init</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntprefs_8c_1ab651b7e3ae4cd958d96f9ad93c614047" kindref="member">
+                        finch_prefs_show_all</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="gntprefs_8c_1ab19fa75bca9001029e9519a9eb4a7e4c" kindref="member">
+                        finch_prefs_update_old</ref>(
+                </highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+        </programlisting>
+        <location file="C:/Users/David/Downloads/pidgin-2.2.0.tar/pidgin-2.2.0/finch/gntprefs.h"/>
+    </compounddef>
+</doxygen>
