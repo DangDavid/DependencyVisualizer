@@ -97,10 +97,12 @@ public class VisualizerParser {
                 dependency += "subgraph cluster_";
                 dependency += key;
                 dependency += " { \n";
+                dependency += "penwidth= 10\n";
                 for (String f : cluster.get(key)) {
                     dependency += f;
                     dependency += ";\n";
                 }
+                dependency += "color = indigo\n";
                 dependency += "}\n";
             }
         }
@@ -156,8 +158,9 @@ public class VisualizerParser {
              
                 dependency += key;
                 dependency += " { \n";
+                dependency += "penwidth= 10\n";
                 for (String f : cluster.get(key)) {
-                	   dependency += "penwidth= 10\n";
+                	
                     dependency += f;
                     dependency += ";\n";
                 }
