@@ -102,6 +102,10 @@ public class VisualizerParser {
                     dependency += f;
                     dependency += ";\n";
                 }
+                // label each cluster with its name
+                dependency += "label = "+key+";\n";
+                dependency += "fontsize = 80;\n"; 
+                
                 dependency += "color = indigo\n";
                 dependency += "}\n";
             }
