@@ -1,8 +1,12 @@
 package dependency.viewer.mapper;
 
-import java.util.*;
 
 import dependency.viewer.parser.ModuleData;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class SortDependencies {
 
