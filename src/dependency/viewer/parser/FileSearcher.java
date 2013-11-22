@@ -1,55 +1,19 @@
 package dependency.viewer.parser;
 
-import java.io.*;
+
+import java.io.File;
+import java.io.FilenameFilter;
 import java.util.ArrayList;
 import java.util.List;
 
 public class FileSearcher {
 
-    private static final String FILE_DIR = "/Users/taehyunkang/Downloads/pidgin-2.10.7/finch/xml";
     private static final String FILE_EXT1 = "_8h.xml";
     private static final String FILE_EXT2 = "_8c.xml";
 
     public FileSearcher() {
     }
 
-    /**
-     * @param args
-     */
-    public static void main(String[] args) {
-
-        listFiles(FILE_DIR, FILE_EXT1, FILE_EXT2);
-    }
-
-    static public void listFiles(String dir, String FILE_EXT1, String FILE_EXT2) {
-
-        // preparation
-        GenericExtFilter filter = new GenericExtFilter(FILE_EXT1);
-        File file = new File(dir);
-
-        if (!file.isDirectory()) {
-            System.out.println("Dir not found");
-            return;
-        }
-
-        // make list of all valid file names
-        String[] list = file.list(filter);
-
-        if (list.length == 0) {
-            System.out.println("no files end with A or B : " + "A. " + FILE_EXT1 + " B. " + FILE_EXT2);
-            return;
-        }
-
-
-        for (String filename : list) {
-            // append separator, formate results
-            String temp = new StringBuffer(dir).append(File.separator)
-                    .append(filename).toString();
-            System.out.println("file : " + temp);
-        }
-
-
-    }
 
     public List<String> getFiles(String folderName) {
 
@@ -62,7 +26,7 @@ public class FileSearcher {
 
 
         // preparation
-        GenericExtFilter filter = new GenericExtFilter(FILE_EXT1);
+        GenericExtFilter filter = new GenericExtFilter();
 
         List<String> result = new ArrayList<String>();
         System.out.println(fileDir);
@@ -91,10 +55,9 @@ public class FileSearcher {
 
     static public class GenericExtFilter implements FilenameFilter {
 
-        private String ext;
 
-        public GenericExtFilter(String ext) {
-            this.ext = ext;
+        public GenericExtFilter() {
+
         }
 
         public boolean accept(File dir, String name) {
