@@ -4,7 +4,9 @@ package dependency.viewer.parser;
 import java.util.*;
 
 /**
- * Created with IntelliJ IDEA.
+ * Holds the data from doxygen xml files
+ * Can be merged with other module data objects to form larger modules
+ *
  * User: David
  * Date: 26/10/13
  * Time: 7:32 PM
@@ -14,11 +16,16 @@ public class ModuleData {
     private String moduleName;
     private final List<String> includeList;
     private final List<String> includedByList;
+
     // key = file it depnds on, and the list what items are we using from that file ie functions, structs
     private final Map<String, List<String>> references;
+
     // holds what the file provides
     private final Map<String, String> dataObjects;
 
+    /**
+     * constructor
+     */
     public ModuleData() {
         includedByList = new ArrayList<String>();
         includeList = new ArrayList<String>();
@@ -62,6 +69,13 @@ public class ModuleData {
         includedByList.add(includedby);
     }
 
+    /**
+     * adds the reference to the module data
+     * note that this does not store self reference data
+     *
+     * @param reference  the name of the data object referenced
+     * @param referencedFile   the name of the file referenced
+     */
     public void addReference(String reference, String referencedFile) {
 
         if (!reference.equals(moduleName)) {    // check for self reference
@@ -77,6 +91,9 @@ public class ModuleData {
         }
     }
 
+    /**
+     * A nice function to print out the contents of the module data
+     */
     public void print() {
         System.out.println("\nThe Module Name is : " + moduleName);
 
@@ -112,14 +129,6 @@ public class ModuleData {
         System.out.println();
     }
 
-    public void summerize() {
-        System.out.println("\nThe Module Name is : " + moduleName);
-
-        System.out.println("The number of other file references are : " + references.keySet().size());
-
-
-        System.out.println();
-    }
 
     public void putDataObject(String xmlContent, String type) {
         dataObjects.put(xmlContent, type);
@@ -140,6 +149,12 @@ public class ModuleData {
         return results;
     }
 
+    /**
+     * merges the 2 node together.
+     * The object which is called on will take all the include, includeby, reference, and dataobejects of the
+     * param object. The module name will still be the called object(ie unchanged)
+     * @param node  The node to be merged with the called module data.
+     */
     public void merge(ModuleData node) {
         includeList.addAll(node.getIncludeList());
         includedByList.addAll(node.getIncludedByList());

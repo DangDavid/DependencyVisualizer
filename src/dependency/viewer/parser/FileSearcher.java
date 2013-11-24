@@ -6,6 +6,13 @@ import java.io.FilenameFilter;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * FileSearcher
+ *
+ * Used to get the list of files in a folder with either _8h.xml or _8c.xml suffix
+ *
+ */
 public class FileSearcher {
 
     private static final String FILE_EXT1 = "_8h.xml";
@@ -14,10 +21,14 @@ public class FileSearcher {
     public FileSearcher() {
     }
 
-
+    /**
+     *
+     * @param folderName   takes a folder name within the project
+     * @return   a list a file names within that folder
+     */
     public List<String> getFiles(String folderName) {
 
-
+        // build the full path
         String absPath = new File("").getAbsolutePath();
         String fileDir = absPath + File.separator + "src"
                 + File.separator + "dependency"
@@ -29,7 +40,7 @@ public class FileSearcher {
         GenericExtFilter filter = new GenericExtFilter();
 
         List<String> result = new ArrayList<String>();
-        System.out.println(fileDir);
+        //System.out.println(fileDir);
         File file = new File(fileDir);
 
         if (!file.isDirectory()) {
@@ -54,8 +65,6 @@ public class FileSearcher {
     }
 
     static public class GenericExtFilter implements FilenameFilter {
-
-
         public GenericExtFilter() {
 
         }
