@@ -19,8 +19,6 @@ public class Main {
     private static final String FINAL_DIR = "xml_2_2";    // the folder which has the xml for the source code to be compared too
 
     public static void main(String[] args) {
-
-
         // Parse The Two Sets Of Data
         XmlParser parser = new XmlParser();
         List<ModuleData> rawInitialData = parser.parseAll(INITIAL_DIR);
@@ -36,7 +34,11 @@ public class Main {
         // Graph Each Set Of Data
         drawGraph(matricesI, matricesF);
 
-
+        // The results of this tool is outputted in the src directory.
+        // The files are named init.txt and final.txt, representing the two graphs
+        // run graphviz on them manually, or use the tool (Call the function)
+        // Note: this doesn't work on mac for some reason; runs out of memory
+        // run on windows manually (This will work)
     }
 
 
