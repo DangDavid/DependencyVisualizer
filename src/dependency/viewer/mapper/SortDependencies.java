@@ -16,7 +16,11 @@ public class SortDependencies {
     List<ModuleData> rawInitialData;
     List<ModuleData> rawFinalData;
 
-    // Fill this in
+    /**
+     * Constructor
+     * @param rawInitialData
+     * @param rawFinalData
+     */
     public SortDependencies(List<ModuleData> rawInitialData, List<ModuleData> rawFinalData) {
         this.rawInitialData = rawInitialData;
         this.rawFinalData = rawFinalData;
@@ -25,6 +29,10 @@ public class SortDependencies {
     }
 
 
+/**
+ * Initialization
+ * @param rawData
+ */
     public void sortDataDependency(List<ModuleData> rawData) {
 
         List<ModuleData> mergeData = mergeModules(rawData);
@@ -35,7 +43,14 @@ public class SortDependencies {
 
     }
 
-
+/**
+ * 
+ * Generating dependency data(behavioral and data) for the rawData, 
+ * which is list of data that consists of Module data of dependencies.
+ * This method will create behavioral and data dependencyData, which we will use them to create matrix.
+ * @param rawData
+ * @param mergeData
+ */
     private void generateDependencyData(List<ModuleData> rawData, List<ModuleData> mergeData) {
         for (ModuleData moduleData : mergeData) {
 
@@ -55,7 +70,13 @@ public class SortDependencies {
             }
         }
     }
-
+/**
+ * Merge the nodes. If node exist, put the data on that node. 
+ * this method was created in order to prevent duplicate node from c and h file.
+ * for finch.c and finch.h, their data will be merged into one finch.
+ * @param rawData
+ * @return
+ */
     private List<ModuleData> mergeModules(List<ModuleData> rawData) {
 
         List<ModuleData> mergeData = new ArrayList<ModuleData>();
@@ -87,7 +108,14 @@ public class SortDependencies {
         return mergeData;  //To change body of created methods use File | Settings | File Templates.
     }
 
-
+/**
+ * Insert dependency in either behavioral or data dependencyData  based on the type of dependency between parent and child. 
+ * If there exists behavioral dependency between two files, add them in behavioral dependencyData. Otherwise, put them into data dependencyData.
+ * @param parent
+ * @param child
+ * @param items
+ * @param rawData
+ */
     private void insertDependency(String parent, String child, List<String> items, List<ModuleData> rawData) {
         ModuleData childNode = null;
         for (ModuleData module : rawData) {
@@ -120,13 +148,20 @@ public class SortDependencies {
 
     }
 
-
+/**
+ * Initialization of the matrix
+ * @return
+ */
     public List<DependencyGraph> matrixifyInit() {
         List<DependencyGraph> graph = matrixHelper(rawInitialData);
         return graph;
 
     }
-
+/**
+ * make a matrix of dadaDependency and behavioralDependency
+ * @param input
+ * @return
+ */
     private List<DependencyGraph> matrixHelper(List<ModuleData> input) {
         List<DependencyGraph> graph = new ArrayList<DependencyGraph>();
 
@@ -137,7 +172,10 @@ public class SortDependencies {
         graph.add(new DependencyGraph(behavioralDependency));
         return graph;
     }
-
+/**
+ * Outputs the final version of the source code graphs.
+ * @return
+ */
     public List<DependencyGraph> matrixifyFinal() {
         List<DependencyGraph> graph = matrixHelper(rawFinalData);
 
