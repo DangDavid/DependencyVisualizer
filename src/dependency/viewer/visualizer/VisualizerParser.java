@@ -19,11 +19,8 @@ import java.util.ArrayList;
  * To change this template use File | Settings | File Templates.
  */
 public class VisualizerParser {
-    List<DependencyGraph> initalGraph;
-
-    List<DependencyGraph> finalGraph;
+	
     private ArrayList<String> listOfcolor;
-
     private String graphHeader = "graph G {\n" +
             "sep=\"+25,25\";\n" +
             "nodesep=0.6;\n" +
@@ -35,7 +32,17 @@ public class VisualizerParser {
             "distortion = 0.0,orientation = 0.0," +
             "skew = 0.0 , style = filled];\n";
 
+    /* for initial release of the code base */
+    List<DependencyGraph> initalGraph;
+    /* another release of the code base */
+    List<DependencyGraph> finalGraph;
 
+    
+    /**
+     * Default constructor
+     * @param initG
+     * @param finalG
+     */
     public VisualizerParser(List<DependencyGraph> initG, List<DependencyGraph> finalG) {
         initalGraph = initG;
         finalGraph = finalG;
@@ -63,7 +70,7 @@ public class VisualizerParser {
         listOfcolor.add("salmon");
     }
 
-
+    
     public void matrixToDigraph() {
         DependencyGraph initBehaviour = initalGraph.get(1);
         Map<String, List<String>> cluster = initBehaviour.getClusters();
