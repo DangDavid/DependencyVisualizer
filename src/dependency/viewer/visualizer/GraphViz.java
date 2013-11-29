@@ -33,31 +33,6 @@ import java.io.FileWriter;
 import java.io.InputStreamReader;
 
 /**
- * <dl>
- * <dt>Purpose: GraphViz Java API
- * <dd>
- * <p/>
- * <dt>Description:
- * <dd> With this Java class you can simply call dot
- * from your Java programs
- * <dt>Example usage:
- * <dd>
- * <pre>
- *    GraphViz gv = new GraphViz();
- *    gv.addln(gv.start_graph());
- *    gv.addln("A -> B;");
- *    gv.addln("A -> C;");
- *    gv.addln(gv.end_graph());
- *    System.out.println(gv.getDotSource());
- *
- *    String type = "gif";
- *    File out = new File("out." + type);   // out.gif in this example
- *    gv.writeGraphToFile( gv.getGraph( gv.getDotSource(), type ), out );
- * </pre>
- * </dd>
- * <p/>
- * </dl>
- *
  * @author Laszlo Szathmary (<a href="jabba.laci@gmail.com">jabba.laci@gmail.com</a>)
  * @version v0.1, 2003/12/04 (December) -- first release
  */

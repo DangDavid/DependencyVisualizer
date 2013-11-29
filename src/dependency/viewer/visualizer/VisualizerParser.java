@@ -42,11 +42,12 @@ public class VisualizerParser {
      * Default constructor
      * @param initG
      * @param finalG
+     * This component is responsible for changing the DependencyGraph into an input which can be used by GraphViz.
      */
     public VisualizerParser(List<DependencyGraph> initG, List<DependencyGraph> finalG) {
         initialGraph = initG;
         finalGraph = finalG;
-
+        //initialize color pool for the graph
         listOfcolor = new ArrayList<String>();
         listOfcolor.add("red");
         listOfcolor.add("yellow");
@@ -70,7 +71,7 @@ public class VisualizerParser {
         listOfcolor.add("salmon");
     }
 
-    
+    //makes initial graph and the final graph
     public void matrixToDigraph() {
         DependencyGraph initBehaviour = initialGraph.get(1);
         Map<String, List<String>> cluster = initBehaviour.getClusters();
@@ -87,6 +88,7 @@ public class VisualizerParser {
 
     }
 
+    //makes initial graph
     private String makeGraph(DependencyGraph dataGraph, DependencyGraph behaviourGraph,
                              String colorNodes) {
         Map<String, List<String>> cluster = behaviourGraph.getClusters();
@@ -142,7 +144,7 @@ public class VisualizerParser {
         diGraph += "\n}";
         return diGraph;
     }
-
+    //makes final graph
     private String makeGraph(DependencyGraph dataGraph, DependencyGraph behaviourGraph,
                              String colorNodes, String[] detectNewFiles) {
         Map<String, List<String>> cluster = behaviourGraph.getClusters();
@@ -209,6 +211,7 @@ public class VisualizerParser {
         return diGraph;
     }
 
+    //assigns colours to the graphscript
     private String assignColor(Map<String, List<String>> cluster) {
         String colorNodes = "";
         int index = 0;
