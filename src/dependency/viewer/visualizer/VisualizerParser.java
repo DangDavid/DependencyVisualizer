@@ -33,7 +33,7 @@ public class VisualizerParser {
             "skew = 0.0 , style = filled];\n";
 
     /* for initial release of the code base */
-    List<DependencyGraph> initalGraph;
+    List<DependencyGraph> initialGraph;
     /* another release of the code base */
     List<DependencyGraph> finalGraph;
 
@@ -44,7 +44,7 @@ public class VisualizerParser {
      * @param finalG
      */
     public VisualizerParser(List<DependencyGraph> initG, List<DependencyGraph> finalG) {
-        initalGraph = initG;
+        initialGraph = initG;
         finalGraph = finalG;
 
         listOfcolor = new ArrayList<String>();
@@ -72,14 +72,14 @@ public class VisualizerParser {
 
     
     public void matrixToDigraph() {
-        DependencyGraph initBehaviour = initalGraph.get(1);
+        DependencyGraph initBehaviour = initialGraph.get(1);
         Map<String, List<String>> cluster = initBehaviour.getClusters();
 
 
         String colorNodes = assignColor(cluster);
 
-        String initGraphString = makeGraph(initalGraph.get(0), initalGraph.get(1), colorNodes);
-        String finalGraphString = makeGraph(finalGraph.get(0), finalGraph.get(1), colorNodes, initalGraph.get(0).getFileNameDirectory());
+        String initGraphString = makeGraph(initialGraph.get(0), initialGraph.get(1), colorNodes);
+        String finalGraphString = makeGraph(finalGraph.get(0), finalGraph.get(1), colorNodes, initialGraph.get(0).getFileNameDirectory());
 
 
         fileWrite(initGraphString, finalGraphString);
